@@ -1,5 +1,3 @@
-import colors from 'vuetify/es5/util/colors'
-
 export default {
   head: {
     titleTemplate: '%s - nuxt-app',
@@ -11,35 +9,26 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
   css: [],
-
   plugins: [],
-
   components: true,
-
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
   ],
-
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     '@nuxt/content',
   ],
-
   axios: {},
-
   pwa: {
     manifest: {
       lang: 'en',
     },
   },
-
   content: {},
-
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
