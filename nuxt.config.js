@@ -10,7 +10,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   css: [
-    // { src: '~/assets/stylus/resets', lang: 'styl' },
+    { src: '~/assets/stylus/resets', lang: 'styl' },
     { src: '~/assets/css/main' },
   ],
   styleResources: {
