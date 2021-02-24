@@ -1,26 +1,17 @@
-<template>
-  <v-row>
-    <v-col>
-      <v-list-item :to="switchLocalePath('ru')">
-        <v-list-item-icon>
-          <v-icon>{{ mdiTranslate }}</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>Ru</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    </v-col>
-    <v-col>
-      <v-list-item :to="switchLocalePath('en')">
-        <v-list-item-icon>
-          <v-icon>{{ mdiTranslate }}</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-          <v-list-item-title>En</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-    </v-col>
-  </v-row>
+<template lang="pug">
+v-row.ma-0(no-gutters)
+  v-col.mr-1
+    v-list-item(:to='switchLocalePath("ru")')
+      v-list-item-icon
+        v-icon {{ mdiTranslate }}
+      v-list-item-content
+        v-list-item-title Ru
+  v-col.ml-1
+    v-list-item(:to='switchLocalePath("en")')
+      v-list-item-icon
+        v-icon {{ mdiTranslate }}
+      v-list-item-content
+        v-list-item-title En
 </template>
 
 <script>
