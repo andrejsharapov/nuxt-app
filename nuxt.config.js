@@ -96,6 +96,8 @@ export default {
   plugins: [],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    defaultAssets: false,
+    optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
     theme: {
       dark: false,
     },
