@@ -1,0 +1,30 @@
+:root {
+  --px: 0.25rem;
+  --heading-font-family: 'Raleway', sans-serif;
+  --body-font-family: 'Manrope', sans-serif;
+  --font-size-root: 1rem;
+
+  /* palette */
+  --primary: hsl(199, 100%, 45%);
+  --secondary: hsl(227, 12%, 30%);
+  --accent: hsl(178, 69%, 58%);
+  --info: hsl(236, 69%, 58%);
+  --warning: hsl(32, 100%, 50%);
+  --error: hsl(0, 100%, 46%);
+  --success: hsl(150, 59%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light: hsl(225, 40%, 98%);
+  --blue: hsl(211, 100%, 50%);
+  --indigo: hsl(263, 90%, 51%);
+  --purple: hsl(261, 51%, 51%);
+  --pink: hsl(337, 72%, 56%);
+  --red: hsl(354, 70%, 54%);
+  --orange: hsl(27, 98%, 54%);
+  --yellow: hsl(45, 100%, 51%);
+  --green: hsl(134, 61%, 41%);
+  --teal: hsl(162, 73%, 46%);
+  --cyan: hsl(188, 78%, 41%);
+  --gray: hsl(208, 7%, 46%);
+  --gray-dark: hsl(270, 3%, 23%);
+  --dark: hsl(225, 7%, 11%);
+}

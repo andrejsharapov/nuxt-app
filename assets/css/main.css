@@ -1,0 +1,9 @@
+@import './mq';
+
+h1 {
+  color: red;
+
+  @media (--sm-min) {
+    background-color: #333;
+  }
+}

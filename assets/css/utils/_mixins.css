@@ -1,0 +1,14 @@
+/* postcss-utilities
+ *
+@util aspect-ratio(16:9);
+@util center;
+@util center-block; // db mra mla
+@util margin(1em null 20px 3%);
+@util padding(1em null 20px 3%);
+@util position(absolute, 0 null null 10em);
+@util reset-list;
+@util size(2em); // w, h
+@util truncate; // text-overflow: ellipsis;
+@util truncate(3, 1.5); // -webkit-line-clamp: 3; line-height: 1.5;
+@util word-wrap; // @util word-wrap(normal);
+*/
