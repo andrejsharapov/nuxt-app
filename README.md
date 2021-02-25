@@ -31,7 +31,7 @@ Look at [all nuxt modules][modules].
 
 ## TLTR: Wiki
 
-### Prefix to branches
+### Branches
 
 Each new branch must contain one of the following prefixes:
 
@@ -49,6 +49,50 @@ PostCSS
 SCSS
 Sass
 Stylus
+```
+
+### Naming
+
+#### Files and Component
+
+- Folders - _kebab-case_
+- Files - _kebab-case.format_
+- Components - _PascalCase_ (not to be confused with camelCase)
+- Variables - _camelCase_
+
+example
+
+```bash
+|-- folder-name
+|---- sub-folder-name
+|------ component-name.format
+|---- file-name.format
+```
+
+#### Variables
+
+```js
+export default {
+  data: () => ({
+    varName: null,
+  }),
+}
+```
+
+#### Import and HTML
+
+```bash
+<template>
+  <history-back />
+</template>
+
+import componentName from 'component-name'
+
+export default {
+  components: {
+    componentName,
+  },
+}
 ```
 
 <p align="right">
