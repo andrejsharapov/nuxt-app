@@ -4,7 +4,13 @@
   --body-font-family: 'Manrope', sans-serif;
   --font-size-root: 1rem;
 
-  /* palette */
+  /**
+ *
+ * GLOBAL
+ *
+ */
+
+  /* Palette */
   --primary: hsl(199, 100%, 45%);
   --secondary: hsl(227, 12%, 30%);
   --accent: hsl(178, 69%, 58%);
@@ -25,6 +31,22 @@
   --teal: hsl(162, 73%, 46%);
   --cyan: hsl(188, 78%, 41%);
   --gray: hsl(208, 7%, 46%);
-  --gray-dark: hsl(270, 3%, 23%);
-  --dark: hsl(225, 7%, 11%);
+  --dark: hsl(270, 3%, 23%);
+  --black: hsl(225, 7%, 11%);
+
+  /* Shadow */
+  --shadow-base: 0 0.35em 1.125em hsla(0, 0%, 0%, 0.06);
+  --shadow-down: 0 1.85em 2.5em 0 hsla(226, 48%, 16%, 0.2);
+
+  /**
+   *
+   * THEMES
+   *
+   */
+
+  /* Dark - assets/sass/theme/dark.scss */
+  /* Light */
+  --back: var(--light);
+  --sheet: var(--white);
+  --card: var(--white);
 }

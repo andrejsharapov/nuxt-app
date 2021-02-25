@@ -91,6 +91,7 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
     '@nuxtjs/style-resources',
+    '@nuxtjs/color-mode',
   ],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', 'nuxt-i18n'],
   plugins: [],
@@ -98,19 +99,23 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     defaultAssets: false,
     optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
-    theme: {
-      dark: false,
-    },
+  },
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
   },
   content: {},
   components: true,
   css: [
+    { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
-    { src: '~/assets/css/main' },
+    { src: '~/assets/sass/theme/light', lang: 'scss' },
+    { src: '~/assets/sass/theme/dark', lang: 'scss' },
   ],
   styleResources: {
-    // sass: [],
-    scss: ['./assets/sass//utils/*.scss'],
+    css: '~/assets/css/utils/*.css',
+    sass: [],
+    scss: '~/assets/sass/utils/*.scss',
     // less: [],
     // stylus: [],
   },
