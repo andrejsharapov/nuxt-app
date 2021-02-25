@@ -4,7 +4,6 @@ about: Suggest an idea for this project
 title: 'Add '
 labels: 'Feature-request :grey_question::grey_exclamation:'
 assignees: ''
-
 ---
 
 **Please describe the solution you'd like.**
