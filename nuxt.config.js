@@ -93,6 +93,7 @@ export default {
     '@nuxtjs/vuetify',
     '@nuxtjs/style-resources',
     '@nuxtjs/color-mode',
+    '@nuxtjs/html-validator',
   ],
   modules: [
     '@nuxtjs/axios',
@@ -143,6 +144,16 @@ export default {
     scss: '~/assets/sass/utils/*.scss',
     // less: [],
     // stylus: [],
+  },
+  htmlValidator: {
+    usePrettier: true,
+    options: {
+      rules: {
+        'attribute-empty-style': 'off',
+        'element-required-attributes': 'off',
+        'text-content': 'off',
+      },
+    },
   },
   content: {},
   components: true,
