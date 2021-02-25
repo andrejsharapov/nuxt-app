@@ -57,7 +57,7 @@ Stylus
 
 - Folders - _kebab-case_
 - Files - _kebab-case.format_
-- Components - _PascalCase_ (not to be confused with camelCase)
+- Components - _kebab-case_
 - Variables - _camelCase_
 
 example
