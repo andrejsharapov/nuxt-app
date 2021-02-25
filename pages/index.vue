@@ -5,13 +5,12 @@
         <h1>Hello</h1>
         <lang-switcher />
         <lazy-color-mode-picker />
-        <v-icon>{{ '$vs-code' }}</v-icon>
         <p>
-          More 4 years am engaged in the creation of design, layout and
-          programming of sites on various CMS and site builders. I like to
-          create something new, look for interesting solutions, do the
-          impossible with simple code and bring my ideas and client ideas to
-          life.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel
+          quaerat hic repudiandae non exercitationem at
+          <a href="#" title=""> ipsum quibusdam placeat </a>
+          delectus, accusamus tempora laboriosam maiores consequuntur quisquam
+          pariatur eos aliquid. Voluptatem.
         </p>
       </v-card>
     </v-col>
