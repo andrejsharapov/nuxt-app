@@ -4,6 +4,15 @@
       <v-card class="pa-16">
         <h1>Hello</h1>
         <lang-switcher />
+        <lazy-color-mode-picker />
+        <v-icon>{{ '$vs-code' }}</v-icon>
+        <p>
+          More 4 years am engaged in the creation of design, layout and
+          programming of sites on various CMS and site builders. I like to
+          create something new, look for interesting solutions, do the
+          impossible with simple code and bring my ideas and client ideas to
+          life.
+        </p>
       </v-card>
     </v-col>
   </v-row>
@@ -25,12 +34,10 @@ export default {
 }
 </script>
 
-<style>
-.base .v-card {
-  background-color: #ccc;
-
-  @media (--sm-min) {
-    background-color: red;
+<style lang="scss">
+.v-card {
+  @include headings(1) {
+    color: red;
   }
 }
 </style>

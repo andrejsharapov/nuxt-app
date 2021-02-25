@@ -1,0 +1,38 @@
+.dark-mode {
+  --back: hsl(225, 9%, 8%);
+  --sheet: hsl(246, 10%, 14%);
+  --card: hsl(240, 10%, 13%);
+  --secondary: hsla(0, 0%, 100%, 0.5);
+
+  body {
+    color: var(--light) !important;
+  }
+
+  .theme--light {
+    color: var(--white) !important;
+
+    &.v-list-item {
+      &:not(.v-list-item--active) {
+        &:not(.v-list-item--disabled) {
+          color: var(--secondary) !important;
+        }
+      }
+    }
+
+    &.v-navigation-drawer,
+    &.v-card {
+      background-color: var(--card) !important;
+    }
+
+    &.v-sheet {
+      background-color: var(--sheet) !important;
+    }
+
+    &.v-icon {
+      color: var(--light) !important;
+    }
+  }
+}
+
+// .theme--dark {
+// }

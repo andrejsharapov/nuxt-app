@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app :dark="$nuxt.$colorMode.preference === 'dark'">
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
