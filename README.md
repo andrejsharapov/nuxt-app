@@ -4,6 +4,8 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ---
 
+[Process coordination][projects]
+
 ## Uses
 
 [![vue2][vue-image]][vue]
@@ -31,6 +33,7 @@ Look at [all nuxt modules][modules].
   <a href="#uses">To top</a>
 </p>
 
+[projects]: https://github.com/andrejsharapov/nuxt-app/projects/2
 [vue]: https://vuejs.org
 [vue-image]: https://img.shields.io/badge/vue-2.x-brightgreen.svg?color=637ddb
 [modules]: https://modules.nuxtjs.org/
