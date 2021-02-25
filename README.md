@@ -1,20 +1,36 @@
 # nuxt-app
 
-## Build Setup
+Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer
 
-```bash
-# install dependencies
-$ yarn install
+---
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Uses
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+[![vue2][vue-image]][vue]
 
-# generate static project
-$ yarn generate
-```
+---
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### Nuxt modules
+
+| Module      | Name                                                           |
+| ----------- | -------------------------------------------------------------- |
+| CMS         | @nuxt/content                                                  |
+| CSS         | @nuxtjs/style-resources<br/>@nuxtjs/stylelint-module           |
+| Devtools    | @nuxtjs/eslint-module                                          |
+| Extensions  | nuxt-i18n                                                      |
+| Fonts       | @nuxtjs/google-fonts                                           |
+| Performance | @nuxtjs/pwa                                                    |
+| Request     | @nuxtjs/axios                                                  |
+| UI          | @nuxt/components <br/> @nuxtjs/vuetify<br />@nuxtjs/color-mode |
+
+Look at [all nuxt modules][modules].
+
+---
+
+<p align="right">
+  <a href="#uses">To top</a>
+</p>
+
+[vue]: https://vuejs.org
+[vue-image]: https://img.shields.io/badge/vue-2.x-brightgreen.svg?color=637ddb
+[modules]: https://modules.nuxtjs.org/
