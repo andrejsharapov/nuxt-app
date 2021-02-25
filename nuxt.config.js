@@ -1,3 +1,4 @@
+import { resolve } from 'path'
 import ru from './locales/ru.js'
 import en from './locales/en.js'
 import { appMeta, appColors } from './config/app'
@@ -93,7 +94,17 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/color-mode',
   ],
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', '@nuxt/content', 'nuxt-i18n'],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    '@nuxt/content',
+    'nuxt-i18n',
+    '@nuxtjs/google-fonts',
+  ],
+  alias: {
+    certs: resolve(__dirname, '~/static/src/certs'),
+    skills: resolve(__dirname, '~/static/src/skills'),
+  },
   plugins: [],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -104,8 +115,22 @@ export default {
     preference: 'system',
     fallback: 'light',
   },
-  content: {},
-  components: true,
+  googleFonts: {
+    prefetch: true,
+    families: {
+      Commissioner: [300, 400, 500, 700, 900],
+      Manrope: [400, 500, 700],
+      // Montserrat: true,
+      'Montserrat+Alternates': {
+        wght: [400, 500, 700, 900],
+        ital: [400],
+      },
+      Raleway: {
+        wght: [300, 400, 500, 700, 900],
+        ital: [400, 500],
+      },
+    },
+  },
   css: [
     { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
@@ -119,7 +144,16 @@ export default {
     // less: [],
     // stylus: [],
   },
+  content: {},
+  components: true,
   build: {
+    // analyze: {
+    //   analyzerMode: 'static',
+    // },
+    devtools: true,
+    // extend(config, { isDev, isClient }) {
+    //   if (isDev && isClient) { }
+    // },
     postcss: {
       plugins: {
         'postcss-custom-media': {},
