@@ -29,6 +29,28 @@ Look at [all nuxt modules][modules].
 
 ---
 
+## TLTR: Wiki
+
+### Prefix to branches
+
+Each new branch must contain one of the following prefixes:
+
+`config/` - changes or additions related to the configuration and various site settings.  
+`nuxt/` - update or addition related directly to nuxt. For example, adding modules nuxt.  
+`style/` - add, bug fix and update styles.  
+`page/` - create/upd a new page.  
+`comp/` - create/upd a new component.  
+`fix/` or `upd/` - in any incomprehensible situation.
+
+### CSS syntax
+
+```bash
+PostCSS
+SCSS
+Sass
+Stylus
+```
+
 <p align="right">
   <a href="#uses">To top</a>
 </p>
