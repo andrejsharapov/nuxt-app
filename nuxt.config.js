@@ -153,6 +153,7 @@ export default {
         'attribute-empty-style': 'off',
         'element-required-attributes': 'off',
         'text-content': 'off',
+        'prefer-native-element': 'off',
       },
     },
   },
@@ -184,7 +185,7 @@ export default {
   content: {},
   components: true,
   build: {
-    analyze: true,
+    // analyze: true,
     // config.resolve.alias['@icon'] = path.resolve(__dirname, 'components/icons');
     devtools: true,
     // extend(config, { isDev, isClient }) {
