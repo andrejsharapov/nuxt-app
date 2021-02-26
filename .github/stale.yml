@@ -1,0 +1,15 @@
+daysUntilStale: 2
+daysUntilClose: 1
+staleLabel: stale
+exemptLabels:
+  - "feature-request"
+  - "pending"
+exemptAssignees: true
+only: issues
+mark Comment: >
+  This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs.
+
+  If you would like this issue to remain open verify that you can still reproduce the issue.
+
+  Issues that are labeled as `pending` will not be automatically marked as stale.
+# Configuration for probot-stale - https://github.com/probot/stale
