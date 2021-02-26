@@ -106,9 +106,11 @@ export default {
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
 [yarn]: https://yarnpkg.com/
-[yarn-image]: https://img.shields.io/badge/yarn-1.22.10-brightgreen.svg?color=2c8ebb
+[yarn-image]: https://img.shields.io/badge/yarn-1.22.x-brightgreen.svg?color=2c8ebb
 [vue]: https://vuejs.org
-[vue-image]: https://img.shields.io/badge/vue-2.x-brightgreen.svg?color=41b883
+[vue-image]: https://img.shields.io/badge/vue-2.6.x-brightgreen.svg?color=41b883
 [nuxt]: https://nuxtjs.org/
 [nuxt-image]: https://img.shields.io/badge/nuxt-2.15-brightgreen.svg?color=108775
+[vuetify]: https://vuetifyjs.com/en/
+[vuetify-image]: https://img.shields.io/badge/vuetifyjs-2.x-brightgreen.svg?color=7bc6ff
 [modules]: https://modules.nuxtjs.org/
