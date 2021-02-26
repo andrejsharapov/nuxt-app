@@ -101,8 +101,8 @@ export default {
   <a href="#uses">To top</a>
 </p>
 
-[ideas]: /projects/1
-[projects]: /projects/2
+[ideas]: ../../projects/1
+[projects]: ../../projects/2
 [vue]: https://vuejs.org
 [vue-image]: https://img.shields.io/badge/vue-2.x-brightgreen.svg?color=637ddb
 [modules]: https://modules.nuxtjs.org/
