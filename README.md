@@ -13,6 +13,7 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 [![yarn][yarn-image]][yarn]
 [![vue2][vue-image]][vue]
 [![nuxt][nuxt-image]][nuxt]
+[![vuetify][vuetify-image]][vuetify]
 
 ---
 
@@ -110,7 +111,7 @@ export default {
 [vue]: https://vuejs.org
 [vue-image]: https://img.shields.io/badge/vue-2.6.x-brightgreen.svg?color=41b883
 [nuxt]: https://nuxtjs.org/
-[nuxt-image]: https://img.shields.io/badge/nuxt-2.15-brightgreen.svg?color=108775
+[nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-brightgreen.svg?color=108775
 [vuetify]: https://vuetifyjs.com/en/
-[vuetify-image]: https://img.shields.io/badge/vuetifyjs-2.x-brightgreen.svg?color=7bc6ff
+[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-brightgreen.svg?color=7bc6ff
 [modules]: https://modules.nuxtjs.org/
