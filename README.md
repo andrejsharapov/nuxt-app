@@ -10,7 +10,9 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ## Uses
 
+[![yarn][yarn-image]][yarn]
 [![vue2][vue-image]][vue]
+[![nuxt][nuxt-image]][nuxt]
 
 ---
 
@@ -103,6 +105,10 @@ export default {
 
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
+[yarn]: https://yarnpkg.com/
+[yarn-image]: https://img.shields.io/badge/yarn-1.22.10-brightgreen.svg?color=2c8ebb
 [vue]: https://vuejs.org
-[vue-image]: https://img.shields.io/badge/vue-2.x-brightgreen.svg?color=637ddb
+[vue-image]: https://img.shields.io/badge/vue-2.x-brightgreen.svg?color=41b883
+[nuxt]: https://nuxtjs.org/
+[nuxt-image]: https://img.shields.io/badge/nuxt-2.15-brightgreen.svg?color=108775
 [modules]: https://modules.nuxtjs.org/
