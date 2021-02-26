@@ -14,16 +14,16 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ### Nuxt modules
 
-| Module      | Name                                                            |
-| ----------- | --------------------------------------------------------------- |
-| CMS         | @nuxt/content                                                   |
-| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module           |
-| Devtools    | @nuxtjs/eslint-module                                           |
-| Extensions  | nuxt-i18n                                                       |
-| Fonts       | @nuxtjs/google-fonts                                            |
-| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                         |
-| Request     | @nuxtjs/axios                                                   |
-| UI          | @nuxt/components <br /> @nuxtjs/vuetify<br />@nuxtjs/color-mode |
+| Module      | Name                                                                     |
+| ----------- | ------------------------------------------------------------------------ |
+| CMS         | @nuxt/content                                                            |
+| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module<br />nuxt-purgecss |
+| Devtools    | @nuxtjs/eslint-module                                                    |
+| Extensions  | nuxt-i18n                                                                |
+| Fonts       | @nuxtjs/google-fonts                                                     |
+| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                                  |
+| Request     | @nuxtjs/axios                                                            |
+| UI          | @nuxt/components <br /> @nuxtjs/vuetify<br />@nuxtjs/color-mode          |
 
 Look at [all nuxt modules][modules].
 
