@@ -2,7 +2,7 @@
 
 Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer
 
----
+[![README.md][preview]](/README.md)
 
 ## Coordination
 
@@ -104,6 +104,7 @@ export default {
   <a href="#uses">To top</a>
 </p>
 
+[preview]: https://raw.githubusercontent.com/andrejsharapov/nuxt-app/master/static/README.png
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
 [yarn]: https://yarnpkg.com/
