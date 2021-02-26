@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import VueNotifications from 'vue-notification'
+import Notifications from 'vue-notification'
 
-Vue.use(VueNotifications)
+Vue.use(Notifications)
 
 export default (context, inject) => {
   inject('notify', Vue.notify)

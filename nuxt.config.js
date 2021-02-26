@@ -4,7 +4,6 @@ import en from './locales/en.js'
 import { appMeta, appColors } from './config/app'
 
 export default {
-  ssr: false,
   server: {
     port: 8080,
     host: '0.0.0.0',
@@ -108,7 +107,10 @@ export default {
     certs: resolve(__dirname, '~/static/src/certs'),
     skills: resolve(__dirname, '~/static/src/skills'),
   },
-  plugins: ['~/plugins/vue-notifications.js'],
+  plugins: [
+    { src: '~/plugins/vue-notifications-server', mode: 'server' },
+    { src: '~/plugins/vue-notifications-client', mode: 'client' },
+  ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     defaultAssets: false,
