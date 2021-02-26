@@ -55,7 +55,7 @@ export default {
     workbox: {},
   },
   head: {
-    titleTemplate: '%s - nuxt-app',
+    // titleTemplate: '%s',
     title: 'nuxt-app',
     meta: [
       {
