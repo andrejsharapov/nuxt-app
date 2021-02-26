@@ -4,10 +4,6 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 [![README.md][preview]](/README.md)
 
-## Coordination
-
-[Ideas][ideas] | [Process][projects]
-
 ## Uses
 
 [![yarn][yarn-image]][yarn]
@@ -15,7 +11,9 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 [![nuxt][nuxt-image]][nuxt]
 [![vuetify][vuetify-image]][vuetify]
 
----
+## Coordination
+
+[Ideas][ideas] | [Process][projects]
 
 ### Nuxt modules
 
@@ -104,7 +102,7 @@ export default {
   <a href="#uses">To top</a>
 </p>
 
-[preview]: https://raw.githubusercontent.com/andrejsharapov/nuxt-app/master/static/README.png
+[preview]: https://raw.githubusercontent.com/andrejsharapov/nuxt-app/master/static/README.png?token=AKVGTDT24OX6567YAWGTHR3AHE7KY
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
 [yarn]: https://yarnpkg.com/
