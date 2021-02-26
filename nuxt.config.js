@@ -4,6 +4,7 @@ import en from './locales/en.js'
 import { appMeta, appColors } from './config/app'
 
 export default {
+  ssr: false,
   server: {
     port: 8080,
     host: '0.0.0.0',
@@ -107,7 +108,7 @@ export default {
     certs: resolve(__dirname, '~/static/src/certs'),
     skills: resolve(__dirname, '~/static/src/skills'),
   },
-  plugins: [],
+  plugins: ['~/plugins/vue-notifications.js'],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     defaultAssets: false,
@@ -133,6 +134,18 @@ export default {
       },
     },
   },
+  htmlValidator: {
+    usePrettier: true,
+    options: {
+      rules: {
+        'attribute-empty-style': 'off',
+        'element-required-attributes': 'off',
+        'text-content': 'off',
+        'prefer-native-element': 'off',
+        'element-permitted-content': 'off',
+      },
+    },
+  },
   css: [
     { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
@@ -145,17 +158,6 @@ export default {
     scss: '~/assets/sass/utils/*.scss',
     // less: [],
     // stylus: [],
-  },
-  htmlValidator: {
-    usePrettier: true,
-    options: {
-      rules: {
-        'attribute-empty-style': 'off',
-        'element-required-attributes': 'off',
-        'text-content': 'off',
-        'prefer-native-element': 'off',
-      },
-    },
   },
   purgeCSS: {
     paths: [
