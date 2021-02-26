@@ -94,6 +94,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/color-mode',
     '@nuxtjs/html-validator',
+    'nuxt-purgecss',
   ],
   modules: [
     '@nuxtjs/axios',
@@ -152,19 +153,45 @@ export default {
         'attribute-empty-style': 'off',
         'element-required-attributes': 'off',
         'text-content': 'off',
+        'prefer-native-element': 'off',
       },
     },
+  },
+  purgeCSS: {
+    paths: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'node_modules/@nuxtjs/vuetify/**/*.ts',
+      'node_modules/@nuxt/vue-app/template/**/*.html',
+      'node_modules/@nuxt/vue-app/template/**/*.vue',
+    ],
+    extractors: [
+      {
+        extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
+        extensions: ['html', 'vue', 'js'],
+      },
+    ],
+    styleExtensions: ['.css', '.scss', '.styl', '.sass', '.postcss'],
+    whitelist: ['v-application', 'v-application--wrap'],
+    whitelistPatterns: [
+      /^v-((?!application).)*$/,
+      /^\.theme--*/,
+      /.*-transition/,
+    ],
+    whitelistPatternsChildren: [/^v-((?!application).)*$/, /^theme--*/],
   },
   content: {},
   components: true,
   build: {
-    // analyze: {
-    //   analyzerMode: 'static',
-    // },
+    // analyze: true,
+    // config.resolve.alias['@icon'] = path.resolve(__dirname, 'components/icons');
     devtools: true,
     // extend(config, { isDev, isClient }) {
     //   if (isDev && isClient) { }
     // },
+    extractCSS: true,
     postcss: {
       plugins: {
         'postcss-custom-media': {},
@@ -176,6 +203,29 @@ export default {
         'postcss-url': {},
         'postcss-utilities': {},
         precss: {},
+        '@fullhuman/postcss-purgecss': {
+          content: [
+            'components/**/*.vue',
+            'layouts/**/*.vue',
+            'pages/**/*.vue',
+            'plugins/**/*.js',
+            'node_modules/vuetify/src/**/*.ts',
+          ],
+          styleExtensions: ['.css'],
+          safelist: {
+            standard: ['body', 'html', 'nuxt-progress'],
+            deep: [
+              /page-enter/,
+              /page-leave/,
+              /dialog-transition/,
+              /tab-transition/,
+              /tab-reversetransition/,
+            ],
+          },
+        },
+        'css-byebye': {
+          rulesToRemove: [/.*\.v-application--is-rtl.*/, /.*\.theme--dark.*/],
+        },
       },
       preset: {
         features: {
