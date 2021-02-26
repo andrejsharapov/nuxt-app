@@ -113,5 +113,5 @@ export default {
 [nuxt]: https://nuxtjs.org/
 [nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-brightgreen.svg?color=108775
 [vuetify]: https://vuetifyjs.com/en/
-[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-brightgreen.svg?color=7bc6ff
+[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-brightgreen.svg?color=1697f6
 [modules]: https://modules.nuxtjs.org/
