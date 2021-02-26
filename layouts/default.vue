@@ -59,7 +59,7 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'Welcome',
-          to: '/',
+          to: this.localePath('/'),
         },
       ],
       miniVariant: false,

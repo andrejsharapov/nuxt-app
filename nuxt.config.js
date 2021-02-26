@@ -1,6 +1,4 @@
 import { resolve } from 'path'
-import ru from './locales/ru.js'
-import en from './locales/en.js'
 import { appMeta, appColors } from './config/app'
 
 export default {
@@ -11,15 +9,22 @@ export default {
   // loading: '~/components/loading.vue',
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', name: 'En' },
-      { code: 'ru', iso: 'ru-RU', name: 'Ru' },
+      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'English' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Русский' },
     ],
     defaultLocale: 'ru',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: { ru, en },
+    strategy: 'prefix',
+    lazy: true,
+    langDir: './locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
     },
-    seo: true,
+    vueI18n: {
+      fallbackLocale: 'ru',
+    },
+    seo: false,
     baseUrl: `${appMeta.host.url}`,
   },
   pwa: {
@@ -108,6 +113,7 @@ export default {
     skills: resolve(__dirname, '~/static/src/skills'),
   },
   plugins: [
+    { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
   ],
