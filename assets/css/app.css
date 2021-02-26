@@ -13,16 +13,16 @@ body {
     text-decoration: none;
     color: var(--primary);
 
+    &:focus {
+      outline: none;
+    }
+
     &:not([class]) {
       text-decoration-skip-ink: auto;
 
       &:hover {
         text-decoration: underline;
       }
-    }
-
-    &:focus {
-      outline: none;
     }
   }
 }
