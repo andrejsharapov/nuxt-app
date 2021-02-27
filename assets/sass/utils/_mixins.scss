@@ -11,3 +11,23 @@
 @include headings() {
   font-family: var(--heading-font-family);
 }
+
+@mixin class-color($cls) {
+  .#{$cls} {
+    background-color: var(--#{$cls}) !important;
+    border-color: var(--#{$cls}) !important;
+  }
+
+  .#{$cls}--text {
+    color: var(--#{$cls}) !important;
+    caret-color: var(--#{$cls}) !important;
+  }
+}
+
+@include class-color(primary);
+@include class-color(secondary);
+@include class-color(accent);
+@include class-color(info);
+@include class-color(success);
+@include class-color(warning);
+@include class-color(error);
