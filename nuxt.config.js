@@ -1,4 +1,3 @@
-import { resolve } from 'path'
 import { appMeta, appColors } from './config/app'
 
 export default {
@@ -24,13 +23,13 @@ export default {
     vueI18n: {
       fallbackLocale: 'ru',
     },
-    seo: false,
+    seo: true,
     baseUrl: `${appMeta.host.url}`,
   },
   pwa: {
     meta: {
       author: appMeta.app.en.author.name,
-      lang: false,
+      lang: 'ru-RU',
       name: appMeta.app.en.author.name,
       nativeUI: true,
       ogHost: appMeta.host.name,
@@ -60,7 +59,6 @@ export default {
     workbox: {},
   },
   head: {
-    // titleTemplate: '%s',
     title: 'nuxt-app',
     meta: [
       {
@@ -100,6 +98,7 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/html-validator',
     'nuxt-purgecss',
+    '@nuxtjs/svg',
   ],
   modules: [
     '@nuxtjs/axios',
@@ -108,10 +107,6 @@ export default {
     'nuxt-i18n',
     '@nuxtjs/google-fonts',
   ],
-  alias: {
-    certs: resolve(__dirname, '~/static/src/certs'),
-    skills: resolve(__dirname, '~/static/src/skills'),
-  },
   plugins: [
     { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
@@ -131,7 +126,6 @@ export default {
     families: {
       Commissioner: [300, 400, 500, 700, 900],
       Manrope: [400, 500, 700],
-      // Montserrat: true,
       'Montserrat+Alternates': {
         wght: [400, 500, 700, 900],
         ital: [400],
@@ -157,7 +151,6 @@ export default {
   css: [
     { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
-    { src: '~/assets/sass/theme/light', lang: 'scss' },
     { src: '~/assets/sass/theme/dark', lang: 'scss' },
   ],
   styleResources: {
@@ -167,36 +160,42 @@ export default {
     // less: [],
     // stylus: [],
   },
-  purgeCSS: {
-    paths: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'node_modules/@nuxtjs/vuetify/**/*.ts',
-      'node_modules/@nuxt/vue-app/template/**/*.html',
-      'node_modules/@nuxt/vue-app/template/**/*.vue',
-    ],
-    extractors: [
-      {
-        extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
-        extensions: ['html', 'vue', 'js'],
-      },
-    ],
-    styleExtensions: ['.css', '.scss', '.styl', '.sass', '.postcss'],
-    whitelist: ['v-application', 'v-application--wrap'],
-    whitelistPatterns: [
-      /^v-((?!application).)*$/,
-      /^\.theme--*/,
-      /.*-transition/,
-    ],
-    whitelistPatternsChildren: [/^v-((?!application).)*$/, /^theme--*/],
-  },
+  // purgeCSS: {
+  //   paths: [
+  //     'components/**/*.vue',
+  //     'layouts/**/*.vue',
+  //     'pages/**/*.vue',
+  //     'plugins/**/*.js',
+  //     'node_modules/@nuxtjs/vuetify/**/*.ts',
+  //     'node_modules/@nuxt/vue-app/template/**/*.html',
+  //     'node_modules/@nuxt/vue-app/template/**/*.vue',
+  //   ],
+  //   extractors: [
+  //     {
+  //       extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
+  //       extensions: ['html', 'vue', 'js'],
+  //     },
+  //   ],
+  //   styleExtensions: ['.css'],
+  //   whitelist: ['v-application', 'v-application--wrap'],
+  //   whitelistPatterns: [
+  //     /^v-((?!application).)*$/,
+  //     /^\.theme--dark*/,
+  //     /.*-transition/,
+  //   ],
+  //   whitelistPatternsChildren: [
+  //     /^v-((?!application).)*$/,
+  //     /^theme--dark.*/,
+  //     /.*-transition/,
+  //   ],
+  // },
   content: {},
-  components: true,
+  components: [
+    '~/components',
+    { path: '~/components/layouts/', prefix: 'layout' },
+  ],
   build: {
     // analyze: true,
-    // config.resolve.alias['@icon'] = path.resolve(__dirname, 'components/icons');
     devtools: true,
     // extend(config, { isDev, isClient }) {
     //   if (isDev && isClient) { }
@@ -213,29 +212,29 @@ export default {
         'postcss-url': {},
         'postcss-utilities': {},
         precss: {},
-        '@fullhuman/postcss-purgecss': {
-          content: [
-            'components/**/*.vue',
-            'layouts/**/*.vue',
-            'pages/**/*.vue',
-            'plugins/**/*.js',
-            'node_modules/vuetify/src/**/*.ts',
-          ],
-          styleExtensions: ['.css'],
-          safelist: {
-            standard: ['body', 'html', 'nuxt-progress'],
-            deep: [
-              /page-enter/,
-              /page-leave/,
-              /dialog-transition/,
-              /tab-transition/,
-              /tab-reversetransition/,
-            ],
-          },
-        },
-        'css-byebye': {
-          rulesToRemove: [/.*\.v-application--is-rtl.*/, /.*\.theme--dark.*/],
-        },
+        // '@fullhuman/postcss-purgecss': {
+        //   content: [
+        //     'components/**/*.vue',
+        //     'layouts/**/*.vue',
+        //     'pages/**/*.vue',
+        //     'plugins/**/*.js',
+        //     'node_modules/vuetify/src/**/*.ts',
+        //   ],
+        //   styleExtensions: ['.css'],
+        //   safelist: {
+        //     standard: ['body', 'html', 'nuxt-progress'],
+        //     deep: [
+        //       /page-enter/,
+        //       /page-leave/,
+        //       /dialog-transition/,
+        //       /tab-transition/,
+        //       /tab-reversetransition/,
+        //     ],
+        //   },
+        // },
+        // 'css-byebye': {
+        //   rulesToRemove: [/.*\.v-application--is-rtl.*/, /.*\.theme--dark.*/],
+        // },
       },
       preset: {
         features: {
