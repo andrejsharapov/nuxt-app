@@ -19,14 +19,14 @@
           v-list-item-icon
             v-icon {{ mdiApplication }}
           v-list-item-content
-            v-list-item-title {{ $t("site-header-fixed") }}
+            v-list-item-title {{ $t("site.header.name") }}
 
         //- btn #2
         v-list-item(@click.stop='goMini')
           v-list-item-icon
             v-icon {{ miniVariant ? mdiArrowExpandHorizontal : mdiArrowCollapseHorizontal }}
           v-list-item-content
-            v-list-item-title {{ $t("site-sidebar-mini") }}
+            v-list-item-title {{ $t("site.navbar.name") }}
 
         //- btn #3
         lang-switcher

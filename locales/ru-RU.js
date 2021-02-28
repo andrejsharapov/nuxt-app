@@ -9,4 +9,10 @@ export default {
     name: `${appMeta.host.name}`,
     url: `${appMeta.host.url}`,
   },
+  site: {
+    header: { name: 'Header' },
+    navbar: {
+      name: 'Navbar',
+    },
+  },
 }
