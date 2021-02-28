@@ -9,8 +9,18 @@ v-app
     floating,
     app
   )
-    template(#prepend, min-height='67')
+    template(#prepend)
       layout-navbar-prepend(v-if='!clipped', :clipped='clipped')
+    perfect-scrollbar
+      layout-navbar-list(:mini-variant='miniVariant')
+    template(#append)
+      layout-navbar-append(
+        :clipped='clipped',
+        :drawer='drawer',
+        :mini-variant='miniVariant',
+        @go-clipped='barEvents',
+        @go-mini='barEvents'
+      )
   //- !SECTION
 
   //- SECTION[epic='layout'] header
@@ -64,6 +74,12 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js',
     }
+  },
+  methods: {
+    barEvents(prop) {
+      this.miniVariant = prop.mini
+      this.clipped = prop.clip
+    },
   },
 }
 </script>

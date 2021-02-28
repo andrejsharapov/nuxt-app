@@ -111,6 +111,7 @@ export default {
     { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
+    { src: '~/plugins/vue-perfect-scrollbar' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -160,35 +161,35 @@ export default {
     // less: [],
     // stylus: [],
   },
-  // purgeCSS: {
-  //   paths: [
-  //     'components/**/*.vue',
-  //     'layouts/**/*.vue',
-  //     'pages/**/*.vue',
-  //     'plugins/**/*.js',
-  //     'node_modules/@nuxtjs/vuetify/**/*.ts',
-  //     'node_modules/@nuxt/vue-app/template/**/*.html',
-  //     'node_modules/@nuxt/vue-app/template/**/*.vue',
-  //   ],
-  //   extractors: [
-  //     {
-  //       extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
-  //       extensions: ['html', 'vue', 'js'],
-  //     },
-  //   ],
-  //   styleExtensions: ['.css'],
-  //   whitelist: ['v-application', 'v-application--wrap'],
-  //   whitelistPatterns: [
-  //     /^v-((?!application).)*$/,
-  //     /^\.theme--dark*/,
-  //     /.*-transition/,
-  //   ],
-  //   whitelistPatternsChildren: [
-  //     /^v-((?!application).)*$/,
-  //     /^theme--dark.*/,
-  //     /.*-transition/,
-  //   ],
-  // },
+  purgeCSS: {
+    //   paths: [
+    //     'components/**/*.vue',
+    //     'layouts/**/*.vue',
+    //     'pages/**/*.vue',
+    //     'plugins/**/*.js',
+    //     'node_modules/@nuxtjs/vuetify/**/*.ts',
+    //     'node_modules/@nuxt/vue-app/template/**/*.html',
+    //     'node_modules/@nuxt/vue-app/template/**/*.vue',
+    //   ],
+    //   extractors: [
+    //     {
+    //       extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
+    //       extensions: ['html', 'vue', 'js'],
+    //     },
+    //   ],
+    //   styleExtensions: ['.css'],
+    //   whitelist: ['v-application', 'v-application--wrap'],
+    //   whitelistPatterns: [
+    //     /^v-((?!application).)*$/,
+    //     /^\.theme--dark*/,
+    //     /.*-transition/,
+    //   ],
+    //   whitelistPatternsChildren: [
+    //     /^v-((?!application).)*$/,
+    //     /^theme--dark.*/,
+    //     /.*-transition/,
+    //   ],
+  },
   content: {},
   components: [
     '~/components',
