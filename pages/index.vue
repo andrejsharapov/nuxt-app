@@ -3,8 +3,6 @@
     <v-col cols="12" sm="8" md="6">
       <v-card class="pa-16">
         <h1>Hello</h1>
-        <lang-switcher />
-        <lazy-color-mode-picker />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel
           quaerat hic repudiandae non exercitationem at

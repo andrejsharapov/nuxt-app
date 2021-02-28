@@ -1,5 +1,5 @@
 <template lang="pug">
-v-list(dense, nav)
+v-list.mb-1.pa-0(dense, nav)
   v-list-item-group(multiple, color='accent')
     v-row.ma-0(no-gutters)
       v-col.mr-1
