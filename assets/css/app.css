@@ -1,10 +1,12 @@
 @import './utils/_vars';
 @import './mq';
 
-html[lang='en-US'] {
-  .v-application {
-    --body-font-family: 'Raleway', sans-serif;
-    --heading-font-family: 'Montserrat alternates', sans-serif;
+html {
+  &:not([lang='ru-RU']) {
+    .v-application {
+      --body-font-family: 'Raleway', sans-serif;
+      --heading-font-family: 'Montserrat alternates', sans-serif;
+    }
   }
 }
 
