@@ -44,6 +44,24 @@ Each new branch must contain one of the following prefixes:
 `page/` - create/upd a new page.  
 `comp/` - create/upd a new component.  
 `fix/` or `upd/` - in any incomprehensible situation.
+`README` - update for the README.md file only
+
+### Fast merge (through DEVELOP branch)
+
+From => To
+
+```shell
+$ git checkout master && git pull && git checkout develop && git merge master
+$ git branch README develop && git checkout README
+# or
+$ git checkout -b README develop
+# ...Development
+$ git add . && git commit -m ".md" && git push -u origin README:develop
+# ...Pull Request
+$ git checkout develop && git pull
+# ...Development, testing, prerelease
+$ git add . && git commit -m ".md" && git push
+```
 
 ### CSS syntax
 
