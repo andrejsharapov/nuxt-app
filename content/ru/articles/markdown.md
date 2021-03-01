@@ -33,8 +33,7 @@ yarn add @nuxtjs/markdownit markdown-it-attrs markdown-it-div
 
 ## Подключение
 
-```js
-// nuxt.config.js
+```js[nuxt.config.js]
 modules: [
   '@nuxtjs/markdownit'
 ],
