@@ -45,6 +45,15 @@ Each new branch must contain one of the following prefixes:
 `comp/` - create/upd a new component.  
 `fix/` or `upd/` - in any incomprehensible situation.
 
+### Fast merge
+
+From => To
+
+```shell
+$ git checkout master && git pull && git checkout develop && git merge master
+$ git branch -b branch-name develop && git checkout branch-name
+```
+
 ### CSS syntax
 
 ```bash
