@@ -9,7 +9,7 @@ v-container
 </template>
 
 <script>
-import markdown from '../content/markdown.md'
+import markdown from '../content/ru/articles/markdown.md'
 
 export default {
   head() {
