@@ -43,7 +43,7 @@ Each new branch must contain one of the following prefixes:
 `style/` - add, bug fix and update styles.  
 `page/` - create/upd a new page.  
 `comp/` - create/upd a new component.  
-`fix/` or `upd/` - in any incomprehensible situation.
+`fix/` or `upd/` - in any incomprehensible situation.  
 `README` - update for the README.md file only
 
 ### Fast merge (through DEVELOP branch)
