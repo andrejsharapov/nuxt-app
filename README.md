@@ -55,17 +55,11 @@ $ git checkout master && git pull && git checkout develop && git merge master
 $ git branch README develop && git checkout README
 ### or
 $ git checkout -b README develop
-
 # ...Development
-
 $ git add . && git commit -m ".md" && git push -u origin README:develop
-
 # ...Pull Request
-
 $ git checkout develop && git pull
-
 # ...Development, testing, prerelease
-
 $ git add . && git commit -m ".md" && git push
 ```
 
