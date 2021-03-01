@@ -1,0 +1,113 @@
+{
+  "cSpell.language": "en, ru",
+  "color-highlight.markRuler": true,
+  "color-highlight.markerType": "dot-before",
+  "colorInfo.languages": [
+    {
+      "colors": "css",
+      "selector": "postcss"
+    },
+    {
+      "colors": "css",
+      "selector": "stylus"
+    },
+    {
+      "colors": "css",
+      "selector": "css"
+    },
+    {
+      "colors": "css",
+      "selector": "sass"
+    },
+    {
+      "colors": "css",
+      "selector": "scss"
+    },
+    {
+      "colors": "css",
+      "selector": "less"
+    }
+  ],
+  "commentAnchors.tags.endTag": "/",
+  "commentAnchors.tags.list": [
+    {
+      "highlightColor": "#FFFF00",
+      "iconColor": "#FFFF00",
+      "scope": "file",
+      "styleComment": true,
+      "tag": "ANCHOR"
+    },
+    {
+      "highlightColor": "#3ECCCF",
+      "iconColor": "#3ECCCF",
+      "scope": "workspace",
+      "tag": "NOTE"
+    },
+    {
+      "highlightColor": "#00F51D",
+      "iconColor": "#00F51D",
+      "scope": "workspace",
+      "tag": "TODO"
+    },
+    {
+      "highlightColor": "#FFB300",
+      "iconColor": "#FFB300",
+      "scope": "workspace",
+      "styleComment": true,
+      "tag": "REVIEW"
+    },
+    {
+      "highlightColor": "#F55E00",
+      "iconColor": "#F55E00",
+      "scope": "workspace",
+      "styleComment": true,
+      "tag": "TEST"
+    },
+    {
+      "highlightColor": "#E60000",
+      "iconColor": "#E60000",
+      "scope": "workspace",
+      "styleComment": true,
+      "tag": "FIXME"
+    },
+    {
+      "behavior": "region",
+      "highlightColor": "#0097F5",
+      "iconColor": "#0097F5",
+      "scope": "workspace",
+      "tag": "SECTION"
+    },
+    {
+      "behavior": "region",
+      "highlightColor": "#2ECCB7",
+      "iconColor": "#2ECCB7",
+      "scope": "workspace",
+      "tag": "COMPONENT"
+    },
+    {
+      "behavior": "link",
+      "highlightColor": "#2ecc71",
+      "iconColor": "#2ecc71",
+      "scope": "workspace",
+      "tag": "LINK"
+    },
+    {
+      "highlightColor": "#BA68C8",
+      "iconColor": "#BA68C8",
+      "scope": "file",
+      "tag": "STUB"
+    }
+  ],
+  "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,.nuxt}/**/*",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.alwaysShowStatus": true,
+  "eslint.packageManager": "yarn",
+  "stylusSupremacy.insertBraces": false,
+  "stylusSupremacy.insertColons": false,
+  "stylusSupremacy.insertSemicolons": false
+}

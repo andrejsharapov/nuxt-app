@@ -90,7 +90,7 @@ sw.*
 *.swp
 
 # VS Code
-.vscode
+# .vscode
 
 # Tests
 test/
