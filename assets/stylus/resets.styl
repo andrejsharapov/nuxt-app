@@ -8,3 +8,28 @@
     background-color var(--back)
     background-position 0 0, 1.75em 1.75em
     background-size 1.75em 1.75em
+
+.layout
+  &__navbar
+    .v-navigation-drawer
+      &__content
+        display flex
+        flex-direction column
+        justify-content space-between
+
+        .v-list-item--active
+          .v-list-item__action
+            .v-icon
+              color var(--primary)
+
+.v-navigation-drawer
+  .v-list-item
+    font-family var(--heading-font-family)
+
+    &__title
+      font-size 0.905rem
+
+    &--active
+      &:before
+        color var(--primary)
+        caret-color var(--primary)

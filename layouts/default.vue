@@ -1,6 +1,6 @@
 <template lang="pug">
 v-app
-  //- SECTION[epic='layout'] navbar
+  //- SECTION[epic=layout] navbar
   v-navigation-drawer.layout__navbar(
     v-model='drawer',
     :mini-variant='miniVariant',
@@ -9,11 +9,21 @@ v-app
     floating,
     app
   )
-    template(#prepend, min-height='67')
+    template(#prepend)
       layout-navbar-prepend(v-if='!clipped', :clipped='clipped')
-  //- !SECTION
+    perfect-scrollbar
+      layout-navbar-list(:mini-variant='miniVariant')
+    template(#append)
+      layout-navbar-append(
+        :clipped='clipped',
+        :drawer='drawer',
+        :mini-variant='miniVariant',
+        @go-clipped='barEvents',
+        @go-mini='barEvents'
+      )
+  //- /SECTION
 
-  //- SECTION[epic='layout'] header
+  //- SECTION[epic=layout] header
   v-app-bar(:clipped-left='clipped', fixed, app)
     v-app-bar-nav-icon(@click.stop='drawer = !drawer')
     v-btn(icon, @click.stop='miniVariant = !miniVariant')
@@ -26,14 +36,14 @@ v-app
     v-spacer
     v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
       v-icon mdi-menu
-  //- !SECTION
+  //- /SECTION
 
-  //- SECTION[epic='layout'] main
+  //- SECTION[epic=layout] main
   v-main
     nuxt
-  //- !SECTION
+  //- /SECTION
 
-  //- SECTION[epic='layout'] navbar-right
+  //- SECTION[epic=layout] navbar-right
   v-navigation-drawer(v-model='rightDrawer', :right='right', temporary, fixed)
     v-list
       v-list-item(@click.native='right = !right')
@@ -41,12 +51,12 @@ v-app
           v-icon(light) mdi-repeat
 
         v-list-item-title Switch drawer (click me)
-  //- !SECTION
+  //- /SECTION
 
-  //- SECTION[epic='layout'] footer
+  //- SECTION[epic=layout] footer
   v-footer(:absolute='!fixed', app)
     span &copy; {{ new Date().getFullYear() }}
-  //- !SECTION
+  //- /SECTION
 
   notifications(group='translation')
 </template>
@@ -64,6 +74,12 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js',
     }
+  },
+  methods: {
+    barEvents(prop) {
+      this.miniVariant = prop.mini
+      this.clipped = prop.clip
+    },
   },
 }
 </script>

@@ -1,7 +1,36 @@
-import { mdiClose } from '@mdi/js'
-import VSCode from '@/components/icons/vs-code'
+import vsCode from '@/components/icons/vs-code'
 
-// use $vuetify.icons.values.mdiClose
+import {
+  mdiHomeRoof,
+  mdiFolderOpen,
+  mdiPaletteOutline,
+  mdiCellphoneLink,
+  mdiCellphoneCog,
+  mdiVectorRadius,
+  mdiVectorCurve,
+  mdiDevices,
+  mdiResponsive,
+  mdiTabletCellphone,
+  mdiVectorBezier,
+  mdiDotsHorizontal,
+  mdiDraw,
+  mdiCodeJson,
+  mdiScriptText,
+  mdiPaletteSwatchOutline,
+  mdiVectorPolylineEdit,
+  mdiLightbulbOnOutline,
+  mdiBrain,
+  mdiBookOpenPageVariantOutline,
+  mdiAccount,
+  mdiFileCertificateOutline,
+  mdiTimelineOutline,
+  mdiLightbulb,
+  mdiContactsOutline,
+  mdiVideoWirelessOutline,
+  mdiMicrophoneOutline,
+  mdiPodcast,
+  mdiAccountGroupOutline,
+} from '@mdi/js'
 
 export default function ({ app }) {
   return {
@@ -12,13 +41,43 @@ export default function ({ app }) {
     icons: {
       iconfont: 'mdiSvg',
       values: {
-        mdiClose,
-        'vs-code': {
-          component: VSCode,
+        // NOTE[epic=icons] CUSTOM
+        vsCode: {
+          component: vsCode,
           props: {
-            name: '$vs-code',
+            name: '$vsCode',
           },
         },
+        // NOTE[epic=icons] MDI
+        mdiHomeRoof,
+        mdiFolderOpen,
+        mdiPaletteOutline,
+        mdiCellphoneLink,
+        mdiCellphoneCog,
+        mdiVectorRadius,
+        mdiVectorCurve,
+        mdiDevices,
+        mdiResponsive,
+        mdiTabletCellphone,
+        mdiVectorBezier,
+        mdiDotsHorizontal,
+        mdiDraw,
+        mdiCodeJson,
+        mdiScriptText,
+        mdiPaletteSwatchOutline,
+        mdiVectorPolylineEdit,
+        mdiLightbulbOnOutline,
+        mdiBrain,
+        mdiBookOpenPageVariantOutline,
+        mdiAccount,
+        mdiFileCertificateOutline,
+        mdiTimelineOutline,
+        mdiLightbulb,
+        mdiContactsOutline,
+        mdiVideoWirelessOutline,
+        mdiMicrophoneOutline,
+        mdiPodcast,
+        mdiAccountGroupOutline,
       },
     },
   }
