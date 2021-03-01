@@ -52,8 +52,8 @@ From => To
 
 ```shell
 $ git checkout master && git pull && git checkout develop && git merge master
-$ git branch branch-name develop && git checkout branch-name
-$ git commit -m "message" && git push -u
+$ git branch README develop && git checkout README
+$ git add . && git commit -m ".md" && git push -u origin README
 ```
 
 ### CSS syntax
