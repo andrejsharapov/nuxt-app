@@ -113,6 +113,7 @@ export default {
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
+    { src: '~/plugins/markdown-theme-prism' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -154,6 +155,7 @@ export default {
     { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
     { src: '~/assets/sass/theme/dark', lang: 'scss' },
+    { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
   ],
   styleResources: {
     css: '~/assets/css/utils/*.css',
@@ -205,8 +207,8 @@ export default {
     linkify: true,
     breaks: true,
     use: ['markdown-it-div', 'markdown-it-attrs'],
-    // injected: true,
-    // xhtmlOut: true,
+    injected: true,
+    xhtmlOut: true,
     // langPrefix: 'language-',
   },
   components: [

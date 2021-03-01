@@ -79,6 +79,7 @@
     "postcss-utilities": "^0.8.4",
     "precss": "^4.0.0",
     "prettier": "^2.2.1",
+    "prism-themes": "^1.5.0",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",
     "stylelint": "^13.11.0",
