@@ -1,0 +1,92 @@
+<template lang="pug">
+v-list.navbar__list.hidden-x
+  template(v-for='(itemOne, index) of navbar.data')
+    template(v-if='itemOne.nested')
+      v-subheader.px-2.text-no-wrap.primary--text(
+        :key='index',
+        style='font-size: 0.7rem'
+      ) {{ itemOne.title }}
+        v-divider(:class='miniVariant ? "d-none" : "ml-6"')
+      template(v-for='itemTwo of itemOne.nested')
+        template(v-if='itemTwo.child')
+          v-list-group(:key='itemTwo.to', :disabled='itemTwo.disabled')
+            template(#activator)
+              v-list-item-action
+                v-tooltip(right, nudge-right='8')
+                  template(#activator='{ on }')
+                    v-icon(v-on='on') {{ itemTwo.action }}
+                  span {{ itemTwo.title }}
+              v-list-item-content
+                v-list-item-title.text-no-wrap(v-text='itemTwo.title')
+            template(v-for='(itemThree, index) of itemTwo.child')
+              v-list-item.justify-start(
+                :key='index',
+                :to='itemThree.to',
+                :disabled='itemThree.disabled',
+                exact,
+                router
+              )
+                v-list-item-action
+                  v-tooltip(v-if='miniVariant', nudge-right='8', right)
+                    template(#activator='{ on }')
+                      | 3
+                      v-icon(v-on='on') {{ itemThree.action }}
+                    span {{ itemThree.title }}
+                v-list-item-content
+                  v-list-item-title(v-text='itemThree.title')
+                v-list-item-action(v-if='!miniVariant')
+                  v-icon {{ itemThree.action }}
+
+        //- REVIEW[epic=client-side] disabled !(if use :to="localeParh('item.to')")
+        template(v-else)
+          v-list-item.justify-start(
+            :key='itemTwo.title',
+            :to='itemTwo.to',
+            :disabled='itemTwo.disabled',
+            exact,
+            router
+          )
+            v-list-item-action
+              v-tooltip(nudge-right='8', right)
+                template(#activator='{ on }')
+                  v-icon(v-on='on') {{ itemTwo.action }}
+                span {{ itemTwo.title }}
+            v-list-item-content
+              v-list-item-title {{ itemTwo.title }}
+
+    //- REVIEW[epic=client-side, seq=1] The client-side rendered virtual DOM tree is not matching server-rendered content. This is likely caused by incorrect HTML markup, for example nesting block-level elements inside <p>, or missing <tbody>. Bailing hydration and performing full client-side render.
+    template(v-else)
+      v-list-item.justify-start(
+        :key='itemOne.id',
+        :to='itemOne.to',
+        exact,
+        router
+      )
+        v-list-item-action
+          v-tooltip(nudge-right='8', right)
+            template(#activator='{ on }')
+              v-icon(v-on='on') {{ itemOne.action }}
+            span {{ itemOne.title }}
+        v-list-item-content
+          v-list-item-title {{ itemOne.title }}
+</template>
+
+<script>
+export default {
+  name: 'NavbarList',
+  props: {
+    miniVariant: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  data: () => ({
+    navbar: [],
+  }),
+  async fetch() {
+    this.navbar = await this.$content(
+      `${this.$i18n.locale}/navbar/side`
+    ).fetch()
+  },
+}
+</script>
