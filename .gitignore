@@ -91,3 +91,7 @@ sw.*
 
 # VS Code
 .vscode
+
+# Tests
+test/
+test_*.*
