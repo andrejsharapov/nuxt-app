@@ -2,6 +2,8 @@ import prism from 'prismjs'
 
 // Include a theme:
 import 'prismjs/themes/prism-coy.css'
+// import 'prismjs/themes/prism-okaidia.css' // dark
+// import 'prismjs/themes/prism-solarizedlight.css' // sepia
 
 // Include the toolbar plugin: (optional)
 import 'prismjs/plugins/toolbar/prism-toolbar'

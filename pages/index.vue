@@ -32,9 +32,9 @@ export default {
 </script>
 
 <style lang="scss">
-.v-card {
-  @include headings(1) {
-    color: red;
-  }
-}
+// .v-card {
+//   @include headings(1) {
+//     color: red;
+//   }
+// }
 </style>
