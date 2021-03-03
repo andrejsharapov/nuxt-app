@@ -22,5 +22,6 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'vue/no-v-html': 'off',
   },
 }

@@ -106,12 +106,14 @@ export default {
     '@nuxt/content',
     'nuxt-i18n',
     '@nuxtjs/google-fonts',
+    '@nuxtjs/markdownit',
   ],
   plugins: [
     { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
+    { src: '~/plugins/markdown-theme-prism' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -153,6 +155,7 @@ export default {
     { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
     { src: '~/assets/sass/theme/dark', lang: 'scss' },
+    { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
   ],
   styleResources: {
     css: '~/assets/css/utils/*.css',
@@ -190,7 +193,24 @@ export default {
     //     /.*-transition/,
     //   ],
   },
-  content: {},
+  content: {
+    liveEdit: true,
+    markdown: {
+      prism: {
+        theme: false,
+      },
+    },
+  },
+  markdownit: {
+    preset: 'default',
+    html: true,
+    linkify: true,
+    breaks: true,
+    use: ['markdown-it-div', 'markdown-it-attrs'],
+    injected: true,
+    xhtmlOut: true,
+    // langPrefix: 'language-',
+  },
   components: [
     '~/components',
     { path: '~/components/layouts/', prefix: 'layout' },
