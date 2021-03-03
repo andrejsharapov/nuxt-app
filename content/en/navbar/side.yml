@@ -35,6 +35,11 @@
                     "title": "Illustrations",
                     "to": "/en/cases/design/illustrations",
                   },
+                  {
+                    "action": $mdiOrderBoolAscendingVariant,
+                    "title": "Quiz",
+                    "to": "/en/cases/design/quiz",
+                  },
                 ],
             },
             {

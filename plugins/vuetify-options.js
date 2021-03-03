@@ -30,6 +30,8 @@ import {
   mdiMicrophoneOutline,
   mdiPodcast,
   mdiAccountGroupOutline,
+  mdiProgressCheck,
+  mdiOrderBoolAscendingVariant,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -78,6 +80,8 @@ export default function ({ app }) {
         mdiMicrophoneOutline,
         mdiPodcast,
         mdiAccountGroupOutline,
+        mdiProgressCheck,
+        mdiOrderBoolAscendingVariant,
       },
     },
   }
