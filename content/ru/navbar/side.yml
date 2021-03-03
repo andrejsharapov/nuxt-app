@@ -35,6 +35,11 @@
                     "title": "Иллюстрации",
                     "to": "/ru/cases/design/illustrations",
                   },
+                  {
+                    "action": $mdiProgressCheck,
+                    "title": "Квиз",
+                    "to": "/ru/cases/design/quiz",
+                  },
                 ],
             },
             {
