@@ -109,7 +109,7 @@ export default {
     '@nuxtjs/markdownit',
   ],
   plugins: [
-    { src: '~/plugins/locales' },
+    // { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
@@ -212,8 +212,9 @@ export default {
     // langPrefix: 'language-',
   },
   components: [
-    '~/components',
-    { path: '~/components/layouts/', prefix: 'layout' },
+    '~/components/',
+    { path: '~/components/', prefix: 's' },
+    { path: '~/components/layouts/', prefix: 's-layout' },
   ],
   build: {
     // analyze: true,

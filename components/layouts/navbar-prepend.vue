@@ -1,6 +1,6 @@
 <template lang="pug">
 .navbar__prepend
-  v-list-item.pa-2(style='min-width: 256px')
+  v-list-item.pa-2(style='min-width: 256px; max-width: 256px')
     v-list-item-avatar.my-0
       AppLogoColor
     v-list-item-content.py-0
