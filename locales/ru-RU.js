@@ -19,4 +19,7 @@ export default {
       name: 'Навигация',
     },
   },
+  projects: {
+    recent: 'Недавние проекты',
+  },
 }
