@@ -5,7 +5,7 @@
     max-width='460',
     offset-y,
     nudge-bottom='12',
-    content-class='shadow-sm'
+    content-class='shadow-lg'
   )
     template(#activator='{ on: menu }')
       v-btn.mx-2(icon, v-on='{ ...menu }')
