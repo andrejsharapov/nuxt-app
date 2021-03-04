@@ -16,6 +16,7 @@
       v-divider(inset)
       v-list-item-group
         v-list-item(exact)
+          v-list-item-title {{ $t("projects.not-found") }}
 </template>
 
 <script>

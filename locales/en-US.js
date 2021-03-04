@@ -21,5 +21,6 @@ export default {
   },
   projects: {
     recent: 'Recent projects',
+    'not-found': 'No completed projects.',
   },
 }
