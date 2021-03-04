@@ -212,8 +212,9 @@ export default {
     // langPrefix: 'language-',
   },
   components: [
-    '~/components',
-    { path: '~/components/layouts/', prefix: 'layout' },
+    '~/components/',
+    { path: '~/components/', prefix: 's' },
+    { path: '~/components/layouts/', prefix: 's-layout' },
   ],
   build: {
     // analyze: true,

@@ -21,6 +21,9 @@ export const appMeta = {
     name: 'sharapov.dev',
     url: 'https://sharapov.dev',
   },
+  author: {
+    job: { status: 0 },
+  },
 }
 
 export const appColors = {

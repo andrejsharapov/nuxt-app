@@ -10,11 +10,11 @@ v-app
     app
   )
     template(#prepend)
-      layout-navbar-prepend(v-if='!clipped', :clipped='clipped')
+      s-layout-navbar-prepend(v-if='!clipped', :clipped='clipped')
     perfect-scrollbar
-      layout-navbar-list(:mini-variant='miniVariant')
+      s-layout-navbar-list(:mini-variant='miniVariant')
     template(#append)
-      layout-navbar-append(
+      s-layout-navbar-append(
         :clipped='clipped',
         :drawer='drawer',
         :mini-variant='miniVariant',
@@ -25,17 +25,36 @@ v-app
 
   //- SECTION[epic=layout] header
   v-app-bar(:clipped-left='clipped', fixed, app)
-    v-app-bar-nav-icon(@click.stop='drawer = !drawer')
-    v-btn(icon, @click.stop='miniVariant = !miniVariant')
-      v-icon mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}
-    v-btn(icon, @click.stop='clipped = !clipped')
-      v-icon mdi-application
-    v-btn(icon, @click.stop='fixed = !fixed')
-      v-icon mdi-minus
-    v-toolbar-title(v-text='title')
+    s-layout-navbar-prepend.ml-n4(
+      v-if='$vuetify.breakpoint.smAndUp && !drawer',
+      :clipped='clipped'
+    )
+    nuxt-link(v-if='$vuetify.breakpoint.xs', :to='localePath("/")')
+      img(
+        src='~/assets/images/app-logo.svg?data',
+        :alt='$t("host.name")',
+        width='40',
+        height='40'
+      )
+    nuxt-link(
+      v-if='$vuetify.breakpoint.smAndUp && drawer && miniVariant && clipped',
+      :to='localePath("/")'
+    )
+      img(
+        src='~/assets/images/app-logo.svg?data',
+        :alt='$t("host.name")',
+        width='40',
+        height='40'
+      )
+    v-tooltip(right)
+      template(#activator='{ on: sidebar }')
+        v-btn(icon, v-on='{ ...sidebar }', @click.stop='drawer = !drawer')
+          v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
+      span {{ $t("site.navbar.name") }}
     v-spacer
-    v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
-      v-icon mdi-menu
+    s-layout-job-offer
+    //- v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
+    //-   v-icon mdi-dots-grid
   //- /SECTION
 
   //- SECTION[epic=layout] main
@@ -62,8 +81,9 @@ v-app
 </template>
 
 <script>
+import { mdiSortVariant, mdiSegment } from '@mdi/js'
+
 export default {
-  name: 'Default',
   data() {
     return {
       clipped: false,
@@ -72,7 +92,8 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js',
+      mdiSortVariant,
+      mdiSegment,
     }
   },
   methods: {
