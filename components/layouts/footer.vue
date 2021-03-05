@@ -20,10 +20,7 @@ v-footer.layout__footer.py-0(
       v-col.d-flex.justify-end(cols='12', md='6')
         v-card-text.py-2.d-flex.justify-center.justify-sm-end
           //- TEST
-          //- COMPONENT SOCIAL ICONS
-          each val in five
-            span= val
-          //- /COMPONENT
+          social-icons
   //- COMPONENT COLOS (ALERT)
   s-layout-footer-color
   //- /COMPONENT
@@ -31,6 +28,7 @@ v-footer.layout__footer.py-0(
 
 <script>
 import { mdiHeart, mdiOpenInNew } from '@mdi/js'
+
 export default {
   name: 'Footer',
   props: {
