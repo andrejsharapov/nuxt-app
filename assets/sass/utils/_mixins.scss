@@ -38,6 +38,7 @@
 @include class-color(warning);
 @include class-color(error);
 
+@include shadow-size(xs);
 @include shadow-size(sm);
 @include shadow-size(md);
 @include shadow-size(lg);
