@@ -10,7 +10,7 @@ v-app
     app
   )
     template(#prepend)
-      s-layout-navbar-prepend(v-if='!clipped', :clipped='clipped')
+      s-layout-navbar-prepend(v-if='!clipped')
     perfect-scrollbar
       s-layout-navbar-list(:mini-variant='miniVariant')
     template(#append)
@@ -26,8 +26,7 @@ v-app
   //- SECTION[epic=layout] header
   v-app-bar(:clipped-left='clipped', fixed, app)
     s-layout-navbar-prepend.ml-n4(
-      v-if='$vuetify.breakpoint.smAndUp && !drawer',
-      :clipped='clipped'
+      v-if='$vuetify.breakpoint.smAndUp && !drawer'
     )
     nuxt-link(v-if='$vuetify.breakpoint.xs', :to='localePath("/")')
       img(
