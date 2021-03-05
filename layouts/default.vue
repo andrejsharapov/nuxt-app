@@ -74,8 +74,7 @@ v-app
   //- /SECTION
 
   //- SECTION[epic=layout] footer
-  v-footer(:absolute='!fixed', app)
-    span &copy; {{ new Date().getFullYear() }}
+  s-layout-footer(:mini-variant='miniVariant', :drawer='drawer')
   //- /SECTION
 
   notifications(group='translation')
