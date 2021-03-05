@@ -1,4 +1,5 @@
 <template lang="pug">
+- var five = [1, 2, 3, 4, 5]
 v-footer.layout__footer.py-0(
   :style='$vuetify.breakpoint.lgAndUp && drawer ? (!miniVariant && $vuetify.breakpoint.lgAndUp ? "padding-left: 255px; padding-right: 0;" : "padding-left: 56px; padding-right: 0;") : "padding: 0"',
   color='transparent'
@@ -18,9 +19,14 @@ v-footer.layout__footer.py-0(
             v-icon(right, color='primary', small) {{ mdiOpenInNew }}
       v-col.d-flex.justify-end(cols='12', md='6')
         v-card-text.py-2.d-flex.justify-center.justify-sm-end
-          each val in 5
+          //- TEST
+          //- COMPONENT SOCIAL ICONS
+          each val in five
             span= val
+          //- /COMPONENT
+  //- COMPONENT COLOS (ALERT)
   s-layout-footer-color
+  //- /COMPONENT
 </template>
 
 <script>
