@@ -51,8 +51,8 @@ v-app
           v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
       span {{ $t("site.navbar.name") }}
     v-spacer
-    s-layout-job-offer
-    s-layout-recent-projects
+    lazy-s-layout-job-offer
+    lazy-s-layout-recent-projects
     //- v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
     //-   v-icon mdi-dots-grid
   //- /SECTION

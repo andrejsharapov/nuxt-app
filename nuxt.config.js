@@ -148,6 +148,7 @@ export default {
         'text-content': 'off',
         'prefer-native-element': 'off',
         'element-permitted-content': 'off',
+        'wcag/h30': 'off',
       },
     },
   },
@@ -212,8 +213,8 @@ export default {
     // langPrefix: 'language-',
   },
   components: [
-    '~/components/',
-    { path: '~/components/', prefix: 's' },
+    { path: '~/components/components/', prefix: 's' },
+    { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
   ],
   build: {

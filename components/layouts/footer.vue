@@ -20,7 +20,7 @@ v-footer.layout__footer.py-0(
       v-col.d-flex.justify-end(cols='12', md='6')
         v-card-text.py-2.d-flex.justify-center.justify-sm-end
           //- TEST
-          social-icons
+          lazy-s-social-icons
   //- COMPONENT COLOS (ALERT)
   s-layout-footer-color
   //- /COMPONENT

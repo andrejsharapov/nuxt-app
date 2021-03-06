@@ -1,108 +1,108 @@
 data:
-  - action: "$mdiHomeRoof"
+  - action: '$mdiHomeRoof'
     title: Home
-    to: "/en"
-  - action: "$mdiFolderOpen"
+    to: '/en'
+  - action: '$mdiFolderOpen'
     active: false
     nested:
-      - action: "$mdiPaletteOutline"
+      - action: '$mdiPaletteOutline'
         child:
-          - action: "$mdiCellphoneLink"
+          - action: '$mdiCellphoneLink'
             title: Website
-            to: "/en/cases/design/websites"
-          - action: "$mdiCellphoneCog"
+            to: '/en/cases/design/websites'
+          - action: '$mdiCellphoneCog'
             title: Apps
-            to: "/en/cases/design/apps"
-          - action: "$mdiVectorRadius"
+            to: '/en/cases/design/apps'
+          - action: '$mdiVectorRadius'
             title: Logos
-            to: "/en/cases/design/logo"
-          - action: "$mdiVectorCurve"
+            to: '/en/cases/design/logo'
+          - action: '$mdiVectorCurve'
             title: Illustrations
-            to: "/en/cases/design/illustrations"
-          - action: "$mdiOrderBoolAscendingVariant"
+            to: '/en/cases/design/illustrations'
+          - action: '$mdiOrderBoolAscendingVariant'
             title: Quiz
-            to: "/en/cases/design/quiz"
+            to: '/en/cases/design/quiz'
         title: Web Design
-        to: "/en/cases/design"
-      - action: "$mdiDevices"
+        to: '/en/cases/design'
+      - action: '$mdiDevices'
         child:
-          - action: "$mdiResponsive"
+          - action: '$mdiResponsive'
             title: Website
-            to: "/en/cases/dev/websites"
-          - action: "$mdiTabletCellphone"
+            to: '/en/cases/dev/websites'
+          - action: '$mdiTabletCellphone'
             title: Apps
-            to: "/en/cases/dev/apps"
-          - action: "$mdiVectorBezier"
+            to: '/en/cases/dev/apps'
+          - action: '$mdiVectorBezier'
             title: HTML5 Banners
-            to: "/en/cases/dev/banners"
+            to: '/en/cases/dev/banners'
         title: Development
-        to: "/en/cases/dev"
-      - action: "$mdiDotsHorizontal"
+        to: '/en/cases/dev'
+      - action: '$mdiDotsHorizontal'
         child:
-          - action: "$mdiDraw"
+          - action: '$mdiDraw'
             title: Drawings
-            to: "/en/works/drawings"
-          - action: "$mdiCodeJson"
+            to: '/en/works/drawings'
+          - action: '$mdiCodeJson'
             title: Pure Code
-            to: "/en/works/coding"
-          - action: "$mdiVectorPolylineEdit"
+            to: '/en/works/coding'
+          - action: '$mdiVectorPolylineEdit'
             disabled: true
             title: Photoshop
-            to: "/en/pricing/photoshop"
+            to: '/en/pricing/photoshop'
         title: More
     title: Cases
-    to: "/en/cases"
-  - action: "$mdiScriptText"
+    to: '/en/cases'
+  - action: '$mdiScriptText'
     nested:
-      - action: "$mdiPaletteSwatchOutline"
+      - action: '$mdiPaletteSwatchOutline'
         disabled: true
         title: Web Design
-        to: "/en/pricing/design"
-      - action: "$vsCode"
+        to: '/en/pricing/design'
+      - action: '$vsCode'
         disabled: true
         title: Development
-        to: "/en/pricing/dev"
+        to: '/en/pricing/dev'
     title: Pricing
-    to: "/en/pricing"
-  - action: "$mdiBrain"
+    to: '/en/pricing'
+  - action: '$mdiBrain'
     nested:
-      - action: "$mdiBookOpenPageVariantOutline"
+      - action: '$mdiBookOpenPageVariantOutline'
         title: Articles
-        to: "/en/articles"
+        to: '/en/articles'
     title: Blog
-    to: "#"
-  - action: "$mdiAccount"
+    to: '#'
+  - action: '$mdiAccount'
     nested:
-      - action: "$mdiFileCertificateOutline"
+      - action: '$mdiFileCertificateOutline'
         title: Certificates
-        to: "/en/certificates"
-      - action: "$mdiTimelineOutline"
+        to: '/en/certificates'
+      - action: '$mdiTimelineOutline'
         title: Timeline
-        to: "/en/timeline"
-      - action: "$mdiLightbulbOnOutline"
+        to: '/en/timeline'
+      - action: '$mdiLightbulbOnOutline'
         title: Projects
-        to: "/en/projects"
-      - action: "$mdiContactsOutline"
+        to: '/en/projects'
+      - action: '$mdiContactsOutline'
         title: Contact
-        to: "/en/contact"
-      - action: "$mdiDotsHorizontal"
+        to: '/en/contact'
+      - action: '$mdiDotsHorizontal'
         child:
-          - action: "$mdiVideoWirelessOutline"
+          - action: '$mdiVideoWirelessOutline'
             disabled: true
             title: Streams
-            to: "/en/guest-live-streams"
-          - action: "$mdiMicrophoneOutline"
+            to: '/en/guest-live-streams'
+          - action: '$mdiMicrophoneOutline'
             disabled: true
             title: Interviews
-            to: "/en/interviews"
-          - action: "$mdiPodcast"
+            to: '/en/interviews'
+          - action: '$mdiPodcast'
             disabled: true
             title: Podcasts
-            to: "/en/podcasts"
-          - action: "$mdiAccountGroupOutline"
+            to: '/en/podcasts'
+          - action: '$mdiAccountGroupOutline'
             disabled: true
             title: Conferences
-            to: "/en/conferences"
+            to: '/en/conferences'
         title: More
-        to: "#"
+        to: '#'
     title: Author

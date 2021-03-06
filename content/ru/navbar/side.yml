@@ -1,108 +1,108 @@
 data:
-  - action: "$mdiHomeRoof"
+  - action: '$mdiHomeRoof'
     title: Главная
-    to: "/ru"
-  - action: "$mdiFolderOpen"
+    to: '/ru'
+  - action: '$mdiFolderOpen'
     active: false
     nested:
-      - action: "$mdiPaletteOutline"
+      - action: '$mdiPaletteOutline'
         child:
-          - action: "$mdiCellphoneLink"
+          - action: '$mdiCellphoneLink'
             title: Сайты
-            to: "/ru/cases/design/websites"
-          - action: "$mdiCellphoneCog"
+            to: '/ru/cases/design/websites'
+          - action: '$mdiCellphoneCog'
             title: Приложения
-            to: "/ru/cases/design/apps"
-          - action: "$mdiVectorRadius"
+            to: '/ru/cases/design/apps'
+          - action: '$mdiVectorRadius'
             title: Логотипы
-            to: "/ru/cases/design/logo"
-          - action: "$mdiVectorCurve"
+            to: '/ru/cases/design/logo'
+          - action: '$mdiVectorCurve'
             title: Иллюстрации
-            to: "/ru/cases/design/illustrations"
-          - action: "$mdiProgressCheck"
+            to: '/ru/cases/design/illustrations'
+          - action: '$mdiProgressCheck'
             title: Квиз
-            to: "/ru/cases/design/quiz"
+            to: '/ru/cases/design/quiz'
         title: Веб-дизайн
-        to: "/ru/cases/design"
-      - action: "$mdiDevices"
+        to: '/ru/cases/design'
+      - action: '$mdiDevices'
         child:
-          - action: "$mdiResponsive"
+          - action: '$mdiResponsive'
             title: Сайты
-            to: "/ru/cases/dev/websites"
-          - action: "$mdiTabletCellphone"
+            to: '/ru/cases/dev/websites'
+          - action: '$mdiTabletCellphone'
             title: Приложения
-            to: "/ru/cases/dev/apps"
-          - action: "$mdiVectorBezier"
+            to: '/ru/cases/dev/apps'
+          - action: '$mdiVectorBezier'
             title: HTML5 Баннеры
-            to: "/ru/cases/dev/banners"
+            to: '/ru/cases/dev/banners'
         title: Разработка
-        to: "/ru/cases/dev"
-      - action: "$mdiDotsHorizontal"
+        to: '/ru/cases/dev'
+      - action: '$mdiDotsHorizontal'
         child:
-          - action: "$mdiDraw"
+          - action: '$mdiDraw'
             title: Рисунки
-            to: "/ru/works/drawings"
-          - action: "$mdiCodeJson"
+            to: '/ru/works/drawings'
+          - action: '$mdiCodeJson'
             title: Pure Code
-            to: "/ru/works/coding"
-          - action: "$mdiVectorPolylineEdit"
+            to: '/ru/works/coding'
+          - action: '$mdiVectorPolylineEdit'
             disabled: true
             title: Фотошоп
-            to: "/ru/pricing/photoshop"
+            to: '/ru/pricing/photoshop'
         title: Еще
     title: Кейсы
-    to: "/ru/cases"
-  - action: "$mdiScriptText"
+    to: '/ru/cases'
+  - action: '$mdiScriptText'
     nested:
-      - action: "$mdiPaletteSwatchOutline"
+      - action: '$mdiPaletteSwatchOutline'
         disabled: true
         title: Веб-дизайн
-        to: "/ru/pricing/design"
-      - action: "$vsCode"
+        to: '/ru/pricing/design'
+      - action: '$vsCode'
         disabled: true
         title: Разработка
-        to: "/ru/pricing/dev"
+        to: '/ru/pricing/dev'
     title: Цены
-    to: "/ru/pricing"
-  - action: "$mdiBrain"
+    to: '/ru/pricing'
+  - action: '$mdiBrain'
     nested:
-      - action: "$mdiBookOpenPageVariantOutline"
+      - action: '$mdiBookOpenPageVariantOutline'
         title: Статьи
-        to: "/ru/articles"
+        to: '/ru/articles'
     title: Блог
-    to: "#"
-  - action: "$mdiAccount"
+    to: '#'
+  - action: '$mdiAccount'
     nested:
-      - action: "$mdiFileCertificateOutline"
+      - action: '$mdiFileCertificateOutline'
         title: Сертификаты
-        to: "/ru/certificates"
-      - action: "$mdiTimelineOutline"
+        to: '/ru/certificates'
+      - action: '$mdiTimelineOutline'
         title: Timeline
-        to: "/ru/timeline"
-      - action: "$mdiLightbulbOnOutline"
+        to: '/ru/timeline'
+      - action: '$mdiLightbulbOnOutline'
         title: Проекты
-        to: "/ru/projects"
-      - action: "$mdiContactsOutline"
+        to: '/ru/projects'
+      - action: '$mdiContactsOutline'
         title: Контакты
-        to: "/ru/contact"
-      - action: "$mdiDotsHorizontal"
+        to: '/ru/contact'
+      - action: '$mdiDotsHorizontal'
         child:
-          - action: "$mdiVideoWirelessOutline"
+          - action: '$mdiVideoWirelessOutline'
             disabled: true
             title: Стримы
-            to: "/ru/guest-live-streams"
-          - action: "$mdiMicrophoneOutline"
+            to: '/ru/guest-live-streams'
+          - action: '$mdiMicrophoneOutline'
             disabled: true
             title: Интервью
-            to: "/ru/interviews"
-          - action: "$mdiPodcast"
+            to: '/ru/interviews'
+          - action: '$mdiPodcast'
             disabled: true
             title: Подскасты
-            to: "/ru/podcasts"
-          - action: "$mdiAccountGroupOutline"
+            to: '/ru/podcasts'
+          - action: '$mdiAccountGroupOutline'
             disabled: true
             title: Конференции
-            to: "/ru/conferences"
+            to: '/ru/conferences'
         title: Еще
-        to: "#"
+        to: '#'
     title: Автор

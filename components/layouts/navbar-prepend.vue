@@ -4,7 +4,7 @@
     v-list-item-avatar.my-0
       AppLogoColor
     v-list-item-content.py-0
-      h3.font-weight-medium.ma-0.text-wo-wrap
+      h1.font-weight-medium.ma-0.text-wo-wrap
         span.text-uppercase.primary--text {{ $t("host.name") }}
       v-card-subtitle.pa-0.grey--text.text-lowercase {{ $t("author.name") }}
 </template>
