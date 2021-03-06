@@ -109,7 +109,6 @@ export default {
     '@nuxtjs/markdownit',
   ],
   plugins: [
-    // { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
@@ -148,6 +147,7 @@ export default {
         'text-content': 'off',
         'prefer-native-element': 'off',
         'element-permitted-content': 'off',
+        'wcag/h30': 'off',
       },
     },
   },
@@ -213,7 +213,9 @@ export default {
   },
   components: [
     '~/components/',
-    { path: '~/components/', prefix: 's' },
+    { path: '~/components/components/', prefix: 's' },
+    { path: '~/components/fishes/', prefix: 's-fish' },
+    { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
   ],
   build: {

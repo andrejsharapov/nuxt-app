@@ -18,6 +18,17 @@ export default {
     navbar: {
       name: 'Navigation',
     },
+    page: {
+      construction: 'This page is under construction',
+    },
+  },
+  btn: {
+    go: {
+      to: 'Go to',
+      back: 'Go back',
+      home: 'Return home',
+    },
+    'report-problem': 'Report problem',
   },
   projects: {
     recent: 'Recent projects',
