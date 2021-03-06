@@ -65,7 +65,7 @@ v-app
         v-col
           .pa-4.fill-height.d-flex.justify-center.align-center.flex-column.text-center
             lazy-s-fish-construction(:width='250', :height='250')
-            h2.text-h6.text-sm-h4.text-lg-h3 {{ $t("site.page.construction") }}
+            .h2.text-h6.text-sm-h4.text-lg-h3 {{ $t("site.page.construction") }}
             .d-flex.flex-column.flex-sm-row
               .mt-4.mx-sm-4
                 v-btn.shadow-base(
