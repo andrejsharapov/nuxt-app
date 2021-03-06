@@ -109,5 +109,6 @@
   "eslint.packageManager": "yarn",
   "stylusSupremacy.insertBraces": false,
   "stylusSupremacy.insertColons": false,
-  "stylusSupremacy.insertSemicolons": false
+  "stylusSupremacy.insertSemicolons": false,
+  "remote.SSH.connectTimeout": 30
 }

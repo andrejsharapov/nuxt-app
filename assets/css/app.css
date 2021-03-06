@@ -115,26 +115,6 @@ body {
   }
 }
 
-.shadow {
-  &-base {
-    box-shadow: var(--shadow-base) !important;
-
-    &-up {
-      box-shadow: var(--shadow-base) !important;
-      transition: all 200ms linear;
-
-      &:hover {
-        transform: translateY(-0.35em);
-        box-shadow: var(--shadow-down) !important;
-      }
-    }
-  }
-
-  &-up {
-    box-shadow: var(--shadow-down) !important;
-  }
-}
-
 .text {
   &-break-word {
     word-break: break-word !important;

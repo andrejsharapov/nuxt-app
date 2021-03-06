@@ -60,7 +60,28 @@ v-app
 
   //- SECTION[epic=layout] main
   v-main
-    nuxt
+    v-container
+      v-row
+        v-col
+          .pa-4.fill-height.d-flex.justify-center.align-center.flex-column.text-center
+            lazy-s-fish-construction(:width='250', :height='250')
+            h2.text-h6.text-sm-h4.text-lg-h3 {{ $t("site.page.construction") }}
+            .d-flex.flex-column.flex-sm-row
+              .mt-4.mx-sm-4
+                v-btn.shadow-base(
+                  :to='localePath("/")',
+                  :block='$vuetify.breakpoint.xs',
+                  x-large,
+                  color='primary'
+                ) {{ $t("btn.go.home") }}
+              .mt-4.mx-sm-4
+                v-btn(
+                  :block='$vuetify.breakpoint.xs',
+                  text,
+                  x-large,
+                  color='secondary',
+                  @click='$router.back()'
+                ) {{ $t("btn.go.back") }}
   //- /SECTION
 
   //- SECTION[epic=layout] navbar-right
