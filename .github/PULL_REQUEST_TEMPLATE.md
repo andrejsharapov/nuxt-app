@@ -6,7 +6,9 @@
 
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
 
-- [ ]
+- [x] New feature
+- [ ] Bugfix
+- [ ] Breaking change
 
 ## Description
 
