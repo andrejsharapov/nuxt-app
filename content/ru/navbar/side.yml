@@ -1,193 +1,108 @@
-{
-  "data":
-    [
-      { "action": "$mdiHomeRoof", "title": "Главная", "to": "/ru" },
-      {
-        "action": $mdiFolderOpen,
-        "title": "Кейсы",
-        "to": "/ru/cases",
-        "active": false,
-        "nested":
-          [
-            {
-              "action": "$mdiPaletteOutline",
-              "title": "Веб-дизайн",
-              "to": "/ru/cases/design",
-              "child":
-                [
-                  {
-                    "action": $mdiCellphoneLink,
-                    "title": "Сайты",
-                    "to": "/ru/cases/design/websites",
-                  },
-                  {
-                    "action": "$mdiCellphoneCog",
-                    "title": "Приложения",
-                    "to": "/ru/cases/design/apps",
-                  },
-                  {
-                    "action": "$mdiVectorRadius",
-                    "title": "Логотипы",
-                    "to": "/ru/cases/design/logo",
-                  },
-                  {
-                    "action": "$mdiVectorCurve",
-                    "title": "Иллюстрации",
-                    "to": "/ru/cases/design/illustrations",
-                  },
-                  {
-                    "action": $mdiProgressCheck,
-                    "title": "Квиз",
-                    "to": "/ru/cases/design/quiz",
-                  },
-                ],
-            },
-            {
-              "action": "$mdiDevices",
-              "title": "Разработка",
-              "to": "/ru/cases/dev",
-              "child":
-                [
-                  {
-                    "action": "$mdiResponsive",
-                    "title": "Сайты",
-                    "to": "/ru/cases/dev/websites",
-                  },
-                  {
-                    "action": "$mdiTabletCellphone",
-                    "title": "Приложения",
-                    "to": "/ru/cases/dev/apps",
-                  },
-                  {
-                    "action": "$mdiVectorBezier",
-                    "title": "HTML5 Баннеры",
-                    "to": "/ru/cases/dev/banners",
-                  },
-                ],
-            },
-            {
-              "action": "$mdiDotsHorizontal",
-              "title": "Еще",
-              "child":
-                [
-                  {
-                    "action": "$mdiDraw",
-                    "title": "Рисунки",
-                    "to": "/ru/works/drawings",
-                  },
-                  {
-                    "action": "$mdiCodeJson",
-                    "title": "Pure Code",
-                    "to": "/ru/works/coding",
-                  },
-                ],
-            },
-          ],
-      },
-      {
-        "action": "$mdiScriptText",
-        "title": "Цены",
-        "to": "/ru/pricing",
-        "nested":
-          [
-            {
-              "action": $mdiPaletteSwatchOutline,
-              "title": "Веб-дизайн",
-              "to": "/ru/pricing/design",
-              "disabled": true,
-            },
-            {
-              "action": "$vsCode",
-              "title": "Разработка",
-              "to": "/ru/pricing/dev",
-              "disabled": true,
-            },
-            {
-              "action": "$mdiDotsHorizontal",
-              "title": "Еще",
-              "child":
-                [
-                  {
-                    "action": $mdiVectorPolylineEdit,
-                    "title": "Фотошоп",
-                    "to": "/ru/pricing/photoshop",
-                    "disabled": true,
-                  },
-                ],
-            },
-          ],
-      },
-      {
-        "action": $mdiBrain,
-        "title": "Блог",
-        "to": "/ru#",
-        "nested":
-          [
-            {
-              "action": $mdiBookOpenPageVariantOutline,
-              "title": "Статьи",
-              "to": "/ru/articles",
-            },
-          ],
-      },
-      {
-        "action": $mdiAccount,
-        "title": "Автор",
-        "nested":
-          [
-            {
-              "action": $mdiFileCertificateOutline,
-              "title": "Сертификаты",
-              "to": "/ru/certificates",
-            },
-            {
-              "action": $mdiTimelineOutline,
-              "title": "Timeline",
-              "to": "/ru/timeline",
-            },
-            {
-              "action": $mdiLightbulbOnOutline,
-              "title": "Проекты",
-              "to": "/ru/projects",
-            },
-            {
-              "action": $mdiContactsOutline,
-              "title": "Контакты",
-              "to": "/ru/contact",
-            },
-            {
-              "action": "$mdiDotsHorizontal",
-              "title": "Еще",
-              "to": "/ru#",
-              "child":
-                [
-                  {
-                    "action": $mdiVideoWirelessOutline,
-                    "title": "Стримы",
-                    "to": "/ru/guest-live-streams",
-                    "disabled": true,
-                  },
-                  {
-                    "action": $mdiMicrophoneOutline,
-                    "title": "Интервью",
-                    "to": "/ru/interviews",
-                    "disabled": true,
-                  },
-                  {
-                    "action": $mdiPodcast,
-                    "title": "Подскасты",
-                    "to": "/ru/podcasts",
-                    "disabled": true,
-                  },
-                  {
-                    "action": $mdiAccountGroupOutline,
-                    "title": "Конференции",
-                    "to": "/ru/conferences",
-                    "disabled": true,
-                  },
-                ],
-            },
-          ],
-      },
-    ],
-}
+data:
+  - action: '$mdiHomeRoof'
+    title: Главная
+    to: '/ru'
+  - action: '$mdiFolderOpen'
+    active: false
+    nested:
+      - action: '$mdiPaletteOutline'
+        child:
+          - action: '$mdiCellphoneLink'
+            title: Сайты
+            to: '/ru/cases/design/websites'
+          - action: '$mdiCellphoneCog'
+            title: Приложения
+            to: '/ru/cases/design/apps'
+          - action: '$mdiVectorRadius'
+            title: Логотипы
+            to: '/ru/cases/design/logo'
+          - action: '$mdiVectorCurve'
+            title: Иллюстрации
+            to: '/ru/cases/design/illustrations'
+          - action: '$mdiProgressCheck'
+            title: Квиз
+            to: '/ru/cases/design/quiz'
+        title: Веб-дизайн
+        to: '/ru/cases/design'
+      - action: '$mdiDevices'
+        child:
+          - action: '$mdiResponsive'
+            title: Сайты
+            to: '/ru/cases/dev/websites'
+          - action: '$mdiTabletCellphone'
+            title: Приложения
+            to: '/ru/cases/dev/apps'
+          - action: '$mdiVectorBezier'
+            title: HTML5 Баннеры
+            to: '/ru/cases/dev/banners'
+        title: Разработка
+        to: '/ru/cases/dev'
+      - action: '$mdiDotsHorizontal'
+        child:
+          - action: '$mdiDraw'
+            title: Рисунки
+            to: '/ru/works/drawings'
+          - action: '$mdiCodeJson'
+            title: Pure Code
+            to: '/ru/works/coding'
+          - action: '$mdiVectorPolylineEdit'
+            disabled: true
+            title: Фотошоп
+            to: '/ru/pricing/photoshop'
+        title: Еще
+    title: Кейсы
+    to: '/ru/cases'
+  - action: '$mdiScriptText'
+    nested:
+      - action: '$mdiPaletteSwatchOutline'
+        disabled: true
+        title: Веб-дизайн
+        to: '/ru/pricing/design'
+      - action: '$vsCode'
+        disabled: true
+        title: Разработка
+        to: '/ru/pricing/dev'
+    title: Цены
+    to: '/ru/pricing'
+  - action: '$mdiBrain'
+    nested:
+      - action: '$mdiBookOpenPageVariantOutline'
+        title: Статьи
+        to: '/ru/articles'
+    title: Блог
+    to: '#'
+  - action: '$mdiAccount'
+    nested:
+      - action: '$mdiFileCertificateOutline'
+        title: Сертификаты
+        to: '/ru/certificates'
+      - action: '$mdiTimelineOutline'
+        title: Timeline
+        to: '/ru/timeline'
+      - action: '$mdiLightbulbOnOutline'
+        title: Проекты
+        to: '/ru/projects'
+      - action: '$mdiContactsOutline'
+        title: Контакты
+        to: '/ru/contact'
+      - action: '$mdiDotsHorizontal'
+        child:
+          - action: '$mdiVideoWirelessOutline'
+            disabled: true
+            title: Стримы
+            to: '/ru/guest-live-streams'
+          - action: '$mdiMicrophoneOutline'
+            disabled: true
+            title: Интервью
+            to: '/ru/interviews'
+          - action: '$mdiPodcast'
+            disabled: true
+            title: Подскасты
+            to: '/ru/podcasts'
+          - action: '$mdiAccountGroupOutline'
+            disabled: true
+            title: Конференции
+            to: '/ru/conferences'
+        title: Еще
+        to: '#'
+    title: Автор
