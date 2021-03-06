@@ -1,193 +1,108 @@
-{
-  "data":
-    [
-      { "action": "$mdiHomeRoof", "title": "Home", "to": "/en" },
-      {
-        "action": "$mdiFolderOpen",
-        "title": "Cases",
-        "to": "/en/cases",
-        "active": false,
-        "nested":
-          [
-            {
-              "action": "$mdiPaletteOutline",
-              "title": "Web Design",
-              "to": "/en/cases/design",
-              "child":
-                [
-                  {
-                    "action": "$mdiCellphoneLink",
-                    "title": "Website",
-                    "to": "/en/cases/design/websites",
-                  },
-                  {
-                    "action": "$mdiCellphoneCog",
-                    "title": "Apps",
-                    "to": "/en/cases/design/apps",
-                  },
-                  {
-                    "action": "$mdiVectorRadius",
-                    "title": "Logos",
-                    "to": "/en/cases/design/logo",
-                  },
-                  {
-                    "action": "$mdiVectorCurve",
-                    "title": "Illustrations",
-                    "to": "/en/cases/design/illustrations",
-                  },
-                  {
-                    "action": $mdiOrderBoolAscendingVariant,
-                    "title": "Quiz",
-                    "to": "/en/cases/design/quiz",
-                  },
-                ],
-            },
-            {
-              "action": "$mdiDevices",
-              "title": "Development",
-              "to": "/en/cases/dev",
-              "child":
-                [
-                  {
-                    "action": "$mdiResponsive",
-                    "title": "Website",
-                    "to": "/en/cases/dev/websites",
-                  },
-                  {
-                    "action": "$mdiTabletCellphone",
-                    "title": "Apps",
-                    "to": "/en/cases/dev/apps",
-                  },
-                  {
-                    "action": "$mdiVectorBezier",
-                    "title": "HTML5 Banners",
-                    "to": "/en/cases/dev/banners",
-                  },
-                ],
-            },
-            {
-              "action": "$mdiDotsHorizontal",
-              "title": "More",
-              "child":
-                [
-                  {
-                    "action": "$mdiDraw",
-                    "title": "Drawings",
-                    "to": "/en/works/drawings",
-                  },
-                  {
-                    "action": "$mdiCodeJson",
-                    "title": "Pure Code",
-                    "to": "/en/works/coding",
-                  },
-                ],
-            },
-          ],
-      },
-      {
-        "action": "$mdiScriptText",
-        "title": "Pricing",
-        "to": "/en/pricing",
-        "nested":
-          [
-            {
-              "action": "$mdiPaletteSwatchOutline",
-              "title": "Web Design",
-              "to": "/en/pricing/design",
-              "disabled": true,
-            },
-            {
-              "action": "$vsCode",
-              "title": "Development",
-              "to": "/en/pricing/dev",
-              "disabled": true,
-            },
-            {
-              "action": "$mdiDotsHorizontal",
-              "title": "More",
-              "child":
-                [
-                  {
-                    "action": "$mdiVectorPolylineEdit",
-                    "title": "Photoshop",
-                    "to": "/en/pricing/photoshop",
-                    "disabled": true,
-                  },
-                ],
-            },
-          ],
-      },
-      {
-        "action": "$mdiBrain",
-        "title": "Blog",
-        "to": "#",
-        "nested":
-          [
-            {
-              "action": "$mdiBookOpenPageVariantOutline",
-              "title": "Articles",
-              "to": "/en/articles",
-            },
-          ],
-      },
-      {
-        "action": "$mdiAccount",
-        "title": "Author",
-        "nested":
-          [
-            {
-              "action": "$mdiFileCertificateOutline",
-              "title": "Certificates",
-              "to": "/en/certificates",
-            },
-            {
-              "action": "$mdiTimelineOutline",
-              "title": "Timeline",
-              "to": "/en/timeline",
-            },
-            {
-              "action": "$mdiLightbulbOnOutline",
-              "title": "Projects",
-              "to": "/en/projects",
-            },
-            {
-              "action": "$mdiContactsOutline",
-              "title": "Contact",
-              "to": "/en/contact",
-            },
-            {
-              "action": "$mdiDotsHorizontal",
-              "title": "More",
-              "to": "#",
-              "child":
-                [
-                  {
-                    "action": "$mdiVideoWirelessOutline",
-                    "title": "Streams",
-                    "to": "/en/guest-live-streams",
-                    "disabled": true,
-                  },
-                  {
-                    "action": "$mdiMicrophoneOutline",
-                    "title": "Interviews",
-                    "to": "/en/interviews",
-                    "disabled": true,
-                  },
-                  {
-                    "action": "$mdiPodcast",
-                    "title": "Podcasts",
-                    "to": "/en/podcasts",
-                    "disabled": true,
-                  },
-                  {
-                    "action": "$mdiAccountGroupOutline",
-                    "title": "Conferences",
-                    "to": "/en/conferences",
-                    "disabled": true,
-                  },
-                ],
-            },
-          ],
-      },
-    ],
-}
+data:
+  - action: "$mdiHomeRoof"
+    title: Home
+    to: "/en"
+  - action: "$mdiFolderOpen"
+    active: false
+    nested:
+      - action: "$mdiPaletteOutline"
+        child:
+          - action: "$mdiCellphoneLink"
+            title: Website
+            to: "/en/cases/design/websites"
+          - action: "$mdiCellphoneCog"
+            title: Apps
+            to: "/en/cases/design/apps"
+          - action: "$mdiVectorRadius"
+            title: Logos
+            to: "/en/cases/design/logo"
+          - action: "$mdiVectorCurve"
+            title: Illustrations
+            to: "/en/cases/design/illustrations"
+          - action: "$mdiOrderBoolAscendingVariant"
+            title: Quiz
+            to: "/en/cases/design/quiz"
+        title: Web Design
+        to: "/en/cases/design"
+      - action: "$mdiDevices"
+        child:
+          - action: "$mdiResponsive"
+            title: Website
+            to: "/en/cases/dev/websites"
+          - action: "$mdiTabletCellphone"
+            title: Apps
+            to: "/en/cases/dev/apps"
+          - action: "$mdiVectorBezier"
+            title: HTML5 Banners
+            to: "/en/cases/dev/banners"
+        title: Development
+        to: "/en/cases/dev"
+      - action: "$mdiDotsHorizontal"
+        child:
+          - action: "$mdiDraw"
+            title: Drawings
+            to: "/en/works/drawings"
+          - action: "$mdiCodeJson"
+            title: Pure Code
+            to: "/en/works/coding"
+          - action: "$mdiVectorPolylineEdit"
+            disabled: true
+            title: Photoshop
+            to: "/en/pricing/photoshop"
+        title: More
+    title: Cases
+    to: "/en/cases"
+  - action: "$mdiScriptText"
+    nested:
+      - action: "$mdiPaletteSwatchOutline"
+        disabled: true
+        title: Web Design
+        to: "/en/pricing/design"
+      - action: "$vsCode"
+        disabled: true
+        title: Development
+        to: "/en/pricing/dev"
+    title: Pricing
+    to: "/en/pricing"
+  - action: "$mdiBrain"
+    nested:
+      - action: "$mdiBookOpenPageVariantOutline"
+        title: Articles
+        to: "/en/articles"
+    title: Blog
+    to: "#"
+  - action: "$mdiAccount"
+    nested:
+      - action: "$mdiFileCertificateOutline"
+        title: Certificates
+        to: "/en/certificates"
+      - action: "$mdiTimelineOutline"
+        title: Timeline
+        to: "/en/timeline"
+      - action: "$mdiLightbulbOnOutline"
+        title: Projects
+        to: "/en/projects"
+      - action: "$mdiContactsOutline"
+        title: Contact
+        to: "/en/contact"
+      - action: "$mdiDotsHorizontal"
+        child:
+          - action: "$mdiVideoWirelessOutline"
+            disabled: true
+            title: Streams
+            to: "/en/guest-live-streams"
+          - action: "$mdiMicrophoneOutline"
+            disabled: true
+            title: Interviews
+            to: "/en/interviews"
+          - action: "$mdiPodcast"
+            disabled: true
+            title: Podcasts
+            to: "/en/podcasts"
+          - action: "$mdiAccountGroupOutline"
+            disabled: true
+            title: Conferences
+            to: "/en/conferences"
+        title: More
+        to: "#"
+    title: Author
