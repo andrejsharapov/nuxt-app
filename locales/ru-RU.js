@@ -18,6 +18,17 @@ export default {
     navbar: {
       name: 'Навигация',
     },
+    page: {
+      construction: 'Страница находится в разработке',
+    },
+  },
+  btn: {
+    go: {
+      to: 'Перейти',
+      back: 'Назад',
+      home: 'На главную',
+    },
+    'report-problem': 'Сообщить о проблеме',
   },
   projects: {
     recent: 'Недавние проекты',

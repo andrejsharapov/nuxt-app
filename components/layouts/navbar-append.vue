@@ -29,10 +29,10 @@
             v-list-item-title {{ $t("site.navbar.name") }}
 
         //- btn #3
-        lang-switcher
+        lazy-s-lang-switcher
 
         //- btn #4
-        color-mode-picker
+        lazy-s-color-mode-picker
   //- #2
   v-spacer
 </template>
