@@ -3,7 +3,6 @@ data:
     title: Главная
     to: '/ru'
   - action: '$mdiFolderOpen'
-    active: false
     nested:
       - action: '$mdiPaletteOutline'
         child:
@@ -48,7 +47,7 @@ data:
           - action: '$mdiVectorPolylineEdit'
             disabled: true
             title: Фотошоп
-            to: '/ru/pricing/photoshop'
+            to: '/ru/works/photoshop'
         title: Еще
     title: Кейсы
     to: '/ru/cases'
@@ -106,3 +105,4 @@ data:
         title: Еще
         to: '#'
     title: Автор
+    to: '#'
