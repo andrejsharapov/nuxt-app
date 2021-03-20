@@ -33,6 +33,11 @@ export default {
     },
     'report-problem': 'Report problem',
   },
+  poll: {
+    title: 'UX Poll',
+    message: 'Take the poll and you will help make the site better for you.',
+    btn: 'Take a poll',
+  },
   projects: {
     recent: 'Recent projects',
     'not-found': 'No completed projects.',

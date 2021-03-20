@@ -9,6 +9,40 @@ export default {
   ssr: false,
   telemetry: true,
   loading: '~/components/loading.vue',
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/vuetify',
+    '@nuxt/components',
+    '@nuxtjs/html-validator',
+    '@nuxtjs/svg',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/color-mode',
+    // 'nuxt-purgecss',
+  ],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    '@nuxt/content',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/markdownit',
+    'nuxt-i18n',
+  ],
+  plugins: [
+    { src: '~/plugins/vue-notifications-server', mode: 'server' },
+    { src: '~/plugins/vue-notifications-client', mode: 'client' },
+    { src: '~/plugins/vue-perfect-scrollbar' },
+    { src: '~/plugins/markdown-theme-prism' },
+  ],
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    // defaultAssets: false,
+    optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
+  },
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+  },
   head: {
     title: 'nuxt-app',
     meta: [
@@ -40,61 +74,26 @@ export default {
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },
     ],
   },
-  googleFonts: {
-    prefetch: true,
-    families: {
-      Commissioner: [300, 400, 500, 700, 900],
-      Manrope: [400, 500, 700],
-      'Montserrat+Alternates': {
-        wght: [400, 500, 700, 900],
-        ital: [400],
-      },
-      Raleway: {
-        wght: [300, 400, 500, 700, 900],
-        ital: [400, 500],
-      },
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'En' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Ru' },
+    ],
+    defaultLocale: 'ru',
+    strategy: 'prefix',
+    lazy: true,
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
     },
+    vueI18n: {
+      fallbackLocale: 'ru',
+    },
+    seo: true,
+    baseUrl: `${appMeta.host.url}`,
   },
-  styleResources: {
-    css: '~/assets/css/utils/*.css',
-    scss: '~/assets/sass/utils/*.scss',
-  },
-  css: [
-    { src: '~/assets/css/app' },
-    { src: '~/assets/stylus/resets', lang: 'styl' },
-    { src: '~/assets/sass/theme/dark', lang: 'scss' },
-    { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
-  ],
-  plugins: [
-    { src: '~/plugins/vue-notifications-server', mode: 'server' },
-    { src: '~/plugins/vue-notifications-client', mode: 'client' },
-    { src: '~/plugins/vue-perfect-scrollbar' },
-    { src: '~/plugins/markdown-theme-prism' },
-  ],
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify',
-    '@nuxt/components',
-    '@nuxtjs/html-validator',
-    '@nuxtjs/svg',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/color-mode',
-    // 'nuxt-purgecss',
-  ],
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    '@nuxt/content',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/markdownit',
-    'nuxt-i18n',
-  ],
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
-  },
-  axios: {},
   pwa: {
     meta: {
       author: appMeta.app.en.author.name,
@@ -127,29 +126,63 @@ export default {
     },
     workbox: {},
   },
-  i18n: {
-    locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'En' },
-      { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Ru' },
-    ],
-    defaultLocale: 'ru',
-    strategy: 'prefix',
-    lazy: true,
-    langDir: 'locales/',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true,
-    },
-    vueI18n: {
-      fallbackLocale: 'ru',
-    },
-    seo: true,
-    baseUrl: `${appMeta.host.url}`,
-  },
   // router: {
   //   trailingSlash: false,
   // },
+  googleFonts: {
+    prefetch: true,
+    families: {
+      Commissioner: [300, 400, 500, 700, 900],
+      Manrope: [400, 500, 700],
+      'Montserrat+Alternates': {
+        wght: [400, 500, 700, 900],
+        ital: [400],
+      },
+      Raleway: {
+        wght: [300, 400, 500, 700, 900],
+        ital: [400, 500],
+      },
+    },
+  },
+  styleResources: {
+    css: '~/assets/css/utils/*.css',
+    scss: '~/assets/sass/utils/*.scss',
+  },
+  css: [
+    { src: '~/assets/css/app' },
+    { src: '~/assets/stylus/resets', lang: 'styl' },
+    { src: '~/assets/sass/theme/dark', lang: 'scss' },
+    { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
+  ],
+  purgeCSS: {
+    // paths: [
+    //   'components/**/*.vue',
+    //   'layouts/**/*.vue',
+    //   'pages/**/*.vue',
+    //   'plugins/**/*.js',
+    //   'node_modules/@nuxtjs/vuetify/**/*.ts',
+    //   'node_modules/@nuxt/vue-app/template/**/*.html',
+    //   'node_modules/@nuxt/vue-app/template/**/*.vue',
+    // ],
+    // extractors: [
+    //   {
+    //     extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
+    //     extensions: ['html', 'vue', 'js'],
+    //   },
+    // ],
+    // styleExtensions: ['.css'],
+    // whitelist: ['v-application', 'v-application--wrap'],
+    // whitelistPatterns: [
+    //   /^v-((?!application).)*$/,
+    //   /^\.theme--dark*/,
+    //   /.*-transition/,
+    // ],
+    // whitelistPatternsChildren: [
+    //   /^v-((?!application).)*$/,
+    //   /^theme--dark.*/,
+    //   /.*-transition/,
+    // ],
+  },
   htmlValidator: {
     usePrettier: true,
     options: {
@@ -160,8 +193,9 @@ export default {
       },
     },
   },
+  axios: {},
   content: {
-    // dir: 'api/',
+    dir: 'api/',
     liveEdit: true,
     markdown: {
       prism: {
@@ -192,7 +226,7 @@ export default {
     // extend(config, { isDev, isClient }) {
     //   if (isDev && isClient) { }
     // },
-    // extractCSS: true,
+    extractCSS: true,
     postcss: {
       plugins: {
         'postcss-custom-media': {},
