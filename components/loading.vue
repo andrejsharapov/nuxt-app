@@ -1,18 +1,13 @@
 <template>
-  <div
-    v-if="loading"
-    :style="
-      $vuetify.theme.dark
-        ? 'background-color: var(--background-dark)'
-        : 'background-color: var(--background-default)'
-    "
-    class="content-load"
-  >
+  <div v-if="loading" class="content-load">
     <h2
       class="text-h6 text-sm-h3 text-lg-h2 text-center content-load__text"
-      :style="$vuetify.theme.dark ? 'color: var(--light)' : ''"
+      :style="{
+        color:
+          $colorMode.preference === 'dark' ? 'var(--light)' : 'var(--dark)',
+      }"
     >
-      {{ $t('loading') }}
+      {{ $t('app.loading') }}
       <span>.</span>
       <span>.</span>
       <span>.</span>
@@ -20,55 +15,10 @@
     <svg
       width="60vw"
       viewBox="0 0 1609 526"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      fill="none"
       class="content-load__image"
     >
-      <style>
-        .mspll,
-        .msplr {
-          transform-origin: center top;
-          animation: mspl 2s ease-in-out infinite;
-        }
-
-        .fipll,
-        .fiplr {
-          animation: fipl 2s ease-in-out 300ms infinite;
-        }
-
-        .bubble {
-          transform-origin: center center;
-          animation: bubble 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
-        }
-
-        .bubble-shadow {
-          animation: shadow 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
-        }
-
-        @keyframes mspl {
-          50% {
-            transform: translate(0.5rem, -1rem) rotate(2deg);
-          }
-        }
-
-        @keyframes fipl {
-          50% {
-            transform: translate(0.5rem, -1rem) rotate(2deg);
-          }
-        }
-
-        @keyframes bubble {
-          50% {
-            transform: translateY(200px);
-          }
-        }
-
-        @keyframes shadow {
-          50% {
-            transform: translate(804px, 500px) scale(0.6, 0.6);
-          }
-        }
-      </style>
       <path
         class="fipll"
         fill-rule="evenodd"
@@ -119,7 +69,7 @@
         d="M122.64 363.738C122.64 363.738 126.321 362.093 128.825 362.046C136.159 361.909 142.329 367.996 142.107 375.328C142.032 377.813 140.349 381.447 140.349 381.447C140.349 381.447 140.541 399.088 133.318 405.925C119.112 419.372 84.3343 384.6 97.8993 370.506C104.846 363.289 122.64 363.738 122.64 363.738Z"
         fill="url(#loading3_linear)"
       />
-      <circle r="66" transform="matrix(-1 0 0 1 334.079 190)" fill="white" />
+      <circle r="66" transform="matrix(-1 0 0 1 334.079 190)" fill="#FFFFFF" />
       <circle r="45" transform="matrix(-1 0 0 1 351 189)" fill="#90D8FB" />
       <circle
         r="45"
@@ -137,7 +87,7 @@
         transform="matrix(-1 0 0 1 357.5 189.5)"
         fill="#465038"
       />
-      <circle r="8" transform="matrix(-1 0 0 1 340 163)" fill="white" />
+      <circle r="8" transform="matrix(-1 0 0 1 340 163)" fill="#FFFFFF" />
       <path
         opacity="0.4"
         d="M148.88 111.681C148.88 111.681 194.904 95.1232 189.458 85.6899C183.039 74.5723 145.448 107.744 145.448 107.744C145.448 107.744 98.8663 123.169 105.285 134.287C111.443 144.953 148.88 111.681 148.88 111.681Z"
@@ -150,7 +100,7 @@
         d="M108 136C107.12 136.799 105.786 137.818 105 138.657L120.446 142.033C130.497 131.308 144.879 124.805 159.5 123.288C174.121 121.772 189.151 125.5 201 133C201 133 200.364 130.5 199 129C197.636 127.5 195 123.788 188 121.788C176.723 118.566 169.907 117.603 158.191 118.14C139.016 119.02 119.943 126.435 108.5 135.5L119 138L118.5 138.657L108 136Z"
         fill="#0184C3"
       />
-      <circle r="66" transform="matrix(-1 0 0 1 166.079 189)" fill="white" />
+      <circle r="66" transform="matrix(-1 0 0 1 166.079 189)" fill="#FFFFFF" />
       <circle r="45" transform="matrix(-1 0 0 1 184 189)" fill="#90D8FB" />
       <circle
         r="45"
@@ -168,7 +118,7 @@
         transform="matrix(-1 0 0 1 190.5 189.5)"
         fill="#465038"
       />
-      <circle r="8" transform="matrix(-1 0 0 1 172 163)" fill="white" />
+      <circle r="8" transform="matrix(-1 0 0 1 172 163)" fill="#FFFFFF" />
       <path
         d="M395.722 139.868C384.858 128.276 364.772 120.373 342.531 119.352C330.815 118.815 323.999 119.778 312.722 123C305.722 125 300.586 129.5 299.222 131C297.859 132.5 298.5 134.5 298.5 134.5C310.349 127 326.602 122.984 341.222 124.5C355.843 126.016 370.225 132.52 380.277 143.245L395.722 139.868Z"
         fill="#0184C3"
@@ -244,7 +194,7 @@
         <circle
           r="66"
           transform="matrix(-1 0 0 1 804 212)"
-          fill="white"
+          fill="#FFFFFF"
           fill-opacity="0.4"
         />
         <circle
@@ -263,7 +213,7 @@
           rx="12.5"
           ry="16.6974"
           transform="rotate(32.5824 773.201 185.902)"
-          fill="white"
+          fill="#FFFFFF"
           fill-opacity="0.5"
         />
       </g>
@@ -338,7 +288,7 @@
         d="M1485.52 363.738C1485.52 363.738 1481.84 362.093 1479.33 362.046C1472 361.909 1465.83 367.996 1466.05 375.328C1466.13 377.813 1467.81 381.447 1467.81 381.447L1474.84 405.925L1510.26 370.506L1485.52 363.738Z"
         fill="url(#loading15_linear)"
       />
-      <circle cx="1274.08" cy="190" r="66" fill="white" />
+      <circle cx="1274.08" cy="190" r="66" fill="#FFFFFF" />
       <circle cx="1262.08" cy="200" r="45" fill="#3CADD0" />
       <circle cx="1262.08" cy="200" r="45" fill="url(#loading16_radial)" />
       <circle
@@ -349,8 +299,8 @@
         stroke-opacity="0.3"
       />
       <circle cx="1255.08" cy="205" r="35" fill="#451408" />
-      <circle cx="1273.08" cy="174" r="8" fill="white" />
-      <circle cx="1442.08" cy="189" r="66" fill="white" />
+      <circle cx="1273.08" cy="174" r="8" fill="#FFFFFF" />
+      <circle cx="1442.08" cy="189" r="66" fill="#FFFFFF" />
       <circle cx="1429.08" cy="200" r="45" fill="#3CADD0" />
       <circle cx="1429.08" cy="200" r="45" fill="url(#loading17_radial)" />
       <circle
@@ -361,7 +311,7 @@
         stroke-opacity="0.3"
       />
       <circle cx="1422.08" cy="205" r="35" fill="#451408" />
-      <circle cx="1441.08" cy="174" r="8" fill="white" />
+      <circle cx="1441.08" cy="174" r="8" fill="#FFFFFF" />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -655,24 +605,70 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: var(--back);
 
   &__text {
     span {
-      animation: show-hide calc(var(--basic-time) * 3) linear infinite;
+      animation: show-hide calc(var(--base-time) * 3) linear infinite;
 
       &:nth-of-type(2) {
-        animation-delay: 100ms;
+        animation-delay: var(--base-time) / 2;
       }
+
       &:nth-of-type(3) {
-        animation-delay: 200ms;
+        animation-delay: var(--base-time);
       }
     }
   }
 }
 
+.mspll,
+.msplr {
+  transform-origin: center top;
+  animation: mspl 2s ease-in-out infinite;
+}
+
+.fipll,
+.fiplr {
+  animation: fipl 2s ease-in-out 300ms infinite;
+}
+
+.bubble {
+  transform-origin: center center;
+  animation: bubble 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+.bubble-shadow {
+  animation: shadow 2s cubic-bezier(0.39, 0.575, 0.565, 1) infinite;
+}
+
 @keyframes show-hide {
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes mspl {
+  50% {
+    transform: translate(0.5rem, -1rem) rotate(2deg);
+  }
+}
+
+@keyframes fipl {
+  50% {
+    transform: translate(0.5rem, -1rem) rotate(2deg);
+  }
+}
+
+@keyframes bubble {
+  50% {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes shadow {
+  50% {
+    transform: translate(804px, 500px) scale(0.6, 0.6);
   }
 }
 </style>

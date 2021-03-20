@@ -1,6 +1,9 @@
 import { appMeta as config } from '../config/app'
 
 export default {
+  app: {
+    loading: 'Загружаемся',
+  },
   author: {
     name: 'Андрей Шарапов',
     position: ['UI/UX дизайнер', 'Фронтенд разработчик'],
