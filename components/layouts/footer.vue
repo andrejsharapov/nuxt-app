@@ -6,7 +6,7 @@ v-footer.layout__footer.py-0(
   v-card.fill-width(flat, tile)
     v-row(no-gutters)
       v-col(cols='12', md='6')
-        v-card-text.align-center.fill-height.py-2.text-center.text-sm-left Copyright &copy; 2016 - {{ now }} · with&nbsp;
+        v-card-text.d-sm-flex.align-center.fill-height.py-2.text-center.text-sm-left Copyright &copy; 2016 - {{ now }} · with&nbsp;
           v-icon.heart(color='pink', size='18') {{ mdiHeart }}
           | &nbsp;
           a.d-inline-flex.align-center(
