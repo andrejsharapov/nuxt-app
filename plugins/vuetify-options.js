@@ -40,6 +40,10 @@ import {
   mdiAccountGroupOutline,
   mdiProgressCheck,
   mdiOrderBoolAscendingVariant,
+  mdiClose,
+  mdiShieldLock,
+  mdiAccountCheckOutline,
+  mdiLicense,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -117,6 +121,10 @@ export default function ({ app }) {
         mdiAccountGroupOutline,
         mdiProgressCheck,
         mdiOrderBoolAscendingVariant,
+        mdiClose,
+        mdiShieldLock,
+        mdiAccountCheckOutline,
+        mdiLicense,
       },
     },
   }

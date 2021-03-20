@@ -10,7 +10,7 @@ v-app
     app
   )
     template(#prepend)
-      s-layout-navbar-prepend(v-if='!clipped', :clipped='clipped')
+      s-layout-navbar-prepend(v-if='!clipped')
     perfect-scrollbar
       s-layout-navbar-list(:mini-variant='miniVariant')
     template(#append)
@@ -26,8 +26,7 @@ v-app
   //- SECTION[epic=layout] header
   v-app-bar(:clipped-left='clipped', fixed, app)
     s-layout-navbar-prepend.ml-n4(
-      v-if='$vuetify.breakpoint.smAndUp && !drawer',
-      :clipped='clipped'
+      v-if='$vuetify.breakpoint.smAndUp && !drawer'
     )
     nuxt-link(v-if='$vuetify.breakpoint.xs', :to='localePath("/")')
       img(
@@ -52,8 +51,8 @@ v-app
           v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
       span {{ $t("site.navbar.name") }}
     v-spacer
-    s-layout-job-offer
-    s-layout-recent-projects
+    lazy-s-layout-job-offer
+    lazy-s-layout-recent-projects
     //- v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
     //-   v-icon mdi-dots-grid
   //- /SECTION
@@ -66,7 +65,7 @@ v-app
           .pa-4.fill-height.d-flex.justify-center.align-center.flex-column.text-center
             lazy-s-fish-construction(:width='250', :height='250')
             .h2.text-h6.text-sm-h4.text-lg-h3 {{ $t("site.page.construction") }}
-            .d-flex.flex-column.flex-sm-row
+            .d-flex.flex-column.flex-sm-row.justify-center(style='width: 100%')
               .mt-4.mx-sm-4
                 v-btn.shadow-base(
                   :to='localePath("/")',

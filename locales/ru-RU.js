@@ -3,6 +3,10 @@ import { appMeta as config } from '../config/app'
 export default {
   app: {
     loading: 'Загружаемся',
+    'general-information': 'Общая информация',
+    'last-revised': 'Последняя редакция',
+    license: 'Лицензия',
+    updates: 'Обновления',
   },
   author: {
     name: 'Андрей Шарапов',

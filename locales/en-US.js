@@ -3,6 +3,10 @@ import { appMeta as config } from '../config/app'
 export default {
   app: {
     loading: 'Loading',
+    'general-information': 'General information',
+    'last-revised': 'Last revised',
+    license: 'License',
+    updates: 'Updates',
   },
   author: {
     name: 'Andrej Sharapov',

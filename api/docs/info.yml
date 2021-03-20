@@ -1,0 +1,27 @@
+content:
+  information:
+    - icon: '$mdiShieldLock'
+      model: false
+      title: Конфиденциальность
+      to: privacy
+      type: green accent-1
+      update: '2017-02-25'
+    - icon: '$mdiAccountCheckOutline'
+      model: false
+      title: Соглашение
+      to: terms
+      type: 'light-blue lighten-5'
+      update: '2021-02-17'
+  license:
+    icon: '$mdiLicense'
+    subtitle: MIT License
+    title: Лицензия
+    to: 'https://github.com/andrejsharapov/nuxt-app/blob/master/LICENSE'
+    type: 'amber lighten-4'
+  message: ''
+  versions:
+    date: '2021-01-25'
+    tag: 1.0.1
+    to: 'https://github.com/andrejsharapov/nuxt-app/releases/latest/'
+    type: 'indigo lighten-4'
+title: footer-color-content
