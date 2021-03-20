@@ -30,6 +30,12 @@
   }
 }
 
+@mixin shadow-size($size) {
+  .shadow-#{$size} {
+    box-shadow: var(--shadow-#{$size}) !important;
+  }
+}
+
 @include class-color(primary);
 @include class-color(secondary);
 @include class-color(accent);

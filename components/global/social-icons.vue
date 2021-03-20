@@ -21,7 +21,7 @@ export default {
     }
   },
   async fetch() {
-    this.social = await this.$content('contact').only(['social']).fetch()
+    this.social = await this.$content('social').only('social').fetch()
   },
   computed: {
     icons() {

@@ -72,10 +72,7 @@ v-list.navbar__list.hidden-x
 
   v-list(v-if='!miniVariant')
     v-list-item
-      v-card(color='purple')
-        v-card-title.justify-center.white--text Hello world!
-        v-card-subtitle.purple--text.text--lighten-4 Dolore exercitation occaecat ullamco sint pariatur sunt ex nulla.
-        v-btn(block, text, dark) Go to
+      s-layout-components-poll
 </template>
 
 <script>

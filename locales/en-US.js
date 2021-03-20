@@ -1,23 +1,42 @@
-import { appMeta } from '@/config/app'
+import { appMeta as config } from '../config/app'
 
 export default {
+  app: {
+    loading: 'Loading',
+  },
   author: {
     name: 'Andrej Sharapov',
     position: ['UI/UX Designer', 'Frontend Developer'],
     job: {
-      status: `${appMeta.author.job.status}`,
+      status: `${config.author.job.status}`,
       title: 'To offer a job',
     },
   },
   host: {
-    name: `${appMeta.host.name}`,
-    url: `${appMeta.host.url}`,
+    name: `${config.host.name}`,
+    url: `${config.host.url}`,
   },
   site: {
     header: { name: 'Header' },
     navbar: {
       name: 'Navigation',
     },
+    page: {
+      construction: 'This page is under construction',
+    },
+  },
+  btn: {
+    go: {
+      to: 'Go to',
+      back: 'Go back',
+      home: 'Return home',
+    },
+    'report-problem': 'Report problem',
+  },
+  poll: {
+    title: 'UX Poll',
+    message: 'Take the poll and you will help make the site better for you.',
+    btn: 'Take a poll',
   },
   projects: {
     recent: 'Recent projects',

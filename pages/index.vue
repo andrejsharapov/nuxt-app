@@ -14,6 +14,7 @@ v-container
 
 <script>
 export default {
+  layout: 'clean',
   head() {
     return {
       titleTemplate: '',

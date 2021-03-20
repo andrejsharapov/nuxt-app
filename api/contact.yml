@@ -1,18 +1,18 @@
 contacts:
   - content: an.sharapov90@gmail.com
-    icon: mdi-email
+    icon: $mdiEmail
     note: an.sharapov90@ya.ru
     title: Email
   - content: '+7 (964) 788-27-38'
-    icon: mdi-phone
+    icon: $mdiPhone
     note: '10:00-18:00 (GMT+3) MSK'
     title: Phone
   - content: '+7 (929) 511-40-25'
-    icon: mdi-whatsapp
+    icon: $mdiWhatsapp
     note: '@andrejsharapov'
     title: WhatsApp & Telegram
   - content: andrejsharapov#0036
-    icon: mdi-discord
+    icon: $mdiDiscord
     note:
     title: Discord
   - avatar: '/src/author/live9c920983b0fe9b8e_1.jpeg'

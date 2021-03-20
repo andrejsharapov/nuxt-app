@@ -5,18 +5,17 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
     "generate": "nuxt generate",
+    "start": "nuxt generate && nuxt start",
+    "go": "nuxt build && yarn dev",
+    "refresh": "rm -rf node_modules/ .nuxt/ dist/ && yarn install && yarn go",
+    "analyze": "nuxt build --analyze",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint:js:fix": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
-    "lint:style": "stylelint \"**/*.{vue,s?(a|c)ss,css}\" --ignore-path .gitignore",
-    "lint:style:fix": "stylelint \"**/*.{vue,s?(a|c)ss,css}\" --ignore-path .gitignore --fix",
+    "lint:style": "stylelint \"**/*.{s?(a|c)ss,css,vue}\" --ignore-path .gitignore",
     "lint:prettier": "prettier  \"**/*.{js,json,json5,yml,css,sass,scss,styl,pcss,vue,md}\"",
     "check:prettier": "yarn lint:prettier --list-different",
     "format:prettier": "yarn lint:prettier --write --loglevel warn",
-    "lint": "yarn lint:js && yarn lint:style",
-    "lint:fix": "yarn lint:js:fix && yarn lint:style:fix",
-    "analyze": "nuxt build --analyze"
+    "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
@@ -29,20 +28,23 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.14.0",
+    "@mdi/js": "^5.9.55",
+    "@nuxt/components": "^2.1.3",
+    "@nuxt/content": "^1.11.1",
     "@nuxtjs/axios": "^5.13.1",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.1",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-div": "^1.1.0",
-    "nuxt": "^2.15.2",
-    "nuxt-i18n": "^6.20.4"
+    "nuxt": "^2.15.3",
+    "nuxt-i18n": "^6.21.1",
+    "vue-notification": "^1.3.20",
+    "vue2-perfect-scrollbar": "^1.5.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
     "@fullhuman/postcss-purgecss": "^4.0.2",
-    "@mdi/js": "^5.9.55",
     "@nuxtjs/color-mode": "^2.0.4",
     "@nuxtjs/eslint-config": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
@@ -61,7 +63,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.6.0",
-    "husky": "^5.1.1",
+    "husky": "^5.1.3",
     "lint-staged": "^10.5.4",
     "lodash": "^4.17.21",
     "nuxt-purgecss": "^1.0.0",
@@ -84,10 +86,12 @@
     "pug-plain-loader": "^1.1.0",
     "stylelint": "^13.11.0",
     "stylelint-config-prettier": "^8.0.2",
-    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard": "^21.0.0",
     "stylus": "^0.54.8",
-    "stylus-loader": "4.3.1",
-    "vue-notification": "^1.3.20",
-    "vue2-perfect-scrollbar": "^1.5.0"
-  }
+    "stylus-loader": "4.3.1"
+  },
+  "main": "nuxt.config.js",
+  "repository": "https://github.com/andrejsharapov/nuxt-app.git",
+  "author": "andrejsharapov",
+  "license": "MIT"
 }

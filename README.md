@@ -2,6 +2,15 @@
 
 Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer
 
+## This new stage in portfolio development
+
+1. Pure HTML
+2. [WordPress][wp] ![active]
+3. [Gulp.js + Vue.js][gulp] ![active]
+4. Vue CLI (jumped over)
+5. VuePress (jumped over)
+6. Nuxt.js ![active] ![in development]
+
 [![README.md][preview]](/README.md)
 
 ## Uses
@@ -120,15 +129,26 @@ export default {
   <a href="#uses">To top</a>
 </p>
 
-[preview]: https://raw.githubusercontent.com/andrejsharapov/nuxt-app/master/static/README.png?token=AKVGTDT24OX6567YAWGTHR3AHE7KY
+[preview]: https://sharapov.dev/src/README.png
+
+[wp]: https://madeas.ru
+[gulp]: https://andrejsharapov.github.io
+[active]: https://img.shields.io/badge/active-yellow.svg
+[in development]: https://img.shields.io/badge/active-in_development-yellow.svg
+
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
+
 [yarn]: https://yarnpkg.com/
-[yarn-image]: https://img.shields.io/badge/yarn-1.22.x-brightgreen.svg?color=2c8ebb
+[yarn-image]: https://img.shields.io/badge/yarn-1.22.x-2c8ebb.svg
+
 [vue]: https://vuejs.org
-[vue-image]: https://img.shields.io/badge/vue-2.6.x-brightgreen.svg?color=41b883
+[vue-image]: https://img.shields.io/badge/vue-2.6.x-41b883.svg
+
 [nuxt]: https://nuxtjs.org/
-[nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-brightgreen.svg?color=108775
+[nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-108775.svg
+
 [vuetify]: https://vuetifyjs.com/en/
-[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-brightgreen.svg?color=1697f6
+[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg?color=1697f6
+
 [modules]: https://modules.nuxtjs.org/
