@@ -5,59 +5,10 @@ export default {
     port: 8080,
     host: '0.0.0.0',
   },
-  // loading: '~/components/loading.vue',
-  i18n: {
-    locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'English' },
-      { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Русский' },
-    ],
-    defaultLocale: 'ru',
-    strategy: 'prefix',
-    lazy: true,
-    langDir: './locales/',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true,
-    },
-    vueI18n: {
-      fallbackLocale: 'ru',
-    },
-    seo: true,
-    baseUrl: `${appMeta.host.url}`,
-  },
-  pwa: {
-    meta: {
-      author: appMeta.app.en.author.name,
-      lang: 'ru-RU',
-      name: appMeta.app.en.author.name,
-      nativeUI: true,
-      ogHost: appMeta.host.name,
-      ogImage: {
-        path: appMeta.host.url + appMeta.app.share,
-        width: 1200,
-        height: 630,
-        type: 'image/jpg',
-      },
-      theme_color: appColors.default,
-      twitterCard: 'summary_large_image',
-      twitterSite: appMeta.app.twitter,
-    },
-    icon: {
-      sizes: [32, 64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
-    },
-    manifest: {
-      lang: 'en',
-      background_color: appColors.default,
-      display: 'standalone',
-      icons: [64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
-      name: appMeta.app.en.author.name,
-      short_name: 'sharapov',
-      theme_color: appColors.default,
-      useWebmanifestExtension: true,
-    },
-    workbox: {},
-  },
+  // target: 'static',
+  ssr: false,
+  telemetry: true,
+  loading: '~/components/loading.vue',
   head: {
     title: 'nuxt-app',
     meta: [
@@ -89,40 +40,6 @@ export default {
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },
     ],
   },
-  axios: {},
-  buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify',
-    '@nuxtjs/style-resources',
-    '@nuxtjs/color-mode',
-    '@nuxtjs/html-validator',
-    'nuxt-purgecss',
-    '@nuxtjs/svg',
-  ],
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
-    '@nuxt/content',
-    'nuxt-i18n',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/markdownit',
-  ],
-  plugins: [
-    { src: '~/plugins/vue-notifications-server', mode: 'server' },
-    { src: '~/plugins/vue-notifications-client', mode: 'client' },
-    { src: '~/plugins/vue-perfect-scrollbar' },
-    { src: '~/plugins/markdown-theme-prism' },
-  ],
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    defaultAssets: false,
-    optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
-  },
-  colorMode: {
-    preference: 'system',
-    fallback: 'light',
-  },
   googleFonts: {
     prefetch: true,
     families: {
@@ -138,18 +55,9 @@ export default {
       },
     },
   },
-  htmlValidator: {
-    usePrettier: true,
-    options: {
-      rules: {
-        'attribute-empty-style': 'off',
-        'element-required-attributes': 'off',
-        'text-content': 'off',
-        'prefer-native-element': 'off',
-        'element-permitted-content': 'off',
-        'wcag/h30': 'off',
-      },
-    },
+  styleResources: {
+    css: '~/assets/css/utils/*.css',
+    scss: '~/assets/sass/utils/*.scss',
   },
   css: [
     { src: '~/assets/css/app' },
@@ -157,43 +65,103 @@ export default {
     { src: '~/assets/sass/theme/dark', lang: 'scss' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
   ],
-  styleResources: {
-    css: '~/assets/css/utils/*.css',
-    sass: [],
-    scss: '~/assets/sass/utils/*.scss',
-    // less: [],
-    // stylus: [],
+  plugins: [
+    { src: '~/plugins/vue-notifications-server', mode: 'server' },
+    { src: '~/plugins/vue-notifications-client', mode: 'client' },
+    { src: '~/plugins/vue-perfect-scrollbar' },
+    { src: '~/plugins/markdown-theme-prism' },
+  ],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/vuetify',
+    '@nuxt/components',
+    '@nuxtjs/html-validator',
+    '@nuxtjs/svg',
+    '@nuxtjs/style-resources',
+    '@nuxtjs/color-mode',
+    // 'nuxt-purgecss',
+  ],
+  modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    '@nuxt/content',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/markdownit',
+    'nuxt-i18n',
+  ],
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
   },
-  purgeCSS: {
-    //   paths: [
-    //     'components/**/*.vue',
-    //     'layouts/**/*.vue',
-    //     'pages/**/*.vue',
-    //     'plugins/**/*.js',
-    //     'node_modules/@nuxtjs/vuetify/**/*.ts',
-    //     'node_modules/@nuxt/vue-app/template/**/*.html',
-    //     'node_modules/@nuxt/vue-app/template/**/*.vue',
-    //   ],
-    //   extractors: [
-    //     {
-    //       extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
-    //       extensions: ['html', 'vue', 'js'],
-    //     },
-    //   ],
-    //   styleExtensions: ['.css'],
-    //   whitelist: ['v-application', 'v-application--wrap'],
-    //   whitelistPatterns: [
-    //     /^v-((?!application).)*$/,
-    //     /^\.theme--dark*/,
-    //     /.*-transition/,
-    //   ],
-    //   whitelistPatternsChildren: [
-    //     /^v-((?!application).)*$/,
-    //     /^theme--dark.*/,
-    //     /.*-transition/,
-    //   ],
+  axios: {},
+  pwa: {
+    meta: {
+      author: appMeta.app.en.author.name,
+      lang: false,
+      name: appMeta.app.en.author.name,
+      nativeUI: true,
+      ogHost: appMeta.host.name,
+      ogImage: {
+        path: appMeta.host.url + appMeta.app.share,
+        width: 1200,
+        height: 630,
+        type: 'image/jpg',
+      },
+      theme_color: appColors.default,
+      twitterCard: 'summary_large_image',
+      twitterSite: appMeta.app.twitter,
+    },
+    icon: {
+      sizes: [32, 64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
+    },
+    manifest: {
+      lang: 'en',
+      background_color: appColors.default,
+      display: 'standalone',
+      icons: [64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
+      name: appMeta.app.en.author.name,
+      short_name: 'sharapov',
+      theme_color: appColors.default,
+      useWebmanifestExtension: true,
+    },
+    workbox: {},
+  },
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'En' },
+      { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Ru' },
+    ],
+    defaultLocale: 'ru',
+    strategy: 'prefix',
+    lazy: true,
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      onlyOnRoot: true,
+    },
+    vueI18n: {
+      fallbackLocale: 'ru',
+    },
+    seo: true,
+    baseUrl: `${appMeta.host.url}`,
+  },
+  // router: {
+  //   trailingSlash: false,
+  // },
+  htmlValidator: {
+    usePrettier: true,
+    options: {
+      rules: {
+        'attribute-empty-style': 'off',
+        'element-permitted-content': 'off',
+        'element-required-attributes': 'off',
+      },
+    },
   },
   content: {
+    // dir: 'api/',
     liveEdit: true,
     markdown: {
       prism: {
@@ -212,11 +180,11 @@ export default {
     // langPrefix: 'language-',
   },
   components: [
-    '~/components/',
     { path: '~/components/components/', prefix: 's' },
     { path: '~/components/fishes/', prefix: 's-fish' },
     { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
+    '~/components/',
   ],
   build: {
     // analyze: true,
@@ -224,7 +192,7 @@ export default {
     // extend(config, { isDev, isClient }) {
     //   if (isDev && isClient) { }
     // },
-    extractCSS: true,
+    // extractCSS: true,
     postcss: {
       plugins: {
         'postcss-custom-media': {},
@@ -268,4 +236,8 @@ export default {
       },
     },
   },
+  // generate: {
+  //   dir: appMeta.hostname,
+  // fallback: true,
+  // },
 }

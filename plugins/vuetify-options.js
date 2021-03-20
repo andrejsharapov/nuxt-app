@@ -39,7 +39,10 @@ export default function ({ app }) {
     lang: {
       t: (key, ...params) => app.i18n.t(key, params),
     },
-    theme: { disable: true },
+    theme: {
+      dark: false,
+      // disable: true,
+    },
     icons: {
       iconfont: 'mdiSvg',
       values: {

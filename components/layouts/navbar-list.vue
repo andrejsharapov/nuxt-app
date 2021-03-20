@@ -87,9 +87,11 @@ export default {
       default: false,
     },
   },
-  data: () => ({
-    navbar: [],
-  }),
+  data() {
+    return {
+      navbar: [],
+    }
+  },
   async fetch() {
     this.navbar = await this.$content(
       `${this.$i18n.locale}/navbar/side`

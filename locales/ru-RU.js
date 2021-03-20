@@ -1,17 +1,17 @@
-import { appMeta } from '@/config/app'
+import { appMeta as config } from '../config/app'
 
 export default {
   author: {
     name: 'Андрей Шарапов',
     position: ['UI/UX дизайнер', 'Фронтенд разработчик'],
     job: {
-      status: `${appMeta.author.job.status}`,
+      status: `${config.author.job.status}`,
       title: 'Предложить работу',
     },
   },
   host: {
-    name: `${appMeta.host.name}`,
-    url: `${appMeta.host.url}`,
+    name: `${config.host.name}`,
+    url: `${config.host.url}`,
   },
   site: {
     header: { name: 'Шапка' },
