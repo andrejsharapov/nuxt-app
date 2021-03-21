@@ -6,7 +6,7 @@ v-footer.layout__footer.py-0(
   v-card.fill-width(flat, tile)
     v-row(no-gutters)
       v-col(cols='12', md='6')
-        v-card-text.d-sm-flex.align-center.fill-height.py-2.text-center.text-sm-left Copyright &copy; 2016 - {{ now }} · with&nbsp;
+        v-card-text.d-sm-flex.align-center.fill-height.py-2.justify-center.justify-md-start.text-center.text-md-left Copyright &copy; 2016 - {{ now }} · with&nbsp;
           v-icon.heart(color='pink', size='18') {{ mdiHeart }}
           | &nbsp;
           a.d-inline-flex.align-center(
@@ -16,8 +16,8 @@ v-footer.layout__footer.py-0(
             title=''
           ) @andrejsharapov
             v-icon(right, color='primary', small) {{ mdiOpenInNew }}
-      v-col.d-flex.justify-end(cols='12', md='6')
-        v-card-text.py-2.d-flex.justify-center.justify-sm-end
+      v-col(cols='12', md='6')
+        v-card-text.py-2.d-flex.justify-center.justify-md-end
           lazy-s-social-icons
   lazy-s-layout-footer-color
 </template>
@@ -48,10 +48,6 @@ export default {
 <style scoped lang="scss">
 .layout__footer {
   transition: all 0.2s var(--cubic-default) forwards !important;
-
-  .v-card {
-    background-color: var(--back);
-  }
 
   .heart {
     display: inline-block;
