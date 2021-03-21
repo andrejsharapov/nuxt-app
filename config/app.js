@@ -2,6 +2,8 @@ export const appMeta = {
   app: {
     ru: {
       title: 'Андрей Шарапов · Веб-дизайнер, Фронтенд разработчик',
+      description:
+        'Портфолио веб-разработчика с открытым исходным кодом на GitHub | Андрей Шарапов · Ui/Ux дизайнер, Frontend-разработчик',
       author: {
         name: 'Андрей Шарапов',
         short: 'sharapov',
@@ -9,6 +11,8 @@ export const appMeta = {
     },
     en: {
       title: 'Andrej Sharapov · Ui/Ux Designer, Frontend Developer',
+      description:
+        'Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer',
       author: {
         name: 'Andrej Sharapov',
         short: 'sharapov',

@@ -2,10 +2,16 @@ import { appMeta as config } from '../config/app'
 
 export default {
   app: {
+    meta: {
+      title: `${config.app.ru.title}`,
+      description: `${config.app.ru.description}`,
+    },
     loading: 'Загружаемся',
     'general-information': 'Общая информация',
     'last-revised': 'Последняя редакция',
     license: 'Лицензия',
+    privacy: 'Конфиденциальность',
+    terms: 'Условия использования',
     updates: 'Обновления',
   },
   author: {

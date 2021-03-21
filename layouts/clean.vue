@@ -12,7 +12,7 @@ v-app
     template(#prepend)
       s-layout-navbar-prepend(v-if='!clipped')
     perfect-scrollbar
-      s-layout-navbar-list(:mini-variant='miniVariant')
+      lazy-s-layout-navbar-list(:mini-variant='miniVariant')
     template(#append)
       s-layout-navbar-append(
         :clipped='clipped',
@@ -97,11 +97,25 @@ v-app
   s-layout-footer(:mini-variant='miniVariant', :drawer='drawer')
   //- /SECTION
 
+  v-fab-transition(v-if='$vuetify.breakpoint.smAndUp')
+    v-btn(
+      v-show='goToTop',
+      v-scroll='onScroll',
+      color='primary',
+      dark,
+      fixed,
+      bottom,
+      right,
+      fab,
+      @click='toTop'
+    )
+      v-icon {{ mdiArrowUpBoldOutline }}
+
   notifications(group='translation')
 </template>
 
 <script>
-import { mdiSortVariant, mdiSegment } from '@mdi/js'
+import { mdiSortVariant, mdiSegment, mdiArrowUpBoldOutline } from '@mdi/js'
 
 export default {
   data() {
@@ -114,12 +128,60 @@ export default {
       rightDrawer: false,
       mdiSortVariant,
       mdiSegment,
+      goToTop: false,
+      mdiArrowUpBoldOutline,
+    }
+  },
+  head() {
+    const i18nSeo = this.$nuxtI18nSeo()
+
+    return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.$i18n.t('app.meta.title'),
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.$i18n.t('app.meta.description'),
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.$i18n.t('app.meta.title'),
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.$i18n.t('app.meta.description'),
+        },
+        {
+          hid: 'twitter:creator',
+          name: 'twitter:creator',
+          content: this.$i18n.t('author.name'),
+        },
+
+        ...i18nSeo.meta,
+      ],
     }
   },
   methods: {
     barEvents(prop) {
       this.miniVariant = prop.mini
       this.clipped = prop.clip
+    },
+    onScroll(e) {
+      if (typeof window === 'undefined') return
+      const top = window.pageYOffset || e.target.goToTop || 0
+      this.goToTop = top > 50
+    },
+    toTop() {
+      this.$vuetify.goTo(0)
     },
   },
 }

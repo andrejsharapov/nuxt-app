@@ -36,7 +36,7 @@
                     v-list-item-avatar(:color='value.type')
                       v-icon(size='28', color='blue-grey darken-4') {{ value.icon }}
                     v-list-item-content
-                      v-list-item-title {{ value.title }}
+                      v-list-item-title {{ docTitle(value) }}
                       v-list-item-subtitle {{ formatDate(value.update) }}
                 //- !SECTION
 
@@ -69,7 +69,7 @@
               v-list-item-avatar(:color='doc.content.license.type')
                 v-icon(size='28', color='blue-grey darken-4') {{ doc.content.license.icon }}
               v-list-item-content
-                v-list-item-title {{ doc.content.license.title }}
+                v-list-item-title {{ $t("app.license") }}
                 v-list-item-subtitle {{ doc.content.license.subtitle }}
 
           v-divider
@@ -138,6 +138,18 @@ export default {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
+    },
+    docTitle(item) {
+      const docTitle = () => {
+        if (item.to === 'privacy') {
+          return this.$t('app.privacy')
+        } else if (item.to === 'terms') {
+          return this.$t('app.terms')
+        } else {
+          return ''
+        }
+      }
+      return docTitle()
     },
   },
 }
