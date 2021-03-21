@@ -32,6 +32,7 @@ export default {
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
     { src: '~/plugins/markdown-theme-prism' },
+    { src: '~/plugins/vue-cookieconsent' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

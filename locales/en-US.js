@@ -17,6 +17,10 @@ export default {
       light: 'Light mode',
       dark: 'Dark mode',
     },
+    cookie: {
+      message:
+        'The site uses analytics tools to analyze user actions in order to improve the quality of the site.',
+    },
   },
   author: {
     name: 'Andrej Sharapov',
@@ -46,6 +50,11 @@ export default {
       home: 'Return home',
     },
     'report-problem': 'Report problem',
+  },
+  more: {
+    base: 'More',
+    details: 'More details',
+    events: 'More events',
   },
   poll: {
     title: 'UX Poll',

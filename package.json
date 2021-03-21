@@ -38,6 +38,8 @@
     "markdown-it-div": "^1.1.0",
     "nuxt": "^2.15.3",
     "nuxt-i18n": "^6.21.1",
+    "vue-cookieconsent-component": "^1.2.0",
+    "vue-if-bot": "^1.2.0",
     "vue-notification": "^1.3.20",
     "vue2-perfect-scrollbar": "^1.5.0"
   },
