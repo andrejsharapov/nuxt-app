@@ -18,5 +18,5 @@ You need to use ESLint and stylelint to lint our JS, CSS, and Sass. Its configur
 
 Thank you!
 
-[1]: ../#tltr-wiki
-[2]: ../#css-syntax
+[1]: ../../#tltr-wiki
+[2]: ../../#css-syntax
