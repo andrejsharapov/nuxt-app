@@ -13,6 +13,10 @@ export default {
     privacy: 'Privacy',
     terms: 'Terms of use',
     updates: 'Updates',
+    themes: {
+      light: 'Light mode',
+      dark: 'Dark mode',
+    },
   },
   author: {
     name: 'Andrej Sharapov',

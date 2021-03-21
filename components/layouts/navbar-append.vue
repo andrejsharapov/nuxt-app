@@ -1,11 +1,10 @@
 <template lang="pug">
-div
-  v-divider
-  .navbar__append.d-flex.flex-column.pa-2
-    //- #1
+v-row.ma-0.pa-2.navbar__append
+  //- 1
+  v-col.py-0.text-center
     v-menu(
-      offset-x,
-      right,
+      offset-y,
+      top,
       :close-on-click='false',
       content-class='shadow-base',
       transition='slide-y-reverse-transition'
@@ -16,27 +15,42 @@ div
 
       v-list(dense, nav)
         v-list-item-group(multiple, color='accent')
-          //- btn #1
-          v-list-item(@click.stop='goClipped')
+          //- btn 3
+          .mb-1
+            lazy-s-lang-switcher(v-if='miniVariant')
+
+          //- btn 4
+          lazy-s-color-mode-picker(v-if='miniVariant')
+
+          //- btn 1
+          v-list-item.mb-1(@click.stop='goClipped')
             v-list-item-icon
               v-icon {{ mdiApplication }}
             v-list-item-content
               v-list-item-title {{ $t("site.header.name") }}
 
-          //- btn #2
+          //- btn 2
           v-list-item(@click.stop='goMini')
             v-list-item-icon
               v-icon {{ miniVariant ? mdiArrowExpandHorizontal : mdiArrowCollapseHorizontal }}
             v-list-item-content
               v-list-item-title {{ $t("site.navbar.name") }}
 
-          //- btn #3
-          lazy-s-lang-switcher
+  //- 2
+  v-col.py-0.text-center(v-if='!miniVariant')
+    v-btn(
+      text,
+      v-for='locale in availableLocales',
+      :key='locale.code',
+      @click.stop='$i18n.setLocale(locale.code)'
+    )
+      v-icon(left) {{ mdiTranslate }}
+      | {{ locale.name }}
 
-          //- btn #4
-          lazy-s-color-mode-picker
-    //- #2
-    v-spacer
+  //- 3
+  v-col.py-0.text-center(v-if='!miniVariant')
+    v-btn(icon, @click.stop='$vuetify.theme.dark = !$vuetify.theme.dark')
+      v-icon {{ $vuetify.theme.dark ? mdiWhiteBalanceSunny : mdiWeatherNight }}
 </template>
 
 <script>
@@ -45,6 +59,9 @@ import {
   mdiApplication,
   mdiArrowExpandHorizontal,
   mdiArrowCollapseHorizontal,
+  mdiWhiteBalanceSunny,
+  mdiWeatherNight,
+  mdiTranslate,
 } from '@mdi/js'
 
 export default {
@@ -73,7 +90,15 @@ export default {
       mdiApplication,
       mdiArrowExpandHorizontal,
       mdiArrowCollapseHorizontal,
+      mdiWhiteBalanceSunny,
+      mdiWeatherNight,
+      mdiTranslate,
     }
+  },
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
   },
   methods: {
     goMini() {

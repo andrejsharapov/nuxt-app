@@ -72,7 +72,7 @@ v-list.navbar__list.hidden-x
 
   v-list(v-if='!miniVariant')
     v-list-item
-      s-layout-components-poll
+      s-layout-components-poll(:mini-variant='miniVariant')
 </template>
 
 <script>

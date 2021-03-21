@@ -17,7 +17,6 @@ export default {
     '@nuxtjs/html-validator',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    '@nuxtjs/color-mode',
     // 'nuxt-purgecss',
   ],
   modules: [
@@ -36,12 +35,9 @@ export default {
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    // defaultAssets: false,
+    defaultAssets: false,
     optionsPath: '~/plugins/vuetify-options.js', // frameworkOptions
-  },
-  colorMode: {
-    preference: 'system',
-    fallback: 'light',
+    treeShake: true,
   },
   head: {
     title: 'nuxt-app',
@@ -151,7 +147,8 @@ export default {
   css: [
     { src: '~/assets/css/app' },
     { src: '~/assets/stylus/resets', lang: 'styl' },
-    { src: '~/assets/sass/theme/dark', lang: 'scss' },
+    { src: '~/assets/css/theme/light' },
+    { src: '~/assets/css/theme/dark' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
   ],
   purgeCSS: {
@@ -174,12 +171,12 @@ export default {
     // whitelist: ['v-application', 'v-application--wrap'],
     // whitelistPatterns: [
     //   /^v-((?!application).)*$/,
-    //   /^\.theme--dark*/,
+    //   /^\.theme--*/,
     //   /.*-transition/,
     // ],
     // whitelistPatternsChildren: [
     //   /^v-((?!application).)*$/,
-    //   /^theme--dark.*/,
+    //   /^theme--.*/,
     //   /.*-transition/,
     // ],
   },
@@ -259,7 +256,7 @@ export default {
         //   },
         // },
         // 'css-byebye': {
-        //   rulesToRemove: [/.*\.v-application--is-rtl.*/, /.*\.theme--dark.*/],
+        //   rulesToRemove: [/.*\.v-application--is-rtl.*/, /.*\.theme--.*/],
         // },
       },
       preset: {

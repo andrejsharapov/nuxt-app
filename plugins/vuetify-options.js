@@ -53,7 +53,39 @@ export default function ({ app }) {
     },
     theme: {
       dark: false,
-      // disable: true,
+      options: {
+        customProperties: true,
+        minifyTheme(css) {
+          return process.env.NODE_ENV === 'production'
+            ? css.replace(/(?<!v-application)[\s|\r\n|\r|\n]/g, '')
+            : css
+        },
+        // themeCache: {
+        //   get: (key) => localStorage.getItem(key),
+        //   set: (key, value) => localStorage.setItem(key, value),
+        // },
+      },
+      themes: {
+        light: {
+          primary: '#0a92d1',
+          secondary: '#434756',
+          accent: '#0041e6',
+          info: '#4a54de',
+          success: '#40ce87',
+          warning: '#ff8800',
+          error: '#eb0000',
+        },
+        dark: {
+          // disable: true,
+          primary: '#0a92d1',
+          secondary: '#e5f7ff',
+          accent: '#0041e6',
+          info: '#4a54de',
+          success: '#40ce87',
+          warning: '#ff8800',
+          error: '#eb0000',
+        },
+      },
     },
     icons: {
       iconfont: 'mdiSvg',

@@ -35,7 +35,7 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 | Fonts       | @nuxtjs/google-fonts                                                     |
 | Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                                  |
 | Request     | @nuxtjs/axios                                                            |
-| UI          | @nuxt/components <br /> @nuxtjs/vuetify<br />@nuxtjs/color-mode          |
+| UI          | @nuxt/components <br /> @nuxtjs/vuetify                                  |
 
 Look at [all nuxt modules][modules].
 

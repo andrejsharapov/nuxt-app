@@ -3,8 +3,7 @@
     <h2
       class="text-h6 text-sm-h3 text-lg-h2 text-center content-load__text"
       :style="{
-        color:
-          $colorMode.preference === 'dark' ? 'var(--light)' : 'var(--dark)',
+        color: $vuetify.theme.dark ? 'var(--light)' : 'var(--dark)',
       }"
     >
       {{ $t('app.loading') }}
