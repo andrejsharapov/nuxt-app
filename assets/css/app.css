@@ -2,10 +2,17 @@
 @import './mq';
 
 html {
-  &:not([lang='ru-RU']) {
+  &[lang='en-US'] {
     .v-application {
       --body-font-family: 'Raleway', sans-serif;
       --heading-font-family: 'Montserrat alternates', sans-serif;
+    }
+  }
+
+  &[lang='ru-RU'] {
+    .v-application {
+      --body-font-family: 'Manrope', sans-serif;
+      --heading-font-family: 'Commissioner', sans-serif;
     }
   }
 }

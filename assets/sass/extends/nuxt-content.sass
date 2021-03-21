@@ -1,4 +1,11 @@
 .nuxt-content
+  h1
+    line-height: 1.5
+    margin-bottom: 1rem
+
+  h2
+    margin-bottom: 0.725rem
+
   ul
     list-style-type: none
 
@@ -40,7 +47,10 @@
       background-color: var(--light)
       text-shadow: none
 
-.token.operator
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable
   background-color: transparent
 
 .code-toolbar

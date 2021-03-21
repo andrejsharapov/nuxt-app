@@ -3,7 +3,6 @@ data:
     title: Home
     to: '/en'
   - action: '$mdiFolderOpen'
-    active: false
     nested:
       - action: '$mdiPaletteOutline'
         child:
@@ -48,7 +47,7 @@ data:
           - action: '$mdiVectorPolylineEdit'
             disabled: true
             title: Photoshop
-            to: '/en/pricing/photoshop'
+            to: '/en/works/photoshop'
         title: More
     title: Cases
     to: '/en/cases'

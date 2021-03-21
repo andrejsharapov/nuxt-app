@@ -1,0 +1,78 @@
+.theme--dark {
+  /* vuetify */
+  --sheet: hsl(240, 9%, 16%);
+  --card: hsl(232, 12%, 13%);
+  --dots: hsl(240, 17%, 29%);
+
+  .v-sheet {
+    background-color: var(--sheet);
+  }
+
+  .v-card {
+    background-color: var(--card);
+  }
+
+  &.v-app-bar {
+    &.v-toolbar {
+      &.v-sheet {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.v-navigation-drawer {
+    background-color: var(--sheet);
+  }
+
+  .v-main {
+    background-color: var(--black);
+    background: radial-gradient(var(--dots) 6%, transparent 6%), var(--black);
+    background-position: 0 0, 1.75em 1.75em;
+    background-size: 1.75em 1.75em;
+  }
+
+  .v-footer {
+    .v-card {
+      background-color: var(--black);
+    }
+  }
+
+  /* perfect-scrollbar */
+  .ps {
+    &__thumb {
+      &-x,
+      &-y {
+        background-color: var(--primary);
+      }
+    }
+
+    &__rail {
+      &-x,
+      &-y {
+        background-color: var(--black);
+
+        &-y {
+          width: 9px;
+
+          &.ps--clicking,
+          &:hover {
+            width: 15px;
+          }
+        }
+
+        &:hover,
+        &.ps--clicking {
+          background-color: rgba(var(--dark), 0.12) !important;
+
+          .ps__thumb {
+            &-x,
+            &-y {
+              border-radius: 0.5rem;
+              background-color: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

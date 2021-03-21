@@ -1,14 +1,4 @@
-.v-application
-  background transparent
-  font-family var(--body-font-family) !important
-
-.v-main
-  &__wrap
-    background radial-gradient(var(--sheet) 6%, transparent 6%), var(--back)
-    background-color var(--back)
-    background-position 0 0, 1.75em 1.75em
-    background-size 1.75em 1.75em
-
+// vuetify
 .layout
   &__navbar
     .v-navigation-drawer
@@ -33,3 +23,23 @@
       &:before
         color var(--primary)
         caret-color var(--primary)
+
+.v-overlay
+  -webkit-backdrop-filter blur(5px)
+  backdrop-filter blur(5px)
+  filter blur(5px)
+
+// perfect-scrollbar
+.ps
+  &__rail-x, &__rail-y
+    border-radius 1em
+
+  &__thumb
+    &-y
+      transition right 0.1s linear !important
+      right 0.3125rem
+
+  &__rail-y
+    &:hover, &:focus, &.ps--clicking
+      > .ps__thumb-y
+        right 0.125rem

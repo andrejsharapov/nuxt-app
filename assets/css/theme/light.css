@@ -1,0 +1,30 @@
+.theme--light {
+  &.v-application {
+    color: var(--secondary) !important;
+  }
+
+  &.v-app-bar {
+    &.v-toolbar {
+      &.v-sheet {
+        border-color: #f8f9fccc;
+        background-color: #f8f9fccc !important;
+        backdrop-filter: saturate(180%) blur(0.35rem);
+        box-shadow: var(--shadow-md);
+
+        &:hover {
+          --shadow-md: var(--shadow-lg);
+        }
+      }
+    }
+  }
+
+  .v-main {
+    background-color: var(--light);
+  }
+
+  .v-footer {
+    .v-card {
+      background-color: var(--light);
+    }
+  }
+}
