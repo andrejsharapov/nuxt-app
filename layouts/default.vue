@@ -86,6 +86,7 @@ v-app
     )
       v-icon {{ mdiArrowUpBoldOutline }}
 
+  lazy-s-cookie-box
   notifications(group='translation')
 </template>
 
