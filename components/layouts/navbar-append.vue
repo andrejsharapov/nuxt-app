@@ -1,40 +1,42 @@
 <template lang="pug">
-.navbar__append.d-flex.pa-2
-  //- #1
-  v-menu(
-    offset-x,
-    right,
-    :close-on-click='false',
-    content-class='shadow-base',
-    transition='slide-y-reverse-transition'
-  )
-    template(#activator='{ on: menu }')
-      v-btn(icon, v-on='menu', @click.stop='fab = !fab')
-        v-icon {{ mdiCogOutline }}
+div
+  v-divider
+  .navbar__append.d-flex.flex-column.pa-2
+    //- #1
+    v-menu(
+      offset-x,
+      right,
+      :close-on-click='false',
+      content-class='shadow-base',
+      transition='slide-y-reverse-transition'
+    )
+      template(#activator='{ on: menu }')
+        v-btn(icon, v-on='menu', @click.stop='fab = !fab')
+          v-icon {{ mdiCogOutline }}
 
-    v-list(dense, nav)
-      v-list-item-group(multiple, color='accent')
-        //- btn #1
-        v-list-item(@click.stop='goClipped')
-          v-list-item-icon
-            v-icon {{ mdiApplication }}
-          v-list-item-content
-            v-list-item-title {{ $t("site.header.name") }}
+      v-list(dense, nav)
+        v-list-item-group(multiple, color='accent')
+          //- btn #1
+          v-list-item(@click.stop='goClipped')
+            v-list-item-icon
+              v-icon {{ mdiApplication }}
+            v-list-item-content
+              v-list-item-title {{ $t("site.header.name") }}
 
-        //- btn #2
-        v-list-item(@click.stop='goMini')
-          v-list-item-icon
-            v-icon {{ miniVariant ? mdiArrowExpandHorizontal : mdiArrowCollapseHorizontal }}
-          v-list-item-content
-            v-list-item-title {{ $t("site.navbar.name") }}
+          //- btn #2
+          v-list-item(@click.stop='goMini')
+            v-list-item-icon
+              v-icon {{ miniVariant ? mdiArrowExpandHorizontal : mdiArrowCollapseHorizontal }}
+            v-list-item-content
+              v-list-item-title {{ $t("site.navbar.name") }}
 
-        //- btn #3
-        lazy-s-lang-switcher
+          //- btn #3
+          lazy-s-lang-switcher
 
-        //- btn #4
-        lazy-s-color-mode-picker
-  //- #2
-  v-spacer
+          //- btn #4
+          lazy-s-color-mode-picker
+    //- #2
+    v-spacer
 </template>
 
 <script>

@@ -2,7 +2,17 @@ import { appMeta as config } from '../config/app'
 
 export default {
   app: {
+    meta: {
+      title: `${config.app.en.title}`,
+      description: `${config.app.en.description}`,
+    },
     loading: 'Loading',
+    'general-information': 'General information',
+    'last-revised': 'Last revised',
+    license: 'License',
+    privacy: 'Privacy',
+    terms: 'Terms of use',
+    updates: 'Updates',
   },
   author: {
     name: 'Andrej Sharapov',

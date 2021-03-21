@@ -17,16 +17,5 @@ export default {
   components: {
     AppLogoColor,
   },
-  props: {
-    clipped: {
-      type: Boolean,
-      default: false,
-    },
-  },
-  data() {
-    return {
-      clip: this.clipped,
-    }
-  },
 }
 </script>
