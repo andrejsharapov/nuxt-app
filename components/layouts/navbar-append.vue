@@ -1,13 +1,13 @@
 <template lang="pug">
 v-row.ma-0.pa-2.navbar__append
   //- 1
-  v-col.py-0.text-center
+  v-col.py-0.pl-0
     v-menu(
       offset-y,
       top,
       :close-on-click='false',
-      content-class='shadow-base',
-      transition='slide-y-reverse-transition'
+      content-class='shadow-lg',
+      transition='slide-y-transition'
     )
       template(#activator='{ on: menu }')
         v-btn(icon, v-on='menu', @click.stop='fab = !fab')

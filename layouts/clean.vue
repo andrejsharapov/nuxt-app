@@ -24,27 +24,23 @@ v-app
   //- /SECTION
 
   //- SECTION[epic=layout] header
-  v-app-bar(:clipped-left='clipped', fixed, app)
+  v-app-bar(
+    app,
+    :clipped-left='clipped',
+    fixed,
+    :flat='!clipped',
+    :hide-on-scroll='!clipped'
+  )
+    nuxt-link.mr-3(v-if='$vuetify.breakpoint.xs', :to='localePath("/")')
+      img(
+        src='~/assets/images/app-logo.svg?data',
+        :alt='$t("host.name")',
+        width='40',
+        height='40'
+      )
     s-layout-navbar-prepend.ml-n4(
-      v-if='$vuetify.breakpoint.smAndUp && !drawer'
+      v-if='$vuetify.breakpoint.smAndUp && (clipped || !drawer)'
     )
-    nuxt-link(v-if='$vuetify.breakpoint.xs', :to='localePath("/")')
-      img(
-        src='~/assets/images/app-logo.svg?data',
-        :alt='$t("host.name")',
-        width='40',
-        height='40'
-      )
-    nuxt-link(
-      v-if='$vuetify.breakpoint.smAndUp && drawer && miniVariant && clipped',
-      :to='localePath("/")'
-    )
-      img(
-        src='~/assets/images/app-logo.svg?data',
-        :alt='$t("host.name")',
-        width='40',
-        height='40'
-      )
     v-tooltip(right)
       template(#activator='{ on: sidebar }')
         v-btn(icon, v-on='{ ...sidebar }', @click.stop='drawer = !drawer')
