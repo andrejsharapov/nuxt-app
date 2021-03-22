@@ -134,7 +134,7 @@ export default {
 [wp]: https://madeas.ru
 [gulp]: https://andrejsharapov.github.io
 [active]: https://img.shields.io/badge/active-yellow.svg
-[in development]: https://img.shields.io/badge/active-in_development-29a847.svg
+[in development]: https://img.shields.io/badge/active-in_development-40ce87.svg
 
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
