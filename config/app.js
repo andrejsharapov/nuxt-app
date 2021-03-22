@@ -32,8 +32,8 @@ export const appMeta = {
 
 export const appColors = {
   default: '#FFFFFF',
-  primary: '#009DE6',
-  accent: '#4ADED9',
+  primary: '#0a92d1',
+  accent: '#0041e6',
   mask: '#5BBAD5',
 }
 
