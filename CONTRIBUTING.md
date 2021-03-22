@@ -1,6 +1,6 @@
 # TLTR: Create a Pull Request
 
-![GitHub contributors](https://img.shields.io/github/contributors/andrejsharapov/sharapov.dev?color=fd7e17)
+![GitHub contributors][contributors]
 
 1. First of all, fork and clone this repository;
 2. Clone your new repository to your system;
@@ -20,3 +20,4 @@ Thank you!
 
 [1]: ../../#tltr-wiki
 [2]: ../../#css-syntax
+[contributors]: https://img.shields.io/github/contributors/andrejsharapov/nuxt-app?color=fd7e17

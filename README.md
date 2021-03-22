@@ -2,13 +2,13 @@
 
 Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer
 
-## This new stage in portfolio development
+## :fish: This new stage in portfolio development
 
 1. Pure HTML
 2. [WordPress][wp] ![active]
 3. [Gulp.js + Vue.js][gulp] ![active]
-4. Vue CLI (jumped over)
-5. VuePress (jumped over)
+4. Vue CLI :feet:
+5. VuePress :feet:
 6. Nuxt.js ![in development]
 
 [![README.md][preview]](/README.md)
@@ -22,7 +22,8 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ## Coordination
 
-[Ideas][ideas] | [Process][projects]
+:orange_book: [IDEAS][ideas]  
+:blue_book: [PROCESS][projects]
 
 ### Nuxt modules
 
@@ -136,7 +137,7 @@ export default {
 [active]: https://img.shields.io/badge/active-yellow.svg
 [in development]: https://img.shields.io/badge/active-in_development-40ce87.svg
 
-[ideas]: ../../projects/1
+[ideas]: ../../discussions/31
 [projects]: ../../projects/2
 
 [yarn]: https://yarnpkg.com/
