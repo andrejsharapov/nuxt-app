@@ -9,7 +9,7 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 3. [Gulp.js + Vue.js][gulp] ![active]
 4. Vue CLI (jumped over)
 5. VuePress (jumped over)
-6. Nuxt.js ![active] ![in development]
+6. Nuxt.js ![in development]
 
 [![README.md][preview]](/README.md)
 
@@ -134,7 +134,7 @@ export default {
 [wp]: https://madeas.ru
 [gulp]: https://andrejsharapov.github.io
 [active]: https://img.shields.io/badge/active-yellow.svg
-[in development]: https://img.shields.io/badge/active-in_development-yellow.svg
+[in development]: https://img.shields.io/badge/active-in_development-29a847.svg
 
 [ideas]: ../../projects/1
 [projects]: ../../projects/2
