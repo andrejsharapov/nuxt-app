@@ -26,6 +26,7 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
+    '@nuxtjs/robots',
   ],
   plugins: [
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
@@ -126,6 +127,12 @@ export default {
   // router: {
   //   trailingSlash: false,
   // },
+  robots: {
+    UserAgent: '*',
+    // Disallow: '/',
+    Host: `${appMeta.host.url}`,
+    Sitemap: `${appMeta.host.url}/sitemap.xml`,
+  },
   googleFonts: {
     prefetch: true,
     families: {
