@@ -26,6 +26,7 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
+    '@nuxtjs/yandex-metrika',
   ],
   plugins: [
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
@@ -122,6 +123,14 @@ export default {
       useWebmanifestExtension: true,
     },
     workbox: {},
+  },
+  yandexMetrika: {
+    id: 70815118,
+    accurateTrackBounce: true,
+    clickmap: true,
+    trackHash: true,
+    trackLinks: true,
+    webvisor: true,
   },
   // router: {
   //   trailingSlash: false,
