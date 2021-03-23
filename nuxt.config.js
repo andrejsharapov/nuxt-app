@@ -18,6 +18,7 @@ export default {
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
     // 'nuxt-purgecss',
+    '@nuxtjs/google-analytics',
   ],
   modules: [
     '@nuxtjs/axios',
@@ -126,6 +127,10 @@ export default {
   // router: {
   //   trailingSlash: false,
   // },
+  googleAnalytics: {
+    id: 'UA-186185621-1',
+    checkDuplicatedScript: true,
+  },
   googleFonts: {
     prefetch: true,
     families: {
