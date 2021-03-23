@@ -26,6 +26,7 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
+    '@nuxtjs/gtm',
   ],
   plugins: [
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
@@ -33,6 +34,7 @@ export default {
     { src: '~/plugins/vue-perfect-scrollbar' },
     { src: '~/plugins/markdown-theme-prism' },
     { src: '~/plugins/vue-cookieconsent' },
+    // { src: '~/plugins/gtm' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -122,6 +124,10 @@ export default {
       useWebmanifestExtension: true,
     },
     workbox: {},
+  },
+  gtm: {
+    id: 'GTM-MTQTSSX',
+    enabled: true,
   },
   // router: {
   //   trailingSlash: false,
