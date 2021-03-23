@@ -117,7 +117,7 @@ export default {
       display: 'standalone',
       icons: [64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
       name: appMeta.app.en.author.name,
-      short_name: 'sharapov',
+      short_name: `${appMeta.app.short}`,
       theme_color: appColors.default,
       useWebmanifestExtension: true,
     },
