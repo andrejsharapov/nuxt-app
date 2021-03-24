@@ -21,12 +21,13 @@ export default {
   ],
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
     '@nuxtjs/robots',
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
   plugins: [
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
@@ -127,6 +128,10 @@ export default {
   // router: {
   //   trailingSlash: false,
   // },
+  sitemap: {
+    hostname: `${appMeta.host.url}`,
+    gzip: true,
+  },
   robots: {
     UserAgent: '*',
     // Disallow: '/',
