@@ -25,6 +25,7 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
+    '@nuxtjs/robots',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
   ],
@@ -130,6 +131,12 @@ export default {
   sitemap: {
     hostname: `${appMeta.host.url}`,
     gzip: true,
+  },
+  robots: {
+    UserAgent: '*',
+    // Disallow: '/',
+    Host: `${appMeta.host.url}`,
+    Sitemap: `${appMeta.host.url}/sitemap.xml`,
   },
   googleFonts: {
     prefetch: true,
