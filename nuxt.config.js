@@ -18,6 +18,7 @@ export default {
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
     // 'nuxt-purgecss',
+    '@nuxtjs/google-analytics',
   ],
   modules: [
     '@nuxtjs/axios',
@@ -143,6 +144,10 @@ export default {
   gtm: {
     id: 'GTM-MTQTSSX',
     enabled: true,
+  },
+  googleAnalytics: {
+    id: 'UA-186185621-1',
+    checkDuplicatedScript: true,
   },
   googleFonts: {
     prefetch: true,
