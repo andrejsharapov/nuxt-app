@@ -25,9 +25,9 @@ export default {
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
-    '@nuxtjs/robots',
     '@nuxtjs/pwa',
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
   plugins: [
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
