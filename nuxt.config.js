@@ -18,14 +18,19 @@ export default {
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
     // 'nuxt-purgecss',
+    '@nuxtjs/google-analytics',
   ],
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/pwa',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxtjs/markdownit',
     'nuxt-i18n',
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    '@nuxtjs/gtm',
+    '@nuxtjs/yandex-metrika',
   ],
   plugins: [
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
@@ -33,6 +38,7 @@ export default {
     { src: '~/plugins/vue-perfect-scrollbar' },
     { src: '~/plugins/markdown-theme-prism' },
     { src: '~/plugins/vue-cookieconsent' },
+    // { src: '~/plugins/gtm' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -117,15 +123,41 @@ export default {
       display: 'standalone',
       icons: [64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
       name: appMeta.app.en.author.name,
-      short_name: 'sharapov',
+      short_name: `${appMeta.app.short}`,
       theme_color: appColors.default,
       useWebmanifestExtension: true,
     },
     workbox: {},
   },
+  yandexMetrika: {
+    id: 70815118,
+    accurateTrackBounce: true,
+    clickmap: true,
+    trackHash: true,
+    trackLinks: true,
+    webvisor: true,
+  },
   // router: {
   //   trailingSlash: false,
   // },
+  sitemap: {
+    hostname: `${appMeta.host.url}`,
+    gzip: true,
+  },
+  robots: {
+    UserAgent: '*',
+    // Disallow: '/',
+    Host: `${appMeta.host.url}`,
+    Sitemap: `${appMeta.host.url}/sitemap.xml`,
+  },
+  gtm: {
+    id: 'GTM-MTQTSSX',
+    enabled: true,
+  },
+  googleAnalytics: {
+    id: 'UA-186185621-1',
+    checkDuplicatedScript: true,
+  },
   googleFonts: {
     prefetch: true,
     families: {
