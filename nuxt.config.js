@@ -245,6 +245,7 @@ export default {
   },
   components: [
     { path: '~/components/components/', prefix: 's' },
+    { path: '~/components/components/back-image/', prefix: 's-back' },
     { path: '~/components/fishes/', prefix: 's-fish' },
     { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
