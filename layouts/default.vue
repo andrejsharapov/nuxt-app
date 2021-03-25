@@ -48,6 +48,7 @@ v-app
       span {{ $t("site.navbar.name") }}
     v-spacer
     lazy-s-layout-job-offer
+    //- REVIEW (Value of key '$vuetify.badge' is not a string or function ! Cannot translate the value of keypath '$vuetify.badge'. Use the value of keypath as default.)
     lazy-s-layout-recent-projects
     //- v-btn(icon, @click.stop='rightDrawer = !rightDrawer')
     //-   v-icon mdi-dots-grid
