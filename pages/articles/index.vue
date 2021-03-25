@@ -1,6 +1,6 @@
 <template lang="pug">
 .page__articles
-  //- history-back
+  s-history-back
   v-container
     v-row
       v-col(cols='12')
