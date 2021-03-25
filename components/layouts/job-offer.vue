@@ -4,6 +4,7 @@
     bordered,
     bottom,
     dot,
+    label='offer',
     offset-x='20',
     offset-y='20',
     :color='$t("author.job.status") === "1" ? "success" : "grey darken-2"'
