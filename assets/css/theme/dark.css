@@ -25,8 +25,8 @@
   }
 
   .v-main {
-    background-color: var(--black);
     background: radial-gradient(var(--dots) 6%, transparent 6%), var(--black);
+    background-color: var(--black);
     background-position: 0 0, 1.75em 1.75em;
     background-size: 1.75em 1.75em;
   }
