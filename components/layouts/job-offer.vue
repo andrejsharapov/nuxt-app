@@ -4,6 +4,7 @@
     bordered,
     bottom,
     dot,
+    label='offer',
     offset-x='20',
     offset-y='20',
     :color='$t("author.job.status") === "1" ? "success" : "grey darken-2"'
@@ -13,12 +14,12 @@
         v-tooltip(left)
           template(#activator='{ on: email }')
             v-btn(
-              v-on='email',
               icon,
               :disabled='$t("author.job.status") !== "1"',
               :title='$t("author.job.title")',
               href='mailto:an.sharapov90@gmail.com?subject=Предлагаем работу',
-              rel='noopener noreferrer'
+              rel='noopener noreferrer',
+              v-on='email'
             ) 
               v-icon {{ hover ? mdiEmailOutline : mdiAccountCircleOutline }}
           span {{ $t("author.job.title") }}
