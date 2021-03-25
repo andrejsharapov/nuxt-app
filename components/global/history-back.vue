@@ -6,7 +6,6 @@
     :ripple='false',
     @click='$router.back()'
   )
-    //- @click='$router.go(-1)'
     v-icon(left) {{ mdiChevronLeft }}
     | {{ $t("btn.go.back") }}
 </template>
