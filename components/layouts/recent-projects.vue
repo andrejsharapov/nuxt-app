@@ -9,7 +9,13 @@
   )
     template(#activator='{ on: menu }')
       v-btn.mx-2(icon, v-on='{ ...menu }')
-        v-badge(left, overlap, content='0', color='red darken-3')
+        v-badge(
+          content='0',
+          label='projects',
+          left,
+          overlap,
+          color='red darken-3'
+        )
           v-icon {{ mdiBellRingOutline }}
     v-list
       v-subheader {{ $t("projects.recent") }}
