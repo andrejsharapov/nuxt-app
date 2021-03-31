@@ -67,6 +67,7 @@ export default {
     'not-found': 'No completed projects.',
   },
   pages: {
+    shown: 'Shown on page',
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
