@@ -1,5 +1,11 @@
 <template>
-  <div v-if="loading" class="content-load">
+  <div
+    v-if="loading"
+    class="content-load"
+    :style="{
+      backgroundColor: $vuetify.theme.dark ? 'var(--black)' : 'var(--light)',
+    }"
+  >
     <h2
       class="text-h6 text-sm-h3 text-lg-h2 text-center content-load__text"
       :style="{
@@ -604,7 +610,6 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: var(--back);
 
   &__text {
     span {
