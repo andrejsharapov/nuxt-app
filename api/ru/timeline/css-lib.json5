@@ -1,0 +1,8 @@
+{
+  label: 'idea',
+  date: '2018-04-18',
+  title: 'Коллекция «CSS теней»',
+  caption: 'Разработка кроссбраузерной коллекции CSS теней «CSS Box-Shadows library». Для создания библиотеки потребовалось изучить VScode, Gulp, SASS и многое другое.',
+  button: 'Сайт',
+  to: 'https://madeas.github.io/box-shadows/',
+}
