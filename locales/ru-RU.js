@@ -29,6 +29,7 @@ export default {
       status: `${config.author.job.status}`,
       title: 'Предложить работу',
     },
+    region: 'Россия, Москва',
   },
   host: {
     name: `${config.host.name}`,
@@ -64,5 +65,11 @@ export default {
   projects: {
     recent: 'Недавние проекты',
     'not-found': 'Нет завершенных проектов.',
+  },
+  pages: {
+    contact: {
+      message:
+        'Вы можете связаться со мной через указанные выше социальные сети или использовать другие контакты.',
+    },
   },
 }
