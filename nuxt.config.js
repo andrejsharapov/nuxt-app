@@ -38,6 +38,7 @@ export default {
     { src: '~/plugins/vue-perfect-scrollbar' },
     { src: '~/plugins/markdown-theme-prism' },
     { src: '~/plugins/vue-cookieconsent' },
+    { src: '~/plugins/vue-clipboard' },
     // { src: '~/plugins/gtm' },
   ],
   vuetify: {
@@ -249,6 +250,7 @@ export default {
     { path: '~/components/fishes/', prefix: 's-fish' },
     { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
+    { path: '~/components/pages/', prefix: 's-page' },
     '~/components/',
   ],
   build: {

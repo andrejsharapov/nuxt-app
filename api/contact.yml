@@ -10,13 +10,17 @@ contacts:
   - content: '+7 (929) 511-40-25'
     icon: $mdiWhatsapp
     note: '@andrejsharapov'
-    title: WhatsApp & Telegram
+    title: WhatsApp
+  - content: '+7 (929) 511-40-25'
+    icon: $mdiTelegram
+    note: '@andrejsharapov'
+    title: Telegram
   - content: andrejsharapov#0036
     icon: $mdiDiscord
     note:
     title: Discord
   - avatar: '/src/author/live9c920983b0fe9b8e_1.jpeg'
     content: Andrej Sharapov
-    icon:
+    icon: $mdiSkype
     note: 'live:9c920983b0fe9b8e_1'
     title: Skype
