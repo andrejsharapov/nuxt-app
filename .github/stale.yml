@@ -1,9 +1,9 @@
-daysUntilStale: 2
-daysUntilClose: 1
+daysUntilStale: 14
+daysUntilClose: 17
 staleLabel: stale
 exemptLabels:
-  - "feature-request"
-  - "pending"
+  - 'feature-request'
+  - 'pending'
 exemptAssignees: true
 only: issues
 mark Comment: >
@@ -12,4 +12,5 @@ mark Comment: >
   If you would like this issue to remain open verify that you can still reproduce the issue.
 
   Issues that are labeled as `pending` will not be automatically marked as stale.
+
 # Configuration for probot-stale - https://github.com/probot/stale
