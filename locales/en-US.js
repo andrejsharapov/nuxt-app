@@ -72,6 +72,10 @@ export default {
   },
   pages: {
     shown: 'Shown on page',
+    certificates: {
+      message:
+        'During my work, I took several tests and online courses in web design, development, marketing and some other areas. Below you can see the certificates of completion.',
+    },
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
