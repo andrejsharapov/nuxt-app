@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.anchor-link {
+  position: relative;
+
+  a {
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+
+  &:hover {
+    a {
+      opacity: 1;
+    }
+  }
+}
