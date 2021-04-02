@@ -12,7 +12,7 @@
           class="rounded-lg mb-sm-4 hidden"
         >
           <v-img
-            :lazy-src="`https://fakeimg.pl/${sizeImage}/e9ecf2/1e1e24?text=IMG`"
+            :lazy-src="`https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG`"
             :src="project.img.src"
             :alt="project.img.alt"
             aspect-ratio="1.7"
