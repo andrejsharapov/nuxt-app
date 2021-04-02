@@ -13,6 +13,10 @@ export default {
     privacy: 'Privacy',
     terms: 'Terms of use',
     updates: 'Updates',
+    category: 'Category | category | Not category',
+    date: {
+      default: 'Date',
+    },
     themes: {
       light: 'Light mode',
       dark: 'Dark mode',
@@ -71,6 +75,10 @@ export default {
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
+    },
+    projects: {
+      message:
+        'Often the ideas born in the head remain just an idea. Therefore, I try to bring my ideas to life, and some of them have turned into large-scale projects.',
     },
     timeline: {
       message:
