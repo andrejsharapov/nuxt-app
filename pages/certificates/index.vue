@@ -1,5 +1,6 @@
 <template lang="pug">
 .page__certificates
+  s-history-back
   s-layout-components-back-image(:page='page')
     template(#back-image)
       s-back-flies-card-vertically
@@ -10,11 +11,21 @@
         :duration='2000'
       )
 
-  s-history-back
   v-container
     v-row
-      v-col(cols='12')
-        pre {{ certItems }}
+      v-col(cols='12', sm='8', md='9') {{ $t("pages.certificates.message") }}
+      v-col.d-none.d-sm-block.mt-md-n16.text-center(
+        cols='12',
+        sm='4',
+        md='3',
+        style='z-index: 2'
+      )
+        s-fish-pages-certificates.mt-sm-n8.mt-md-n16(
+          width='250',
+          :height='null'
+        )
+
+      s-page-certificates-cert-items(:items='certItems')
 </template>
 
 <script>
