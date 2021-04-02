@@ -67,9 +67,17 @@ export default {
     'not-found': 'No completed projects.',
   },
   pages: {
+    shown: 'Shown on page',
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
     },
+    timeline: {
+      message:
+        'Here you can see a tape of my professional achievements and the most significant events for me. I hope this encourages you to follow your dreams and record your accomplishments along the way!',
+    },
+  },
+  works: {
+    'works-not-found': 'Works not found',
   },
 }

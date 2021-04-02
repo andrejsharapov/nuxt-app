@@ -1,0 +1,8 @@
+{
+  label: 'progress',
+  date: '2016-05-30',
+  title: 'Best on uCoz',
+  caption: 'Сайт студии входит в список лучших сайтов системы uCoz по версии «Best on uCoz».',
+  button: 'beston.ucoz.ru',
+  to: 'https://beston.ucoz.ru/',
+}

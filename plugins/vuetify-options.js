@@ -50,6 +50,10 @@ import {
   mdiDiscord,
   mdiSkype,
   mdiTelegram,
+  mdiChartTimelineVariant,
+  mdiTrophyAward,
+  mdiAccountCheck,
+  mdiAdjust,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -169,6 +173,10 @@ export default function ({ app }) {
         mdiDiscord,
         mdiSkype,
         mdiTelegram,
+        mdiChartTimelineVariant,
+        mdiTrophyAward,
+        mdiAccountCheck,
+        mdiAdjust,
       },
     },
   }
