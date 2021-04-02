@@ -4,20 +4,28 @@ figures:
   - date: 2019-03-26
     to: 'https://geekbrains.ru/certificates/578830.en'
     img:
-      src: '/src/certs/cert_test_7.jpg'
-    caption: Successfully passed the test «HTML&CSS. Test HTML5/CSS3»
+      src: '/cert_test_7.jpg'
+    caption:
+      ru: Прошел тестирование по HTML & CSS «Тест HTML5/CSS3»
+      en: Successfully passed the test «Test HTML5/CSS3»
   - date: 2018-09-14
     to: 'https://geekbrains.ru/certificates/504197.en'
     img:
-      src: '/src/certs/cert_test_5.jpg'
-    caption: Successfully passed the test «HTML&CSS. Advanced»
+      src: '/cert_test_5.jpg'
+    caption:
+      ru: Прошел тестирование по «HTML & CSS. Сложный уровень»
+      en: Successfully passed the test «HTML & CSS. Advanced»
   - date: 2018-02-09
     to: 'https://geekbrains.ru/certificates/409910.en'
     img:
-      src: '/src/certs/cert_test_3.jpg'
-    caption: Successfully passed the test «HTML&CSS. Intermediate»
+      src: '/cert_test_3.jpg'
+    caption:
+      ru: Прошел тестирование по «HTML & CSS. Средний уровень»
+      en: Successfully passed the test «HTML & CSS. Intermediate»
   - date: 2018-01-23
     to: 'https://geekbrains.ru/certificates/400769.en'
     img:
-      src: '/src/certs/cert_test_1.jpg'
-    caption: Successfully passed the test «HTML&CSS. Beginner»
+      src: '/cert_test_1.jpg'
+    caption:
+      ru: Прошел тестирование по «HTML & CSS. Начальный уровень»
+      en: Successfully passed the test «HTML & CSS. Beginner»

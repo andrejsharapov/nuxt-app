@@ -4,15 +4,21 @@ figures:
   - date: 2020-04-23
     to: 'https://geekbrains.ru/certificates/797627.en'
     img:
-      src: '/src/certs/cert_test_9.jpg'
-    caption: Successfully passed the test «Graphic design for UX»
+      src: '/cert_test_9.jpg'
+    caption:
+      ru: Прошел тестирование по «Основы графического дизайна для дизайнера интерфейсов»
+      en: Successfully passed the test «Graphic design for UX»
   - date: 2018-09-18
     to: 'https://geekbrains.ru/certificates/505468.en'
     img:
-      src: '/src/certs/cert_cur_4.jpg'
-    caption: Completed the course «Intensive Web Design . Development of Landing page»
+      src: '/cert_cur_4.jpg'
+    caption:
+      ru: Окончил курс «Интенсив “Основы веб-дизайна”»
+      en: Completed the course «Intensive Web Design . Development of Landing page»
   - date: 2018-01-23
     to: 'https://geekbrains.ru/certificates/400793.en'
     img:
-      src: '/src/certs/cert_test_2.jpg'
-    caption: Successfully passed the test «Web Design. Beginner»
+      src: '/cert_test_2.jpg'
+    caption:
+      ru: Прошел тестирование по «Веб-дизайн. Начальный уровень»
+      en: Successfully passed the test «Web Design. Beginner»
