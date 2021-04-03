@@ -44,16 +44,6 @@ import {
   mdiShieldLock,
   mdiAccountCheckOutline,
   mdiLicense,
-  mdiEmail,
-  mdiPhone,
-  mdiWhatsapp,
-  mdiDiscord,
-  mdiSkype,
-  mdiTelegram,
-  mdiChartTimelineVariant,
-  mdiTrophyAward,
-  mdiAccountCheck,
-  mdiAdjust,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -167,16 +157,6 @@ export default function ({ app }) {
         mdiShieldLock,
         mdiAccountCheckOutline,
         mdiLicense,
-        mdiEmail,
-        mdiPhone,
-        mdiWhatsapp,
-        mdiDiscord,
-        mdiSkype,
-        mdiTelegram,
-        mdiChartTimelineVariant,
-        mdiTrophyAward,
-        mdiAccountCheck,
-        mdiAdjust,
       },
     },
   }

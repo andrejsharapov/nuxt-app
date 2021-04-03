@@ -1,8 +1,0 @@
-{
-  label: 'development',
-  date: '2018-05-24',
-  title: 'CSS Shadows Release',
-  caption: 'Implementing and publishing the Box-Shadows CSS library collection required learning many languages and software such as Node.js, Git, Gulp, and NPM.',
-  button: 'GitHub',
-  to: 'https://github.com/madeas/box-shadows.css/tree/1.0.0',
-}

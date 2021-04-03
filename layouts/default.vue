@@ -88,7 +88,6 @@ v-app
 
   lazy-s-cookie-box
   notifications(group='translation')
-  notifications(group='copy-to-clipboard')
 </template>
 
 <script>
