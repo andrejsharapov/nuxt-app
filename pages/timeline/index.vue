@@ -4,7 +4,7 @@
 
   s-layout-components-back-image(:page='page')
     template(#back-image)
-      s-back-waves-lines-two(
+      s-back-waves-line-two(
         absolute,
         right='0',
         bottom='-7',
