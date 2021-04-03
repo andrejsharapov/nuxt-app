@@ -5,12 +5,13 @@
       :id='cert.slug'
     ) {{ titleLocale(cert) }}
       nuxt-link.ml-2(:to='$nuxt.$route.path + "#" + cert.slug') #
-    v-row
+    v-row.mx-0
       v-col(
         v-for='(f, index) in cert.figures',
         :key='index',
         cols='12',
-        :sm='[2].includes(cert.figures.length) ? "6" : [4].includes(cert.figures.length) ? "3" : "4"'
+        sm='6',
+        :md='[4].includes(cert.figures.length) ? "3" : "4"'
       )
         v-card.cert.hidden.shadow-sm
           v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
@@ -22,17 +23,17 @@
             rel='noopener noreferrer'
           )
             v-icon(color='white') {{ mdiArrowExpand }}
-          v-img.fill-height(
-            :lazy-src='`https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG`',
+
+          img(
+            lazy-src='https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG',
+            loading='lazy',
             :src='`/src/certificates${f.img.src}`',
             alt='',
-            max-width='100%',
-            contain,
-            :aspect-ratio='16 / 11.25'
+            contain
           )
-            template(#placeholder)
-              v-row.fill-height.ma-0(align='center', justify='center')
-                v-progress-circular(indeterminate, color='grey lighten-5')
+            //- template(#placeholder)
+            //-   v-row.fill-height.ma-0(align='center', justify='center')
+            //-     v-progress-circular(indeterminate, color='grey lighten-5')
 
         v-card-text.pb-0.text-center {{ certLocale(f.caption) }}
         v-card-subtitle.text-center {{ formatDate(f.date) }}
@@ -78,6 +79,9 @@ export default {
 
 <style lang="scss">
 .cert {
+  position: relative;
+  max-width: 100%;
+
   &-open {
     position: absolute;
     z-index: 1;

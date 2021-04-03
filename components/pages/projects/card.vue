@@ -2,17 +2,13 @@
   <div transition="slide-y-reverse-transition" class="mb-4 project-card">
     <v-row no-gutters>
       <v-col cols="12" md="4">
-        <v-list-item-subtitle
-          class="mb-4 ml-md-7 grey--text text-overline"
-          v-text="project.type"
-        />
         <v-card
           :flat="$vuetify.breakpoint.smAndDown"
           :class="{ 'project-card__image': $vuetify.breakpoint.mdAndUp }"
           class="rounded-lg mb-sm-4 hidden"
         >
           <v-img
-            :lazy-src="`https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG`"
+            lazy-src="https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG"
             :src="project.img.src"
             :alt="project.img.alt"
             aspect-ratio="1.7"
@@ -51,13 +47,15 @@
               #
             </nuxt-link>
           </v-card-title>
-          <v-card-text class="text-wrap" v-text="project.desc" />
+          <v-card-text class="text-wrap">{{ project.desc }}</v-card-text>
           <v-btn
-            text
+            :text="$vuetify.breakpoint.smAndUp"
+            :large="$vuetify.breakpoint.xs"
+            :block="$vuetify.breakpoint.xs"
+            color="primary"
             :href="project.url"
             target="_blank"
             rel="noopener noreferrer"
-            class="primary--text"
           >
             {{ $t('btn.go.to') }}
             <v-icon right>{{ mdiOpenInNew }}</v-icon>
@@ -101,7 +99,7 @@ $card: project-card;
     transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
     filter: blur(2px);
     opacity: 0.5;
-    transition: all calc(var(--base-time) / 2) cubic-bezier(0, 0.31, 0.22, 1.25);
+    transition: all var(--base-time) cubic-bezier(0.25, 0.1, 0, 2.05);
   }
 
   &:hover {
