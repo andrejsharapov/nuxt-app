@@ -1,0 +1,29 @@
+type: coding
+title: Turned business card on CSS
+src: yrOZvY
+description:
+  en: A hover effect that changes the angle of the card using just a CSS property. If you click on the card, you can see its reverse side.
+  ru: Эффект наведения, меняющий угол наклона карточки, при помощи одного лишь CSS свойства. Если нажать на карту, можно увидеть ее обратную сторону.
+date: 2019-04-05
+
+view:
+  title: Turned business card on CSS
+  tabs: css,html
+
+alert:
+  type:
+  icon:
+  message:
+
+pen:
+  - title: Tags
+    list:
+      - grid
+      - transform
+      - perspective
+      - cubic-bezier
+
+  - title: Code
+    list:
+      - Pug
+      - SCSS

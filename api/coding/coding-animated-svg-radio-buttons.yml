@@ -1,0 +1,29 @@
+type: coding
+title: Animated SVG radio buttons
+src: WmQMMm
+description:
+  en: Stylish switches for SVG and CSS.
+  ru: Стильные переключатели на SVG и CSS.
+date: 2019-02-28
+
+view:
+  title: CSS Device Creator | Samsung, Apple, etc.
+  tabs: result,html
+
+alert:
+  type:
+  icon:
+  message:
+
+pen:
+  - title: Tags
+    list:
+      - transform
+      - cubic-bezier
+      - -webkit-text-fill-color
+      - background-clip
+
+  - title: Code
+    list:
+      - Pug
+      - SCSS

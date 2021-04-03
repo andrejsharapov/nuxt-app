@@ -1,0 +1,30 @@
+type: coding
+date: 2019-03-11
+title: Some SVG animation & keyframes
+src: WmEyeM
+
+description:
+  en: 'SVG animation on CSS properties @keyframes'
+  ru: 'SVG анимация при помощи свойств CSS @keyframes'
+
+view:
+  title: Some SVG animation & keyframes
+  tabs: css,html
+
+alert:
+  type:
+  icon:
+  message:
+
+pen:
+  - title: Tags
+    list:
+      - animation
+      - '@keyframes'
+      - 'stroke-dasharray'
+      - 'stroke-dashoffset'
+
+  - title: Code
+    list:
+      - Pug
+      - SCSS

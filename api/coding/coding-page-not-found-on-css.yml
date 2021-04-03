@@ -1,0 +1,29 @@
+type: coding
+title: Creative animated error page 404 / Only CSS
+src: aXpqQB
+description:
+  en: Animated 404 error page rendered using CSS properties.
+  ru: Анимированная страница 404 ошибки, выполненная при помощи CSS свойств.
+date: 2019-01-31
+
+view:
+  title: Page 404 on CSS
+  tabs: css,html
+
+alert:
+  type:
+  icon:
+  message:
+
+pen:
+  - title: Tags
+    list:
+      - clip-path
+      - transform
+      - flex
+      - '@keyframes'
+
+  - title: Code
+    list:
+      - Pug
+      - SCSS
