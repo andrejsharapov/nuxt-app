@@ -80,6 +80,10 @@ export default {
       message:
         'You can contact me through the above social networks or use other contacts.',
     },
+    drawings: {
+      message:
+        'As a child, I studied at art school, studied drawing, painting, graphics, art history, sculpture and much more. Unfortunately, I cannot share all my works, as many of them are lost. But in August 2019, I found some old sketches that you can see below.',
+    },
     projects: {
       message:
         'Often the ideas born in the head remain just an idea. Therefore, I try to bring my ideas to life, and some of them have turned into large-scale projects.',
@@ -91,5 +95,6 @@ export default {
   },
   works: {
     'works-not-found': 'Works not found',
+    examples: 'Work examples',
   },
 }
