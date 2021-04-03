@@ -2,49 +2,49 @@ title: Программирование
 icon: $mdiDevices
 figures:
   - date: 2019-06-03
-    to: 'https://geekbrains.ru/certificates/600621.en'
+    to: 600621
     img:
       src: '/cert_test_8.jpg'
     caption:
       ru: Прошел тестирование по «Javascript. Начальный уровень»
       en: Successfully passed the test «JavaScript. Beginner»
   - date: 2018-10-30
-    to: 'https://geekbrains.ru/certificates/521264.en'
+    to: 521264
     img:
       src: '/cert_cur_6.jpg'
     caption:
       ru: Окончил курс «Веб-разработка. Быстрый старт»
       en: Completed the course «Web development. Quick start. Free video course on php»
   - date: 2018-10-20
-    to: 'https://geekbrains.ru/certificates/520879.en'
+    to: 520879
     img:
       src: '/cert_cur_5.jpg'
     caption:
       ru: Окончил курс «Основы программирования»
       en: Completed the course «Introduction to Programming. Course»
   - date: 2018-10-25
-    to: 'https://geekbrains.ru/certificates/519466.en'
+    to: 519466
     img:
       src: '/cert_cur_3.jpg'
     caption:
       ru: Окончил курс «Git. Быстрый старт»
       en: Completed the course «Git. Easy Start. Version Control System»
   - date: 2018-09-08
-    to: 'https://geekbrains.ru/certificates/501562.en'
+    to: 501562
     img:
       src: '/cert_cur_2.jpg'
     caption:
       ru: Окончил курс «Веб-разработка для начинающих»
       en: Completed the course «Web development intensive. Personal site creation»
   - date: 2018-09-06
-    to: 'https://geekbrains.ru/certificates/500768.en'
+    to: 500768
     img:
       src: '/cert_test_4.jpg'
     caption:
       ru: Прошел тестирование по «Основы программирования. Начальный уровень»
       en: Successfully passed the test «Introduction To Programming. Beginner»
   - date: 2018-09-05
-    to: 'https://geekbrains.ru/certificates/500523.en'
+    to: 500523
     img:
       src: '/cert_cur_1.jpg'
     caption:
