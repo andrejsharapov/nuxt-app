@@ -3,7 +3,7 @@
   .mb-6.coding-card(v-for='(item, index) of items', :key='index')
     v-row(no-gutters)
       v-col(cols='12', md='4')
-        v-card.rounded-lg.mb-sm-4.hidden(
+        v-card.rounded-lg.hidden.mb-md-4(
           :flat='$vuetify.breakpoint.smAndDown',
           :class='{ "coding-card__image": $vuetify.breakpoint.mdAndUp }'
         )
@@ -18,21 +18,28 @@
                 v-progress-circular(indeterminate, color='grey lighten-5')
 
       v-col(cols='12', md='8')
-        v-card-title {{ item.title }}
-        v-card-subtitle.pt-0 {{ formatDate(item.date) }}
-        v-card-text.pb-0(v-if='item.description') {{ localeDescription(item.description) }}
-        v-card-text.pb-0.not-pointer.d-flex.align-center
-          span.mr-2 Code:
-          template(v-for='tags in item.pen.filter((e) => e.title === "Code")')
-            v-chip-group
-              v-chip(
-                v-for='(tag, index) in tags.list',
-                :key='index',
-                label,
-                outlined,
-                small
-              ) {{ tag }}
-        s-page-coding-dialog-content(:item='item')
+        v-card.mt-sm-4.ml-0.ml-lg-4(flat, color='transparent')
+          v-card-subtitle.py-0 {{ $t("app.date.default") }} &mdash;
+            strong
+              |
+              | {{ formatDate(item.date) }}
+          v-spacer
+          v-card-title {{ item.title }}
+          v-card-text.pb-0(v-if='item.description') {{ localeDescription(item.description) }}
+          v-card-text.pb-0.not-pointer.d-flex.align-center
+            span.mr-2 Code:
+            template(
+              v-for='tags in item.pen.filter((e) => e.title === "Code")'
+            )
+              v-chip-group
+                v-chip(
+                  v-for='(tag, index) in tags.list',
+                  :key='index',
+                  label,
+                  outlined,
+                  small
+                ) {{ tag }}
+          s-page-coding-dialog-content(:item='item')
 </template>
 
 <script>
