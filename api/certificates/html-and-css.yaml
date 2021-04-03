@@ -1,0 +1,31 @@
+title: HTML/CSS
+icon: $mdiCodeJson
+figures:
+  - date: 2019-03-26
+    num: 578830
+    img:
+      src: '/cert_test_7.jpg'
+    caption:
+      ru: Прошел тестирование по HTML & CSS «Тест HTML5/CSS3»
+      en: Successfully passed the test «Test HTML5/CSS3»
+  - date: 2018-09-14
+    num: 504197
+    img:
+      src: '/cert_test_5.jpg'
+    caption:
+      ru: Прошел тестирование по «HTML & CSS. Сложный уровень»
+      en: Successfully passed the test «HTML & CSS. Advanced»
+  - date: 2018-02-09
+    num: 409910
+    img:
+      src: '/cert_test_3.jpg'
+    caption:
+      ru: Прошел тестирование по «HTML & CSS. Средний уровень»
+      en: Successfully passed the test «HTML & CSS. Intermediate»
+  - date: 2018-01-23
+    num: 400769
+    img:
+      src: '/cert_test_1.jpg'
+    caption:
+      ru: Прошел тестирование по «HTML & CSS. Начальный уровень»
+      en: Successfully passed the test «HTML & CSS. Beginner»

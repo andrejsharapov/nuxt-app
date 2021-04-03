@@ -1,0 +1,8 @@
+- title: JSFiddle Recommended Layouts
+  type: dev tools
+  created: "2018-04-20"
+  desc: JSFiddle Recommended Layouts are grids inside your project. They can be used as a helpful tool for users to recommend a better layout for viewing your creation.
+  url: https://github.com/madeas/JSFiddle-layouts
+  img:
+    src: /src/projects/jrl.jpg
+    alt: ""

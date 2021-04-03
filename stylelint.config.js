@@ -7,11 +7,11 @@ module.exports = {
         ignoreAtRules: [
           'mixin',
           'for',
+          'include',
+          'each',
           // 'function',
           // 'if',
           // 'else',
-          // 'each',
-          'include',
           // 'util',
           // 'return',
           // 'extend',

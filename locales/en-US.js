@@ -13,6 +13,10 @@ export default {
     privacy: 'Privacy',
     terms: 'Terms of use',
     updates: 'Updates',
+    category: 'Category | category | Not category',
+    date: {
+      default: 'Date',
+    },
     themes: {
       light: 'Light mode',
       dark: 'Dark mode',
@@ -29,6 +33,7 @@ export default {
       status: `${config.author.job.status}`,
       title: 'To offer a job',
     },
+    region: 'Russia, Moscow',
   },
   host: {
     name: `${config.host.name}`,
@@ -64,5 +69,27 @@ export default {
   projects: {
     recent: 'Recent projects',
     'not-found': 'No completed projects.',
+  },
+  pages: {
+    shown: 'Shown on page',
+    certificates: {
+      message:
+        'During my work, I took several tests and online courses in web design, development, marketing and some other areas. Below you can see the certificates of completion.',
+    },
+    contact: {
+      message:
+        'You can contact me through the above social networks or use other contacts.',
+    },
+    projects: {
+      message:
+        'Often the ideas born in the head remain just an idea. Therefore, I try to bring my ideas to life, and some of them have turned into large-scale projects.',
+    },
+    timeline: {
+      message:
+        'Here you can see a tape of my professional achievements and the most significant events for me. I hope this encourages you to follow your dreams and record your accomplishments along the way!',
+    },
+  },
+  works: {
+    'works-not-found': 'Works not found',
   },
 }

@@ -1,0 +1,8 @@
+{
+  label: 'design',
+  date: '2019-03-17',
+  title: 'Figma',
+  caption: 'Начал изучать Figma и создавать первые шаблоны.',
+  button: 'Работы',
+  to: 'https://www.behance.net/andrejsharapov',
+}

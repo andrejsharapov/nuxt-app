@@ -1,0 +1,8 @@
+- title: Box-shadows.css
+  type: CSS library
+  created: "2018-05-24"
+  desc: Box-shadows.css - это набор простых и приятных теней, которые вы можете использовать в своих проектах. Отлично подходит для таблиц, содержимого домашних страниц, контейнеров, навигации и других блоков вашего сайта.
+  url: https://madeas.github.io/box-shadows/
+  img:
+    src: /src/projects/box-shadows-css.jpg
+    alt: ""

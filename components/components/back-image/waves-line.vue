@@ -258,13 +258,13 @@ export default {
       type: [Number, String],
       default: 1200,
     },
-    absolute: {
-      type: Boolean,
-      default: false,
-    },
     height: {
       type: [Number, String],
       default: 402,
+    },
+    absolute: {
+      type: Boolean,
+      default: false,
     },
     top: {
       type: String,
