@@ -1,8 +1,0 @@
-{
-  label: 'progress',
-  date: '2019-06-03',
-  title: 'JSFiddle Contribution',
-  caption: 'Today I have contributed to a popular development tool program called "JSFiddle". On Twitter, I got approved and implemented.',
-  button: 'GitHub Issues',
-  to: 'https://github.com/jsfiddle/jsfiddle-issues/issues/1463',
-}

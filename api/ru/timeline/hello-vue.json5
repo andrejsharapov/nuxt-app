@@ -1,8 +1,0 @@
-{
-  label: 'development',
-  date: '2019-07-10',
-  title: 'Vue.js',
-  caption: 'Я буду рассматривать сегодняшний день как отправную точку моего изучения Vue.js',
-  button: 'twitter',
-  to: 'https://twitter.com/andrejsharapov/status/1148865778709663744',
-}

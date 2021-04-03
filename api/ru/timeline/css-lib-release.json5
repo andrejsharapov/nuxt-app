@@ -1,8 +1,0 @@
-{
-  label: 'development',
-  date: '2018-05-24',
-  title: 'Релиз «CSS теней»',
-  caption: 'Для воплощения и публикации коллекции «CSS Box-Shadows library» потребовалось изучение многих языков и ПО, таких как Node.js, Git, Gulp и NPM. Библиотека в первые же дни получила признание и начала пользоваться популярностью.',
-  button: 'GitHub',
-  to: 'https://github.com/madeas/box-shadows.css/tree/1.0.0',
-}

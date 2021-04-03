@@ -1,8 +1,0 @@
-{
-  label: 'idea',
-  date: '2018-04-18',
-  title: 'CSS Shadows Collection',
-  caption: 'Development of a cross-browser collection of CSS-shadows "CSS Box-Shadows Library". Building the library required learning VScode, Gulp, SASS, and more.',
-  button: 'Website',
-  to: 'https://madeas.github.io/box-shadows/',
-}
