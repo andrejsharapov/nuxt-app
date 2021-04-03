@@ -1,8 +1,0 @@
-{
-  label: 'other',
-  date: '2018-06-10',
-  title: 'Welcome to Behance',
-  caption: 'Started posting projects on Behance.',
-  button: 'Works',
-  to: 'https://www.behance.net/andrejsharapov',
-}

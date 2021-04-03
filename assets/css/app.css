@@ -1,6 +1,5 @@
 @import './utils/_vars';
 @import './mq';
-@import './anchor';
 
 html {
   &[lang='en-US'] {

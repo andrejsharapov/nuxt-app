@@ -13,10 +13,6 @@ export default {
     privacy: 'Privacy',
     terms: 'Terms of use',
     updates: 'Updates',
-    category: 'Category | category | Not category',
-    date: {
-      default: 'Date',
-    },
     themes: {
       light: 'Light mode',
       dark: 'Dark mode',
@@ -33,7 +29,6 @@ export default {
       status: `${config.author.job.status}`,
       title: 'To offer a job',
     },
-    region: 'Russia, Moscow',
   },
   host: {
     name: `${config.host.name}`,

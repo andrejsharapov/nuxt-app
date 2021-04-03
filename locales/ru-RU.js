@@ -13,10 +13,6 @@ export default {
     privacy: 'Конфиденциальность',
     terms: 'Условия использования',
     updates: 'Обновления',
-    category: 'Категория | категория | Нет категории',
-    date: {
-      default: 'Дата',
-    },
     themes: {
       light: 'Светлая тема',
       dark: 'Темная тема',
@@ -33,7 +29,6 @@ export default {
       status: `${config.author.job.status}`,
       title: 'Предложить работу',
     },
-    region: 'Россия, Москва',
   },
   host: {
     name: `${config.host.name}`,

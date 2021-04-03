@@ -1,8 +1,0 @@
-{
-  label: 'design',
-  date: '2019-01-03',
-  title: 'Новый дизайн',
-  caption: 'Разработка нового дизайна для проекта «CSS Box-Shadows library»',
-  button: 'Сайт',
-  to: 'https://madeas.github.io/box-shadows/',
-}

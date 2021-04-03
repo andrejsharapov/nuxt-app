@@ -1,8 +1,0 @@
-{
-  label: 'other',
-  date: '2018-04-20',
-  title: 'Hello, Dribbble!',
-  caption: 'Получил приглашение на Dribbble.',
-  button: 'Профиль',
-  to: 'https://dribbble.com/andrejsharapov',
-}
