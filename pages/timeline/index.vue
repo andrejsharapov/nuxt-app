@@ -1,8 +1,9 @@
 <template lang="pug">
 .page__timeline
+  s-history-back
+
   s-layout-components-back-image(:page='page')
     template(#back-image)
-      //- REVIEW bottom='-7',
       s-back-waves-lines-two(
         absolute,
         right='0',
@@ -11,7 +12,6 @@
         :width='null',
         :height='null'
       )
-
     template(#list-items)
       s-layout-components-back-image-list-items(
         :content='localeItems',
@@ -20,7 +20,6 @@
         :message='$t("pages.shown")'
       )
 
-  s-history-back
   v-container
     v-row
       v-col(cols='12', sm='8')

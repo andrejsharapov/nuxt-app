@@ -1,5 +1,7 @@
 <template lang="pug">
 .page__contact
+  s-history-back
+
   s-layout-components-back-image(:page='page')
     template(#back-image)
       s-back-waves-line(
@@ -11,7 +13,6 @@
         :height='null'
       )
 
-  s-history-back
   v-container
     v-row
       v-col(cols='12')

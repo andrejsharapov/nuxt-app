@@ -1,5 +1,7 @@
 <template lang="pug">
 .page__projects
+  s-history-back
+
   s-layout-components-back-image(:page='page')
     template(#back-image)
       s-back-waves-line-three(
@@ -10,7 +12,6 @@
         :width='null',
         :height='null'
       )
-
     template(#list-items)
       s-layout-components-back-image-list-items(
         :content='localeItems',
@@ -19,7 +20,6 @@
         :message='$t("pages.shown")'
       )
 
-  s-history-back
   v-container
     v-row
       v-col(cols='12', sm='9')

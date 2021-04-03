@@ -1,10 +1,10 @@
 <template lang="pug">
 .page__certificates
   s-history-back
+
   s-layout-components-back-image(:page='page')
     template(#back-image)
       s-back-flies-card-vertically
-
     template(#list-items)
       s-layout-components-back-image-list-grid(
         :content='certItems',
