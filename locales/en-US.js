@@ -76,6 +76,12 @@ export default {
       message:
         'During my work, I took several tests and online courses in web design, development, marketing and some other areas. Below you can see the certificates of completion.',
     },
+    coding: {
+      message: [
+        'It is not always possible to write good code right away, so it needs to be tested in programs and editors separately from the site. I often experiment with code, and sometimes in search of inspiration or trying to improve myself, sometimes cool things come out, some of which I have shared with other developers on the',
+        'and will gladly share with you.',
+      ],
+    },
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
