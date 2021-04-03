@@ -274,7 +274,7 @@
 
 <script>
 export default {
-  name: 'WavesLinesTwo',
+  name: 'WavesLineTwo',
   props: {
     width: {
       type: [Number, String],
