@@ -2,14 +2,14 @@ title: SMM/SEO
 icon: $mdiContactsOutline
 figures:
   - date: 2018-11-09
-    to: 524481
+    num: 524481
     img:
       src: '/cert_cur_7.jpg'
     caption:
       ru: Окончил курс «Интенсив "Основы digital-маркетинга"»
       en: Completed the course «intensive Introduction to marketing. Direction and tools for effective promotion»
   - date: 2018-10-26
-    to: 519980
+    num: 519980
     img:
       src: '/cert_test_6.jpg'
     caption:

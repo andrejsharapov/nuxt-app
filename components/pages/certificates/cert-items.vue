@@ -12,17 +12,16 @@
         cols='12',
         :sm='[2].includes(cert.figures.length) ? "6" : [4].includes(cert.figures.length) ? "3" : "4"'
       )
-        v-card.cert.hidden.shadow-md
-          v-dialog(max-width='600')
-            template(#activator='{ on }')
-              v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
-                icon,
-                large,
-                exact,
-                v-on='on'
-              )
-                v-icon(color='white') {{ mdiArrowExpand }}
-            //- CertOpened(:figure='f')
+        v-card.cert.hidden.shadow-sm
+          v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
+            icon,
+            large,
+            exact,
+            :href='`https://geekbrains.ru/certificates/${f.num}.${$i18n.locale}`',
+            target='_blank',
+            rel='noopener noreferrer'
+          )
+            v-icon(color='white') {{ mdiArrowExpand }}
           v-img.fill-height(
             :lazy-src='`https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG`',
             :src='`/src/certificates${f.img.src}`',
@@ -35,7 +34,7 @@
               v-row.fill-height.ma-0(align='center', justify='center')
                 v-progress-circular(indeterminate, color='grey lighten-5')
 
-        v-card-text.pb-0.text-center {{ captionLocale(f.caption) }},
+        v-card-text.pb-0.text-center {{ certLocale(f.caption) }}
         v-card-subtitle.text-center {{ formatDate(f.date) }}
 </template>
 
@@ -62,11 +61,11 @@ export default {
         return cert.slug
       }
     },
-    captionLocale(caption) {
+    certLocale(item) {
       if (this.$i18n.locale === 'ru') {
-        return caption.ru
+        return item.ru
       } else if (this.$i18n.locale === 'en') {
-        return caption.en
+        return item.en
       }
     },
     formatDate(date) {
