@@ -31,6 +31,7 @@ data:
           - action: '$mdiTabletCellphone'
             title: Apps
             to: '/en/cases/dev/apps'
+            disabled: true
           - action: '$mdiVectorBezier'
             title: HTML5 Banners
             to: '/en/cases/dev/banners'
