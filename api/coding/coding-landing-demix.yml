@@ -1,0 +1,32 @@
+type: coding
+title: Whole UI without javascript
+date: 2019-03-15
+src: OqvXyb
+
+descEn: 'Full page without JavaScript: parallax scrolling; simple animation of links and buttons with the css-property cubic-bezier; smooth scrolling when click on the navigation; animation of the hamburger click; open/close the click menu etc.'
+descRu: 'Страница без JavaScript: параллакс прокрутка; простая анимация ссылок и кнопок с помощью css-свойства cubic-bezier; плавная прокрутка при нажатии на навигацию; анимация щелчка гамбургера; открыть / закрыть контекстное меню и т. д.'
+
+view:
+  title: 'Whole UI without javascript | on pure css'
+  tabs: css,html
+
+alert:
+  type: warning
+  icon:
+  message: Рекомендуется для просмотра браузер Firefox!
+
+pen:
+  - title: Tags
+    list:
+      - perspective
+      - transform
+      - cubic-bezier
+      - scroll-snap-type
+      - background-clip
+      - writing-mode
+      - grid
+
+  - title: Code
+    list:
+      - Pug
+      - SCSS
