@@ -58,6 +58,11 @@ a {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 ul[class],
 ol[class] {
   @util reset-list;
