@@ -1,11 +1,10 @@
 type: coding
-date: 2019-03-11
 title: Some SVG animation & keyframes
+date: 2019-03-11
 src: WmEyeM
 
-description:
-  en: 'SVG animation on CSS properties @keyframes'
-  ru: 'SVG анимация при помощи свойств CSS @keyframes'
+descEn: 'SVG animation on CSS properties @keyframes'
+descRu: 'SVG анимация при помощи свойств CSS @keyframes'
 
 view:
   title: Some SVG animation & keyframes

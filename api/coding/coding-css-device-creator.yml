@@ -1,10 +1,10 @@
 type: coding
 title: CSS Device Creator
-src: MLwBOY
-description:
-  en: Device Creator is a tool to create simple and beautiful devices for your website. The tool allows you to use the device to showcase code, images, designs, and so on.
-  ru: Device Creator - это инструмент для создания простых и красивых устройств на вашем сайте. Инструмент позволяет использовать созданные устройства для демонстрации кода, изображений, дизайна и так далее.
 date: 2019-01-24
+src: MLwBOY
+
+descEn: Device Creator is a tool to create simple and beautiful devices for your website. The tool allows you to use the device to showcase code, images, designs, and so on.
+descRu: Device Creator - это инструмент для создания простых и красивых устройств на вашем сайте. Инструмент позволяет использовать созданные устройства для демонстрации кода, изображений, дизайна и так далее.
 
 view:
   title: CSS Device Creator | Samsung, Apple, etc.
