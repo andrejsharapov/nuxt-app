@@ -36,8 +36,10 @@
           | {{ $t("pages.coding.message[1]") }}
 
       v-col.d-none.d-sm-block.mt-sm-n16.text-center(cols='12', sm='3')
-        .position-absolute.mt-n8
+        .position-absolute.mt-n10
           lazy-s-fish-pages-coding(width='290', :height='null')
+
+      s-skill-slider(:items='skills.list')
 
       v-col(cols='12')
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
@@ -59,8 +61,11 @@ export default {
       .sortBy('date', 'desc')
       .fetch()
 
+    const skills = await $content('skills/coding').fetch()
+
     return {
       codeLocale,
+      skills,
     }
   },
   data() {
