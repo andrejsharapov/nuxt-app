@@ -1,10 +1,10 @@
 type: coding
 title: Landing page «iogo Media»
-src: GRRJxJp
-description:
-  en: Scrolling the landing page using the scroll-behavior CSS property and a sticky header.
-  ru: Прокрутка landing page при помощи CSS свойства scroll-behavior и липким заголовком.
 date: 2019-10-09
+src: GRRJxJp
+
+descEn: Scrolling the landing page using the scroll-behavior CSS property and a sticky header.
+descRu: Прокрутка landing page при помощи CSS свойства scroll-behavior и липким заголовком.
 
 view:
   title: 'backdrop-filter: blur &amp;amp; scroll-behavior: smooth'
