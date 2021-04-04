@@ -29,7 +29,7 @@
           v-icon $mdiClose
 
       v-card(flat)
-        v-card-title {{ localeDescription(item.description) }}
+        v-card-title {{ localeDescription(item) }}
 
         v-row(no-gutters)
           v-col(cols='12', md='7')
@@ -118,9 +118,9 @@ export default {
   methods: {
     localeDescription(item) {
       if (this.$i18n.locale === 'ru') {
-        return item.ru
+        return item.descRu
       } else if (this.$i18n.locale === 'en') {
-        return item.en
+        return item.descEn
       }
     },
   },

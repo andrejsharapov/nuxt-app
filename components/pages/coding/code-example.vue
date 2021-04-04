@@ -25,7 +25,7 @@
               | {{ formatDate(item.date) }}
           v-spacer
           v-card-title {{ item.title }}
-          v-card-text.pb-0(v-if='item.description') {{ localeDescription(item.description) }}
+          v-card-text.pb-0 {{ localeDescription(item) }}
           v-card-text.pb-0.not-pointer.d-flex.align-center
             span.mr-2 Code:
             template(
@@ -54,9 +54,9 @@ export default {
   methods: {
     localeDescription(item) {
       if (this.$i18n.locale === 'ru') {
-        return item.ru
+        return item.descRu
       } else if (this.$i18n.locale === 'en') {
-        return item.en
+        return item.descEn
       }
     },
     formatDate(date) {
