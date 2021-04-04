@@ -13,7 +13,9 @@ view:
 alert:
   type: warning
   icon:
-  message: Рекомендуется для просмотра браузер Firefox!
+  message:
+    en: Firefox browser is recommended for viewing!
+    ru: Рекомендуется для просмотра браузер Firefox!
 
 pen:
   - title: Tags

@@ -57,7 +57,7 @@
                 :type='item.alert.type',
                 :icon='item.alert.icon ? item.alert.icon : undefined',
                 text
-              ) {{ item.alert.message }}
+              ) {{ localeAlertMessage(item.alert.message) }}
 
             v-card-text
               v-row(no-gutters)
@@ -121,6 +121,13 @@ export default {
         return item.descRu
       } else if (this.$i18n.locale === 'en') {
         return item.descEn
+      }
+    },
+    localeAlertMessage(item) {
+      if (this.$i18n.locale === 'ru') {
+        return item.ru
+      } else if (this.$i18n.locale === 'en') {
+        return item.en
       }
     },
   },

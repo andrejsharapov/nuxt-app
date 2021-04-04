@@ -13,7 +13,9 @@ view:
 alert:
   type: warning
   icon:
-  message: Некоторые свойства поддерживается не всеми браузерами.
+  message:
+    en: Some properties are not supported by all browsers.
+    ru: Некоторые свойства поддерживается не всеми браузерами.
 
 pen:
   - title: Tags
