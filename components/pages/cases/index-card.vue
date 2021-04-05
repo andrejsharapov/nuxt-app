@@ -15,9 +15,9 @@ v-row.case-index
               :style='{ backgroundImage: cardColor(card), transform: hover ? "scale(1.1)" : "" }'
             )
               div
-                v-icon(:size='hover ? "40" : "64"', color='white') {{ item.action }}
+                v-icon(color='white') {{ item.action }}
                 v-list-item-title.pt-4.text-uppercase.font-weight-bold {{ item.title }}
-                v-btn.mt-8.rounded-lg(outlined, color='white') {{ $t("go-to") }}
+                v-btn.mt-8.rounded-lg(outlined, color='white') {{ $t("btn.go.to") }}
 </template>
 
 <script>

@@ -74,7 +74,17 @@ export default {
 .page__cases
   --stop-color-one: #5731a1
   --stop-color-two: #e24275
+  --size: 4rem
 
   &__card
     transition: all 200ms linear
+
+    .v-icon__svg
+      width: var(--size)
+      height: var(--size)
+      transition: inherit
+
+    &:hover
+      .v-icon__svg
+        --size: 2rem
 </style>
