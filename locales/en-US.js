@@ -72,6 +72,10 @@ export default {
   },
   pages: {
     shown: 'Shown on page',
+    cases: {
+      message:
+        'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
+    },
     certificates: {
       message:
         'During my work, I took several tests and online courses in web design, development, marketing and some other areas. Below you can see the certificates of completion.',
