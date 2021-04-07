@@ -1,0 +1,33 @@
+data:
+  - title: Дизайн
+    alt: design
+    list:
+      - action: '$mdiCellphoneLink'
+        title: Сайты
+        to: '/ru/cases/design/websites'
+      - action: '$mdiCellphoneCog'
+        title: Приложения
+        to: '/ru/cases/design/apps'
+      - action: '$mdiVectorRadius'
+        title: Логотипы
+        to: '/ru/cases/design/logo'
+      - action: '$mdiVectorCurve'
+        title: Иллюстрации
+        to: '/ru/cases/design/illustrations'
+      - action: '$mdiProgressCheck'
+        title: Квиз
+        to: '/ru/cases/design/quiz'
+
+  - title: Разработка
+    alt: development
+    list:
+      - action: '$mdiResponsive'
+        title: Сайты
+        to: '/ru/cases/dev/websites'
+      - action: '$mdiTabletCellphone'
+        title: Приложения
+        to: '/ru/cases/dev/apps'
+        disabled: true
+      - action: '$mdiVectorBezier'
+        title: HTML5 Баннеры
+        to: '/ru/cases/dev/banners'
