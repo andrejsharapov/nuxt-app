@@ -36,7 +36,7 @@ v-card.work-examples.shadow-sm.fill-height
                         aspect-ratio='1.7'
                       )
 
-  v-card-actions.pa-4
+  v-card-actions.px-4.pb-4.flex-column.flex-sm-row.align-start
     v-btn(
       v-for='(name, value) of item.links',
       :key='name',
@@ -46,8 +46,8 @@ v-card.work-examples.shadow-sm.fill-height
       rel='noopener noreferrer'
     )
       v-icon {{ linkIcons(value) }}
-    v-spacer
-    v-btn(
+    v-spacer.d-none.d-sm-block
+    v-btn.mx-auto.mb-2.mb-sm-0.mr-sm-3(
       download,
       :href='`http://cdn.madeas.ru/nuxt-app/photoshop/${item.folder}/done.jpg`',
       :block='$vuetify.breakpoint.xs',
@@ -57,11 +57,11 @@ v-card.work-examples.shadow-sm.fill-height
     )
       | {{ $t("btn.download") }}
       v-icon(right) {{ mdiDownloadBoxOutline }}
-    v-btn(
+    v-btn.mx-auto(
       :href='`http://cdn.madeas.ru/nuxt-app/photoshop/${item.folder}/done.jpg`',
+      :block='$vuetify.breakpoint.xs',
       target='_blank',
       title='',
-      :block='$vuetify.breakpoint.xs',
       color='primary'
     )
       | {{ $tc("btn.view", 1) }}
