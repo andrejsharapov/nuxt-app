@@ -46,7 +46,6 @@ data:
             title: Pure Code
             to: '/en/works/coding'
           - action: '$mdiVectorPolylineEdit'
-            disabled: true
             title: Photoshop
             to: '/en/works/photoshop'
         title: More

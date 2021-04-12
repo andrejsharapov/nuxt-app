@@ -46,7 +46,6 @@ data:
             title: Кодинг
             to: '/ru/works/coding'
           - action: '$mdiVectorPolylineEdit'
-            disabled: true
             title: Фотошоп
             to: '/ru/works/photoshop'
         title: Еще
