@@ -14,6 +14,7 @@ export default {
     terms: 'Terms of use',
     updates: 'Updates',
     category: 'Category | category | Not category',
+    source: 'Sources',
     date: {
       default: 'Date',
     },
@@ -54,6 +55,8 @@ export default {
       back: 'Go back',
       home: 'Return home',
     },
+    download: 'Download',
+    view: 'View | Views',
     'report-problem': 'Report problem',
   },
   more: {
@@ -97,6 +100,14 @@ export default {
     illustrations: {
       message:
         "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
+    },
+    photoshop: {
+      message:
+        'In 2010, I first got acquainted with Photoshop. Then he created a community {link} and started developing designs for VKontakte groups and prototypes for websites',
+      games:
+        'In the same year, VKontakte launched a wiki code, and in the process of studying it, I decided to implement several games, which required some knowledge of Photoshop to complete. Some games are still partially working, so you can join the community and try games like: crusaders, sims, and penalties.',
+      now:
+        'I have been using Photoshop less and less lately, but I try not to forget about it and maintain my skills, so from time to time, I process photos, some of which you can see below.',
     },
     projects: {
       message:
