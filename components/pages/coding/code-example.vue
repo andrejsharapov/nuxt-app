@@ -19,7 +19,7 @@
 
       v-col(cols='12', md='8')
         v-card.mt-sm-4.ml-0.ml-lg-4(flat, color='transparent')
-          v-card-subtitle.py-0 {{ $t("app.date.default") }} &mdash;
+          v-card-subtitle.py-0 {{ $t("date.default") }} &mdash;
             strong
               |
               | {{ formatDate(item.date) }}

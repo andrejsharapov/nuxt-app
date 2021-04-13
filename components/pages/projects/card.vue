@@ -24,11 +24,11 @@
       <v-col cols="12" md="8">
         <v-card flat class="transparent mt-sm-4 ml-0 ml-lg-4">
           <v-card-subtitle class="d-sm-flex pb-0">
-            {{ $tc('app.category', 0) }} &mdash;&nbsp;<strong>
+            {{ $tc('category', 0) }} &mdash;&nbsp;<strong>
               {{ project.type }}
             </strong>
             <v-spacer />
-            {{ $t('app.date.default') }} &mdash;&nbsp;<strong>
+            {{ $t('date.default') }} &mdash;&nbsp;<strong>
               {{ formatDate(project.created) }}
             </strong>
           </v-card-subtitle>

@@ -14,7 +14,7 @@ v-card.work-examples.shadow-sm.fill-height
   v-expansion-panels(v-model='showPanel', flat, tile, accordion)
     v-expansion-panel
       v-expansion-panel-header
-        v-card-subtitle.pa-0.caption {{ $t("app.source") }}
+        v-card-subtitle.pa-0.caption {{ $t("source") }}
           v-icon(right, small) {{ mdiSwapHorizontal }}
       v-expansion-panel-content
         .mx-3.hidden-y

@@ -1,0 +1,14 @@
+hide:
+type: des-logo
+title: Нефтегазбезопасность
+date: 02.07.2018
+created: '2018-07-02'
+ux:
+  works: 'CORPORATE / BRANDING'
+  price: Редизайн
+before:
+  img: /src/logo/logo_from-ngb.png
+  format: png
+after:
+  img: /src/logo/logo_to-ngb.svg
+  format: svg

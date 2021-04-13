@@ -2,29 +2,23 @@ import { appMeta as config } from '../config/app'
 
 export default {
   app: {
+    cookie: {
+      message:
+        'The site uses analytics tools to analyze user actions in order to improve the quality of the site.',
+    },
+    'general-information': 'General information',
+    'last-revised': 'Last revised',
+    license: 'License',
+    loading: 'Loading',
     meta: {
       title: `${config.app.en.title}`,
       description: `${config.app.en.description}`,
     },
-    loading: 'Loading',
-    'general-information': 'General information',
-    'last-revised': 'Last revised',
-    license: 'License',
     privacy: 'Privacy',
     terms: 'Terms of use',
-    updates: 'Updates',
-    category: 'Category | category | Not category',
-    source: 'Sources',
-    date: {
-      default: 'Date',
-    },
     themes: {
       light: 'Light mode',
       dark: 'Dark mode',
-    },
-    cookie: {
-      message:
-        'The site uses analytics tools to analyze user actions in order to improve the quality of the site.',
     },
   },
   author: {
@@ -58,6 +52,15 @@ export default {
     download: 'Download',
     view: 'View | Views',
     'report-problem': 'Report problem',
+  },
+  category: 'Category | category | Not category',
+  date: {
+    default: 'Date',
+  },
+  events: {
+    before: 'Before',
+    after: 'After',
+    updates: 'Updates',
   },
   more: {
     base: 'More',
@@ -101,6 +104,10 @@ export default {
       message:
         "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
     },
+    logos: {
+      message:
+        'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
+    },
     photoshop: {
       message:
         'In 2010, I first got acquainted with Photoshop. Then he created a community {link} and started developing designs for VKontakte groups and prototypes for websites',
@@ -118,8 +125,10 @@ export default {
         'Here you can see a tape of my professional achievements and the most significant events for me. I hope this encourages you to follow your dreams and record your accomplishments along the way!',
     },
   },
+  source: 'Sources',
   works: {
     'works-not-found': 'Works not found',
     examples: 'Work examples',
+    types: 'Type of works',
   },
 }
