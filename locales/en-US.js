@@ -101,6 +101,10 @@ export default {
       message:
         "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
     },
+    logos: {
+      message:
+        'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
+    },
     photoshop: {
       message:
         'In 2010, I first got acquainted with Photoshop. Then he created a community {link} and started developing designs for VKontakte groups and prototypes for websites',
