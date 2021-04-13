@@ -42,12 +42,16 @@ data:
           - action: '$mdiDraw'
             title: Drawings
             to: '/en/works/drawings'
-          - action: '$mdiCodeJson'
-            title: Pure Code
-            to: '/en/works/coding'
           - action: '$mdiVectorPolylineEdit'
             title: Photoshop
             to: '/en/works/photoshop'
+          - action: '$mdiCodeJson'
+            title: Pure Code
+            to: '/en/works/coding'
+          - action: '$mdiEmailSyncOutline'
+            disabled: true
+            title: Email
+            to: '/ru/works/email'
         title: More
     title: Cases
     to: '/en/cases'

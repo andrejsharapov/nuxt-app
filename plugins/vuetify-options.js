@@ -54,6 +54,7 @@ import {
   mdiTrophyAward,
   mdiAccountCheck,
   mdiAdjust,
+  mdiEmailSyncOutline,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -177,6 +178,7 @@ export default function ({ app }) {
         mdiTrophyAward,
         mdiAccountCheck,
         mdiAdjust,
+        mdiEmailSyncOutline,
       },
     },
   }

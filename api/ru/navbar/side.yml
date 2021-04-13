@@ -42,12 +42,16 @@ data:
           - action: '$mdiDraw'
             title: Рисунки
             to: '/ru/works/drawings'
-          - action: '$mdiCodeJson'
-            title: Кодинг
-            to: '/ru/works/coding'
           - action: '$mdiVectorPolylineEdit'
             title: Фотошоп
             to: '/ru/works/photoshop'
+          - action: '$mdiCodeJson'
+            title: Кодинг
+            to: '/ru/works/coding'
+          - action: '$mdiEmailSyncOutline'
+            disabled: true
+            title: Верстка писем
+            to: '/ru/works/email'
         title: Еще
     title: Кейсы
     to: '/ru/cases'
