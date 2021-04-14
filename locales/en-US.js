@@ -125,6 +125,12 @@ export default {
         'Here you can see a tape of my professional achievements and the most significant events for me. I hope this encourages you to follow your dreams and record your accomplishments along the way!',
     },
   },
+  search: {
+    label: 'Search',
+    placeholder: 'Start typing the text...',
+    found: 'Materials found on your request.',
+    'not-found': 'Sorry, but there are no results for your search.',
+  },
   source: 'Sources',
   works: {
     'works-not-found': 'Works not found',
