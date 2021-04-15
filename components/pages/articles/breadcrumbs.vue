@@ -1,12 +1,12 @@
 <template>
-  <v-card class="mb-4 px-4 shadow-sm">
+  <v-card class="mb-4 px-4 shadow-sm article-breadcrumbs">
     <v-breadcrumbs :items="items" divider="·" />
   </v-card>
 </template>
 
 <script>
 export default {
-  name: 'ArtBreadcrumbs',
+  name: 'ArticleBreadcrumbs',
   props: {
     article: {
       type: Object,
