@@ -9,7 +9,7 @@
         offset-y,
         nudge-bottom='12',
         transition='scroll-y-reverse-transition',
-        content-class='shadow-up',
+        content-class='shadow-lg',
         :close-on-content-click='false'
       )
         template(#activator='{ on: menu }')
@@ -33,7 +33,7 @@
                   )
                     v-icon {{ mdiTableOfContents }}
             span
-              | {{ hidePanel ? $tc("show", 1) : $tc("hide", 1) }}
+              | {{ hidePanel ? $tc("events.show", 1) : $tc("events.hide", 1) }}
               | {{ $tc("table-of-contents", 2) }}
 
         v-expansion-panels.rounded-md.shadow-sm(
@@ -63,19 +63,19 @@
       //- SECTION CONTENT
       v-col.order-1.order-md-0(cols='12')
         article
-          //- s-article-breadcrumbs(
-          //-   v-if='$vuetify.breakpoint.mdAndUp',
-          //-   :article='article'
-          //- )
-          v-card.mb-4.pa-2.pa-md-4.shadow-base
-          //- art-header(:article='article')
-          nuxt-content(:document='article')
-          //- art-author(:article='article')
-          //- art-arrows(
-          //-   v-if='$vuetify.breakpoint.mdAndUp',
-          //-   :prev='prev',
-          //-   :next='next'
-          //- )
+          s-articles-breadcrumbs(
+            v-if='$vuetify.breakpoint.mdAndUp',
+            :article='article'
+          )
+          v-card.mb-4.pa-2.pa-md-4.shadow-md
+            s-articles-header(:article='article')
+            nuxt-content(:document='article')
+            s-articles-author(:article='article')
+            //- s-articles-arrows(
+            //-   v-if='$vuetify.breakpoint.mdAndUp',
+            //-   :prev='prev',
+            //-   :next='next'
+            //- )
           v-lazy(
             v-model='lazyComments',
             :options='{ threshold: 0.5 }',
@@ -87,9 +87,12 @@
 
 <script>
 import { mdiTableOfContents } from '@mdi/js'
+import { appMeta as app } from '~/config/app'
 import Prism from '~/plugins/markdown-theme-prism'
 
 export default {
+  name: 'PageSlug',
+  scrollToTop: true,
   async asyncData({ $content, params, app }) {
     const article = await $content(
       `${app.i18n.locale}/articles`,
@@ -111,6 +114,64 @@ export default {
       hidePanel: true,
     }
   },
+  head() {
+    return {
+      title: this.article.title,
+      titleTemplate: `%s · ${this.$t('pages.articles.title')} · ${this.$t(
+        'author.name'
+      )}`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.description,
+        },
+        { hid: 'og:title', property: 'og:title', content: this.article.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.article.description,
+        },
+        { hid: 'og:type', property: 'og:type', content: 'article' },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${app.host.url}/articles/${this.article.slug}`,
+        },
+        { hid: 'og:image', property: 'og:image', content: this.socialImage },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.article.title,
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.article.description,
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: this.socialImage,
+        },
+        {
+          hid: 'twitter:image:',
+          name: 'twitter:image:alt',
+          content: this.article.img.src ? 'Post image' : app.host.name,
+        },
+      ],
+    }
+  },
+  computed: {
+    socialImage() {
+      const image = this.article.img.src ? this.article.img.src : 'share.jpg'
+      if (this.isDev) {
+        return `${this.app.host.url}/${image}`
+      } else {
+        return `${this.article.img.src}`
+      }
+    },
+  },
   mounted() {
     Prism.highlightAll()
   },
@@ -121,3 +182,13 @@ export default {
   },
 }
 </script>
+
+<style>
+.nuxt-content ul {
+  margin-bottom: 1rem;
+}
+
+.nuxt-content h3 {
+  margin-bottom: 0.5rem;
+}
+</style>

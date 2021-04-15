@@ -17,7 +17,7 @@
     v-row
       v-col(cols='12', sm='8', md='9')
         .mt-lg-n16
-          s-page-articles-search(
+          s-articles-search(
             :module='localeItems',
             :outlined='true',
             :label='$t("search.label")',
@@ -29,7 +29,7 @@
 
       v-col(cols='12')
         template(v-if='localeItems.length')
-          s-page-articles-post(
+          s-articles-post(
             v-for='article of localeItems',
             :article='article',
             :key='article.slug'

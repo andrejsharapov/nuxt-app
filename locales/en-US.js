@@ -22,6 +22,7 @@ export default {
     },
   },
   author: {
+    title: 'Author | author',
     name: 'Andrej Sharapov',
     position: ['UI/UX Designer', 'Frontend Developer'],
     job: {
@@ -57,10 +58,13 @@ export default {
   date: {
     default: 'Date',
   },
+  editor: 'Editor',
   events: {
     before: 'Before',
     after: 'After',
     updates: 'Updates',
+    show: 'Show | show',
+    hide: 'Hide | hide',
   },
   more: {
     base: 'More',
@@ -77,7 +81,9 @@ export default {
     'not-found': 'No completed projects.',
   },
   pages: {
-    shown: 'Shown on page',
+    articles: {
+      title: 'Articles',
+    },
     cases: {
       message:
         'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
@@ -100,6 +106,9 @@ export default {
       message:
         'As a child, I studied at art school, studied drawing, painting, graphics, art history, sculpture and much more. Unfortunately, I cannot share all my works, as many of them are lost. But in August 2019, I found some old sketches that you can see below.',
     },
+    home: {
+      title: 'Home',
+    },
     illustrations: {
       message:
         "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
@@ -120,6 +129,7 @@ export default {
       message:
         'Often the ideas born in the head remain just an idea. Therefore, I try to bring my ideas to life, and some of them have turned into large-scale projects.',
     },
+    shown: 'Shown on page',
     timeline: {
       message:
         'Here you can see a tape of my professional achievements and the most significant events for me. I hope this encourages you to follow your dreams and record your accomplishments along the way!',
@@ -131,7 +141,8 @@ export default {
     found: 'Materials found on your request.',
     'not-found': 'Sorry, but there are no results for your search.',
   },
-  source: 'Sources',
+  source: 'Source | Sources',
+  'table-of-contents': 'Table of contents | table of contents',
   works: {
     'works-not-found': 'Works not found',
     examples: 'Work examples',
