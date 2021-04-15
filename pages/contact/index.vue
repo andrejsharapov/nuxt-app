@@ -21,7 +21,7 @@
       v-col(cols='12')
         p.text-center.mt-4 {{ $t("pages.contact.message") }}
       v-col(cols='12')
-        s-page-contact-info.mb-4(:info='info.contacts')
+        s-pages-contact-info.mb-4(:info='info.contacts')
         p.text-center.text-sm-right.mt-4 {{ $t("author.region") }}
 </template>
 

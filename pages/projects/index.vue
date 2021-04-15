@@ -31,7 +31,7 @@
 
       v-col(cols='12')
         template(v-if='localeItems')
-          lazy-s-page-projects-card(
+          lazy-s-pages-projects-card(
             v-for='item in localeItems',
             :key='item.slug',
             :project='item'

@@ -38,7 +38,7 @@
 
         v-row(v-if='localeItems.length')
           v-col(v-for='(item, index) in localeItems', :key='index', md='6')
-            s-page-cases-design-logo-card-logos(
+            s-pages-cases-design-logo-card-logos(
               :item='item',
               :preview='cardView'
             )
