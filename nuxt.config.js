@@ -250,7 +250,8 @@ export default {
     { path: '~/components/fishes/', prefix: 's-fish' },
     { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
-    { path: '~/components/pages/', prefix: 's-page' },
+    { path: '~/components/pages/', prefix: 's-pages' },
+    { path: '~/components/pages/articles/', prefix: 's-article' },
     '~/components/',
   ],
   build: {

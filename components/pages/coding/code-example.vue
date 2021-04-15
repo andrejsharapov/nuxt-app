@@ -39,7 +39,7 @@
                   outlined,
                   small
                 ) {{ tag }}
-          s-page-coding-dialog-content(:item='item')
+          s-pages-coding-dialog-content(:item='item')
 </template>
 
 <script>

@@ -39,7 +39,7 @@
             :title='$t("works.examples")',
             anchor='works'
           )
-          lazy-s-page-drawings-image-list(:items='localeItems.list')
+          lazy-s-pages-drawings-image-list(:items='localeItems.list')
 </template>
 
 <script>

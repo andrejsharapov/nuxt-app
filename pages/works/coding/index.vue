@@ -43,7 +43,7 @@
 
       v-col(cols='12')
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
-        lazy-s-page-coding-code-example(
+        lazy-s-pages-coding-code-example(
           v-if='localeItems.length',
           :items='localeItems'
         )

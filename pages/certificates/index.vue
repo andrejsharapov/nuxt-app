@@ -25,7 +25,7 @@
           :height='null'
         )
 
-      s-page-certificates-cert-items(:items='certItems')
+      s-pages-certificates-cert-items(:items='certItems')
 </template>
 
 <script>

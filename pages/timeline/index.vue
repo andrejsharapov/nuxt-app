@@ -30,7 +30,7 @@
           lazy-s-fish-pages-timeline(width='290', :height='null')
 
       v-col(cols='12')
-        lazy-s-page-timeline-items(v-if='localeItems', :items='localeItems')
+        lazy-s-pages-timeline-items(v-if='localeItems', :items='localeItems')
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 

@@ -40,7 +40,7 @@
             :key='index',
             :md='item.grid'
           )
-            s-page-cases-design-illustrations-illustration-card(
+            s-pages-cases-design-illustrations-illustration-card(
               :item='item',
               :preview='cardView'
             )

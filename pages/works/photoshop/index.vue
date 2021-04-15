@@ -41,7 +41,7 @@
 
         v-row(v-if='localeItems.length')
           v-col(v-for='(item, index) of localeItems', :key='index', cols='12', md='6')
-            s-page-photoshop-work-examples(
+            s-pages-photoshop-work-examples(
             :item='item'
             :sources='cardView'
           )
