@@ -6,6 +6,7 @@ v-row.case-index
     v-row
       v-col(v-for='item in card.list', :key='item.to')
         v-hover(v-slot='{ hover }')
+          //- LINK
           nuxt-link(:to='localePath(item.to)')
             v-sheet.page__cases__card.pa-4.d-flex.flex-column.justify-center.align-center.text-center.rounded-xl.white--text(
               width='100%',
