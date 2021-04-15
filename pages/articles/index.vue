@@ -8,7 +8,7 @@
     template(#list-items)
       s-layout-components-back-image-list-items(
         :content='localeItems',
-        :icon='mdiCodeJson',
+        :icon='mdiBookOpenPageVariantOutline',
         :duration='2000',
         :message='$t("pages.shown")'
       )
@@ -16,16 +16,32 @@
   v-container
     v-row
       v-col(cols='12', sm='8', md='9')
+        .mt-lg-n16
+          s-page-articles-search(
+            :module='localeItems',
+            :outlined='true',
+            :label='$t("search.label")',
+            :placeholder='$t("search.placeholder")'
+          )
 
       v-col.mt-md-n16(cols='12', sm='4', md='3', style='z-index: 2')
         s-fish-pages-articles.mt-sm-n8.mt-md-n16(width='260', :height='null')
 
       v-col(cols='12')
-        pre {{ localeItems }}
+        template(v-if='localeItems.length')
+          s-page-articles-post(
+            v-for='article of localeItems',
+            :article='article',
+            :key='article.slug'
+          )
+        lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
 <script>
-import { mdiCodeJson } from '@mdi/js'
+// middleware({ redirect }) {
+//   return redirect('301', '/articles/page/1')
+// },
+import { mdiBookOpenPageVariantOutline } from '@mdi/js'
 import { articles } from '~/lib/page-meta'
 
 export default {
@@ -34,8 +50,7 @@ export default {
       `${app.i18n.locale}/articles`,
       params.slug
     )
-      .only('body')
-      .sortBy('updatedAt', 'desc')
+      .sortBy('createdAt', 'desc')
       .fetch()
 
     return {
@@ -45,7 +60,7 @@ export default {
   data() {
     return {
       page: articles(this),
-      mdiCodeJson,
+      mdiBookOpenPageVariantOutline,
     }
   },
   head() {
@@ -68,3 +83,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.page__articles {
+  --stop-color-one: var(--primary);
+  --stop-color-two: var(--accent);
+}
+</style>
