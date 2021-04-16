@@ -1,9 +1,10 @@
 <template lang="pug">
-.cert-items(transition='scroll-y-reverse-transition')
+.cert-items
   v-card(v-for='cert in items', :key='cert.slug', flat, color='transparent')
     v-card-title.text-uppercase.anchor-link.font-weight-bold.primary--text(
       :id='cert.slug'
     ) {{ titleLocale(cert) }}
+      //- LINK
       nuxt-link.ml-2(:to='$nuxt.$route.path + "#" + cert.slug') #
     v-row.mx-0
       v-col(
@@ -13,12 +14,12 @@
         sm='6',
         :md='[4].includes(cert.figures.length) ? "3" : "4"'
       )
-        v-card.cert.hidden.shadow-sm
+        v-card.cert.hidden.shadow-sm(transition='slide-y-reverse-transition')
           v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
             icon,
             large,
             exact,
-            :href='`https://geekbrains.ru/certificates/${f.num}.${$i18n.locale}`',
+            :href='`https://gb.ru/certificates/${f.num}.${$i18n.locale}`',
             target='_blank',
             rel='noopener noreferrer'
           )
@@ -27,13 +28,10 @@
           img(
             lazy-src='https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG',
             loading='lazy',
-            :src='`/src/certificates${f.img.src}`',
+            :src='`/src/certificates/${f.num}.jpg`',
             alt='',
             contain
           )
-            //- template(#placeholder)
-            //-   v-row.fill-height.ma-0(align='center', justify='center')
-            //-     v-progress-circular(indeterminate, color='grey lighten-5')
 
         v-card-text.pb-0.text-center {{ certLocale(f.caption) }}
         v-card-subtitle.text-center {{ formatDate(f.date) }}
@@ -41,6 +39,7 @@
 
 <script>
 import { mdiArrowExpand } from '@mdi/js'
+
 export default {
   name: 'CertItems',
   props: {
