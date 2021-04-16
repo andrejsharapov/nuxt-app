@@ -71,11 +71,11 @@
             s-articles-header(:article='article')
             nuxt-content(:document='article')
             s-articles-author(:article='article')
-            //- s-articles-arrows(
-            //-   v-if='$vuetify.breakpoint.mdAndUp',
-            //-   :prev='prev',
-            //-   :next='next'
-            //- )
+            s-articles-arrows(
+              v-if='$vuetify.breakpoint.mdAndUp',
+              :prev='prev',
+              :next='next'
+            )
           v-lazy(
             v-model='lazyComments',
             :options='{ threshold: 0.5 }',

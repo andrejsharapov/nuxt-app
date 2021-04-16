@@ -65,6 +65,8 @@ export default {
     updates: 'Updates',
     show: 'Show | show',
     hide: 'Hide | hide',
+    prev: 'Back | Prev | Previous',
+    next: 'Forward | Next | Following',
   },
   more: {
     base: 'More',
