@@ -75,4 +75,16 @@
       }
     }
   }
+
+  /* nuxt-content */
+  .nuxt-content-highlight {
+    pre.line-numbers {
+      color: var(--white);
+      background-color: var(--card);
+
+      code {
+        box-shadow: none;
+      }
+    }
+  }
 }
