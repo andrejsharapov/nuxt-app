@@ -19,7 +19,7 @@ export const appMeta = {
       },
     },
     share: '/share.jpg',
-    short: 'sharapov',
+    short: 'sharapov-dev',
     twitter: '@andrejsharapov',
   },
   host: {

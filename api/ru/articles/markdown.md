@@ -1,4 +1,5 @@
 ---
+type: note
 category:
   name: web dev
   tags: [nuxt, markdown, highlight]
@@ -6,8 +7,8 @@ category:
 title: Подключение @nuxt/markdown
 description: Подключение и настройка markdown в nuxt
 img:
-  src:
-  alt:
+  src: 'https://images.unsplash.com/photo-1499424180600-8d243b10320a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80'
+  alt: '@nuxt/markdown'
 
 source:
 

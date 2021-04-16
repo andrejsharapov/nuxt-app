@@ -40,6 +40,7 @@ export default {
     { src: '~/plugins/vue-cookieconsent' },
     { src: '~/plugins/vue-clipboard' },
     // { src: '~/plugins/gtm' },
+    { src: '~/plugins/vue-disqus.js' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -251,7 +252,7 @@ export default {
     { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
     { path: '~/components/pages/', prefix: 's-pages' },
-    { path: '~/components/pages/articles/', prefix: 's-article' },
+    { path: '~/components/pages/articles/', prefix: 's-articles' },
     '~/components/',
   ],
   build: {
