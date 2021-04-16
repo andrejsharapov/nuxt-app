@@ -40,6 +40,7 @@ export default {
     { src: '~/plugins/vue-cookieconsent' },
     { src: '~/plugins/vue-clipboard' },
     // { src: '~/plugins/gtm' },
+    { src: '~/plugins/vue-disqus.js' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

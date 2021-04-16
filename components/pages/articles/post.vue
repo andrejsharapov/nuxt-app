@@ -59,7 +59,7 @@
 import { mdiBookArrowDownOutline } from '@mdi/js'
 
 export default {
-  name: 'Post',
+  name: 'ArticlePost',
   props: {
     article: {
       type: Object,
