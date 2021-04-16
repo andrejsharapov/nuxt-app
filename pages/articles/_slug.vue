@@ -44,7 +44,7 @@
           style='position: sticky; top: 4em'
         )
           v-expansion-panel(
-            :style='{ backgroundColor: $vuetify.theme.dark ? "var(--dark-sheet)" : "" }'
+            :style='{ backgroundColor: $vuetify.theme.dark ? "var(--sheet)" : "" }'
           )
             v-expansion-panel-header.py-0(style='height: 56.8px')
               v-subheader.px-2 {{ $tc("table-of-contents", 1) }}
@@ -81,7 +81,7 @@
             :options='{ threshold: 0.5 }',
             transition='fade-transition'
           )
-            //- comments
+            disqus
       //- /SECTION
 </template>
 
