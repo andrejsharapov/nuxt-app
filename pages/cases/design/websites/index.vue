@@ -1,23 +1,120 @@
-<template lang="pug">
-.page__
-  s-history-back
-  v-container
-    v-row
-      v-col(cols='12')
-        v-card
-          v-card-title Hello!
+<template>
+  <div class="page__des-site">
+    <s-history-back />
+
+    <s-layout-components-back-image :page="page">
+      <template #back-image>
+        <s-back-waves-line
+          absolute
+          right="0"
+          bottom="-7"
+          left="0"
+          :width="null"
+          :height="null"
+        />
+      </template>
+      <template #list-items>
+        <s-layout-components-back-image-list-items
+          :content="localeItems"
+          :icon="mdiCellphoneLink"
+          :duration="2000"
+          :message="$t('pages.shown')"
+        />
+      </template>
+    </s-layout-components-back-image>
+
+    <v-container>
+      <v-row>
+        <!-- SECTION IMG + MESSAGE -->
+        <v-col cols="12" md="6">
+          <v-row no-gutters class="flex-column">
+            <v-col
+              cols="12"
+              class="d-none d-sm-block mt-sm-n15 text-center"
+              style="z-index: 2"
+            >
+              <div class="mt-sm-n12">
+                <s-fish-pages-des-site :width="350" :height="null" />
+              </div>
+            </v-col>
+            <v-col cols="12">
+              {{ $tc('pages.des-site.message', 1) }}
+            </v-col>
+          </v-row>
+        </v-col>
+        <!-- /SECTION -->
+
+        <!-- SECTION CHART-->
+        <v-col cols="12" md="6"> </v-col>
+        <!-- /SECTION -->
+
+        <!-- SECTION SKILLS -->
+        <v-col cols="12">
+          <lazy-s-skill-slider :items="skills.list" />
+        </v-col>
+        <!-- /SECTION -->
+
+        <!-- SECTION EXPERIENCE -->
+        <v-col cols="12"> </v-col>
+        <!-- /SECTION -->
+
+        <!-- SECTION WORKS-->
+        <v-col cols="12">
+          <!-- COMPONENT ANCHOR + MESSAGE -->
+          <s-section-heading-anchor
+            :title="$t('works.examples')"
+            anchor="works"
+          />
+          <p>{{ $tc('pages.des-site.message', 2) }}</p>
+          <!-- /COMPONENT -->
+
+          <!-- COMPONENT WORKS -->
+          <lazy-s-pages v-if="localeItems.length" , :items="localeItems" />
+          <lazy-s-works-not-found
+            v-else
+            :message="$t('works.works-not-found')"
+          />
+          <!-- /COMPONENT -->
+        </v-col>
+        <!-- /SECTION -->
+      </v-row>
+    </v-container>
+  </div>
 </template>
 
 <script>
+import { mdiCellphoneLink } from '@mdi/js'
+import { desSite } from '~/lib/page-meta'
+
 export default {
-  layout: 'clean',
-  data: () => ({
-    page: {
-      crumbs: '',
-      title: '',
-      description: '',
-    },
-  }),
+  async asyncData({ $content, params, app }) {
+    const skills = await $content('skills/des-site').fetch()
+
+    // const desSiteLocale = await $content(
+    //   `${app.i18n.locale}pages/cases/design/websites`,
+    //   params.slug
+    // )
+    //   .where({ type: 'des-site', hide: false })
+    //   .sortBy('created', 'desc')
+    //   .fetch()
+
+    // const statistics = await $content('counters-of-works/des-web-options')
+    //   .only(['chartOptions', 'chartSeries'])
+    //   .fetch()
+
+    return {
+      skills,
+      // statistics,
+      // desSiteLocale,
+    }
+  },
+  data() {
+    return {
+      page: desSite(this),
+      mdiCellphoneLink,
+      desSiteLocale: [],
+    }
+  },
   head() {
     return {
       title: this.page.title,
@@ -31,9 +128,17 @@ export default {
       ],
     }
   },
+  computed: {
+    localeItems() {
+      return this.desSiteLocale ? this.desSiteLocale : []
+    },
+  },
 }
 </script>
 
 <style>
-/* .page__ {} */
+.page__des-site {
+  --stop-color-one: #5731a1;
+  --stop-color-two: #5b62e0;
+}
 </style>
