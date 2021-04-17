@@ -26,7 +26,7 @@
     <v-container>
       <v-row>
         <!-- SECTION IMG + MESSAGE -->
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="5" class="pr-lg-6">
           <v-row no-gutters class="flex-column">
             <v-col
               cols="12"
@@ -44,9 +44,20 @@
         </v-col>
         <!-- /SECTION -->
 
-        <!-- SECTION CHART-->
-        <v-col cols="12" md="6"> </v-col>
-        <!-- /SECTION -->
+        <!-- COMPONENT CHART-->
+        <v-col cols="12" md="7">
+          <v-card class="mt-lg-n16 mb-4 pa-4 shadow-xl">
+            <v-lazy
+              :options="{
+                threshold: 0.5,
+              }"
+              transition="slide-y-reverse-transition"
+            >
+              <s-chart-apex :counters="chart" />
+            </v-lazy>
+          </v-card>
+        </v-col>
+        <!-- /COMPONENT -->
 
         <!-- SECTION SKILLS -->
         <v-col cols="12">
@@ -87,8 +98,14 @@ import { mdiCellphoneLink } from '@mdi/js'
 import { desSite } from '~/lib/page-meta'
 
 export default {
-  async asyncData({ $content, params, app }) {
+  async asyncData({ $content, app, params }) {
     const skills = await $content('skills/des-site').fetch()
+
+    const chart = await $content(
+      `${app.i18n.locale}/pages/cases/design/websites/des-site-options`
+    )
+      .only(['chartOptions', 'chartSeries'])
+      .fetch()
 
     // const desSiteLocale = await $content(
     //   `${app.i18n.locale}pages/cases/design/websites`,
@@ -98,13 +115,9 @@ export default {
     //   .sortBy('created', 'desc')
     //   .fetch()
 
-    // const statistics = await $content('counters-of-works/des-web-options')
-    //   .only(['chartOptions', 'chartSeries'])
-    //   .fetch()
-
     return {
       skills,
-      // statistics,
+      chart,
       // desSiteLocale,
     }
   },

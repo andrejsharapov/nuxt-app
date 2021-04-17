@@ -253,6 +253,7 @@ export default {
     { path: '~/components/layouts/', prefix: 's-layout' },
     { path: '~/components/pages/', prefix: 's-pages' },
     { path: '~/components/pages/articles/', prefix: 's-articles' },
+    { path: '~/components/charts/', prefix: 's-chart' },
     '~/components/',
   ],
   build: {

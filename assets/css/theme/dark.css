@@ -3,6 +3,7 @@
   --sheet: hsl(240, 9%, 16%);
   --card: hsl(232, 12%, 13%);
   --dots: hsl(240, 17%, 29%);
+  --chart-back: 232, 12%, 13%;
 
   .v-sheet {
     background-color: var(--sheet);
@@ -84,6 +85,49 @@
 
       code {
         box-shadow: none;
+      }
+    }
+  }
+
+  /* apexcharts */
+
+  .apexcharts {
+    &-text,
+    &-title-text,
+    &-legend-text {
+      color: var(--light) !important;
+      fill: var(--light) !important;
+    }
+
+    &-menu {
+      border-color: var(--dots);
+      background: var(--dots);
+
+      &-item {
+        white-space: nowrap;
+        color: var(--light) !important;
+
+        &:hover {
+          background: var(--card) !important;
+        }
+      }
+    }
+
+    &-tooltip,
+    &-tooltip-title,
+    &-xaxistooltip,
+    &-yaxistooltip,
+    &-series-group {
+      color: var(--light) !important;
+      border: thin solid hsla(var(--chart-back), 0.8) !important;
+      background: hsla(var(--chart-back), 0.8) !important;
+      box-shadow: none;
+    }
+
+    &-xaxistooltip-bottom {
+      &::before,
+      &::after {
+        border-bottom-color: hsla(var(--chart-back), 0.8);
       }
     }
   }
