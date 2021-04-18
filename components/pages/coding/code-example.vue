@@ -1,11 +1,11 @@
 <template lang="pug">
 .code-example(transition='slide-y-reverse-transition')
-  .mb-6.coding-card(v-for='(item, index) of items', :key='index')
+  .mb-6.card-view(v-for='(item, index) of items', :key='index')
     v-row(no-gutters)
       v-col(cols='12', md='4')
         v-card.rounded-lg.hidden.mb-md-4(
           :flat='$vuetify.breakpoint.smAndDown',
-          :class='{ "coding-card__image": $vuetify.breakpoint.mdAndUp }'
+          :class='{ "card-view__image": $vuetify.breakpoint.mdAndUp }'
         )
           v-img(
             lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG',
@@ -66,32 +66,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-$card: coding-card;
-
-.#{$card} {
-  &__image {
-    transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
-    filter: blur(2px);
-    opacity: 0.5;
-    transition: all var(--base-time) cubic-bezier(0.25, 0.1, 0, 2.05);
-  }
-
-  &:hover {
-    .#{$card} {
-      &__image {
-        transform: perspective(800px) rotateY(-15deg) translateY(-50px)
-          rotateX(10deg) scale(1);
-        filter: blur(0);
-        opacity: 1;
-        box-shadow: var(--shadow-xl);
-
-        &:hover {
-          transform: none;
-        }
-      }
-    }
-  }
-}
-</style>

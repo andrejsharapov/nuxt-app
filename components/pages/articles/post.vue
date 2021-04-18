@@ -1,6 +1,6 @@
 <template lang="pug">
 .mb-4.article-post(transition='scroll-y-reverse-transition')
-  v-row.article-card(no-gutters)
+  v-row.card-view(no-gutters)
     //- SECTION IMAGE
     v-col(cols='12', sm='4')
       v-list-item-subtitle.mb-4.ml-md-7.text-overline.accent--text(
@@ -11,7 +11,7 @@
 
       v-card.hidden.mb-md-4.rounded-lg(
         :flat='$vuetify.breakpoint.smAndDown',
-        :class='{ "article-card__image": $vuetify.breakpoint.mdAndUp }'
+        :class='{ "card-view__image": $vuetify.breakpoint.mdAndUp }'
       )
         v-img(
           lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG',
@@ -84,25 +84,3 @@ export default {
   },
 }
 </script>
-
-<style lang="sass">
-$card: article-card
-
-.#{$card}
-  &__image
-    transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg)
-    filter: blur(2px)
-    opacity: 0.5
-    transition: all var(--base-time) cubic-bezier(0.25, 0.1, 0, 2.05)
-
-  &:hover
-    .#{$card}
-      &__image
-        transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(1)
-        filter: blur(0)
-        opacity: 1
-        box-shadow: var(--shadow-xl)
-
-        &:hover
-          transform: none
-</style>
