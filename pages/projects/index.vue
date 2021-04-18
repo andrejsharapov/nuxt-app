@@ -26,7 +26,7 @@
         p {{ $t("pages.projects.message") }}
 
       v-col.d-none.d-sm-block.mt-sm-n16.text-center(cols='12', sm='3')
-        .position-absolute.mt-n8
+        .position-absolute.mt-n16
           lazy-s-fish-pages-projects(width='200', :height='null')
 
       v-col(cols='12')
