@@ -185,6 +185,7 @@ export default {
     { src: '~/assets/css/theme/light' },
     { src: '~/assets/css/theme/dark' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
+    { src: '~/assets/sass/extends/card-image.scss', lang: 'scss' },
   ],
   purgeCSS: {
     // paths: [

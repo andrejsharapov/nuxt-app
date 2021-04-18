@@ -86,7 +86,7 @@
           <p>{{ $tc('pages.des-site.message', 2) }}</p>
           <!-- /COMPONENT -->
 
-          <div class="d-flex">
+          <div v-if="localeItems.length" class="d-flex">
             <v-spacer />
             <v-btn-toggle
               v-model="cardView"
@@ -111,17 +111,14 @@
               cols="12"
               :md="cardView === 0 ? '6' : '12'"
             >
-              <!-- LINK -->
-              <nuxt-link :to="`${$nuxt.$route.path}/${site.slug}`">
-                <s-pages-cases-design-websites-card-grid
-                  v-if="cardView === 0"
-                  :site="site"
-                />
-                <s-pages-cases-design-websites-card-row
-                  v-if="cardView === 1"
-                  :site="site"
-                />
-              </nuxt-link>
+              <s-pages-cases-design-websites-card-grid
+                v-if="cardView === 0"
+                :site="site"
+              />
+              <s-pages-cases-design-websites-card-row
+                v-if="cardView === 1"
+                :site="site"
+              />
             </v-col>
           </v-row>
           <lazy-s-works-not-found
