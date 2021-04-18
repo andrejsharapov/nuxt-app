@@ -66,7 +66,14 @@
         <!-- /SECTION -->
 
         <!-- SECTION EXPERIENCE -->
-        <v-col cols="12"> </v-col>
+        <v-col cols="12">
+          <h3 class="mb-4 font-weight-bold">
+            {{ $tc('pages.des-site.experience', 1) }}
+          </h3>
+          <v-card-text v-for="item in desExpList" :key="item.title">
+            <s-pages-cases-design-websites-experience :item="item" />
+          </v-card-text>
+        </v-col>
         <!-- /SECTION -->
 
         <!-- SECTION WORKS-->
@@ -79,8 +86,44 @@
           <p>{{ $tc('pages.des-site.message', 2) }}</p>
           <!-- /COMPONENT -->
 
+          <div class="d-flex">
+            <v-spacer />
+            <v-btn-toggle
+              v-model="cardView"
+              mandatory
+              borderless
+              color="primary"
+            >
+              <v-btn :ripple="false">
+                <v-icon>{{ mdiViewGrid }}</v-icon>
+              </v-btn>
+              <v-btn v-if="$vuetify.breakpoint.mdAndUp" :ripple="false">
+                <v-icon>{{ mdiViewDay }}</v-icon>
+              </v-btn>
+            </v-btn-toggle>
+          </div>
+
           <!-- COMPONENT WORKS -->
-          <lazy-s-pages v-if="localeItems.length" , :items="localeItems" />
+          <v-row v-if="localeItems.length">
+            <v-col
+              v-for="site of localeItems"
+              :key="site.slug"
+              cols="12"
+              :md="cardView === 0 ? '6' : '12'"
+            >
+              <!-- LINK -->
+              <nuxt-link :to="`${$nuxt.$route.path}/${site.slug}`">
+                <s-pages-cases-design-websites-card-grid
+                  v-if="cardView === 0"
+                  :site="site"
+                />
+                <s-pages-cases-design-websites-card-row
+                  v-if="cardView === 1"
+                  :site="site"
+                />
+              </nuxt-link>
+            </v-col>
+          </v-row>
           <lazy-s-works-not-found
             v-else
             :message="$t('works.works-not-found')"
@@ -94,7 +137,7 @@
 </template>
 
 <script>
-import { mdiCellphoneLink } from '@mdi/js'
+import { mdiCellphoneLink, mdiViewGrid, mdiViewDay } from '@mdi/js'
 import { desSite } from '~/lib/page-meta'
 
 export default {
@@ -107,25 +150,39 @@ export default {
       .only(['chartOptions', 'chartSeries'])
       .fetch()
 
-    // const desSiteLocale = await $content(
-    //   `${app.i18n.locale}pages/cases/design/websites`,
-    //   params.slug
-    // )
-    //   .where({ type: 'des-site', hide: false })
-    //   .sortBy('created', 'desc')
-    //   .fetch()
+    const desSiteLocale = await $content(
+      `${app.i18n.locale}/pages/cases/design/websites`,
+      params.slug
+    )
+      .where({ type: 'des-site', hide: false })
+      .sortBy('created', 'desc')
+      .fetch()
 
     return {
       skills,
       chart,
-      // desSiteLocale,
+      desSiteLocale,
     }
   },
   data() {
     return {
       page: desSite(this),
       mdiCellphoneLink,
-      desSiteLocale: [],
+      mdiViewGrid,
+      mdiViewDay,
+      desExpList: [
+        {
+          img: { src: '/src/skills/ps.svg' },
+          title: 'Photoshop',
+          percent: '8',
+        },
+        {
+          img: { src: '/src/skills/figma.svg' },
+          title: 'Figma',
+          percent: '3',
+        },
+      ],
+      cardView: 0,
     }
   },
   head() {
@@ -153,5 +210,10 @@ export default {
 .page__des-site {
   --stop-color-one: #5731a1;
   --stop-color-two: #5b62e0;
+  --gradient-default: linear-gradient(
+    45deg,
+    var(--stop-color-one, var(--primary)) 50%,
+    var(--stop-color-two, var(--accent)) 100%
+  );
 }
 </style>

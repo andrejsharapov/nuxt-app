@@ -107,6 +107,8 @@ export default {
     'des-site': {
       message:
         'I know that every client, before making a choice, wants to see the skills of a designer and his real cases, that is, "live" work, and not just a table of blurry screenshots. This makes sense, so on this page I have presented some of my work done at different times using different tools. | By looking at my work, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
+      experience:
+        'Design and prototyping experience in years | Work experience in',
     },
     drawings: {
       message:
