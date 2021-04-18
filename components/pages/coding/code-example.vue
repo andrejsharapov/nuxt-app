@@ -24,9 +24,9 @@
               |
               | {{ formatDate(item.date) }}
           v-spacer
-          v-card-title {{ item.title }}
-          v-card-text.pb-0 {{ localeDescription(item) }}
-          v-card-text.pb-0.not-pointer.d-flex.align-center
+          v-card-title.pb-2 {{ item.title }}
+          v-card-text {{ localeDescription(item) }}
+          v-card-text.py-0.not-pointer.d-flex.align-center
             span.mr-2 Code:
             template(
               v-for='tags in item.pen.filter((e) => e.title === "Code")'

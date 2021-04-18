@@ -37,7 +37,7 @@
 
         //- LINK
         nuxt-link(:to='localePath(`/articles/${article.slug}`)')
-          v-card-title.mb-sm-3.text-break-word.font-weight-bold.primary--text {{ article.title }}
+          v-card-title.pb-2.text-break-word.font-weight-bold.primary--text {{ article.title }}
 
         v-card-text.pt-0.text-wrap
           | {{ article.description }}
