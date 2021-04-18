@@ -5,7 +5,7 @@
 
       //- SECTION info
       v-col.pt-4(cols='12', sm='7')
-        .small.pb-0.text-center.text-sm-left.grey--text.text--darken-2
+        .caption.pb-0.text-center.text-sm-left.grey--text.text--darken-2
           v-icon.d-block.d-sm-inline-block(left) {{mdiBriefcaseEditOutline}}
           | {{ info.ux.price }}
         v-card-title.px-0.pt-2.text-sm-h6.text-lg-h5.text-break-word.justify-center.justify-sm-start.text-center.text-sm-left.font-weight-bold {{ info.title }}
