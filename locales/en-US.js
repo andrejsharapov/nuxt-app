@@ -89,6 +89,7 @@ export default {
     cases: {
       message:
         'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
+      'header-tabs': ['Tools', 'Role'],
     },
     certificates: {
       message:
