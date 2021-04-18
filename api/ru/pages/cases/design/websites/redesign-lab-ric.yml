@@ -1,0 +1,142 @@
+hide: false
+type: dev-site
+title: Редизайн сайта ООО «РИЦ»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/8086461/media/0d3bb044bc58a78517272a0bd8c485fd.png?compress=1&resize=1000x750
+  alt: Редизайн сайта ООО «РИЦ»
+ux:
+  works: CORPORATE / BRANDING
+  price: Редизайн и модернизация
+created: '2019-08-23'
+period:
+  - '2019-08-11'
+  - '2019-08-23'
+deadline: На выполнение поставленной задачи было затрачено 1,5 недели.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - CorelDRAW
+        - Adobe Illustrator
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - Vue.js
+    - title: Software
+      tags:
+        - Visual Studio Code
+        - Pug
+        - SASS/SCSS
+        - Git
+        - Gulp
+  roles:
+    - title: Мои
+      tags:
+        - UI/UX Designer
+        - Frontend Developer
+    - title: Другие
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/8086461-Concept-of-Promo-Page
+    behance:
+    instagram: https://www.instagram.com/p/B4mpQoNA2Dm/
+client:
+  logoJPG: null
+  logoWEBP: null
+  head: ООО «РИЦ»
+  description: ООО «РИЦ» - это лаборатория, проводящая испытания технических устройств, предназначенных для использования в промышленности или на опасных производственных объектах (ОПО).
+  issues: Прежний сайт выглядел не вполне современно и достаточно заурядно. Посещаемость сайта низкая, а количество заявок с сайта было не достаточным.
+  task:
+    - повышение посещаемости ресурса, увеличение числа онлайн-заявок и обращений с сайта;
+    - улучшение интерфейса и дизайна сайта по всем современным тенденциям;
+    - перенос имеющейся информации и разработка оригинальных текстов;
+    - оптимизация страниц для мобильных устройств и современных браузеров.
+done:
+  img:
+    src: B4mpQoNA2Dm
+    alt: Редизайн сайта ООО «РИЦ»
+    height:
+  alert:
+    message:
+  list:
+    - анализ целевой аудитории и сайтов конкурентов;
+    - составление семантического ядра (подбор ключевых слов, по которым планируется продвижение ресурса);
+    - создание карты релевантности;
+    - разработка прототипов дизайн-макета;
+    - разработка концепции контент-наполнения сайта;
+    - формирование палитры цветов и разработка Style Guide;
+    - разработка дизайна и пользовательского интерфейса (UI);
+    - формирование зависимостей разных элементов сайта;
+    - верстка сайта по методу Mobile First и наполнение предоставленным контентом;
+    - разработка оригинальной и функциональной страницы 404 ошибки;
+    - разработка скриптов для расчета стоимости анализов на страницах услуг;
+    - анализ корректного отображения сайта в разных браузерах;
+    - анализ корректного отображения сайта на современных мобильных устройствах;
+    - запуск и подключение сквозной веб-аналитики сайта, отслеживание его эффективности.
+palette:
+  - type: ''
+    hex:
+      - 045762
+      - 8cd987
+  - type: ''
+    hex:
+      - 1fa595
+      - 1a1b1f
+  - type: ''
+    hex:
+      - F3F5F9
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap' rel='stylesheet'>"
+  headline: Ubuntu
+  text: Roboto
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '100'
+  dash:
+    Performance: '83'
+    Accessibility: '88'
+    Practices: '79'
+    SEO: '92'
+cms: Joomla!, Статический сайт
+testimonials:
+  author:
+    img:
+      src: ''
+      alt: ''
+    name: Павел Панкин
+    company: ООО «РИЦ»
+    link: http://riclab.ru/
+    position: Руководитель лаборатории
+  message: Нам нужен был сайт-одностраничник, на котором посетители могли бы узнать о нас, наших услугах и, в случае необходимости, связаться. У нас есть другие сайты, на которых тоже есть разделы с описанием испытаний, но входящих обращений за аналогичными услугами, с нового сайта лаборатории, больше на 25-40%.
+analytics:
+  result: уровень конверсии составил 13%.
+  traffic:
+    show: false
+    title: Поисковый трафик
+    type: bar
+    series:
+      - name: ''
+        data:
+      - name: Старт работ
+        data:
+  goals:
+    show: false
+    title: Достижения цели
+    chart:
+      series:
+      labels:
+  conversion:
+    show: true
+    title: Конверсия
+    value: ['13']

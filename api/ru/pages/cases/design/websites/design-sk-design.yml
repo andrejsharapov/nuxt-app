@@ -1,0 +1,73 @@
+hide: false
+type: des-site
+title: Дизайн сайта фабрики домашней мебели «SK DESIGN»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/8194467/media/432d5d07762b79b3f6b40dcc6d2beb99.png?compress=1&resize=1000x750
+  alt: Дизайн сайта фабрики домашней мебели «SK DESIGN»
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: '2019-11-13'
+period:
+  - '2019-11-12'
+  - '2019-11-13'
+deadline: На разработку дизайна страницы потребовалось около 13 часов.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - Adobe Photoshop
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+    - title: Другие
+      tags:
+  to:
+    dribbble: https://dribbble.com/shots/8194467-Homepage-Design-Concept
+    behance: https://www.behance.net/gallery/88087237/SK-DESIGN-factory-of-modern-furniture-for-the-home
+    instagram: https://www.instagram.com/p/B40T9FnA8dk/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Фабрика домашней мебели «SK Design»
+  description: «SK Design» - фабрика домашней мебели, которая сама проектирует, изготавливает и реализует продажу мебели, постоянно совершенствует и обновляет ассортимент.
+  issues: Интерфейс сайта устарел и не соответствует необходимому функционалу.
+  task:
+    - разработка современного интернет-магазина, не уступающего конкурентам;
+    - разработка максимально легкого дизайна, интуитивно понятного для ЦА.
+done:
+  img:
+    src: B40T9FnA8dk
+    alt: Дизайн сайта фабрики домашней мебели «SK DESIGN»
+    height:
+  alert:
+    message:
+  list:
+    - разработка прототипов дизайн-макета;
+    - написание оригинальных текстов;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ''
+    hex:
+      - FCAA3C
+      - 665349
+  - type: ''
+    hex:
+      - 131129
+      - 999999
+  - type: ''
+    hex:
+      - E5E5E5
+      - F8F8FA
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto&display=swap' rel='stylesheet'>"
+  headline: Krona One
+  text: Roboto
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '100'
