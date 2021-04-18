@@ -111,11 +111,11 @@
               cols="12"
               :md="cardView === 0 ? '6' : '12'"
             >
-              <s-pages-cases-design-websites-card-grid
+              <s-pages-cases-components-card-grid
                 v-if="cardView === 0"
                 :site="site"
               />
-              <s-pages-cases-design-websites-card-row
+              <s-pages-cases-components-card-row
                 v-if="cardView === 1"
                 :site="site"
               />
