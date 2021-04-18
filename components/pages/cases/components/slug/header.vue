@@ -54,9 +54,9 @@
   v-row.mt-4
     //- COMPONENT TOOLS & ROLES
     v-col(cols='12', md='6')
-      s-pages-cases-components-slug-components-header-tabs(:heading="$t('pages.cases.header-tabs[0]')", :content="info.preview.tools")
+      s-pages-cases-components-slug-components-header-tabs(:heading="$t('pages.cases.slug.header-tabs[0]')", :content="info.preview.tools")
     v-col(cols='12', md='6')
-      s-pages-cases-components-slug-components-header-tabs(:heading="$t('pages.cases.header-tabs[1]')", :content="info.preview.roles")
+      s-pages-cases-components-slug-components-header-tabs(:heading="$t('pages.cases.slug.header-tabs[1]')", :content="info.preview.roles")
     //- /COMPONENT
 </template>
 

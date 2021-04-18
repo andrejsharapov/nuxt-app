@@ -89,7 +89,23 @@ export default {
     cases: {
       message:
         'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
-      'header-tabs': ['Tools', 'Role'],
+      slug: {
+        'header-tabs': ['Tools', 'Role'],
+        headings: {
+          sections: [
+            'Client, issues and tasks',
+            'Result and search for a solution',
+          ],
+        },
+        client: {
+          about: 'Client',
+          issues: 'Issues',
+          task: {
+            title: 'Task | Tasks',
+          },
+          'not-found': 'The client is missing or was not named on purpose.',
+        },
+      },
     },
     certificates: {
       message:

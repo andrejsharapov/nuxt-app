@@ -1,6 +1,6 @@
 <template lang="pug">
 v-card.fill-height.shadow-md
-  h3.pt-4.pl-4.font-weight-bold {{ heading }}
+  h3.pb-2.pt-4.pl-4.font-weight-bold {{ heading }}
   v-divider(inset)
   v-tabs(grow, vertical, center-active)
     v-tab.justify-start(v-for='(item, i) in content', :key='i')
