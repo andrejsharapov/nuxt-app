@@ -105,6 +105,7 @@ export default {
           },
           'not-found': 'The client is missing or was not named on purpose.',
           done: 'During work',
+          colors: 'Colors',
         },
       },
     },
