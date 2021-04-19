@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  name: 'Palette',
+  name: 'CasePalette',
   props: {
     palette: {
       type: Array,
