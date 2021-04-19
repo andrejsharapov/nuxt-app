@@ -87,6 +87,7 @@ export default {
       title: 'Articles',
     },
     cases: {
+      title: 'Cases',
       message:
         'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
       slug: {
@@ -111,6 +112,11 @@ export default {
         typography: {
           title: 'Typography',
           view: ['For headings', 'For body text'],
+        },
+        responsive: {
+          title: 'Responsive',
+          friendliness: 'User friendliness',
+          optimization: 'Website optimization work was not carried out.',
         },
       },
     },
