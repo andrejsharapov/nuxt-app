@@ -118,6 +118,8 @@ export default {
           friendliness: 'User friendliness',
           optimization: 'Website optimization work was not carried out.',
         },
+        deadline: 'Deadline',
+        testimonials: 'Testimonials',
       },
     },
     certificates: {
@@ -184,6 +186,7 @@ export default {
   works: {
     'works-not-found': 'Works not found',
     examples: 'Work examples',
+    rate: 'Rate work with',
     types: 'Type of works',
   },
 }

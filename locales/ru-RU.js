@@ -115,6 +115,8 @@ export default {
           friendliness: 'Удобство для пользователей',
           optimization: 'Работы по оптимизации сайта не проводились.',
         },
+        deadline: 'Сроки',
+        testimonials: 'Отзыв клиента',
       },
     },
     certificates: {
@@ -180,6 +182,7 @@ export default {
   works: {
     'works-not-found': 'Работы не представлены',
     examples: 'Примеры работ',
+    rate: 'Оценить работу с помощью',
     types: 'Тип работ',
   },
 }
