@@ -75,13 +75,5 @@ export default {
       border-radius: inherit;
     }
   }
-
-  &:not(:first-child) {
-    /* REVIEW[epic=pcss MEDIA] */
-    @media (--lg-min) {
-      margin-left: -1.5rem;
-      margin-top: 1rem;
-    }
-  }
 }
 </style>
