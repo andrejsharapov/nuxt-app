@@ -16,6 +16,71 @@ export default {
     },
     privacy: 'Privacy',
     terms: 'Terms of use',
+    updates: 'Updates',
+    category: 'Category | category | Not category',
+    date: {
+      default: 'Date',
+    },
+    errors: {
+      'page-not-found': {
+        title: 'Page not found',
+        poll: {
+          question: 'Why do you think you ended up here?',
+          answers: [
+            {
+              col: 'orange',
+              label: 'Most likely the page I am looking for has been moved',
+            },
+            {
+              col: 'warning',
+              label: 'Most likely the page I am looking for has been renamed',
+            },
+            {
+              col: 'error',
+              label:
+                "Most likely, the page I'm looking for was deleted in the most brutal way",
+            },
+            {
+              col: 'success',
+              label:
+                "Most likely the page I'm looking for never existed at all",
+            },
+          ],
+          result: [
+            'Possibly, but not required...',
+            'It is very likely that you are right! Click the button below to go to the home page, or use the navigation on the left side of the site to find the page you want. Good luck.',
+          ],
+          notify: {
+            success: {
+              group: 'answers',
+              type: 'success',
+              title: 'Yes',
+              text: 'This is very similar to the truth.',
+            },
+            error: {
+              group: 'answers',
+              type: 'error',
+              title: 'No no no',
+              text: 'Not... This is too cruel.',
+            },
+            warning: {
+              group: 'answers',
+              type: 'warning',
+              title: 'Maybe',
+              text: 'But it is not so ...',
+            },
+          },
+        },
+      },
+      'other-errors': {
+        title: 'Something went wrong...',
+        subtitle: 'There seems to be a system error somewhere.',
+        messages: [
+          'Most likely, this is a technical error not related to your actions. Go to the home page and start over.',
+          "If it's not difficult for you, please report this error using the form.",
+        ],
+      },
+    },
     themes: {
       light: 'Light mode',
       dark: 'Dark mode',
@@ -156,6 +221,7 @@ export default {
     logos: {
       message:
         'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
+      format: 'Format',
     },
     photoshop: {
       message:

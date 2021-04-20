@@ -4,7 +4,7 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md(min-width='295')
     q {{ item.title }}
   v-card-subtitle.pb-0 {{ $t("works.types") }}: {{ item.ux.price }}
   v-card-subtitle.pt-0.pb-0 {{ $t("date.default") }}: {{ formatDate(item.created) }}
-  v-card-subtitle.pt-0 {{ $t("format") }}: {{ !logoView && item.before ? item.before.format : item.after.format }}
+  v-card-subtitle.pt-0 {{ $t("pages.logos.format") }}: {{ !logoView && item.before ? item.before.format : item.after.format }}
 
   .flex-grow-1
     template(v-if='!logoView && item.before')
