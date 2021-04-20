@@ -221,6 +221,7 @@ export default {
     logos: {
       message:
         'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
+      format: 'Format',
     },
     photoshop: {
       message:
