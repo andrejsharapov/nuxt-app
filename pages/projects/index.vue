@@ -7,7 +7,7 @@
       s-back-waves-line-three(
         absolute,
         right='0',
-        bottom='0',
+        top='0',
         left='0',
         :width='null',
         :height='null'
@@ -26,7 +26,7 @@
         p {{ $t("pages.projects.message") }}
 
       v-col.d-none.d-sm-block.mt-sm-n16.text-center(cols='12', sm='3')
-        .position-absolute.mt-n8
+        .position-absolute.mt-n16
           lazy-s-fish-pages-projects(width='200', :height='null')
 
       v-col(cols='12')

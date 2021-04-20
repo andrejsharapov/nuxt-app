@@ -1,0 +1,19 @@
+list:
+  - img:
+      src: figma
+      alt: Figma
+  - img:
+      src: ps
+      alt: Adobe Photoshop
+  - img:
+      src: ai
+      alt: Adobe Illustrator
+  - img:
+      src: ae
+      alt: After Effects
+  - img:
+      src: corel
+      alt: CorelDRAW
+  - img:
+      src: gimp
+      alt: GIMP

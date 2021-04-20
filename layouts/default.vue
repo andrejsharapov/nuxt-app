@@ -89,6 +89,7 @@ v-app
   lazy-s-cookie-box
   notifications(group='translation')
   notifications(group='copy-to-clipboard')
+  notifications(group='case-switch-dates')
 </template>
 
 <script>

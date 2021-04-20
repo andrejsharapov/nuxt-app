@@ -87,8 +87,40 @@ export default {
       title: 'Articles',
     },
     cases: {
+      title: 'Cases',
       message:
         'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
+      slug: {
+        'header-tabs': ['Tools', 'Role'],
+        headings: {
+          sections: [
+            'Client, issues and tasks',
+            'Result and search for a solution',
+          ],
+        },
+        client: {
+          about: 'Client',
+          issues: 'Issues',
+          task: {
+            title: 'Task | Tasks',
+          },
+          'not-found': 'The client is missing or was not named on purpose.',
+        },
+        done: 'During work',
+        colors: 'Colors',
+        grid: 'Grid',
+        typography: {
+          title: 'Typography',
+          view: ['For headings', 'For body text'],
+        },
+        responsive: {
+          title: 'Responsive',
+          friendliness: 'User friendliness',
+          optimization: 'Website optimization work was not carried out.',
+        },
+        deadline: 'Deadline',
+        testimonials: 'Testimonials',
+      },
     },
     certificates: {
       message:
@@ -103,6 +135,12 @@ export default {
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
+    },
+    'des-site': {
+      message:
+        'I know that every client, before making a choice, wants to see the skills of a designer and his real cases, that is, "live" work, and not just a table of blurry screenshots. This makes sense, so on this page I have presented some of my work done at different times using different tools. | By looking at my work, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
+      experience:
+        'Design and prototyping experience in years | Work experience in',
     },
     drawings: {
       message:
@@ -148,6 +186,7 @@ export default {
   works: {
     'works-not-found': 'Works not found',
     examples: 'Work examples',
+    rate: 'Rate work with',
     types: 'Type of works',
   },
 }

@@ -185,6 +185,7 @@ export default {
     { src: '~/assets/css/theme/light' },
     { src: '~/assets/css/theme/dark' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
+    { src: '~/assets/sass/extends/card-image.scss', lang: 'scss' },
   ],
   purgeCSS: {
     // paths: [
@@ -253,6 +254,7 @@ export default {
     { path: '~/components/layouts/', prefix: 's-layout' },
     { path: '~/components/pages/', prefix: 's-pages' },
     { path: '~/components/pages/articles/', prefix: 's-articles' },
+    { path: '~/components/charts/', prefix: 's-chart' },
     '~/components/',
   ],
   build: {
