@@ -114,6 +114,7 @@
               <s-pages-cases-components-card-row
                 v-if="cardView === 1"
                 :site="site"
+                :show-tools="2"
               />
             </v-col>
           </v-row>

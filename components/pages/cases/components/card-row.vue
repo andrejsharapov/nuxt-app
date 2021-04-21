@@ -30,11 +30,7 @@
           v-card-text.pb-0.not-pointer.d-flex.align-center
             v-icon.mr-2 {{ mdiHammerWrench }}
             template(v-if='site.preview')
-              v-chip-group(
-                v-for='(tool, i) of site.preview.tools.slice(0, 1)',
-                :key='i',
-                column
-              )
+              v-chip-group(v-for='(tool, i) of sliceTagTools()', :key='i')
                 v-chip(
                   v-for='(tag, index) in tool.tags',
                   :key='index',
@@ -62,6 +58,10 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    showTools: {
+      type: Number,
+      default: 0,
+    },
   },
   data() {
     return {
@@ -73,6 +73,19 @@ export default {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
+    },
+    sliceTagTools() {
+      if (this.site?.preview?.tools) {
+        if (this.showTools === 0) {
+          return this.site.preview.tools.slice(0, 1)
+        } else if (this.showTools === 1) {
+          return this.site.preview.tools.slice(1, 2)
+        } else {
+          return this.site.preview.tools.slice(1, 3)
+        }
+      } else {
+        return []
+      }
     },
   },
 }
