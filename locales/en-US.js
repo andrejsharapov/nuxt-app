@@ -183,6 +183,7 @@ export default {
           friendliness: 'User friendliness',
           optimization: 'Website optimization work was not carried out.',
         },
+        analytics: 'Web Analytics',
         deadline: 'Deadline',
         testimonials: 'Testimonials',
       },

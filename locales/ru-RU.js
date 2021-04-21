@@ -180,6 +180,7 @@ export default {
           friendliness: 'Удобство для пользователей',
           optimization: 'Работы по оптимизации сайта не проводились.',
         },
+        analytics: 'Веб-аналитика',
         deadline: 'Сроки',
         testimonials: 'Отзыв клиента',
       },
