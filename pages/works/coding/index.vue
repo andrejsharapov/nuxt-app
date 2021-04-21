@@ -56,7 +56,7 @@ import { coding } from '~/lib/page-meta'
 
 export default {
   async asyncData({ $content, params }) {
-    const codeLocale = await $content('coding', params.slug)
+    const codeLocale = await $content('pages/works/coding', params.slug)
       .where({ type: 'coding' })
       .sortBy('date', 'desc')
       .fetch()

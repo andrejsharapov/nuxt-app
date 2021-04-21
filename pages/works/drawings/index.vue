@@ -48,7 +48,10 @@ import { drawings } from '~/lib/page-meta'
 
 export default {
   async asyncData({ $content, params }) {
-    const drawingsList = await $content('drawings/list', params.slug)
+    const drawingsList = await $content(
+      'pages/works/drawings/list',
+      params.slug
+    )
       .only('list')
       .fetch()
 

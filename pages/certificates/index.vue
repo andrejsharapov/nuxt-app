@@ -32,7 +32,7 @@ import { certificates } from '~/lib/page-meta'
 
 export default {
   async asyncData({ $content, params }) {
-    const certItems = await $content('certificates', params.slug).fetch()
+    const certItems = await $content('pages/certificates', params.slug).fetch()
 
     return {
       certItems,
