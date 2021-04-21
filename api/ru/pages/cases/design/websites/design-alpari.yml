@@ -40,7 +40,6 @@ done:
   alert:
     message: На фото изображена концепция №3 (100% креатив)
     type: info
-    icon: numeric-3-box
     dismissible: false
     outlined: false
     prominent: false

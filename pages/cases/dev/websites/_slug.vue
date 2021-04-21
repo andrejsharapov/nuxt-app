@@ -23,7 +23,7 @@
         >
           <s-pages-cases-components-slug-arrow-prev
             :prev="prev"
-            go-to="cases/design/websites"
+            go-to="cases/dev/websites"
           />
         </v-col>
         <!-- /COMPONENT -->
@@ -165,7 +165,7 @@
 
                   <!-- COMPONENT RESPONSIVE CHART -->
                   <v-col cols="12" md="5" class="not-pointer">
-                    <s-pages-cases-components-slug-responsive-chart
+                    <lazy-s-pages-cases-components-slug-responsive-chart
                       :res="website.responsive"
                     />
                   </v-col>
@@ -176,6 +176,18 @@
                   {{ $t('pages.cases.slug.responsive.optimization') }}
                 </template>
                 <!-- /SECTION -->
+
+                <!-- COMPONENT ANALYTICS -->
+                <template v-if="website.analytics">
+                  <s-pages-cases-components-slug-components-section-sub-title
+                    :title="$t('pages.cases.slug.analytics')"
+                  />
+
+                  <s-pages-cases-components-slug-components-web-analytics
+                    :info="website.analytics"
+                  />
+                </template>
+                <!-- /COMPONENT -->
 
                 <!-- SECTION DEADLINE -->
                 <s-pages-cases-components-slug-components-section-sub-title
@@ -214,7 +226,7 @@
         >
           <s-pages-cases-components-slug-arrow-next
             :next="next"
-            go-to="cases/design/websites"
+            go-to="cases/dev/websites"
           />
         </v-col>
         <!-- /COMPONENT -->
@@ -230,16 +242,16 @@ export default {
   name: 'PagesCasesDesignWebsitesSlug',
   async asyncData({ $content, app, params }) {
     const website = await $content(
-      `${app.i18n.locale}/pages/cases/design/websites`,
+      `${app.i18n.locale}/pages/cases/dev/websites`,
       params.slug
     )
-      .where({ type: 'des-site' })
+      .where({ type: 'dev-site' })
       .fetch()
 
     const [prev, next] = await $content(
-      `${app.i18n.locale}/pages/cases/design/websites`
+      `${app.i18n.locale}/pages/cases/dev/websites`
     )
-      .where({ type: 'des-site' })
+      .where({ type: 'dev-site' })
       .only(['title', 'slug'])
       .sortBy('created', 'desc')
       .surround(params.slug)

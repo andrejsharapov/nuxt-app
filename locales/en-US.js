@@ -183,6 +183,7 @@ export default {
           friendliness: 'User friendliness',
           optimization: 'Website optimization work was not carried out.',
         },
+        analytics: 'Web Analytics',
         deadline: 'Deadline',
         testimonials: 'Testimonials',
       },
@@ -206,6 +207,12 @@ export default {
         'I know that every client, before making a choice, wants to see the skills of a designer and his real cases, that is, "live" work, and not just a table of blurry screenshots. This makes sense, so on this page I have presented some of my work done at different times using different tools. | By looking at my work, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
       experience:
         'Design and prototyping experience in years | Work experience in',
+    },
+    'dev-site': {
+      cms:
+        'I started learning web development back in 2010. This was my first knowledge of web development, which eventually grew into a hobby. Over the years I have learned to work with HTML, CSS, JS and have worked with various content management systems (CMS). But I started full-fledged website development only in 2018, when I learned how to create websites on WordPress and got a job as a web developer.',
+      message:
+        'By looking at my works, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
     },
     drawings: {
       message:
