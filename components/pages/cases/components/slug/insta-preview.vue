@@ -12,7 +12,7 @@ v-card.case-insta-preview.shadow-lg
       scrolling='no',
       allowtransparency='true'
     )
-  v-img(v-else, :image='preview.img', cover)
+  v-img.mt-md-8(v-else, :src='preview.img.src', alt='', cover)
 </template>
 
 <script>
