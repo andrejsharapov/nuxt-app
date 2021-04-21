@@ -41,7 +41,7 @@ import { timeline } from '~/lib/page-meta'
 export default {
   async asyncData({ $content, params, app }) {
     const timeLineLocale = await $content(
-      `${app.i18n.locale}/timeline`,
+      `${app.i18n.locale}/pages/timeline`,
       params.slug
     )
       .sortBy('date', 'desc')

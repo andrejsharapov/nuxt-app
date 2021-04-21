@@ -54,7 +54,7 @@ import { photoshop } from '~/lib/page-meta'
 
 export default {
   async asyncData({ $content, params }) {
-    const photoshopList = await $content('photoshop', params.slug)
+    const photoshopList = await $content('pages/works/photoshop', params.slug)
       .sortBy('date', 'desc')
       .fetch()
 
