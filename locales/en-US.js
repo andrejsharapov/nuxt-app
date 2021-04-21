@@ -207,6 +207,12 @@ export default {
       experience:
         'Design and prototyping experience in years | Work experience in',
     },
+    'dev-site': {
+      cms:
+        'I started learning web development back in 2010. This was my first knowledge of web development, which eventually grew into a hobby. Over the years I have learned to work with HTML, CSS, JS and have worked with various content management systems (CMS). But I started full-fledged website development only in 2018, when I learned how to create websites on WordPress and got a job as a web developer.',
+      message:
+        'By looking at my works, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
+    },
     drawings: {
       message:
         'As a child, I studied at art school, studied drawing, painting, graphics, art history, sculpture and much more. Unfortunately, I cannot share all my works, as many of them are lost. But in August 2019, I found some old sketches that you can see below.',
