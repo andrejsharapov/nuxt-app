@@ -60,7 +60,6 @@ done:
   alert:
     message: Mobile First - это метод разработки оптимизированного веб-сайта, при котором сайт разрабатывается не от стационарных компьютеров к мобильным устройствам, а наоборот, от мобильной версии сайта, простой и облегченной, до широкоформатных экранов.
     type: info
-    icon: information-outline
     dismissible: false
     outlined: false
     prominent: false

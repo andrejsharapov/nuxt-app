@@ -68,7 +68,6 @@ done:
   alert:
     message:
     type: info
-    icon: information-outline
     dismissible: false
     outlined: false
     prominent: false

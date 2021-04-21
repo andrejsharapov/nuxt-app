@@ -79,11 +79,12 @@
                   <v-col cols="12">
                     <v-alert
                       :type="clientAlert.type"
-                      :icon="clientAlert.icon ? `mdi-` + clientAlert.icon : ''"
+                      :icon="false"
                       :prominent="clientAlert.prominent"
                       :outlined="clientAlert.outlined"
                       :dismissible="clientAlert.dismissible"
                       text
+                      border="left"
                       class="mt-3 mb-0"
                     >
                       {{ clientAlert.message }}
