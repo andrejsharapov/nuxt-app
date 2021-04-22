@@ -51,6 +51,7 @@
 
 <script>
 import { mdiHammerWrench, mdiPageNextOutline } from '@mdi/js'
+
 export default {
   name: 'CardRow',
   props: {
