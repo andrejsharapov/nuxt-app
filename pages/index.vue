@@ -26,7 +26,7 @@ mixin sheet(color, saturation, size)
 
         //- icons
         .mt-6
-          lazy-s-social-icons
+          lazy-s-social-icons(plain, class-color='grey--text text--lighten-1')
 
         //- btn story
         v-btn.mt-3.mx-auto.fill-width.uppercase(
