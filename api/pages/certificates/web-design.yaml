@@ -1,11 +1,16 @@
 title: Веб-дизайн
 icon: $mdiPaletteSwatchOutline
 figures:
+  - date: 2021-04-22
+    num: 1225782
+    caption:
+      ru: Прошел тестирование по «Figma. Продвинутый уровень»
+      en: Successfully passed the test «Figma. Advanced level»
   - date: 2021-04-19
     num: 1222152
     caption:
       ru: Прошел тестирование по «Рисование аналоговыми инструментами»
-      en: Successfully passed the test «Figma. Elementary level»
+      en: Successfully passed the test «Drawing with traditional media»
   - date: 2021-04-15
     num: 1217464
     caption:
