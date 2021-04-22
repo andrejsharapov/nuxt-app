@@ -229,6 +229,25 @@ export default {
       message:
         "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
     },
+    index: {
+      about:
+        'More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
+      activity: {
+        prepend:
+          'Я не сижу на месте, а совершенствую свои навыки в три основных этапа',
+        list: [
+          {
+            message: 'Analyzing the work of experienced developers',
+          },
+          {
+            message: 'Studying UI / UX design and web development trends',
+          },
+          {
+            message: 'Working with new programs and languages',
+          },
+        ],
+      },
+    },
     logos: {
       message:
         'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
