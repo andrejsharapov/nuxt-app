@@ -29,8 +29,8 @@ export default {
 </script>
 
 <style>
-@media (--sm-min) {
-  .case-done {
+.case-done {
+  @media (--sm-min) {
     .ps {
       height: 450px;
     }
