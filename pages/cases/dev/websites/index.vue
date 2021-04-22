@@ -54,6 +54,21 @@
           </p>
         </v-col>
 
+        <v-col cols="12">
+          <v-chip-group v-for="(c, i) in cms" :key="i" column mandatory>
+            <v-chip
+              v-for="chip in c.set"
+              :key="chip"
+              filter
+              label
+              :filter-icon="mdiNumeric1Box"
+              active-class="indigo white--text"
+            >
+              {{ chip }}
+            </v-chip>
+          </v-chip-group>
+        </v-col>
+
         <!-- COMPONENT CHART -->
         <v-col cols="12">
           <v-card class="mb-4 pa-4 shadow-xl">
@@ -131,12 +146,13 @@
 </template>
 
 <script>
-import { mdiResponsive, mdiViewGrid, mdiViewDay } from '@mdi/js'
+import { mdiResponsive, mdiViewGrid, mdiViewDay, mdiNumeric1Box } from '@mdi/js'
 import { devSite } from '~/lib/page-meta'
 
 export default {
   async asyncData({ $content, app, params }) {
     const skills = await $content('skills/dev-site').fetch()
+    const set = await $content('skills/skillset').fetch()
 
     const chart = await $content(
       `${app.i18n.locale}/pages/cases/dev/websites/dev-site-options`
@@ -156,6 +172,7 @@ export default {
       skills,
       chart,
       devSiteLocale,
+      set,
     }
   },
   data() {
@@ -164,6 +181,7 @@ export default {
       mdiResponsive,
       mdiViewGrid,
       mdiViewDay,
+      mdiNumeric1Box,
       cardView: 0,
     }
   },
@@ -183,6 +201,11 @@ export default {
   computed: {
     localeItems() {
       return this.devSiteLocale ? this.devSiteLocale : []
+    },
+    cms() {
+      return this.set?.data
+        ? this.set.data.filter((el) => el.alt === 'CMS')
+        : []
     },
   },
 }

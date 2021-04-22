@@ -1,0 +1,10 @@
+data:
+  - alt: CMS
+    set:
+      - WordPress
+      - Tilda
+      - Joomla!
+      - 1C Bitrix
+      - WIX
+      - uKit
+      - uCoz
