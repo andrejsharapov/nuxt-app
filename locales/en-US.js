@@ -234,7 +234,7 @@ export default {
         'More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
       activity: {
         prepend:
-          'Я не сижу на месте, а совершенствую свои навыки в три основных этапа',
+          'I am constantly developing and improving my skills in three easy steps',
         list: [
           {
             message: 'Analyzing the work of experienced developers',
