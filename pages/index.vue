@@ -25,27 +25,32 @@ mixin sheet(color, saturation, size)
               v-progress-circular(indeterminate, color='grey lighten-5')
 
         //- icons
-        .mt-6
-          lazy-s-social-icons(plain, class-color='grey--text text--lighten-1')
+        .mt-6.d-none.d-lg-block
+          v-hover(#default='{ hover }')
+            lazy-s-social-icons(
+              plain,
+              :class-color='hover ? "grey--text text--darken-2" : "grey--text text--lighten-1"'
+            )
 
         //- btn story
-        v-btn.mt-3.mx-auto.fill-width.uppercase(
-          block,
-          text,
-          plain,
-          :href='storyLocale().path',
-          color='grey lighten-1',
-          rel='noopener noreferrer',
-          target='_blank'
-        ) {{ storyLocale().title }}
-          v-icon(right) {{ mdiOpenInNew }}
+        v-hover(#default='{ hover }')
+          v-btn.mt-3.mx-auto.fill-width.uppercase(
+            block,
+            text,
+            plain,
+            :href='storyLocale().path',
+            :color='hover ? "grey darken-2" : "grey lighten-1"',
+            rel='noopener noreferrer',
+            target='_blank'
+          ) {{ storyLocale().title }}
+            v-icon(right) {{ mdiOpenInNew }}
 
       //- ANCHOR 2/2
       v-col(cols='12', sm='8')
         //- hello!
         h1.mb-3.text-h4.text-md-h3.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
         h3.mb-8.text-h5.text-md-h2.text-center.text-md-left.font-weight-bold.text-gradient(
-          style='background-image: linear-gradient(180deg, var(--info), var(--primary))'
+          style='background-image: linear-gradient(180deg, var(--v-info-lighten2), var(--v-accent-darken1))'
         )
           strong {{ this.$t("author.position[0]") }},
           br
@@ -101,12 +106,29 @@ mixin sheet(color, saturation, size)
                                 elevation='0',
                                 depressed
                               )
-                                span.text-h4.font-weight-bold.white--text {{ index + 1 }}
+                                span.text-h5.font-weight-bold.white--text {{ `#${index + 1}` }}
                   v-list-item-content.pb-0
                     v-list-item-title.text-wrap {{ card.message }}
       //- /SECTION
 
       //- SECTION[epic=home] COUNTERS
+      v-col(v-for='counter in counters.data', :key='counter.title')
+        v-card.mb-4.px-4.white--text.rounded-lg.shadow-lg.not-pointer(
+          :color='counter.color_one',
+          :style='{ backgroundImage: "linear-gradient(45deg, " + counter.color_one + ", " + counter.color_two + ")" }'
+        )
+          .d-flex.align-center
+            .ml-2
+              v-sheet.rounded-lg.hidden.op-8(
+                color='white',
+                width='62',
+                height='62'
+              )
+                .d-flex.justify-center.align-center.fill-height
+                  v-icon(:color='counter.color_one', large) {{ counter.icon }}
+            v-list-item-content
+              v-card-title.text-h4.mb-1.pt-2.text-break-word {{ counter.val }}%
+              v-card-subtitle.white--text.op-8 {{ counter.title }}
       //- /SECTION
 
       //- SECTION[epic=home] ACHIVEMENTS
@@ -128,12 +150,45 @@ mixin sheet(color, saturation, size)
 </template>
 
 <script>
-import { mdiOpenInNew } from '@mdi/js'
+import {
+  mdiOpenInNew,
+  mdiPalette,
+  mdiCodeBracesBox,
+  mdiChartAreaspline,
+} from '@mdi/js'
 
 export default {
   data() {
     return {
       mdiOpenInNew,
+      mdiPalette,
+      mdiCodeBracesBox,
+      mdiChartAreaspline,
+      counters: {
+        data: [
+          {
+            title: 'Designing Skills',
+            val: '75',
+            icon: mdiPalette,
+            color_one: '#5b62e0',
+            color_two: '#5731a1',
+          },
+          {
+            title: 'Programming Skills',
+            val: '68',
+            icon: mdiCodeBracesBox,
+            color_one: 'var(--orange)',
+            color_two: 'var(--pink)',
+          },
+          {
+            title: 'Marketing Skills',
+            val: '45',
+            icon: mdiChartAreaspline,
+            color_one: 'var(--green)',
+            color_two: 'var(--teal)',
+          },
+        ],
+      },
     }
   },
   head() {
@@ -147,6 +202,7 @@ export default {
         this.$t('author.position[1]'),
     }
   },
+  computed: {},
   methods: {
     storyLocale() {
       if (this.$i18n.locale === 'ru') {
