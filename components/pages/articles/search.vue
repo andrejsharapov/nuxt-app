@@ -24,7 +24,7 @@
     </v-card>
     <template v-if="articles.length">
       <div v-for="article of articles" :key="article.slug">
-        <s-page-articles-post :article="article" />
+        <s-articles-post :article="article" />
       </div>
       <v-divider :class="searchQuery !== '' ? 'my-8' : 'd-none'" />
     </template>

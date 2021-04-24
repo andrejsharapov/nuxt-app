@@ -16,7 +16,7 @@
   &.v-app-bar {
     &.v-toolbar {
       &.v-sheet {
-        background-color: transparent;
+        background-color: var(--sheet);
       }
     }
   }
