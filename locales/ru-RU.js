@@ -1,6 +1,7 @@
 import { appMeta as config } from '../config/app'
 
 export default {
+  all: 'Все',
   app: {
     cookie: {
       message:
@@ -96,19 +97,6 @@ export default {
     },
     region: 'Россия, Москва',
   },
-  host: {
-    name: `${config.host.name}`,
-    url: `${config.host.url}`,
-  },
-  site: {
-    header: { name: 'Шапка' },
-    navbar: {
-      name: 'Навигация',
-    },
-    page: {
-      construction: 'Страница находится в разработке',
-    },
-  },
   btn: {
     go: {
       to: 'Перейти',
@@ -132,6 +120,10 @@ export default {
     hide: 'Скрыть | скрыть',
     prev: 'Назад | Предыдущая | Предыдущий',
     next: 'Вперед | Следующая | Следующий',
+  },
+  host: {
+    name: `${config.host.name}`,
+    url: `${config.host.url}`,
   },
   more: {
     base: 'Еще',
@@ -257,6 +249,10 @@ export default {
         skillset: {
           title: 'Умения и навыки',
         },
+        works: {
+          message:
+            'В марте 2019 года я перешел от разработки {from} макетов в программу {to}, в которой теперь занимаюсь прототипированием и разработкой дизайна сайтов и приложений. Посмотрите некоторые из моих работ ниже и на специальной странице.',
+        },
       },
     },
     logos: {
@@ -287,6 +283,15 @@ export default {
     placeholder: 'Начните вводить текст...',
     found: 'По вашему запросу найдено материалов.',
     'not-found': 'Очень жаль, но по вашему запросу ничего найдено.',
+  },
+  site: {
+    header: { name: 'Шапка' },
+    navbar: {
+      name: 'Навигация',
+    },
+    page: {
+      construction: 'Страница находится в разработке',
+    },
   },
   source: 'Источник | Исходники',
   'table-of-contents': 'Содержание | содержание',

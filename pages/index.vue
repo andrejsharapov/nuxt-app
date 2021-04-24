@@ -25,8 +25,8 @@ mixin sheet(color, saturation, size)
               v-progress-circular(indeterminate, color='grey lighten-5')
 
         //- icons
-        .mt-6.d-none.d-lg-block
-          v-hover(#default='{ hover }')
+        v-hover(#default='{ hover }')
+          .mt-6.d-none.d-lg-block
             lazy-s-social-icons(
               plain,
               :class-color='hover ? "grey--text text--darken-2" : "grey--text text--lighten-1"'
@@ -201,6 +201,34 @@ mixin sheet(color, saturation, size)
       //- /SECTION
 
       //- SECTION[epic=home] WORKS
+      v-col(cols='12')
+        s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
+        p(
+          v-html='$t("pages.index.sections.works.message", { from: " <code>.PSD</code> ", to: " <code>Figma</code> " })'
+        )
+
+        v-row(v-if='localeCases.length')
+          v-col(
+            v-for='site of localeCases',
+            :key='site.slug',
+            cols='12',
+            md='6'
+          )
+            s-pages-cases-components-card-grid(
+              :key='site.slug',
+              :site='site',
+              :custom-path='localePath(`/cases/${caseType(site.type)}/websites`)'
+            )
+
+        p.mt-8.mb-0.text-center
+          v-hover(v-slot='{ hover }')
+            v-btn.mx-auto.transition.transform(
+              :block='$vuetify.breakpoint.xs',
+              :to='localePath("/cases")',
+              x-large,
+              color='primary',
+              :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
+            ) {{ $t("all") }} {{ $t("pages.cases.title") }}
       //- /SECTION
 
       //- SECTION[epic=home] SKILLSET
@@ -276,11 +304,33 @@ export default {
       .where({ slug: 'web-design' })
       .fetch()
 
+    const desSiteLocale = await $content(
+      `${app.i18n.locale}/pages/cases/design/websites`,
+      params.slug
+    )
+      .where({ type: { $in: ['des-site'] } })
+      .only(['type', 'slug', 'ux', 'img', 'title', 'created'])
+      .limit(1)
+      .sortBy('created', 'desc')
+      .fetch()
+
+    const devSiteLocale = await $content(
+      `${app.i18n.locale}/pages/cases/dev/websites`,
+      params.slug
+    )
+      .where({ type: { $in: ['dev-site'] } })
+      .only(['type', 'slug', 'ux', 'img', 'title', 'created'])
+      .limit(1)
+      .sortBy('created', 'desc')
+      .fetch()
+
     return {
       getTimeline,
       annualReport,
       skills,
       getCertificates,
+      desSiteLocale,
+      devSiteLocale,
     }
   },
   data() {
@@ -337,6 +387,11 @@ export default {
     certList() {
       return this.getCertificates ? this.getCertificates : []
     },
+    localeCases() {
+      return this.desSiteLocale || this.devSiteLocale
+        ? this.desSiteLocale.concat(this.devSiteLocale)
+        : []
+    },
   },
   methods: {
     storyLocale() {
@@ -353,6 +408,13 @@ export default {
         }
       }
     },
+    caseType(type) {
+      if (type === 'des-site') {
+        return 'design'
+      } else if (type === 'dev-site') {
+        return 'dev'
+      }
+    },
   },
 }
 </script>
@@ -361,6 +423,11 @@ export default {
 .page__index {
   --stop-color-one: var(--primary);
   --stop-color-two: var(--accent);
+  --gradient-default: linear-gradient(
+    45deg,
+    var(--stop-color-one, var(--primary)) 50%,
+    var(--stop-color-two, var(--accent)) 100%
+  );
 }
 
 .transition {

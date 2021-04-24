@@ -1,7 +1,13 @@
 <template>
   <v-scroll-y-reverse-transition>
     <!-- LINK -->
-    <nuxt-link :to="`${$nuxt.$route.path}/${site.slug}`">
+    <nuxt-link
+      :to="
+        customPath
+          ? `${customPath}/${site.slug}`
+          : `${$nuxt.$route.path}/${site.slug}`
+      "
+    >
       <v-hover v-slot="{ hover }">
         <div class="text-center">
           <v-list-item-subtitle class="mb-4 grey--text">
@@ -41,9 +47,9 @@
 
           <v-list-item>
             <v-list-item-content class="mt-4">
-              <v-list-item-title class="mb-3">{{
-                site.title
-              }}</v-list-item-title>
+              <v-list-item-title class="mb-3">
+                {{ site.title }}
+              </v-list-item-title>
               <v-list-item-subtitle>
                 {{ formatDate(site.created) }}
               </v-list-item-subtitle>
@@ -67,6 +73,10 @@ export default {
     site: {
       type: Object,
       default: () => ({}),
+    },
+    customPath: {
+      type: String,
+      default: '',
     },
   },
   methods: {

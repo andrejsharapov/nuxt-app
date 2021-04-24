@@ -1,6 +1,7 @@
 import { appMeta as config } from '../config/app'
 
 export default {
+  all: 'All',
   app: {
     cookie: {
       message:
@@ -96,19 +97,6 @@ export default {
     },
     region: 'Russia, Moscow',
   },
-  host: {
-    name: `${config.host.name}`,
-    url: `${config.host.url}`,
-  },
-  site: {
-    header: { name: 'Header' },
-    navbar: {
-      name: 'Navigation',
-    },
-    page: {
-      construction: 'This page is under construction',
-    },
-  },
   btn: {
     go: {
       to: 'Go to',
@@ -132,6 +120,10 @@ export default {
     hide: 'Hide | hide',
     prev: 'Back | Prev | Previous',
     next: 'Forward | Next | Following',
+  },
+  host: {
+    name: `${config.host.name}`,
+    url: `${config.host.url}`,
   },
   more: {
     base: 'More',
@@ -261,6 +253,10 @@ export default {
         skillset: {
           title: 'Skillset',
         },
+        works: {
+          message:
+            'In March 2019, I switched from developing {from} layouts in {to}, where I am now prototyping and designing websites and applications. Check out some of my work in the portfolio.',
+        },
       },
     },
     logos: {
@@ -291,6 +287,15 @@ export default {
     placeholder: 'Start typing the text...',
     found: 'Materials found on your request.',
     'not-found': 'Sorry, but there are no results for your search.',
+  },
+  site: {
+    header: { name: 'Header' },
+    navbar: {
+      name: 'Navigation',
+    },
+    page: {
+      construction: 'This page is under construction',
+    },
   },
   source: 'Source | Sources',
   'table-of-contents': 'Table of contents | table of contents',
