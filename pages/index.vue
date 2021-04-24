@@ -141,11 +141,63 @@ mixin sheet(color, saturation, size)
         p {{ $t("pages.index.sections.progress.message", { projects: doneProjects, works: doneWorks }) }}
 
       //- ANCHOR 2/3
-      v-col(cols='12', sm='4')
+      v-col.text-center(cols='12', sm='4')
         s-fish-pages-progress(width='275')
 
       //- ANCHOR 3/3
       v-col(cols='12')
+        v-row
+          //- ANCHOR sub 1/2 timeline
+          v-col.section-timeline(v-if='timelineLocale', cols='12', md='5')
+            v-card.pr-sm-2.pt-4.pb-2(flat, color='transparent')
+              perfect-scrollbar(ref='scroll')
+                v-card.fill-height(outlined, tile, color='transparent')
+                  v-timeline(dense)
+                    v-timeline-item(
+                      v-for='(item, index) in timelineLocale',
+                      :key='index',
+                      dense,
+                      small,
+                      color='accent'
+                    )
+                      v-sheet.rounded.shadow-md
+                        v-list-item.px-0(three-line)
+                          v-list-item-content.py-0
+                            .d-flex
+                              v-card-title.text-wrap {{ item.title }}
+                              v-spacer
+                              v-chip.mt-4.mr-4(label, outlined, disabled) {{ item.date }}
+                            v-card-text.pt-0 {{ item.caption }}
+
+              v-card-actions.pb-0.text-center
+                v-tooltip(
+                  :right='$vuetify.breakpoint.mdAndUp',
+                  :bottom='$vuetify.breakpoint.smAndDown'
+                )
+                  template(#activator='{ on }', v-if='!$vuetify.breakpoint.xs')
+                    v-btn.mx-auto.mr-sm-auto.ml-sm-6(
+                      icon,
+                      :to='localePath("/timeline")',
+                      v-on='on'
+                    )
+                      v-icon {{ mdiDotsHorizontal }}
+                  span {{ $t("more.events") }}
+
+          v-col.text-center(v-if='$vuetify.breakpoint.xs', cols='12')
+            v-btn.btn-shadow.mx-auto(
+              :block='$vuetify.breakpoint.xs',
+              :to='localePath("/timeline")',
+              x-large,
+              color='primary'
+            ) {{ $t("more.events") }}
+
+          //- ANCHOR sub 2/2 chart
+          v-col.d-none.d-sm-block(
+            cols='12',
+            :md='timelineLocale.length ? 7 : 12'
+          )
+            v-card.pa-4(flat, color='transparent')
+              s-chart-apex(:counters='annualReport', style='max-height: 430px')
 
       //- /SECTION
 
@@ -170,17 +222,36 @@ import {
   mdiPalette,
   mdiCodeBracesBox,
   mdiChartAreaspline,
+  mdiDotsHorizontal,
 } from '@mdi/js'
 
 import { appMeta as done } from '~/config/app'
 
 export default {
+  async asyncData({ $content, params, app }) {
+    const getTimeline = await $content(
+      `${app.i18n.locale}/pages/timeline`,
+      params.slug
+    )
+      .sortBy('date', 'desc')
+      .fetch()
+
+    const annualReport = await $content(`${app.i18n.locale}/annual-report`)
+      .only(['chartOptions', 'chartSeries'])
+      .fetch()
+
+    return {
+      getTimeline,
+      annualReport,
+    }
+  },
   data() {
     return {
       mdiOpenInNew,
       mdiPalette,
       mdiCodeBracesBox,
       mdiChartAreaspline,
+      mdiDotsHorizontal,
       doneProjects: done.author.projects,
       doneWorks: done.author.works,
       counters: {
@@ -221,6 +292,11 @@ export default {
         this.$t('author.position[1]'),
     }
   },
+  computed: {
+    timelineLocale() {
+      return this.getTimeline ? this.getTimeline.slice(0, 6) : []
+    },
+  },
   methods: {
     storyLocale() {
       if (this.$i18n.locale === 'ru') {
@@ -245,5 +321,26 @@ export default {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: var(--base-time);
+}
+
+.section-timeline .ps {
+  height: 435px;
+}
+
+@media (max-width: 576px) {
+  .v-timeline::before {
+    left: 50% !important;
+    transform: translateX(0.125rem);
+  }
+
+  .v-timeline-item {
+    &__body {
+      max-width: 100% !important;
+    }
+
+    &__divider {
+      display: none !important;
+    }
+  }
 }
 </style>

@@ -46,6 +46,7 @@ export default {
     )
       .sortBy('date', 'desc')
       .fetch()
+
     return {
       timeLineLocale,
     }
