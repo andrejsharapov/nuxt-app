@@ -223,7 +223,7 @@ export default {
       sections: {
         about: {
           message:
-            'More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
+            'Hello! My name is {author}. More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
           activity: {
             prepend:
               'I am constantly developing and improving my skills in three easy steps',
@@ -238,7 +238,13 @@ export default {
                 message: 'Working with new programs and languages',
               },
             ],
+            append:
+              'They help me stay in the flow of rapidly developing areas and always keep abreast of the latest developments and trends.',
           },
+        },
+        counters: {
+          message:
+            'In addition to design and development, I study marketing because I made sure that these three aspects are inseparable from each other during my work. I have enough knowledge and experience necessary to develop a practical, high-quality, and functional product, and understanding user needs and marketing principles allows me to fully engage in the promotion and support of the developed projects.',
         },
         certificates: {
           title: 'Certificates',
@@ -246,7 +252,8 @@ export default {
             'To test my strength, I periodically take testing and online courses in web development, design and promotion. As a result of passing, I receive electronic certificates, which you can find below and on the certificates page.',
         },
         progress: {
-          title: 'Events and achievements',
+          title:
+            'Events <span class="d-none d-sm-inline-block">and achievements</span>',
           message:
             'During my work, I have successfully completed about {projects} projects to create design and website development, more than {works} small orders of varying complexity: drawing elements and refactoring code, developing logos, corporate websites and much more.',
         },

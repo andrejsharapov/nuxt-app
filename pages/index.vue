@@ -1,6 +1,6 @@
 <template lang="pug">
 mixin sheet(color, saturation, size)
-  v-sheet.rounded-circle.d-flex.justify-center.align-center(
+  v-sheet.rounded-lg.d-flex.justify-center.align-center(
     color=color + " " + saturation,
     width=size,
     height=size
@@ -47,71 +47,52 @@ mixin sheet(color, saturation, size)
 
       //- ANCHOR 2/2
       v-col(cols='12', md='8')
-        //- hello!
-        h1.mb-3.text-h4.text-md-h3.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
-        h3.mb-8.text-h5.text-md-h2.text-center.text-md-left.font-weight-bold.text-gradient(
+        //- ANCHOR 2.1/2 hello!
+        h1.mb-3.text-h2.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
+        h3.mb-8.text-h5.text-sm-h3.text-lg-h2.text-center.text-md-left.font-weight-bold.text-gradient(
           style='background-image: linear-gradient(180deg, var(--v-info-lighten2), var(--v-accent-darken1))'
         )
           strong {{ this.$t("author.position[0]") }},
           br
           strong {{ this.$t("author.position[1]") }}
 
-        p {{ $t("pages.index.sections.about.message", { years: 4 }) }}
+        p {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: 4 }) }}
 
-        //- activity
-        p.mb-0 {{ $t("pages.index.sections.about.activity.prepend") }}:
-        v-row.d-none.d-sm-flex.mb-4
+        //- ANCHOR 2.2/2 activity
+        p.mb-2 {{ $t("pages.index.sections.about.activity.prepend") }}:
+        v-row.mb-1.flex-column.flex-sm-row
           v-col(
             v-for='(card, index) in $t("pages.index.sections.about.activity.list")',
             :key='index',
             cols='12',
-            sm='4'
+            md='4'
           )
             v-hover(#default='{ hover }')
-              v-sheet.mt-4.px-4.fill-height.rounded-lg.transition(
+              v-sheet.px-4.fill-height.rounded-lg.transition(
                 :class='$vuetify.theme.dark ? "" : hover ? "white shadow-sm" : "transparent"'
               )
-                v-list-item.flex-column.text-center
-                  v-list-item-icon.mr-0.pt-4.align-self-center
+                v-list-item.px-0.d-flex.flex-md-column.text-md-center.flex-lg-row.text-lg-left
+                  v-list-item-icon.mr-0.align-self-center
                     span(v-if='$vuetify.theme.dark')
-                      +sheet('blue', 'darken-4', 90)
-                        +sheet('blue', 'darken-3', 80)
-                          +sheet('blue', 'darken-2', 70)
-                            v-avatar(
-                              size='60',
-                              color='blue darken-1',
-                              outlined
-                            )
-                              v-avatar(
-                                x-large,
-                                fab,
-                                color='blue',
-                                elevation='0',
-                                depressed
-                              )
-                                span.text-h4.font-weight-bold.white--text {{ index + 1 }}
+                      +sheet('blue', 'darken-4', 70)
+                        +sheet('blue', 'darken-3', 60)
+                          +sheet('blue', 'darken-2', 50)
+                            v-avatar.rounded-lg(size='40', tile)
+                              span.font-weight-bold.white--text {{ `#${index + 1}` }}
                     span(v-else)
-                      +sheet('blue', 'lighten-4', 90)
-                        +sheet('blue', 'lighten-3', 80)
-                          +sheet('blue', 'lighten-2', 70)
-                            v-avatar(
-                              size='60',
-                              color='blue lighten-1',
-                              outlined
-                            )
-                              v-avatar(
-                                x-large,
-                                fab,
-                                color='blue',
-                                elevation='0',
-                                depressed
-                              )
-                                span.text-h5.font-weight-bold.white--text {{ `#${index + 1}` }}
-                  v-list-item-content.pb-0
-                    v-list-item-title.text-wrap {{ card.message }}
+                      +sheet('blue', 'lighten-4', 70)
+                        +sheet('blue', 'lighten-3', 60)
+                          +sheet('blue', 'lighten-2', 50)
+                            v-avatar.rounded-lg(size='40', tile)
+                              span.font-weight-bold.white--text {{ `#${index + 1}` }}
+                  v-list-item-content.pa-4.py-md-0
+                    v-list-item-title.text-wrap.text-sm-subtitle-2 {{ card.message }}
+
+        p {{ $tc("pages.index.sections.about.activity.append") }}
       //- /SECTION
 
       //- SECTION[epic=home] COUNTERS
+      p.mt-6.px-3 {{ $tc("pages.index.sections.counters.message") }}
       v-col(v-for='counter in counters.data', :key='counter.title')
         v-card.mb-4.px-4.white--text.rounded-lg.shadow-lg.not-pointer(
           :color='counter.color_one',
@@ -267,7 +248,6 @@ mixin sheet(color, saturation, size)
       //- /SECTION
 
       v-img.confetty-horizontal.not-pointer.mx-auto(
-        v-if='$vuetify.breakpoint.smAndUp',
         src='/src/confetti-horizontal.svg',
         alt=''
       )
