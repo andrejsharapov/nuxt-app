@@ -252,6 +252,9 @@ export default {
           title: 'Events and achievements',
           message: '',
         },
+        skillset: {
+          title: 'Skillset',
+        },
       },
     },
     logos: {

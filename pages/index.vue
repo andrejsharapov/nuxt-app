@@ -205,6 +205,14 @@ mixin sheet(color, saturation, size)
       //- /SECTION
 
       //- SECTION[epic=home] SKILLSET
+      v-col.px-sm-0(cols='12')
+        .px-3
+          s-section-heading-anchor(
+            :title='$t("pages.index.sections.skillset.title")',
+            anchor='skillset'
+          )
+
+        s-skill-set(:set='skills.data')
       //- /SECTION
 
       //- SECTION[epic=home] CERTIFICATES
@@ -240,9 +248,12 @@ export default {
       .only(['chartOptions', 'chartSeries'])
       .fetch()
 
+    const skills = await $content('skills/skillset').fetch()
+
     return {
       getTimeline,
       annualReport,
+      skills,
     }
   },
   data() {
