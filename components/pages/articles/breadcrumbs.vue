@@ -17,7 +17,7 @@ export default {
     return {
       items: [
         {
-          text: this.$t('pages.home.title'),
+          text: this.$t('pages.index.title'),
           disabled: false,
           href: this.localePath('/'),
         },

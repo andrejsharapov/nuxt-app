@@ -13,7 +13,7 @@ mixin sheet(color, saturation, size)
     v-row
       //- SECTION[epic=home] ABOUT
       //- ANCHOR 1/2
-      v-col.d-none.d-sm-block(cols='12', sm='4')
+      v-col.d-none.d-md-block(cols='12', md='4')
         //- author image
         v-img.shadow-xl.rounded-lg(
           lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=AUTHOR',
@@ -46,7 +46,7 @@ mixin sheet(color, saturation, size)
             v-icon(right) {{ mdiOpenInNew }}
 
       //- ANCHOR 2/2
-      v-col(cols='12', sm='8')
+      v-col(cols='12', md='8')
         //- hello!
         h1.mb-3.text-h4.text-md-h3.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
         h3.mb-8.text-h5.text-md-h2.text-center.text-md-left.font-weight-bold.text-gradient(
@@ -56,13 +56,13 @@ mixin sheet(color, saturation, size)
           br
           strong {{ this.$t("author.position[1]") }}
 
-        p {{ $t("pages.index.about", { years: 4 }) }}
+        p {{ $t("pages.index.sections.about.message", { years: 4 }) }}
 
         //- activity
-        p.mb-0 {{ $t("pages.index.activity.prepend") }}:
+        p.mb-0 {{ $t("pages.index.sections.about.activity.prepend") }}:
         v-row.d-none.d-sm-flex.mb-4
           v-col(
-            v-for='(card, index) in $t("pages.index.activity.list")',
+            v-for='(card, index) in $t("pages.index.sections.about.activity.list")',
             :key='index',
             cols='12',
             sm='4'
@@ -128,10 +128,25 @@ mixin sheet(color, saturation, size)
                   v-icon(:color='counter.color_one', large) {{ counter.icon }}
             v-list-item-content
               v-card-title.text-h4.mb-1.pt-2.text-break-word {{ counter.val }}%
-              v-card-subtitle.white--text.op-8 {{ counter.title }}
+              v-card-subtitle.white--text.text-no-wrap.op-8 {{ counter.title }}
       //- /SECTION
 
-      //- SECTION[epic=home] ACHIVEMENTS
+      //- SECTION[epic=home] PRORESS
+      //- ANCHOR 1/3
+      v-col(cols='12', sm='8')
+        s-section-heading-anchor.text-no-wrap(
+          :title='$t("pages.index.sections.progress.title")',
+          anchor='progress'
+        )
+        p {{ $t("pages.index.sections.progress.message", { projects: doneProjects, works: doneWorks }) }}
+
+      //- ANCHOR 2/3
+      v-col(cols='12', sm='4')
+        s-fish-pages-progress(width='275')
+
+      //- ANCHOR 3/3
+      v-col(cols='12')
+
       //- /SECTION
 
       //- SECTION[epic=home] WORKS
@@ -157,6 +172,8 @@ import {
   mdiChartAreaspline,
 } from '@mdi/js'
 
+import { appMeta as done } from '~/config/app'
+
 export default {
   data() {
     return {
@@ -164,6 +181,8 @@ export default {
       mdiPalette,
       mdiCodeBracesBox,
       mdiChartAreaspline,
+      doneProjects: done.author.projects,
+      doneWorks: done.author.works,
       counters: {
         data: [
           {
@@ -202,7 +221,6 @@ export default {
         this.$t('author.position[1]'),
     }
   },
-  computed: {},
   methods: {
     storyLocale() {
       if (this.$i18n.locale === 'ru') {

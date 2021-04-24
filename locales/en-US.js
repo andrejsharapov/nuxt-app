@@ -222,30 +222,36 @@ export default {
       message:
         'As a child, I studied at art school, studied drawing, painting, graphics, art history, sculpture and much more. Unfortunately, I cannot share all my works, as many of them are lost. But in August 2019, I found some old sketches that you can see below.',
     },
-    home: {
-      title: 'Home',
-    },
     illustrations: {
       message:
         "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
     },
     index: {
-      about:
-        'More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
-      activity: {
-        prepend:
-          'I am constantly developing and improving my skills in three easy steps',
-        list: [
-          {
-            message: 'Analyzing the work of experienced developers',
+      title: 'Home',
+      sections: {
+        about: {
+          message:
+            'More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
+          activity: {
+            prepend:
+              'I am constantly developing and improving my skills in three easy steps',
+            list: [
+              {
+                message: 'Analyzing the work of experienced developers',
+              },
+              {
+                message: 'Studying UI / UX design and web development trends',
+              },
+              {
+                message: 'Working with new programs and languages',
+              },
+            ],
           },
-          {
-            message: 'Studying UI / UX design and web development trends',
-          },
-          {
-            message: 'Working with new programs and languages',
-          },
-        ],
+        },
+        progress: {
+          title: 'Events and achievements',
+          message: '',
+        },
       },
     },
     logos: {
