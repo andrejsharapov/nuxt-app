@@ -198,25 +198,46 @@ mixin sheet(color, saturation, size)
           )
             v-card.pa-4(flat, color='transparent')
               s-chart-apex(:counters='annualReport', style='max-height: 430px')
-
       //- /SECTION
 
       //- SECTION[epic=home] WORKS
       //- /SECTION
 
       //- SECTION[epic=home] SKILLSET
-      v-col.px-sm-0(cols='12')
-        .px-3
-          s-section-heading-anchor(
-            :title='$t("pages.index.sections.skillset.title")',
-            anchor='skillset'
-          )
+      v-col(cols='12')
+        s-section-heading-anchor(
+          :title='$t("pages.index.sections.skillset.title")',
+          anchor='skillset'
+        )
 
-        s-skill-set(:set='skills.data')
+        lazy-s-skill-set(:set='skills.data')
       //- /SECTION
 
       //- SECTION[epic=home] CERTIFICATES
+      v-col(cols='12')
+        s-section-heading-anchor(
+          :title='$t("pages.index.sections.certificates.title")',
+          anchor='certificates'
+        )
+        p {{ $t("pages.index.sections.certificates.message") }}
+
+        lazy-s-pages-certificates-cert-items(
+          :items='certList',
+          limit-start='0',
+          limit-end='3'
+        )
+
+        p.mt-8.mb-0.text-center
+          v-hover(v-slot='{ hover }')
+            v-btn.mx-auto.transition.transform(
+              :block='$vuetify.breakpoint.xs',
+              :to='localePath("/certificates")',
+              x-large,
+              color='primary',
+              :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
+            ) {{ $t("more.base") }} {{ $t("pages.index.sections.certificates.title") }}
       //- /SECTION
+
       v-img.confetty-horizontal.not-pointer.mx-auto(
         v-if='$vuetify.breakpoint.smAndUp',
         src='/src/confetti-horizontal.svg',
@@ -242,6 +263,7 @@ export default {
       params.slug
     )
       .sortBy('date', 'desc')
+      .limit(4)
       .fetch()
 
     const annualReport = await $content(`${app.i18n.locale}/annual-report`)
@@ -250,10 +272,15 @@ export default {
 
     const skills = await $content('skills/skillset').fetch()
 
+    const getCertificates = await $content('pages/certificates', params.slug)
+      .where({ slug: 'web-design' })
+      .fetch()
+
     return {
       getTimeline,
       annualReport,
       skills,
+      getCertificates,
     }
   },
   data() {
@@ -305,7 +332,10 @@ export default {
   },
   computed: {
     timelineLocale() {
-      return this.getTimeline ? this.getTimeline.slice(0, 6) : []
+      return this.getTimeline ? this.getTimeline : []
+    },
+    certList() {
+      return this.getCertificates ? this.getCertificates : []
     },
   },
   methods: {
@@ -328,10 +358,34 @@ export default {
 </script>
 
 <style lang="scss">
+.page__index {
+  --stop-color-one: var(--primary);
+  --stop-color-two: var(--accent);
+}
+
 .transition {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: var(--base-time);
+}
+
+.transform {
+  --scale-x: 1;
+  --scale-y: 1;
+  --translate-x: 0;
+  --translate-y: 0;
+
+  transform: translateX(var(--translate-x)) translateY(var(--translate-y))
+    scaleX(var(--scale-x)) scaleY(var(--scale-y));
+}
+
+.scale-125 {
+  --scale-x: 1.25;
+  --scale-y: 1.25;
+}
+
+.-translate-y-1 {
+  --translate-y: -0.25rem;
 }
 
 .section-timeline .ps {

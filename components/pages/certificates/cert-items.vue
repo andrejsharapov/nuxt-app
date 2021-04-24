@@ -8,7 +8,7 @@
       nuxt-link.ml-2(:to='$nuxt.$route.path + "#" + cert.slug') #
     v-row.mx-0
       v-col(
-        v-for='(f, index) in cert.figures',
+        v-for='(f, index) in cert.figures.slice(limitStart, limitEnd)',
         :key='index',
         cols='12',
         sm='6',
@@ -46,6 +46,14 @@ export default {
     items: {
       type: Array,
       default: () => [],
+    },
+    limitStart: {
+      type: String,
+      default: undefined,
+    },
+    limitEnd: {
+      type: String,
+      default: undefined,
     },
   },
   data() {
