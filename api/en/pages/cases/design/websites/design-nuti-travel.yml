@@ -1,0 +1,76 @@
+hide: false
+type: des-site
+title: Design of the welcome page of the website of the travel company "Nuti Travel"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7884282/media/2d0aba1b9001d5c3d6e1751e0452542a.png?compress=1&resize=1000x750
+  alt: Design of the welcome page of the website of the travel company "Nuti Travel"
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Prototyping and design
+created: '2018-09-20'
+period:
+  - '2018-09-18'
+  - '2018-09-20'
+deadline: The task took about three days to complete.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+  roles:
+    - title: My
+      tags:
+        - Ux/Ui Designer / Visual Designer
+    - title: Other
+      tags:
+        - 'Model: Надежда Добровольская-Баскакова'
+        - 'Model: Андрей Шарапов'
+  to:
+    dribbble: https://dribbble.com/shots/7884282-Website-of-Travel-Company
+    behance: https://www.behance.net/gallery/73309351/Nuti-Travel-We-fulfill-your-dreams
+    instagram: https://www.instagram.com/p/B41oRP4g9Lt/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Travel company "Nuti Travel"
+  description:
+  issues:
+  task: development of the design of the main page of the site for further installation on the CMS.
+done:
+  img:
+    src: B41oRP4g9Lt
+    alt: Travel company "Nuti Travel"
+    height:
+  alert:
+    message:
+  list:
+    - corporate identity development;
+    - development of colors, typography, and element states (UI Kit);
+    - development of prototypes of the design layout;
+    - design and user interface (UI) development.
+palette:
+  - type: ''
+    hex:
+      - F18122
+      - 3E91B9
+  - type: ''
+    hex:
+      - 444857
+      - 29496F
+  - type: ''
+    hex:
+      - 131418
+      - '000000'
+  - type: ''
+    hex:
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap' rel='stylesheet'>"
+  headline: Pacifico
+  text: Montserrat
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '100'

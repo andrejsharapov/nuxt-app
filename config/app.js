@@ -28,6 +28,8 @@ export const appMeta = {
   },
   author: {
     job: { status: 0 },
+    projects: 50,
+    works: 300,
   },
 }
 

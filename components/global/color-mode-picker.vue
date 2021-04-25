@@ -1,6 +1,6 @@
 <template lang="pug">
-.color-mode-picker
-  v-list-item-group.d-flex(mandatory, color='accent')
+.color-mode-picker.fill-width
+  v-list-item-group.d-flex(mandatory, color='primary')
     v-list-item.color-mode-picker__item(
       icon,
       @click.stop='$vuetify.theme.dark = !$vuetify.theme.dark'

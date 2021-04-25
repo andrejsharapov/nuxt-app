@@ -87,9 +87,10 @@ v-app
       v-icon {{ mdiArrowUpBoldOutline }}
 
   lazy-s-cookie-box
-  notifications(group='translation')
-  notifications(group='copy-to-clipboard')
-  notifications(group='case-switch-dates')
+  notifications(group='translation', position='top right')
+  notifications(group='copy-to-clipboard', position='top center')
+  notifications(group='case-switch-dates', position='top right')
+  notifications(group='skillset-item', position='bottom center')
 </template>
 
 <script>

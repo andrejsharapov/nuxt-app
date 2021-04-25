@@ -1,0 +1,77 @@
+hide: false
+type: des-site
+title: Equestrian club selling page design
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7786454/media/518ed3d7dd768170a24507d9a89f4e66.png
+  alt: Equestrian club "Unicorn"
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Prototyping and design
+created: '2019-10-23'
+period:
+  - '2019-10-22'
+  - '2019-10-23'
+deadline: The task took about 20 hours to complete.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - Adobe Illustrator
+  roles:
+    - title: My
+      tags:
+        - UI/UX Designer
+    - title: Other
+      tags:
+        - 'Model: Надежда Добровольская-Баскакова'
+        - 'Model: Андрей Шарапов'
+  to:
+    dribbble: https://dribbble.com/shots/7786454-Landing-Horse-Club-Unicorn
+    behance: https://www.behance.net/gallery/87207549/konnyj-klub-edinorozhka
+    instagram: https://www.instagram.com/p/B4g7umpALQf/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Equestrian club "Unicorn"
+  description:
+  issues:
+  task: attracting potential customers to the activity and the company and its services.
+done:
+  img:
+    src: B4g7umpALQf
+    alt: Equestrian club "Unicorn"
+    height:
+  alert:
+    message:
+  list:
+    - corporate identity development;
+    - development of colors, typography, and element states;
+    - development of prototypes of the design layout;
+    - writing original texts;
+    - design and user interface (UI) development.
+palette:
+  - type: ''
+    hex:
+      - F18122
+      - AD7861
+  - type: ''
+    hex:
+      - 24292E
+  - type: ''
+    hex:
+      - 969696
+      - E5E5E5
+  - type: ''
+    hex:
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Podkova&family=Montserrat&display=swap' rel='stylesheet'>"
+  headline: Podkova
+  text: Montserrat
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '100'
