@@ -1,8 +1,5 @@
 <template lang="pug">
 v-row.contact-info
-  //- ul.text--red
-  //-   - for (var x = 0; x < 10; x++)
-  //-     li $$n
   v-col(v-for='(item, i) of info', :key='i')
     v-card.fill-height.shadow-md
       v-card-title {{ item.title }}
