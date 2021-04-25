@@ -1,7 +1,7 @@
 {
   "name": "nuxt-app",
   "version": "1.0.1",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
