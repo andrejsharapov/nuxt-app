@@ -20,7 +20,7 @@ content:
     type: 'amber lighten-4'
   message: ''
   versions:
-    date: '2021-01-25'
+    date: '2021-04-25'
     tag: 1.0.1
     to: 'https://github.com/andrejsharapov/nuxt-app/releases/latest/'
     type: 'indigo lighten-4'
