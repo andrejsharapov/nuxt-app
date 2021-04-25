@@ -1,0 +1,175 @@
+hide: false
+type: dev-site
+title: Transfer and revision of the site of the company "RPN SPHERE"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7816593/media/10c0a6795f655b7b6421b461c3aaf737.png?compress=1&resize=1000x750
+  alt:
+ux:
+  works: CORPORATE / BRANDING
+  price: Development of a corporate website
+created: '2018-11-25'
+period:
+  - '2018-11-05'
+  - '2018-11-25'
+deadline: It took about 20 days to complete the task.
+cms: 1C Bitrix, WordPress
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Adobe illustrator
+        - CorelDRAW
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - Bootstrap
+        - jQuery.js
+        - Animations.css
+    - title: Plugins
+      tags:
+        - Elementor
+  roles:
+    - title: My
+      tags:
+        - Ux/Ui Designer / Visual Designer
+        - Frontend Developer / Full-Stack Developer
+    - title: Other
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/7816593-Redesign-Corporate-Website
+    behance:
+    instagram: https://www.instagram.com/p/B4CCu1nA4gE/
+client:
+  logoJPG:
+  logoWEBP:
+  head: RPN-Sphere LLC
+  description: RPN-Sphere LLC is an organization that provides a full range of services in the field of environmental services for enterprises.
+  issues: Inconvenient and outdated management system that does not allow easy work with the structure and content of the site. The developer is gone, no passwords, no instructions.
+  task:
+    - transfer of the current site rpn-cert.ru from CMS Bitrix to WordPress without losing positions in the SERP and saving the database;
+    - improvement of the site interface;
+    - transfer of available information and development of original texts;
+    - transfer of the database from the old site to the new one;
+    - revision of the English version;
+    - increased traffic to the resource, an increase in the number of online applications and requests from the site;
+    - optimization of pages for mobile devices and modern browsers.
+done:
+  img:
+    src: B4CCu1nA4gE
+    alt:
+    height:
+  alert:
+    message:
+    type: info
+    dismissible: false
+    outlined: false
+    prominent: false
+  list:
+    - analysis of the target audience and competitors' sites;
+    - compilation of a semantic core (selection of keywords for which the resource is planned to be promoted);
+    - development of the internal structure of the resource (CNC, Robots.txt, sitemap);
+    - creating a relevance map;
+    - development of prototypes of the design layout;
+    - development of the concept of content-filling the site;
+    - Improved color gamut, typography and element states;
+    - development of a new logo in Adobe illustrator;
+    - development of design and user interface (UI);
+    - layout and filling of the site with the generated content;
+    - transfer of the site and database to a new cms;
+    - analysis of the correct display of the site in different browsers;
+    - analysis of the correct display of the site on modern mobile devices;
+    - launching and connecting end-to-end web site analytics, tracking its effectiveness.
+palette:
+  - type: ''
+    hex:
+      - 9c429e
+      - 572468
+  - type: ''
+    hex:
+      - 8c798d
+  - type: ''
+    hex:
+      - 302b35
+  - type: ''
+    hex:
+      - ECE6F1
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Roboto&display=swap' rel='stylesheet'>"
+  headline: Ubuntu Condensed
+  text: Roboto
+grid:
+  cols: 12
+  width: 65
+  size: 1220
+responsive:
+  percent: '91'
+  dash:
+    Performance: '82'
+    Accessibility: '88'
+    Practices: '89'
+    SEO: '96'
+analytics:
+  result: search traffic hasn't changed significantly.
+  traffic:
+    show: true
+    title: Search traffic
+    type: bar
+    series:
+      - name: ''
+        data:
+          - 35
+          - 40
+          - 50
+          - 45
+          - 45
+          - 35
+          - 40
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+      - name: Start
+        data:
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - 50
+          - 35
+          - 60
+          - 50
+          - 65
+          - 55
+          - 70
+          - 60
+          - 65
+          - 50
+          - 60
+  goals:
+    show: false
+    title: Achievement of the goal
+    chart:
+      series:
+      labels:
+  conversion:
+    show: false
+    title: Conversion
+    value:

@@ -1,0 +1,142 @@
+hide: false
+type: dev-site
+title: Redesign of the site of LLC "RIC"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/8086461/media/0d3bb044bc58a78517272a0bd8c485fd.png?compress=1&resize=1000x750
+  alt: Redesign of the site of LLC "RIC"
+ux:
+  works: CORPORATE / BRANDING
+  price: Redesign and modernization
+created: '2019-08-23'
+period:
+  - '2019-08-11'
+  - '2019-08-23'
+deadline: It took 1.5 weeks to complete the task.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - CorelDRAW
+        - Adobe Illustrator
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - Vue.js
+    - title: Software
+      tags:
+        - Visual Studio Code
+        - Pug
+        - SASS/SCSS
+        - Git
+        - Gulp
+  roles:
+    - title: My
+      tags:
+        - UI/UX Designer
+        - Frontend Developer
+    - title: Other
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/8086461-Concept-of-Promo-Page
+    behance:
+    instagram: https://www.instagram.com/p/B4mpQoNA2Dm/
+client:
+  logoJPG: null
+  logoWEBP: null
+  head: LLC "RIC"
+  description: LLC "RIC" is a laboratory that conducts tests of technical devices intended for use in industry or at hazardous production facilities (HIF).
+  issues: The previous site did not look quite modern and rather ordinary. The website traffic is low and the number of requests from the website was not enough.
+  task:
+    - increased traffic to the resource, an increase in the number of online applications and requests from the site;
+    - improvement of the interface and site design for all modern trends;
+    - transfer of available information and development of original texts;
+    - optimization of pages for mobile devices and modern browsers.
+done:
+  img:
+    src: B4mpQoNA2Dm
+    alt: Redesign of the site of LLC "RIC"
+    height:
+  alert:
+    message:
+  list:
+    - analysis of the target audience and competitors' sites;
+    - compilation of a semantic core (selection of keywords for which the resource is planned to be promoted);
+    - creating a relevance map;
+    - development of prototypes of the design layout;
+    - development of the concept of content-filling the site;
+    - formation of a palette of colors and development of a Style Guide;
+    - development of design and user interface (UI);
+    - formation of dependencies of different elements of the site;
+    - layout of the site using the Mobile First method and filling with the provided content;
+    - development of an original and functional 404 error page;
+    - development of scripts for calculating the cost of analyzes on service pages;
+    - analysis of the correct display of the site in different browsers;
+    - analysis of the correct display of the site on modern mobile devices;
+    - launching and connecting end-to-end website analytics, tracking its effectiveness.
+palette:
+  - type: ''
+    hex:
+      - 145762
+      - 8cd987
+  - type: ''
+    hex:
+      - 1fa595
+      - 1a1b1f
+  - type: ''
+    hex:
+      - F3F5F9
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap' rel='stylesheet'>"
+  headline: Ubuntu
+  text: Roboto
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '100'
+  dash:
+    Performance: '83'
+    Accessibility: '88'
+    Practices: '79'
+    SEO: '92'
+cms: Joomla!, Static site
+testimonials:
+  author:
+    img:
+      src: ''
+      alt: ''
+    name: Pavel Pankin
+    company: LLC "RIC"
+    link: http://riclab.ru/
+    position: Laboratory manager
+  message: We needed a one-page site where visitors could learn about us, our services, and, if necessary, contact us. We have other sites where there are also sections describing tests, but there are 25-40% more incoming calls to similar services from the laboratory's new website.
+analytics:
+  result: the conversion rate was 13%.
+  traffic:
+    show: false
+    title: Search traffic
+    type: bar
+    series:
+      - name: ''
+        data:
+      - name: Start
+        data:
+  goals:
+    show: false
+    title: Achievement of the goal
+    chart:
+      series:
+      labels:
+  conversion:
+    show: true
+    title: Conversion
+    value: ['13']

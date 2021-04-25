@@ -1,0 +1,173 @@
+hide: false
+type: dev-site
+title: The landing page of the environmental conference "RPN Sphere"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7797617/media/149e64617ff5e569c8da5e168cf5b4e8.png?compress=1&resize=1000x750
+  alt: The landing page of the environmental conference "RPN Sphere"
+ux:
+  works: CORPORATE / BRANDING
+  price: Development of a corporate website
+created: '2019-02-20'
+period:
+  - '2019-02-14'
+  - '2019-02-20'
+deadline: A week and a half were allocated to complete the assignment. Made in 5 days.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - jQuery.js
+        - slick.js
+    - title: Software
+      tags:
+        - Visual Studio Code
+        - Gulp
+        - Pug
+        - SASS/SCSS
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+        - Frontend Developer / Full-Stack Developer
+    - title: Other
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/7797617-Landing-page-Conference-ecology
+    behance: https://www.behance.net/gallery/76596937/Conference-Landing-page
+    instagram: https://www.instagram.com/p/B4N_jzLgSJN/
+client:
+  logoJPG:
+  logoWEBP:
+  head: RPN SFERA LLC
+  description: RPN SFERA LLC is an accredited certification and product declaration body that operates not only throughout Russia but also around the world.
+  issues:
+  task: development of a landing page for an environmental conference with the aim of attracting potential clients and expanding the existing client base.
+done:
+  img:
+    src: B4N_jzLgSJN
+    alt: The landing page of the environmental conference "RPN Sphere"
+    height:
+  alert:
+    message: Mobile First is a method of developing an optimized website, in which the site is not developed from stationary computers to mobile devices, but, on the contrary, from the mobile version of the site, simple and light, to widescreen screens.
+    type: info
+    dismissible: false
+    outlined: false
+    prominent: false
+  list:
+    - analysis of the target audience;
+    - development of prototypes of the design layout;
+    - development of colors, typography and element states;
+    - development of design and user interface (UI);
+    - development of the concept of content-filling the site;
+    - site layout on CSS Grid using the Mobile First method;
+    - layout and filling of the site with the generated content;
+    - analysis of the correct display of the site in different browsers;
+    - analysis of the correct display of the site on modern mobile devices;
+    - launching and connecting end-to-end web site analytics, tracking its effectiveness.
+palette:
+  - type: ''
+    hex:
+      - FFC107
+      - 008FD1
+  - type: ''
+    hex:
+      - 395D70
+      - 5D7A8A
+  - type: ''
+    hex:
+      - F4F4F4
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital@1&display=swap' rel='stylesheet'>"
+  headline: Ubuntu Condensed
+  text: Ubuntu
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '99'
+  dash:
+    Performance: '94'
+    Accessibility: '97'
+    Practices: '96'
+    SEO: '100'
+analytics:
+  result:
+    - conversion rate was 43%;
+    - attendance of the main site has also slightly increased.
+  traffic:
+    show: true
+    title: Search traffic
+    type: bar
+    series:
+      - name: ''
+        data:
+          - 20
+          - 20
+          - 15
+          - 10
+          - 25
+          - 35
+          - 20
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+      - name: Start
+        data:
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - 50
+          - 45
+          - 40
+          - 45
+          - 55
+          - 40
+          - 35
+          - 25
+          - 35
+          - 20
+          - 30
+  goals:
+    show: false
+    title: Achievement of the goal
+    chart:
+      series:
+      labels:
+  conversion:
+    show: true
+    title: Conversion
+    value: ['43']
+testimonials:
+  author:
+    img:
+      src: ''
+      alt: ''
+    name: Ivan Voronyuk
+    position: Technical Director
+    company: LLC "RIC"
+    link: https://www.rpn-sfera.ru/
+  message: We rarely use landing pages due to the specifics of the services, but sometimes they are still needed. So, with the help of Andrey landing page, we managed to attract 20% more clients to the client conference compared to standard mailings.
