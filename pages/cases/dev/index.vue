@@ -11,6 +11,9 @@
 <script>
 export default {
   layout: 'clean',
+  middleware({ redirect, app }) {
+    return redirect('301', `/${app.i18n.locale}/cases`)
+  },
   data: () => ({
     page: {
       crumbs: '',

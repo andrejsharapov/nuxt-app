@@ -1,0 +1,13 @@
+list:
+  - img:
+      src: gwd
+      alt: Google Web Designer
+  - img:
+      src: ae
+      alt: After Effects
+  - img:
+      src: ai
+      alt: Adobe Illustrator
+  - img:
+      src: ps
+      alt: Adobe Photoshop

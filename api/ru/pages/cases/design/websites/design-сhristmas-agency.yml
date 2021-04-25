@@ -1,0 +1,72 @@
+hide: false
+type: des-site
+title: Лендинг Christmas agency «Ho-Ho-Ho»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/9025858/media/a879ebb4a866b3950c402d860d5e6048.png?compress=1
+  alt: Christmas agency «Ho-Ho-Ho»
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: '2019-12-14'
+period:
+  - '2019-12-13'
+  - '2019-12-14'
+deadline: На выполнение задачи потребовалось около 9 часов.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+    - title: Другие
+      tags:
+        - 'Модель: Mari Gladkaya'
+  to:
+    dribbble: https://dribbble.com/shots/9025858-Christmas-agency-Ho-Ho-Ho
+    behance: https://www.behance.net/gallery/89434415/Christmas-agency-Ho-Ho-Ho
+    instagram: https://www.instagram.com/p/B6CHIHtApE_/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Christmas agency «Ho-Ho-Ho»
+  description: Агентство, организующее новогодние праздники для людей, у которых не хватает времени сделать это самостоятельно.
+  issues:
+  task: привлечение потенциальных клиентов и конвертирование их в ЦА.
+done:
+  img:
+    src: B6CHIHtApE_
+    alt: Christmas agency «Ho-Ho-Ho»
+    height:
+  alert:
+    message:
+  list:
+    - разработка фирменного стиля;
+    - формирование палитры цветов, типографики и состояний элементов;
+    - разработка прототипов дизайн-макета;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ''
+    hex:
+      - DC4250
+      - A62120
+  - type: ''
+    hex:
+      - F6F6F6
+      - FFFFFF
+  - type: ''
+    hex:
+      - 444857
+      - 8D8D8D
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat+Alternates&display=swap' rel='stylesheet'>"
+  headline: Kalam
+  text: Montserrat Alternates
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '100'

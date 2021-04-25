@@ -14,13 +14,14 @@ v-row.ma-0.pa-2.navbar__append
           v-icon {{ mdiCogOutline }}
 
       v-list(dense, nav)
-        v-list-item-group(multiple, color='accent')
+        v-list-item-group(multiple, color='primary')
           //- btn 3
           .mb-1
             lazy-s-lang-switcher(v-if='miniVariant')
 
           //- btn 4
-          lazy-s-color-mode-picker(v-if='miniVariant')
+          v-list-item.px-0(v-if='miniVariant')
+            lazy-s-color-mode-picker
 
           //- btn 1
           v-list-item.mb-1(@click.stop='goClipped')

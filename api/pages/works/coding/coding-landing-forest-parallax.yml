@@ -1,0 +1,32 @@
+type: coding
+title: CSS mix-blend-mode & Awesome Parallax Scrolling
+date: 2019-01-17
+src: joZzEV
+
+descEn: JQuery parallax scrolling and 'mix-blend-mode' CSS property for stunning welcome screen effect.
+descRu: Параллакс-скроллинг на jQuery и CSS свойство 'mix-blend-mode', придающие удивительный эффект экрану приветствия.
+
+view:
+  title: Forest parallax
+  tabs: css,html
+
+alert:
+  type:
+  icon:
+  message:
+
+pen:
+  - title: Tags
+    list:
+      - mix-blend-mode
+      - mousemove
+
+  - title: Code
+    list:
+      - Pug
+      - SCSS
+      - Babel
+
+  - title: Resources
+    list:
+      - jQuery

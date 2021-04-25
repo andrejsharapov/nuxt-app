@@ -63,7 +63,7 @@ v-app
             .h2.text-h6.text-sm-h4.text-lg-h3 {{ $t("site.page.construction") }}
             .d-flex.flex-column.flex-sm-row.justify-center(style='width: 100%')
               .mt-4.mx-sm-4
-                v-btn.shadow-base(
+                v-btn.shadow-sm(
                   :to='localePath("/")',
                   :block='$vuetify.breakpoint.xs',
                   x-large,
@@ -117,7 +117,7 @@ export default {
   data() {
     return {
       clipped: false,
-      drawer: false,
+      drawer: true,
       fixed: false,
       miniVariant: false,
       right: true,

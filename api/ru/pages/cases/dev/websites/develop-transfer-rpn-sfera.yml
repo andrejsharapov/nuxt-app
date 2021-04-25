@@ -1,0 +1,175 @@
+hide: false
+type: dev-site
+title: Перенос и доработка сайта компании «РПН СФЕРА»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7816593/media/10c0a6795f655b7b6421b461c3aaf737.png?compress=1&resize=1000x750
+  alt:
+ux:
+  works: CORPORATE / BRANDING
+  price: Разработка корпоративного сайта
+created: '2018-11-25'
+period:
+  - '2018-11-05'
+  - '2018-11-25'
+deadline: На выполнение поставленной задачи было затрачено около 20 дней.
+cms: 1C Bitrix, WordPress
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Adobe illustrator
+        - CorelDRAW
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - Bootstrap
+        - jQuery.js
+        - Animations.css
+    - title: Plugins
+      tags:
+        - Elementor
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+        - Frontend Developer / Full-Stack Developer
+    - title: Другие
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/7816593-Redesign-Corporate-Website
+    behance:
+    instagram: https://www.instagram.com/p/B4CCu1nA4gE/
+client:
+  logoJPG:
+  logoWEBP:
+  head: ООО «РПН-Сфера»
+  description: ООО «РПН-Сфера» — организация, осуществляющая полный комплекс услуг в сфере экологического обслуживания предприятий.
+  issues: Неудобная и устаревшая система управления, не позволяющая легко работать со структурой и содержанием сайта. Разработчик пропал, нет ни паролей, ни инструкций.
+  task:
+    - перенос действующего сайта rpn-cert.ru с CMS Bitrix на WordPress без потери позиций в SERP и сохранением базы данных;
+    - улучшение интерфейса сайта;
+    - перенос имеющейся информации и разработка оригинальных текстов;
+    - перенос базы данных со старого сайта на новый;
+    - доработка англоязычной версии;
+    - повышение посещаемости ресурса, увеличение числа онлайн-заявок и обращений с сайта;
+    - оптимизация страниц для мобильных устройств и современных браузеров.
+done:
+  img:
+    src: B4CCu1nA4gE
+    alt:
+    height:
+  alert:
+    message:
+    type: info
+    dismissible: false
+    outlined: false
+    prominent: false
+  list:
+    - анализ целевой аудитории и сайтов конкурентов;
+    - составление семантического ядра (подбор ключевых слов, по которым планируется продвижение ресурса);
+    - разработка внутренней структуры ресурса (ЧПУ, Robots.txt, карта сайта);
+    - создание карты релевантности;
+    - разработка прототипов дизайн-макета;
+    - разработка концепции контент-наполнения сайта;
+    - улучшение цветовой гаммы, типографики и состояний элементов;
+    - разработка нового логотипа в Adobe illustrator;
+    - разработка дизайна и пользовательского интерфейса (UI);
+    - верстка и наполнение сайта сформированным контентом;
+    - перенос сайта и базы данных на новую cms;
+    - анализ корректного отображения сайта в разных браузерах;
+    - анализ корректного отображения сайта на современных мобильных устройствах;
+    - запуск и подключение сквозной веб-аналитики сайта, отслеживание его эффективности.
+palette:
+  - type: ''
+    hex:
+      - 9c429e
+      - 572468
+  - type: ''
+    hex:
+      - 8c798d
+  - type: ''
+    hex:
+      - 302b35
+  - type: ''
+    hex:
+      - ECE6F1
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Roboto&display=swap' rel='stylesheet'>"
+  headline: Ubuntu Condensed
+  text: Roboto
+grid:
+  cols: 12
+  width: 65
+  size: 1220
+responsive:
+  percent: '91'
+  dash:
+    Performance: '82'
+    Accessibility: '88'
+    Practices: '89'
+    SEO: '96'
+analytics:
+  result: поисковый трафик изменился не значительно.
+  traffic:
+    show: true
+    title: Поисковый трафик
+    type: bar
+    series:
+      - name: ''
+        data:
+          - 35
+          - 40
+          - 50
+          - 45
+          - 45
+          - 35
+          - 40
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+      - name: Старт работ
+        data:
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - 50
+          - 35
+          - 60
+          - 50
+          - 65
+          - 55
+          - 70
+          - 60
+          - 65
+          - 50
+          - 60
+  goals:
+    show: false
+    title: Достижения цели
+    chart:
+      series:
+      labels:
+  conversion:
+    show: false
+    title: Конверсия
+    value:

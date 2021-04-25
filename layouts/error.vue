@@ -178,7 +178,7 @@ export default {
   left: 0;
   transform: scale(0.7) translate(-157px, 66px);
 
-  @media (--min-md) {
+  @media (--md-min) {
     top: 6vh;
     left: 5vw;
   }

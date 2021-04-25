@@ -1,0 +1,278 @@
+chartOptions:
+  chart:
+    # sparkline:
+    #   enabled: false
+    id: dev-site-options
+    type: line
+    height: 415
+    fontFamily: var(--heading-font-family), Arial, sans-serif
+    zoom:
+      enabled: true
+    toolbar:
+      show: true
+      autoSelected: 'pan'
+      tools:
+        download: false
+        zoomin: false
+        zoomout: false
+  title:
+    text: Website development 2010 - 2021
+    align: left
+  subtitle:
+    text: 'Experience with site content management systems'
+  foreColor: var(--light)
+  grid:
+    show: true
+    clipMarkers: false
+    borderColor: 'var(--light)'
+    strokeDashArray: 0
+    position: 'back'
+    yaxis:
+      lines:
+        show: true
+    xaxis:
+      lines:
+        show: true
+    column:
+      opacity: 0.5
+  toolbar:
+    autoSelected: pan
+    show: false
+  markers:
+    size: 5
+    colors:
+      - var(--light)
+    strokeColor:
+      - 'var(--orange)'
+      - '#fbd83d'
+      - '#4e90f7'
+      - '#155de9'
+      - '#7ebc04'
+      - '#e01839'
+      - '#fa8669'
+      - '#207196'
+      - '#00c58e'
+    strokeWidth: 2
+  dataLabels:
+    enabled: false
+  tooltip:
+    theme: light
+  stroke:
+    width: 3
+    curve: smooth
+    stacked: true
+  fill:
+    type: solid
+    gradient:
+      shade: light
+      type: horizontal
+      gradientToColors: null
+      shadeIntensity: 1
+      opacityFrom: 1
+      opacityTo: 0
+      stops:
+        - 0
+  legend:
+    position: bottom
+    horizontalAlign: center
+    floating: false
+    offsetY: 3
+    offsetX: 20
+    fontSize: 12px
+    fontFamily: var(--body-font-family)
+    fontWeight: 400
+  xaxis:
+    title:
+      text: Год
+  yaxis:
+    title:
+      text: Number of works by year
+  colors:
+    - 'var(--orange)'
+    - '#fbd83d'
+    - '#4e90f7'
+    - '#155de9'
+    - '#7ebc04'
+    - '#e01839'
+    - '#fa8669'
+    - '#207196'
+    - '#00c58e'
+  labels:
+    - 2010
+    - 2011
+    - 2012
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    - 2021
+    - ---
+  annotations:
+    xaxis:
+      - x: 2019
+        x2: ---
+        opacity: 0.3
+        label:
+          borderColor: var(--red)
+          style:
+            fontSize: 12px
+            color: var(--light)
+            background: var(--red)
+          offsetY: 0
+          text: 'Major project'
+    yaxis:
+      - y:
+        y2:
+        borderColor: var(--light)
+        fillColor: var(--light)
+        opacity: 0.2
+        label:
+          borderColor: var(--light)
+          style:
+            fontSize: 10px
+            color: var(--dark)
+            background: var(--light)
+          text: ''
+plotOptions:
+  bar:
+    horizontal: true
+chartSeries:
+  - name: Static site
+    data:
+      - null
+      - 2
+      - 1
+      - 5
+      - 12
+      - 6
+      - 4
+      - 3
+      - 5
+      - 5
+      - 2
+      - null
+      - null
+  - name: uCoz
+    data:
+      - 2
+      - 3
+      - 8
+      - 4
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+  - name: uKit
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - 3
+      - 2
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+  - name: WIX
+    data:
+      - null
+      - null
+      - 1
+      - null
+      - 4
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+  - name: Joomla!
+    data:
+      - null
+      - null
+      - null
+      - null
+      - 2
+      - null
+      - 1
+      - null
+      - 1
+      - null
+      - null
+      - null
+      - null
+  - name: 1C Bitrix
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - 1
+      - null
+      - 1
+      - null
+      - null
+      - null
+      - null
+  - name: Tilda
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - 1
+      - null
+      - null
+      - null
+      - null
+      - null
+  - name: WordPress
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - 2
+      - null
+      - 3
+      - 1
+      - null
+      - null
+      - null
+  - name: Nuxt
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - 1
+      - 1
+      - null

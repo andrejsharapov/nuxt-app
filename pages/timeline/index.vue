@@ -4,7 +4,7 @@
 
   s-layout-components-back-image(:page='page')
     template(#back-image)
-      s-back-waves-lines-two(
+      s-back-waves-line-two(
         absolute,
         right='0',
         bottom='-7',
@@ -30,7 +30,7 @@
           lazy-s-fish-pages-timeline(width='290', :height='null')
 
       v-col(cols='12')
-        lazy-s-page-timeline-items(v-if='localeItems', :items='localeItems')
+        lazy-s-pages-timeline-items(v-if='localeItems', :items='localeItems')
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
@@ -41,11 +41,12 @@ import { timeline } from '~/lib/page-meta'
 export default {
   async asyncData({ $content, params, app }) {
     const timeLineLocale = await $content(
-      `${app.i18n.locale}/timeline`,
+      `${app.i18n.locale}/pages/timeline`,
       params.slug
     )
       .sortBy('date', 'desc')
       .fetch()
+
     return {
       timeLineLocale,
     }

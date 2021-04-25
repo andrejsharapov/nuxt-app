@@ -1,0 +1,75 @@
+hide: false
+type: des-site
+title: Landing page for online courses from "Alpari"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/10489046/media/12a3b400907dfcfe3d41ecea343122ac.png?compress=1&resize=1000x750
+  alt: Landing page for online courses from "Alpari"
+ux:
+  works: CORPORATE / BRANDING
+  price: Prototyping and design
+created: '2019-11-22'
+period:
+  - '2020-02-24'
+  - '2020-02-27'
+deadline: A week was allocated for the development of the design concept. It took 3 days to complete the work.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+  roles:
+    - title: My
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/10489046-Course-landing-page
+    behance:
+    instagram: https://www.instagram.com/p/B9FZZFXAIGJ/
+client:
+  logoJPG:
+  logoWEBP:
+  head: LLC "Alpari-Broker"
+  description: International licensed brokerage company.
+  issues: The company has launched new online courses that need to be presented to clients in a high-quality and efficient manner. This required the development of a selling page with the ability to register online for courses.
+  task:
+    - development of a page on the terms of reference and a mini-layout compiled earlier, in order to attract potential customers and motivate them to sign up for online training.
+done:
+  img:
+    src: B9FZZFXAIGJ
+    alt: Landing page for online courses from "Alpari"
+    height:
+  alert:
+    message: The photo shows concept 3 (100% creative)
+    type: info
+    dismissible: false
+    outlined: false
+    prominent: false
+  list:
+    - 'development of prototypes of the design layout: 100% conservatism, creativity + conservatism, 100% creative;'
+    - 'development of three design concepts;'
+palette:
+  - type: ''
+    hex:
+      - F15A22
+      - D88D2A
+  - type: ''
+    hex:
+      - BEB632
+      - 8DC63F
+  - type: ''
+    hex:
+      - 464B4A
+  - type: ''
+    hex:
+      - FDF5E7
+      - FEFEF4
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>"
+  headline: Roboto
+  text: Roboto
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '100'

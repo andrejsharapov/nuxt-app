@@ -1,0 +1,96 @@
+data:
+  - alt: Methodology
+    set:
+      - TDD
+      - Agile
+      - Scrum
+      - Kanban
+    color: info
+    icon: $mdiAccountGroup
+  - alt: Design
+    set:
+      - Figma
+      - Google Web Designer
+      - Ai
+      - Ps
+      - CorelDRAW
+    color: indigo
+    icon: $mdiPalette
+  - alt: Website Builder
+    set:
+      - Nuxt.js
+      - Vue CLI
+      - Gulp
+      - VuePress
+    color: teal
+    icon: $mdiNuxt
+  - alt: VC
+    set:
+      - GIT
+    color: red
+    icon: $mdiGit
+  - alt: PHP
+    set:
+      - WordPress
+    color: deep-purple
+    icon: $mdiLanguagePhp
+  - alt: JavaScript
+    set:
+      - ES6
+      - Babel
+    color: amber
+    icon: $mdiCodeJson
+  - alt: HTML
+    set:
+      - HTML5
+      - Pug
+      - HAML
+    color: orange
+    icon: $mdiLanguageHtml5
+  - alt: CSS
+    set:
+      - CSS3
+      - Sass/SCSS
+      - Stylus
+      - PostCSS
+    color: blue
+    icon: $mdiLanguageCss3
+  - alt: Libraries
+    set:
+      - jQuery
+      - Vuetify
+    color: cyan
+    icon: $mdiVuetify
+  - alt: Frameworks
+    set:
+      - Bootstrap 4
+      - Vue.js
+      - Tailwind CSS
+    color: green
+    icon: $mdiVuejs
+  - alt: Web analytics
+    set:
+      - Я.Метрика
+      - Я.Вебмастер
+      - GTM
+      - Google Analytics
+    color: deep-orange
+    icon: $mdiGoogleAnalytics
+  - alt: IDE
+    set:
+      - Notepad ++
+      - Sublime Text
+      - Visual Studio Code
+    color: light-blue
+    icon: $mdiMicrosoftVisualStudioCode
+  - alt: CMS
+    set:
+      - WordPress
+      - Tilda
+      - Joomla!
+      - 1C Bitrix
+      - WIX
+      - uKit
+      - uCoz
+    color: brown
+    icon: $mdiWordpress

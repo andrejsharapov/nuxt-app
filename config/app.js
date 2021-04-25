@@ -19,7 +19,7 @@ export const appMeta = {
       },
     },
     share: '/share.jpg',
-    short: 'sharapov',
+    short: 'sharapov-dev',
     twitter: '@andrejsharapov',
   },
   host: {
@@ -28,6 +28,8 @@ export const appMeta = {
   },
   author: {
     job: { status: 0 },
+    projects: 50,
+    works: 300,
   },
 }
 

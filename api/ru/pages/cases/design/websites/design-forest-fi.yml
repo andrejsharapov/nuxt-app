@@ -1,0 +1,78 @@
+hide: false
+type: des-site
+title: Дизайн лендинга «Forest-Fi»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7971597/media/6f96fc0f8fac7cb3ed9f523339630722.png?compress=1&resize=1000x750
+  alt: Дизайн лендинга «Forest-Fi»
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: '2019-11-05'
+period:
+  - '2019-11-04'
+  - '2019-11-05'
+deadline: На выполнение задачи ушло около 20 часов.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - Adobe Illustrator
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/7971597-Forest-Fi-unlimited-free-internet-worldwide
+    behance: https://www.behance.net/gallery/87728433/Wi-Fi-Free-in-Every-Tree
+    instagram: https://www.instagram.com/p/B4dTsxIAc1E/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Дизайн лендинга «Forest-Fi»
+  description: «Forest-Fi» - международная организация, занимающаяся поисками и разработкой бесплатного и безлимитного доступа в интернет из любой точки мира. Концепция основана на микро-колебаниях между растениями нашей планеты, которые особенно выражены у деревьев. На основе этих вибраций, исследователи компании разработали способ передачи данных без специальной техники и провайдеров.
+  issues:
+  task:
+    - привлечение потенциальных клиентов и конвертирование их в ЦА.
+done:
+  img:
+    src: B4dTsxIAc1E
+    alt: Дизайн лендинга «Forest-Fi»
+    height:
+  alert:
+    message:
+  list:
+    - планирование продукта и разработка идейной составляющей;
+    - предварительный анализ рынка и целевой аудитории;
+    - 'анализ, обзор аналогичных решений: функционал, количество пользователей, рейтинги, отзывы, монетизация;'
+    - разработка фирменного стиля;
+    - формирование палитры цветов, типографики и состояний элементов;
+    - разработка прототипов дизайн-макета;
+    - написание оригинальных текстов;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ''
+    hex:
+      - A88875
+      - E3D1C0
+  - type: ''
+    hex:
+      - 31282F
+      - 393939
+  - type: ''
+    hex:
+      - 999999
+      - DFDEDE
+  - type: ''
+    hex:
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Fira+Sans&family=Raleway&display=swap' rel='stylesheet'>"
+  headline: Raleway
+  text: Fira Sans
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '100'

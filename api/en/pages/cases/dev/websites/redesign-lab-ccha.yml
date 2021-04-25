@@ -1,0 +1,172 @@
+hide: false
+type: dev-site
+title: Redesign of the website of the chemical analytical laboratory
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/4509432/rpn.png
+  alt: Redesign of the website of the chemical analytical laboratory
+ux:
+  works: CORPORATE / BRANDING
+  price: Redesign and modernization
+created: '2018-04-04'
+period:
+  - '2018-04-05'
+  - '2018-04-07'
+deadline: It took 3 days to complete the task (excluding the layout of the tables) since the previous interface and site structure were revised earlier.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - CorelDRAW
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - Bootstrap
+        - jQuery.js
+    - title: Software
+      tags:
+        - Notepad++
+  roles:
+    - title: My
+      tags:
+        - UI/UX Designer
+        - Frontend Developer
+    - title: Other
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/4509432-New-gradients
+    behance:
+    instagram:
+client:
+  logoJPG: null
+  logoWEBP: null
+  head: Chemical analytical laboratory
+  description: The chemical analytical laboratory is a modern professional laboratory in the field of environmental protection.
+  issues: The previous website of the company is morally and visually outdated. Required new services and functionality on the site.
+  task:
+    - redesign, while maintaining the corporate identity and image of the company;
+    - development of an adaptive design layout;
+    - improvement of the interface and site design for all modern trends;
+    - transfer of available information and development of original texts;
+    - optimization of pages for mobile devices and modern browsers.
+done:
+  img: null
+  alert:
+    message:
+  list:
+    - analysis of the target audience and competitors' sites;
+    - compilation of a semantic core (selection of keywords for which the resource is planned to be promoted);
+    - development of prototypes of the design layout;
+    - development of the concept of content-filling the site;
+    - formation of a palette of colors and development of a Style Guide;
+    - development of design and user interface (UI);
+    - formation of dependencies of different elements of the site;
+    - site layout using the Bootstrap 4 framework;
+    - development of an original and functional 404 error page;
+    - development of scripts for calculating the cost of analyzes on service pages;
+    - analysis of the correct display of the site in different browsers;
+    - analysis of the correct display of the site on modern mobile devices;
+    - launching and connecting end-to-end website analytics, tracking its effectiveness.
+palette:
+  - type: ''
+    hex:
+      - c8305f
+  - type: ''
+    hex:
+      - ffb060
+  - type: ''
+    hex:
+      - 212529
+  - type: ''
+    hex:
+      - F8F9FA
+      - FFFFFF
+typography:
+  fonts: "<link href='' rel='stylesheet'>"
+  headline: Muller (@font-face)
+  text: Muller (@font-face)
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '96'
+  dash:
+    Performance: '54'
+    Accessibility: '94'
+    Practices: '77'
+    SEO: '100'
+cms:
+testimonials:
+  author:
+    img:
+      src: ''
+      alt: ''
+    name: Yuri Kortunov
+    company: LLC "HAL" RPN-Sphere "
+    link: https://ccha.ru/
+    position: CEO
+  message: We needed a beautiful site where customers could quickly familiarize themselves with our offer. In the laboratory, many types of measurements are carried out, and it is important for the client to immediately imagine how much a particular measurement costs. Andrey has developed an excellent design, user-friendly interface, and a special calculator (in principle, the whole site is a calculator), which allows you to quickly calculate the cost of all the services customers need.
+analytics:
+  result: search traffic has doubled in terms of monthly visits.
+  traffic:
+    show: true
+    title: Search traffic
+    type: bar
+    series:
+      - name: ''
+        data:
+          - 35
+          - 40
+          - 50
+          - 45
+          - 45
+          - 35
+          - 40
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+      - name: Start
+        data:
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - 70
+          - 90
+          - 95
+          - 110
+          - 95
+          - 115
+          - 100
+          - 125
+          - 120
+          - 110
+          - 90
+  goals:
+    show: false
+    title: Achievement of the goal
+    chart:
+      series:
+      labels:
+  conversion:
+    show: false
+    title: Coversion
+    value:

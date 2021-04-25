@@ -2,7 +2,19 @@
 @import './mq';
 @import './anchor';
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+
   &[lang='en-US'] {
     .v-application {
       --body-font-family: 'Raleway', sans-serif;
@@ -19,22 +31,41 @@ html {
 }
 
 body {
-  a {
-    text-decoration: none;
-    color: var(--primary);
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
-    &:focus {
-      outline: none;
-    }
+  @util word-wrap(normal);
+}
 
-    &:not([class]) {
-      text-decoration-skip-ink: auto;
+a {
+  text-decoration: none;
+  color: var(--primary);
 
-      &:hover {
-        text-decoration: underline;
-      }
+  &:focus {
+    outline: none;
+  }
+
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul[class],
+ol[class] {
+  @util reset-list;
 }
 
 /**
