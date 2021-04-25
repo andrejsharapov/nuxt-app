@@ -9,6 +9,7 @@
           v-icon.d-block.d-sm-inline-block(left) {{mdiBriefcaseEditOutline}}
           | {{ info.ux.price }}
         v-card-title.px-0.pt-2.text-sm-h6.text-lg-h5.text-break-word.justify-center.justify-sm-start.text-center.text-sm-left.font-weight-bold {{ info.title }}
+
         //- CMS (Web dev)
         template(v-if='info.cms')
           template(v-for='(cms, i) in cmsSplit')
@@ -23,7 +24,7 @@
         //- RESIZE (Banners)
         template(v-if='info.resize')
             v-card-subtitle.pl-0.pt-4.text-center.text-sm-left
-              strong {{ $t('cases.sizes') }}:&nbsp;
+              strong {{ $t('pages.cases.slug.sizes') }}:&nbsp;
               template(v-for='(name, i) in Array.isArray(info.resize) ? info.resize : [info.resize]')
                 span(v-if='Array.isArray(info.resize)', :key='i') {{ name }},&nbsp;
                 span(v-else) {{ name }}

@@ -148,13 +148,7 @@ export default {
       message:
         'Below are the categories of work in the field of design and development. | Choose a card for you to go to the section with works.',
       slug: {
-        'header-tabs': ['Tools', 'Role'],
-        headings: {
-          sections: [
-            'Client, issues and tasks',
-            'Result and search for a solution',
-          ],
-        },
+        analytics: 'Web Analytics',
         client: {
           about: 'Client',
           issues: 'Issues',
@@ -163,21 +157,37 @@ export default {
           },
           'not-found': 'The client is missing or was not named on purpose.',
         },
-        done: 'During work',
         colors: 'Colors',
+        deadline: 'Deadline',
+        done: 'During work',
         grid: 'Grid',
-        typography: {
-          title: 'Typography',
-          view: ['For headings', 'For body text'],
+        'header-tabs': ['Tools', 'Role'],
+        headings: {
+          sections: [
+            'Client, issues and tasks',
+            'Result and search for a solution',
+          ],
         },
         responsive: {
           title: 'Responsive',
           friendliness: 'User friendliness',
           optimization: 'Website optimization work was not carried out.',
+          'not-responsive': {
+            title: 'Not responsive',
+            message:
+              'Viewing is possible at screen resolution {size}px and higher.',
+          },
         },
-        analytics: 'Web Analytics',
-        deadline: 'Deadline',
+        result: {
+          title: 'Result',
+        },
+        sizes: 'Sizes',
+        storyboard: 'Storyboard',
         testimonials: 'Testimonials',
+        typography: {
+          title: 'Typography',
+          view: ['For headings', 'For body text'],
+        },
       },
     },
     certificates: {
@@ -193,6 +203,7 @@ export default {
     contact: {
       message:
         'You can contact me through the above social networks or use other contacts.',
+      help: 'Click on phone number or address to copy.',
     },
     'des-apps': {
       message:
@@ -203,6 +214,21 @@ export default {
         'I know that every client, before making a choice, wants to see the skills of a designer and his real cases, that is, "live" work, and not just a table of blurry screenshots. This makes sense, so on this page I have presented some of my work done at different times using different tools. | By looking at my work, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
       experience:
         'Design and prototyping experience in years | Work experience in',
+    },
+    'dev-banners': {
+      advantage: {
+        prepend:
+          'In October 2017, I decided to try my hand at developing html5 banners, since banners using HTML5 technology have many advantages:',
+        list: [
+          'the ability to use any elements of web pages: text, images, videos and others',
+          'the ability to use dynamic scripts (storyboard and animatic)',
+          'HTML5 banner files can be quite small',
+          'using CSS media queries you can customize banner elements to fit any screen size',
+          'the ability to edit the banner after its placement',
+        ],
+        append:
+          'A banner is primarily an image advertisement for your company on the Internet. Your banner design directly affects user loyalty to your company, product or service. In other words, the quality of the banner directly affects the number of visitors and the conversion of your site.',
+      },
     },
     'dev-site': {
       cms:
