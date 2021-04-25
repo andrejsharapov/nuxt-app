@@ -136,6 +136,6 @@ export default {
 <style>
 .page__dev-banners {
   --stop-color-one: #6e349e;
-  --stop-color-two: #b96e18;
+  --stop-color-two: #2c0569;
 }
 </style>
