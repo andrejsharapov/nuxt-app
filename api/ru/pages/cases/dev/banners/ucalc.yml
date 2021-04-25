@@ -1,0 +1,47 @@
+hide: false
+type: dev-banner
+title: Создание html5 баннера для компании «uCalc»
+img:
+  src: http://cdn.madeas.ru/nuxt-app/banners/ucalc/preview.jpg
+  alt: Создание html5 баннера для компании «uCalc»
+ux:
+  price: Разработка html5 баннера
+created: '2017-10-12'
+period:
+  - '2017-10-12'
+  - '2017-10-12'
+deadline: На выполнение поставленной задачи было затрачено около 2-х часов.
+client:
+  logoJPG:
+  logoWEBP:
+  head: uCalc
+  description: uCalc — универсальный конструктор калькуляторов и форм для бизнеса.
+  issues:
+  task: 'Разработать простой, но в то же время современный, эффектный и привлекающий внимание html5 баннер uCalc из статичной графики.'
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: Мои
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - разработка сценария;
+    - раскадровка;
+    - аниматик;
+    - программирование;
+    - цикличность сценария;
+    # - подготовка баннера к размещению на рекламной площадке;
+storyboard:
+  src: http://cdn.madeas.ru/nuxt-app/banners/ucalc/storyboard.jpg
+  alt:
+animatic:
+  width: 728
+  height: 90
+  reload: false
+resize: 728 x 90
