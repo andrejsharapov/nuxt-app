@@ -46,7 +46,7 @@ Look at [all nuxt modules][modules].
 
 ## TLTR: Contributing and Wiki
 
-Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wiki] before contributing. Read the detailed information about contributions in the [CONTRIBUTING.md][../../CONTRIBUTING.md] file.
+Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wiki] before contributing. Read the detailed information about contributions in the [CONTRIBUTING.md][contributing] file.
 
 <p align="right">
   <a href="#uses">To top</a>
@@ -76,3 +76,4 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 
 [modules]: https://modules.nuxtjs.org/
 [wiki]: ../../wiki
+[contributing]: https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md
