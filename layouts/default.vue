@@ -1,5 +1,5 @@
 <template lang="pug">
-v-app
+v-app(v-resize='windowX')
   //- SECTION[epic=layout] navbar
   v-navigation-drawer.layout__navbar(
     v-model='drawer',
@@ -99,8 +99,9 @@ import { mdiSortVariant, mdiSegment, mdiArrowUpBoldOutline } from '@mdi/js'
 export default {
   data() {
     return {
+      windowSizeX: 0,
       clipped: false,
-      drawer: true,
+      drawer: this.drawerShow(),
       fixed: false,
       miniVariant: false,
       right: true,
@@ -149,7 +150,20 @@ export default {
       ],
     }
   },
+  mounted() {
+    this.windowX()
+  },
   methods: {
+    windowX() {
+      this.windowSizeX = window.innerWidth
+    },
+    drawerShow() {
+      if (this.windowSizeX > 1024) {
+        return true
+      } else {
+        return false
+      }
+    },
     barEvents(prop) {
       this.miniVariant = prop.mini
       this.clipped = prop.clip

@@ -70,7 +70,7 @@
         </v-col>
 
         <!-- COMPONENT CHART -->
-        <v-col cols="12">
+        <v-col cols="12" class="d-none d-sm-block">
           <v-card class="mb-4 pa-4 shadow-xl">
             <v-lazy
               :options="{

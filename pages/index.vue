@@ -261,7 +261,6 @@ import {
   mdiChartAreaspline,
   mdiDotsHorizontal,
 } from '@mdi/js'
-
 import { appMeta as done } from '~/config/app'
 
 export default {
@@ -352,12 +351,14 @@ export default {
   head() {
     return {
       titleTemplate: '',
-      title:
-        this.$t('author.name') +
-        ' · ' +
-        this.$t('author.position[0]') +
-        ', ' +
-        this.$t('author.position[1]'),
+      title: this.$t('app.meta.title'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('app.meta.description'),
+        },
+      ],
     }
   },
   computed: {
