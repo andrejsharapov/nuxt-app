@@ -44,7 +44,7 @@ Look at [all nuxt modules][modules].
 
 ---
 
-## TLTR: Contributing and Wiki
+## Contributing and Wiki
 
 Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wiki] before contributing. Read the detailed information about contributions in the [CONTRIBUTING.md][contributing] file.
 
