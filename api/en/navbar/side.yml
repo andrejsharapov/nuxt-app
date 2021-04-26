@@ -58,11 +58,9 @@ data:
   - action: '$mdiScriptText'
     nested:
       - action: '$mdiPaletteSwatchOutline'
-        disabled: true
         title: Web Design
         to: '/en/pricing/design'
       - action: '$vsCode'
-        disabled: true
         title: Development
         to: '/en/pricing/dev'
     title: Pricing

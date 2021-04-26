@@ -58,11 +58,9 @@ data:
   - action: '$mdiScriptText'
     nested:
       - action: '$mdiPaletteSwatchOutline'
-        disabled: true
         title: Веб-дизайн
         to: '/ru/pricing/design'
       - action: '$vsCode'
-        disabled: true
         title: Разработка
         to: '/ru/pricing/dev'
     title: Цены
