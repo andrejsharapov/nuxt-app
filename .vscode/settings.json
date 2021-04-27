@@ -111,5 +111,7 @@
   "remote.SSH.connectTimeout": 30,
   "stylusSupremacy.insertBraces": false,
   "stylusSupremacy.insertColons": false,
+  "stylusSupremacy.insertNewLineBeforeElse": true,
+  "stylusSupremacy.insertNewLineBetweenSelectors": true,
   "stylusSupremacy.insertSemicolons": false
 }
