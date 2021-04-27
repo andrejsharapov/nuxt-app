@@ -11,7 +11,7 @@
   )
     v-hover(v-slot='{ hover }')
       v-avatar
-        v-tooltip(left)
+        v-tooltip(bottom)
           template(#activator='{ on: email }')
             v-btn(
               icon,
@@ -20,7 +20,7 @@
               href='mailto:an.sharapov90@gmail.com?subject=Предлагаем работу',
               rel='noopener noreferrer',
               v-on='email'
-            ) 
+            )
               v-icon {{ hover ? mdiEmailOutline : mdiAccountCircleOutline }}
           span {{ $t("author.job.title") }}
 </template>
