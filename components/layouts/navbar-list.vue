@@ -80,16 +80,10 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
-  data() {
-    return {
-      navbar: [],
-    }
-  },
-  async fetch() {
-    this.navbar = await this.$content(
-      `${this.$i18n.locale}/navbar/side`
-    ).fetch()
+    navbar: {
+      type: [Array, Object],
+      default: () => ({}),
+    },
   },
 }
 </script>

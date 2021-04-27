@@ -33,14 +33,14 @@ export default {
     '@nuxtjs/yandex-metrika',
   ],
   plugins: [
+    { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
     { src: '~/plugins/markdown-theme-prism' },
     { src: '~/plugins/vue-cookieconsent' },
     { src: '~/plugins/vue-clipboard' },
-    // { src: '~/plugins/gtm' },
-    { src: '~/plugins/vue-disqus.js' },
+    { src: '~/plugins/vue-disqus' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

@@ -82,9 +82,16 @@ export default {
         ],
       },
     },
+    lang: {
+      name: 'Language',
+      ru: 'Русский',
+      en: 'English',
+    },
     themes: {
-      light: 'Light mode',
-      dark: 'Dark mode',
+      name: 'Theme',
+      light: 'Light',
+      dark: 'Dark',
+      system: 'System',
     },
   },
   author: {
@@ -130,10 +137,15 @@ export default {
     details: 'More details',
     events: 'More events',
   },
+  no: 'No',
   poll: {
     title: 'UX Poll',
     message: 'Take the poll and you will help make the site better for you.',
     btn: 'Take a poll',
+  },
+  position: {
+    right: 'Right | right',
+    left: 'Left | left',
   },
   projects: {
     recent: 'Recent projects',
@@ -321,8 +333,12 @@ export default {
     found: 'Materials found on your request.',
     'not-found': 'Sorry, but there are no results for your search.',
   },
+  settings: 'Settings',
   site: {
-    header: { name: 'Header' },
+    header: {
+      name: 'Header',
+      sticky: 'Sticky',
+    },
     navbar: {
       name: 'Navigation',
     },
@@ -330,8 +346,14 @@ export default {
       construction: 'This page is under construction',
     },
   },
+  size: {
+    name: 'Size',
+    full: 'Full',
+    mini: 'Mini',
+  },
   source: 'Source | Sources',
   'table-of-contents': 'Table of contents | table of contents',
+  yes: 'Yes',
   works: {
     'works-not-found': 'Works not found',
     examples: 'Work examples',
