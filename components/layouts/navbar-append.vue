@@ -1,4 +1,5 @@
 <template lang="pug">
+//- NOTE COMPONENT DISABLED
 v-row.ma-0.pa-2.navbar__append
   //- 1
   v-col.py-0.pl-0
