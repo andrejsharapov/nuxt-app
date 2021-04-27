@@ -25,6 +25,14 @@
     background-color: var(--sheet);
   }
 
+  &.right-navigation {
+    .v-navigation-drawer__prepend {
+      header {
+        background-color: var(--sheet);
+      }
+    }
+  }
+
   .v-main {
     background: radial-gradient(var(--dots) 6%, transparent 6%), var(--black);
     background-color: var(--black);
