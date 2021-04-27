@@ -1,4 +1,5 @@
 <template lang="pug">
+//- NOTE COMPONENT DISABLED
 v-list.mb-1.pa-0(dense, nav)
   v-list-item-group(multiple, color='primary')
     v-row.ma-0(no-gutters)
