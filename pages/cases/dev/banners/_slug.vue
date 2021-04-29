@@ -182,15 +182,13 @@ export default {
   name: 'PagesCasesDesignWebsitesSlug',
   async asyncData({ $content, app, params }) {
     const banner = await $content(
-      `${app.i18n.locale}/pages/cases/dev/banners`,
+      `${app.i18n.locale}/cases/dev/banners`,
       params.slug
     )
       .where({ type: 'dev-banner' })
       .fetch()
 
-    const [prev, next] = await $content(
-      `${app.i18n.locale}/pages/cases/dev/banners`
-    )
+    const [prev, next] = await $content(`${app.i18n.locale}/cases/dev/banners`)
       .where({ type: 'dev-banner' })
       .only(['title', 'slug'])
       .sortBy('created', 'desc')

@@ -242,15 +242,13 @@ export default {
   name: 'PagesCasesDesignWebsitesSlug',
   async asyncData({ $content, app, params }) {
     const website = await $content(
-      `${app.i18n.locale}/pages/cases/dev/websites`,
+      `${app.i18n.locale}/cases/dev/websites`,
       params.slug
     )
       .where({ type: 'dev-site' })
       .fetch()
 
-    const [prev, next] = await $content(
-      `${app.i18n.locale}/pages/cases/dev/websites`
-    )
+    const [prev, next] = await $content(`${app.i18n.locale}/cases/dev/websites`)
       .where({ type: 'dev-site' })
       .only(['title', 'slug'])
       .sortBy('created', 'desc')

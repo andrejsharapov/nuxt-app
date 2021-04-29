@@ -266,7 +266,7 @@ import { appMeta as done } from '~/config/app'
 export default {
   async asyncData({ $content, params, app }) {
     const getTimeline = await $content(
-      `${app.i18n.locale}/pages/timeline`,
+      `${app.i18n.locale}/timeline`,
       params.slug
     )
       .sortBy('date', 'desc')
@@ -284,7 +284,7 @@ export default {
       .fetch()
 
     const desSiteLocale = await $content(
-      `${app.i18n.locale}/pages/cases/design/websites`,
+      `${app.i18n.locale}/cases/design/websites`,
       params.slug
     )
       .where({ type: { $in: ['des-site'] } })
@@ -294,7 +294,7 @@ export default {
       .fetch()
 
     const devSiteLocale = await $content(
-      `${app.i18n.locale}/pages/cases/dev/websites`,
+      `${app.i18n.locale}/cases/dev/websites`,
       params.slug
     )
       .where({ type: { $in: ['dev-site'] } })

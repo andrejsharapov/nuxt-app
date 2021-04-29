@@ -155,13 +155,13 @@ export default {
     const set = await $content('skills/skillset').fetch()
 
     const chart = await $content(
-      `${app.i18n.locale}/pages/cases/dev/websites/dev-site-options`
+      `${app.i18n.locale}/cases/dev/websites/dev-site-options`
     )
       .only(['chartOptions', 'chartSeries'])
       .fetch()
 
     const devSiteLocale = await $content(
-      `${app.i18n.locale}/pages/cases/dev/websites`,
+      `${app.i18n.locale}/cases/dev/websites`,
       params.slug
     )
       .where({ type: 'dev-site', hide: false })
