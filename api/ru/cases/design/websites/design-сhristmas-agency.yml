@@ -3,11 +3,11 @@ type: des-site
 title: Лендинг Christmas agency «Ho-Ho-Ho»
 img:
   src: https://cdn.dribbble.com/users/2241643/screenshots/9025858/media/a879ebb4a866b3950c402d860d5e6048.png?compress=1
-  alt: Christmas agency «Ho-Ho-Ho»
+  alt: Лендинг Christmas agency «Ho-Ho-Ho»
 ux:
   works: PET PROJECT / EXPERIENCE
   price: Прототипирование и дизайн
-created: '2019-12-14'
+created: '2021-04-24'
 period:
   - '2019-12-13'
   - '2019-12-14'
@@ -31,14 +31,14 @@ preview:
 client:
   logoJPG:
   logoWEBP:
-  head: Christmas agency «Ho-Ho-Ho»
+  head: Лендинг Christmas agency «Ho-Ho-Ho»
   description: Агентство, организующее новогодние праздники для людей, у которых не хватает времени сделать это самостоятельно.
   issues:
   task: привлечение потенциальных клиентов и конвертирование их в ЦА.
 done:
   img:
     src: B6CHIHtApE_
-    alt: Christmas agency «Ho-Ho-Ho»
+    alt: Лендинг Christmas agency «Ho-Ho-Ho»
     height:
   alert:
     message:
