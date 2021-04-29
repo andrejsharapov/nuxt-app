@@ -279,7 +279,7 @@ export default {
 
     const skills = await $content('skills/skillset').fetch()
 
-    const getCertificates = await $content('pages/certificates', params.slug)
+    const getCertificates = await $content('certificates', params.slug)
       .where({ slug: 'web-design' })
       .fetch()
 
