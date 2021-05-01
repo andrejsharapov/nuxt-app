@@ -85,7 +85,7 @@ import { devBanners } from '~/lib/page-meta'
 export default {
   async asyncData({ $content, app, params }) {
     const getBanners = await $content(
-      `${app.i18n.locale}/pages/cases/dev/banners`,
+      `${app.i18n.locale}/cases/dev/banners`,
       params.slug
     )
       .where({ type: 'dev-banner', hide: false })

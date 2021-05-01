@@ -230,14 +230,14 @@ export default {
   name: 'PagesCasesDesignWebsitesSlug',
   async asyncData({ $content, app, params }) {
     const website = await $content(
-      `${app.i18n.locale}/pages/cases/design/websites`,
+      `${app.i18n.locale}/cases/design/websites`,
       params.slug
     )
       .where({ type: 'des-site' })
       .fetch()
 
     const [prev, next] = await $content(
-      `${app.i18n.locale}/pages/cases/design/websites`
+      `${app.i18n.locale}/cases/design/websites`
     )
       .where({ type: 'des-site' })
       .only(['title', 'slug'])

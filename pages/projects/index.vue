@@ -46,7 +46,7 @@ import { projects } from '~/lib/page-meta'
 export default {
   async asyncData({ $content, params, app }) {
     const projectsLocale = await $content(
-      `${app.i18n.locale}/pages/projects`,
+      `${app.i18n.locale}/projects`,
       params.slug
     )
       .sortBy('created', 'desc')
