@@ -49,7 +49,7 @@ export default {
     treeShake: true,
   },
   head: {
-    title: 'nuxt-app',
+    title: appMeta.app.ru.title,
     meta: [
       {
         hid: 'title',
