@@ -52,7 +52,7 @@ import { logos } from '~/lib/page-meta'
 export default {
   async asyncData({ $content, app, params }) {
     const logosLocale = await $content(
-      `${app.i18n.locale}/pages/cases/design/logo`,
+      `${app.i18n.locale}/cases/design/logo`,
       params.slug
     ).fetch()
 

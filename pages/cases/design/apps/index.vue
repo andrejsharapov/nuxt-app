@@ -46,7 +46,7 @@ import { desApps } from '~/lib/page-meta'
 export default {
   async asyncData({ $content, app, params }) {
     const desAppsLocale = await $content(
-      `${app.i18n.locale}/pages/cases/design/apps`,
+      `${app.i18n.locale}/cases/design/apps`,
       params.slug
     )
       .where({ type: 'des-apps', hide: false })
