@@ -1,26 +1,7 @@
 <template lang="pug">
 v-app(v-resize='windowX')
-  //- SECTION[epic=layout] NAVIGATION
-  v-navigation-drawer.layout__navbar(
-    v-model='drawer',
-    :mini-variant='miniVariant',
-    :clipped='clipped',
-    app,
-    fixed,
-    floating,
-    :right='!right'
-  )
-    template(#prepend)
-      s-layout-navbar-prepend(v-if='!clipped')
-    perfect-scrollbar
-      lazy-s-layout-navbar-list(:mini-variant='miniVariant', :navbar='navbar')
-    //- template(#append)
-    //-   s-layout-navbar-append(
-    //-     :clipped='clipped',
-    //-     :drawer='drawer',
-    //-     :mini-variant='miniVariant'
-    //-   )
-  //- /SECTION
+  //- v-system-bar(absolute, color='warning')
+  //-   .text-caption.white--text Consequat excepteur aute do elit eiusmod consequat anim ullamco enim.
 
   //- SECTION[epic=layout] HEADER
   v-app-bar(
@@ -54,6 +35,28 @@ v-app(v-resize='windowX')
         v-btn(icon, v-on='settings', @click.stop='rightDrawer = !rightDrawer')
           v-icon {{ mdiCogOutline }}
       span {{ $t("settings") }}
+  //- /SECTION
+
+  //- SECTION[epic=layout] NAVIGATION
+  v-navigation-drawer.layout__navbar(
+    v-model='drawer',
+    :mini-variant='miniVariant',
+    :clipped='clipped',
+    app,
+    fixed,
+    floating,
+    :right='!right'
+  )
+    template(#prepend)
+      s-layout-navbar-prepend(v-if='!clipped')
+    perfect-scrollbar
+      lazy-s-layout-navbar-list(:mini-variant='miniVariant', :navbar='navbar')
+    //- template(#append)
+    //-   s-layout-navbar-append(
+    //-     :clipped='clipped',
+    //-     :drawer='drawer',
+    //-     :mini-variant='miniVariant'
+    //-   )
   //- /SECTION
 
   //- SECTION[epic=layout] MAIN
