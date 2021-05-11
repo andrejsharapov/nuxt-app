@@ -20,18 +20,49 @@
       font-size 0.905rem
 
     &--active
-      &:before
+      &::before
         color var(--primary)
         caret-color var(--primary)
+
+  &.right-navigation
+    background-color hsl(226, 70%, 97%)
+    background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
+
+    .v-navigation-drawer__prepend
+      header
+        background-color hsl(226, 70%, 97%)
+        background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
+
+    &:not(.right-navigation__left)
+      --direction-x to right
+
+    .v-list-item
+      &::after
+        display none !important
+
+      &.v-list-item--active
+        .v-icon__svg
+          fill var(--light)
+
+        &::before
+          opacity 0.35
 
 .v-overlay
   -webkit-backdrop-filter blur(5px)
   backdrop-filter blur(5px)
   filter blur(5px)
 
+.v-slide-group__next--disabled,
+.v-slide-group__prev--disabled
+  .theme--light,
+  .theme--dark
+    &.v-icon.v-icon.v-icon--disabled
+      color transparent !important
+
 // perfect-scrollbar
 .ps
-  &__rail-x, &__rail-y
+  &__rail-x,
+  &__rail-y
     border-radius 1em
 
   &__thumb
@@ -40,6 +71,18 @@
       right 0.3125rem
 
   &__rail-y
-    &:hover, &:focus, &.ps--clicking
+    &:hover,
+    &:focus,
+    &.ps--clicking
       > .ps__thumb-y
         right 0.125rem
+
+// apexcharts
+.apexcharts
+  &-toolbar
+    z-index 1 !important
+
+  &-legend
+    &.position-right
+      top 4rem !important
+      right 1.5rem !important

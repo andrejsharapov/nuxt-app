@@ -75,7 +75,7 @@
           v-divider
 
           v-list(dense, subheader)
-            v-subheader {{ $t("app.updates") }}
+            v-subheader {{ $t("events.updates") }}
             v-list-item(
               :href='doc.content.versions.to',
               target='_blank',

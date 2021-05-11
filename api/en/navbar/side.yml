@@ -31,6 +31,7 @@ data:
           - action: '$mdiTabletCellphone'
             title: Apps
             to: '/en/cases/dev/apps'
+            disabled: true
           - action: '$mdiVectorBezier'
             title: HTML5 Banners
             to: '/en/cases/dev/banners'
@@ -41,13 +42,16 @@ data:
           - action: '$mdiDraw'
             title: Drawings
             to: '/en/works/drawings'
+          - action: '$mdiVectorPolylineEdit'
+            title: Photoshop
+            to: '/en/works/photoshop'
           - action: '$mdiCodeJson'
             title: Pure Code
             to: '/en/works/coding'
-          - action: '$mdiVectorPolylineEdit'
+          - action: '$mdiEmailSyncOutline'
             disabled: true
-            title: Photoshop
-            to: '/en/works/photoshop'
+            title: Email
+            to: '/ru/works/email'
         title: More
     title: Cases
     to: '/en/cases'

@@ -1,0 +1,47 @@
+hide: false
+type: dev-banner
+title: Изготовление html5 баннера для «Alpari»
+img:
+  src: http://cdn.madeas.ru/nuxt-app/banners/alpari/preview.jpg
+  alt: Изготовление html5 баннера для «Alpari»
+ux:
+  price: Разработка html5 баннера
+created: '2019-10-18'
+period:
+  - '2019-10-18'
+  - '2019-10-18'
+deadline: На выполнение поставленной задачи было затрачено около 2-х часов.
+client:
+  logoJPG:
+  logoWEBP:
+  head: Компания Alpari Group
+  description: Alpari — брокер по валютным операциям, драгоценным металлам и CFD. Форекс с Альпари — торговля на Forex с брокером №1 в Москве и России.
+  issues:
+  task: 'Разработать баннер для сайта компании в честь новогодней акции. В баннере должны содержаться фразы: «Пополняйся без забот!» и «Вернем комиссию за любые пополнения».'
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: Мои
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - разработка сценария;
+    - раскадровка;
+    - аниматик;
+    - программирование;
+    - цикличность сценария;
+    # - подготовка баннера к размещению на рекламной площадке;
+storyboard:
+  src: http://cdn.madeas.ru/nuxt-app/banners/alpari/storyboard.jpg
+  alt:
+animatic:
+  width: 728
+  height: 90
+  reload: false
+resize: 728 x 90

@@ -1,24 +1,33 @@
 title: Веб-дизайн
 icon: $mdiPaletteSwatchOutline
 figures:
+  - date: 2021-04-22
+    num: 1225782
+    caption:
+      ru: Прошел тестирование по «Figma. Продвинутый уровень»
+      en: Successfully passed the test «Figma. Advanced level»
+  - date: 2021-04-19
+    num: 1222152
+    caption:
+      ru: Прошел тестирование по «Рисование аналоговыми инструментами»
+      en: Successfully passed the test «Drawing with traditional media»
+  - date: 2021-04-15
+    num: 1217464
+    caption:
+      ru: Прошел тестирование по «Figma. Начальный уровень»
+      en: Successfully passed the test «Figma. Elementary level»
   - date: 2020-04-23
     num: 797627
-    img:
-      src: '/cert_test_9.jpg'
     caption:
       ru: Прошел тестирование по «Основы графического дизайна для дизайнера интерфейсов»
       en: Successfully passed the test «Graphic design for UX»
   - date: 2018-09-18
     num: 505468
-    img:
-      src: '/cert_cur_4.jpg'
     caption:
       ru: Окончил курс «Интенсив “Основы веб-дизайна”»
       en: Completed the course «Intensive Web Design . Development of Landing page»
   - date: 2018-01-23
     num: 400793
-    img:
-      src: '/cert_test_2.jpg'
     caption:
       ru: Прошел тестирование по «Веб-дизайн. Начальный уровень»
       en: Successfully passed the test «Web Design. Beginner»

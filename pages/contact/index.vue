@@ -19,13 +19,19 @@
         s-social-icons
 
       v-col(cols='12')
-        p.text-center.mt-4 {{ $t("pages.contact.message") }}
+        p.text-center.mt-4
+          | {{ $t("pages.contact.message") }}
+          v-tooltip(v-if='$vuetify.breakpoint.smAndUp', top)
+            template(#activator='{ on: help }')
+              v-icon(right, small, v-on='help') {{ mdiHelpCircleOutline }}
+            span {{ $t("pages.contact.help") }}
       v-col(cols='12')
-        s-page-contact-info.mb-4(:info='info.contacts')
+        s-pages-contact-info.mb-4(:info='info.contacts')
         p.text-center.text-sm-right.mt-4 {{ $t("author.region") }}
 </template>
 
 <script>
+import { mdiHelpCircleOutline } from '@mdi/js'
 import { contact } from '~/lib/page-meta'
 
 export default {
@@ -39,6 +45,7 @@ export default {
   data() {
     return {
       page: contact(this),
+      mdiHelpCircleOutline,
     }
   },
   head() {

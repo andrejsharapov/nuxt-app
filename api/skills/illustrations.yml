@@ -1,0 +1,7 @@
+list:
+  - img:
+      src: ai
+      alt: Adobe Illustrator
+  - img:
+      src: figma
+      alt: Figma

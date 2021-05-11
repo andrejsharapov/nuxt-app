@@ -1,0 +1,32 @@
+data:
+  - title: Design
+    alt: design
+    list:
+      - action: '$mdiCellphoneLink'
+        title: Website
+        to: '/en/cases/design/websites'
+      - action: '$mdiCellphoneCog'
+        title: Apps
+        to: '/en/cases/design/apps'
+      - action: '$mdiVectorRadius'
+        title: Logos
+        to: '/en/cases/design/logo'
+      - action: '$mdiVectorCurve'
+        title: Illustrations
+        to: '/en/cases/design/illustrations'
+      - action: '$mdiOrderBoolAscendingVariant'
+        title: Quiz
+        to: '/en/cases/design/quiz'
+
+  - title: Development
+    alt: development
+    list:
+      - action: '$mdiResponsive'
+        title: Website
+        to: '/en/cases/dev/websites'
+      - action: '$mdiTabletCellphone'
+        title: Apps
+        to: '/en/cases/dev/apps'
+      - action: '$mdiVectorBezier'
+        title: HTML5 Banners
+        to: '/en/cases/dev/banners'

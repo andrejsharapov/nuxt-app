@@ -1,29 +1,48 @@
 <template lang="pug">
-.color-mode-picker
-  v-list-item-group.d-flex(mandatory, color='accent')
-    v-list-item.color-mode-picker__item(
-      icon,
-      @click.stop='$vuetify.theme.dark = !$vuetify.theme.dark'
-    )
-      v-list-item-icon
-        v-icon {{ $vuetify.theme.dark ? mdiWeatherNight : mdiWhiteBalanceSunny }}
-      v-list-item-content
-        v-list-item-title {{ $vuetify.theme.dark ? $t("app.themes.dark") : $t("app.themes.light") }}
+v-list-item-group.row.row--dense.mx-0(
+  mandatory,
+  active-class='primary white--text'
+)
+  v-row.ma-0(dense)
+    v-col(cols='6')
+      v-list-item.align-center.justify-space-between.rounded.hidden(
+        @click.stop='$vuetify.theme.dark = false'
+      )
+        .text-body-2.font-weight-medium {{ $t("app.themes.light") }}
+        v-icon.ml-2 {{ mdiWeatherNightPartlyCloudy }}
+
+    v-col(cols='6')
+      v-list-item.align-center.justify-space-between.rounded.hidden(
+        @click.stop='$vuetify.theme.dark = true'
+      )
+        .text-body-2.font-weight-medium {{ $t("app.themes.dark") }}
+        v-icon.ml-2 {{ mdiWeatherPartlyCloudy }}
+    v-col(cols='12')
+      v-list-item.align-center.justify-space-between.rounded.hidden(
+        @click.stop='$vuetify.theme.dark = false'
+      )
+        .text-body-2.font-weight-medium {{ $t("app.themes.system") }}
+        v-icon.ml-2 {{ mdiDesktopClassic }}
 </template>
 
 <script>
 import {
-  mdiWhiteBalanceSunny,
-  mdiWeatherNight,
+  // mdiWhiteBalanceSunny,
+  // mdiWeatherNight,
   // mdiThemeLightDark,
+  mdiWeatherPartlyCloudy,
+  mdiWeatherNightPartlyCloudy,
+  mdiDesktopClassic,
 } from '@mdi/js'
 
 export default {
   name: 'ColorModePicker',
   data() {
     return {
-      mdiWhiteBalanceSunny,
-      mdiWeatherNight,
+      mdiWeatherPartlyCloudy,
+      mdiWeatherNightPartlyCloudy,
+      mdiDesktopClassic,
+      themeActive: 0,
     }
   },
 }

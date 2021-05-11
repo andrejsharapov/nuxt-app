@@ -1,0 +1,15 @@
+- type: des-illustration
+  grid: 6
+  date: 2019-11-07
+  original:
+    src: /src/drawings/9.jpg
+    alt:
+  img:
+    src: /src/illustrations/bird.jpg
+    alt:
+  links:
+    instagram: https://www.instagram.com/p/B4k2lKdgger
+    dribbble: https://dribbble.com/shots/8075492-Deep-night
+  ux:
+    works: PET PROJECT / EXPERIENCE
+    price: Иллюстрации для сайта

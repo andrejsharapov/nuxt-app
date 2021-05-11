@@ -1,0 +1,15 @@
+- type: des-illustration
+  grid: 6
+  date: 2019-04-07
+  original:
+    src: /src/drawings/1.jpg
+    alt:
+  img:
+    src: /src/illustrations/rock.jpg
+    alt:
+  links:
+    instagram: https://www.instagram.com/p/Bv9y5DtB-lb
+    dribbble: https://dribbble.com/shots/7088578-illustration
+  ux:
+    works: PET PROJECT / EXPERIENCE
+    price: Иллюстрации для сайта

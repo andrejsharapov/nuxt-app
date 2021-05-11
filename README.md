@@ -44,89 +44,9 @@ Look at [all nuxt modules][modules].
 
 ---
 
-## TLTR: Wiki
+## Contributing and Wiki
 
-### Branches
-
-Each new branch must contain one of the following prefixes:
-
-`config/` - changes or additions related to the configuration and various site settings.  
-`nuxt/` - update or addition related directly to nuxt. For example, adding modules nuxt.  
-`style/` - add, bug fix and update styles.  
-`page/` - create/upd a new page.  
-`comp/` - create/upd a new component.  
-`fix/` or `upd/` - in any incomprehensible situation.  
-`README` - update for the README.md file only
-
-### Fast merge (through DEVELOP branch)
-
-From => To
-
-```shell
-$ git checkout master && git pull && git checkout develop && git merge master
-$ git branch README develop && git checkout README
-# or
-$ git checkout -b README develop
-# ...Development
-$ git add . && git commit -m ".md" && git push -u origin README:develop
-# ...Pull Request
-$ git checkout develop && git pull
-# ...Development, testing, prerelease
-$ git add . && git commit -m ".md" && git push
-```
-
-### CSS syntax
-
-```bash
-PostCSS
-SCSS
-Sass
-Stylus
-```
-
-### Naming
-
-#### Files and Component
-
-- Folders - _kebab-case_
-- Files - _kebab-case.format_
-- Components - _kebab-case_
-- Variables - _camelCase_
-
-example
-
-```bash
-|-- folder-name
-|---- sub-folder-name
-|------ component-name.format
-|---- file-name.format
-```
-
-#### Variables
-
-```js
-export default {
-  data: () => ({
-    varName: null,
-  }),
-}
-```
-
-#### Import and HTML
-
-```bash
-<template>
-  <history-back />
-</template>
-
-import componentName from 'component-name'
-
-export default {
-  components: {
-    componentName,
-  },
-}
-```
+Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wiki] before contributing. Read the detailed information about contributions in the [CONTRIBUTING.md][contributing] file.
 
 <p align="right">
   <a href="#uses">To top</a>
@@ -155,3 +75,5 @@ export default {
 [vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg?color=1697f6
 
 [modules]: https://modules.nuxtjs.org/
+[wiki]: ../../wiki
+[contributing]: https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md

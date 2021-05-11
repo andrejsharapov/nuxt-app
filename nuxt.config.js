@@ -33,13 +33,14 @@ export default {
     '@nuxtjs/yandex-metrika',
   ],
   plugins: [
+    { src: '~/plugins/locales' },
     { src: '~/plugins/vue-notifications-server', mode: 'server' },
     { src: '~/plugins/vue-notifications-client', mode: 'client' },
     { src: '~/plugins/vue-perfect-scrollbar' },
     { src: '~/plugins/markdown-theme-prism' },
     { src: '~/plugins/vue-cookieconsent' },
     { src: '~/plugins/vue-clipboard' },
-    // { src: '~/plugins/gtm' },
+    { src: '~/plugins/vue-disqus' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -48,7 +49,7 @@ export default {
     treeShake: true,
   },
   head: {
-    title: 'nuxt-app',
+    title: appMeta.app.ru.title,
     meta: [
       {
         hid: 'title',
@@ -76,6 +77,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'image_src', href: appMeta.host.url + appMeta.app.share },
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },
+      { rel: 'dns-prefetch', href: 'http://cdn.madeas.ru' },
     ],
   },
   i18n: {
@@ -184,6 +186,7 @@ export default {
     { src: '~/assets/css/theme/light' },
     { src: '~/assets/css/theme/dark' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
+    { src: '~/assets/sass/extends/card-image.scss', lang: 'scss' },
   ],
   purgeCSS: {
     // paths: [
@@ -250,7 +253,9 @@ export default {
     { path: '~/components/fishes/', prefix: 's-fish' },
     { path: '~/components/global/', prefix: 's' },
     { path: '~/components/layouts/', prefix: 's-layout' },
-    { path: '~/components/pages/', prefix: 's-page' },
+    { path: '~/components/pages/', prefix: 's-pages' },
+    { path: '~/components/pages/articles/', prefix: 's-articles' },
+    { path: '~/components/charts/', prefix: 's-chart' },
     '~/components/',
   ],
   build: {
@@ -304,7 +309,7 @@ export default {
     },
   },
   // generate: {
-  //   dir: appMeta.hostname,
-  // fallback: true,
+  //   dir: appMeta.host.name,
+  //   fallback: true,
   // },
 }

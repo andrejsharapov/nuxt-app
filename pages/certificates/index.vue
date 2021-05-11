@@ -24,8 +24,7 @@
           width='250',
           :height='null'
         )
-
-      s-page-certificates-cert-items(:items='certItems')
+      lazy-s-pages-certificates-cert-items(:items='certItems')
 </template>
 
 <script>

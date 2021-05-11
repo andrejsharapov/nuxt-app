@@ -1,0 +1,74 @@
+hide: false
+type: des-site
+title: Лендинг пейдж для онлайн курсов от «Alpari»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/10489046/media/12a3b400907dfcfe3d41ecea343122ac.png?compress=1&resize=1000x750
+  alt: Лендинг пейдж для онлайн курсов от «Alpari»
+ux:
+  works: CORPORATE / BRANDING
+  price: Прототипирование и дизайн
+created: '2020-02-24'
+period:
+  - '2020-02-24'
+  - '2020-02-27'
+deadline: На разработку дизайн-концепции была выделена неделя. На выполнение работы потребовалось 3 дня.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/10489046-Course-landing-page
+    behance:
+    instagram: https://www.instagram.com/p/B9FZZFXAIGJ/
+client:
+  logoJPG:
+  logoWEBP:
+  head: ООО «Альпари-Брокер»
+  description: Международная лицензированная брокерская компания.
+  issues: Компания запустила новые онлайн курсы, которые необходимо качественно и эффективно представить клиентам. Для этого потребовалось разработать продающую страницу, с возможностью онлайн-записи на курсы.
+  task: Разработка страницы по ТЗ и составленному ранее мини-макету, с целью привлечь потенциальных клиентов и мотивировать их записаться на онлайн-обучение.
+done:
+  img:
+    src: B9FZZFXAIGJ
+    alt: Лендинг пейдж для онлайн курсов от «Alpari»
+    height:
+  alert:
+    message: На фото изображена концепция №3 (100% креатив)
+    type: info
+    dismissible: false
+    outlined: false
+    prominent: false
+  list:
+    - 'разработка прототипов дизайн-макета: 100% консерватизм, креатив + консерватизм, 100% креатив;'
+    - разработка трех дизайн-концепций;
+palette:
+  - type: ''
+    hex:
+      - F15A22
+      - D88D2A
+  - type: ''
+    hex:
+      - BEB632
+      - 8DC63F
+  - type: ''
+    hex:
+      - 464B4A
+  - type: ''
+    hex:
+      - FDF5E7
+      - FEFEF4
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet'>"
+  headline: Roboto
+  text: Roboto
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '100'
