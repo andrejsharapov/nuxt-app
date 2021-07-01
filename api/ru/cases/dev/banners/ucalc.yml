@@ -2,7 +2,7 @@ hide: false
 type: dev-banner
 title: Создание html5 баннера для компании «uCalc»
 img:
-  src: http://cdn.madeas.ru/nuxt-app/banners/ucalc/preview.jpg
+  src: /src/nuxt-app/banners/ucalc/preview.jpg
   alt: Создание html5 баннера для компании «uCalc»
 ux:
   price: Разработка html5 баннера
@@ -38,7 +38,7 @@ done:
     - цикличность сценария;
     # - подготовка баннера к размещению на рекламной площадке;
 storyboard:
-  src: http://cdn.madeas.ru/nuxt-app/banners/ucalc/storyboard.jpg
+  src: /src/nuxt-app/banners/ucalc/storyboard.jpg
   alt:
 animatic:
   width: 728
