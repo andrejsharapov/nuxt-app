@@ -28,6 +28,29 @@
         s-fish-pages-articles.mt-sm-n8.mt-md-n16(width='260', :height='null')
 
       v-col(cols='12')
+        .d-flex.flex-column
+          v-divider
+          s-section-heading-anchor(:title='$t("news.about")', anchor='works')
+          v-row.mb-2
+            v-col(cols='12')
+              v-chip-group
+                v-hover(v-slot='{ hover }')
+                  v-card.mx-3.px-3.py-2.transition(
+                    :flat='!hover',
+                    :class='hover || $vuetify.breakpoint.xs ? "white shadow-sm" : "transparent"',
+                    :href='storyLocale().path',
+                    rel='noopener noreferrer',
+                    target='_blank'
+                  )
+                    v-list-item-title.text-wrap.text-body-2.text-sm-subtitle-2.mb-3 {{ storyLocale().title }}
+                    v-list-item-subtitle.text-caption {{ formatDate(storyLocale().date) }}
+          v-divider
+
+      v-col(cols='12')
+        s-section-heading-anchor(
+          :title='$t("pages.articles.title")',
+          anchor='articles'
+        )
         template(v-if='localeItems.length')
           s-articles-post(
             v-for='article of localeItems',
@@ -41,7 +64,7 @@
 // middleware({ redirect }) {
 //   return redirect('301', '/articles/page/1')
 // },
-import { mdiBookOpenPageVariantOutline } from '@mdi/js'
+import { mdiBookOpenPageVariantOutline, mdiOpenInNew } from '@mdi/js'
 import { articles } from '~/lib/page-meta'
 
 export default {
@@ -61,8 +84,10 @@ export default {
     return {
       page: articles(this),
       mdiBookOpenPageVariantOutline,
+      mdiOpenInNew,
     }
   },
+
   head() {
     return {
       title: this.page.title,
@@ -79,6 +104,28 @@ export default {
   computed: {
     localeItems() {
       return this.articlesLocale ? this.articlesLocale : []
+    },
+  },
+  methods: {
+    storyLocale() {
+      if (this.$i18n.locale === 'ru') {
+        return {
+          title: 'Что делать, если вы разработчик-одиночка?',
+          path: 'https://geekbrains.ru/posts/single_developer_story',
+          date: '2018-11-28',
+        }
+      } else if (this.$i18n.locale === 'en') {
+        return {
+          title: 'What if you are a solo developer?',
+          // eslint-disable-next-line
+          path: 'https://andrejsharapov.medium.com/what-if-you-are-a-solo-developer-7c6cee66bf48',
+          date: '2019-03-15',
+        }
+      }
+    },
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
     },
   },
 }
