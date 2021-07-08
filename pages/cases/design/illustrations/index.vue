@@ -53,10 +53,7 @@ import { illustrations } from '~/lib/page-meta'
 
 export default {
   async asyncData({ $content, params }) {
-    const illustrationsLocale = await $content(
-      'pages/cases/design/illustrations',
-      params.slug
-    )
+    const illustrationsLocale = await $content('illustrations', params.slug)
       .sortBy('date', 'desc')
       .fetch()
 

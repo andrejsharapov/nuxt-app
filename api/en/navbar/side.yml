@@ -21,6 +21,7 @@ data:
           - action: '$mdiOrderBoolAscendingVariant'
             title: Quiz
             to: '/en/cases/design/quiz'
+            disabled: true
         title: Web Design
         to: '/en/cases/design'
       - action: '$mdiDevices'
@@ -67,13 +68,13 @@ data:
         to: '/en/pricing/dev'
     title: Pricing
     to: '/en/pricing'
-  - action: '$mdiBrain'
-    nested:
-      - action: '$mdiBookOpenPageVariantOutline'
-        title: Articles
-        to: '/en/articles'
-    title: Blog
-    to: '#'
+  # - action: '$mdiBrain'
+  #   nested:
+  #     - action: '$mdiBookOpenPageVariantOutline'
+  #       title: Articles
+  #       to: '/en/articles'
+  #   title: Blog
+  #   to: '#'
   - action: '$mdiAccount'
     nested:
       - action: '$mdiFileCertificateOutline'
@@ -88,6 +89,9 @@ data:
       - action: '$mdiContactsOutline'
         title: Contact
         to: '/en/contact'
+      - action: '$mdiBookOpenPageVariantOutline'
+        title: Articles
+        to: '/en/articles'
       - action: '$mdiDotsHorizontal'
         child:
           - action: '$mdiVideoWirelessOutline'

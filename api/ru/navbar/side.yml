@@ -19,8 +19,9 @@ data:
             title: Иллюстрации
             to: '/ru/cases/design/illustrations'
           - action: '$mdiProgressCheck'
-            title: Квиз
+            title: Квиз-маркетинг
             to: '/ru/cases/design/quiz'
+            disabled: true
         title: Веб-дизайн
         to: '/ru/cases/design'
       - action: '$mdiDevices'
@@ -67,13 +68,13 @@ data:
         to: '/ru/pricing/dev'
     title: Цены
     to: '/ru/pricing'
-  - action: '$mdiBrain'
-    nested:
-      - action: '$mdiBookOpenPageVariantOutline'
-        title: Статьи
-        to: '/ru/articles'
-    title: Блог
-    to: '#'
+  # - action: '$mdiBrain'
+  #   nested:
+  #     - action: '$mdiBookOpenPageVariantOutline'
+  #       title: Статьи
+  #       to: '/ru/articles'
+  #   title: Блог
+  #   to: '#'
   - action: '$mdiAccount'
     nested:
       - action: '$mdiFileCertificateOutline'
@@ -88,6 +89,9 @@ data:
       - action: '$mdiContactsOutline'
         title: Контакты
         to: '/ru/contact'
+      - action: '$mdiBookOpenPageVariantOutline'
+        title: Статьи
+        to: '/ru/articles'
       - action: '$mdiDotsHorizontal'
         child:
           - action: '$mdiVideoWirelessOutline'

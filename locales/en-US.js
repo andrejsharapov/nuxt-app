@@ -137,6 +137,9 @@ export default {
     details: 'More details',
     events: 'More events',
   },
+  news: {
+    about: 'Mentions in news and media',
+  },
   no: 'No',
   poll: {
     title: 'UX Poll',

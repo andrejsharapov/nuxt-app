@@ -5,7 +5,7 @@ v-card.work-examples.shadow-sm.fill-height
   .px-4
     .rounded.hidden
       v-img(
-        :src='`http://cdn.madeas.ru/nuxt-app/photoshop/${item.folder}/done.jpg`',
+        :src='`/src/nuxt-app/photoshop/${item.folder}/done.jpg`',
         alt='',
         :aspect-ratio='item.ratio ? item.ratio : "1.7"',
         contain
@@ -30,7 +30,7 @@ v-card.work-examples.shadow-sm.fill-height
                   v-card
                     v-row.ma-0.fill-height(align='center', justify='center')
                       v-img(
-                        :src='`http://cdn.madeas.ru/nuxt-app/photoshop/${item.folder}/src/${img}.jpg`',
+                        :src='`/src/nuxt-app/photoshop/${item.folder}/src/${img}.jpg`',
                         alt='',
                         cover,
                         aspect-ratio='1.7'
@@ -49,7 +49,7 @@ v-card.work-examples.shadow-sm.fill-height
     v-spacer.d-none.d-sm-block
     v-btn.mx-auto.mb-2.mb-sm-0.mr-sm-3(
       download,
-      :href='`http://cdn.madeas.ru/nuxt-app/photoshop/${item.folder}/done.jpg`',
+      :href='`/src/nuxt-app/photoshop/${item.folder}/done.jpg`',
       :block='$vuetify.breakpoint.xs',
       text,
       title='',
@@ -58,7 +58,7 @@ v-card.work-examples.shadow-sm.fill-height
       | {{ $t("btn.download") }}
       v-icon(right) {{ mdiDownloadBoxOutline }}
     v-btn.mx-auto(
-      :href='`http://cdn.madeas.ru/nuxt-app/photoshop/${item.folder}/done.jpg`',
+      :href='`/src/nuxt-app/photoshop/${item.folder}/done.jpg`',
       :block='$vuetify.breakpoint.xs',
       target='_blank',
       title='',
