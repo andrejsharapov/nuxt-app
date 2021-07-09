@@ -77,7 +77,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'image_src', href: appMeta.host.url + appMeta.app.share },
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },
-      { rel: 'dns-prefetch', href: 'http://cdn.madeas.ru' },
+      // { rel: 'dns-prefetch', href: 'http://cdn.madeas.ru' },
     ],
   },
   i18n: {

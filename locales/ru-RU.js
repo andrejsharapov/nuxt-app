@@ -137,6 +137,9 @@ export default {
     details: 'Подробнее',
     events: 'Больше событий',
   },
+  news: {
+    about: 'Новости и упоминания в СМИ',
+  },
   no: 'Нет',
   poll: {
     title: 'UX Опрос',

@@ -96,7 +96,7 @@
                     class="d-flex flex-column align-center justify-center pt-3"
                   >
                     <iframe
-                      :src="`http://cdn.madeas.ru/nuxt-app/banners/${banner.slug}/src/bnr.html`"
+                      :src="`/src/nuxt-app/banners/${banner.slug}/src/bnr.html`"
                       :width="`${banner.animatic.width}px`"
                       :height="`${banner.animatic.height}px`"
                       frameborder="0"
