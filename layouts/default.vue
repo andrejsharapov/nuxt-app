@@ -193,16 +193,17 @@ v-app(v-resize='windowX')
     v-btn(
       v-show='goToTop',
       v-scroll='onScroll',
-      color='primary',
-      dark,
       fixed,
       bottom,
       right,
       fab,
+      dark,
+      color='primary',
       @click='toTop'
     )
       v-icon {{ mdiArrowUpBoldOutline }}
 
+  lazy-s-chat
   lazy-s-cookie-box
   notifications(group='translation', position='bottom right')
   notifications(group='copy-to-clipboard', position='top center')
@@ -317,8 +318,8 @@ export default {
         type: 'warn',
         title: 'Attention!',
         duration: 6000,
-        text:
-          'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
+        // eslint-disable-next-line
+        text: 'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
       })
     },
     onScroll(e) {
