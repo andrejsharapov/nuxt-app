@@ -81,6 +81,7 @@ data:
       - Notepad ++
       - Sublime Text
       - Visual Studio Code
+      - PHP Storm
     color: light-blue
     icon: $mdiMicrosoftVisualStudioCode
   - alt: CMS
