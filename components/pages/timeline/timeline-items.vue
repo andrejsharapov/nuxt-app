@@ -64,6 +64,8 @@ export default {
           return '$mdiLightbulbOnOutline'
         } else if (item === 'progress') {
           return '$mdiTrophyAward'
+        } else if (item === 'contribution') {
+          return '$mdiHandshakeOutline'
         } else if (item === 'other') {
           return '$mdiAccountCheck'
         } else {
@@ -88,6 +90,7 @@ $palette: (
   development: var(--cyan),
   idea: var(--yellow),
   progress: var(--green),
+  contribution: var(--v-info-lighten3),
   other: var(--orange),
 );
 
