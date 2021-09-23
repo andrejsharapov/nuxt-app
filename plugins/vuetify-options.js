@@ -67,6 +67,7 @@ import {
   mdiGoogleAnalytics,
   mdiMicrosoftVisualStudioCode,
   mdiWordpress,
+  mdiHandshakeOutline,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -203,6 +204,7 @@ export default function ({ app }) {
         mdiGoogleAnalytics,
         mdiMicrosoftVisualStudioCode,
         mdiWordpress,
+        mdiHandshakeOutline,
       },
     },
   }
