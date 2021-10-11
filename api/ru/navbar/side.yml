@@ -5,6 +5,7 @@ data:
   - action: '$mdiFolderOpen'
     nested:
       - action: '$mdiPaletteOutline'
+        group: 'design'
         child:
           - action: '$mdiCellphoneLink'
             title: Сайты
@@ -25,6 +26,7 @@ data:
         title: Веб-дизайн
         to: '/ru/cases/design'
       - action: '$mdiDevices'
+        group: 'dev'
         child:
           - action: '$mdiResponsive'
             title: Сайты
@@ -39,6 +41,7 @@ data:
         title: Разработка
         to: '/ru/cases/dev'
       - action: '$mdiDotsHorizontal'
+        group: 'works'
         child:
           - action: '$mdiDraw'
             title: Рисунки
@@ -57,6 +60,7 @@ data:
     title: Кейсы
     to: '/ru/cases'
   - action: '$mdiScriptText'
+    group: 'pricing'
     nested:
       - action: '$mdiPaletteSwatchOutline'
         disabled: true
@@ -93,6 +97,7 @@ data:
         title: Статьи
         to: '/ru/articles'
       - action: '$mdiDotsHorizontal'
+        group: 'more'
         child:
           - action: '$mdiVideoWirelessOutline'
             disabled: true
