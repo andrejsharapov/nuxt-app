@@ -9,7 +9,11 @@ v-list.navbar__list.hidden-x
         v-divider(:class='miniVariant ? "d-none" : "ml-6"')
       template(v-for='itemTwo of itemOne.nested')
         template(v-if='itemTwo.child')
-          v-list-group(:key='itemTwo.to', :disabled='itemTwo.disabled')
+          v-list-group(
+            :key='itemTwo.to',
+            :disabled='itemTwo.disabled',
+            :group='itemTwo.group'
+          )
             template(#activator)
               v-list-item-action
                 v-tooltip(right, nudge-right='8')
