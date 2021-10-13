@@ -26,9 +26,7 @@ v-list.navbar__list.hidden-x
               v-list-item.justify-start(
                 :key='index',
                 :to='itemThree.to',
-                :disabled='itemThree.disabled',
-                exact,
-                router
+                :disabled='itemThree.disabled'
               )
                 v-list-item-action
                   v-tooltip(v-if='miniVariant', nudge-right='8', right)
@@ -44,9 +42,7 @@ v-list.navbar__list.hidden-x
           v-list-item.justify-start(
             :key='itemTwo.title',
             :to='itemTwo.to',
-            :disabled='itemTwo.disabled',
-            exact,
-            router
+            :disabled='itemTwo.disabled'
           )
             v-list-item-action
               v-tooltip(nudge-right='8', right)
@@ -57,12 +53,7 @@ v-list.navbar__list.hidden-x
               v-list-item-title {{ itemTwo.title }}
 
     template(v-else)
-      v-list-item.justify-start(
-        :key='itemOne.id',
-        :to='itemOne.to',
-        exact,
-        router
-      )
+      v-list-item.justify-start(:key='itemOne.id', :to='itemOne.to')
         v-list-item-action
           v-tooltip(nudge-right='8', right)
             template(#activator='{ on }')
