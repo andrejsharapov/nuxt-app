@@ -29,11 +29,11 @@ data:
       - GIT
     color: red
     icon: $mdiGit
-  - alt: PHP
-    set:
-      - WordPress
-    color: deep-purple
-    icon: $mdiLanguagePhp
+  # - alt: PHP
+  #   set:
+  #     - WordPress
+  #   color: deep-purple
+  #   icon: $mdiLanguagePhp
   - alt: JavaScript
     set:
       - ES6
@@ -81,6 +81,7 @@ data:
       - Notepad ++
       - Sublime Text
       - Visual Studio Code
+      - PhpStorm
     color: light-blue
     icon: $mdiMicrosoftVisualStudioCode
   - alt: CMS

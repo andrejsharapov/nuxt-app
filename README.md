@@ -52,7 +52,7 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
   <a href="#uses">To top</a>
 </p>
 
-[preview]: https://sharapov.dev/src/README.png
+[preview]: https://sharapov.dev/README.png
 
 [wp]: https://madeas.ru
 [gulp]: https://andrejsharapov.github.io

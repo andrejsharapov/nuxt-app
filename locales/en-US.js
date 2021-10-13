@@ -3,6 +3,16 @@ import { appMeta as config } from '../config/app'
 export default {
   all: 'All',
   app: {
+    chat: {
+      title: 'Chat support',
+      loading: {
+        message: 'Please stand by',
+      },
+      state: {
+        open: 'Open',
+        close: 'Close',
+      },
+    },
     cookie: {
       message:
         'The site uses analytics tools to analyze user actions in order to improve the quality of the site.',
@@ -136,6 +146,9 @@ export default {
     base: 'More',
     details: 'More details',
     events: 'More events',
+  },
+  news: {
+    about: 'Mentions in news and media',
   },
   no: 'No',
   poll: {
@@ -353,6 +366,9 @@ export default {
   },
   source: 'Source | Sources',
   'table-of-contents': 'Table of contents | table of contents',
+  support: {
+    message: 'Your browser does not support iframes!',
+  },
   yes: 'Yes',
   works: {
     'works-not-found': 'Works not found',

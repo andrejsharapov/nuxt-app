@@ -4,6 +4,16 @@ import { designRu, devRu } from '../lib/pricing-services'
 export default {
   all: 'Все',
   app: {
+    chat: {
+      title: 'Чат поддержки',
+      loading: {
+        message: 'Подождите, пожалуйста',
+      },
+      state: {
+        open: 'Открыть',
+        close: 'Закрыть',
+      },
+    },
     cookie: {
       message:
         'На сайте используются средства аналитики, для анализа действий пользователя, в целях улучшения качества сайта.',
@@ -137,6 +147,9 @@ export default {
     base: 'Еще',
     details: 'Подробнее',
     events: 'Больше событий',
+  },
+  news: {
+    about: 'Новости и упоминания в СМИ',
   },
   no: 'Нет',
   poll: {
@@ -418,6 +431,9 @@ export default {
   },
   source: 'Источник | Исходники',
   'table-of-contents': 'Содержание | содержание',
+  support: {
+    message: 'Ваш браузер не поддерживает плавающие фреймы!',
+  },
   yes: 'Да',
   works: {
     'works-not-found': 'Работы не представлены',

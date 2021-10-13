@@ -112,7 +112,7 @@ mixin sheet(color, saturation, size)
               v-card-subtitle.white--text.text-no-wrap.op-8 {{ counter.title }}
       //- /SECTION
 
-      //- SECTION[epic=home] PRORESS
+      //- SECTION[epic=home] PROGRESS
       //- ANCHOR 1/3
       v-col(cols='12', sm='8')
         s-section-heading-anchor.text-no-wrap(
