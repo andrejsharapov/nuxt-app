@@ -5,7 +5,7 @@ img:
   src: /src/nuxt-app/banners/gk-rte-240x400/preview.jpg
   alt: Production of html5 banner for "RusTechExpert" Group of Companies
 ux:
-  price: Разработка html5 баннера
+  price: Development of html5 banner
 created: '2018-03-21'
 period:
   - '2018-03-21'

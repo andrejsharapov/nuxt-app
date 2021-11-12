@@ -5,7 +5,7 @@ img:
   src: /src/nuxt-app/banners/uсalc-240x400/preview.jpg
   alt: Creation of html5 banner for the "uCalc"
 ux:
-  price: Разработка html5 баннера
+  price: Development of html5 banner
 created: '2018-01-12'
 period:
   - '2018-01-12'

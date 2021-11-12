@@ -5,7 +5,7 @@ img:
   src: /src/nuxt-app/banners/chatovod-240x400/preview.jpg
   alt: Making html5 banner for "Chatovod.ru"
 ux:
-  price: Разработка html5 баннера
+  price: Development of html5 banner
 created: '2017-10-10'
 period:
   - '2017-10-10'
