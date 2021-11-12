@@ -1,9 +1,9 @@
 hide: false
 type: dev-banner
-title: Изготовление html5 баннера «LOOKING FOR A JOB»
+title: Изготовление html5 баннера «ИЩУ РАБОТУ»
 img:
   src: /src/nuxt-app/banners/looking-for-a-job-240x400/preview.jpg
-  alt: Изготовление html5 баннера «LOOKING FOR A JOB»
+  alt: Изготовление html5 баннера «ИЩУ РАБОТУ»
 ux:
   price: Разработка html5 баннера
 created: '2018-01-14'
