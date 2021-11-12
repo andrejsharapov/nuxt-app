@@ -2,7 +2,7 @@ hide: false
 type: dev-banner
 title: Изготовление html5 баннера для компании «uCalc»
 img:
-  src: /src/nuxt-app/banners/uсalc-728x90/preview.jpg
+  src: /src/nuxt-app/banners/ucalc-728x90/preview.jpg
   alt: Изготовление html5 баннера для компании «uCalc»
 ux:
   price: Разработка html5 баннера
@@ -38,7 +38,7 @@ done:
     - цикличность сценария;
     # - подготовка баннера к размещению на рекламной площадке;
 storyboard:
-  src: /src/nuxt-app/banners/uсalc-728x90/storyboard.jpg
+  src: /src/nuxt-app/banners/ucalc-728x90/storyboard.jpg
   alt:
 animatic:
   width: 728
