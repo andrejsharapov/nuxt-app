@@ -1,0 +1,48 @@
+hide: false
+type: dev-banner
+title: Изготовление html5 баннера для «Chatovod.ru»
+img:
+  src: /src/nuxt-app/banners/chatovod-240x400/preview.jpg
+  alt: Изготовление html5 баннера для «Chatovod.ru»
+ux:
+  price: Разработка html5 баннера
+created: '2017-10-10'
+period:
+  - '2017-10-10'
+  - '2017-10-12'
+deadline: На выполнение поставленной задачи было затрачено 2 дня.
+client:
+  logoJPG:
+  logoWEBP:
+  head: Chatovod.ru
+  description: Chatovod.ru — сервис, который позволяет быстро и бесплатно разработать многопользовательский чат для вашего сайта.
+  issues:
+  task: Разработка html5 баннера для сервиса, который позволяет быстро и бесплатно добавить многопользовательский чат на ваш сайт.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: Мои
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - разработка сценария;
+    - раскадровка;
+    - подготовка текстов;
+    - аниматик;
+    - программирование;
+    - цикличность сценария;
+    # - подготовка баннера к размещению на рекламной площадке;
+storyboard:
+  src: /src/nuxt-app/banners/chatovod-240x400/storyboard.jpg
+  alt:
+animatic:
+  width: 240
+  height: 400
+  reload: false
+resize: 240 x 400

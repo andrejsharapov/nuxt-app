@@ -1,23 +1,23 @@
 hide: false
 type: dev-banner
-title: Production of html5 banner for "Alpari"
+title: Creation of html5 banner for the "uCalc"
 img:
-  src: /src/nuxt-app/banners/alpari/preview.jpg
-  alt: Production of html5 banner for "Alpari"
+  src: /src/nuxt-app/banners/ucalc-728x90/preview.jpg
+  alt: Creation of html5 banner for the "uCalc"
 ux:
   price: Development of html5 banner
-created: '2019-10-18'
+created: '2017-10-12'
 period:
-  - '2019-10-18'
-  - '2019-10-18'
+  - '2017-10-12'
+  - '2017-10-12'
 deadline: The task took about 2 hours to complete.
 client:
   logoJPG:
   logoWEBP:
-  head: Alpari Group
-  description: 'Alpari is a Forex, Precious Metals, and CFD broker. Forex with Alpari - Forex trading with the # 1 broker in Moscow and Russia.'
+  head: uCalc
+  description: uCalc is a universal constructor of calculators and forms for business.
   issues:
-  task: 'To develop a banner for the company`s website in honor of the New Year`s campaign. The banner should contain the phrases: "Replenish without worries!" and "We will refund the commission for any top-ups."'
+  task: 'Design a simple yet modern, effective, and eye-catching html5 uCalc banner from static image.'
 preview:
   tools:
     - title: Design
@@ -38,7 +38,7 @@ done:
     - the cyclical nature of the scenario;
     # - preparation of a banner for placement on an advertising platform;
 storyboard:
-  src: /src/nuxt-app/banners/alpari/storyboard.jpg
+  src: /src/nuxt-app/banners/ucalc-728x90/storyboard.jpg
   alt:
 animatic:
   width: 728
