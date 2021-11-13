@@ -2,7 +2,7 @@ hide: false
 type: dev-banner
 title: Creation of html5 banner for the "uCalc"
 img:
-  src: /src/nuxt-app/banners/uсalc-240x400/preview.jpg
+  src: /src/nuxt-app/banners/ucalc-240x400/preview.jpg
   alt: Creation of html5 banner for the "uCalc"
 ux:
   price: Development of html5 banner
@@ -38,7 +38,7 @@ done:
     - the cyclical nature of the scenario;
     # - preparation of a banner for placement on an advertising platform;
 storyboard:
-  src: /src/nuxt-app/banners/uсalc-240x400/storyboard.jpg
+  src: /src/nuxt-app/banners/ucalc-240x400/storyboard.jpg
   alt:
 animatic:
   width: 240
