@@ -7,6 +7,7 @@ import githubOutline from '@/components/icons/github-outline'
 import twitterOutline from '@/components/icons/twitter-outline'
 import vkOutline from '@/components/icons/vk-outline'
 import instagramOutline from '@/components/icons/instagram-outline'
+import telegramOutline from '@/components/icons/telegram-outline'
 
 import {
   mdiHomeRoof,
@@ -49,7 +50,6 @@ import {
   mdiWhatsapp,
   mdiDiscord,
   mdiSkype,
-  mdiTelegram,
   mdiChartTimelineVariant,
   mdiTrophyAward,
   mdiAccountCheck,
@@ -68,6 +68,7 @@ import {
   mdiMicrosoftVisualStudioCode,
   mdiWordpress,
   mdiHandshakeOutline,
+  mdiBriefcaseEyeOutline,
 } from '@mdi/js'
 
 export default function ({ app }) {
@@ -145,6 +146,9 @@ export default function ({ app }) {
         vkOutline: {
           component: vkOutline,
         },
+        telegramOutline: {
+          component: telegramOutline,
+        },
         // NOTE[epic=icons] MDI
         mdiHomeRoof,
         mdiFolderOpen,
@@ -186,7 +190,6 @@ export default function ({ app }) {
         mdiWhatsapp,
         mdiDiscord,
         mdiSkype,
-        mdiTelegram,
         mdiChartTimelineVariant,
         mdiTrophyAward,
         mdiAccountCheck,
@@ -205,6 +208,7 @@ export default function ({ app }) {
         mdiMicrosoftVisualStudioCode,
         mdiWordpress,
         mdiHandshakeOutline,
+        mdiBriefcaseEyeOutline,
       },
     },
   }
