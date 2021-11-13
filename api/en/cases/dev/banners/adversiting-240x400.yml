@@ -1,0 +1,48 @@
+hide: false
+type: dev-banner
+title: Making an advertising html5 banner
+img:
+  src: /src/nuxt-app/banners/adversiting-240x400/preview.jpg
+  alt: Making an advertising html5 banner
+ux:
+  price: Development of html5 banner
+created: '2017-10-07'
+period:
+  - '2017-10-07'
+  - '2017-10-07'
+deadline: The task took about 3 hours to complete.
+client:
+  logoJPG:
+  logoWEBP:
+  head:
+  description:
+  issues:
+  task:
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: My
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - script development;
+    - static storyboard;
+    - preparation of texts;
+    - animatic (animated storyboard);
+    - programming;
+    # - the cyclical nature of the scenario;
+    # - preparation of a banner for placement on an advertising platform;
+storyboard:
+  src: /src/nuxt-app/banners/adversiting-240x400/storyboard.jpg
+  alt:
+animatic:
+  width: 240
+  height: 400
+  reload: false
+resize: 240 x 400

@@ -1,0 +1,48 @@
+hide: false
+type: dev-banner
+title: Making html5 banner for "Chatovod.ru"
+img:
+  src: /src/nuxt-app/banners/chatovod-240x400/preview.jpg
+  alt: Making html5 banner for "Chatovod.ru"
+ux:
+  price: Development of html5 banner
+created: '2017-10-10'
+period:
+  - '2017-10-10'
+  - '2017-10-12'
+deadline: It took 2 days to complete the task.
+client:
+  logoJPG:
+  logoWEBP:
+  head: Chatovod.ru
+  description: Chatovod.ru - allows fast and free add multiuser chat widget to your site or create standalone chat and earn money!
+  issues:
+  task: Development of an advertising html5 banner.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: My
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - script development;
+    - static storyboard;
+    - preparation of texts;
+    - animatic (animated storyboard);
+    - programming;
+    - the cyclical nature of the scenario;
+    # - preparation of a banner for placement on an advertising platform;
+storyboard:
+  src: /src/nuxt-app/banners/chatovod-240x400/storyboard.jpg
+  alt:
+animatic:
+  width: 240
+  height: 400
+  reload: false
+resize: 240 x 400
