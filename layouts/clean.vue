@@ -21,7 +21,7 @@ v-app(v-resize='windowX')
     s-layout-navbar-prepend.ml-n4(
       v-if='$vuetify.breakpoint.smAndUp && (clipped || !drawer)'
     )
-    v-tooltip(bottom)
+    v-tooltip(v-if='$vuetify.breakpoint.mdAndUp', bottom)
       template(#activator='{ on: sidebar }')
         v-btn(icon, v-on='{ ...sidebar }', @click.stop='drawer = !drawer')
           v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
@@ -31,13 +31,14 @@ v-app(v-resize='windowX')
     lazy-s-layout-job-offer
 
     v-tooltip(bottom)
-      template(#activator='{ on: settings}')
+      template(#activator='{ on: settings }')
         v-btn(icon, v-on='settings', @click.stop='rightDrawer = !rightDrawer')
           v-icon {{ mdiCogOutline }}
       span {{ $t("settings") }}
   //- /SECTION
 
   //- SECTION[epic=layout] NAVIGATION
+  s-layout-navbar-bottom(v-if='$vuetify.breakpoint.smAndDown')
   v-navigation-drawer.layout__navbar(
     v-model='drawer',
     :mini-variant='miniVariant',
@@ -210,7 +211,7 @@ v-app(v-resize='windowX')
   s-layout-footer(:mini-variant='miniVariant', :drawer='drawer')
   //- /SECTION
 
-  v-fab-transition(v-if='$vuetify.breakpoint.smAndUp')
+  v-fab-transition(v-if='$vuetify.breakpoint.mdAndUp')
     v-btn(
       v-show='goToTop',
       v-scroll='onScroll',
@@ -225,6 +226,7 @@ v-app(v-resize='windowX')
       v-icon {{ mdiArrowUpBoldOutline }}
 
   lazy-s-cookie-box
+  s-layout-navbar-bottom
   notifications(group='translation', position='bottom right')
   notifications(group='copy-to-clipboard', position='top center')
   notifications(group='case-switch-dates', position='top right')
