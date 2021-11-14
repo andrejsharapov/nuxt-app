@@ -34,8 +34,7 @@ export default {
         type: 'warn',
         title: 'Attention!',
         duration: 6000,
-        text:
-          'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
+        text: 'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
       })
     },
   },

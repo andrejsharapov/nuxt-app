@@ -40,6 +40,7 @@ v-app(v-resize='windowX')
   //- SECTION[epic=layout] NAVIGATION
   s-layout-navbar-bottom(v-if='$vuetify.breakpoint.smAndDown')
   v-navigation-drawer.layout__navbar(
+    v-else,
     v-model='drawer',
     :mini-variant='miniVariant',
     :clipped='clipped',
