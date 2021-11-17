@@ -30,7 +30,12 @@
               <v-fade-transition origin="center center">
                 <div
                   v-if="hover"
-                  class="d-flex align-center justify-center transition-fast-in-fast-out"
+                  class="
+                    d-flex
+                    align-center
+                    justify-center
+                    transition-fast-in-fast-out
+                  "
                   style="
                     height: 100%;
                     opacity: 0.9;

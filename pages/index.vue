@@ -384,8 +384,7 @@ export default {
       } else if (this.$i18n.locale === 'en') {
         return {
           title: 'My story',
-          path:
-            'https://andrejsharapov.medium.com/what-if-you-are-a-solo-developer-7c6cee66bf48',
+          path: 'https://andrejsharapov.medium.com/what-if-you-are-a-solo-developer-7c6cee66bf48',
         }
       }
     },

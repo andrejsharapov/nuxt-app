@@ -1,14 +1,3 @@
-import vsCode from '@/components/icons/vs-code'
-import dribbbleOutline from '@/components/icons/dribbble-outline'
-import behanceOutline from '@/components/icons/behance-outline'
-import mediumOutline from '@/components/icons/medium-outline'
-import codepenOutline from '@/components/icons/codepen-outline'
-import githubOutline from '@/components/icons/github-outline'
-import twitterOutline from '@/components/icons/twitter-outline'
-import vkOutline from '@/components/icons/vk-outline'
-import instagramOutline from '@/components/icons/instagram-outline'
-import telegramOutline from '@/components/icons/telegram-outline'
-
 import {
   mdiHomeRoof,
   mdiFolderOpen,
@@ -70,6 +59,16 @@ import {
   mdiHandshakeOutline,
   mdiBriefcaseEyeOutline,
 } from '@mdi/js'
+import vsCode from '@/components/icons/vs-code'
+import dribbbleOutline from '@/components/icons/dribbble-outline'
+import behanceOutline from '@/components/icons/behance-outline'
+import mediumOutline from '@/components/icons/medium-outline'
+import codepenOutline from '@/components/icons/codepen-outline'
+import githubOutline from '@/components/icons/github-outline'
+import twitterOutline from '@/components/icons/twitter-outline'
+import vkOutline from '@/components/icons/vk-outline'
+import instagramOutline from '@/components/icons/instagram-outline'
+import telegramOutline from '@/components/icons/telegram-outline'
 
 export default function ({ app }) {
   return {
