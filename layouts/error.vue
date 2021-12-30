@@ -171,16 +171,18 @@ export default {
 }
 </script>
 
-<style>
-.error-page__back {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: scale(0.7) translate(-157px, 66px);
+<style lang="scss">
+.error-page {
+  &__back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.7) translate(-157px, 66px);
 
-  @media (--md-min) {
-    top: 6vh;
-    left: 5vw;
+    @media (--md-min) {
+      top: 6vh;
+      left: 5vw;
+    }
   }
 }
 </style>

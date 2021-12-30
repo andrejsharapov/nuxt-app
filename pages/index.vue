@@ -401,20 +401,22 @@ export default {
 </script>
 
 <style lang="scss">
-.page__index {
-  --stop-color-one: var(--primary);
-  --stop-color-two: var(--accent);
-  --gradient-default: linear-gradient(
-    45deg,
-    var(--stop-color-one, var(--primary)) 50%,
-    var(--stop-color-two, var(--accent)) 100%
-  );
+.page {
+  &__index {
+    --stop-color-one: var(--primary);
+    --stop-color-two: var(--accent);
+    --gradient-default: linear-gradient(
+      45deg,
+      var(--stop-color-one, var(--primary)) 50%,
+      var(--stop-color-two, var(--accent)) 100%
+    );
+  }
 }
 
 .transition {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: var(--base-time);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .transform {
@@ -432,6 +434,7 @@ export default {
   --scale-y: 1.25;
 }
 
+// stylelint-disable selector-class-pattern
 .-translate-y-1 {
   --translate-y: -0.25rem;
 }

@@ -84,9 +84,11 @@ export default {
 }
 </script>
 
-<style>
-.page__drawings {
-  --stop-color-one: var(--pink);
-  --stop-color-two: var(--orange);
+<style lang="scss">
+.page {
+  &__drawings {
+    --stop-color-one: var(--pink);
+    --stop-color-two: var(--orange);
+  }
 }
 </style>

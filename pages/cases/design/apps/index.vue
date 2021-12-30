@@ -85,9 +85,11 @@ export default {
 }
 </script>
 
-<style>
-.page__des-apps {
-  --stop-color-one: var(--v-info-lighten1);
-  --stop-color-two: var(--info);
+<style lang="scss">
+.page {
+  &__des-apps {
+    --stop-color-one: var(--v-info-lighten1);
+    --stop-color-two: var(--info);
+  }
 }
 </style>

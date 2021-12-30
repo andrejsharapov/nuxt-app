@@ -600,17 +600,17 @@ export default {
 
 <style lang="postcss">
 .content-load {
+  display: flex;
   position: fixed;
+  z-index: 1001;
   top: 0;
   left: 0;
-  overflow: hidden;
-  z-index: 1001;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
   &__text {
     span {

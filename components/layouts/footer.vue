@@ -46,12 +46,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.layout__footer {
-  transition: all 0.2s var(--cubic-default) forwards !important;
+.layout {
+  &__footer {
+    transition: all 0.2s var(--cubic-default) forwards !important;
 
-  .heart {
-    display: inline-block;
-    animation: heart calc(var(--base-time) * 4) var(--cubic) infinite;
+    .heart {
+      display: inline-block;
+      animation: heart calc(var(--base-time) * 4) var(--cubic) infinite;
+    }
   }
 }
 
@@ -59,6 +61,7 @@ export default {
   49% {
     transform: scale(0.7);
   }
+
   50% {
     transform: scale(0.5);
   }

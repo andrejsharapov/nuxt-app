@@ -21,19 +21,19 @@ export default {
     border-radius: 1rem;
     background-image: linear-gradient(
       to top,
-      hsla(0, 0%, 100%, 0.2),
-      hsla(0, 0%, 100%, 0.04)
+      hsla(0deg 0% 100% / 20%),
+      hsla(0deg 0% 100% / 4%)
     );
 
     &:nth-child(1) {
-      animation: flying 8s infinite alternate both;
       transform: rotateX(40deg) rotateX(18deg) rotateZ(53deg);
+      animation: flying 8s infinite alternate both;
     }
 
     &:nth-child(2) {
-      animation: flying 6s infinite alternate both;
       transform: translate3d(0, 90px, 0) rotateX(40deg) rotateX(18deg)
         rotateZ(53deg);
+      animation: flying 6s infinite alternate both;
     }
   }
 }
@@ -42,6 +42,7 @@ export default {
   0% {
     transform: translateY(30px) rotateX(40deg) rotateX(18deg) rotateZ(53deg);
   }
+
   100% {
     transform: translateY(-30px) rotateX(40deg) rotateX(18deg) rotateZ(53deg);
   }

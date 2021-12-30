@@ -91,9 +91,11 @@ export default {
 }
 </script>
 
-<style>
-.page__logo {
-  --stop-color-one: var(--v-success-darken3);
-  --stop-color-two: var(--v-success-lighten1);
+<style lang="scss">
+.page {
+  &__logo {
+    --stop-color-one: var(--v-success-darken3);
+    --stop-color-two: var(--v-success-lighten1);
+  }
 }
 </style>

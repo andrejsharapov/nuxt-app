@@ -88,15 +88,15 @@ export default {
   position: relative;
 
   &::before {
-    position: absolute;
     content: '';
+    position: absolute;
+    z-index: 0;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0;
-    background-color: var(--gray-dark);
     opacity: 0.4;
+    background-color: var(--gray-dark);
   }
 
   &.mh-25 {

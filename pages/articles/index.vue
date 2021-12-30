@@ -131,9 +131,11 @@ export default {
 }
 </script>
 
-<style scoped>
-.page__articles {
-  --stop-color-one: var(--primary);
-  --stop-color-two: var(--accent);
+<style lang="scss" scoped>
+.page {
+  &__articles {
+    --stop-color-one: var(--primary);
+    --stop-color-two: var(--accent);
+  }
 }
 </style>

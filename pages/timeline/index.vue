@@ -79,10 +79,12 @@ export default {
 }
 </script>
 
-<style>
-.page__timeline {
-  --stop-color-one: var(--v-error-darken2);
-  --stop-color-two: var(--v-error-lighten3);
+<style lang="scss">
+.page {
+  &__timeline {
+    --stop-color-one: var(--v-error-darken2);
+    --stop-color-two: var(--v-error-lighten3);
+  }
 }
 
 .v-timeline {

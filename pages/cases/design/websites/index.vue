@@ -205,13 +205,15 @@ export default {
 </script>
 
 <style>
-.page__des-site {
-  --stop-color-one: #5731a1;
-  --stop-color-two: #5b62e0;
-  --gradient-default: linear-gradient(
-    45deg,
-    var(--stop-color-one, var(--primary)) 50%,
-    var(--stop-color-two, var(--accent)) 100%
-  );
+.page {
+  &__des-site {
+    --stop-color-one: #5731a1;
+    --stop-color-two: #5b62e0;
+    --gradient-default: linear-gradient(
+      45deg,
+      var(--stop-color-one, var(--primary)) 50%,
+      var(--stop-color-two, var(--accent)) 100%
+    );
+  }
 }
 </style>

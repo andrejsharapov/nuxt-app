@@ -84,9 +84,11 @@ export default {
 }
 </script>
 
-<style>
-.page__projects {
-  --stop-color-one: var(--orange);
-  --stop-color-two: var(--yellow);
+<style lang="scss">
+.page {
+  &__projects {
+    --stop-color-one: var(--orange);
+    --stop-color-two: var(--yellow);
+  }
 }
 </style>

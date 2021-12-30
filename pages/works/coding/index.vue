@@ -97,9 +97,11 @@ export default {
 }
 </script>
 
-<style>
-.page__conding {
-  --stop-color-one: var(--black);
-  --stop-color-two: var(--dark);
+<style lang="scss">
+.page {
+  &__conding {
+    --stop-color-one: var(--black);
+    --stop-color-two: var(--dark);
+  }
 }
 </style>

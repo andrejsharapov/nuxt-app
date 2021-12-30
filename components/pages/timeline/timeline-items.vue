@@ -104,14 +104,18 @@ $palette: (
 
 .timeline {
   &__item {
-    .v-chip--active {
-      &::before {
-        opacity: 0;
+    .v-chip {
+      &--active {
+        &::before {
+          opacity: 0;
+        }
       }
     }
 
-    .v-list-item__content {
-      line-height: 1.375rem;
+    .v-list-item {
+      &__content {
+        line-height: 1.375rem;
+      }
     }
   }
 }

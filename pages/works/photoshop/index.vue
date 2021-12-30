@@ -91,9 +91,11 @@ export default {
 }
 </script>
 
-<style>
-.page__photoshop {
-  --stop-color-one: #190d80;
-  --stop-color-two: #1cb7ff;
+<style lang="scss">
+.page {
+  &__photoshop {
+    --stop-color-one: #190d80;
+    --stop-color-two: #1cb7ff;
+  }
 }
 </style>

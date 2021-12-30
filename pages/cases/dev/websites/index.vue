@@ -212,14 +212,16 @@ export default {
 }
 </script>
 
-<style>
-.page__dev-site {
-  --stop-color-one: var(--orange);
-  --stop-color-two: #e24275;
-  --gradient-default: linear-gradient(
-    45deg,
-    var(--stop-color-one, var(--primary)) 50%,
-    var(--stop-color-two, var(--accent)) 100%
-  );
+<style lang="scss">
+.page {
+  &__dev-site {
+    --stop-color-one: var(--orange);
+    --stop-color-two: #e24275;
+    --gradient-default: linear-gradient(
+      45deg,
+      var(--stop-color-one, var(--primary)) 50%,
+      var(--stop-color-two, var(--accent)) 100%
+    );
+  }
 }
 </style>

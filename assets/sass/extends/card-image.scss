@@ -15,9 +15,9 @@ $shadow-xl: var(--shadow-xl);
         transform: perspective(800px) rotateY(-15deg) translateY(-50px)
           rotateX(10deg) scale(1);
         filter: blur(0);
+        transition: all $time cubic-bezier(0.25, 0.1, 0, 2.05);
         opacity: 1;
         box-shadow: $shadow-xl !important;
-        transition: all $time cubic-bezier(0.25, 0.1, 0, 2.05);
 
         &:hover {
           transform: none;
