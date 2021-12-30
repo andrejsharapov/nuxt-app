@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'ConferencesIndex',
   layout: 'clean',
   data: () => ({
     page: {

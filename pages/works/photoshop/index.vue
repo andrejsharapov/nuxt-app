@@ -53,6 +53,7 @@ import { mdiVectorPolylineEdit } from '@mdi/js'
 import { photoshop } from '~/lib/page-meta'
 
 export default {
+  name: 'PhotoshopIndex',
   async asyncData({ $content, params }) {
     const photoshopList = await $content('works/photoshop', params.slug)
       .sortBy('date', 'desc')

@@ -44,6 +44,7 @@ import { mdiLightbulbOn } from '@mdi/js'
 import { projects } from '~/lib/page-meta'
 
 export default {
+  name: 'ProjectsIndex',
   async asyncData({ $content, params, app }) {
     const projectsLocale = await $content(
       `${app.i18n.locale}/projects`,

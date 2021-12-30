@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'PricingIndex',
   layout: 'clean',
   data: () => ({
     page: {

@@ -47,6 +47,7 @@ import { mdiDraw } from '@mdi/js'
 import { drawings } from '~/lib/page-meta'
 
 export default {
+  name: 'DrawingsIndex',
   async asyncData({ $content, params }) {
     const drawingsList = await $content('works/drawings/list', params.slug)
       .only('list')

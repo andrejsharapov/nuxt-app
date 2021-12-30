@@ -52,6 +52,7 @@ import { mdiVectorCurve } from '@mdi/js'
 import { illustrations } from '~/lib/page-meta'
 
 export default {
+  name: 'DesignIllustrationsIndex',
   async asyncData({ $content, params }) {
     const illustrationsLocale = await $content('illustrations', params.slug)
       .sortBy('date', 'desc')

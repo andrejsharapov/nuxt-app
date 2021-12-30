@@ -583,6 +583,7 @@
 
 <script>
 export default {
+  name: 'Siteloading',
   data: () => ({
     loading: false,
   }),

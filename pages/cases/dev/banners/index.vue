@@ -83,6 +83,7 @@ import {
 import { devBanners } from '~/lib/page-meta'
 
 export default {
+  name: 'DevBannersIndex',
   async asyncData({ $content, app, params }) {
     const getBanners = await $content(
       `${app.i18n.locale}/cases/dev/banners`,

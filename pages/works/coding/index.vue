@@ -55,6 +55,7 @@ import { mdiCodeJson, mdiOpenInNew } from '@mdi/js'
 import { coding } from '~/lib/page-meta'
 
 export default {
+  name: 'CodingIndex',
   async asyncData({ $content, params }) {
     const codeLocale = await $content('works/coding', params.slug)
       .where({ type: 'coding' })

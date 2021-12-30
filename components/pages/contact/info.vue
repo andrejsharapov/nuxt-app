@@ -25,7 +25,7 @@ v-row.contact-info
 import { mdiSkype } from '@mdi/js'
 
 export default {
-  name: 'Info',
+  name: 'ContactInfo',
   props: {
     info: {
       type: Array,

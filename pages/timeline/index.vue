@@ -39,6 +39,7 @@ import { mdiTimeline } from '@mdi/js'
 import { timeline } from '~/lib/page-meta'
 
 export default {
+  name: 'TimelineIndex',
   async asyncData({ $content, params, app }) {
     const timeLineLocale = await $content(
       `${app.i18n.locale}/timeline`,

@@ -264,6 +264,7 @@ import {
 import { appMeta as done } from '~/config/app'
 
 export default {
+  name: 'Index',
   async asyncData({ $content, params, app }) {
     const getTimeline = await $content(
       `${app.i18n.locale}/timeline`,
