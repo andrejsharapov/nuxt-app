@@ -16,7 +16,7 @@ chartOptions:
         zoomin: false
         zoomout: false
   title:
-    text: Website development 2010 - 2021
+    text: Website development 2010 - 2022
     align: left
   subtitle:
     text: 'Experience with site content management systems'
@@ -110,6 +110,7 @@ chartOptions:
     - 2019
     - 2020
     - 2021
+    - 2022
     - ---
   annotations:
     xaxis:
@@ -156,12 +157,14 @@ chartSeries:
       - 2
       - null
       - null
+      - null
   - name: uCoz
     data:
       - 2
       - 3
       - 8
       - 4
+      - null
       - null
       - null
       - null
@@ -186,6 +189,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: WIX
     data:
       - null
@@ -193,6 +197,7 @@ chartSeries:
       - 1
       - null
       - 4
+      - null
       - null
       - null
       - null
@@ -216,6 +221,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: 1C Bitrix
     data:
       - null
@@ -227,6 +233,7 @@ chartSeries:
       - 1
       - null
       - 1
+      - null
       - null
       - null
       - null
@@ -246,6 +253,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: WordPress
     data:
       - null
@@ -260,6 +268,7 @@ chartSeries:
       - 1
       - null
       - null
+      - 1
       - null
   - name: Nuxt
     data:
@@ -273,6 +282,7 @@ chartSeries:
       - null
       - null
       - null
+      - 1
       - 1
       - 1
       - null

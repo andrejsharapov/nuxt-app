@@ -16,7 +16,7 @@ chartOptions:
         zoomin: false
         zoomout: false
   title:
-    text: Разработка сайтов 2010 - 2021 г.
+    text: Разработка сайтов 2010 - 2022 г.
     align: left
   subtitle:
     text: 'Опыт работы с системами управления контентом сайтов'
@@ -110,6 +110,7 @@ chartOptions:
     - 2019
     - 2020
     - 2021
+    - 2022
     - ---
   annotations:
     xaxis:
@@ -155,12 +156,15 @@ chartSeries:
       - 5
       - 2
       - null
+      - null
+      - null
   - name: uCoz
     data:
       - 2
       - 3
       - 8
       - 4
+      - null
       - null
       - null
       - null
@@ -185,6 +189,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: WIX
     data:
       - null
@@ -192,6 +197,7 @@ chartSeries:
       - 1
       - null
       - 4
+      - null
       - null
       - null
       - null
@@ -215,6 +221,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: 1C Bitrix
     data:
       - null
@@ -226,6 +233,7 @@ chartSeries:
       - 1
       - null
       - 1
+      - null
       - null
       - null
       - null
@@ -245,6 +253,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: WordPress
     data:
       - null
@@ -258,6 +267,7 @@ chartSeries:
       - 3
       - 1
       - null
+      - 1
       - null
       - null
   - name: Nuxt
@@ -272,6 +282,7 @@ chartSeries:
       - null
       - null
       - null
+      - 1
       - 1
       - 1
       - null
