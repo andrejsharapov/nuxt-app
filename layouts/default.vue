@@ -1,7 +1,7 @@
 <template lang="pug">
 v-app(v-resize='windowX')
   //- v-system-bar(absolute, color='warning')
-  //-   .text-caption.white--text Consequat excepteur aute do elit eiusmod consequat anim ullamco enim.
+  //-   .text-caption.white--text
 
   //- SECTION[epic=layout] HEADER
   v-app-bar(
@@ -188,7 +188,12 @@ v-app(v-resize='windowX')
   //- /SECTION
 
   //- SECTION[epic=layout] FOOTER
-  s-layout-footer(:mini-variant='miniVariant', :drawer='drawer')
+  s-layout-footer(
+    :mini-variant='miniVariant',
+    :drawer='drawer',
+    :right-drawer='rightDrawer',
+    :position='rightPosition'
+  )
   //- /SECTION
 
   v-fab-transition(v-if='$vuetify.breakpoint.mdAndUp')
