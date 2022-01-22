@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard-scss',
-    'stylelint-config-recommended-vue/scss',
-    'stylelint-config-property-sort-order-smacss',
-    'stylelint-config-prettier',
-  ],
+  extends: ['stylelint-config-prettier'],
   overrides: [
     {
       files: ['*.sass', '**/*.sass'],

@@ -14,7 +14,7 @@ export default {
     '@nuxt/components',
     '@nuxtjs/html-validator',
     '@nuxtjs/eslint-module',
-    '@nuxt/postcss8',
+    // '@nuxt/postcss8',
     '@nuxtjs/stylelint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
