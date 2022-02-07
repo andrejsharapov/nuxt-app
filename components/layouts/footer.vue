@@ -26,7 +26,7 @@ v-footer.layout__footer.py-0(
 import { mdiHeart, mdiOpenInNew } from '@mdi/js'
 
 export default {
-  name: 'Footer',
+  name: 'LayoutFooter',
   props: {
     miniVariant: {
       type: Boolean,

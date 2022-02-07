@@ -44,7 +44,7 @@ import { mdiCellphoneCog } from '@mdi/js'
 import { desApps } from '~/lib/page-meta'
 
 export default {
-  name: 'DesignAppsIndex',
+  name: 'CasesDesignAppsIndex',
   async asyncData({ $content, app, params }) {
     const desAppsLocale = await $content(
       `${app.i18n.locale}/cases/design/apps`,

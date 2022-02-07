@@ -31,6 +31,7 @@
 import { certificates } from '~/lib/page-meta'
 
 export default {
+  name: 'CertificatesIndex',
   async asyncData({ $content, params }) {
     const certItems = await $content('certificates', params.slug).fetch()
 

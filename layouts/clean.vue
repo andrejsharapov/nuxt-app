@@ -250,6 +250,7 @@ import {
 } from '@mdi/js'
 
 export default {
+  name: 'LayoutClean',
   data() {
     return {
       windowSizeX: 0,

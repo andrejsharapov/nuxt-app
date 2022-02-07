@@ -9,35 +9,15 @@
     >
       <template #default>
         <div
-          class="
-            article-header__content
-            fill-height
-            d-flex
-            justify-center
-            align-center
-            flex-column
-            text-center
-          "
+          class="article-header__content fill-height d-flex justify-center align-center flex-column text-center"
         >
           <v-card-title
-            class="
-              px-0
-              white--text
-              text-h6 text-sm-h5 text-lg-h3
-              font-weight-bold
-            "
+            class="px-0 white--text text-h6 text-sm-h5 text-lg-h3 font-weight-bold"
           >
             {{ article.title }}
           </v-card-title>
           <v-card-subtitle
-            class="
-              mt-3
-              px-0
-              white--text
-              text-lg-h4
-              font-weight-medium
-              text-uppercase
-            "
+            class="mt-3 px-0 white--text text-lg-h4 font-weight-medium text-uppercase"
           >
             {{ article.category.name }}
           </v-card-subtitle>

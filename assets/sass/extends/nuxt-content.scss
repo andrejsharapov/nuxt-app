@@ -77,7 +77,10 @@
     opacity: 1 !important;
 
     .toolbar-item {
-      display: contents !important;
+      @supports (display: contents) {
+        display: contents !important;
+      }
+
       margin: 0 var(--px);
     }
 

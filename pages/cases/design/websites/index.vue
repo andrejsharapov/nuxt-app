@@ -139,6 +139,7 @@ import { mdiCellphoneLink, mdiViewGrid, mdiViewDay } from '@mdi/js'
 import { desSite } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDesignWebsitesIndex',
   async asyncData({ $content, app, params }) {
     const skills = await $content('skills/des-site').fetch()
 

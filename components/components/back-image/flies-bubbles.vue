@@ -14,7 +14,7 @@ export default {
 .flies-bubbles {
   &__block {
     position: absolute;
-    animation: vawe 7s linear infinite;
+    animation: wave 7s linear infinite;
     opacity: 0.25;
     background-image: linear-gradient(45deg, var(--light), transparent);
 
@@ -70,7 +70,7 @@ export default {
   }
 }
 
-@keyframes vawe {
+@keyframes wave {
   20% {
     border-radius: 45% 55% 62% 38% / 53% 51% 49% 47%;
   }

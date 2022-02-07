@@ -179,7 +179,7 @@
 
 <script>
 export default {
-  name: 'PagesCasesDesignWebsitesSlug',
+  name: 'CasesDevBannersSlug',
   async asyncData({ $content, app, params }) {
     const banner = await $content(
       `${app.i18n.locale}/cases/dev/banners`,

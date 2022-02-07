@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'PodcastsIndex',
   layout: 'clean',
   data: () => ({
     page: {

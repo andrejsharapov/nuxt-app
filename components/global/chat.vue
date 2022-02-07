@@ -59,7 +59,7 @@
 import { mdiWrenchOutline, mdiChat, mdiClose } from '@mdi/js'
 
 export default {
-  name: 'Chat',
+  name: 'GlobalChat',
   data() {
     return {
       mdiWrenchOutline,

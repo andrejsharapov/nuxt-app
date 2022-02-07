@@ -19,7 +19,7 @@ v-card.poll(color='purple')
 
 <script>
 export default {
-  name: 'Poll',
+  name: 'PollUsers',
   props: {
     miniVariant: {
       type: Boolean,

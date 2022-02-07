@@ -229,6 +229,7 @@ import {
 } from '@mdi/js'
 
 export default {
+  name: 'LayoutDefault',
   data() {
     return {
       windowSizeX: 0,

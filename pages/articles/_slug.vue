@@ -91,7 +91,7 @@ import { appMeta as app } from '~/config/app'
 import Prism from '~/plugins/markdown-theme-prism'
 
 export default {
-  name: 'PageSlug',
+  name: 'ArticlesSlug',
   scrollToTop: true,
   async asyncData({ $content, params, app }) {
     const article = await $content(

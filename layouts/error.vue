@@ -133,7 +133,7 @@
 import { mdiAlert } from '@mdi/js'
 
 export default {
-  layout: 'error',
+  name: 'LayoutError',
   props: {
     error: {
       type: Object,

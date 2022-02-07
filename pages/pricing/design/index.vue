@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'PricingDesignIndex',
   layout: 'clean',
   data: () => ({
     page: {
