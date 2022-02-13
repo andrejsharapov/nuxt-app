@@ -35,6 +35,7 @@ import { mdiHelpCircleOutline } from '@mdi/js'
 import { contact } from '~/lib/page-meta'
 
 export default {
+  name: 'ContactIndex',
   async asyncData({ $content }) {
     const info = await $content('contact').only(['contacts']).fetch()
 

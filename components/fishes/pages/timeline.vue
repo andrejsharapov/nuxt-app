@@ -3689,7 +3689,7 @@
 
 <script>
 export default {
-  name: 'Timeline',
+  name: 'FishTimeline',
   props: {
     width: {
       type: [Number, String],

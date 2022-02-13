@@ -150,7 +150,7 @@ import { mdiResponsive, mdiViewGrid, mdiViewDay, mdiNumeric1Box } from '@mdi/js'
 import { devSite } from '~/lib/page-meta'
 
 export default {
-  name: 'DevWebsitesIndex',
+  name: 'CasesDevWebsitesIndex',
   async asyncData({ $content, app, params }) {
     const skills = await $content('skills/dev-site').fetch()
     const set = await $content('skills/skillset').fetch()

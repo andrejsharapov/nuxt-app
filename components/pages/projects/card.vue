@@ -34,13 +34,7 @@
           </v-card-subtitle>
           <v-card-title
             :id="project.slug"
-            class="
-              pb-2
-              d-inline-block
-              anchor-link
-              text-break-word
-              font-weight-bold
-            "
+            class="pb-2 d-inline-block anchor-link text-break-word font-weight-bold"
             :href="project.url"
             target="_blank"
             rel="noopener noreferrer"

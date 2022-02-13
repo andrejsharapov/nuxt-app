@@ -239,7 +239,7 @@
 
 <script>
 export default {
-  name: 'PagesCasesDesignWebsitesSlug',
+  name: 'CasesDevWebsitesSlug',
   async asyncData({ $content, app, params }) {
     const website = await $content(
       `${app.i18n.locale}/cases/dev/websites`,

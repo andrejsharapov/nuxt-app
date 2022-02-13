@@ -68,6 +68,7 @@ import { mdiBookOpenPageVariantOutline, mdiOpenInNew } from '@mdi/js'
 import { articles } from '~/lib/page-meta'
 
 export default {
+  name: 'ArticlesIndex',
   async asyncData({ $content, params, app }) {
     const articlesLocale = await $content(
       `${app.i18n.locale}/articles`,

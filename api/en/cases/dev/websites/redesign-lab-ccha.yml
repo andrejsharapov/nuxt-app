@@ -168,5 +168,5 @@ analytics:
       labels:
   conversion:
     show: false
-    title: Coversion
+    title: Conversion
     value:

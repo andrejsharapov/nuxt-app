@@ -23,7 +23,7 @@ v-footer.layout__footer.pa-0(color='transparent')
 import { mdiHeart, mdiOpenInNew } from '@mdi/js'
 
 export default {
-  name: 'Footer',
+  name: 'LayoutFooter',
   props: {
     miniVariant: {
       type: Boolean,
