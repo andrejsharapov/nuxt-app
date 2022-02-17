@@ -88,7 +88,7 @@
     "postcss-mixins": "6.2.3",
     "postcss-nested": "4.2.3",
     "postcss-responsive-type": "1.0.0",
-    "postcss-sorting": "5.0.1",
+    "postcss-sorting": "7.0.1",
     "postcss-url": "9.0.0",
     "postcss-utilities": "0.8.4",
     "precss": "4.0.0",
