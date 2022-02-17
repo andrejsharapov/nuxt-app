@@ -1,5 +1,29 @@
 {
+  "automerge": false,
+  "baseBranches": [
+    "master"
+  ],
   "extends": [
     "config:base"
-  ]
+  ],
+  "ignoreDeps": [
+    "css-loader",
+    "postcss",
+    "postcss-custom-media",
+    "postcss-mixins",
+    "postcss-nested",
+    "postcss-sorting",
+    "postcss-url",
+    "stylus",
+    "stylus-loader"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "major": {
+    "stabilityDays": 14
+  },
+  "minor": {
+    "stabilityDays": 7
+  }
 }
