@@ -23,6 +23,5 @@ module.exports = {
       },
     ],
     'vue/no-v-html': 'off',
-    'vue/first-attribute-linebreak': 0,
   },
 }
