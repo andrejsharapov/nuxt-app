@@ -81,7 +81,7 @@
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "nuxt-purgecss": "^1.0.0",
-    "postcss": "^7.0.38",
+    "postcss": "7.0.39",
     "postcss-custom-media": "^7.0.8",
     "postcss-hexrgba": "^2.0.1",
     "postcss-html": "^1.3.0",
