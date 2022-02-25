@@ -205,7 +205,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .page {
   &__des-site {
     --stop-color-one: #5731a1;
