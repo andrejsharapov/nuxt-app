@@ -1,8 +1,8 @@
-- title: BOX-SHADOWS DEVICE
+- title: Device Creator
   type: builder
-  created: "2018-07-31"
-  desc: "BSD is a tool that lets you create simple yet beautiful devices. By experimenting with buttons, you can use the tool to create, for example, the smartphone of your dreams."
+  created: '2018-07-31'
+  desc: 'BSD is a tool that lets you create simple yet beautiful devices. By experimenting with buttons, you can use the tool to create, for example, the smartphone of your dreams.'
   url: https://madeas.github.io/box-shadows/device/
   img:
     src: /src/projects/device-builder.jpg
-    alt: ""
+    alt: ''
