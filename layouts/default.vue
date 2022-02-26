@@ -248,7 +248,7 @@ export default {
       fixed: false,
       miniVariant: false,
       right: true,
-      rightDrawer: true,
+      rightDrawer: false,
       rightPosition: 1,
       mdiSortVariant,
       mdiSegment,
