@@ -1,5 +1,5 @@
 <template lang="pug">
-v-app(v-resize='windowX')
+v-append
   //- v-system-bar(absolute, color='warning')
   //-   .text-caption.white--text Consequat excepteur aute do elit eiusmod consequat anim ullamco enim.
 
@@ -226,8 +226,9 @@ v-app(v-resize='windowX')
     )
       v-icon {{ mdiArrowUpBoldOutline }}
 
+  lazy-s-chat
   lazy-s-cookie-box
-  s-layout-navbar-bottom
+
   notifications(group='translation', position='bottom right')
   notifications(group='copy-to-clipboard', position='top center')
   notifications(group='case-switch-dates', position='top right')
@@ -253,7 +254,6 @@ export default {
   name: 'LayoutClean',
   data() {
     return {
-      windowSizeX: 0,
       clipped: false,
       drawer: true,
       fixed: false,
@@ -319,23 +319,7 @@ export default {
       ],
     }
   },
-  mounted() {
-    this.windowX()
-  },
   methods: {
-    refresh() {
-      this.$fetch()
-    },
-    windowX() {
-      this.windowSizeX = window.innerWidth
-    },
-    drawerShow() {
-      if (this.windowSizeX > 1024) {
-        return true
-      } else {
-        return false
-      }
-    },
     noTranslation() {
       this.$notify({
         group: 'translation',
