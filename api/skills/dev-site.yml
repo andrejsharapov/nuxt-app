@@ -1,16 +1,28 @@
 list:
   - img:
-      src: css3
-      alt: CSS3
-  - img:
       src: sass
       alt: SASS / SCSS
   - img:
-      src: html5
-      alt: HTML5
-  - img:
       src: pug
       alt: PugJS
+  - img:
+      src: vue
+      alt: Vue.js
+  - img:
+      src: tailwind
+      alt: Tailwind CSS
+  - img:
+      src: css3
+      alt: CSS3
+  - img:
+      src: stylus
+      alt: stylus
+  - img:
+      src: postcss
+      alt: PostCSS
+  - img:
+      src: html5
+      alt: HTML5
   - img:
       src: javascript
       alt: JavaScript
@@ -27,9 +39,6 @@ list:
       src: npm
       alt: NPM
   - img:
-      src: vue
-      alt: Vue.js
-  - img:
       src: vuetify
       alt: Vuetify.js
   - img:
@@ -44,3 +53,6 @@ list:
   - img:
       src: vsc
       alt: Visual Studio Code
+  - img:
+      src: phpstorm
+      alt: PhpStorm

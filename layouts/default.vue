@@ -1,5 +1,5 @@
 <template lang="pug">
-v-app(v-resize='windowX')
+v-app(v-resize='onResize')
   //- v-system-bar(absolute, color='warning')
   //-   .text-caption.white--text
 
@@ -26,6 +26,7 @@ v-app(v-resize='windowX')
         v-btn(icon, v-on='{ ...sidebar }', @click.stop='drawer = !drawer')
           v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
       span {{ $t("site.navbar.name") }}
+    pre.opacity-0 {{ windowSize.x }}
     v-spacer
     lazy-s-layout-recent-projects
     lazy-s-layout-job-offer
@@ -212,6 +213,7 @@ v-app(v-resize='windowX')
 
   lazy-s-chat
   lazy-s-cookie-box
+
   notifications(group='translation', position='bottom right')
   notifications(group='copy-to-clipboard', position='top center')
   notifications(group='case-switch-dates', position='top right')
@@ -237,9 +239,12 @@ export default {
   name: 'LayoutDefault',
   data() {
     return {
-      windowSizeX: 0,
+      windowSize: {
+        x: 0,
+        y: 0,
+      },
       clipped: false,
-      drawer: this.drawerShow(),
+      drawer: true,
       fixed: false,
       miniVariant: false,
       right: true,
@@ -304,21 +309,17 @@ export default {
     }
   },
   mounted() {
-    this.windowX()
+    this.onResize()
+
+    if (this.windowSize.x >= 1024) {
+      this.drawer = true
+    } else {
+      this.drawer = false
+    }
   },
   methods: {
-    refresh() {
-      this.$fetch()
-    },
-    windowX() {
-      this.windowSizeX = window.innerWidth
-    },
-    drawerShow() {
-      if (this.windowSizeX > 1024) {
-        return true
-      } else {
-        return false
-      }
+    onResize() {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     },
     noTranslation() {
       this.$notify({
