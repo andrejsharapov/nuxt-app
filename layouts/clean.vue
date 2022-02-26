@@ -118,7 +118,7 @@ v-append
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("ru")',
-                  @click.prevent='$fetch'
+                  @click.prevent='refresh'
                 )
                   .text-body-2.font-weight-medium Ru
                   v-icon.ml-2 {{ mdiTranslate }}
@@ -126,7 +126,7 @@ v-append
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("en")',
-                  @click.prevent='$fetch',
+                  @click.prevent='refresh',
                   @click='noTranslation'
                 )
                   .text-body-2.font-weight-medium En
@@ -320,6 +320,12 @@ export default {
     }
   },
   methods: {
+    refresh() {
+      setTimeout(() => {
+        // console.log(this.$i18n.locale)
+        this.$fetch()
+      }, 100)
+    },
     noTranslation() {
       this.$notify({
         group: 'translation',

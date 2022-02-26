@@ -98,7 +98,7 @@ v-app(v-resize='onResize')
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("ru")',
-                  @click.prevent='$fetch'
+                  @click.prevent='refresh'
                 )
                   .text-body-2.font-weight-medium Ru
                   v-icon.ml-2 {{ mdiTranslate }}
@@ -106,7 +106,7 @@ v-app(v-resize='onResize')
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("en")',
-                  @click.prevent='$fetch',
+                  @click.prevent='refresh',
                   @click='noTranslation'
                 )
                   .text-body-2.font-weight-medium En
@@ -248,7 +248,7 @@ export default {
       fixed: false,
       miniVariant: false,
       right: true,
-      rightDrawer: false,
+      rightDrawer: true,
       rightPosition: 1,
       mdiSortVariant,
       mdiSegment,
@@ -318,6 +318,14 @@ export default {
     }
   },
   methods: {
+    refresh() {
+      // console.log(this.$i18n.locale)
+
+      setTimeout(() => {
+        // console.log(this.$i18n.locale)
+        this.$fetch()
+      }, 100)
+    },
     onResize() {
       this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     },
