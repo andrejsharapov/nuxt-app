@@ -63,7 +63,7 @@ data:
     icon: $mdiVuetify
   - alt: Frameworks
     set:
-      - Bootstrap 4
+      - Bootstrap 4/5
       - Vue.js
       - Tailwind CSS
     color: green
