@@ -72,9 +72,11 @@ export default {
   },
   watch: {
     dialog(val) {
-      if (!val) return
-
-      setTimeout(() => [(this.dialog = true), (this.loading = false)], 4000)
+      if (!val)
+        return setTimeout(
+          () => [(this.dialog = true), (this.loading = false)],
+          4000
+        )
     },
   },
   mounted() {
