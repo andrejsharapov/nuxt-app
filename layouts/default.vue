@@ -1,7 +1,7 @@
 <template lang="pug">
-v-app(v-resize='windowX')
+v-app(v-resize='onResize')
   //- v-system-bar(absolute, color='warning')
-  //-   .text-caption.white--text Consequat excepteur aute do elit eiusmod consequat anim ullamco enim.
+  //-   .text-caption.white--text
 
   //- SECTION[epic=layout] HEADER
   v-app-bar(
@@ -21,24 +21,27 @@ v-app(v-resize='windowX')
     s-layout-navbar-prepend.ml-n4(
       v-if='$vuetify.breakpoint.smAndUp && (clipped || !drawer)'
     )
-    v-tooltip(bottom)
+    v-tooltip(v-if='$vuetify.breakpoint.mdAndUp', bottom)
       template(#activator='{ on: sidebar }')
         v-btn(icon, v-on='{ ...sidebar }', @click.stop='drawer = !drawer')
           v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
       span {{ $t("site.navbar.name") }}
+    pre.opacity-0 {{ windowSize.x }}
     v-spacer
     lazy-s-layout-recent-projects
     lazy-s-layout-job-offer
 
     v-tooltip(bottom)
-      template(#activator='{ on: settings}')
+      template(#activator='{ on: settings }')
         v-btn(icon, v-on='settings', @click.stop='rightDrawer = !rightDrawer')
           v-icon {{ mdiCogOutline }}
       span {{ $t("settings") }}
   //- /SECTION
 
   //- SECTION[epic=layout] NAVIGATION
+  s-layout-navbar-bottom(v-if='$vuetify.breakpoint.smAndDown')
   v-navigation-drawer.layout__navbar(
+    v-else,
     v-model='drawer',
     :mini-variant='miniVariant',
     :clipped='clipped',
@@ -95,7 +98,7 @@ v-app(v-resize='windowX')
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("ru")',
-                  @click.prevent='$fetch'
+                  @click.prevent='refresh'
                 )
                   .text-body-2.font-weight-medium Ru
                   v-icon.ml-2 {{ mdiTranslate }}
@@ -103,7 +106,7 @@ v-app(v-resize='windowX')
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("en")',
-                  @click.prevent='$fetch',
+                  @click.prevent='refresh',
                   @click='noTranslation'
                 )
                   .text-body-2.font-weight-medium En
@@ -186,10 +189,15 @@ v-app(v-resize='windowX')
   //- /SECTION
 
   //- SECTION[epic=layout] FOOTER
-  s-layout-footer(:mini-variant='miniVariant', :drawer='drawer')
+  s-layout-footer(
+    :mini-variant='miniVariant',
+    :drawer='drawer',
+    :right-drawer='rightDrawer',
+    :position='rightPosition'
+  )
   //- /SECTION
 
-  v-fab-transition(v-if='$vuetify.breakpoint.smAndUp')
+  v-fab-transition(v-if='$vuetify.breakpoint.mdAndUp')
     v-btn(
       v-show='goToTop',
       v-scroll='onScroll',
@@ -205,6 +213,7 @@ v-app(v-resize='windowX')
 
   lazy-s-chat
   lazy-s-cookie-box
+
   notifications(group='translation', position='bottom right')
   notifications(group='copy-to-clipboard', position='top center')
   notifications(group='case-switch-dates', position='top right')
@@ -227,11 +236,15 @@ import {
 } from '@mdi/js'
 
 export default {
+  name: 'LayoutDefault',
   data() {
     return {
-      windowSizeX: 0,
+      windowSize: {
+        x: 0,
+        y: 0,
+      },
       clipped: false,
-      drawer: this.drawerShow(),
+      drawer: true,
       fixed: false,
       miniVariant: false,
       right: true,
@@ -296,21 +309,25 @@ export default {
     }
   },
   mounted() {
-    this.windowX()
+    this.onResize()
+
+    if (this.windowSize.x >= 1024) {
+      this.drawer = true
+    } else {
+      this.drawer = false
+    }
   },
   methods: {
     refresh() {
-      this.$fetch()
+      // console.log(this.$i18n.locale)
+
+      setTimeout(() => {
+        // console.log(this.$i18n.locale)
+        this.$fetch()
+      }, 100)
     },
-    windowX() {
-      this.windowSizeX = window.innerWidth
-    },
-    drawerShow() {
-      if (this.windowSizeX > 1024) {
-        return true
-      } else {
-        return false
-      }
+    onResize() {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     },
     noTranslation() {
       this.$notify({

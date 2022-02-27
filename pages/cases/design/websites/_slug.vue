@@ -227,7 +227,7 @@
 
 <script>
 export default {
-  name: 'PagesCasesDesignWebsitesSlug',
+  name: 'CasesDesignWebsitesSlug',
   async asyncData({ $content, app, params }) {
     const website = await $content(
       `${app.i18n.locale}/cases/design/websites`,
@@ -293,8 +293,8 @@ export default {
   &__prev,
   &__next {
     position: fixed;
-    top: 49%;
     z-index: 1;
+    top: 49%;
     opacity: 0.4;
 
     &:hover {

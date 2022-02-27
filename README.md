@@ -19,6 +19,7 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 [![vue2][vue-image]][vue]
 [![nuxt][nuxt-image]][nuxt]
 [![vuetify][vuetify-image]][vuetify]
+[![postcss][postcss-image]][postcss]
 
 ## Coordination
 
@@ -72,8 +73,11 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 [nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-108775.svg
 
 [vuetify]: https://vuetifyjs.com/en/
-[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg?color=1697f6
+[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg?
 
 [modules]: https://modules.nuxtjs.org/
 [wiki]: ../../wiki
 [contributing]: https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md
+
+[postcss]: https://postcss.org/
+[postcss-image]: https://img.shields.io/badge/postcss-7.0.x-dd3a0a.svg

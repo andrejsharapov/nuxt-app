@@ -1,25 +1,27 @@
 <template lang="pug">
 v-list-item-group.row.row--dense.mx-0(
+  v-model='themeActive',
   mandatory,
   active-class='primary white--text'
 )
   v-row.ma-0(dense)
     v-col(cols='6')
       v-list-item.align-center.justify-space-between.rounded.hidden(
-        @click.stop='$vuetify.theme.dark = false'
+        @click='$vuetify.theme.dark = false'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.light") }}
         v-icon.ml-2 {{ mdiWeatherNightPartlyCloudy }}
 
     v-col(cols='6')
       v-list-item.align-center.justify-space-between.rounded.hidden(
-        @click.stop='$vuetify.theme.dark = true'
+        @click='$vuetify.theme.dark = true'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.dark") }}
         v-icon.ml-2 {{ mdiWeatherPartlyCloudy }}
+
     v-col(cols='12')
       v-list-item.align-center.justify-space-between.rounded.hidden(
-        @click.stop='$vuetify.theme.dark = false'
+        @click='isTheme'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.system") }}
         v-icon.ml-2 {{ mdiDesktopClassic }}
@@ -42,8 +44,18 @@ export default {
       mdiWeatherPartlyCloudy,
       mdiWeatherNightPartlyCloudy,
       mdiDesktopClassic,
-      themeActive: 0,
+      themeActive: null,
     }
+  },
+  methods: {
+    isTheme() {
+      // console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches === false) {
+        this.$vuetify.theme.dark = false
+      } else {
+        this.$vuetify.theme.dark = true
+      }
+    },
   },
 }
 </script>

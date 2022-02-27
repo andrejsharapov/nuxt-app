@@ -104,10 +104,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @media (--sm-max) {
-  .recent-projects__menu .ps {
-    height: 22rem;
+  .recent-projects {
+    &__menu .ps {
+      height: 22rem;
+    }
   }
 }
 </style>

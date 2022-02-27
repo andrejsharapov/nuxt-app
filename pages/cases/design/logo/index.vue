@@ -50,6 +50,7 @@ import { mdiVectorRadius } from '@mdi/js'
 import { logos } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDesignLogoIndex',
   async asyncData({ $content, app, params }) {
     const logosLocale = await $content(
       `${app.i18n.locale}/cases/design/logo`,
@@ -91,9 +92,11 @@ export default {
 }
 </script>
 
-<style>
-.page__logo {
-  --stop-color-one: var(--v-success-darken3);
-  --stop-color-two: var(--v-success-lighten1);
+<style lang="scss">
+.page {
+  &__logo {
+    --stop-color-one: var(--v-success-darken3);
+    --stop-color-two: var(--v-success-lighten1);
+  }
 }
 </style>

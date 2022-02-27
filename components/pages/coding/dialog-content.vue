@@ -134,13 +134,17 @@ export default {
 }
 </script>
 
-<style>
-.cp_embed_wrapper {
-  height: 100%;
-}
+<style lang="scss">
+.cp {
+  &_embed {
+    &_wrapper {
+      height: 100%;
+    }
 
-.cp_embed_iframe {
-  height: 100%;
-  min-height: 400px;
+    &_iframe {
+      height: 100%;
+      min-height: 400px;
+    }
+  }
 }
 </style>

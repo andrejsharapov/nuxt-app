@@ -5,6 +5,7 @@ data:
   - action: '$mdiFolderOpen'
     nested:
       - action: '$mdiPaletteOutline'
+        group: 'design'
         child:
           - action: '$mdiCellphoneLink'
             title: Website
@@ -25,6 +26,7 @@ data:
         title: Web Design
         to: '/en/cases/design'
       - action: '$mdiDevices'
+        group: 'dev'
         child:
           - action: '$mdiResponsive'
             title: Website
@@ -39,6 +41,7 @@ data:
         title: Development
         to: '/en/cases/dev'
       - action: '$mdiDotsHorizontal'
+        group: 'works'
         child:
           - action: '$mdiDraw'
             title: Drawings
@@ -57,6 +60,7 @@ data:
     title: Cases
     to: '/en/cases'
   - action: '$mdiScriptText'
+    group: 'pricing'
     nested:
       - action: '$mdiPaletteSwatchOutline'
         title: Web Design
@@ -91,6 +95,7 @@ data:
         title: Articles
         to: '/en/articles'
       - action: '$mdiDotsHorizontal'
+        group: 'more'
         child:
           - action: '$mdiVideoWirelessOutline'
             disabled: true

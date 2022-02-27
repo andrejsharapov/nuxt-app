@@ -22,10 +22,10 @@
         v-card.mt-sm-4.ml-0.ml-lg-4(flat, color='transparent')
           v-card-subtitle.d-sm-flex.py-0 {{ site.ux.price }}
             v-spacer
-            v-card-subtitle.py-0 {{ $t("date.default") }} &mdash;
-            strong
-              |
-              | {{ formatDate(site.created) }}
+            v-card-subtitle.d-flex.pa-0 {{ $t("date.default") }} &mdash;
+              strong
+                |
+                | &nbsp;{{ formatDate(site.created) }}
           v-card-title {{ site.title }}
           v-card-text.pb-0.not-pointer.d-flex.align-center
             v-icon.mr-2 {{ mdiHammerWrench }}

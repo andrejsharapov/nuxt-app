@@ -88,7 +88,7 @@
             p
               | {{ $t("pages.pricing.sections.cooperation.variants[1].message") }}
               v-tooltip(bottom, max-width='500')
-                template(#activator='{ on:comment }')
+                template(#activator='{ on: comment }')
                   v-icon.cursor-help(
                     right,
                     size='18',
@@ -161,10 +161,11 @@ import { pricing } from '~/lib/page-meta'
 import pricingCalculate from '~/assets/images/pricing-calculate.svg?inline'
 
 export default {
+  name: 'PricingDevIndex',
+  layout: 'clean',
   components: {
     pricingCalculate,
   },
-  // layout: 'clean',
   data() {
     return {
       page: pricing(this),

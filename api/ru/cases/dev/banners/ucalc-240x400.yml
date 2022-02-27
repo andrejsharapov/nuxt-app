@@ -1,23 +1,23 @@
 hide: false
 type: dev-banner
-title: Создание html5 баннера для компании «uCalc»
+title: Изготовление html5 баннера для компании «uCalc»
 img:
-  src: /src/nuxt-app/banners/ucalc/preview.jpg
-  alt: Создание html5 баннера для компании «uCalc»
+  src: /src/nuxt-app/banners/ucalc-240x400/preview.jpg
+  alt: Изготовление html5 баннера для компании «uCalc»
 ux:
   price: Разработка html5 баннера
-created: '2017-10-12'
+created: '2018-01-12'
 period:
-  - '2017-10-12'
-  - '2017-10-12'
-deadline: На выполнение поставленной задачи было затрачено около 2-х часов.
+  - '2018-01-12'
+  - '2018-01-12'
+deadline: На выполнение поставленной задачи было затрачено менее 2-х часов.
 client:
   logoJPG:
   logoWEBP:
-  head: uCalc
+  head: uCalc — универсальный конструктор калькуляторов и форм
   description: uCalc — универсальный конструктор калькуляторов и форм для бизнеса.
   issues:
-  task: 'Разработать простой, но в то же время современный, эффектный и привлекающий внимание html5 баннер uCalc из статичной графики.'
+  task: Разработать простой, но в то же время современный, эффектный и привлекающий внимание html5 баннер uCalc.
 preview:
   tools:
     - title: Design
@@ -38,10 +38,10 @@ done:
     - цикличность сценария;
     # - подготовка баннера к размещению на рекламной площадке;
 storyboard:
-  src: /src/nuxt-app/banners/ucalc/storyboard.jpg
+  src: /src/nuxt-app/banners/ucalc-240x400/storyboard.jpg
   alt:
 animatic:
-  width: 728
-  height: 90
+  width: 240
+  height: 400
   reload: false
-resize: 728 x 90
+resize: 240 x 400

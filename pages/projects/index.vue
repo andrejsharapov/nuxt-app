@@ -44,6 +44,7 @@ import { mdiLightbulbOn } from '@mdi/js'
 import { projects } from '~/lib/page-meta'
 
 export default {
+  name: 'ProjectsIndex',
   async asyncData({ $content, params, app }) {
     const projectsLocale = await $content(
       `${app.i18n.locale}/projects`,
@@ -83,9 +84,11 @@ export default {
 }
 </script>
 
-<style>
-.page__projects {
-  --stop-color-one: var(--orange);
-  --stop-color-two: var(--yellow);
+<style lang="scss">
+.page {
+  &__projects {
+    --stop-color-one: var(--orange);
+    --stop-color-two: var(--yellow);
+  }
 }
 </style>

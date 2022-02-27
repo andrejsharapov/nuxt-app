@@ -11,7 +11,7 @@ contacts:
     icon: $mdiWhatsapp
     title: WhatsApp
   - content: '@andrejsharapov'
-    icon: $mdiTelegram
+    icon: $telegramOutline
     title: Telegram
   - content: andrejsharapov#0036
     icon: $mdiDiscord

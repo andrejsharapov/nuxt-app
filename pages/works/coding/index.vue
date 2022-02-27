@@ -55,6 +55,7 @@ import { mdiCodeJson, mdiOpenInNew } from '@mdi/js'
 import { coding } from '~/lib/page-meta'
 
 export default {
+  name: 'CodingIndex',
   async asyncData({ $content, params }) {
     const codeLocale = await $content('works/coding', params.slug)
       .where({ type: 'coding' })
@@ -96,9 +97,11 @@ export default {
 }
 </script>
 
-<style>
-.page__conding {
-  --stop-color-one: var(--black);
-  --stop-color-two: var(--dark);
+<style lang="scss">
+.page {
+  &__conding {
+    --stop-color-one: var(--black);
+    --stop-color-two: var(--dark);
+  }
 }
 </style>

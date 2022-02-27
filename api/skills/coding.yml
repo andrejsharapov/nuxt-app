@@ -15,32 +15,41 @@ list:
       src: pug
       alt: PugJS
   - img:
+      src: stylus
+      alt: stylus
+  - img:
+      src: postcss
+      alt: PostCSS
+  - img:
       src: javascript
       alt: JavaScript
   - img:
+      src: tailwind
+      alt: Tailwind CSS
+  - img:
       src: bootstrap
       alt: Bootstrap
-  - img:
-      src: jquery
-      alt: jQuery
+  #   - img:
+  #       src: jquery
+  #       alt: jQuery
   - img:
       src: git
       alt: Git
-  - img:
-      src: node
-      alt: Node.js
-  - img:
-      src: npm
-      alt: NPM
-  - img:
-      src: gulp
-      alt: Gulp
+  #   - img:
+  #       src: node
+  #       alt: Node.js
+  #   - img:
+  #       src: npm
+  #       alt: NPM
   - img:
       src: vue
       alt: Vue.js
   - img:
-      src: nuxt
-      alt: Nuxt.js
-  - img:
       src: vuetify
       alt: Vuetify.js
+  - img:
+      src: gulp
+      alt: Gulp
+  - img:
+      src: nuxt
+      alt: Nuxt.js

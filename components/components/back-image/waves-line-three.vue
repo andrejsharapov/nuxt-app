@@ -226,23 +226,27 @@ export default {
 }
 </script>
 
-<style>
-.waves-line-three__stroke {
-  stroke-dasharray: 1235;
-  stroke-dashoffset: -1235;
-  animation: stroke-width 4s ease-in-out infinite;
+<style lang="scss">
+.waves-line-three {
+  &__stroke {
+    animation: stroke-width 4s ease-in-out infinite;
+    stroke-dasharray: 1235;
+    stroke-dashoffset: -1235;
+  }
 }
 
-.stroke__two {
-  animation-delay: 22s;
-}
+.stroke {
+  &__two {
+    animation-delay: 22s;
+  }
 
-.stroke__three {
-  animation-delay: 14s;
-}
+  &__three {
+    animation-delay: 14s;
+  }
 
-.stroke__four {
-  animation-delay: 8s;
+  &__four {
+    animation-delay: 8s;
+  }
 }
 
 @keyframes stroke-width {

@@ -49,9 +49,9 @@ export default {
   );
 
   position: relative;
+  min-height: 375px;
   overflow: hidden;
   background-image: var(--gradient-default);
-  min-height: 375px;
 
   &__list-items {
     position: relative;

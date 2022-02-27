@@ -83,6 +83,7 @@ import {
 import { devBanners } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDevBannersIndex',
   async asyncData({ $content, app, params }) {
     const getBanners = await $content(
       `${app.i18n.locale}/cases/dev/banners`,
@@ -133,9 +134,11 @@ export default {
 }
 </script>
 
-<style>
-.page__dev-banners {
-  --stop-color-one: #6e349e;
-  --stop-color-two: #2c0569;
+<style lang="scss">
+.page {
+  &__dev-banners {
+    --stop-color-one: #6e349e;
+    --stop-color-two: #2c0569;
+  }
 }
 </style>

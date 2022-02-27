@@ -84,34 +84,21 @@ export default {
 
 <style lang="scss">
 $tl: v-timeline;
-$palette: (
-  career: var(--accent),
-  design: var(--pink),
-  development: var(--cyan),
-  idea: var(--yellow),
-  progress: var(--green),
-  contribution: var(--v-info-lighten3),
-  other: var(--orange),
-);
-
-@each $name, $color in $palette {
-  .label {
-    &--#{$name} {
-      background-color: $color;
-    }
-  }
-}
 
 .timeline {
   &__item {
-    .v-chip--active {
-      &::before {
-        opacity: 0;
+    .v-chip {
+      &--active {
+        &::before {
+          opacity: 0;
+        }
       }
     }
 
-    .v-list-item__content {
-      line-height: 1.375rem;
+    .v-list-item {
+      &__content {
+        line-height: 1.375rem;
+      }
     }
   }
 }

@@ -95,16 +95,16 @@ export default {
     top: 1rem;
     right: 1rem;
     margin-left: auto;
-    background-color: var(--stop-color-one);
-    opacity: 0;
     transform: translate(-0.75rem, 0.75rem) scale(0.9);
     transition: var(--base-time);
+    opacity: 0;
+    background-color: var(--stop-color-one);
   }
 
   &:hover {
     .cert-open {
-      opacity: 1;
       transform: translate(0, 0) scale(1);
+      opacity: 1;
     }
   }
 }

@@ -1,0 +1,47 @@
+hide: false
+type: dev-banner
+title: Creation of html5 banner for the "uCalc"
+img:
+  src: /src/nuxt-app/banners/ucalc-240x400/preview.jpg
+  alt: Creation of html5 banner for the "uCalc"
+ux:
+  price: Development of html5 banner
+created: '2018-01-12'
+period:
+  - '2018-01-12'
+  - '2018-01-12'
+deadline: The task took less than 2 hours to complete.
+client:
+  logoJPG:
+  logoWEBP:
+  head: uCalc - universal calculator and form builder
+  description: uCalc - universal calculator and form builder.
+  issues:
+  task: Create a simple yet modern, effective, and attractive html5 uCalc banner.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: My
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - script development;
+    - storyboard;
+    - animatic;
+    - programming;
+    - the cyclical nature of the scenario;
+    # - preparation of a banner for placement on an advertising platform;
+storyboard:
+  src: /src/nuxt-app/banners/ucalc-240x400/storyboard.jpg
+  alt:
+animatic:
+  width: 240
+  height: 400
+  reload: false
+resize: 240 x 400

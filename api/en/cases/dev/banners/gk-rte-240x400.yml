@@ -1,0 +1,47 @@
+hide: false
+type: dev-banner
+title: Production of html5 banner for "RusTechExpert" Group of Companies
+img:
+  src: /src/nuxt-app/banners/gk-rte-240x400/preview.jpg
+  alt: Production of html5 banner for "RusTechExpert" Group of Companies
+ux:
+  price: Development of html5 banner
+created: '2018-03-21'
+period:
+  - '2018-03-21'
+  - '2018-03-21'
+deadline: It took about 3 hours to complete the task.
+client:
+  logoJPG:
+  logoWEBP:
+  head: GC "RusTechExpert"
+  description: GC "RusTechExpert" — one of the leading organizations providing a full range of services in industrial and environmental safety, equipment certification, and advanced training and certification of specialists at enterprises.
+  issues:
+  task: Create a simple and attractive html5 banner for the rabota.gk-rte.ru website, which will help to interest and attract new employees. The basic assortment of the company and motivating texts that are understandable for ordinary users was chosen as a basis.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: My
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - script development;
+    - static storyboard;
+    - animatic (animated storyboard);
+    - programming;
+    - the cyclical nature of the scenario;
+    # - preparation of a banner for placement on an advertising platform;
+storyboard:
+  src: /src/nuxt-app/banners/gk-rte-240x400/storyboard.jpg
+  alt:
+animatic:
+  width: 240
+  height: 400
+  reload: false
+resize: 240 x 400
