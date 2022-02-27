@@ -1,7 +1,7 @@
 <template lang="pug">
-v-append
+v-app(v-resize='onResize')
   //- v-system-bar(absolute, color='warning')
-  //-   .text-caption.white--text Consequat excepteur aute do elit eiusmod consequat anim ullamco enim.
+  //-   .text-caption.white--text
 
   //- SECTION[epic=layout] HEADER
   v-app-bar(
@@ -254,6 +254,10 @@ export default {
   name: 'LayoutClean',
   data() {
     return {
+      windowSize: {
+        x: 0,
+        y: 0,
+      },
       clipped: false,
       drawer: this.drawerShow(),
       fixed: false,
@@ -319,12 +323,23 @@ export default {
       ],
     }
   },
+  mounted() {
+    this.onResize()
+
+    if (this.windowSize.x >= 1024) {
+      this.drawer = true
+    } else {
+      this.drawer = false
+    }
+  },
   methods: {
     refresh() {
       setTimeout(() => {
-        // console.log(this.$i18n.locale)
         this.$fetch()
       }, 100)
+    },
+    onResize() {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     },
     noTranslation() {
       this.$notify({
