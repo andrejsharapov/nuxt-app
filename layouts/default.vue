@@ -319,10 +319,7 @@ export default {
   },
   methods: {
     refresh() {
-      // console.log(this.$i18n.locale)
-
       setTimeout(() => {
-        // console.log(this.$i18n.locale)
         this.$fetch()
       }, 100)
     },
