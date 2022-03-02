@@ -76,7 +76,7 @@ export default {
       default: false,
     },
     navbar: {
-      type: [Array, Object],
+      type: Object,
       default: () => ({}),
     },
   },

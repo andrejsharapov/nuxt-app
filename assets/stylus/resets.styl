@@ -26,12 +26,16 @@
 
   &.right-navigation
     background-color hsl(226, 70%, 97%)
-    background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
+
+    @media (min-width 1264px)
+      background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
 
     .v-navigation-drawer__prepend
       header
         background-color hsl(226, 70%, 97%)
-        background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
+
+        @media (min-width 1264px)
+          background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
 
     &:not(.right-navigation__left)
       --direction-x to right

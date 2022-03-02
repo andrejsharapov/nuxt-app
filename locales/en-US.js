@@ -1,4 +1,5 @@
 import { appMeta as config } from '../config/app'
+import { designEn, devEn } from '../lib/pricing-services'
 
 export default {
   all: 'All',
@@ -159,6 +160,11 @@ export default {
   position: {
     right: 'Right | right',
     left: 'Left | left',
+  },
+  price: {
+    rub: 'RUB',
+    usd: 'USD',
+    eur: 'EUR',
   },
   projects: {
     recent: 'Recent projects',
@@ -328,6 +334,73 @@ export default {
         'In the same year, VKontakte launched a wiki code, and in the process of studying it, I decided to implement several games, which required some knowledge of Photoshop to complete. Some games are still partially working, so you can join the community and try games like: crusaders, sims, and penalties.',
       now: 'I have been using Photoshop less and less lately, but I try not to forget about it and maintain my skills, so from time to time, I process photos, some of which you can see below.',
     },
+    pricing: {
+      sections: {
+        why: {
+          heading: 'Why order here?',
+          pluses: {
+            prepend: {
+              heading: 'You are guaranteed to receive:',
+            },
+            append: {
+              heading: 'And the most important thing:',
+              list: [
+                'treating your project as if it were my own;',
+                'only the best and unique content;',
+                'operational work, in accordance with established deadlines;',
+                'quite a reasonable price.',
+              ],
+            },
+          },
+        },
+        services: {
+          heading: 'Services',
+          quote:
+            'The price of any work is based on the time spent on this work. But in order to understand how much time it takes you to work, you need to understand the amount of work.',
+        },
+        cooperation: {
+          heading: 'Cooperation',
+          variants: [
+            {
+              heading: 'Project work',
+              message:
+                'The classic "waterfall" approach, when the contract determines the sequence of all stages of work and terms, and the expected end result is written in the terms of reference.',
+            },
+            {
+              heading: '"Flexible" development',
+              message:
+                'In this case, the work is built on "sprints" - periods of time during which new requirements are implemented, received, among other things, as a result of the analysis of the already working part of the project.',
+              comment:
+                'It is often important for a client to launch a project in the minimum primary functionality, carrying out its further continuous refinement, change, and improvement.',
+            },
+          ],
+        },
+        deadline: {
+          heading: 'Deadline',
+          message: '',
+          calculate: {
+            question: 'How fast is the development of the site?',
+            message:
+              'On average, taking into account the stage of approval of the terms of reference, internal approvals on the client-side, and the duration of work on the creation, redesign, and development of some elements of the site, it can be from 2 days to 3 months. More information can be found in the list of services below.',
+            more: '',
+          },
+        },
+        cost: {
+          heading: 'Cost',
+          calculate: {
+            question: 'How to calculate the cost?',
+            message:
+              'You do not need to download a price list or look for additional calls to find out the total amount! Just open the calculator below and select the services you need. The total cost is calculated automatically.',
+          },
+        },
+        cta: {
+          question: 'Ready to order?',
+          action: 'Email me',
+        },
+      },
+      design: designEn,
+      development: devEn,
+    },
     projects: {
       message:
         'Often the ideas born in the head remain just an idea. Therefore, I try to bring my ideas to life, and some of them have turned into large-scale projects.',
@@ -343,6 +416,7 @@ export default {
     placeholder: 'Start typing the text...',
     found: 'Materials found on your request.',
     'not-found': 'Sorry, but there are no results for your search.',
+    'no-results': 'No results',
   },
   settings: 'Settings',
   site: {
@@ -366,6 +440,9 @@ export default {
   'table-of-contents': 'Table of contents | table of contents',
   support: {
     message: 'Your browser does not support iframes!',
+  },
+  total: {
+    cost: 'Total cost',
   },
   yes: 'Yes',
   works: {

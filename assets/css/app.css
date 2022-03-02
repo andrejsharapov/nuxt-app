@@ -82,6 +82,10 @@ ol[class] {
   &-pointer {
     cursor: pointer;
   }
+
+  &-help {
+    cursor: help;
+  }
 }
 
 .fill-width {

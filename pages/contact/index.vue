@@ -21,9 +21,9 @@
       v-col(cols='12')
         p.text-center.mt-4
           | {{ $t("pages.contact.message") }}
-          v-tooltip(v-if='$vuetify.breakpoint.smAndUp', top)
+          v-tooltip(v-if='$vuetify.breakpoint.smAndUp', bottom)
             template(#activator='{ on: help }')
-              v-icon(right, small, v-on='help') {{ mdiHelpCircleOutline }}
+              v-icon.cursor-help(right, size='18', color='accent', v-on='help') {{ mdiHelpCircleOutline }}
             span {{ $t("pages.contact.help") }}
       v-col(cols='12')
         s-pages-contact-info.mb-4(:info='info.contacts')
