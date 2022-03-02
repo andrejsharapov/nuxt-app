@@ -1,5 +1,5 @@
 <template lang="pug">
-.page__pricing
+.page__pricing-design-index
   s-history-back
 
   s-layout-components-back-image(:page='page')
@@ -56,19 +56,6 @@
               v-list-item-title.text-wrap(v-html='item')
       //- /SECTION
 
-      //- SECTION SERVICES
-      v-col(cols='12')
-        s-section-heading-anchor(
-          :title='$t("pages.pricing.sections.services.heading")',
-          anchor=''
-        )
-        lazy-s-pages-pricing-services-expansion-panels(
-          v-if='$t("pages.pricing.design").list.length',
-          :items='$t("pages.pricing.design").list'
-        )
-        lazy-s-works-not-found(v-else, message='...')
-      //- /SECTION
-
       //- SECTION COOPERATION
       v-col(cols='12')
         s-section-heading-anchor(
@@ -89,7 +76,7 @@
                   v-icon.cursor-help(
                     right,
                     size='18',
-                    color='accent',
+                    color='indigo lighten-2',
                     v-on='comment'
                   ) {{ mdiHelpCircleOutline }}
                 span {{ $t("pages.pricing.sections.cooperation.variants[1].comment") }}
@@ -101,7 +88,10 @@
           :title='$t("pages.pricing.sections.deadline.heading")',
           anchor='deadline'
         )
-        v-card.mb-4(flat, color='indigo lighten-5')
+        v-card.mb-4(
+          flat,
+          :color='$vuetify.theme.dark ? "indigo lighten-2" : "indigo lighten-5"'
+        )
           .d-flex.flex-no-wrap.justify-space-between
             v-avatar.d-none.d-sm-block.ma-4.rounded(size='125', tile)
               pricing-calculate
@@ -118,13 +108,30 @@
           :title='$t("pages.pricing.sections.cost.heading")',
           anchor='cost'
         )
-        v-card(flat, color='indigo lighten-5')
+        v-card(
+          flat,
+          :color='$vuetify.theme.dark ? "indigo lighten-2" : "indigo lighten-5"'
+        )
           .d-flex.flex-no-wrap.justify-space-between
             v-avatar.d-none.d-sm-block.ma-4.rounded(size='125', tile)
               pricing-calculate
             div
               v-card-title.text-break-word.font-weight-bold {{ $t("pages.pricing.sections.cost.calculate.question") }}
               v-card-text.text-body-1 {{ $t("pages.pricing.sections.cost.calculate.message") }}
+      //- /SECTION
+
+      //- SECTION SERVICES
+      v-col(cols='12')
+        s-section-heading-anchor(
+          :title='$t("pages.pricing.sections.services.heading")',
+          anchor=''
+        )
+        lazy-s-pages-pricing-services-expansion-panels(
+          v-if='$t("pages.pricing.design").list.length',
+          :headers='$t("pages.pricing.design").headers',
+          :items='$t("pages.pricing.design").list'
+        )
+        lazy-s-works-not-found(v-else, message='...')
       //- /SECTION
 
   v-parallax(
@@ -159,16 +166,17 @@ import pricingCalculate from '~/assets/images/pricing-calculate.svg?inline'
 
 export default {
   name: 'PricingDesignIndex',
-  layout: 'clean',
   components: {
     pricingCalculate,
   },
-  data: () => ({
-    page: pricing(this),
-    mdiShopping,
-    mdiHelpCircleOutline,
-    mdiEmailSend,
-  }),
+  data() {
+    return {
+      page: pricing(this),
+      mdiShopping,
+      mdiHelpCircleOutline,
+      mdiEmailSend,
+    }
+  },
   head() {
     return {
       title: this.page.title,
@@ -186,15 +194,15 @@ export default {
 </script>
 
 <style scoped>
-.page__pricing {
+.page__pricing-design-index {
   --stop-color-one: #5b62e0;
   --stop-color-two: #5731a1;
 }
 
 .transition {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: var(--base-time);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .transform {
@@ -225,15 +233,15 @@ export default {
 }
 
 .v-parallax::before {
+  content: '';
   position: absolute;
   z-index: 2;
   top: 0;
   left: 0;
-  content: '';
   width: 100%;
   height: 100%;
-  background-color: var(--black);
   opacity: 0.4;
+  background-color: var(--black);
 }
 
 .v-parallax__image-container {

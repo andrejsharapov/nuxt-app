@@ -1,5 +1,5 @@
 <template lang="pug">
-v-app(v-resize='onResize')
+v-app(v-resize='onResize', dark)
   //- v-system-bar(absolute, color='warning')
   //-   .text-caption.white--text
 
@@ -38,7 +38,10 @@ v-app(v-resize='onResize')
   //- /SECTION
 
   //- SECTION[epic=layout] NAVIGATION
-  s-layout-navbar-bottom(v-if='$vuetify.breakpoint.smAndDown')
+  s-layout-navbar-bottom(
+    v-if='$vuetify.breakpoint.smAndDown',
+    :navbar='navbarBottom'
+  )
   v-navigation-drawer.layout__navbar(
     v-else,
     v-model='drawer',
@@ -259,7 +262,7 @@ export default {
         y: 0,
       },
       clipped: false,
-      drawer: this.drawerShow(),
+      drawer: false,
       fixed: false,
       miniVariant: false,
       right: true,
@@ -278,11 +281,16 @@ export default {
       mdiTableRow,
       mdiTableRowRemove,
       navbar: [],
+      navbarBottom: {},
     }
   },
   async fetch() {
     this.navbar = await this.$content(
       `${this.$i18n.locale}/navbar/side`
+    ).fetch()
+
+    this.navbarBottom = await this.$content(
+      `${this.$i18n.locale}/navbar/bottom`
     ).fetch()
   },
   head() {
@@ -325,14 +333,16 @@ export default {
   },
   mounted() {
     this.onResize()
-
-    if (this.windowSize.x >= 1024) {
-      this.drawer = true
-    } else {
-      this.drawer = false
-    }
+    this.windowDrawer()
   },
   methods: {
+    windowDrawer() {
+      if (this.windowSize.x >= 1024) {
+        this.drawer = true
+      } else {
+        this.drawer = false
+      }
+    },
     refresh() {
       setTimeout(() => {
         this.$fetch()
