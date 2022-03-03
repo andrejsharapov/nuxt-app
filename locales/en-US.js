@@ -4,6 +4,9 @@ import { designEn, devEn } from '../lib/pricing-services'
 export default {
   all: 'All',
   app: {
+    appearance: {
+      name: 'Appearance',
+    },
     chat: {
       title: 'Chat support',
       loading: {
@@ -99,10 +102,10 @@ export default {
       en: 'English',
     },
     themes: {
-      name: 'Theme',
-      light: 'Light',
-      dark: 'Dark',
-      system: 'System',
+      name: 'Theme preferences',
+      light: 'Light theme',
+      dark: 'Dark theme',
+      system: 'Sync with system',
     },
   },
   author: {
@@ -423,9 +426,11 @@ export default {
     header: {
       name: 'Header',
       sticky: 'Sticky',
+      scroll: 'Scrollable',
     },
     navbar: {
       name: 'Navigation',
+      right: 'Sidebar settings',
     },
     page: {
       construction: 'This page is under construction',

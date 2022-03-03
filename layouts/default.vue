@@ -21,21 +21,32 @@ v-app(v-resize='onResize', dark)
     s-layout-navbar-prepend.ml-n4(
       v-if='$vuetify.breakpoint.smAndUp && (clipped || !drawer)'
     )
+
     v-tooltip(v-if='$vuetify.breakpoint.mdAndUp', bottom)
       template(#activator='{ on: sidebar }')
-        v-btn(icon, v-on='{ ...sidebar }', @click.stop='drawer = !drawer')
+        v-btn(
+          icon,
+          v-on='{ ...sidebar }',
+          :class='{ "order-4": rightPosition === 0 }',
+          @click.stop='drawer = !drawer'
+        )
           v-icon {{ drawer ? mdiSegment : mdiSortVariant }}
       span {{ $t("site.navbar.name") }}
-    pre.opacity-0 {{ windowSize.x }}
-    v-spacer
-    lazy-s-layout-recent-projects
-    lazy-s-layout-job-offer
+    v-spacer(:class='{ "order-1": rightPosition === 0 }')
+
+    lazy-s-layout-recent-projects(:class='{ "order-2": rightPosition === 0 }')
+    lazy-s-layout-job-offer(:class='{ "order-3": rightPosition === 0 }')
 
     v-tooltip(bottom)
       template(#activator='{ on: settings }')
-        v-btn(icon, v-on='settings', @click.stop='rightDrawer = !rightDrawer')
+        v-btn(
+          icon,
+          :class='{ "order-0": rightPosition === 0 }',
+          v-on='settings',
+          @click.stop='rightDrawer = !rightDrawer'
+        )
           v-icon {{ mdiCogOutline }}
-      span {{ $t("settings") }}
+      span {{ $t("app.appearance.name") }}
   //- /SECTION
 
   //- SECTION[epic=layout] NAVIGATION
@@ -55,14 +66,9 @@ v-app(v-resize='onResize', dark)
   )
     template(#prepend)
       s-layout-navbar-prepend(v-if='!clipped')
+
     perfect-scrollbar
       lazy-s-layout-navbar-list(:mini-variant='miniVariant', :navbar='navbar')
-    //- template(#append)
-    //-   s-layout-navbar-append(
-    //-     :clipped='clipped',
-    //-     :drawer='drawer',
-    //-     :mini-variant='miniVariant'
-    //-   )
   //- /SECTION
 
   //- SECTION[epic=layout] MAIN
@@ -82,7 +88,7 @@ v-app(v-resize='onResize', dark)
   )
     template(#prepend)
       v-toolbar.text-h6.font-weight-medium.text--primary(flat)
-        | {{ $t("settings") }}
+        | {{ $t("app.appearance.name") }}
         v-spacer
         v-btn(icon, @click='rightDrawer = !rightDrawer')
           v-icon $mdiClose
@@ -92,7 +98,10 @@ v-app(v-resize='onResize', dark)
       v-container
         //- ANCHOR LANG
         .mb-2
-          v-list-item-title.mb-2.font-weight-bold {{ $t("app.lang.name") }}
+          v-list-item-title.mb-2.font-weight-bold
+            v-icon(left) {{ mdiTranslate }}
+            | {{ $t("app.lang.name") }}
+
           v-list-item-group.row.row--dense.mx-0(
             mandatory,
             active-class='primary white--text'
@@ -103,8 +112,7 @@ v-app(v-resize='onResize', dark)
                   :to='switchLocalePath("ru")',
                   @click.prevent='refresh'
                 )
-                  .text-body-2.font-weight-medium Ru
-                  v-icon.ml-2 {{ mdiTranslate }}
+                  .text-body-2.font-weight-medium {{ $t("app.lang.ru") }}
 
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
@@ -112,20 +120,21 @@ v-app(v-resize='onResize', dark)
                   @click.prevent='refresh',
                   @click='noTranslation'
                 )
-                  .text-body-2.font-weight-medium En
-                  v-icon.ml-2 {{ mdiTranslate }}
+                  .text-body-2.font-weight-medium {{ $t("app.lang.en") }}
 
         //- ANCHOR THEMES
         v-divider.my-4(inset)
-        v-list-item-title.mb-2.font-weight-bold {{ $t("app.themes.name") }}
+        v-list-item-title.mb-2.font-weight-bold
+          v-icon(left) {{ mdiThemeLightDark }}
+          | {{ $t("app.themes.name") }}
         lazy-s-color-mode-picker
 
         //- ANCHOR HEADER
         v-divider.my-4(inset)
-        v-list-item-title.mb-2.font-weight-bold {{ $t("site.header.name") }}:
-          span.text-lowercase
-            |
-            | {{ $t("site.header.sticky") }}
+        v-list-item-title.mb-2.font-weight-bold
+          v-icon(left) {{ mdiPageLayoutHeader }}
+          | {{ $t("site.header.name") }}
+
         v-list-item-group.row.row--dense.mx-0(
           mandatory,
           active-class='primary white--text'
@@ -135,19 +144,22 @@ v-app(v-resize='onResize', dark)
               v-list-item.align-center.justify-space-between.rounded.hidden(
                 @click.stop='clipped = false'
               )
-                .text-body-2.font-weight-medium {{ $t("no") }}
+                .text-body-2.font-weight-medium {{ $t("site.header.scroll") }}
                 v-icon.ml-2 {{ mdiTableRowRemove }}
 
             v-col(cols='6')
               v-list-item.align-center.justify-space-between.rounded.hidden(
                 @click.stop='clipped = true'
               )
-                .text-body-2.font-weight-medium {{ $t("yes") }}
+                .text-body-2.font-weight-medium {{ $t("site.header.sticky") }}
                 v-icon.ml-2 {{ mdiTableRow }}
 
         //- ANCHOR NAVIGATION
         v-divider.my-4(inset)
-        v-list-item-title.mb-2.font-weight-bold {{ $t("site.navbar.name") }}
+        v-list-item-title.mb-2.font-weight-bold
+          v-icon(left) {{ mdiPageLayoutSidebarLeft }}
+          | {{ $t("site.navbar.name") }}
+
         v-list-item-group.row.row--dense.mx-0(
           mandatory,
           active-class='primary white--text'
@@ -169,7 +181,10 @@ v-app(v-resize='onResize', dark)
 
         //- ANCHOR POSITION NAVBAR
         v-divider.my-4(inset)
-        v-list-item-title.mb-2.font-weight-bold {{ $t("settings") }}
+        v-list-item-title.mb-2.font-weight-bold
+          v-icon(left) {{ mdiPageLayoutSidebarRight }}
+          | {{ $t("site.navbar.right") }}
+
         v-list-item-group.row.row--dense.mx-0(
           v-model='rightPosition',
           mandatory,
@@ -230,6 +245,10 @@ import {
   mdiArrowUpBoldOutline,
   mdiCogOutline,
   mdiTranslate,
+  mdiThemeLightDark,
+  mdiPageLayoutHeader,
+  mdiPageLayoutSidebarLeft,
+  mdiPageLayoutSidebarRight,
   mdiArrowExpandHorizontal,
   mdiArrowCollapseHorizontal,
   mdiTableColumnPlusBefore,
@@ -252,13 +271,17 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
+      goToTop: false,
       rightPosition: 1,
       mdiSortVariant,
       mdiSegment,
-      goToTop: false,
       mdiArrowUpBoldOutline,
       mdiCogOutline,
       mdiTranslate,
+      mdiThemeLightDark,
+      mdiPageLayoutHeader,
+      mdiPageLayoutSidebarLeft,
+      mdiPageLayoutSidebarRight,
       mdiArrowExpandHorizontal,
       mdiArrowCollapseHorizontal,
       mdiTableColumnPlusBefore,

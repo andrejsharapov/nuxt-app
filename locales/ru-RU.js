@@ -4,6 +4,9 @@ import { designRu, devRu } from '../lib/pricing-services'
 export default {
   all: 'Все',
   app: {
+    appearance: {
+      name: 'Внешний вид',
+    },
     chat: {
       title: 'Чат поддержки',
       loading: {
@@ -416,11 +419,13 @@ export default {
   settings: 'Настройки',
   site: {
     header: {
-      name: 'Шапка',
+      name: 'Верхняя панель',
       sticky: 'Закрепить',
+      scroll: 'Прятать',
     },
     navbar: {
       name: 'Навигация',
+      right: 'Панель настроек',
     },
     page: {
       construction: 'Страница находится в разработке',

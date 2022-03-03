@@ -10,14 +10,14 @@ v-list-item-group.row.row--dense.mx-0(
         @click='lightTheme'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.light") }}
-        v-icon.ml-2 {{ mdiWeatherNightPartlyCloudy }}
+        v-icon.ml-2
 
     v-col(cols='6')
       v-list-item.align-center.justify-space-between.rounded.hidden(
         @click='darkTheme'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.dark") }}
-        v-icon.ml-2 {{ mdiWeatherPartlyCloudy }}
+        v-icon.ml-2
 
     v-col(cols='12')
       v-list-item.align-center.justify-space-between.rounded.hidden(
