@@ -16,7 +16,7 @@
   v-container
     v-row.mb-6
       //- SECTION PLUSES
-      v-col(cols='12')
+      v-col(cols='12', sm='8')
         s-section-heading-anchor(
           :title='$t("pages.pricing.sections.why.heading")',
           anchor='why'
@@ -54,6 +54,10 @@
               )
             v-list-item-content
               v-list-item-title.text-wrap(v-html='item')
+
+      v-col.z-index-2(cols='12', sm='4')
+        .mt-sm-n15
+          s-fish-pages-pricing.mt-md-n15(width='270', :height='null')
       //- /SECTION
 
       //- SECTION COOPERATION
