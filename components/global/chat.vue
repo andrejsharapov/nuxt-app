@@ -10,7 +10,7 @@
         elevation='2',
         dark,
         color='primary',
-        @click='[(dialog = true), (loading = true)]',
+        @click='chatOpen',
         v-on='chat'
       )
         v-icon(v-if='newIcon') {{ mdiWrenchOutline }}
@@ -70,15 +70,6 @@ export default {
       newIcon: true,
     }
   },
-  watch: {
-    dialog(val) {
-      if (!val)
-        return setTimeout(
-          () => [(this.dialog = true), (this.loading = false)],
-          4000
-        )
-    },
-  },
   mounted() {
     this.iconChange()
   },
@@ -87,6 +78,14 @@ export default {
       setInterval(() => {
         this.newIcon = !this.newIcon
       }, 15000)
+    },
+    chatOpen() {
+      this.dialog = true
+      this.loading = true
+
+      setTimeout(() => {
+        this.loading = false
+      }, 4000)
     },
   },
 }
