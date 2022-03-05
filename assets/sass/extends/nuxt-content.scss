@@ -55,6 +55,11 @@
     pre.line-numbers {
       background-color: var(--light);
       text-shadow: none;
+
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   }
 }
@@ -68,8 +73,9 @@
 
 .code-toolbar {
   .toolbar {
-    display: flex;
     top: -0.5em !important;
+    z-index: 2 !important;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 1px;
@@ -82,6 +88,15 @@
       }
 
       margin: 0 var(--px);
+
+      > span {
+        background-image: linear-gradient(
+          45deg,
+          var(--orange),
+          var(--pink)
+        ) !important;
+        color: var(--light) !important;
+      }
     }
 
     button,
@@ -93,14 +108,16 @@
       display: none;
       position: absolute !important;
       bottom: 0 !important;
-      background-image: linear-gradient(45deg, var(--primary), var(--accent));
       box-shadow: none;
       color: var(--light) !important;
     }
 
-    span {
-      background-image: linear-gradient(45deg, var(--orange), var(--pink));
-      color: var(--light) !important;
+    .copy-to-clipboard-button {
+      background-image: linear-gradient(
+        45deg,
+        var(--primary),
+        var(--accent)
+      ) !important;
     }
   }
 

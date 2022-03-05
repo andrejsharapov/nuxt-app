@@ -27,7 +27,7 @@
                     small,
                     :color='hover ? "accent" : "primary"',
                     :class='{ accent: !hidePanel }',
-                    style='margin-top: 5.5em; margin-right: 1.05em; z-index: 1',
+                    style='margin-top: 5.5em; margin-right: 1.05em; z-index: 3',
                     @click='viewPanel',
                     v-on='{ ...tooltip, ...menu }'
                   )

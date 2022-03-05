@@ -48,17 +48,17 @@ import { mdiDotsVertical, mdiDotsHorizontal } from '@mdi/js'
 
 export default {
   name: 'NavbarBottom',
+  props: {
+    navbar: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
   data: () => ({
     value: 1,
-    navbar: [],
     mdiDotsVertical,
     mdiDotsHorizontal,
   }),
-  async fetch() {
-    this.navbar = await this.$content(
-      `${this.$i18n.locale}/navbar/bottom`
-    ).fetch()
-  },
   computed: {
     cutMenuStart() {
       if (this.$vuetify.breakpoint.sm) {
