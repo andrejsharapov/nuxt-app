@@ -75,7 +75,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-vue": "8.4.1",
     "husky": "7.0.4",
-    "lint-staged": "12.3.4",
+    "lint-staged": "12.3.5",
     "lodash": "4.17.21",
     "moment": "2.29.1",
     "nuxt-purgecss": "1.0.0",
