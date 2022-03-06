@@ -1,9 +1,63 @@
-
 /**
  *
- * GRID
+ * Grid CSS
  *
  */
+
+@mixin mq($breakpoint)
+  @if map-has-key($grid-breakpoints, $breakpoint)
+    @media (min-width: #{map-get($grid-breakpoints, $breakpoint)})
+      @if $breakpoint != xs
+
+        .d-#{$breakpoint}-grid
+          display: grid !important
+
+        .d-#{$breakpoint}-inline-grid
+          display: inline-grid !important
+
+        @for $gtc from 1 through 12
+          .grid-cols-#{$breakpoint}-#{$gtc}
+            grid-template-columns: repeat(#{$gtc}, minmax(0, 1fr))
+
+        @for $gc from 1 through 12
+          .col-span-#{$breakpoint}-#{$gc}
+            grid-column: span #{$gc} / span #{$gc}
+
+        @for $gcs from 1 through 13
+          .col-start-#{$breakpoint}-#{$gcs}
+            grid-column-start: #{$gcs}
+
+        @for $gce from 1 through 13
+          .col-end-#{$breakpoint}-#{$gce}
+            grid-column-end: #{$gce}
+
+        @for $gtr from 1 through 6
+          .grid-rows-#{$breakpoint}-#{$gtr}
+            grid-template-rows: repeat(#{$gtr}, minmax(0, 1fr))
+
+        @for $gr from 1 through 6
+          .row-span-#{$breakpoint}-#{$gr}
+            grid-row: span #{$gr} / span #{$gr}
+
+        @for $grs from 1 through 7
+          .row-start-#{$breakpoint}-#{$grs}
+            grid-row-start: #{$grs}
+
+        @for $gre from 1 through 7
+          .row-end-#{$breakpoint}-#{$gre}
+            grid-row-end: #{$gre}
+
+        @each $g in $gap
+          .gap-#{$breakpoint}-#{$g}
+            gap: calc(#{$g} * 0.25rem)
+
+        @each $cg in $gap
+          .gap-x-#{$breakpoint}-#{$cg}
+            column-gap: calc(#{$cg} * 0.25rem)
+
+        @each $rg in $gap
+          .gap-y-#{$breakpoint}-#{$rg}
+            row-gap: calc(#{$rg} * 0.25rem)
 
 .d-grid
   display: grid
@@ -13,7 +67,7 @@
 
 /**
  *
- * COLUMNS
+ * Grid Template Columns
  *
  */
 
@@ -197,3 +251,9 @@ $gap: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 44,
 @each $rg in $gap
   .gap-y-#{$rg}
     row-gap: calc(#{$rg} * 0.25rem)
+
+@include mq(xs)
+@include mq(sm)
+@include mq(md)
+@include mq(lg)
+@include mq(xl)

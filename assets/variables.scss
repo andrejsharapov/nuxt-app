@@ -1,3 +1,10 @@
 $body-font-family: var(--body-font-family);
 $heading-font-family: var(--heading-font-family);
 $blockquote-font-size: calc(var(--px) * 4);
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 340px,
+  'md': 540px,
+  'lg': 800px - 24px,
+  'xl': 1280px - 24px,
+);
