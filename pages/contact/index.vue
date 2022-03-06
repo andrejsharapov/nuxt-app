@@ -16,7 +16,7 @@
   v-container
     v-row
       v-col(cols='12')
-        s-social-icons
+        s-social-icons.d-flex.flex-wrap.justify-center
 
       v-col(cols='12')
         p.text-center.mt-4
