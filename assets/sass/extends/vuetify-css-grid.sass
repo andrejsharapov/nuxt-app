@@ -1,8 +1,4 @@
-/**
- *
- * Grid CSS
- *
- */
+/*=====  Start of Grid CSS  ======*/
 
 @mixin mq($breakpoint)
   @if map-has-key($grid-breakpoints, $breakpoint)
@@ -58,6 +54,12 @@
         @each $rg in $gap
           .gap-y-#{$breakpoint}-#{$rg}
             row-gap: calc(#{$rg} * 0.25rem)
+
+/**
+ *
+ * Display Grid
+ *
+ */
 
 .d-grid
   display: grid
@@ -257,3 +259,22 @@ $gap: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 24, 28, 32, 36, 40, 44,
 @include mq(md)
 @include mq(lg)
 @include mq(xl)
+
+/*=====  End of Grid CSS  ======*/
+
+// @mixin bg($breakpoint)
+//   @if map-has-key($grid-breakpoints, $breakpoint)
+//     @media (min-width: #{map-get($grid-breakpoints, $breakpoint)})
+//       @content
+
+// .v-main
+//   @include bg(xs)
+//     background: red !important
+//   @include bg(sm)
+//     background: green !important
+//   @include bg(md)
+//     background: blue !important
+//   @include bg(lg)
+//     background: yellow !important
+//   @include bg(xl)
+//     background: purple !important

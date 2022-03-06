@@ -3,8 +3,8 @@ $heading-font-family: var(--heading-font-family);
 $blockquote-font-size: calc(var(--px) * 4);
 $grid-breakpoints: (
   'xs': 0,
-  'sm': 340px,
-  'md': 540px,
-  'lg': 800px - 24px,
-  'xl': 1280px - 24px,
+  'sm': 600px,
+  'md': 960px,
+  'lg': 1264px,
+  'xl': 1904px,
 );

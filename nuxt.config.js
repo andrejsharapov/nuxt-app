@@ -185,7 +185,7 @@ export default {
     { src: '~/assets/css/theme/dark' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
     { src: '~/assets/sass/extends/card-image', lang: 'scss' },
-    { src: '~/assets/sass/extends/grid-css-vuetify', lang: 'sass' },
+    { src: '~/assets/sass/extends/vuetify-css-grid', lang: 'sass' },
   ],
   purgeCSS: {
     // paths: [
