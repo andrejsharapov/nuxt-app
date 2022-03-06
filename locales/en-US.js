@@ -282,7 +282,7 @@ export default {
       sections: {
         about: {
           message:
-            'Hello! My name is {author}. More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
+            'Hello! My name is {author}. Already {years} am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
           activity: {
             prepend:
               'I am constantly developing and improving my skills in three easy steps',
@@ -311,8 +311,7 @@ export default {
             'To test my strength, I periodically take testing and online courses in web development, design and promotion. As a result of passing, I receive electronic certificates, which you can find below and on the certificates page.',
         },
         progress: {
-          title:
-            'Events <span class="d-none d-sm-inline-block">and achievements</span>',
+          title: 'Events and achievements',
           message:
             'During my work, I have successfully completed about {projects} projects to create design and website development, more than {works} small orders of varying complexity: drawing elements and refactoring code, developing logos, corporate websites and much more.',
         },

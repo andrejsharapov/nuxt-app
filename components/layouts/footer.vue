@@ -15,7 +15,7 @@ v-footer.layout__footer.pa-0(color='transparent')
             v-icon(right, color='primary', small) {{ mdiOpenInNew }}
       v-col(cols='12', md='6', :class='rightPos')
         v-card-text.py-2.d-flex.justify-center.justify-md-end
-          lazy-s-social-icons(plain)
+          lazy-s-social-icons.d-flex.flex-wrap.justify-center.d-sm-block(plain)
   lazy-s-layout-footer-color(:class='leftPos')
 </template>
 

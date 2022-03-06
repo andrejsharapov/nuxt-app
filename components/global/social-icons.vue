@@ -1,6 +1,6 @@
 <template lang="pug">
-.social-icons.text-center
-  v-btn.mx-4.my-2.mx-sm-1.my-sm-auto.social-icons__btn(
+.social-icons(:class='{ "fill-width": $vuetify.breakpoint.xs }')
+  v-btn.mx-3.my-2.mx-sm-1.my-sm-auto.social-icons__btn(
     v-for='{ title, icon, to, index } of icons',
     :key='index',
     :class='classColor',

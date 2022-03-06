@@ -22,8 +22,6 @@ v-row.contact-info
 </template>
 
 <script>
-import { mdiSkype } from '@mdi/js'
-
 export default {
   name: 'ContactInfo',
   props: {
@@ -31,11 +29,6 @@ export default {
       type: Array,
       default: () => [],
     },
-  },
-  data() {
-    return {
-      mdiSkype,
-    }
   },
   methods: {
     copyToClipboard() {
