@@ -311,8 +311,7 @@ export default {
             'To test my strength, I periodically take testing and online courses in web development, design and promotion. As a result of passing, I receive electronic certificates, which you can find below and on the certificates page.',
         },
         progress: {
-          title:
-            'Events <span class="d-none d-sm-inline-block">and achievements</span>',
+          title: 'Events and achievements',
           message:
             'During my work, I have successfully completed about {projects} projects to create design and website development, more than {works} small orders of varying complexity: drawing elements and refactoring code, developing logos, corporate websites and much more.',
         },
