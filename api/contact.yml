@@ -1,6 +1,6 @@
 contacts:
   - content: an.sharapov90@gmail.com
-    icon: $mdiEmail
+    icon: $mdiEmailOutline
     note: an.sharapov90@ya.ru
     title: Email
   - content: '+7 (964) 788-27-38'
@@ -14,10 +14,10 @@ contacts:
     icon: $telegramOutline
     title: Telegram
   - content: andrejsharapov#0036
-    icon: $mdiDiscord
+    icon: $discordOutline
     note:
     title: Discord
   - content: Andrej Sharapov
-    icon: $mdiSkype
+    icon: $mdiSkypeBusiness
     note: 'live:9c920983b0fe9b8e_1'
     title: Skype

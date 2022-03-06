@@ -34,15 +34,14 @@ import {
   mdiShieldLock,
   mdiAccountCheckOutline,
   mdiLicense,
-  mdiEmail,
   mdiPhone,
   mdiWhatsapp,
-  mdiDiscord,
-  mdiSkype,
+  mdiSkypeBusiness,
   mdiChartTimelineVariant,
   mdiTrophyAward,
   mdiAccountCheck,
   mdiAdjust,
+  mdiEmailOutline,
   mdiEmailSyncOutline,
   mdiAccountGroup,
   mdiPalette,
@@ -60,6 +59,7 @@ import {
   mdiBriefcaseEyeOutline,
 } from '@mdi/js'
 import vsCode from '@/components/icons/vs-code'
+import figmaOutline from '@/components/icons/figma-outline'
 import dribbbleOutline from '@/components/icons/dribbble-outline'
 import behanceOutline from '@/components/icons/behance-outline'
 import mediumOutline from '@/components/icons/medium-outline'
@@ -69,6 +69,8 @@ import twitterOutline from '@/components/icons/twitter-outline'
 import vkOutline from '@/components/icons/vk-outline'
 import instagramOutline from '@/components/icons/instagram-outline'
 import telegramOutline from '@/components/icons/telegram-outline'
+import pinterestOutline from '@/components/icons/pinterest-outline'
+import discordOutline from '@/components/icons/discord-outline'
 
 export default function ({ app }) {
   return {
@@ -121,6 +123,9 @@ export default function ({ app }) {
             name: '$vsCode',
           },
         },
+        figmaOutline: {
+          component: figmaOutline,
+        },
         dribbbleOutline: {
           component: dribbbleOutline,
         },
@@ -147,6 +152,12 @@ export default function ({ app }) {
         },
         telegramOutline: {
           component: telegramOutline,
+        },
+        pinterestOutline: {
+          component: pinterestOutline,
+        },
+        discordOutline: {
+          component: discordOutline,
         },
         // NOTE[epic=icons] MDI
         mdiHomeRoof,
@@ -184,15 +195,14 @@ export default function ({ app }) {
         mdiShieldLock,
         mdiAccountCheckOutline,
         mdiLicense,
-        mdiEmail,
         mdiPhone,
         mdiWhatsapp,
-        mdiDiscord,
-        mdiSkype,
+        mdiSkypeBusiness,
         mdiChartTimelineVariant,
         mdiTrophyAward,
         mdiAccountCheck,
         mdiAdjust,
+        mdiEmailOutline,
         mdiEmailSyncOutline,
         mdiAccountGroup,
         mdiPalette,
