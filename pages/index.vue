@@ -247,7 +247,7 @@ mixin sheet(color, saturation, size)
             ) {{ $t("more.base") }} {{ $t("pages.index.sections.certificates.title") }}
       //- /SECTION
 
-      v-img.confetty-horizontal.not-pointer.mx-auto(
+      v-img.confetti-horizontal.not-pointer.mx-auto(
         src='/src/confetti-horizontal.svg',
         alt=''
       )
