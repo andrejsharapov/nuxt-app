@@ -56,7 +56,7 @@ mixin sheet(color, saturation, size)
           br
           strong {{ this.$t("author.position[1]") }}
 
-        p {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: 4 }) }}
+        p {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: declensions(years, localeWords) }) }}
 
         //- ANCHOR 2.2/2 activity
         p.mb-2 {{ $t("pages.index.sections.about.activity.prepend") }}:
@@ -347,6 +347,7 @@ export default {
           },
         ],
       },
+      years: 5,
     }
   },
   head() {
@@ -374,6 +375,15 @@ export default {
         ? this.desSiteLocale.concat(this.devSiteLocale)
         : []
     },
+    localeWords() {
+      if (this.$i18n.locale === 'ru') {
+        return ['год', 'года', 'лет']
+      } else if (this.$i18n.locale === 'en') {
+        return ['year', 'years', 'years']
+      }
+
+      return []
+    },
   },
   methods: {
     storyLocale() {
@@ -395,6 +405,17 @@ export default {
       } else if (type === 'dev-site') {
         return 'dev'
       }
+    },
+    declensions(number, words) {
+      return (
+        this.years +
+        ' ' +
+        words[
+          number % 100 > 4 && number % 100 < 20
+            ? 2
+            : [2, 0, 1, 1, 1, 2][number % 10 < 5 ? Math.abs(number) % 10 : 5]
+        ]
+      )
     },
   },
 }
