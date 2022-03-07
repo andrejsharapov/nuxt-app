@@ -171,29 +171,30 @@ v-app(v-resize='onResize', dark)
                 v-icon.ml-2 {{ mdiTableRow }}
 
         //- ANCHOR NAVIGATION
-        v-divider.my-4(inset)
-        v-list-item-title.mb-2.font-weight-bold
-          v-icon(left) {{ mdiPageLayoutSidebarLeft }}
-          | {{ $t("site.navbar.name") }}
+        template(v-if='$vuetify.breakpoint.mdAndUp')
+          v-divider.my-4(inset)
+          v-list-item-title.mb-2.font-weight-bold
+            v-icon(left) {{ mdiPageLayoutSidebarLeft }}
+            | {{ $t("site.navbar.name") }}
 
-        v-list-item-group.row.row--dense.mx-0(
-          mandatory,
-          active-class='primary white--text'
-        )
-          v-row.ma-0(dense)
-            v-col(cols='6')
-              v-list-item.align-center.justify-space-between.rounded.hidden(
-                @click.stop='miniVariant = false'
-              )
-                .text-body-2.font-weight-medium {{ $t("size.full") }}
-                v-icon.ml-2 {{ mdiArrowExpandHorizontal }}
+          v-list-item-group.row.row--dense.mx-0(
+            mandatory,
+            active-class='primary white--text'
+          )
+            v-row.ma-0(dense)
+              v-col(cols='6')
+                v-list-item.align-center.justify-space-between.rounded.hidden(
+                  @click.stop='miniVariant = false'
+                )
+                  .text-body-2.font-weight-medium {{ $t("size.full") }}
+                  v-icon.ml-2 {{ mdiArrowExpandHorizontal }}
 
-            v-col(cols='6')
-              v-list-item.align-center.justify-space-between.rounded.hidden(
-                @click.stop='miniVariant = true'
-              )
-                .text-body-2.font-weight-medium {{ $t("size.mini") }}
-                v-icon.ml-2 {{ mdiArrowCollapseHorizontal }}
+              v-col(cols='6')
+                v-list-item.align-center.justify-space-between.rounded.hidden(
+                  @click.stop='miniVariant = true'
+                )
+                  .text-body-2.font-weight-medium {{ $t("size.mini") }}
+                  v-icon.ml-2 {{ mdiArrowCollapseHorizontal }}
 
         //- ANCHOR POSITION NAVBAR
         v-divider.my-4(inset)
