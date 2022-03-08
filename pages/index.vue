@@ -1,6 +1,6 @@
 <template lang="pug">
 mixin sheet(color, saturation, size)
-  v-sheet.rounded-lg.d-flex.justify-center.align-center(
+  v-sheet.d-flex.justify-center.align-center.rounded(
     color=color + " " + saturation,
     width=size,
     height=size
@@ -58,25 +58,25 @@ mixin sheet(color, saturation, size)
           )
             v-hover(#default='{ hover }', :key='index')
               v-sheet.px-4.fill-height.rounded-lg.transition(
-                :class='$vuetify.theme.dark ? "" : hover ? "white shadow-sm" : "transparent"'
+                :class='$vuetify.theme.dark ? "transparent" : hover ? "white shadow-sm" : "transparent"'
               )
                 v-list-item.px-0.d-flex.flex-md-column.text-md-center.flex-lg-row.text-lg-left
                   v-list-item-icon.mr-0.align-self-center
                     span(v-if='$vuetify.theme.dark')
-                      +sheet('blue', 'darken-4', 70)
-                        +sheet('blue', 'darken-3', 60)
-                          +sheet('blue', 'darken-2', 50)
-                            v-avatar.rounded-lg(size='40', tile)
-                              span.font-weight-bold.white--text {{ `#${index + 1}` }}
+                      +sheet('blue', 'darken-4', 50)
+                        +sheet('blue', 'darken-3', 40)
+                          +sheet('blue', 'darken-2', 30)
+                            v-avatar.rounded-lg(size='20', tile)
+                              span.font-weight-bold.white--text {{ index + 1 }}
                     span(v-else)
-                      +sheet('blue', 'lighten-4', 70)
-                        +sheet('blue', 'lighten-3', 60)
-                          +sheet('blue', 'lighten-2', 50)
-                            v-avatar.rounded-lg(size='40', tile)
-                              span.font-weight-bold.white--text {{ `#${index + 1}` }}
+                      +sheet('blue', 'lighten-4', 50)
+                        +sheet('blue', 'lighten-3', 40)
+                          +sheet('blue', 'lighten-2', 30)
+                            v-avatar.rounded-lg(size='20', tile)
+                              span.font-weight-bold.white--text {{ index + 1 }}
                   v-list-item-content.pa-4.py-md-0
                     v-list-item-title.text-wrap.text-sm-subtitle-2(
-                      style='color: var(--secondary)'
+                      :style='{ color: $vuetify.theme.dark ? "" : "var(--secondary)" }'
                     ) {{ card.message }}
 
         p {{ $tc("pages.index.sections.about.activity.append") }}
