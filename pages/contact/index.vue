@@ -16,7 +16,7 @@
   v-container
     v-row
       v-col(cols='12')
-        s-social-icons.d-flex.flex-wrap.justify-center
+        s-pages-contact-info.mb-4(:info='info.contacts')
 
       v-col(cols='12')
         p.text-center.mt-4
@@ -25,8 +25,11 @@
             template(#activator='{ on: help }')
               v-icon.cursor-help(right, size='18', color='accent', v-on='help') {{ mdiHelpCircleOutline }}
             span {{ $t("pages.contact.help") }}
+
       v-col(cols='12')
-        s-pages-contact-info.mb-4(:info='info.contacts')
+        s-social-icons.d-flex.flex-wrap.justify-center
+
+      v-col(cols='12')
         p.text-center.text-sm-right.mt-4 {{ $t("author.region") }}
 </template>
 
