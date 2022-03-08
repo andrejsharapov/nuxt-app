@@ -29,15 +29,15 @@ export default {
   },
   data() {
     return {
-      social: [],
+      accounts: [],
     }
   },
   async fetch() {
-    this.social = await this.$content('social').only('social').fetch()
+    this.accounts = await this.$content('accounts').only('data').fetch()
   },
   computed: {
     icons() {
-      return this.social?.social
+      return this.accounts?.data
     },
   },
 }

@@ -21,3 +21,15 @@ contacts:
     icon: $mdiSkypeBusiness
     note: 'live:9c920983b0fe9b8e_1'
     title: Skype
+  - content: '@andrejsharapov'
+    icon: '$twitterOutline'
+    title: 'Twitter'
+    to: 'https://twitter.com/andrejsharapov'
+  - content: andrejsharapov
+    icon: '$vkOutline'
+    title: 'VKontakte'
+    to: 'https://vk.com/andrejsharapov'
+  - content: andrej.sharapov
+    icon: '$instagramOutline'
+    title: 'Instagram'
+    to: 'https://www.instagram.com/andrej.sharapov'
