@@ -275,7 +275,7 @@ export default {
     },
     illustrations: {
       message:
-        "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
+        "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish {link} that you can see on the pages of the site.",
     },
     index: {
       title: 'Home',
