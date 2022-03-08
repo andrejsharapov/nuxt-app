@@ -63,6 +63,7 @@ import figmaOutline from '@/components/icons/figma-outline'
 import dribbbleOutline from '@/components/icons/dribbble-outline'
 import behanceOutline from '@/components/icons/behance-outline'
 import mediumOutline from '@/components/icons/medium-outline'
+import mediumFilled from '@/components/icons/medium-filled'
 import codepenOutline from '@/components/icons/codepen-outline'
 import githubOutline from '@/components/icons/github-outline'
 import twitterOutline from '@/components/icons/twitter-outline'
@@ -71,6 +72,8 @@ import instagramOutline from '@/components/icons/instagram-outline'
 import telegramOutline from '@/components/icons/telegram-outline'
 import pinterestOutline from '@/components/icons/pinterest-outline'
 import discordOutline from '@/components/icons/discord-outline'
+import unsplashOutline from '@/components/icons/unsplash-outline'
+import devToOutline from '@/components/icons/dev-to-outline'
 
 export default function ({ app }) {
   return {
@@ -147,6 +150,9 @@ export default function ({ app }) {
         mediumOutline: {
           component: mediumOutline,
         },
+        mediumFilled: {
+          component: mediumFilled,
+        },
         vkOutline: {
           component: vkOutline,
         },
@@ -158,6 +164,12 @@ export default function ({ app }) {
         },
         discordOutline: {
           component: discordOutline,
+        },
+        unsplashOutline: {
+          component: unsplashOutline,
+        },
+        devToOutline: {
+          component: devToOutline,
         },
         // NOTE[epic=icons] MDI
         mdiHomeRoof,
