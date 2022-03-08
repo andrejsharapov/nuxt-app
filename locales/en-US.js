@@ -152,7 +152,7 @@ export default {
     events: 'More events',
   },
   news: {
-    about: 'Mentions in news and media',
+    about: 'Articles and mentions in media',
   },
   no: 'No',
   poll: {
