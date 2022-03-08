@@ -16,7 +16,7 @@
   v-container
     v-row
       v-col(cols='12')
-        s-pages-contact-info.mb-4(:info='info.contacts')
+        s-pages-contact-info.mt-md-n12.mb-4(:info='info.contacts')
 
       v-col(cols='12')
         p.text-center.mt-4
