@@ -1,6 +1,7 @@
 <template lang="pug">
+//- NOTE COMPONENT DISABLED
 v-list.mb-1.pa-0(dense, nav)
-  v-list-item-group(multiple, color='accent')
+  v-list-item-group(multiple, color='primary')
     v-row.ma-0(no-gutters)
       v-col.mr-1
         v-list-item(:to='switchLocalePath("ru")')
@@ -33,8 +34,7 @@ export default {
         type: 'warn',
         title: 'Attention!',
         duration: 6000,
-        text:
-          'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
+        text: 'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
       })
     },
   },

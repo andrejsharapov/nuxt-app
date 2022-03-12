@@ -43,7 +43,7 @@
 
       v-col(cols='12')
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
-        lazy-s-page-coding-code-example(
+        lazy-s-pages-coding-code-example(
           v-if='localeItems.length',
           :items='localeItems'
         )
@@ -55,8 +55,9 @@ import { mdiCodeJson, mdiOpenInNew } from '@mdi/js'
 import { coding } from '~/lib/page-meta'
 
 export default {
+  name: 'CodingIndex',
   async asyncData({ $content, params }) {
-    const codeLocale = await $content('coding', params.slug)
+    const codeLocale = await $content('works/coding', params.slug)
       .where({ type: 'coding' })
       .sortBy('date', 'desc')
       .fetch()
@@ -96,9 +97,11 @@ export default {
 }
 </script>
 
-<style>
-.page__conding {
-  --stop-color-one: var(--black);
-  --stop-color-two: var(--dark);
+<style lang="scss">
+.page {
+  &__conding {
+    --stop-color-one: var(--black);
+    --stop-color-two: var(--dark);
+  }
 }
 </style>

@@ -1,0 +1,76 @@
+hide: false
+type: des-site
+title: Дизайн главной страницы сайта туристической компании «Nuti Travel»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7884282/media/2d0aba1b9001d5c3d6e1751e0452542a.png?compress=1&resize=1000x750
+  alt: Дизайн главной страницы сайта туристической компании «Nuti Travel»
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: '2018-09-20'
+period:
+  - '2018-09-18'
+  - '2018-09-20'
+deadline: На выполнение задачи потребовалось около трех дней.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+    - title: Другие
+      tags:
+        - 'Model: Надежда Добровольская-Баскакова'
+        - 'Model: Андрей Шарапов'
+  to:
+    dribbble: https://dribbble.com/shots/7884282-Website-of-Travel-Company
+    behance: https://www.behance.net/gallery/73309351/Nuti-Travel-We-fulfill-your-dreams
+    instagram: https://www.instagram.com/p/B41oRP4g9Lt/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Туристическая компания «Nuti Travel»
+  description:
+  issues:
+  task: разработка дизайна главной страницы сайта для дальнейшей установки на CMS.
+done:
+  img:
+    src: B41oRP4g9Lt
+    alt: Туристическая компания «Nuti Travel»
+    height:
+  alert:
+    message:
+  list:
+    - разработка фирменного стиля;
+    - разработка цветовой гаммы, типографики и состояний элементов (UI Kit);
+    - разработка прототипов дизайн-макета;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ''
+    hex:
+      - F18122
+      - 3E91B9
+  - type: ''
+    hex:
+      - 444857
+      - 29496F
+  - type: ''
+    hex:
+      - 131418
+      - '000000'
+  - type: ''
+    hex:
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap' rel='stylesheet'>"
+  headline: Pacifico
+  text: Montserrat
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '100'

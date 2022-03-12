@@ -9,7 +9,11 @@ v-list.navbar__list.hidden-x
         v-divider(:class='miniVariant ? "d-none" : "ml-6"')
       template(v-for='itemTwo of itemOne.nested')
         template(v-if='itemTwo.child')
-          v-list-group(:key='itemTwo.to', :disabled='itemTwo.disabled')
+          v-list-group(
+            :key='itemTwo.to',
+            :disabled='itemTwo.disabled',
+            :group='itemTwo.group'
+          )
             template(#activator)
               v-list-item-action
                 v-tooltip(right, nudge-right='8')
@@ -22,14 +26,11 @@ v-list.navbar__list.hidden-x
               v-list-item.justify-start(
                 :key='index',
                 :to='itemThree.to',
-                :disabled='itemThree.disabled',
-                exact,
-                router
+                :disabled='itemThree.disabled'
               )
                 v-list-item-action
                   v-tooltip(v-if='miniVariant', nudge-right='8', right)
                     template(#activator='{ on }')
-                      | 3
                       v-icon(v-on='on') {{ itemThree.action }}
                     span {{ itemThree.title }}
                 v-list-item-content
@@ -37,14 +38,11 @@ v-list.navbar__list.hidden-x
                 v-list-item-action(v-if='!miniVariant')
                   v-icon {{ itemThree.action }}
 
-        //- REVIEW[epic=client-side] disabled !(if use :to="localeParh('item.to')")
         template(v-else)
           v-list-item.justify-start(
             :key='itemTwo.title',
             :to='itemTwo.to',
-            :disabled='itemTwo.disabled',
-            exact,
-            router
+            :disabled='itemTwo.disabled'
           )
             v-list-item-action
               v-tooltip(nudge-right='8', right)
@@ -54,14 +52,8 @@ v-list.navbar__list.hidden-x
             v-list-item-content
               v-list-item-title {{ itemTwo.title }}
 
-    //- REVIEW[epic=client-side, seq=1] The client-side rendered virtual DOM tree is not matching server-rendered content. This is likely caused by incorrect HTML markup, for example nesting block-level elements inside <p>, or missing <tbody>. Bailing hydration and performing full client-side render.
     template(v-else)
-      v-list-item.justify-start(
-        :key='itemOne.id',
-        :to='itemOne.to',
-        exact,
-        router
-      )
+      v-list-item.justify-start(:key='itemOne.id', :to='itemOne.to')
         v-list-item-action
           v-tooltip(nudge-right='8', right)
             template(#activator='{ on }')
@@ -83,16 +75,10 @@ export default {
       type: Boolean,
       default: false,
     },
-  },
-  data() {
-    return {
-      navbar: [],
-    }
-  },
-  async fetch() {
-    this.navbar = await this.$content(
-      `${this.$i18n.locale}/navbar/side`
-    ).fetch()
+    navbar: {
+      type: Object,
+      default: () => ({}),
+    },
   },
 }
 </script>

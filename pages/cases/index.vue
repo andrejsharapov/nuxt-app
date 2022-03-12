@@ -27,16 +27,17 @@
         .mt-sm-n15
           s-fish-pages-cases.mt-md-n15(width='270', :height='null')
 
-    s-page-cases-index-card(:items='localeItems')
+    s-pages-cases-index-card(:items='localeItems')
 </template>
 
 <script>
 import { cases } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesIndex',
   async asyncData({ $content, app, params }) {
     const cardsLocale = await $content(
-      `${app.i18n.locale}/pages/cases/index`,
+      `${app.i18n.locale}/cases/index`,
       params.slug
     ).fetch()
 

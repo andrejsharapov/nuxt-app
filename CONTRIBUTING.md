@@ -18,6 +18,6 @@ You need to use ESLint and stylelint to lint our JS, CSS, and Sass. Its configur
 
 Thank you!
 
-[1]: ../../#tltr-wiki
-[2]: ../../#css-syntax
+[1]: ../../wiki
+[2]: ../../wiki/CSS-syntax
 [contributors]: https://img.shields.io/github/contributors/andrejsharapov/nuxt-app?color=fd7e17

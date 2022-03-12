@@ -1,0 +1,36 @@
+$card: card-view;
+$time: 200ms;
+$shadow-xl: var(--shadow-xl);
+
+.#{$card} {
+  &__image {
+    transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+
+    @supports (filter: blur) {
+      filter: blur(2px);
+    }
+
+    opacity: 0.5;
+  }
+
+  &:hover {
+    .#{$card} {
+      &__image {
+        transform: perspective(800px) rotateY(-15deg) translateY(-50px)
+          rotateX(10deg) scale(1);
+
+        @supports (filter: blur) {
+          filter: blur(0);
+        }
+
+        transition: all $time cubic-bezier(0.25, 0.1, 0, 2.05);
+        opacity: 1;
+        box-shadow: $shadow-xl !important;
+
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+}

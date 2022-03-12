@@ -41,20 +41,19 @@ export default {
 <style>
 .cookie-consent {
   position: fixed;
+  z-index: 6;
   right: 0.75rem;
   bottom: 0.75rem;
   left: 0.75rem;
+  max-width: 672px;
+  min-height: 48px;
+  border-radius: 0.25rem;
+  background-color: var(--dark);
+  font-size: 0.825rem;
 
   @media (--sm-max) {
     right: 0.25rem;
     left: 0.25rem;
   }
-
-  z-index: 6;
-  max-width: 672px;
-  min-height: 48px;
-  font-size: 0.825rem;
-  border-radius: 0.25rem;
-  background-color: var(--dark);
 }
 </style>

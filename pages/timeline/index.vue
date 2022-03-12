@@ -30,7 +30,7 @@
           lazy-s-fish-pages-timeline(width='290', :height='null')
 
       v-col(cols='12')
-        lazy-s-page-timeline-items(v-if='localeItems', :items='localeItems')
+        lazy-s-pages-timeline-items(v-if='localeItems', :items='localeItems')
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
@@ -39,6 +39,7 @@ import { mdiTimeline } from '@mdi/js'
 import { timeline } from '~/lib/page-meta'
 
 export default {
+  name: 'TimelineIndex',
   async asyncData({ $content, params, app }) {
     const timeLineLocale = await $content(
       `${app.i18n.locale}/timeline`,
@@ -46,6 +47,7 @@ export default {
     )
       .sortBy('date', 'desc')
       .fetch()
+
     return {
       timeLineLocale,
     }
@@ -77,10 +79,12 @@ export default {
 }
 </script>
 
-<style>
-.page__timeline {
-  --stop-color-one: var(--v-error-darken2);
-  --stop-color-two: var(--v-error-lighten3);
+<style lang="scss">
+.page {
+  &__timeline {
+    --stop-color-one: var(--v-error-darken2);
+    --stop-color-two: var(--v-error-lighten3);
+  }
 }
 
 .v-timeline {

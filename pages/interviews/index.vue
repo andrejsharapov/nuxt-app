@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'InterviewsIndex',
   layout: 'clean',
   data: () => ({
     page: {

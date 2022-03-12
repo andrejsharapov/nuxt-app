@@ -1,16 +1,20 @@
 <template lang="pug">
-.page__
+.page__pricing-index
   s-history-back
   v-container
     v-row
       v-col(cols='12')
-        v-card
-          v-card-title Hello!
+        v-card(flat)
+          v-card-title
 </template>
 
 <script>
 export default {
+  name: 'PricingIndex',
   layout: 'clean',
+  middleware({ redirect, app }) {
+    return redirect('301', `/${app.i18n.locale}/`)
+  },
   data: () => ({
     page: {
       crumbs: '',

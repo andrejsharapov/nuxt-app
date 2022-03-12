@@ -1,13 +1,3 @@
-import vsCode from '@/components/icons/vs-code'
-import dribbbleOutline from '@/components/icons/dribbble-outline'
-import behanceOutline from '@/components/icons/behance-outline'
-import mediumOutline from '@/components/icons/medium-outline'
-import codepenOutline from '@/components/icons/codepen-outline'
-import githubOutline from '@/components/icons/github-outline'
-import twitterOutline from '@/components/icons/twitter-outline'
-import vkOutline from '@/components/icons/vk-outline'
-import instagramOutline from '@/components/icons/instagram-outline'
-
 import {
   mdiHomeRoof,
   mdiFolderOpen,
@@ -44,17 +34,46 @@ import {
   mdiShieldLock,
   mdiAccountCheckOutline,
   mdiLicense,
-  mdiEmail,
   mdiPhone,
   mdiWhatsapp,
-  mdiDiscord,
-  mdiSkype,
-  mdiTelegram,
+  mdiSkypeBusiness,
   mdiChartTimelineVariant,
   mdiTrophyAward,
   mdiAccountCheck,
   mdiAdjust,
+  mdiEmailOutline,
+  mdiEmailSyncOutline,
+  mdiAccountGroup,
+  mdiPalette,
+  mdiNuxt,
+  mdiGit,
+  mdiLanguagePhp,
+  mdiLanguageHtml5,
+  mdiLanguageCss3,
+  mdiVuejs,
+  mdiVuetify,
+  mdiGoogleAnalytics,
+  mdiMicrosoftVisualStudioCode,
+  mdiWordpress,
+  mdiHandshakeOutline,
+  mdiBriefcaseEyeOutline,
 } from '@mdi/js'
+import vsCode from '@/components/icons/vs-code'
+import figmaOutline from '@/components/icons/figma-outline'
+import dribbbleOutline from '@/components/icons/dribbble-outline'
+import behanceOutline from '@/components/icons/behance-outline'
+import mediumOutline from '@/components/icons/medium-outline'
+import mediumFilled from '@/components/icons/medium-filled'
+import codepenOutline from '@/components/icons/codepen-outline'
+import githubOutline from '@/components/icons/github-outline'
+import twitterOutline from '@/components/icons/twitter-outline'
+import vkOutline from '@/components/icons/vk-outline'
+import instagramOutline from '@/components/icons/instagram-outline'
+import telegramOutline from '@/components/icons/telegram-outline'
+import pinterestOutline from '@/components/icons/pinterest-outline'
+import discordOutline from '@/components/icons/discord-outline'
+import unsplashOutline from '@/components/icons/unsplash-outline'
+import devToOutline from '@/components/icons/dev-to-outline'
 
 export default function ({ app }) {
   return {
@@ -107,6 +126,9 @@ export default function ({ app }) {
             name: '$vsCode',
           },
         },
+        figmaOutline: {
+          component: figmaOutline,
+        },
         dribbbleOutline: {
           component: dribbbleOutline,
         },
@@ -128,8 +150,26 @@ export default function ({ app }) {
         mediumOutline: {
           component: mediumOutline,
         },
+        mediumFilled: {
+          component: mediumFilled,
+        },
         vkOutline: {
           component: vkOutline,
+        },
+        telegramOutline: {
+          component: telegramOutline,
+        },
+        pinterestOutline: {
+          component: pinterestOutline,
+        },
+        discordOutline: {
+          component: discordOutline,
+        },
+        unsplashOutline: {
+          component: unsplashOutline,
+        },
+        devToOutline: {
+          component: devToOutline,
         },
         // NOTE[epic=icons] MDI
         mdiHomeRoof,
@@ -167,16 +207,29 @@ export default function ({ app }) {
         mdiShieldLock,
         mdiAccountCheckOutline,
         mdiLicense,
-        mdiEmail,
         mdiPhone,
         mdiWhatsapp,
-        mdiDiscord,
-        mdiSkype,
-        mdiTelegram,
+        mdiSkypeBusiness,
         mdiChartTimelineVariant,
         mdiTrophyAward,
         mdiAccountCheck,
         mdiAdjust,
+        mdiEmailOutline,
+        mdiEmailSyncOutline,
+        mdiAccountGroup,
+        mdiPalette,
+        mdiNuxt,
+        mdiGit,
+        mdiLanguagePhp,
+        mdiLanguageHtml5,
+        mdiLanguageCss3,
+        mdiVuejs,
+        mdiVuetify,
+        mdiGoogleAnalytics,
+        mdiMicrosoftVisualStudioCode,
+        mdiWordpress,
+        mdiHandshakeOutline,
+        mdiBriefcaseEyeOutline,
       },
     },
   }

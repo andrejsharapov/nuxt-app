@@ -281,7 +281,7 @@
 
 <script>
 export default {
-  name: 'EmptyContent',
+  name: 'FishEmptyContent',
   props: {
     width: {
       type: [Number, String],

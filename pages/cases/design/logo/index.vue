@@ -38,7 +38,7 @@
 
         v-row(v-if='localeItems.length')
           v-col(v-for='(item, index) in localeItems', :key='index', md='6')
-            s-page-cases-design-logo-card-logos(
+            s-pages-cases-design-logo-card-logos(
               :item='item',
               :preview='cardView'
             )
@@ -50,9 +50,10 @@ import { mdiVectorRadius } from '@mdi/js'
 import { logos } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDesignLogoIndex',
   async asyncData({ $content, app, params }) {
     const logosLocale = await $content(
-      `${app.i18n.locale}/pages/cases/design/logo`,
+      `${app.i18n.locale}/cases/design/logo`,
       params.slug
     ).fetch()
 
@@ -91,9 +92,11 @@ export default {
 }
 </script>
 
-<style>
-.page__logo {
-  --stop-color-one: var(--v-success-darken3);
-  --stop-color-two: var(--v-success-lighten1);
+<style lang="scss">
+.page {
+  &__logo {
+    --stop-color-one: var(--v-success-darken3);
+    --stop-color-two: var(--v-success-lighten1);
+  }
 }
 </style>

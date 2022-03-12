@@ -1,9 +1,11 @@
 <template lang="pug">
-.social-icons.text-center
-  v-btn.mx-4.my-2.mx-sm-1.my-sm-auto.social-icons__btn(
+.social-icons(:class='{ "fill-width": $vuetify.breakpoint.xs }')
+  v-btn.mx-3.my-2.mx-sm-1.my-sm-auto.social-icons__btn(
     v-for='{ title, icon, to, index } of icons',
     :key='index',
+    :class='classColor',
     icon,
+    :plain='plain',
     :data-title='title',
     :href='to',
     target='_blank',
@@ -15,17 +17,27 @@
 <script>
 export default {
   name: 'SocialIcons',
+  props: {
+    classColor: {
+      type: String,
+      default: null,
+    },
+    plain: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     return {
-      social: [],
+      accounts: [],
     }
   },
   async fetch() {
-    this.social = await this.$content('social').only('social').fetch()
+    this.accounts = await this.$content('accounts').only('data').fetch()
   },
   computed: {
     icons() {
-      return this.social?.social
+      return this.accounts?.data
     },
   },
 }

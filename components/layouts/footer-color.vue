@@ -64,7 +64,7 @@
             v-list-item(
               :href='doc.content.license.to',
               target='_blank',
-              rel='nopener noreferrer'
+              rel='noopener noreferrer'
             )
               v-list-item-avatar(:color='doc.content.license.type')
                 v-icon(size='28', color='blue-grey darken-4') {{ doc.content.license.icon }}
@@ -79,7 +79,7 @@
             v-list-item(
               :href='doc.content.versions.to',
               target='_blank',
-              rel='nopener noreferrer'
+              rel='noopener noreferrer'
             )
               v-list-item-avatar(:color='doc.content.versions.type')
                 v-icon(size='28', color='blue-grey darken-4') {{ mdiTagOutline }}

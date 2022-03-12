@@ -1,0 +1,47 @@
+hide: false
+type: dev-banner
+title: Изготовление html5 баннера «ИЩУ РАБОТУ»
+img:
+  src: /src/nuxt-app/banners/looking-for-a-job-240x400/preview.jpg
+  alt: Изготовление html5 баннера «ИЩУ РАБОТУ»
+ux:
+  price: Разработка html5 баннера
+created: '2018-01-14'
+period:
+  - '2018-01-14'
+  - '2018-01-14'
+deadline: На выполнение поставленной задачи было затрачено менее 2-х дней.
+client:
+  logoJPG:
+  logoWEBP:
+  head:
+  description:
+  issues:
+  task: Разработать html5 баннер, направленный на улучшение представления работодателя и заказчиков о моих возможностях и об одной из целей в жизни — работе в сфере веб-дизайна.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Google Web Designer
+  roles:
+    - title: Мои
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - разработка сценария;
+    - раскадровка;
+    - подготовка текстов;
+    - аниматик;
+    - программирование;
+    - цикличность сценария;
+    # - подготовка баннера к размещению на рекламной площадке;
+storyboard:
+  src: /src/nuxt-app/banners/looking-for-a-job-240x400/storyboard.jpg
+  alt:
+animatic:
+  width: 240
+  height: 400
+  reload: false
+resize: 240 x 400

@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'GuestLiveStreamsIndex',
   layout: 'clean',
   data: () => ({
     page: {

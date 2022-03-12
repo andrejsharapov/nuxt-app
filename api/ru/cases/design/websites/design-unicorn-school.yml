@@ -1,0 +1,77 @@
+hide: false
+type: des-site
+title: Дизайн продающей страницы конного клуба
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7786454/media/518ed3d7dd768170a24507d9a89f4e66.png
+  alt: Конный клуб «Единорожка»
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: '2019-10-22'
+period:
+  - '2019-10-22'
+  - '2019-10-23'
+deadline: На выполнение задачи ушло около 20 часов.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - Adobe Illustrator
+  roles:
+    - title: Мои
+      tags:
+        - UI/UX Designer
+    - title: Другие
+      tags:
+        - 'Model: Надежда Добровольская-Баскакова'
+        - 'Model: Андрей Шарапов'
+  to:
+    dribbble: https://dribbble.com/shots/7786454-Landing-Horse-Club-Unicorn
+    behance: https://www.behance.net/gallery/87207549/konnyj-klub-edinorozhka
+    instagram: https://www.instagram.com/p/B4g7umpALQf/
+client:
+  logoJPG:
+  logoWEBP:
+  head: Конный клуб «Единорожка»
+  description:
+  issues:
+  task: привлечение потенциальных клиентов к деятельности и компании и ее услугам.
+done:
+  img:
+    src: B4g7umpALQf
+    alt: Конный клуб «Единорожка»
+    height:
+  alert:
+    message:
+  list:
+    - разработка фирменного стиля;
+    - разработка цветовой гаммы, типографики и состояний элементов;
+    - разработка прототипов дизайн-макета;
+    - написание оригинальных текстов;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ''
+    hex:
+      - F18122
+      - AD7861
+  - type: ''
+    hex:
+      - 24292E
+  - type: ''
+    hex:
+      - 969696
+      - E5E5E5
+  - type: ''
+    hex:
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Podkova&family=Montserrat&display=swap' rel='stylesheet'>"
+  headline: Podkova
+  text: Montserrat
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '100'

@@ -1,22 +1,32 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
-  rules: {
-    'at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: [
-          'mixin',
-          'for',
-          'include',
-          'each',
-          // 'function',
-          // 'if',
-          // 'else',
-          // 'util',
-          // 'return',
-          // 'extend',
+  customSyntax: 'postcss-html',
+  extends: [
+    'stylelint-config-recommended-vue',
+    'stylelint-config-property-sort-order-smacss',
+    'stylelint-config-prettier',
+  ],
+  overrides: [
+    {
+      files: ['*.sass', '**/*.sass'],
+      rules: {
+        'at-rule-no-unknown': [
+          true,
+          {
+            ignoreAtRules: [
+              'mixin',
+              'for',
+              'include',
+              'each',
+              'function',
+              'if',
+              'else',
+              'util',
+              'return',
+              'extend',
+            ],
+          },
         ],
       },
-    ],
-  },
+    },
+  ],
 }

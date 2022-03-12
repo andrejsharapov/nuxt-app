@@ -1,0 +1,122 @@
+chartOptions:
+  chart:
+    id: des-site-options
+    type: area
+    height: 350
+    fontFamily: var(--heading-font-family), Arial, sans-serif
+    zoom:
+      enabled: false
+  title:
+    text: Website design 2016 - 2021
+    align: left
+  foreColor: var(--light)
+  grid:
+    clipMarkers: false
+  toolbar:
+    autoSelected: pan
+    show: false
+  markers:
+    size: 5
+    colors:
+      - var(--light)
+    strokeColor:
+      - var(--info)
+      - var(--success)
+    strokeWidth: 3
+  dataLabels:
+    enabled: false
+  tooltip:
+    theme: light
+  stroke:
+    width: 3
+    curve: smooth
+  fill:
+    type: gradient
+    gradient:
+      shade: light
+      type: vertical
+      gradientToColors:
+        - var(--light)
+      shadeIntensity: 1
+      opacityFrom: 0.7
+      opacityTo: 0.1
+      stops:
+        - 0
+        - 90
+        - 100
+  legend:
+    position: bottom
+    horizontalAlign: center
+    floating: false
+    offsetY: 3
+    offsetX: 20
+    fontSize: 12px
+    fontFamily: var(--body-font-family)
+    fontWeight: 400
+  xaxis:
+    title:
+      text: Year
+  yaxis:
+    title:
+      text: Works
+  labels:
+    - 2016
+    - 2017
+    - 2018
+    - 2019
+    - 2020
+    - 2021
+    - 2022
+    - ---
+  colors:
+    - var(--info)
+    - var(--success)
+    - var(--blue)
+    - var(--orange)
+  annotations:
+    xaxis:
+      - x: 2019
+        x2: 2022
+        opacity: 0.3
+        label:
+          borderColor: var(--info)
+          style:
+            fontSize: 12px
+            color: var(--light)
+            background: var(--info)
+          offsetY: 0
+          text: 'Major project'
+    yaxis:
+      - y:
+        y2:
+        borderColor: var(--light)
+        fillColor: var(--light)
+        opacity: 0.2
+        label:
+          borderColor: var(--light)
+          style:
+            fontSize: 10px
+            color: var(--dark)
+            background: var(--light)
+          text: ''
+chartSeries:
+  - name: Big projects
+    data:
+      - 6
+      - 9
+      - 12
+      - 15
+      - 3
+      - 2
+      - 1
+      - null
+  - name: Small orders
+    data:
+      - 96
+      - 65
+      - 74
+      - 62
+      - 8
+      - null
+      - null
+      - null

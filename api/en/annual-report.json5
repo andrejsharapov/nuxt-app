@@ -1,0 +1,149 @@
+{
+  chartOptions: {
+    chart: {
+      id: 'annual-report',
+      type: 'line',
+      height: '400',
+      fontFamily: 'var(--heading-font-family), Arial, sans-serif',
+      zoom: {
+        enabled: false,
+      },
+    },
+    title: {
+      text: 'Completed work schedule since 2016',
+      align: 'left',
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: 'smooth',
+    },
+    legend: {
+      position: 'bottom',
+      horizontalAlign: 'left',
+      floating: false,
+      offsetY: 0,
+      offsetX: 20,
+      fontSize: '12px',
+      fontFamily: 'var(--body-font-family), Arial, sans-serif',
+      fontWeight: 400,
+    },
+    markers: {
+      size: 0,
+    },
+    colors: [
+      'var(--info)',
+      'var(--success)',
+      'var(--v-warning-lighten2)',
+      'var(--error)',
+    ],
+    xaxis: {
+      title: {
+        text: 'Year',
+      },
+    },
+    yaxis: {
+      title: {
+        text: 'Works',
+      },
+    },
+    labels: [
+      '2015',
+      '2016',
+      '2017',
+      '2018',
+      '2019',
+      '2020',
+      '2021',
+      '2022',
+      '---',
+    ],
+    annotations: {
+      xaxis: [
+        {
+          x: '2016',
+          strokeDashArray: 0,
+          borderColor: 'var(--v-warning-lighten2)',
+          label: {
+            borderColor: 'var(--v-warning-lighten2)',
+            style: {
+              color: 'var(--light)',
+              background: 'var(--v-warning-lighten2)',
+            },
+            offsetY: 42,
+            text: 'Logo design',
+          },
+        },
+        {
+          x: '2017',
+          strokeDashArray: 0,
+          borderColor: 'var(--success)',
+          label: {
+            borderColor: 'var(--success)',
+            style: {
+              color: 'var(--light)',
+              background: 'var(--success)',
+            },
+            offsetY: 32,
+            text: 'Development of banners',
+          },
+        },
+        {
+          x: '2019',
+          x2: '---',
+          opacity: 0.4,
+          strokeDashArray: 4,
+          borderColor: 'var(--info)',
+          label: {
+            borderColor: 'var(--info)',
+            borderWidth: '2',
+            style: {
+              fontSize: '12px',
+              color: 'var(--light)',
+              background: 'var(--info)',
+            },
+            offsetY: 62,
+            text: 'Major project',
+          },
+        },
+      ],
+      yaxis: [
+        {
+          y: null,
+          y2: null,
+          borderColor: 'var(--light)',
+          fillColor: 'var(--light)',
+          opacity: 0.2,
+          label: {
+            borderColor: 'var(--light)',
+            style: {
+              fontSize: '10px',
+              color: 'var(--dark)',
+              background: 'var(--light)',
+            },
+            text: '',
+          },
+        },
+      ],
+    },
+  },
+  chartSeries: [
+    {
+      name: 'Project work',
+      data: [13, 7, 12, 14, 18, 3, 1, 1, null],
+    },
+    {
+      name: 'HTML5 Banners',
+      data: [null, null, 4, 2, 3, 2, 1, 0, null],
+    },
+    {
+      name: 'Logotypes',
+      data: [null, 0, 1, 3, 1, 1, 0, 0, null],
+    },
+    {
+      name: 'Other works',
+      data: [58, 96, 65, 74, 62, 8, 0, 0, null],
+    },
+  ],
+}

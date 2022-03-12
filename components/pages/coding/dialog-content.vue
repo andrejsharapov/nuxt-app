@@ -22,10 +22,10 @@
         v-toolbar-title {{ item.title }}
         v-spacer
 
-        v-btn(icon, @click.stop='$vuetify.theme.dark = !$vuetify.theme.dark') 
+        v-btn(icon, @click.stop='$vuetify.theme.dark = !$vuetify.theme.dark')
           v-icon {{ $vuetify.theme.dark ? mdiWhiteBalanceSunny : mdiWeatherNight }}
 
-        v-btn(icon, @click='dialog = false') 
+        v-btn(icon, @click='dialog = false')
           v-icon $mdiClose
 
       v-card(flat)
@@ -78,7 +78,7 @@
                         v-list-item(
                           v-for='(tag, index) in item.list',
                           :key='index',
-                          :href='item.title === "Tags" ? "https://developer.mozilla.org/ru/search?q=" + tag : undefined',
+                          :href='item.title === "Tags" ? "https://developer.mozilla.org/search?q=" + tag : undefined',
                           target='_blank',
                           rel='noopener noreferrer'
                         )
@@ -134,13 +134,17 @@ export default {
 }
 </script>
 
-<style>
-.cp_embed_wrapper {
-  height: 100%;
-}
+<style lang="scss">
+.cp {
+  &_embed {
+    &_wrapper {
+      height: 100%;
+    }
 
-.cp_embed_iframe {
-  height: 100%;
-  min-height: 400px;
+    &_iframe {
+      height: 100%;
+      min-height: 400px;
+    }
+  }
 }
 </style>

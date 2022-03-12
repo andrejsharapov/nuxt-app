@@ -1,11 +1,11 @@
 <template>
-  <div transition="slide-y-reverse-transition" class="mb-4 project-card">
+  <div transition="slide-y-reverse-transition" class="mb-4 card-view">
     <v-row no-gutters>
       <v-col cols="12" md="4">
         <v-card
           :flat="$vuetify.breakpoint.smAndDown"
-          :class="{ 'project-card__image': $vuetify.breakpoint.mdAndUp }"
           class="rounded-lg mb-sm-4 hidden"
+          :class="{ 'card-view__image': $vuetify.breakpoint.mdAndUp }"
         >
           <v-img
             lazy-src="https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG"
@@ -34,12 +34,13 @@
           </v-card-subtitle>
           <v-card-title
             :id="project.slug"
-            class="d-inline-block anchor-link text-break-word font-weight-bold"
+            class="pb-2 d-inline-block anchor-link text-break-word font-weight-bold"
             :href="project.url"
             target="_blank"
             rel="noopener noreferrer"
           >
             {{ project.title }}
+            <!-- LINK -->
             <nuxt-link
               :to="$nuxt.$route.path + '#' + project.slug"
               class="ml-1"
@@ -90,32 +91,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-$card: project-card;
-
-.#{$card} {
-  &__image {
-    transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
-    filter: blur(2px);
-    opacity: 0.5;
-    transition: all var(--base-time) cubic-bezier(0.25, 0.1, 0, 2.05);
-  }
-
-  &:hover {
-    .#{$card} {
-      &__image {
-        transform: perspective(800px) rotateY(-15deg) translateY(-50px)
-          rotateX(10deg) scale(1);
-        filter: blur(0);
-        opacity: 1;
-        box-shadow: var(--shadow-xl);
-
-        &:hover {
-          transform: none;
-        }
-      }
-    }
-  }
-}
-</style>

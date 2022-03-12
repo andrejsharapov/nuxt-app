@@ -7,7 +7,7 @@
       s-back-waves-line-three(
         absolute,
         right='0',
-        bottom='0',
+        top='0',
         left='0',
         :width='null',
         :height='null'
@@ -26,12 +26,12 @@
         p {{ $t("pages.projects.message") }}
 
       v-col.d-none.d-sm-block.mt-sm-n16.text-center(cols='12', sm='3')
-        .position-absolute.mt-n8
+        .position-absolute.mt-n16
           lazy-s-fish-pages-projects(width='200', :height='null')
 
       v-col(cols='12')
         template(v-if='localeItems')
-          lazy-s-page-projects-card(
+          lazy-s-pages-projects-card(
             v-for='item in localeItems',
             :key='item.slug',
             :project='item'
@@ -44,6 +44,7 @@ import { mdiLightbulbOn } from '@mdi/js'
 import { projects } from '~/lib/page-meta'
 
 export default {
+  name: 'ProjectsIndex',
   async asyncData({ $content, params, app }) {
     const projectsLocale = await $content(
       `${app.i18n.locale}/projects`,
@@ -83,9 +84,11 @@ export default {
 }
 </script>
 
-<style>
-.page__projects {
-  --stop-color-one: var(--orange);
-  --stop-color-two: var(--yellow);
+<style lang="scss">
+.page {
+  &__projects {
+    --stop-color-one: var(--orange);
+    --stop-color-two: var(--yellow);
+  }
 }
 </style>

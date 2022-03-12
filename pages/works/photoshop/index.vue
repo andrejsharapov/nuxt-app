@@ -41,7 +41,7 @@
 
         v-row(v-if='localeItems.length')
           v-col(v-for='(item, index) of localeItems', :key='index', cols='12', md='6')
-            s-page-photoshop-work-examples(
+            s-pages-photoshop-work-examples(
             :item='item'
             :sources='cardView'
           )
@@ -53,8 +53,9 @@ import { mdiVectorPolylineEdit } from '@mdi/js'
 import { photoshop } from '~/lib/page-meta'
 
 export default {
+  name: 'PhotoshopIndex',
   async asyncData({ $content, params }) {
-    const photoshopList = await $content('photoshop', params.slug)
+    const photoshopList = await $content('works/photoshop', params.slug)
       .sortBy('date', 'desc')
       .fetch()
 
@@ -90,9 +91,11 @@ export default {
 }
 </script>
 
-<style>
-.page__photoshop {
-  --stop-color-one: #190d80;
-  --stop-color-two: #1cb7ff;
+<style lang="scss">
+.page {
+  &__photoshop {
+    --stop-color-one: #190d80;
+    --stop-color-two: #1cb7ff;
+  }
 }
 </style>

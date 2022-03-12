@@ -1,0 +1,11 @@
+hide:
+type: des-logo
+title: ProgBooks - books for programmers
+created: '2018-05-02'
+ux:
+  works: 'PET PROJECT / EXPERIENCE'
+  price: Development
+before: null
+after:
+  img: /src/logo/logo_to-progbooks.svg
+  format: svg

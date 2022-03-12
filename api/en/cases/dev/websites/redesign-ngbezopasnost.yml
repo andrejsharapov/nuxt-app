@@ -1,0 +1,176 @@
+hide: false
+type: dev-site
+title: Redesign of the site of the company "NefteGazBezopasnost"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/4811710/webpage2.png
+  alt: Redesign of the site of the company "NefteGazBezopasnost"
+ux:
+  works: CORPORATE / BRANDING
+  price: Redesign and modernization
+created: '2018-07-17'
+period:
+  - '2018-07-04'
+  - '2018-07-17'
+deadline: It took 13 days to complete the task.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - CorelDRAW
+        - Adobe Photoshop
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - Bootstrap
+        - jQuery.js
+    - title: Software
+      tags:
+        - Visual Studio Code
+  roles:
+    - title: My
+      tags:
+        - UI/UX Designer
+        - Frontend Developer
+    - title: Other
+      tags:
+        - 'QA: Александр Холмогоров, Владимир Проскурин, Михаил Фомин, Надежда Добровольская-Баскакова'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/4811710-NGB-WebPage
+    behance:
+    instagram: https://www.instagram.com/p/B4FdtzhAiSM/
+client:
+  logoJPG: null
+  logoWEBP: null
+  head: LLC "NefteGazBezopasnost"
+  description: LLC "NefteGazBezopasnost" is currently one of the leading companies working in the field of industrial safety. For more than 20 years of successful work, the company has established itself as a reliable partner.
+  issues: The old site on Joomla! did not look quite modern and ordinary enough. With a cumbersome control system, a lot of unnecessary functions, scripts, and other code, a relatively small amount of content was redundant. Lack of cross-browser compatibility and responsive layout. The main task is to make a modern official representation of the company on the Internet.
+  task:
+    - increased traffic to the resource, an increase in the number of online applications and requests from the site;
+    - development of an adaptive design layout;
+    - improvement of the interface and site design for all modern trends;
+    - transfer of available information and development of original texts;
+    - optimization of pages for mobile devices and modern browsers.
+done:
+  img:
+    src: B4FdtzhAiSM
+    alt: Redesign of the site of the company "NefteGazBezopasnost"
+    height:
+  alert:
+    message:
+  list:
+    - analysis of the target audience and competitors' sites;
+    - compilation of a semantic core (selection of keywords for which the resource is planned to be promoted);
+    - development of prototypes of the design layout;
+    - development of the concept of content-filling the site;
+    - formation of a palette of colors and development of a Style Guide;
+    - development of design and user interface (UI);
+    - formation of dependencies of different elements of the site;
+    - site layout using the Bootstrap 4 framework;
+    - writing original texts;
+    - development of an original and functional 404 error page;
+    - analysis of the correct display of the site in different browsers;
+    - analysis of the correct display of the site on modern mobile devices;
+    - launching and connecting end-to-end website analytics, tracking its effectiveness.
+palette:
+  - type: ''
+    hex:
+      - D50A0A
+      - DC3545
+  - type: ''
+    hex:
+      - 6B7C93
+  - type: ''
+    hex:
+      - 212529
+  - type: ''
+    hex:
+      - F7FAFC
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap' rel='stylesheet'>"
+  headline: Source Sans Pro
+  text: Source Sans Pro
+grid:
+  cols: 12
+  width: 68
+  size: 1140
+responsive:
+  percent: '93'
+  dash:
+    Performance: '82'
+    Accessibility: '98'
+    Practices: '73'
+    SEO: '99'
+cms: Joomla!, Static site
+testimonials:
+  author:
+    img:
+      src: ''
+      alt: ''
+    name: Maria Sonicheva
+    company: LLC "NefteGazBezopasnost"
+    link: http://www.ngbezopasnost.ru/
+    position: CEO
+  message: We had a very good site, but it is outdated. Andrey made a beautiful redesign, leaving the site structure unchanged, but significantly decorating and modernizing it. I especially liked the fact that Andrey is attentive to the little things, working through each page separately.
+analytics:
+  result: search traffic has doubled in terms of monthly visits.
+  traffic:
+    show: true
+    title: Search traffic
+    type: bar
+    series:
+      - name: ''
+        data:
+          - 35
+          - 40
+          - 50
+          - 45
+          - 45
+          - 35
+          - 40
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+      - name: Start
+        data:
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - 50
+          - 90
+          - 95
+          - 110
+          - 95
+          - 115
+          - 100
+          - 105
+          - 90
+          - 110
+          - 90
+  goals:
+    show: false
+    title: Achievement of the goal
+    chart:
+      series:
+      labels:
+  conversion:
+    show: false
+    title: Conversion
+    value:
