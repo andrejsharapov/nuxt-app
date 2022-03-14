@@ -14,7 +14,7 @@
       )
     template(#list-items)
       s-layout-components-back-image-list-items(
-        :content='localeItems',
+        :content='logoFiltered',
         :icon='mdiVectorRadius',
         :duration='2000',
         :message='$t("pages.shown")'
@@ -36,8 +36,8 @@
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
         p {{ $t("pages.logos.message") }}
 
-        v-row(v-if='localeItems.length')
-          v-col(v-for='(item, index) in localeItems', :key='index', md='6')
+        .d-grid.grid-cols-sm-2.grid-cols-md-3.gap-6(v-if='localeItems.length')
+          div(v-for='(item, index) in localeItems', :key='index')
             s-pages-cases-design-logo-card-logos(
               :item='item',
               :preview='cardView'
@@ -87,6 +87,15 @@ export default {
   computed: {
     localeItems() {
       return this.logosLocale ? this.logosLocale : []
+    },
+    logoFiltered() {
+      const logos = this.logosLocale
+
+      return logos.sort(
+        (a, b) =>
+          new Date(a.created).setHours(0, 0, 0, 0) -
+          new Date(b.created).setHours(0, 0, 0, 0)
+      )
     },
   },
 }

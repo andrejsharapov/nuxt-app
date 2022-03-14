@@ -329,10 +329,6 @@ export default {
         'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
       format: 'Format',
     },
-    logos: {
-      message:
-        'There are not many examples in my portfolio that I could boast of, but the works presented below for me, although small, are still achievements.',
-    },
     photoshop: {
       message:
         'In 2010, I first got acquainted with Photoshop. Then he created a community {link} and started developing designs for VKontakte groups and prototypes for websites',
