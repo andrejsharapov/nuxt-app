@@ -35,7 +35,7 @@ v-app(v-resize='onResize', dark)
     v-spacer(:class='{ "order-1": rightPosition === 0 }')
 
     lazy-s-layout-recent-projects
-    lazy-s-layout-job-offer
+    lazy-s-layout-job-offer(:class='{ "order-3": rightPosition === 0 }')
 
     v-tooltip(bottom)
       template(#activator='{ on: settings }')
