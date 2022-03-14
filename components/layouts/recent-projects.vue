@@ -61,6 +61,7 @@ export default {
       mdiBellRingOutline,
       devSiteLocale: [],
       desSiteLocale: [],
+      desLogoLocale: [],
     }
   },
   async fetch() {
@@ -77,11 +78,18 @@ export default {
       .where({ hide: false, type: 'des-site' })
       .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
       .fetch()
+
+    // this.desLogoLocale = await this.$content(
+    //   `${this.$i18n.locale}/cases/design/logo`
+    // )
+    //   .where({ hide: false, type: 'des-logo' })
+    //   .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
+    //   .fetch()
   },
   computed: {
     localeCases() {
-      return this.desSiteLocale || this.devSiteLocale
-        ? this.desSiteLocale.concat(this.devSiteLocale)
+      return this.desSiteLocale || this.devSiteLocale || this.desLogoLocale
+        ? this.desSiteLocale.concat(this.devSiteLocale) // , this.desLogoLocale)
         : []
     },
     setActualEvent() {

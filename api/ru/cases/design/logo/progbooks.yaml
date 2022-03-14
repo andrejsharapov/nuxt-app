@@ -1,0 +1,19 @@
+hide:
+type: des-logo
+title: ProgBooks
+desc:
+date: 02.05.2018
+created: 2018-05-02
+ux:
+  works: 'PET PROJECT / EXPERIENCE'
+  price: Разработка логотипа
+before: null
+after: true
+colors:
+  - black
+  - white
+section:
+  - title:
+    caption:
+  - title:
+    caption:
