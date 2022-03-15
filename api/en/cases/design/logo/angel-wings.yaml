@@ -1,0 +1,24 @@
+hide: false
+type: des-logo
+title: Angel wings
+about: Angel Wings offers a huge range of gift boxes and packaging for all kinds of gifts and merchandise for every occasion. These include packages suitable for sending gifts by mail, retail or online.
+date: 12.03.2022
+created: 2022-03-12
+ux:
+  works: 'PET PROJECT / EXPERIENCE'
+  price: Logo Design
+img:
+  src: \src\nuxt-app\logo\angel-wings\cover.jpg
+  alt:
+before: null
+after: true
+colors:
+  - primary
+  - white
+section:
+  - title: Logo design for Angel wings
+    caption: The company's product range includes jewelry gift boxes, stationery boxes, e-commerce packaging boxes, photo and document envelopes, wrapping paper, business cards, booklets, and more; suitable for apparel, accessories, product samples, beauty products, corporate and home products, just to name a few. Each of these elements needed a logo and it was implemented.
+  - title:
+    caption:
+  - title:
+    caption:

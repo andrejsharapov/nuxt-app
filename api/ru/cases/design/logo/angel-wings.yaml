@@ -7,9 +7,9 @@ created: 2022-03-12
 ux:
   works: 'PET PROJECT / EXPERIENCE'
   price: Разработка логотипа
-# img:
-#   src: \src\nuxt-app\logo\angel-wings\cover.jpg
-#   alt:
+img:
+  src: \src\nuxt-app\logo\angel-wings\cover.jpg
+  alt:
 before: null
 after: true
 colors:
