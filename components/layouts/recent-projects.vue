@@ -36,7 +36,8 @@
             v-for='work in setActualEvent',
             :key='work.slug',
             exact,
-            :to='work.path'
+            :to='work.path',
+            :title='work.title'
           )
             v-card.fill-width(flat, tile, color='transparent')
               v-row.ma-0.flex-column.flex-sm-row(
@@ -79,21 +80,21 @@ export default {
       `${this.$i18n.locale}/cases/dev/websites`
     )
       .where({ hide: false, type: 'dev-site' })
-      .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
     this.desSiteLocale = await this.$content(
       `${this.$i18n.locale}/cases/design/websites`
     )
       .where({ hide: false, type: 'des-site' })
-      .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
     this.desLogoLocale = await this.$content(
       `${this.$i18n.locale}/cases/design/logo`
     )
       .where({ hide: false, type: 'des-logo' })
-      .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
   },
   computed: {
