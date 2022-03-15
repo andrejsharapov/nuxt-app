@@ -26,7 +26,7 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
           span {{ $t("more.details") }}
 
       v-card(flat, tile)
-        v-toolbar.position-relative.z-index-2(dense)
+        v-toolbar.position-relative.z-index-2.d-none.d-sm-block(dense)
           v-btn.mt-10(
             absolute,
             dark,
@@ -49,17 +49,21 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
 
         //- SECTION 2: logos
         section.position-relative.z-index-2
-          v-banner(
+          v-banner.pr-lg-4(
             :color='$vuetify.theme.dark ? "var(--card)" : "white"',
             single-line,
-            sticky,
+            :sticky='$vuetify.breakpoint.mdAndUp',
             style='top: 0'
           )
             v-card(tile, flat, color='transparent')
-              v-card-title.text-h5 {{ item.title }}
-              v-card-text.text-body-1 {{ item.about ? item.about : placeholder }}
+              .d-flex.flex-column.flex-md-row.align-md-end.justify-md-space-between
+                v-card-title.pa-0.text-h5.font-weight-bold {{ item.title }}
+                .text-md-right
+                  v-card-subtitle.pa-0 {{ formatDate(item.created) }}
+                  v-card-subtitle.pa-0 {{ item.ux.price }}
+              v-card-text.px-0.text-body-2.text-md-body-1(v-if='item.about') {{ item.about }}
 
-            v-btn.mt-n4(
+            v-btn.mt-n4.d-none.d-md-block(
               absolute,
               dark,
               fab,
@@ -80,21 +84,26 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
         //- SECTION 3: details
         template(v-if='item.section')
           section(v-for='(s, index) in item.section')
-            v-banner(
+            v-banner.pr-lg-4(
               :key='index',
               :color='$vuetify.theme.dark ? "var(--card)" : "white"',
               single-line,
-              sticky,
+              :sticky='$vuetify.breakpoint.mdAndUp',
               style='top: 0'
             )
               v-card(tile, flat, color='transparent')
-                v-card-title.text-h5(v-if='s.title') {{ s.title }}
-                v-card-text.text-body-1(v-if='s.caption') {{ s.caption }}
+                v-card-title.px-0.text-subtitle-1.text-md-h5.font-weight-medium(
+                  v-if='s.title'
+                ) {{ s.title }}
+                v-card-text.px-0.text-body-2.text-md-body-1(v-if='s.caption') {{ s.caption }}
             v-img(
               :src='`/src/nuxt-app/logo/${item.slug}/section/${index + 1}.jpg`'
             )
 
-        v-toolbar.d-flex.justify-center.z-index-2(dense)
+        v-toolbar.z-index-2(dense)
+          v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("thx.view") }}!
+          v-spacer
+
           v-btn.mt-n12(
             absolute,
             dark,
@@ -105,9 +114,12 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
           )
             v-icon {{ mdiClose }}
 
+          v-spacer
+          v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("author.name") }}
+
   //- ANCHOR 2/4 info
   //- v-card-subtitle.pb-0 {{ $t("works.types") }}: {{ item.ux.price }}
-  v-card-subtitle.pt-0.pb-0 {{ $t("date.default") }}: {{ formatDate(item.created) }}
+  v-card-subtitle.py-0 {{ formatDate(item.created) }}
   //- v-card-subtitle.pt-0 {{ $t("pages.logos.format") }}: {{ !logoView && item.before ? item.before.format : item.after.format }}
 
   //- ANCHOR 3/4 images
@@ -165,7 +177,6 @@ export default {
       mdiPageNextOutline,
       mdiClose,
       dialog: false,
-      placeholder: '',
     }
   },
   methods: {

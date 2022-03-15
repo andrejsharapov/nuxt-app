@@ -38,10 +38,14 @@
 
         .d-grid.grid-cols-sm-2.grid-cols-md-3.gap-6(v-if='localeItems.length')
           div(v-for='(item, index) in localeItems', :key='index')
-            s-pages-cases-design-logo-card-logos(
-              :item='item',
-              :preview='cardView'
+            v-lazy(
+              :options='{ threshold: 0.5 }',
+              transition='scroll-y-reverse-transition'
             )
+              s-pages-cases-design-logo-card-logos(
+                :item='item',
+                :preview='cardView'
+              )
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
