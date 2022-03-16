@@ -118,8 +118,8 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
           v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("author.name") }}
 
   //- ANCHOR 2/4 info
-  //- v-card-subtitle.pb-0 {{ $t("works.types") }}: {{ item.ux.price }}
   v-card-subtitle.py-0 {{ formatDate(item.created) }}
+  v-card-subtitle.pt-0 {{ item.ux.price }}
   //- v-card-subtitle.pt-0 {{ $t("pages.logos.format") }}: {{ !logoView && item.before ? item.before.format : item.after.format }}
 
   //- ANCHOR 3/4 images
