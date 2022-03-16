@@ -82,20 +82,20 @@ chartOptions:
             color: var(--light)
             background: var(--info)
           offsetY: 0
-          text: Масштабный проект
-    yaxis:
-      - y:
-        y2:
-        borderColor: var(--light)
-        fillColor: var(--light)
-        opacity: 0.2
-        label:
-          borderColor: var(--light)
-          style:
-            fontSize: 10px
-            color: var(--dark)
-            background: var(--light)
-          text: ''
+          text: Крупный проект
+    # yaxis:
+    #   - y:
+    #     y2:
+    #     borderColor: var(--light)
+    #     fillColor: var(--light)
+    #     opacity: 0.2
+    #     label:
+    #       borderColor: var(--light)
+    #       style:
+    #         fontSize: 10px
+    #         color: var(--dark)
+    #         background: var(--light)
+    #       text: ''
 chartSeries:
   - name: Дизайн приложений
     data:

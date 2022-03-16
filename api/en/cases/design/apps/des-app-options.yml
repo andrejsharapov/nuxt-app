@@ -83,19 +83,19 @@ chartOptions:
             background: var(--info)
           offsetY: 0
           text: Large app
-    yaxis:
-      - y:
-        y2:
-        borderColor: var(--light)
-        fillColor: var(--light)
-        opacity: 0.2
-        label:
-          borderColor: var(--light)
-          style:
-            fontSize: 10px
-            color: var(--dark)
-            background: var(--light)
-          text:
+    # yaxis:
+    #   - y:
+    #     y2:
+    #     borderColor: var(--light)
+    #     fillColor: var(--light)
+    #     opacity: 0.2
+    #     label:
+    #       borderColor: var(--light)
+    #       style:
+    #         fontSize: 10px
+    #         color: var(--dark)
+    #         background: var(--light)
+    #       text:
 chartSeries:
   - name: Apps
     data:
