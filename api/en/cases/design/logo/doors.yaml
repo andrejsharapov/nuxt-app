@@ -10,7 +10,8 @@ ux:
 img:
   src:
   alt:
-before: null
+preview:
+before:
 after: true
 colors:
   - white

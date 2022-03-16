@@ -10,7 +10,8 @@ ux:
 img:
   src:
   alt:
+preview:
 before: true
 after: true
 colors:
-section: null
+section:

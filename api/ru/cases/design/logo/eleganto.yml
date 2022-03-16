@@ -10,7 +10,8 @@ ux:
 img:
   src: \src\nuxt-app\logo\eleganto\cover.jpg
   alt:
-before: null
+preview:
+before:
 after: true
 colors:
   - white
