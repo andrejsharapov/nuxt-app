@@ -59,6 +59,10 @@ v-card(flat, tile)
       style='left: calc(50% - 28px)'
     )
       v-icon {{ mdiClose }}
+
+  s-pages-cases-components-slug-components-leave-comments.px-4(
+    :comment='logo.preview'
+  )
 </template>
 
 <script>
