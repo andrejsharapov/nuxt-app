@@ -97,8 +97,8 @@ export default {
 
       return logos.sort(
         (a, b) =>
-          new Date(a.created).setHours(0, 0, 0, 0) -
-          new Date(b.created).setHours(0, 0, 0, 0)
+          new Date(b.created).setHours(0, 0, 0, 0) -
+          new Date(a.created).setHours(0, 0, 0, 0)
       )
     },
   },
