@@ -85,7 +85,7 @@ chartOptions:
             color: var(--light)
             background: var(--info)
           offsetY: 0
-          text: 'Major project'
+          text: 'Large project'
     yaxis:
       - y:
         y2:
@@ -100,7 +100,7 @@ chartOptions:
             background: var(--light)
           text: ''
 chartSeries:
-  - name: Big projects
+  - name: Projects
     data:
       - 6
       - 9

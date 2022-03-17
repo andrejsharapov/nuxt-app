@@ -445,6 +445,10 @@ export default {
   support: {
     message: 'Your browser does not support iframes!',
   },
+  thx: {
+    default: 'Thanks',
+    view: 'Thanks for watching',
+  },
   total: {
     cost: 'Total cost',
   },

@@ -118,13 +118,13 @@ chartOptions:
         x2: ---
         opacity: 0.3
         label:
-          borderColor: var(--red)
+          borderColor: '#00c58e'
           style:
             fontSize: 12px
             color: var(--light)
-            background: var(--red)
+            background: '#00c58e'
           offsetY: 0
-          text: 'Major project'
+          text: 'Large project'
     yaxis:
       - y:
         y2:
