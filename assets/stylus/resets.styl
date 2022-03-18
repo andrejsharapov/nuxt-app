@@ -26,12 +26,16 @@
 
   &.right-navigation
     background-color hsl(226, 70%, 97%)
-    background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
+
+    @media (min-width 1264px)
+      background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
 
     .v-navigation-drawer__prepend
       header
         background-color hsl(226, 70%, 97%)
-        background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
+
+        @media (min-width 1264px)
+          background-image linear-gradient(var(--direction-x), #0000001A 0%, transparent 7%)
 
     &:not(.right-navigation__left)
       --direction-x to right
@@ -58,6 +62,11 @@
   .theme--dark
     &.v-icon.v-icon.v-icon--disabled
       color transparent !important
+
+.v-slide-group__next--disabled .theme--light.v-icon.v-icon.v-icon--disabled,
+.v-slide-group__prev--disabled .theme--light.v-icon.v-icon.v-icon--disabled
+  color var(--secondary) !important
+  opacity 0.35
 
 // perfect-scrollbar
 .ps

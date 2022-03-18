@@ -1,0 +1,8 @@
+{
+  label: 'contribution',
+  date: '2021-09-22',
+  title: 'Material Design Icons',
+  caption: 'When developing the site, I needed to make my icon in SVG format. I did it, but then I thought that I use MDI throughout the site and it would be more convenient to use a ready-made solution from this library. Then I sent in a request and put forward my proposal for the next release. This was posted in released 6.1.95.',
+  button: 'MDI icon',
+  to: 'https://materialdesignicons.com/icon/briefcase-eye-outline',
+}

@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'CasesDevAppsIndex',
   layout: 'clean',
   data: () => ({
     page: {

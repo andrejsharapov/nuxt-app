@@ -14,7 +14,7 @@
       )
     template(#list-items)
       s-layout-components-back-image-list-items(
-        :content='localeItems',
+        :content='logoFiltered',
         :icon='mdiVectorRadius',
         :duration='2000',
         :message='$t("pages.shown")'
@@ -36,12 +36,16 @@
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
         p {{ $t("pages.logos.message") }}
 
-        v-row(v-if='localeItems.length')
-          v-col(v-for='(item, index) in localeItems', :key='index', md='6')
-            s-pages-cases-design-logo-card-logos(
-              :item='item',
-              :preview='cardView'
+        .d-grid.grid-cols-sm-2.grid-cols-md-3.gap-6(v-if='localeItems.length')
+          div(v-for='(item, index) in localeItems', :key='index')
+            v-lazy(
+              :options='{ threshold: 0.5 }',
+              transition='scroll-y-reverse-transition'
             )
+              s-pages-cases-design-logo-card-logos(
+                :item='item',
+                :preview='cardView'
+              )
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
@@ -50,6 +54,7 @@ import { mdiVectorRadius } from '@mdi/js'
 import { logos } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDesignLogoIndex',
   async asyncData({ $content, app, params }) {
     const logosLocale = await $content(
       `${app.i18n.locale}/cases/design/logo`,
@@ -87,13 +92,24 @@ export default {
     localeItems() {
       return this.logosLocale ? this.logosLocale : []
     },
+    logoFiltered() {
+      const logos = this.logosLocale
+
+      return logos.sort(
+        (a, b) =>
+          new Date(b.created).setHours(0, 0, 0, 0) -
+          new Date(a.created).setHours(0, 0, 0, 0)
+      )
+    },
   },
 }
 </script>
 
-<style>
-.page__logo {
-  --stop-color-one: var(--v-success-darken3);
-  --stop-color-two: var(--v-success-lighten1);
+<style lang="scss">
+.page {
+  &__logo {
+    --stop-color-one: var(--v-success-darken3);
+    --stop-color-two: var(--v-success-lighten1);
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template lang="pug">
-v-row.contact-info
-  v-col(v-for='(item, i) of info', :key='i')
+.contact-info.d-grid.gap-y-6.grid-cols-sm-2.gap-x-sm-6.grid-cols-md-3
+  div(v-for='(item, i) of info', :key='i')
     v-card.fill-height.shadow-md
       v-card-title {{ item.title }}
       v-divider(inset)
@@ -22,20 +22,13 @@ v-row.contact-info
 </template>
 
 <script>
-import { mdiSkype } from '@mdi/js'
-
 export default {
-  name: 'Info',
+  name: 'ContactInfo',
   props: {
     info: {
       type: Array,
       default: () => [],
     },
-  },
-  data() {
-    return {
-      mdiSkype,
-    }
   },
   methods: {
     copyToClipboard() {

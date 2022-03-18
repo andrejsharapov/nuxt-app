@@ -1,9 +1,10 @@
 <template lang="pug">
 h2.section-heading-anchor.mb-4.text-h5.text-md-h4.anchor-link.font-weight-bold.primary--text(
-  :id='anchor',
-  v-html='title'
+  :id='anchor'
 )
-  nuxt-link.ml-2(:to='$nuxt.$route.path + "#" + anchor') #
+  | {{ title }}
+  //- nuxt-link.ml-2(:to='$nuxt.$route.path + "#" + anchor') #
+  nuxt-link.ml-2(:to='{ path: $nuxt.$route.path, hash: "#" + anchor }') #
 </template>
 
 <script>

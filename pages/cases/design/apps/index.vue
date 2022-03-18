@@ -26,6 +26,17 @@
         .mt-sm-n12
           s-fish-pages-des-apps(:width='350')
 
+      //- COMPONENT CHART
+      v-col(cols="12", md="7")
+        v-card.mb-4.pa-4.shadow-xl
+          v-lazy(
+            :options="{ threshold: 0.5}",
+            transition="slide-y-reverse-transition"
+          )
+            s-chart-apex(:counters="chart")
+      // /COMPONENT
+      v-col(cols='12', md="5")
+
       v-col(cols='12')
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
 
@@ -44,6 +55,7 @@ import { mdiCellphoneCog } from '@mdi/js'
 import { desApps } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDesignAppsIndex',
   async asyncData({ $content, app, params }) {
     const desAppsLocale = await $content(
       `${app.i18n.locale}/cases/design/apps`,
@@ -53,8 +65,15 @@ export default {
       .sortBy('created', 'desc')
       .fetch()
 
+    const chart = await $content(
+      `${app.i18n.locale}/cases/design/apps/des-app-options`
+    )
+      .only(['chartOptions', 'chartSeries'])
+      .fetch()
+
     return {
       desAppsLocale,
+      chart,
     }
   },
   data() {
@@ -84,9 +103,11 @@ export default {
 }
 </script>
 
-<style>
-.page__des-apps {
-  --stop-color-one: var(--v-info-lighten1);
-  --stop-color-two: var(--info);
+<style lang="scss">
+.page {
+  &__des-apps {
+    --stop-color-one: var(--v-info-lighten1);
+    --stop-color-two: var(--info);
+  }
 }
 </style>

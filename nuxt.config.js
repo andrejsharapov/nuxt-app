@@ -5,16 +5,15 @@ export default {
     port: 8080,
     host: '0.0.0.0',
   },
-  // target: 'static',
   ssr: false,
   telemetry: true,
   loading: '~/components/loading.vue',
   buildModules: [
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/stylelint-module',
     '@nuxtjs/vuetify',
     '@nuxt/components',
     '@nuxtjs/html-validator',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
     // 'nuxt-purgecss',
@@ -77,7 +76,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'image_src', href: appMeta.host.url + appMeta.app.share },
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },
-      // { rel: 'dns-prefetch', href: 'http://cdn.madeas.ru' },
     ],
   },
   i18n: {
@@ -186,7 +184,8 @@ export default {
     { src: '~/assets/css/theme/light' },
     { src: '~/assets/css/theme/dark' },
     { src: '~/assets/sass/extends/nuxt-content', lang: 'sass' },
-    { src: '~/assets/sass/extends/card-image.scss', lang: 'scss' },
+    { src: '~/assets/sass/extends/card-image', lang: 'scss' },
+    { src: '~/assets/sass/extends/vuetify-css-grid', lang: 'sass' },
   ],
   purgeCSS: {
     // paths: [
@@ -259,11 +258,11 @@ export default {
     '~/components/',
   ],
   build: {
-    // analyze: true,
-    devtools: true,
     // extend(config, { isDev, isClient }) {
     //   if (isDev && isClient) { }
     // },
+    // analyze: true,
+    devtools: true,
     extractCSS: true,
     postcss: {
       plugins: {

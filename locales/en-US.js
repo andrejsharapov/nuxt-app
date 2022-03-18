@@ -1,8 +1,22 @@
 import { appMeta as config } from '../config/app'
+import { designEn, devEn } from '../lib/pricing-services'
 
 export default {
   all: 'All',
   app: {
+    appearance: {
+      name: 'Appearance',
+    },
+    chat: {
+      title: 'Chat support',
+      loading: {
+        message: 'Please stand by',
+      },
+      state: {
+        open: 'Open',
+        close: 'Close',
+      },
+    },
     cookie: {
       message:
         'The site uses analytics tools to analyze user actions in order to improve the quality of the site.',
@@ -88,10 +102,10 @@ export default {
       en: 'English',
     },
     themes: {
-      name: 'Theme',
-      light: 'Light',
-      dark: 'Dark',
-      system: 'System',
+      name: 'Theme preferences',
+      light: 'Light theme',
+      dark: 'Dark theme',
+      system: 'Sync with system',
     },
   },
   author: {
@@ -138,7 +152,7 @@ export default {
     events: 'More events',
   },
   news: {
-    about: 'Mentions in news and media',
+    about: 'Articles and mentions in media',
   },
   no: 'No',
   poll: {
@@ -149,6 +163,11 @@ export default {
   position: {
     right: 'Right | right',
     left: 'Left | left',
+  },
+  price: {
+    rub: 'RUB',
+    usd: 'USD',
+    eur: 'EUR',
   },
   projects: {
     recent: 'Recent projects',
@@ -246,8 +265,7 @@ export default {
       },
     },
     'dev-site': {
-      cms:
-        'I started learning web development back in 2010. This was my first knowledge of web development, which eventually grew into a hobby. Over the years I have learned to work with HTML, CSS, JS and have worked with various content management systems (CMS). But I started full-fledged website development only in 2018, when I learned how to create websites on WordPress and got a job as a web developer.',
+      cms: 'I started learning web development back in 2010. This was my first knowledge of web development, which eventually grew into a hobby. Over the years I have learned to work with HTML, CSS, JS and have worked with various content management systems (CMS). But I started full-fledged website development only in 2018, when I learned how to create websites on WordPress and got a job as a web developer.',
       message:
         'By looking at my works, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
     },
@@ -257,14 +275,14 @@ export default {
     },
     illustrations: {
       message:
-        "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish that you can see on the pages of the site.",
+        "I don't do illustrations often, but I try to practice from time to time so as not to lose my skills. There are several illustrations on this page that I made, in addition to the cute fish {link} that you can see on the pages of the site.",
     },
     index: {
       title: 'Home',
       sections: {
         about: {
           message:
-            'Hello! My name is {author}. More {years} years am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
+            'Hello! My name is {author}. Already {years} am engaged in the creation of design, layout and programming of sites on various CMS and site builders. I like to create something new, look for interesting solutions, do the impossible with simple code and bring my ideas and client ideas to life.',
           activity: {
             prepend:
               'I am constantly developing and improving my skills in three easy steps',
@@ -293,8 +311,7 @@ export default {
             'To test my strength, I periodically take testing and online courses in web development, design and promotion. As a result of passing, I receive electronic certificates, which you can find below and on the certificates page.',
         },
         progress: {
-          title:
-            'Events <span class="d-none d-sm-inline-block">and achievements</span>',
+          title: 'Events and achievements',
           message:
             'During my work, I have successfully completed about {projects} projects to create design and website development, more than {works} small orders of varying complexity: drawing elements and refactoring code, developing logos, corporate websites and much more.',
         },
@@ -317,8 +334,74 @@ export default {
         'In 2010, I first got acquainted with Photoshop. Then he created a community {link} and started developing designs for VKontakte groups and prototypes for websites',
       games:
         'In the same year, VKontakte launched a wiki code, and in the process of studying it, I decided to implement several games, which required some knowledge of Photoshop to complete. Some games are still partially working, so you can join the community and try games like: crusaders, sims, and penalties.',
-      now:
-        'I have been using Photoshop less and less lately, but I try not to forget about it and maintain my skills, so from time to time, I process photos, some of which you can see below.',
+      now: 'I have been using Photoshop less and less lately, but I try not to forget about it and maintain my skills, so from time to time, I process photos, some of which you can see below.',
+    },
+    pricing: {
+      sections: {
+        why: {
+          heading: 'Why order here?',
+          pluses: {
+            prepend: {
+              heading: 'You are guaranteed to receive:',
+            },
+            append: {
+              heading: 'And the most important thing:',
+              list: [
+                'treating your project as if it were my own;',
+                'only the best and unique content;',
+                'operational work, in accordance with established deadlines;',
+                'quite a reasonable price.',
+              ],
+            },
+          },
+        },
+        services: {
+          heading: 'Services',
+          quote:
+            'The price of any work is based on the time spent on this work. But in order to understand how much time it takes you to work, you need to understand the amount of work.',
+        },
+        cooperation: {
+          heading: 'Cooperation',
+          variants: [
+            {
+              heading: 'Project work',
+              message:
+                'The classic "waterfall" approach, when the contract determines the sequence of all stages of work and terms, and the expected end result is written in the terms of reference.',
+            },
+            {
+              heading: '"Flexible" development',
+              message:
+                'In this case, the work is built on "sprints" - periods of time during which new requirements are implemented, received, among other things, as a result of the analysis of the already working part of the project.',
+              comment:
+                'It is often important for a client to launch a project in the minimum primary functionality, carrying out its further continuous refinement, change, and improvement.',
+            },
+          ],
+        },
+        deadline: {
+          heading: 'Deadline',
+          message: '',
+          calculate: {
+            question: 'How fast is the development of the site?',
+            message:
+              'On average, taking into account the stage of approval of the terms of reference, internal approvals on the client-side, and the duration of work on the creation, redesign, and development of some elements of the site, it can be from 2 days to 3 months. More information can be found in the list of services below.',
+            more: '',
+          },
+        },
+        cost: {
+          heading: 'Cost',
+          calculate: {
+            question: 'How to calculate the cost?',
+            message:
+              'You do not need to download a price list or look for additional calls to find out the total amount! Just open the calculator below and select the services you need. The total cost is calculated automatically.',
+          },
+        },
+        cta: {
+          question: 'Ready to order?',
+          action: 'Email me',
+        },
+      },
+      design: designEn,
+      development: devEn,
     },
     projects: {
       message:
@@ -335,15 +418,18 @@ export default {
     placeholder: 'Start typing the text...',
     found: 'Materials found on your request.',
     'not-found': 'Sorry, but there are no results for your search.',
+    'no-results': 'No results',
   },
   settings: 'Settings',
   site: {
     header: {
       name: 'Header',
       sticky: 'Sticky',
+      scroll: 'Scrollable',
     },
     navbar: {
       name: 'Navigation',
+      right: 'Sidebar settings',
     },
     page: {
       construction: 'This page is under construction',
@@ -356,6 +442,16 @@ export default {
   },
   source: 'Source | Sources',
   'table-of-contents': 'Table of contents | table of contents',
+  support: {
+    message: 'Your browser does not support iframes!',
+  },
+  thx: {
+    default: 'Thanks',
+    view: 'Thanks for watching',
+  },
+  total: {
+    cost: 'Total cost',
+  },
   yes: 'Yes',
   works: {
     'works-not-found': 'Works not found',

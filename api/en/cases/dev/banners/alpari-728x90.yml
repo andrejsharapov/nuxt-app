@@ -1,0 +1,47 @@
+hide: false
+type: dev-banner
+title: Production of html5 banner for "Alpari"
+img:
+  src: /src/nuxt-app/banners/alpari-728x90/preview.jpg
+  alt: Production of html5 banner for "Alpari"
+ux:
+  price: Development of html5 banner
+created: '2019-10-18'
+period:
+  - '2019-10-18'
+  - '2019-10-18'
+deadline: The task took about 2 hours to complete.
+client:
+  logoJPG:
+  logoWEBP:
+  head: Alpari Group
+  description: 'Alpari is a Forex, Precious Metals, and CFD broker. Forex with Alpari - Forex trading with the # 1 broker in Moscow and Russia.'
+  issues:
+  task: 'To develop a banner for the company`s website in honor of the New Year`s campaign. The banner should contain the phrases: "Replenish without worries!" and "We will refund the commission for any top-ups."'
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+        - Google Web Designer
+  roles:
+    - title: My
+      tags:
+        - Visual Designer
+        - Web Developer
+done:
+  list:
+    - script development;
+    - storyboard;
+    - animatic;
+    - programming;
+    - the cyclical nature of the scenario;
+    # - preparation of a banner for placement on an advertising platform;
+storyboard:
+  src: /src/nuxt-app/banners/alpari-728x90/storyboard.jpg
+  alt:
+animatic:
+  width: 728
+  height: 90
+  reload: false
+resize: 728 x 90

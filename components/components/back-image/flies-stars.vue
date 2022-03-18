@@ -18,10 +18,11 @@ export default {
     position: absolute;
     width: var(--size);
     height: var(--size);
+    animation: star-clip 5s cubic-bezier(0.4, 0.8, 0.77, 0.26) infinite;
     background-image: linear-gradient(
       225deg,
-      hsla(0, 0%, 100%, 0.2),
-      hsla(0, 0%, 100%, 0.04)
+      hsla(0deg 0% 100% / 20%),
+      hsla(0deg 0% 100% / 4%)
     );
     clip-path: polygon(
       25% 25%,
@@ -33,7 +34,6 @@ export default {
       25% 75%,
       0 50%
     );
-    animation: star-clip 5s cubic-bezier(0.4, 0.8, 0.77, 0.26) infinite;
 
     &:nth-of-type(1) {
       top: 10vh;

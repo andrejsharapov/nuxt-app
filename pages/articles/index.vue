@@ -24,26 +24,49 @@
             :placeholder='$t("search.placeholder")'
           )
 
-      v-col.mt-md-n16(cols='12', sm='4', md='3', style='z-index: 2')
+      v-col.mt-md-n16.d-none.d-sm-block(
+        cols='12',
+        sm='4',
+        md='3',
+        style='z-index: 2'
+      )
         s-fish-pages-articles.mt-sm-n8.mt-md-n16(width='260', :height='null')
 
       v-col(cols='12')
         .d-flex.flex-column
-          v-divider
-          s-section-heading-anchor(:title='$t("news.about")', anchor='works')
+          s-section-heading-anchor(:title='$t("news.about")', anchor='media')
           v-row.mb-2
-            v-col(cols='12')
-              v-chip-group
-                v-hover(v-slot='{ hover }')
-                  v-card.mx-3.px-3.py-2.transition(
-                    :flat='!hover',
-                    :class='hover || $vuetify.breakpoint.xs ? "white shadow-sm" : "transparent"',
-                    :href='storyLocale().path',
-                    rel='noopener noreferrer',
-                    target='_blank'
-                  )
-                    v-list-item-title.text-wrap.text-body-2.text-sm-subtitle-2.mb-3 {{ storyLocale().title }}
-                    v-list-item-subtitle.text-caption {{ formatDate(storyLocale().date) }}
+            v-col.d-sm-flex.align-center(cols='12')
+              .d-inline-grid.gap-3.mb-4.mb-sm-0(
+                :class='[`grid-cols-${mediaIcons.length}`, storyLocale().length >= 3 ? "grow" : ""]'
+              )
+                v-btn.mx-auto.rounded(
+                  v-for='item in mediaIcons',
+                  :key='item.title',
+                  :href='item.to',
+                  :title='item.title',
+                  target='_blank',
+                  fab,
+                  large,
+                  elevation='0',
+                  color='success'
+                )
+                  v-icon(large) {{ item.icon }}
+              v-slide-group(center-active, show-arrows)
+                v-card.mt-3.mt-sm-0.mr-3.mr-sm-0.ml-sm-3(
+                  v-for='(item, index) in storyLocale()',
+                  :key='index',
+                  flat
+                )
+                  v-hover(v-slot='{ hover }')
+                    v-list-item(
+                      :href='item.to',
+                      rel='noopener noreferrer',
+                      target='_blank'
+                    )
+                      v-list-item-content
+                        v-list-item-title.text-wrap.text-body-2.text-sm-subtitle-2.mb-3 {{ item.title }}
+                        v-list-item-subtitle.text-caption {{ formatDate(item.date) }}
           v-divider
 
       v-col(cols='12')
@@ -66,8 +89,10 @@
 // },
 import { mdiBookOpenPageVariantOutline, mdiOpenInNew } from '@mdi/js'
 import { articles } from '~/lib/page-meta'
+import { mediaEn, mediaRu } from '~/lib/media'
 
 export default {
+  name: 'ArticlesIndex',
   async asyncData({ $content, params, app }) {
     const articlesLocale = await $content(
       `${app.i18n.locale}/articles`,
@@ -85,9 +110,26 @@ export default {
       page: articles(this),
       mdiBookOpenPageVariantOutline,
       mdiOpenInNew,
+      mediaIcons: [
+        {
+          icon: '$mediumFilled',
+          title: 'Medium',
+          to: 'https://medium.com/@andrejsharapov',
+        },
+        {
+          icon: '$devToOutline',
+          title: 'DEV community',
+          to: 'https://dev.to/andrejsharapov',
+        },
+        {
+          icon: '$instagramOutline',
+          title: 'Instagram',
+          to: 'https://www.instagram.com/andrej.sharapov',
+        },
+      ],
+      media: [],
     }
   },
-
   head() {
     return {
       title: this.page.title,
@@ -109,18 +151,9 @@ export default {
   methods: {
     storyLocale() {
       if (this.$i18n.locale === 'ru') {
-        return {
-          title: 'Что делать, если вы разработчик-одиночка?',
-          path: 'https://geekbrains.ru/posts/single_developer_story',
-          date: '2018-11-28',
-        }
+        return (this.media = mediaRu())
       } else if (this.$i18n.locale === 'en') {
-        return {
-          title: 'What if you are a solo developer?',
-          // eslint-disable-next-line
-          path: 'https://andrejsharapov.medium.com/what-if-you-are-a-solo-developer-7c6cee66bf48',
-          date: '2019-03-15',
-        }
+        return (this.media = mediaEn())
       }
     },
     formatDate(date) {
@@ -131,9 +164,11 @@ export default {
 }
 </script>
 
-<style scoped>
-.page__articles {
-  --stop-color-one: var(--primary);
-  --stop-color-two: var(--accent);
+<style lang="scss" scoped>
+.page {
+  &__articles {
+    --stop-color-one: var(--primary);
+    --stop-color-two: var(--accent);
+  }
 }
 </style>

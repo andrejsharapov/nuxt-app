@@ -1,0 +1,27 @@
+hide: false
+type: des-logo
+title: E'leganto
+about: E'leganto is an Italian-born startup that currently designs and manufactures bags in woven and natural materials. In the future, the company expands production in the areas of development of headdress and clothing.
+date: 16.03.2022
+created: 2022-03-16
+ux:
+  works: 'PET PROJECT / EXPERIENCE'
+  price: Logo Design
+img:
+  src: \src\nuxt-app\logo\eleganto\cover.jpg
+  alt:
+preview:
+before:
+after: true
+colors:
+  - white
+  - black
+section:
+  - title: The epitome of elegance
+    caption: Despite the fact that the company is focused primarily on the design of bags, the logo was still based not on a bag, but on a female figure in a dress, which has always been a symbol of elegance and sophistication. The E'leganto logo, as well as the name of the company, as well as the figure of a fragile girl, are characterized by noble simplicity, calmness, lightness, grace and smoothness of forms.
+  - title: E'leganto bags
+    caption: A bag is a very important part of the wardrobe of a modern woman who prefers absolutely any style. At the development stage, three logo design options were presented, each of which was decided to be used on all company products. Thus, we can say that the company has three logos and every fashionista will be able to choose a bag or other product that best suits her taste.
+  - title:
+    caption:
+  - title:
+    caption:

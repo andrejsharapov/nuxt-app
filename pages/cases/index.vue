@@ -34,6 +34,7 @@
 import { cases } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesIndex',
   async asyncData({ $content, app, params }) {
     const cardsLocale = await $content(
       `${app.i18n.locale}/cases/index`,

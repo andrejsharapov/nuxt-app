@@ -2,8 +2,11 @@
 .recent-projects
   v-menu(
     transition='scroll-y-reverse-transition',
+    min-width='260',
     max-width='500',
     offset-y,
+    offset-overflow,
+    origin='top right',
     :open-on-hover='$vuetify.breakpoint.smAndUp',
     close-delay='200',
     nudge-bottom='12',
@@ -33,18 +36,26 @@
             v-for='work in setActualEvent',
             :key='work.slug',
             exact,
-            :to='work.path'
+            :to='work.path',
+            :title='work.title'
           )
-            v-card(flat, tile, color='transparent')
+            v-card.fill-width(flat, tile, color='transparent')
               v-row.ma-0.flex-column.flex-sm-row(
                 :no-gutters='$vuetify.breakpoint.smAndUp'
               )
-                v-col.pa-3.d-flex.justify-center.align-center(cols='5')
-                  v-img(:src='work.img.src', :alt='work.img.alt')
-                v-col.pr-sm-3(cols='7')
+                v-col.pa-3.d-flex.justify-center.align-center(cols='12')
+                  v-skeleton-loader(v-if='!work.img.src', type='image')
+                  v-img(
+                    v-else,
+                    :src='work.img.src',
+                    :alt='work.img.alt',
+                    aspect-ratio='2'
+                  )
+                v-col.px-sm-3(cols='12')
                   v-card-title.px-0.text-subtitle-2.font-weight-bold {{ work.title }}
                   v-card-subtitle.px-0.text-caption {{ formatDate(work.created) }}
                   v-card-text.px-0 {{ work.ux.price }}
+
         v-list-item(v-else)
           v-list-item-title {{ $t("projects.not-found") }}
 </template>
@@ -61,6 +72,7 @@ export default {
       mdiBellRingOutline,
       devSiteLocale: [],
       desSiteLocale: [],
+      desLogoLocale: [],
     }
   },
   async fetch() {
@@ -68,20 +80,27 @@ export default {
       `${this.$i18n.locale}/cases/dev/websites`
     )
       .where({ hide: false, type: 'dev-site' })
-      .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
     this.desSiteLocale = await this.$content(
       `${this.$i18n.locale}/cases/design/websites`
     )
       .where({ hide: false, type: 'des-site' })
-      .only(['title', 'created', 'slug', 'type', 'img', 'ux'])
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
+      .fetch()
+
+    this.desLogoLocale = await this.$content(
+      `${this.$i18n.locale}/cases/design/logo`
+    )
+      .where({ hide: false, type: 'des-logo' })
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
   },
   computed: {
     localeCases() {
-      return this.desSiteLocale || this.devSiteLocale
-        ? this.desSiteLocale.concat(this.devSiteLocale)
+      return this.desSiteLocale || this.devSiteLocale || this.desLogoLocale
+        ? this.desSiteLocale.concat(this.devSiteLocale, this.desLogoLocale)
         : []
     },
     setActualEvent() {
@@ -104,10 +123,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @media (--sm-max) {
-  .recent-projects__menu .ps {
-    height: 22rem;
+  .recent-projects {
+    &__menu .ps {
+      height: 22rem;
+    }
   }
 }
 </style>

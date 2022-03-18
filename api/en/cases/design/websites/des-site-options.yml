@@ -66,6 +66,8 @@ chartOptions:
     - 2019
     - 2020
     - 2021
+    - 2022
+    - ---
   colors:
     - var(--info)
     - var(--success)
@@ -77,13 +79,13 @@ chartOptions:
         x2: 2022
         opacity: 0.3
         label:
-          borderColor: var(--red)
+          borderColor: var(--info)
           style:
             fontSize: 12px
             color: var(--light)
-            background: var(--red)
+            background: var(--info)
           offsetY: 0
-          text: 'Major project'
+          text: 'Large project'
     yaxis:
       - y:
         y2:
@@ -98,14 +100,16 @@ chartOptions:
             background: var(--light)
           text: ''
 chartSeries:
-  - name: Big projects
+  - name: Projects
     data:
       - 6
       - 9
       - 12
       - 15
       - 3
+      - 2
       - 1
+      - null
   - name: Small orders
     data:
       - 96
@@ -113,4 +117,6 @@ chartSeries:
       - 74
       - 62
       - 8
-      -
+      - null
+      - null
+      - null

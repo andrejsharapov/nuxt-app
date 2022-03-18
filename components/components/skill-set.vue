@@ -104,8 +104,7 @@ export default {
             group: 'skillset-item',
             type: 'success',
             title: 'Вы нашли секретик!',
-            text:
-              'Бейджики можно менять местами и перетаскивать в соседние блоки.',
+            text: 'Бейджики можно менять местами и перетаскивать в соседние блоки.',
           }
         } else if (this.$i18n.locale === 'en') {
           return {

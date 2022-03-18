@@ -103,16 +103,14 @@ export default {
             group: 'case-switch-dates',
             type: 'error',
             title: 'Переключение даты',
-            text:
-              'Вы пытаетесь изменить период разработки. Извините, но это невозможно.',
+            text: 'Вы пытаетесь изменить период разработки. Извините, но это невозможно.',
           }
         } else if (this.$i18n.locale === 'en') {
           return {
             group: 'case-switch-dates',
             type: 'error',
             title: 'Date switch',
-            text:
-              'You are trying to change the development period. Sorry, but this is not possible.',
+            text: 'You are trying to change the development period. Sorry, but this is not possible.',
           }
         }
       }

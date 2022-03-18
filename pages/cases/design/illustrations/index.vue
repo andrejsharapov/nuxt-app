@@ -22,7 +22,9 @@
 
   v-container
     v-row
-      v-col(cols='12', sm='8') {{ $t("pages.illustrations.message") }}
+      v-col(cols='12', sm='8')
+        p(v-html="$t('pages.illustrations.message', { link: \"<a href='https://www.pinterest.ru/andrejsharapov/cute-fishes-madeas-fiska/' target='_blank' rel='noopener noreferrer' title='Cute fishes: Madeas & Fiska'>Madeas & Fiska</a>\" })")
+
       v-col.d-none.d-sm-block.mt-sm-n15.text-center(
         cols='12',
         sm='4',
@@ -52,6 +54,7 @@ import { mdiVectorCurve } from '@mdi/js'
 import { illustrations } from '~/lib/page-meta'
 
 export default {
+  name: 'CasesDesignIllustrationsIndex',
   async asyncData({ $content, params }) {
     const illustrationsLocale = await $content('illustrations', params.slug)
       .sortBy('date', 'desc')
@@ -92,9 +95,11 @@ export default {
 }
 </script>
 
-<style>
-.page__illustration {
-  --stop-color-one: #0d2880;
-  --stop-color-two: var(--success);
+<style lang="scss">
+.page {
+  &__illustration {
+    --stop-color-one: #0d2880;
+    --stop-color-two: var(--success);
+  }
 }
 </style>

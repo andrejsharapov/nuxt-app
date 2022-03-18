@@ -96,7 +96,7 @@
                     class="d-flex flex-column align-center justify-center pt-3"
                   >
                     <iframe
-                      :src="`/src/nuxt-app/banners/${banner.slug}/src/bnr.html`"
+                      :src="`/src/nuxt-app/banners/${banner.slug}/index.html`"
                       :width="`${banner.animatic.width}px`"
                       :height="`${banner.animatic.height}px`"
                       frameborder="0"
@@ -179,7 +179,7 @@
 
 <script>
 export default {
-  name: 'PagesCasesDesignWebsitesSlug',
+  name: 'CasesDevBannersSlug',
   async asyncData({ $content, app, params }) {
     const banner = await $content(
       `${app.i18n.locale}/cases/dev/banners`,
@@ -257,8 +257,8 @@ export default {
   &__prev,
   &__next {
     position: fixed;
-    top: 49%;
     z-index: 1;
+    top: 49%;
     opacity: 0.4;
 
     &:hover {

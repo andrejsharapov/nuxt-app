@@ -29,11 +29,11 @@ data:
       - GIT
     color: red
     icon: $mdiGit
-  - alt: PHP
-    set:
-      - WordPress
-    color: deep-purple
-    icon: $mdiLanguagePhp
+  # - alt: PHP
+  #   set:
+  #     - WordPress
+  #   color: deep-purple
+  #   icon: $mdiLanguagePhp
   - alt: JavaScript
     set:
       - ES6
@@ -63,7 +63,7 @@ data:
     icon: $mdiVuetify
   - alt: Frameworks
     set:
-      - Bootstrap 4
+      - Bootstrap 4/5
       - Vue.js
       - Tailwind CSS
     color: green
@@ -81,6 +81,7 @@ data:
       - Notepad ++
       - Sublime Text
       - Visual Studio Code
+      - PhpStorm
     color: light-blue
     icon: $mdiMicrosoftVisualStudioCode
   - alt: CMS

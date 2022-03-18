@@ -31,6 +31,7 @@
 import { certificates } from '~/lib/page-meta'
 
 export default {
+  name: 'CertificatesIndex',
   async asyncData({ $content, params }) {
     const certItems = await $content('certificates', params.slug).fetch()
 
@@ -59,9 +60,11 @@ export default {
 }
 </script>
 
-<style>
-.page__certificates {
-  --stop-color-one: #16c1e9;
-  --stop-color-two: #e3aefe;
+<style lang="scss">
+.page {
+  &__certificates {
+    --stop-color-one: #16c1e9;
+    --stop-color-two: #e3aefe;
+  }
 }
 </style>

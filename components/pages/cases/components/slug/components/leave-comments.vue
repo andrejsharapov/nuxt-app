@@ -13,41 +13,42 @@
         v-icon(x-large) {{ $vuetify.breakpoint.mdAndUp ? mdiArrowRight : mdiArrowDown }}
       span
         v-tooltip(left)
-          template(#activator='{ on }')
+          template(#activator='{ on: disqus }')
             v-btn.white.primary--text(
               fab,
-              v-on='on',
+              v-on='disqus',
               @click='disqusOpen = !disqusOpen'
             )
               v-icon(large) {{ mdiDisqus }}
           span {{ disqusOpen ? $tc("events.hide", 1) : $tc("events.show", 1) }} Disqus
-        v-btn.ml-2(
-          v-if='comment.dribbble != null',
-          x-large,
-          icon,
-          :href='comment.dribbble',
-          target='_blank',
-          rel='noopener noreferrer'
-        )
-          v-icon(large) $dribbbleOutline
-        v-btn.mx-2(
-          v-if='comment.behance != null',
-          x-large,
-          icon,
-          :href='comment.behance',
-          target='_blank',
-          rel='noopener noreferrer'
-        )
-          v-icon(large) $behanceOutline
-        v-btn(
-          v-if='comment.instagram != null',
-          x-large,
-          icon,
-          :href='comment.instagram',
-          target='_blank',
-          rel='noopener noreferrer'
-        )
-          v-icon(large) $instagramOutline
+        span(v-if='comment')
+          v-btn.ml-2(
+            v-if='comment.dribbble',
+            x-large,
+            icon,
+            :href='comment.dribbble',
+            target='_blank',
+            rel='noopener noreferrer'
+          )
+            v-icon(large) $dribbbleOutline
+          v-btn.mx-2(
+            v-if='comment.behance',
+            x-large,
+            icon,
+            :href='comment.behance',
+            target='_blank',
+            rel='noopener noreferrer'
+          )
+            v-icon(large) $behanceOutline
+          v-btn(
+            v-if='comment.instagram',
+            x-large,
+            icon,
+            :href='comment.instagram',
+            target='_blank',
+            rel='noopener noreferrer'
+          )
+            v-icon(large) $instagramOutline
   disqus(v-if='disqusOpen === true')
 </div>
 </template>
@@ -71,6 +72,9 @@ export default {
       mdiDisqus,
       disqusOpen: false,
     }
+  },
+  mounted() {
+    console.log(this.comment)
   },
 }
 </script>

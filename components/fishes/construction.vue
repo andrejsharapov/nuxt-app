@@ -396,7 +396,7 @@
 
 <script>
 export default {
-  name: 'Construction',
+  name: 'FishConstruction',
   props: {
     width: {
       type: [Number, String],

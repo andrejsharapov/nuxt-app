@@ -1,0 +1,173 @@
+hide: false
+type: dev-site
+title: Лендинг экологической конференции «РПН Сфера»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/7797617/media/149e64617ff5e569c8da5e168cf5b4e8.png?compress=1&resize=1000x750
+  alt: Лендинг экологической конференции «РПН Сфера»
+ux:
+  works: CORPORATE / BRANDING
+  price: Разработка корпоративного сайта
+created: '2019-02-20'
+period:
+  - '2019-02-14'
+  - '2019-02-20'
+deadline: На выполнение задачи было выделено полторы недели. Потребовалось около 5 дней.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Adobe Photoshop
+    - title: Standard
+      tags:
+        - HTML5
+        - CSS3
+        - JavaScript
+    - title: Components
+      tags:
+        - jQuery.js
+        - slick.js
+    - title: Software
+      tags:
+        - Visual Studio Code
+        - Gulp
+        - Pug
+        - SASS/SCSS
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+        - Frontend Developer / Full-Stack Developer
+    - title: Другие
+      tags:
+        - 'QA: Александр Холмогоров'
+        - 'SEO: Александр Холмогоров'
+  to:
+    dribbble: https://dribbble.com/shots/7797617-Landing-page-Conference-ecology
+    behance: https://www.behance.net/gallery/76596937/Conference-Landing-page
+    instagram: https://www.instagram.com/p/B4N_jzLgSJN/
+client:
+  logoJPG:
+  logoWEBP:
+  head: ООО «РПН СФЕРА»
+  description: ООО «РПН СФЕРА» — это аккредитованный орган по сертификации и декларированию продукции, который работает не только по всей России, но и по всему миру.
+  issues:
+  task: Разработка лендинга для проведения экологической конференции с целью привлечения потенциальных клиентов и расширения уже имеющейся клиентской базы.
+done:
+  img:
+    src: B4N_jzLgSJN
+    alt: Лендинг экологической конференции «РПН Сфера»
+    height:
+  alert:
+    message: Mobile First - это метод разработки оптимизированного веб-сайта, при котором сайт разрабатывается не от стационарных компьютеров к мобильным устройствам, а наоборот, от мобильной версии сайта, простой и облегченной, до широкоформатных экранов.
+    type: info
+    dismissible: false
+    outlined: false
+    prominent: false
+  list:
+    - анализ целевой аудитории;
+    - разработка прототипов дизайн-макета;
+    - разработка цветовой гаммы, типографики и состояний элементов;
+    - разработка дизайна и пользовательского интерфейса (UI);
+    - разработка концепции контент-наполнения сайта;
+    - верстка сайта на  CSS Grid по методу Mobile First;
+    - верстка и наполнение сайта сформированным контентом;
+    - анализ корректного отображения сайта в разных браузерах;
+    - анализ корректного отображения сайта на современных мобильных устройствах;
+    - запуск и подключение сквозной веб-аналитики сайта, отслеживание его эффективности.
+palette:
+  - type: ''
+    hex:
+      - FFC107
+      - 008FD1
+  - type: ''
+    hex:
+      - 395D70
+      - 5D7A8A
+  - type: ''
+    hex:
+      - F4F4F4
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital@1&display=swap' rel='stylesheet'>"
+  headline: Ubuntu Condensed
+  text: Ubuntu
+grid:
+  cols: 12
+  width: 65
+  size: 1140
+responsive:
+  percent: '99'
+  dash:
+    Performance: '94'
+    Accessibility: '97'
+    Practices: '96'
+    SEO: '100'
+analytics:
+  result:
+    - уровень конверсии составил 43%;
+    - также незначительно выросла посещаемость главного сайта.
+  traffic:
+    show: true
+    title: Поисковый трафик
+    type: bar
+    series:
+      - name: ''
+        data:
+          - 20
+          - 20
+          - 15
+          - 10
+          - 25
+          - 35
+          - 20
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+      - name: Запуск лендинга
+        data:
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - null
+          - 50
+          - 45
+          - 40
+          - 45
+          - 55
+          - 40
+          - 35
+          - 25
+          - 35
+          - 20
+          - 30
+  goals:
+    show: false
+    title: Достижения цели
+    chart:
+      series:
+      labels:
+  conversion:
+    show: true
+    title: Конверсия
+    value: ['43']
+testimonials:
+  author:
+    img:
+      src: ''
+      alt: ''
+    name: Иван Воронюк
+    position: Технический директор
+    company: ООО «РИЦ»
+    link: https://conference.rpn-sfera.ru/
+  message: Мы редко используем лэндинги в силу специфики услуг, однако иногда они все равно нужны. Так, с помощью лендинга Андрея нам удалось привлечь на клиентскую конференцию на 20% больше клиентов по сравнению со стандартными рассылками.

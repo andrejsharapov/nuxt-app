@@ -1,0 +1,133 @@
+.nuxt-content {
+  h1 {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  h2 {
+    margin-bottom: 0.725rem;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.25em;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 0.45em;
+      left: 0;
+      width: 0.625rem;
+      height: 0.625rem;
+      border: 0.125rem solid var(--info);
+      border-radius: 50%;
+    }
+
+    &:hover {
+      &::before {
+        background-color: var(--info);
+      }
+    }
+  }
+
+  &-highlight {
+    position: relative;
+
+    .filename {
+      position: absolute;
+      z-index: 1;
+      top: 0.625rem;
+      right: 0.25rem;
+      padding: 0.15rem 0.35rem;
+      color: var(--gray);
+      font-size: 0.825rem;
+
+      ~ pre[class*='language-'] {
+        padding-top: 1.5rem;
+      }
+    }
+
+    pre.line-numbers {
+      background-color: var(--light);
+      text-shadow: none;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  background-color: transparent;
+}
+
+.code-toolbar {
+  .toolbar {
+    top: -0.5em !important;
+    z-index: 2 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 1px;
+    height: 100%;
+    opacity: 1 !important;
+
+    .toolbar-item {
+      @supports (display: contents) {
+        display: contents !important;
+      }
+
+      margin: 0 var(--px);
+
+      > span {
+        background-image: linear-gradient(
+          45deg,
+          var(--orange),
+          var(--pink)
+        ) !important;
+        color: var(--light) !important;
+      }
+    }
+
+    button,
+    span {
+      border-radius: var(--px);
+    }
+
+    button {
+      display: none;
+      position: absolute !important;
+      bottom: 0 !important;
+      box-shadow: none;
+      color: var(--light) !important;
+    }
+
+    .copy-to-clipboard-button {
+      background-image: linear-gradient(
+        45deg,
+        var(--primary),
+        var(--accent)
+      ) !important;
+    }
+  }
+
+  &:hover {
+    .toolbar {
+      .toolbar-item {
+        button {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

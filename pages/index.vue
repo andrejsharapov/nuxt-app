@@ -1,6 +1,6 @@
 <template lang="pug">
 mixin sheet(color, saturation, size)
-  v-sheet.rounded-lg.d-flex.justify-center.align-center(
+  v-sheet.d-flex.justify-center.align-center.rounded(
     color=color + " " + saturation,
     width=size,
     height=size
@@ -10,11 +10,12 @@ mixin sheet(color, saturation, size)
 
 .page__index
   v-container
-    v-row
-      //- SECTION[epic=home] ABOUT
-      //- ANCHOR 1/2
-      v-col.d-none.d-md-block(cols='12', md='4')
-        //- author image
+    //- SECTION[epic=home] ABOUT
+    .fill-width.d-grid.grid-cols-1.grid-cols-md-3.gap-md-4
+      //- ANCHOR 1/3 author image
+      .d-md-grid.gap-lg-4.row-span-lg-2.flex-lg-column(
+        :class='{ "d-none": $vuetify.breakpoint.smAndDown }'
+      )
         v-img.shadow-xl.rounded-lg(
           lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=AUTHOR',
           src='/src/author/unicorn.jpg',
@@ -24,17 +25,8 @@ mixin sheet(color, saturation, size)
             v-row.fill-height.ma-0(align='center', justify='center')
               v-progress-circular(indeterminate, color='grey lighten-5')
 
-        //- icons
         v-hover(#default='{ hover }')
-          .mt-6.d-none.d-lg-block
-            lazy-s-social-icons(
-              plain,
-              :class-color='hover ? "grey--text text--darken-2" : "grey--text text--lighten-1"'
-            )
-
-        //- btn story
-        v-hover(#default='{ hover }')
-          v-btn.mt-3.mx-auto.fill-width.uppercase(
+          v-btn.d-none.d-lg-block.mx-auto.mt-auto.mb-0.uppercase(
             block,
             text,
             plain,
@@ -45,9 +37,8 @@ mixin sheet(color, saturation, size)
           ) {{ storyLocale().title }}
             v-icon(right) {{ mdiOpenInNew }}
 
-      //- ANCHOR 2/2
-      v-col(cols='12', md='8')
-        //- ANCHOR 2.1/2 hello!
+      //- ANCHOR 2/3 author info
+      .col-span-md-2
         h1.mb-3.text-h2.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
         h3.mb-8.text-h5.text-sm-h3.text-lg-h2.text-center.text-md-left.font-weight-bold.text-gradient(
           style='background-image: linear-gradient(180deg, var(--v-info-lighten2), var(--v-accent-darken1))'
@@ -56,43 +47,45 @@ mixin sheet(color, saturation, size)
           br
           strong {{ this.$t("author.position[1]") }}
 
-        p {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: 4 }) }}
+        p.mb-md-0 {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: declensions(years, localeWords) }) }}
 
-        //- ANCHOR 2.2/2 activity
-        p.mb-2 {{ $t("pages.index.sections.about.activity.prepend") }}:
-        v-row.mb-1.flex-column.flex-sm-row
-          v-col(
-            v-for='(card, index) in $t("pages.index.sections.about.activity.list")',
-            :key='index',
-            cols='12',
-            md='4'
+      //- ANCHOR 3/3 activity
+      .col-span-md-3.px-lg-0.col-span-lg-2
+        p {{ $t("pages.index.sections.about.activity.prepend") }}:
+        .d-md-grid.grid-cols-3.mb-3
+          template(
+            v-for='(card, index) in $t("pages.index.sections.about.activity.list")'
           )
-            v-hover(#default='{ hover }')
+            v-hover(#default='{ hover }', :key='index')
               v-sheet.px-4.fill-height.rounded-lg.transition(
-                :class='$vuetify.theme.dark ? "" : hover ? "white shadow-sm" : "transparent"'
+                :class='$vuetify.theme.dark ? "transparent" : hover ? "white shadow-sm" : "transparent"'
               )
                 v-list-item.px-0.d-flex.flex-md-column.text-md-center.flex-lg-row.text-lg-left
                   v-list-item-icon.mr-0.align-self-center
                     span(v-if='$vuetify.theme.dark')
-                      +sheet('blue', 'darken-4', 70)
-                        +sheet('blue', 'darken-3', 60)
-                          +sheet('blue', 'darken-2', 50)
-                            v-avatar.rounded-lg(size='40', tile)
-                              span.font-weight-bold.white--text {{ `#${index + 1}` }}
+                      +sheet('blue', 'darken-4', 50)
+                        +sheet('blue', 'darken-3', 40)
+                          +sheet('blue', 'darken-2', 30)
+                            v-avatar.rounded-lg(size='20', tile)
+                              span.font-weight-bold.white--text {{ index + 1 }}
                     span(v-else)
-                      +sheet('blue', 'lighten-4', 70)
-                        +sheet('blue', 'lighten-3', 60)
-                          +sheet('blue', 'lighten-2', 50)
-                            v-avatar.rounded-lg(size='40', tile)
-                              span.font-weight-bold.white--text {{ `#${index + 1}` }}
+                      +sheet('blue', 'lighten-4', 50)
+                        +sheet('blue', 'lighten-3', 40)
+                          +sheet('blue', 'lighten-2', 30)
+                            v-avatar.rounded-lg(size='20', tile)
+                              span.font-weight-bold.white--text {{ index + 1 }}
                   v-list-item-content.pa-4.py-md-0
-                    v-list-item-title.text-wrap.text-sm-subtitle-2 {{ card.message }}
+                    v-list-item-title.text-wrap.text-sm-subtitle-2(
+                      :style='{ color: $vuetify.theme.dark ? "" : "var(--secondary)" }'
+                    ) {{ card.message }}
 
         p {{ $tc("pages.index.sections.about.activity.append") }}
-      //- /SECTION
+    //- /SECTION
 
-      //- SECTION[epic=home] COUNTERS
-      p.mt-6.px-3 {{ $tc("pages.index.sections.counters.message") }}
+    //- SECTION[epic=home] COUNTERS
+    p {{ $tc("pages.index.sections.counters.message") }}
+
+    v-row
       v-col(v-for='counter in counters.data', :key='counter.title')
         v-card.mb-4.px-4.white--text.rounded-lg.shadow-lg.not-pointer(
           :color='counter.color_one',
@@ -112,7 +105,7 @@ mixin sheet(color, saturation, size)
               v-card-subtitle.white--text.text-no-wrap.op-8 {{ counter.title }}
       //- /SECTION
 
-      //- SECTION[epic=home] PRORESS
+      //- SECTION[epic=home] PROGRESS
       //- ANCHOR 1/3
       v-col(cols='12', sm='8')
         s-section-heading-anchor.text-no-wrap(
@@ -247,7 +240,7 @@ mixin sheet(color, saturation, size)
             ) {{ $t("more.base") }} {{ $t("pages.index.sections.certificates.title") }}
       //- /SECTION
 
-      v-img.confetty-horizontal.not-pointer.mx-auto(
+      v-img.confetti-horizontal.not-pointer.mx-auto(
         src='/src/confetti-horizontal.svg',
         alt=''
       )
@@ -264,6 +257,7 @@ import {
 import { appMeta as done } from '~/config/app'
 
 export default {
+  name: 'PageIndex',
   async asyncData({ $content, params, app }) {
     const getTimeline = await $content(
       `${app.i18n.locale}/timeline`,
@@ -346,6 +340,7 @@ export default {
           },
         ],
       },
+      years: 5,
     }
   },
   head() {
@@ -373,6 +368,15 @@ export default {
         ? this.desSiteLocale.concat(this.devSiteLocale)
         : []
     },
+    localeWords() {
+      if (this.$i18n.locale === 'ru') {
+        return ['год', 'года', 'лет']
+      } else if (this.$i18n.locale === 'en') {
+        return ['year', 'years', 'years']
+      }
+
+      return []
+    },
   },
   methods: {
     storyLocale() {
@@ -384,8 +388,7 @@ export default {
       } else if (this.$i18n.locale === 'en') {
         return {
           title: 'My story',
-          path:
-            'https://andrejsharapov.medium.com/what-if-you-are-a-solo-developer-7c6cee66bf48',
+          path: 'https://andrejsharapov.medium.com/what-if-you-are-a-solo-developer-7c6cee66bf48',
         }
       }
     },
@@ -396,25 +399,38 @@ export default {
         return 'dev'
       }
     },
+    declensions(number, words) {
+      return (
+        this.years +
+        ' ' +
+        words[
+          number % 100 > 4 && number % 100 < 20
+            ? 2
+            : [2, 0, 1, 1, 1, 2][number % 10 < 5 ? Math.abs(number) % 10 : 5]
+        ]
+      )
+    },
   },
 }
 </script>
 
 <style lang="scss">
-.page__index {
-  --stop-color-one: var(--primary);
-  --stop-color-two: var(--accent);
-  --gradient-default: linear-gradient(
-    45deg,
-    var(--stop-color-one, var(--primary)) 50%,
-    var(--stop-color-two, var(--accent)) 100%
-  );
+.page {
+  &__index {
+    --stop-color-one: var(--primary);
+    --stop-color-two: var(--accent);
+    --gradient-default: linear-gradient(
+      45deg,
+      var(--stop-color-one, var(--primary)) 50%,
+      var(--stop-color-two, var(--accent)) 100%
+    );
+  }
 }
 
 .transition {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: var(--base-time);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .transform {
@@ -432,6 +448,7 @@ export default {
   --scale-y: 1.25;
 }
 
+// stylelint-disable selector-class-pattern
 .-translate-y-1 {
   --translate-y: -0.25rem;
 }

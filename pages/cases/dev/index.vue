@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'CasesDevIndex',
   layout: 'clean',
   middleware({ redirect, app }) {
     return redirect('301', `/${app.i18n.locale}/cases`)

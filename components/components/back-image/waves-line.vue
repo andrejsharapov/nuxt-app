@@ -286,11 +286,13 @@ export default {
 }
 </script>
 
-<style>
-.waves-line__stroke {
-  stroke-dasharray: 1235;
-  stroke-dashoffset: -1235;
-  animation: stroke-width 10s ease-in-out infinite;
+<style lang="scss">
+.waves-line {
+  &__stroke {
+    animation: stroke-width 10s ease-in-out infinite;
+    stroke-dasharray: 1235;
+    stroke-dashoffset: -1235;
+  }
 }
 
 @keyframes stroke-width {

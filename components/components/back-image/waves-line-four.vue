@@ -136,19 +136,23 @@ export default {
 }
 </script>
 
-<style>
-.waves-line__four__stroke {
-  stroke-dasharray: 1235;
-  stroke-dashoffset: -1235;
-  animation: stroke-width 4s ease-in-out infinite;
-}
+<style lang="scss">
+.waves-line {
+  &__four {
+    &__stroke {
+      animation: stroke-width 4s ease-in-out infinite;
+      stroke-dasharray: 1235;
+      stroke-dashoffset: -1235;
+    }
 
-.waves-line__four__two {
-  animation-delay: 2s;
-}
+    &__four {
+      animation-delay: 4s;
+    }
 
-.waves-line__four__four {
-  animation-delay: 4s;
+    &__two {
+      animation-delay: 2s;
+    }
+  }
 }
 
 @keyframes stroke-width {
