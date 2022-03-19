@@ -48,8 +48,8 @@ preview:
 client:
   logoJPG:
   logoWEBP:
-  head: RPN SFERA LLC
-  description: RPN SFERA LLC is an accredited certification and product declaration body that operates not only throughout Russia but also around the world.
+  head: RPN SPHERE LLC
+  description: RPN SPHERE LLC is an accredited certification and product declaration body that operates not only throughout Russia but also around the world.
   issues:
   task: development of a landing page for an environmental conference with the aim of attracting potential clients and expanding the existing client base.
 done:
@@ -169,5 +169,5 @@ testimonials:
     name: Ivan Voronyuk
     position: Technical Director
     company: LLC "RIC"
-    link: https://conference.rpn-sfera.ru/
+    link: https://conference.rpn-SPHERE.ru/
   message: We rarely use landing pages due to the specifics of the services, but sometimes they are still needed. So, with the help of Andrey landing page, we managed to attract 20% more clients to the client conference compared to standard mailings.
