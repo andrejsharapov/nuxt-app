@@ -54,7 +54,7 @@ v-card(flat, tile)
       absolute,
       dark,
       fab,
-      to='../logo',
+      to='../',
       color='grey darken-3',
       style='left: calc(50% - 28px)'
     )
