@@ -2,19 +2,21 @@ data:
   - action: '$mdiHomeRoof'
     title: Главная
     to: '/ru'
-  - action: '$mdiFileCertificateOutline'
-    title: Сертификаты
-    to: '/ru/certificates'
   - action: '$mdiBriefcaseEyeOutline'
     title: Кейсы
     to: '/ru/cases'
+  - action: '$mdiTimelineOutline'
+    title: Timeline
+    to: '/ru/timeline'
+  - action: '$mdiContactsOutline'
+    title: Контакты
+    to: '/ru/contact'
+  - action: '$mdiFileCertificateOutline'
+    title: Сертификаты
+    to: '/ru/certificates'
   - action: '$mdiCodeJson'
     title: Кодинг
     to: '/ru/works/coding'
-  - action: '$mdiEmailSyncOutline'
-    disabled: true
-    title: Верстка писем
-    to: '/ru/works/email'
   - action: '$mdiVectorPolylineEdit'
     title: Фотошоп
     to: '/ru/works/photoshop'
@@ -27,9 +29,6 @@ data:
   - action: '$mdiLightbulbOnOutline'
     title: Проекты
     to: '/ru/projects'
-  - action: '$mdiTimelineOutline'
-    title: Timeline
-    to: '/ru/timeline'
   - action: '$mdiContactsOutline'
     title: Контакты
     to: '/ru/contact'

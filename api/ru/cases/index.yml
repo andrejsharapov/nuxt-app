@@ -17,6 +17,12 @@ data:
       - action: '$mdiProgressCheck'
         title: Квиз
         to: '/ru/cases/design/quiz'
+      - action: '$mdiEmailFastOutline'
+        title: Email-рассылки
+        to: '/ru/cases/design/email'
+      - action: '$mdiCodeJson'
+        title: Pure Code
+        to: '/en/works/coding'
 
   - title: Разработка
     alt: development

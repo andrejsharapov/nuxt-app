@@ -8,13 +8,13 @@ data:
         group: 'design'
         child:
           - action: '$mdiCellphoneLink'
-            title: Website
+            title: Websites
             to: '/en/cases/design/websites'
           - action: '$mdiCellphoneCog'
-            title: Apps
+            title: App Design
             to: '/en/cases/design/apps'
           - action: '$mdiVectorRadius'
-            title: Logos
+            title: Logotypes
             to: '/en/cases/design/logo'
           - action: '$mdiVectorCurve'
             title: Illustrations
@@ -23,21 +23,29 @@ data:
             title: Quiz
             to: '/en/cases/design/quiz'
             disabled: true
-        title: Web Design
+          - action: '$mdiEmailFastOutline'
+            title: Newsletters
+            to: '/ru/cases/design/email'
+            disabled: true
+        title: Design
         to: '/en/cases/design'
       - action: '$mdiDevices'
         group: 'dev'
         child:
           - action: '$mdiResponsive'
-            title: Website
+            title: Websites
             to: '/en/cases/dev/websites'
           - action: '$mdiTabletCellphone'
-            title: Apps
+            title: App Design
             to: '/en/cases/dev/apps'
             disabled: true
           - action: '$mdiVectorBezier'
             title: HTML5 Banners
             to: '/en/cases/dev/banners'
+          - action: '$mdiEmailSyncOutline'
+            disabled: true
+            title: Email
+            to: '/ru/cases/dev/email'
         title: Development
         to: '/en/cases/dev'
       - action: '$mdiDotsHorizontal'
@@ -52,10 +60,6 @@ data:
           - action: '$mdiCodeJson'
             title: Pure Code
             to: '/en/works/coding'
-          - action: '$mdiEmailSyncOutline'
-            disabled: true
-            title: Email
-            to: '/ru/works/email'
         title: More
     title: Cases
     to: '/en/cases'

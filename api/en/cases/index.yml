@@ -9,7 +9,7 @@ data:
         title: Apps
         to: '/en/cases/design/apps'
       - action: '$mdiVectorRadius'
-        title: Logos
+        title: Logotypes
         to: '/en/cases/design/logo'
       - action: '$mdiVectorCurve'
         title: Illustrations
@@ -17,6 +17,12 @@ data:
       - action: '$mdiOrderBoolAscendingVariant'
         title: Quiz
         to: '/en/cases/design/quiz'
+      - action: '$mdiEmailFastOutline'
+        title: Newsletters
+        to: '/ru/cases/design/email'
+      - action: '$mdiCodeJson'
+        title: Pure Code
+        to: '/en/works/coding'
 
   - title: Development
     alt: development

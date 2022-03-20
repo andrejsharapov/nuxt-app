@@ -9,10 +9,11 @@
           :class='{ "card-view__image": $vuetify.breakpoint.mdAndUp }'
         )
           v-img(
-            lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG',
-            :src='site.img.src',
             :alt='site.img.alt',
             aspect-ratio='1.7'
+            lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG',
+            :src='site.img.src',
+            :position='position'
           )
             template(#placeholder)
               v-row.fill-height.ma-0(align='center', justify='center')
@@ -55,13 +56,17 @@ import { mdiHammerWrench, mdiPageNextOutline } from '@mdi/js'
 export default {
   name: 'CardRow',
   props: {
-    site: {
-      type: Object,
-      default: () => ({}),
+    position: {
+      type: String,
+      default: 'center center',
     },
     showTools: {
       type: Number,
       default: 0,
+    },
+    site: {
+      type: Object,
+      default: () => ({}),
     },
   },
   data() {
