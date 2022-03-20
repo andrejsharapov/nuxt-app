@@ -37,6 +37,20 @@ v-app(v-resize='onResize', dark)
     lazy-s-layout-recent-projects(:class='{ "order-2": rightPosition === 0 }')
     lazy-s-layout-job-offer(:class='{ "order-3": rightPosition === 0 }')
 
+    v-btn.rounded-xl.mx-2(
+      v-if='$i18n.locale === "ru" && $vuetify.breakpoint.mdAndUp',
+      dark,
+      depressed,
+      href='https://t.me/andrejsharapov',
+      target='_blank',
+      rel='noopener noreferrer',
+      color='blue',
+      style='text-transform: none',
+      :class='{ "order-1": rightPosition === 0 }'
+    )
+      v-icon(left) $telegramOutline
+      | Написать в телеграм
+
     v-tooltip(bottom)
       template(#activator='{ on: settings }')
         v-btn(
