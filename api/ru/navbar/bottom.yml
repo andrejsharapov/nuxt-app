@@ -29,6 +29,3 @@ data:
   - action: '$mdiLightbulbOnOutline'
     title: Проекты
     to: '/ru/projects'
-  - action: '$mdiContactsOutline'
-    title: Контакты
-    to: '/ru/contact'
