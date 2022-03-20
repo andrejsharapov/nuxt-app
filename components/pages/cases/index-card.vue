@@ -50,12 +50,19 @@ export default {
       return {
         animation: 0,
         group: 'cases',
-        disabled: false,
+        disabled: this.dragDisabled(),
         ghostClass: 'drag',
       }
     },
   },
   methods: {
+    dragDisabled() {
+      if (this.$vuetify.breakpoint.smAndDown) {
+        return true
+      } else {
+        return false
+      }
+    },
     getComponentData() {
       return {
         attrs: {
