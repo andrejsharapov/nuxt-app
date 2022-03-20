@@ -1,5 +1,6 @@
 <template lang="pug">
 v-card(flat, tile)
+  s-history-back
   //- SECTION 1: preview
   v-sheet(color='transparent')
     v-img.fill-width(

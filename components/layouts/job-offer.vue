@@ -14,6 +14,7 @@
         template(#activator='{ on: email }')
           v-btn(
             icon,
+            :disabled='$t("author.job.status") !== "1"',
             :href='`mailto:an.sharapov90@gmail.com?subject=${$t("author.job.title")}`',
             rel='noopener noreferrer',
             v-on='email'
