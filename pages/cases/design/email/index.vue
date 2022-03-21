@@ -148,6 +148,11 @@ export default {
   &__email {
     --stop-color-one: #d81943;
     --stop-color-two: #810a99;
+    --gradient-default: linear-gradient(
+      45deg,
+      var(--stop-color-one, var(--primary)) 50%,
+      var(--stop-color-two, var(--accent)) 100%
+    );
 
     .aida {
       .v-list-item {
