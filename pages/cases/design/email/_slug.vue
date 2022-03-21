@@ -60,6 +60,10 @@ v-container.page__email__slug
         go-to='cases/design/email'
       )
     //- /COMPONENT
+
+  s-pages-cases-components-slug-components-leave-comments.px-4(
+    :comment='email.preview'
+  )
 </template>
 
 <script>
