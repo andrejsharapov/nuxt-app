@@ -106,7 +106,8 @@ export default {
       `${app.i18n.locale}/cases/design/email`,
       params.slug
     )
-      .sortBy('date', 'desc')
+      .where({ type: 'des-email', hide: false })
+      .sortBy('created', 'desc')
       .fetch()
 
     return {
