@@ -19,13 +19,13 @@ data:
           - action: '$mdiVectorCurve'
             title: Иллюстрации
             to: '/ru/cases/design/illustrations'
-          - action: '$mdiProgressCheck'
-            title: Квиз-маркетинг
-            to: '/ru/cases/design/quiz'
-            disabled: true
           - action: '$mdiEmailFastOutline'
             title: Email-рассылки
             to: '/ru/cases/design/email'
+          - action: '$mdiProgressCheck'
+            disabled: true
+            title: Квиз-маркетинг
+            to: '/ru/cases/design/quiz'
         title: Веб-дизайн
         to: '/ru/cases/design'
       - action: '$mdiDevices'

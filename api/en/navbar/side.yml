@@ -19,14 +19,13 @@ data:
           - action: '$mdiVectorCurve'
             title: Illustrations
             to: '/en/cases/design/illustrations'
-          - action: '$mdiOrderBoolAscendingVariant'
-            title: Quiz
-            to: '/en/cases/design/quiz'
-            disabled: true
           - action: '$mdiEmailFastOutline'
             title: Newsletters
-            to: '/ru/cases/design/email'
+            to: '/en/cases/design/email'
+          - action: '$mdiOrderBoolAscendingVariant'
             disabled: true
+            title: Quiz
+            to: '/en/cases/design/quiz'
         title: Design
         to: '/en/cases/design'
       - action: '$mdiDevices'
@@ -36,16 +35,16 @@ data:
             title: Websites
             to: '/en/cases/dev/websites'
           - action: '$mdiTabletCellphone'
+            disabled: true
             title: App Design
             to: '/en/cases/dev/apps'
-            disabled: true
           - action: '$mdiVectorBezier'
             title: HTML5 Banners
             to: '/en/cases/dev/banners'
           - action: '$mdiEmailSyncOutline'
             disabled: true
             title: Email
-            to: '/ru/cases/dev/email'
+            to: '/en/cases/dev/email'
         title: Development
         to: '/en/cases/dev'
       - action: '$mdiDotsHorizontal'
