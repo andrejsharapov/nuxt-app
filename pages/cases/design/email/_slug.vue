@@ -1,9 +1,24 @@
 <template lang="pug">
 v-container.page__email__slug
   s-history-back.mb-4
-  v-card-title {{ email.title }}
+  v-card-title.text-h6 {{ email.title }}
   v-card-subtitle {{ formatDate(email.created) }}
   v-card-text {{ $t("works.types") }}: {{ email.ux.price }}
+
+  .d-flex
+    v-spacer
+    v-btn-toggle(
+      v-if='$vuetify.breakpoint.mdAndUp',
+      v-model='cardView',
+      mandatory,
+      borderless,
+      color='primary'
+    )
+      v-btn(:ripple='false')
+        v-icon(style='transform: scaleX(-1)') {{ mdiViewSplitVertical }}
+      v-btn(v-if='$vuetify.breakpoint.mdAndUp', :ripple='false')
+        v-icon(style='transform: scaleY(-1)') {{ mdiViewSplitHorizontal }}
+
   v-row.mb-4
     //- COMPONENT ARROW PREV
     v-col.order-1.order-md-0.d-none.d-sm-flex.justify-start(cols='12', md='1')
@@ -13,15 +28,21 @@ v-container.page__email__slug
       )
     //- /COMPONENT
 
-    //- SECTION image
-    v-col(cols='12', md='5')
+    v-col.d-grid(
+      cols='12',
+      md='10',
+      :class='cardView === 0 && $vuetify.breakpoint.mdAndUp ? "grid-cols-2" : "grid-cols-1"'
+    )
+      //- SECTION image
       v-expansion-panels.mt-6.rounded(
         v-model='panel',
         flat,
         :multiple='$vuetify.breakpoint.mdAndUp'
       )
         v-expansion-panel.shadow-sm.pa-0
-          v-expansion-panel-header(v-if='$vuetify.breakpoint.smAndDown') {{ $tc("events.show", 1) }} | {{ $tc("events.hide", 1) }}
+          v-expansion-panel-header(
+            v-if='$vuetify.breakpoint.smAndDown || cardView === 1'
+          ) {{ $tc("events.show", 1) }} | {{ $tc("events.hide", 1) }}
           v-expansion-panel-content.pa-0
             v-img.mx-auto(
               :alt='email.img.alt',
@@ -32,10 +53,9 @@ v-container.page__email__slug
               template(#placeholder)
                 v-row.fill-height.ma-0(align='center', justify='center')
                   v-progress-circular(indeterminate, color='grey lighten-5')
-    //- /SECTION
+      //- /SECTION
 
-    //- SECTION info
-    v-col(cols='12', md='5')
+      //- SECTION info
       v-timeline(dense)
         v-timeline-item(
           v-for='(s, i) in email.section',
@@ -44,7 +64,9 @@ v-container.page__email__slug
           :color='colors[i]'
         )
           span(slot='opposite')
-          v-card.shadow-sm
+          v-sheet.rounded.shadow-sm(
+            :class='{ "v-card": $vuetify.breakpoint.smAndUp }'
+          )
             v-card-title.text-subtitle-1.text-no-wrap.text-lg-h5 {{ s.title }}
             v-divider(inset)
             v-card-text(v-if='Array.isArray(s.caption)')
@@ -67,6 +89,8 @@ v-container.page__email__slug
 </template>
 
 <script>
+import { mdiViewSplitHorizontal, mdiViewSplitVertical } from '@mdi/js'
+
 export default {
   name: 'CasesDesignEmailSlug',
   middleware({ redirect, app }) {
@@ -98,6 +122,9 @@ export default {
   data: () => ({
     panel: [0],
     colors: ['red', 'red', 'green', 'green', 'blue', 'blue'],
+    cardView: 0,
+    mdiViewSplitHorizontal,
+    mdiViewSplitVertical,
   }),
   head() {
     return {

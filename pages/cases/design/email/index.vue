@@ -64,9 +64,9 @@
             color='primary'
           )
             v-btn(:ripple='false')
-              v-icon {{ mdiViewGrid }}
+              v-icon {{ mdiViewWeek }}
             v-btn(v-if='$vuetify.breakpoint.mdAndUp', :ripple='false')
-              v-icon {{ mdiViewDay }}
+              v-icon {{ mdiViewList }}
 
         v-row(v-if='localeItems.length')
           v-col(
@@ -90,7 +90,7 @@
 </template>
 
 <script>
-import { mdiEmailFastOutline, mdiViewGrid, mdiViewDay } from '@mdi/js'
+import { mdiEmailFastOutline, mdiViewWeek, mdiViewList } from '@mdi/js'
 import { desEmail as email } from '~/lib/page-meta'
 
 export default {
@@ -118,8 +118,8 @@ export default {
     return {
       page: email(this),
       mdiEmailFastOutline,
-      mdiViewGrid,
-      mdiViewDay,
+      mdiViewWeek,
+      mdiViewList,
       cardView: 0,
     }
   },
