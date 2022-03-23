@@ -16,10 +16,11 @@
 
           <v-card class="rounded-lg shadow-lg transition-fast-in-fast-out">
             <v-img
+              :alt="site.img.alt"
               :aspect-ratio="16 / 9"
               lazy-src="https://fakeimg.pl/300/e9ecf2/1e1e24?text=IMG"
               :src="site.img.src"
-              :alt="site.img.alt"
+              :position="position"
             >
               <template #placeholder>
                 <v-row class="fill-height ma-0" align="center" justify="center">
@@ -70,13 +71,17 @@ export default {
     BriefcaseViewOutline,
   },
   props: {
-    site: {
-      type: Object,
-      default: () => ({}),
-    },
     customPath: {
       type: String,
       default: '',
+    },
+    position: {
+      type: String,
+      default: 'center center',
+    },
+    site: {
+      type: Object,
+      default: () => ({}),
     },
   },
   methods: {

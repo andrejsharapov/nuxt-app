@@ -18,6 +18,17 @@
       v-col(cols='12', sm='8')
         v-card-title.px-0.text-break-word {{ $tc("pages.cases.message", 1) }}
         v-card-subtitle.px-0 {{ $tc("pages.cases.message", 2) }}
+        .d-flex.gap-6.mb-6
+          .d-flex.align-center
+            v-sheet.mr-4.pa-2.rounded(
+              style='background: linear-gradient(225deg, #5b62e0, #5731a1)'
+            )
+            | {{ $t("pages.des-site.title") }}
+          .d-flex.align-center
+            v-sheet.mr-4.pa-2.rounded(
+              style='background: linear-gradient(45deg, var(--orange), var(--pink))'
+            )
+            | {{ $t("pages.dev-site.title") }}
 
       v-col.d-none.d-sm-block.mt-sm-n15.text-center(
         cols='12',
@@ -65,7 +76,19 @@ export default {
   },
   computed: {
     localeItems() {
-      return this.cardsLocale ? this.cardsLocale?.data : []
+      const a = this.cardsLocale
+        ? this.cardsLocale?.data.map((el) => el.list)
+        : []
+
+      // делаем из многомерного массива одномерные
+      const b = [].concat(a[0], a[1]) // .map((el) => el.title)
+
+      // делаем рандом
+      function makeRandomArr() {
+        return Math.random() - 0.5
+      }
+
+      return b.sort(makeRandomArr)
     },
   },
 }

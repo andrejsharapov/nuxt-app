@@ -73,8 +73,5 @@ export default {
       disqusOpen: false,
     }
   },
-  mounted() {
-    console.log(this.comment)
-  },
 }
 </script>

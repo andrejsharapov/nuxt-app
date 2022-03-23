@@ -8,36 +8,43 @@ data:
         group: 'design'
         child:
           - action: '$mdiCellphoneLink'
-            title: Website
+            title: Websites
             to: '/en/cases/design/websites'
           - action: '$mdiCellphoneCog'
-            title: Apps
+            title: App Design
             to: '/en/cases/design/apps'
           - action: '$mdiVectorRadius'
-            title: Logos
+            title: Logotypes
             to: '/en/cases/design/logo'
           - action: '$mdiVectorCurve'
             title: Illustrations
             to: '/en/cases/design/illustrations'
+          - action: '$mdiEmailFastOutline'
+            title: Newsletters
+            to: '/en/cases/design/email'
           - action: '$mdiOrderBoolAscendingVariant'
+            disabled: true
             title: Quiz
             to: '/en/cases/design/quiz'
-            disabled: true
-        title: Web Design
+        title: Design
         to: '/en/cases/design'
       - action: '$mdiDevices'
         group: 'dev'
         child:
           - action: '$mdiResponsive'
-            title: Website
+            title: Websites
             to: '/en/cases/dev/websites'
           - action: '$mdiTabletCellphone'
-            title: Apps
-            to: '/en/cases/dev/apps'
             disabled: true
+            title: App Design
+            to: '/en/cases/dev/apps'
           - action: '$mdiVectorBezier'
             title: HTML5 Banners
             to: '/en/cases/dev/banners'
+          - action: '$mdiEmailSyncOutline'
+            disabled: true
+            title: Email
+            to: '/en/cases/dev/email'
         title: Development
         to: '/en/cases/dev'
       - action: '$mdiDotsHorizontal'
@@ -52,10 +59,6 @@ data:
           - action: '$mdiCodeJson'
             title: Pure Code
             to: '/en/works/coding'
-          - action: '$mdiEmailSyncOutline'
-            disabled: true
-            title: Email
-            to: '/ru/works/email'
         title: More
     title: Cases
     to: '/en/cases'

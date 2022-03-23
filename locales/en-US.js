@@ -243,7 +243,27 @@ export default {
       message:
         'I thought about developing a design for applications only at the end of 2019, since I did not have time for this, and I thought that I could not, since I had not studied this area. Inspired by the work of other designers, studying guides and UI Kits*, I decided to try my hand and developed the interface of the {link} application in Figma. C grade, but I did it. This work became a starting point for me.',
     },
+    'des-email': {
+      message:
+        'I create responsive and beautiful emails that can help your business stand out or get better, as well as stay on top of your existing customer base. Cross-platform email solutions are the future of marketing.',
+      marketing: {
+        title: 'Email Marketing',
+        message:
+          "Email marketing is a very effective method of engaging with your audience. It's affordable and usually has a good ROI (Return on investment). In turn, the return on investment is one of the main indicators of the success of any business. If you are investing time, effort and money, you need to know how much profit your investment brings, and how quickly it will pay off. Such a calculation is necessary for all components of marketing, including email newsletters.",
+      },
+      aida: {
+        about: "I'm building my email design with AIDA User Experience Model.",
+        decoding: [
+          'A (Attention) - to attract attention and make the client recognize or remember your product or brand;',
+          'I (Interest) - to interest the offer and capture its interest;',
+          'D (Desire) - cause a desire to possess what you offer and thereby perform the target action;',
+          'A (Action) – form a clear call and push to the desired action;',
+          'S (Satisfaction) - Satisfy the customer.',
+        ],
+      },
+    },
     'des-site': {
+      title: 'Design',
       message:
         'I know that every client, before making a choice, wants to see the skills of a designer and his real cases, that is, "live" work, and not just a table of blurry screenshots. This makes sense, so on this page I have presented some of my work done at different times using different tools. | By looking at my work, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',
       experience:
@@ -265,6 +285,7 @@ export default {
       },
     },
     'dev-site': {
+      title: 'Development',
       cms: 'I started learning web development back in 2010. This was my first knowledge of web development, which eventually grew into a hobby. Over the years I have learned to work with HTML, CSS, JS and have worked with various content management systems (CMS). But I started full-fledged website development only in 2018, when I learned how to create websites on WordPress and got a job as a web developer.',
       message:
         'By looking at my works, you can see my professional growth and the skills I possess. Find out if they meet your requirements before you decide to place an order.',

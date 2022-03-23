@@ -2,19 +2,21 @@ data:
   - action: '$mdiHomeRoof'
     title: Home
     to: '/en'
-  - action: '$mdiFileCertificateOutline'
-    title: Certificates
-    to: '/en/certificates'
   - action: '$mdiBriefcaseEyeOutline'
     title: Cases
     to: '/en/cases'
+  - action: '$mdiTimelineOutline'
+    title: Timeline
+    to: '/en/timeline'
+  - action: '$mdiContactsOutline'
+    title: Contact
+    to: '/en/contact'
+  - action: '$mdiFileCertificateOutline'
+    title: Certificates
+    to: '/en/certificates'
   - action: '$mdiCodeJson'
     title: Pure Code
     to: '/en/works/coding'
-  - action: '$mdiEmailSyncOutline'
-    disabled: true
-    title: Email
-    to: '/en/works/email'
   - action: '$mdiVectorPolylineEdit'
     title: Photoshop
     to: '/en/works/photoshop'
@@ -27,9 +29,3 @@ data:
   - action: '$mdiLightbulbOnOutline'
     title: Projects
     to: '/en/projects'
-  - action: '$mdiTimelineOutline'
-    title: Timeline
-    to: '/en/timeline'
-  - action: '$mdiContactsOutline'
-    title: Contact
-    to: '/en/contact'

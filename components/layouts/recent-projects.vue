@@ -2,7 +2,7 @@
 .recent-projects
   v-menu(
     transition='scroll-y-reverse-transition',
-    min-width='260',
+    :min-width='$vuetify.breakpoint.mdAndUp ? "420" : "290"',
     max-width='500',
     offset-y,
     offset-overflow,
@@ -15,8 +15,8 @@
     template(#activator='{ on: menu }')
       v-btn.mx-2(icon, v-on='{ ...menu }')
         v-badge(
-          v-if='setActualEvent.length >= 1',
-          :content='setActualEvent.length',
+          v-if='recentProjects.length >= 1',
+          :content='recentProjects.length',
           label='projects',
           left,
           overlap,
@@ -24,16 +24,17 @@
         )
           v-icon {{ mdiBellRingOutline }}
         v-icon(v-else) {{ mdiBellOutline }}
+
     perfect-scrollbar
       v-list
         v-subheader {{ $t("projects.recent") }}
         v-divider(inset)
         v-list-item-group(
-          v-if='setActualEvent.length >= 1',
+          v-if='recentProjects.length >= 1',
           active-class='amber lighten-4'
         )
           v-list-item.px-0(
-            v-for='work in setActualEvent',
+            v-for='work in recentProjects',
             :key='work.slug',
             exact,
             :to='work.path',
@@ -43,7 +44,10 @@
               v-row.ma-0.flex-column.flex-sm-row(
                 :no-gutters='$vuetify.breakpoint.smAndUp'
               )
-                v-col.pa-3.d-flex.justify-center.align-center(cols='12')
+                v-col.pa-3.d-flex.justify-center.align-center(
+                  cols='12',
+                  sm='6'
+                )
                   v-skeleton-loader(v-if='!work.img.src', type='image')
                   v-img(
                     v-else,
@@ -51,10 +55,11 @@
                     :alt='work.img.alt',
                     aspect-ratio='2'
                   )
-                v-col.px-sm-3(cols='12')
+                v-col.px-sm-3(cols='12', sm='6')
                   v-card-title.px-0.text-subtitle-2.font-weight-bold {{ work.title }}
                   v-card-subtitle.px-0.text-caption {{ formatDate(work.created) }}
-                  v-card-text.px-0 {{ work.ux.price }}
+                  v-card-text.px-0.text-no-wrap.text-truncate {{ work.ux.price }}
+              v-divider
 
         v-list-item(v-else)
           v-list-item-title {{ $t("projects.not-found") }}
@@ -70,12 +75,21 @@ export default {
     return {
       mdiBellOutline,
       mdiBellRingOutline,
-      devSiteLocale: [],
-      desSiteLocale: [],
+      all: [],
+      desEmailLocale: [],
       desLogoLocale: [],
+      desSiteLocale: [],
+      devSiteLocale: [],
     }
   },
   async fetch() {
+    this.desEmailLocale = await this.$content(
+      `${this.$i18n.locale}/cases/design/email`
+    )
+      .where({ hide: false, type: 'des-email' })
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
+      .fetch()
+
     this.devSiteLocale = await this.$content(
       `${this.$i18n.locale}/cases/dev/websites`
     )
@@ -99,19 +113,22 @@ export default {
   },
   computed: {
     localeCases() {
-      return this.desSiteLocale || this.devSiteLocale || this.desLogoLocale
-        ? this.desSiteLocale.concat(this.devSiteLocale, this.desLogoLocale)
-        : []
+      return this.all.concat(
+        this.desEmailLocale,
+        this.desLogoLocale,
+        this.desSiteLocale,
+        this.devSiteLocale
+      )
     },
-    setActualEvent() {
-      const actualEvent = this.localeCases
+    recentProjects() {
+      const projects = this.localeCases?.length
         ? this.localeCases.filter(
             (el) =>
               moment(el.created, 'YYYY-MM-DD').add(1, 'months') >= new Date()
           )
         : []
 
-      return actualEvent
+      return projects
     },
   },
   methods: {

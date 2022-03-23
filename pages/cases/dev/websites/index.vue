@@ -100,6 +100,7 @@
           <div v-if="localeItems.length" class="d-flex">
             <v-spacer />
             <v-btn-toggle
+              v-if="$vuetify.breakpoint.mdAndUp"
               v-model="cardView"
               mandatory
               borderless
