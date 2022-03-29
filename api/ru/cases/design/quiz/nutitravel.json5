@@ -1,0 +1,33 @@
+{
+  hide: false,
+  type: 'des-quiz',
+  title: 'Nut Travel',
+  img: {
+    src: 'Cover',
+    alt: '',
+  },
+  ux: {
+    works: 'CORPORATE / BRANDING',
+    price: 'Квиз-лендинг',
+  },
+  created: '2022-03-28',
+  preview: {
+    to: {
+      dribbble: null,
+      behance: 'https://www.behance.net/gallery/140378841/Quiz-Landing',
+      instagram: null,
+    },
+  },
+  section: [
+    'Cover',
+    'Q1',
+    'Q2',
+    'Q3',
+    'Q4',
+    'Q5',
+    // 'Loading',
+    'Form',
+    'Finally',
+  ],
+  deadline: '',
+}

@@ -1,0 +1,33 @@
+{
+  hide: false,
+  type: 'des-quiz',
+  title: 'Coffee',
+  img: {
+    src: 'Cover',
+    alt: '',
+  },
+  ux: {
+    works: 'CORPORATE / BRANDING',
+    price: 'Квиз-дизайн',
+  },
+  created: '2022-03-25',
+  preview: {
+    to: {
+      dribbble: null,
+      behance: null,
+      instagram: null,
+    },
+  },
+  section: [
+    'Cover',
+    'Q1',
+    'Q2',
+    'Q3',
+    'Q4',
+    'Q5',
+    'Loading',
+    'Form',
+    'Finally',
+  ],
+  deadline: '',
+}
