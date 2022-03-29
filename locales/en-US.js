@@ -262,6 +262,26 @@ export default {
         ],
       },
     },
+    'des-quiz': {
+      title: 'Quiz',
+      message:
+        'Below are the first works that, in my opinion, are good enough for a portfolio. You decide. I don"t have a lot of experience in this area, but I try to improve myself and I think that these works are able to fulfill their task.',
+      about: {
+        what: 'What is a quiz?',
+        message:
+          'A quiz is a type of content that is widely used in business. It is a step-by-step questionnaire or a quiz that helps with each subsequent question to interest the client more and more, during the passage of which you can easily:',
+        list: [
+          'Collect information about potential buyers;',
+          'To interest an old audience;',
+          'Get traffic from social networks;',
+          'Offer your products to the reader, depending on the results ;',
+          'Increase CTR (Click Through Rate);',
+          'Increase lead generation;',
+          'Increase the loyalty of the target audience and earn a reputation as a modern creative company;',
+          'Collect contact details, e.g. by sending test results by email.',
+        ],
+      },
+    },
     'des-site': {
       title: 'Design',
       message:
