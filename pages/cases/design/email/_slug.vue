@@ -144,23 +144,29 @@ export default {
 </script>
 
 <style lang="scss">
-.page__email__slug {
-  .case-arrow-link {
-    &__prev,
-    &__next {
-      position: fixed;
-      z-index: 1;
-      top: 49%;
-      opacity: 0.4;
+.page {
+  &__email {
+    &__slug {
+      .case-arrow-link {
+        &__prev,
+        &__next {
+          position: fixed;
+          z-index: 1;
+          top: 49%;
+          opacity: 0.4;
 
-      &:hover {
-        opacity: 1;
+          &:hover {
+            opacity: 1;
+          }
+        }
       }
     }
   }
 
-  .v-expansion-panel-content__wrap {
-    padding: 0;
+  .v-expansion-panel-content {
+    &__wrap {
+      padding: 0;
+    }
   }
 }
 </style>

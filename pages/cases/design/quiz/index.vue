@@ -29,7 +29,7 @@
         )
         p {{ $t("pages.des-quiz.about.message") }}
 
-      v-col.d-none.d-sm-block.mt-sm-n15.text-center.z-index-2(
+      v-col.d-none.d-sm-block.mt-sm-n16.text-center.z-index-2(
         cols='12',
         sm='5'
       )
