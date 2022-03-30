@@ -9,12 +9,9 @@ v-card.dialog-card.shadow-sm.rounded.overflow-hidden
     transition='dialog-bottom-transition'
   )
     template(#activator='{ on: showContent }')
-      v-img.cursor-pointer(
-        :src='`/src/nuxt-app/quiz/${content.slug}/${content.img.src}.jpg`',
-        alt='',
-        contain,
-        v-on='showContent'
-      )
+      //- v-on='showContent'
+      nuxt-link(:to='localePath(`/cases/design/quiz/${content.slug}`)')
+        v-img.cursor-pointer(:src='content.img.src', alt='', contain)
 
     v-card
       v-toolbar(flat, tile)
