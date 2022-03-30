@@ -78,6 +78,7 @@ export default {
       all: [],
       desEmailLocale: [],
       desLogoLocale: [],
+      desQuizLocale: [],
       desSiteLocale: [],
       devSiteLocale: [],
     }
@@ -90,10 +91,17 @@ export default {
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
-    this.devSiteLocale = await this.$content(
-      `${this.$i18n.locale}/cases/dev/websites`
+    this.desLogoLocale = await this.$content(
+      `${this.$i18n.locale}/cases/design/logo`
     )
-      .where({ hide: false, type: 'dev-site' })
+      .where({ hide: false, type: 'des-logo' })
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
+      .fetch()
+
+    this.desQuizLocale = await this.$content(
+      `${this.$i18n.locale}/cases/design/quiz`
+    )
+      .where({ hide: false, type: 'des-quiz' })
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
@@ -104,10 +112,10 @@ export default {
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
-    this.desLogoLocale = await this.$content(
-      `${this.$i18n.locale}/cases/design/logo`
+    this.devSiteLocale = await this.$content(
+      `${this.$i18n.locale}/cases/dev/websites`
     )
-      .where({ hide: false, type: 'des-logo' })
+      .where({ hide: false, type: 'dev-site' })
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
   },
@@ -116,6 +124,7 @@ export default {
       return this.all.concat(
         this.desEmailLocale,
         this.desLogoLocale,
+        this.desQuizLocale,
         this.desSiteLocale,
         this.devSiteLocale
       )
