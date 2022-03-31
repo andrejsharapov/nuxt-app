@@ -1,7 +1,7 @@
 <template lang="pug">
 v-card.dialog-card.shadow-sm.rounded.overflow-hidden
   v-card-title {{ content.title }}
-  v-card-subtitle {{ content.created }}
+  v-card-subtitle {{ formatDate(content.created) }}
   v-dialog(
     fullscreen,
     v-model='dialog',
@@ -77,6 +77,12 @@ export default {
       mdiClose,
       step: 1,
     }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
+    },
   },
 }
 </script>
