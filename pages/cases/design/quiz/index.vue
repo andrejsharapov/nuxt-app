@@ -45,9 +45,11 @@
 
     //- SECTION WORKS
     s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
-    .d-grid.grid-cols-sm-3.gap-6.py-4(v-if='localeItems.length')
+    .d-sm-grid.grid-cols-sm-2.grid-cols-md-3.gap-6.py-4(
+      v-if='localeItems.length'
+    )
       template(v-for='(item, index) in localeItems')
-        v-lazy(
+        v-lazy.mb-4.mb-sm-0(
           :key='index',
           :options='{ threshold: 0.5 }',
           transition='scroll-y-reverse-transition'
