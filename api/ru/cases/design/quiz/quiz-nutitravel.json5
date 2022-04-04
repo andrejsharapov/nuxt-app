@@ -3,7 +3,7 @@
   type: 'des-quiz',
   title: 'Nut Travel',
   img: {
-    src: '/src/nuxt-app/quiz/nutitravel/cover.jpg',
+    src: '/src/nuxt-app/quiz/quiz-nutitravel/cover.jpg',
     alt: '',
   },
   ux: {
