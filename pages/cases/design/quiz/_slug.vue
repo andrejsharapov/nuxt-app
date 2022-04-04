@@ -1,6 +1,6 @@
 <template>
   <div>
-    <s-history-back class="mb-4" />
+    <s-history-back />
 
     <v-container>
       <v-row>
