@@ -15,7 +15,8 @@
     "postcss-sorting",
     "postcss-url",
     "stylus",
-    "stylus-loader"
+    "stylus-loader",
+    "vue-github-button"
   ],
   "lockFileMaintenance": {
     "enabled": true
