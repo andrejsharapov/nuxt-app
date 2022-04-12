@@ -2,7 +2,7 @@
   <div>
     <s-history-back />
 
-    <v-container>
+    <v-container fluid>
       <v-row>
         <!-- COMPONENT ARROW PREV -->
         <v-col

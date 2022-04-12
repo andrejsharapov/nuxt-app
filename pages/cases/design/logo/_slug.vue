@@ -1,10 +1,22 @@
 <template lang="pug">
-v-card(flat, tile)
+div
   s-history-back
 
-  v-container
+  v-container(fluid)
     v-row
-      v-col(cols='12')
+      //- COMPONENT ARROW PREV
+      v-col.order-1.order-md-0.d-none.d-sm-flex.justify-start(
+        cols='12',
+        md='1'
+      )
+        s-pages-cases-components-slug-arrow-prev(
+          :prev='prev',
+          go-to='cases/design/logo'
+        )
+      //- /COMPONENT
+
+      //- SECTION CASE
+      v-col(cols='12', md='10')
         //- SECTION 1: preview
         v-sheet(color='transparent')
           v-img.fill-width(
@@ -61,7 +73,7 @@ v-card(flat, tile)
             absolute,
             dark,
             fab,
-            to='../',
+            :to='localePath("/cases/design/logo")',
             color='grey darken-3',
             style='left: calc(50% - 28px)'
           )
@@ -70,6 +82,15 @@ v-card(flat, tile)
         s-pages-cases-components-slug-components-leave-comments(
           :comment='logo.preview'
         )
+      //- /SECTION
+
+      //- COMPONENT ARROW NEXT
+      v-col.order-1.order-md-0.d-none.d-sm-flex.justify-end(cols='12', md='1')
+        s-pages-cases-components-slug-arrow-next(
+          :next='next',
+          go-to='cases/design/logo'
+        )
+      //- /COMPONENT
 </template>
 
 <script>
@@ -85,8 +106,17 @@ export default {
       .where({ type: 'des-logo' })
       .fetch()
 
+    const [prev, next] = await $content(`${app.i18n.locale}/cases/design/logo`)
+      .where({ type: 'des-logo' })
+      .only(['title', 'slug'])
+      .sortBy('created', 'desc')
+      .surround(params.slug)
+      .fetch()
+
     return {
       logo,
+      prev,
+      next,
     }
   },
   data: () => ({
@@ -108,3 +138,19 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.case-arrow-link {
+  &__prev,
+  &__next {
+    position: fixed;
+    z-index: 1;
+    top: 49%;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+</style>

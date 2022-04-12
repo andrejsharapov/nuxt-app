@@ -32,7 +32,7 @@
           v-divider(inset)
           v-list-item-group(
             v-if='recentProjects.length >= 1',
-            active-class='amber lighten-4'
+            active-class='amber lighten-4 grey--text text--darken-4'
           )
             v-list-item.px-0(
               v-for='work in recentProjects',

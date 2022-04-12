@@ -2,7 +2,7 @@
 div
   s-history-back
 
-  v-container.page__email__slug
+  v-container.page__des-email__slug(fluid)
     v-card-title.text-h6 {{ email.title }}
     v-card-subtitle {{ formatDate(email.created) }}
     v-card-text {{ $t("works.types") }}: {{ email.ux.price }}
@@ -150,7 +150,7 @@ export default {
 
 <style lang="scss">
 .page {
-  &__email {
+  &__des-email {
     &__slug {
       .case-arrow-link {
         &__prev,

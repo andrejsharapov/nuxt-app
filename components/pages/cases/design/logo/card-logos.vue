@@ -37,33 +37,75 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
           )
             v-icon {{ mdiClose }}
 
-        //- SECTION 1: preview
-        v-sheet(color='transparent')
-          v-img(
-            :src='`/src/nuxt-app/logo/${item.slug}/cover.jpg`',
-            contain,
-            :alt='item.title',
-            width='100%'
-          )
-        //- /SECTION
+        v-container
+          //- SECTION 1: preview
+          v-sheet(color='transparent')
+            v-img(
+              :src='`/src/nuxt-app/logo/${item.slug}/cover.jpg`',
+              contain,
+              :alt='item.title',
+              width='100%'
+            )
+          //- /SECTION
 
-        //- SECTION 2: logos
-        section.position-relative.z-index-2
-          v-banner.pr-lg-4(
-            :color='$vuetify.theme.dark ? "var(--card)" : "white"',
-            single-line,
-            :sticky='$vuetify.breakpoint.mdAndUp',
-            style='top: 0'
-          )
-            v-card(tile, flat, color='transparent')
-              .d-flex.flex-column.flex-md-row.align-md-end.justify-md-space-between
-                v-card-title.pa-0.text-h5.font-weight-bold {{ item.title }}
-                .text-md-right
-                  v-card-subtitle.pa-0 {{ formatDate(item.created) }}
-                  v-card-subtitle.pa-0 {{ item.ux.price }}
-              v-card-text.px-0.text-body-2.text-md-body-1(v-if='item.about') {{ item.about }}
+          //- SECTION 2: logos
+          section.position-relative.z-index-2
+            v-banner.pr-lg-4(
+              :color='$vuetify.theme.dark ? "var(--card)" : "white"',
+              single-line,
+              :sticky='$vuetify.breakpoint.mdAndUp',
+              style='top: 0'
+            )
+              v-card(tile, flat, color='transparent')
+                .d-flex.flex-column.flex-md-row.align-md-end.justify-md-space-between
+                  v-card-title.pa-0.text-h5.font-weight-bold {{ item.title }}
+                  .text-md-right
+                    v-card-subtitle.pa-0 {{ formatDate(item.created) }}
+                    v-card-subtitle.pa-0 {{ item.ux.price }}
+                v-card-text.px-0.text-body-2.text-md-body-1(v-if='item.about') {{ item.about }}
 
-            v-btn.mt-n4.d-none.d-md-block(
+              v-btn.mt-n4.d-none.d-md-block(
+                absolute,
+                dark,
+                fab,
+                color='grey darken-3',
+                style='left: calc(50% - 28px)',
+                @click='dialog = false'
+              )
+                v-icon {{ mdiClose }}
+
+            .d-grid.grid-cols-sm-2.gap-6
+              v-sheet(v-for='(name, index) of item.colors', :key='index')
+                v-img(
+                  :src='`/src/nuxt-app/logo/${item.slug}/colors/${name}.jpg`',
+                  aspect-ratio='1'
+                )
+          //- /SECTION
+
+          //- SECTION 3: details
+          template(v-if='item.section')
+            section(v-for='(s, index) in item.section')
+              v-banner.pr-lg-4(
+                :key='index',
+                :color='$vuetify.theme.dark ? "var(--card)" : "white"',
+                single-line,
+                :sticky='$vuetify.breakpoint.mdAndUp',
+                style='top: 0'
+              )
+                v-card(tile, flat, color='transparent')
+                  v-card-title.px-0.text-subtitle-1.text-md-h5.font-weight-medium(
+                    v-if='s.title'
+                  ) {{ s.title }}
+                  v-card-text.px-0.text-body-2.text-md-body-1(v-if='s.caption') {{ s.caption }}
+              v-img(
+                :src='`/src/nuxt-app/logo/${item.slug}/section/${index + 1}.jpg`'
+              )
+
+          v-toolbar.z-index-2(dense)
+            v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("thx.view") }}!
+            v-spacer
+
+            v-btn.mt-n12(
               absolute,
               dark,
               fab,
@@ -73,49 +115,8 @@ v-card.card-logos.fill-height.d-flex.flex-column.shadow-md
             )
               v-icon {{ mdiClose }}
 
-          .d-grid.grid-cols-sm-2.gap-6
-            v-sheet(v-for='(name, index) of item.colors', :key='index')
-              v-img(
-                :src='`/src/nuxt-app/logo/${item.slug}/colors/${name}.jpg`',
-                aspect-ratio='1'
-              )
-        //- /SECTION
-
-        //- SECTION 3: details
-        template(v-if='item.section')
-          section(v-for='(s, index) in item.section')
-            v-banner.pr-lg-4(
-              :key='index',
-              :color='$vuetify.theme.dark ? "var(--card)" : "white"',
-              single-line,
-              :sticky='$vuetify.breakpoint.mdAndUp',
-              style='top: 0'
-            )
-              v-card(tile, flat, color='transparent')
-                v-card-title.px-0.text-subtitle-1.text-md-h5.font-weight-medium(
-                  v-if='s.title'
-                ) {{ s.title }}
-                v-card-text.px-0.text-body-2.text-md-body-1(v-if='s.caption') {{ s.caption }}
-            v-img(
-              :src='`/src/nuxt-app/logo/${item.slug}/section/${index + 1}.jpg`'
-            )
-
-        v-toolbar.z-index-2(dense)
-          v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("thx.view") }}!
-          v-spacer
-
-          v-btn.mt-n12(
-            absolute,
-            dark,
-            fab,
-            color='grey darken-3',
-            style='left: calc(50% - 28px)',
-            @click='dialog = false'
-          )
-            v-icon {{ mdiClose }}
-
-          v-spacer
-          v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("author.name") }}
+            v-spacer
+            v-toolbar-title(v-if='$vuetify.breakpoint.mdAndUp') {{ $t("author.name") }}
 
   //- ANCHOR 2/4 info
   v-card-subtitle.py-0 {{ formatDate(item.created) }}
