@@ -70,7 +70,9 @@ typings/
 
 # Nuxt generate
 dist
+static/src/author/
 static/src/nuxt-app/
+.htaccess
 
 # vuepress build output
 .vuepress/dist

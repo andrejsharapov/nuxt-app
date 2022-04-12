@@ -23,8 +23,7 @@ data:
             title: Email-рассылки
             to: '/ru/cases/design/email'
           - action: '$mdiProgressCheck'
-            disabled: true
-            title: Квиз-маркетинг
+            title: Квиз-дизайн
             to: '/ru/cases/design/quiz'
         title: Веб-дизайн
         to: '/ru/cases/design'

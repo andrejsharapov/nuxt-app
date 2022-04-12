@@ -23,7 +23,6 @@ data:
             title: Newsletters
             to: '/en/cases/design/email'
           - action: '$mdiOrderBoolAscendingVariant'
-            disabled: true
             title: Quiz
             to: '/en/cases/design/quiz'
         title: Design

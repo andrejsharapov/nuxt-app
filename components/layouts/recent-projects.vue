@@ -1,16 +1,16 @@
 <template lang="pug">
 .recent-projects
   v-menu(
-    transition='scroll-y-reverse-transition',
-    :min-width='$vuetify.breakpoint.mdAndUp ? "420" : "290"',
+    close-delay='200',
+    content-class='shadow-lg recent-projects__menu',
     max-width='500',
+    :min-width='$vuetify.breakpoint.mdAndUp ? "420" : "290"',
     offset-y,
     offset-overflow,
-    origin='top right',
     :open-on-hover='$vuetify.breakpoint.smAndUp',
-    close-delay='200',
+    origin='top right',
     nudge-bottom='12',
-    content-class='shadow-lg recent-projects__menu'
+    transition='scroll-y-reverse-transition'
   )
     template(#activator='{ on: menu }')
       v-btn.mx-2(icon, v-on='{ ...menu }')
@@ -25,44 +25,45 @@
           v-icon {{ mdiBellRingOutline }}
         v-icon(v-else) {{ mdiBellOutline }}
 
-    perfect-scrollbar
-      v-list
-        v-subheader {{ $t("projects.recent") }}
-        v-divider(inset)
-        v-list-item-group(
-          v-if='recentProjects.length >= 1',
-          active-class='amber lighten-4'
-        )
-          v-list-item.px-0(
-            v-for='work in recentProjects',
-            :key='work.slug',
-            exact,
-            :to='work.path',
-            :title='work.title'
+    v-card(flat)
+      perfect-scrollbar
+        v-list(style='max-height: calc(100vh - 100px)')
+          v-subheader {{ $t("projects.recent") }}
+          v-divider(inset)
+          v-list-item-group(
+            v-if='recentProjects.length >= 1',
+            active-class='amber lighten-4 grey--text text--darken-4'
           )
-            v-card.fill-width(flat, tile, color='transparent')
-              v-row.ma-0.flex-column.flex-sm-row(
-                :no-gutters='$vuetify.breakpoint.smAndUp'
-              )
-                v-col.pa-3.d-flex.justify-center.align-center(
-                  cols='12',
-                  sm='6'
+            v-list-item.px-0(
+              v-for='work in recentProjects',
+              :key='work.slug',
+              exact,
+              :to='work.path',
+              :title='work.title'
+            )
+              v-card.fill-width(flat, tile, color='transparent')
+                v-row.ma-0.flex-column.flex-sm-row(
+                  :no-gutters='$vuetify.breakpoint.smAndUp'
                 )
-                  v-skeleton-loader(v-if='!work.img.src', type='image')
-                  v-img(
-                    v-else,
-                    :src='work.img.src',
-                    :alt='work.img.alt',
-                    aspect-ratio='2'
+                  v-col.pa-3.d-flex.justify-center.align-center(
+                    cols='12',
+                    sm='6'
                   )
-                v-col.px-sm-3(cols='12', sm='6')
-                  v-card-title.px-0.text-subtitle-2.font-weight-bold {{ work.title }}
-                  v-card-subtitle.px-0.text-caption {{ formatDate(work.created) }}
-                  v-card-text.px-0.text-no-wrap.text-truncate {{ work.ux.price }}
-              v-divider
+                    v-skeleton-loader(v-if='!work.img.src', type='image')
+                    v-img(
+                      v-else,
+                      :src='work.img.src',
+                      :alt='work.img.alt',
+                      aspect-ratio='2'
+                    )
+                  v-col.px-sm-3(cols='12', sm='6')
+                    v-card-title.px-0.text-subtitle-2.font-weight-bold {{ work.title }}
+                    v-card-subtitle.px-0.text-caption {{ formatDate(work.created) }}
+                    v-card-text.px-0.text-no-wrap.text-truncate {{ work.ux.price }}
+                v-divider
 
-        v-list-item(v-else)
-          v-list-item-title {{ $t("projects.not-found") }}
+          v-list-item(v-else)
+            v-list-item-title {{ $t("projects.not-found") }}
 </template>
 
 <script>
@@ -78,6 +79,7 @@ export default {
       all: [],
       desEmailLocale: [],
       desLogoLocale: [],
+      desQuizLocale: [],
       desSiteLocale: [],
       devSiteLocale: [],
     }
@@ -90,10 +92,17 @@ export default {
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
-    this.devSiteLocale = await this.$content(
-      `${this.$i18n.locale}/cases/dev/websites`
+    this.desLogoLocale = await this.$content(
+      `${this.$i18n.locale}/cases/design/logo`
     )
-      .where({ hide: false, type: 'dev-site' })
+      .where({ hide: false, type: 'des-logo' })
+      .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
+      .fetch()
+
+    this.desQuizLocale = await this.$content(
+      `${this.$i18n.locale}/cases/design/quiz`
+    )
+      .where({ hide: false, type: 'des-quiz' })
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
@@ -104,10 +113,10 @@ export default {
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
 
-    this.desLogoLocale = await this.$content(
-      `${this.$i18n.locale}/cases/design/logo`
+    this.devSiteLocale = await this.$content(
+      `${this.$i18n.locale}/cases/dev/websites`
     )
-      .where({ hide: false, type: 'des-logo' })
+      .where({ hide: false, type: 'dev-site' })
       .only(['title', 'created', 'slug', 'type', 'img', 'ux', 'path'])
       .fetch()
   },
@@ -116,6 +125,7 @@ export default {
       return this.all.concat(
         this.desEmailLocale,
         this.desLogoLocale,
+        this.desQuizLocale,
         this.desSiteLocale,
         this.devSiteLocale
       )
@@ -143,8 +153,10 @@ export default {
 <style lang="scss">
 @media (--sm-max) {
   .recent-projects {
-    &__menu .ps {
-      height: 22rem;
+    &__menu {
+      .ps {
+        height: 22rem;
+      }
     }
   }
 }

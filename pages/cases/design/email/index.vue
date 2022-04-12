@@ -1,5 +1,5 @@
 <template lang="pug">
-.page__email
+.page__des-email
   s-history-back
 
   s-layout-components-back-image(:page='page')
@@ -42,12 +42,10 @@
         p {{ $t("pages.des-email.marketing.message") }}
         p {{ $t("pages.des-email.aida.about") }}
 
-        v-list.aida(dense, color='transparent')
-          v-list-item(
-            v-for='i of $t("pages.des-email.aida.decoding")',
-            :key='i'
-          )
-            v-list-item-title {{ i }}
+        .nuxt-content
+          ul.aida
+            li(v-for='i of $t("pages.des-email.aida.decoding")', :key='i')
+              v-list-item-title {{ i }}
       //- /SECTION
 
       //- SECTION WORKS
@@ -146,7 +144,7 @@ export default {
 
 <style lang="scss">
 .page {
-  &__email {
+  &__des-email {
     --stop-color-one: #d81943;
     --stop-color-two: #810a99;
     --gradient-default: linear-gradient(

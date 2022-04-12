@@ -1,6 +1,7 @@
 <template>
   <div>
     <s-history-back class="mb-4" />
+
     <div class="d-none d-md-block case-image hidden">
       <v-img :src="website.img.src" class="fill-height" />
     </div>

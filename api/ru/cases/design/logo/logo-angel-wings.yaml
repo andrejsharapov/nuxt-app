@@ -8,7 +8,7 @@ ux:
   works: 'PET PROJECT / EXPERIENCE'
   price: Разработка логотипа
 img:
-  src: \src\nuxt-app\logo\angel-wings\cover.jpg
+  src: \src\nuxt-app\logo\logo-angel-wings\cover.jpg
   alt:
 preview:
 before:

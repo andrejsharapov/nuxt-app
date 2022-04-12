@@ -1,5 +1,5 @@
 <template lang="pug">
-.page__logo
+.page__des-logo
   s-history-back
 
   s-layout-components-back-image(:page='page')
@@ -107,7 +107,7 @@ export default {
 
 <style lang="scss">
 .page {
-  &__logo {
+  &__des-logo {
     --stop-color-one: var(--v-success-darken3);
     --stop-color-two: var(--v-success-lighten1);
   }

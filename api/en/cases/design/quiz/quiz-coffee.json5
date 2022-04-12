@@ -1,0 +1,33 @@
+{
+  hide: false,
+  type: 'des-quiz',
+  title: 'Coffee',
+  img: {
+    src: '/src/nuxt-app/quiz/quiz-coffee/cover.jpg',
+    alt: '',
+  },
+  ux: {
+    works: 'CORPORATE / BRANDING',
+    price: 'Quiz Design',
+  },
+  created: '2022-03-25',
+  preview: {
+    to: {
+      dribbble: null,
+      behance: null,
+      instagram: null,
+    },
+  },
+  section: [
+    'cover',
+    'q1',
+    'q2',
+    'q3',
+    'q4',
+    'q5',
+    'loading',
+    'form',
+    'finally',
+  ],
+  deadline: '',
+}
