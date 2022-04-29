@@ -4163,12 +4163,12 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
-css-byebye@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/css-byebye/-/css-byebye-3.1.0.tgz#3fccd79acf612d7776225d6897f359c2034b6b36"
-  integrity sha512-/VsUq9ZaYnnOtUWDxnO5KpEJ/PHoIyBKMqC22zRxdFO2BZ7R8NTnZSQxkdXeY5dwqszev4g29+4SRHY3uqi2NQ==
+css-byebye@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/css-byebye/-/css-byebye-3.1.1.tgz#834262d3dc450bcef6bc966d4ae5c715897351c9"
+  integrity sha512-08jWOjVMAb8T3jsmkC86Vt5gWP40xrcHptyK6bJ0ZnJompeimrAk7dIEL+nRU5I0rxx3ruTPBKvz//NzgW10wg==
   dependencies:
-    postcss "^6.0.19"
+    postcss "^8.4.12"
 
 css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
@@ -5038,16 +5038,6 @@ eslint-plugin-unicorn@^41.0.0:
     strip-indent "^3.0.0"
 
 eslint-plugin-vue@8.6.0, eslint-plugin-vue@^8.5.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-8.6.0.tgz#fbdf0f13f8d208a4cba752bf54042661a1aec5c3"
-  integrity sha512-abXiF2J18n/7ZPy9foSlJyouKf54IqpKlNvNmzhM93N0zs3QUxZG/oBd3tVPOJTKg7SlhBUtPxugpqzNbgGpQQ==
-  dependencies:
-    eslint-utils "^3.0.0"
-    natural-compare "^1.4.0"
-    semver "^7.3.5"
-    vue-eslint-parser "^8.0.1"
-
-eslint-plugin-vue@^8.1.1, eslint-plugin-vue@^8.5.0:
   version "8.6.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-8.6.0.tgz#fbdf0f13f8d208a4cba752bf54042661a1aec5c3"
   integrity sha512-abXiF2J18n/7ZPy9foSlJyouKf54IqpKlNvNmzhM93N0zs3QUxZG/oBd3tVPOJTKg7SlhBUtPxugpqzNbgGpQQ==
@@ -9712,7 +9702,7 @@ postcss@^5.0.5, postcss@^5.2.17:
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.19, postcss@^6.0.21, postcss@^6.0.22, postcss@^6.0.6:
+postcss@^6.0.21, postcss@^6.0.22, postcss@^6.0.6:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
   integrity sha512-soOk1h6J3VMTZtVeVpv15/Hpdl2cBLX3CAw4TAbkpTJiNPk9YP/zWcD1ND+xEtvyuuvKzbxliTOIyvkSeSJ6ag==
