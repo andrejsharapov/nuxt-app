@@ -11,7 +11,7 @@ mixin sheet(color, saturation, size)
 .page__index
   v-container
     //- SECTION[epic=home] ABOUT
-    .fill-width.d-grid.grid-cols-1.grid-cols-md-3.gap-md-4
+    .personal-info.fill-width.d-grid.grid-cols-1.grid-cols-md-3.grid-cols-xl-4.gap-md-4
       //- ANCHOR 1/3 author image
       .d-md-grid.gap-lg-4.row-span-lg-2.flex-lg-column(
         :class='{ "d-none": $vuetify.breakpoint.smAndDown }'
@@ -38,7 +38,7 @@ mixin sheet(color, saturation, size)
             v-icon(right) {{ mdiOpenInNew }}
 
       //- ANCHOR 2/3 author info
-      .col-span-md-2
+      .col-span-md-2.col-span-xl-3
         h1.mb-3.text-h2.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
         h3.mb-8.text-h5.text-sm-h3.text-lg-h2.text-center.text-md-left.font-weight-bold.text-gradient(
           style='background-image: linear-gradient(180deg, var(--v-info-lighten2), var(--v-accent-darken1))'
@@ -50,7 +50,7 @@ mixin sheet(color, saturation, size)
         p.mb-md-0 {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: declensions(years, localeWords) }) }}
 
       //- ANCHOR 3/3 activity
-      .col-span-md-3.px-lg-0.col-span-lg-2
+      .col-span-md-3.px-lg-0.col-span-lg-2.col-span-xl-3
         p {{ $t("pages.index.sections.about.activity.prepend") }}:
         .d-md-grid.grid-cols-3.mb-3
           template(
@@ -424,6 +424,12 @@ export default {
       var(--stop-color-one, var(--primary)) 50%,
       var(--stop-color-two, var(--accent)) 100%
     );
+
+    .personal-info {
+      @media (min-width: 1904px) {
+        grid-template-columns: repeat(4, minmax(auto, max-content));
+      }
+    }
   }
 }
 
