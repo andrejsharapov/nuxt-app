@@ -124,6 +124,7 @@ export default {
       back: 'Go back',
       home: 'Return home',
     },
+    close: 'close',
     download: 'Download',
     view: 'View | Views',
     'report-problem': 'Report problem',

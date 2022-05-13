@@ -125,6 +125,7 @@ export default {
       back: 'Назад',
       home: 'На главную',
     },
+    close: 'закрыть',
     download: 'Скачать',
     view: 'Просмотр | Смотреть',
     'report-problem': 'Сообщить о проблеме',

@@ -6,16 +6,17 @@ v-card.poll(color='purple')
     v-if='!miniVariant',
     v-model='dialog',
     width='500',
+    scrollable,
     content-class='poll__modal'
   )
     template(#activator='{ on: poll }')
       v-btn(block, text, dark, v-on='poll') {{ $t("poll.btn") }}
 
-    v-expansion-panels(v-model='panel', accordion, dark, multiple)
+    v-expansion-panels(v-model='panel', accordion, multiple)
       v-expansion-panel(:readonly='readonly')
         v-expansion-panel-header.py-0.pr-2.pl-0(color='primary')
           template(#default)
-            v-toolbar.pa-0(flat, color='transparent')
+            v-toolbar.pa-0(dark, flat, color='transparent')
               v-toolbar-title
                 v-icon(left) {{ mdiPoll }}
                 | {{ $t("poll.title") }}
@@ -35,10 +36,10 @@ v-card.poll(color='purple')
               height='48',
               :class='{ "d-none": $vuetify.breakpoint.xs }'
             )
-              v-icon {{ mdiChevronDown }}
+              v-icon(color='white') {{ mdiChevronDown }}
 
         v-expansion-panel-content.pa-0
-          v-card(flat, tile, height='75vh', color='white')
+          v-card(flat, tile, color='white', style='height: 65vh')
             iframe(
               :src='"https://docs.google.com/forms/d/e/" + isLangVersion + "/viewform?embedded=true"',
               width='100%',
@@ -47,6 +48,11 @@ v-card.poll(color='purple')
               marginheight='0',
               marginwidth='0'
             )
+          .position-sticky.white(style='bottom: 0')
+            v-divider
+            v-card-actions
+              v-spacer
+              v-btn(color='primary', @click='dialog = false') {{ $t("btn.close") }}
 </template>
 
 <script>
