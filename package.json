@@ -78,7 +78,7 @@
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
     "lodash": "4.17.21",
-    "moment": "2.29.2",
+    "moment": "2.29.3",
     "nuxt-purgecss": "1.0.0",
     "postcss": "^7.0.38",
     "postcss-custom-media": "^7.0.8",
