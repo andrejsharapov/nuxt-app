@@ -4171,12 +4171,10 @@ css-blank-pseudo@^0.1.4:
   dependencies:
     postcss "^7.0.5"
 
-css-byebye@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/css-byebye/-/css-byebye-3.1.1.tgz#834262d3dc450bcef6bc966d4ae5c715897351c9"
-  integrity sha512-08jWOjVMAb8T3jsmkC86Vt5gWP40xrcHptyK6bJ0ZnJompeimrAk7dIEL+nRU5I0rxx3ruTPBKvz//NzgW10wg==
-  dependencies:
-    postcss "^8.4.12"
+css-byebye@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/css-byebye/-/css-byebye-4.0.1.tgz#84fbdec9a7b1a900d058c057e31034b04b66d15e"
+  integrity sha512-ll2eD6uiRwmmQbCQju771nP/+npw8uBm6hIjI1/QLU6NrpOG/BcSg9kBcFACEMY7tvWZHj8tGOD8xWdNoPUGwQ==
 
 css-color-names@0.0.4, css-color-names@^0.0.4:
   version "0.0.4"
