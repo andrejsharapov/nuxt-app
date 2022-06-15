@@ -68,7 +68,7 @@
     "@nuxtjs/vuetify": "1.12.3",
     "apexcharts": "3.35.0",
     "babel-eslint": "10.1.0",
-    "css-byebye": "3.1.1",
+    "css-byebye": "4.0.1",
     "css-loader": "^5.0.0",
     "eslint": "8.13.0",
     "eslint-config-prettier": "8.5.0",
