@@ -9,7 +9,9 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 3. [Gulp.js + Vue.js][gulp] ![active]
 4. Vue CLI :feet:
 5. VuePress :feet:
-6. Nuxt.js ![in development]
+6. [nuxt2](Nuxt2) ![active]
+7. [nuxt3](Nuxt3) ![in development]
+8. React.js ![distant]
 
 [![README.md][preview]](/README.md)
 
@@ -54,30 +56,25 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 </p>
 
 [preview]: https://sharapov.dev/README.png
-
 [wp]: https://madeas.ru
 [gulp]: https://andrejsharapov.github.io
-[active]: https://img.shields.io/badge/active-yellow.svg
-[in development]: https://img.shields.io/badge/active-in_development-40ce87.svg
-
+[nuxt2]: https://github.com/andrejsharapov/nuxt-app
+[nuxt3]: https://github.com/andrejsharapov/nuxt3-app
+[active]: https://img.shields.io/badge/active-4a4848.svg
+[in development]: https://img.shields.io/badge/in_development-40ce87.svg
+[distant]: https://img.shields.io/badge/in_the_distant_future-61dafb.svg
 [ideas]: ../../discussions/31
 [projects]: ../../projects/2
-
 [yarn]: https://yarnpkg.com/
 [yarn-image]: https://img.shields.io/badge/yarn-1.22.x-2c8ebb.svg
-
 [vue]: https://vuejs.org
 [vue-image]: https://img.shields.io/badge/vue-2.6.x-41b883.svg
-
 [nuxt]: https://nuxtjs.org/
 [nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-108775.svg
-
 [vuetify]: https://vuetifyjs.com/en/
 [vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg?
-
 [modules]: https://modules.nuxtjs.org/
 [wiki]: ../../wiki
 [contributing]: https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md
-
 [postcss]: https://postcss.org/
 [postcss-image]: https://img.shields.io/badge/postcss-7.0.x-dd3a0a.svg
