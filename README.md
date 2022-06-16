@@ -9,7 +9,7 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 3. [Gulp.js + Vue.js][gulp] ![active]
 4. Vue CLI :feet:
 5. VuePress :feet:
-6. [nuxt2][nuxt2] ![active]
+6. [nuxt2][nuxt2] :point_left:
 7. [nuxt3][nuxt3] ![in development]
 8. React.js ![distant]
 
