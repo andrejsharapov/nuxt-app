@@ -7,6 +7,7 @@
     "config:base"
   ],
   "ignoreDeps": [
+    "@nuxt/content",
     "css-loader",
     "postcss",
     "postcss-custom-media",
@@ -15,6 +16,7 @@
     "postcss-nested",
     "postcss-sorting",
     "postcss-url",
+    "prism-themes",
     "stylus",
     "stylus-loader",
     "vue-github-button"
