@@ -92,7 +92,7 @@
     "postcss-utilities": "0.8.4",
     "precss": "4.0.0",
     "prettier": "2.7.1",
-    "prism-themes": "^1.9.0",
+    "prism-themes": "1.9.0",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
     "stylelint": "14.9.1",
