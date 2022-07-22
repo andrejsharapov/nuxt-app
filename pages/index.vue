@@ -16,14 +16,15 @@ mixin sheet(color, saturation, size)
       .d-md-grid.gap-lg-4.row-span-lg-2.flex-lg-column(
         :class='{ "d-none": $vuetify.breakpoint.smAndDown }'
       )
-        v-img.shadow-xl.rounded-lg(
-          lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=AUTHOR',
-          src='/src/author/unicorn.jpg',
-          :alt='$t("author.name")'
-        )
-          template(#placeholder)
-            v-row.fill-height.ma-0(align='center', justify='center')
-              v-progress-circular(indeterminate, color='grey lighten-5')
+        v-hover(#default='{ hover }')
+          v-img.shadow-xl.rounded-lg(
+            lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=AUTHOR',
+            :src='hover ? "/src/author/unicorn.jpg" : "/src/author/author.jpg"',
+            :alt='$t("author.name")'
+          )
+            template(#placeholder)
+              v-row.fill-height.ma-0(align='center', justify='center')
+                v-progress-circular(indeterminate, color='grey lighten-5')
 
         v-hover(#default='{ hover }')
           v-btn.d-none.d-lg-block.mx-auto.mt-auto.mb-0.uppercase(
