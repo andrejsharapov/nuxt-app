@@ -12,6 +12,7 @@
     "css-loader",
     "postcss",
     "postcss-custom-media",
+    "postcss-hexrgba",
     "postcss-html",
     "postcss-mixins",
     "postcss-nested",

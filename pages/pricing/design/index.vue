@@ -159,12 +159,12 @@
                   :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-md"',
                   color='primary'
                 )
-                  v-icon(left, size='32') {{ mdiEmailSend }}
+                  v-icon(left, size='32') {{ mdiEmailArrowRight }}
                   | {{ $t("pages.pricing.sections.cta.action") }}
 </template>
 
 <script>
-import { mdiShopping, mdiHelpCircleOutline, mdiEmailSend } from '@mdi/js'
+import { mdiShopping, mdiHelpCircleOutline, mdiEmailArrowRight } from '@mdi/js'
 import { pricing } from '~/lib/page-meta'
 import pricingCalculate from '~/assets/images/pricing-calculate.svg?inline'
 
@@ -178,7 +178,7 @@ export default {
       page: pricing(this),
       mdiShopping,
       mdiHelpCircleOutline,
-      mdiEmailSend,
+      mdiEmailArrowRight,
     }
   },
   head() {
