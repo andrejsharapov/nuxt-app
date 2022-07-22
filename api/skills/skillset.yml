@@ -5,7 +5,7 @@ data:
       - Agile
       - Scrum
       - Kanban
-    color: info
+    color: light-blue
     icon: $mdiAccountGroup
   - alt: Design
     set:
@@ -14,7 +14,7 @@ data:
       - Ai
       - Ps
       - CorelDRAW
-    color: indigo
+    color: pink
     icon: $mdiPalette
   - alt: Website Builder
     set:
@@ -31,7 +31,6 @@ data:
     icon: $mdiGit
   # - alt: PHP
   #   set:
-  #     - WordPress
   #   color: deep-purple
   #   icon: $mdiLanguagePhp
   - alt: JavaScript
@@ -55,19 +54,19 @@ data:
       - PostCSS
     color: blue
     icon: $mdiLanguageCss3
-  - alt: Libraries
+  - alt: Frameworks & Libs
     set:
-      - jQuery
-      - Vuetify
-    color: cyan
-    icon: $mdiVuetify
-  - alt: Frameworks
-    set:
-      - Bootstrap 4/5
       - Vue.js
-      - Tailwind CSS
+      - jQuery
     color: green
     icon: $mdiVuejs
+  - alt: UI Frameworks
+    set:
+      - Bootstrap 4/5
+      - Tailwind CSS
+      - Vuetify
+    color: purple
+    icon: $mdiVuetify
   - alt: Web analytics
     set:
       - Я.Метрика
@@ -82,7 +81,7 @@ data:
       - Sublime Text
       - Visual Studio Code
       - PhpStorm
-    color: light-blue
+    color: cyan
     icon: $mdiMicrosoftVisualStudioCode
   - alt: CMS
     set:
@@ -93,5 +92,5 @@ data:
       - WIX
       - uKit
       - uCoz
-    color: brown
+    color: lime
     icon: $mdiWordpress
