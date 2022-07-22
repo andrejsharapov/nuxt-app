@@ -101,3 +101,6 @@ test_*.*
 
 # SFTP
 sftp.*
+
+# Yarn
+yarn.lock
