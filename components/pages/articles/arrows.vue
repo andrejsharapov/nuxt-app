@@ -7,10 +7,9 @@
         </v-btn>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-list-item-title
-          v-if="$vuetify.breakpoint.smAndUp"
-          v-text="prev.title"
-        />
+        <v-list-item-title v-if="$vuetify.breakpoint.smAndUp">
+          {{ prev.title }}
+        </v-list-item-title>
         <v-list-item-subtitle>
           {{ $tc('events.prev', 1) }}
         </v-list-item-subtitle>
@@ -20,10 +19,9 @@
     <v-divider />
     <v-list-item v-if="next" class="text-right px-0">
       <v-list-item-content>
-        <v-list-item-title
-          v-if="$vuetify.breakpoint.smAndUp"
-          v-text="next.title"
-        />
+        <v-list-item-title v-if="$vuetify.breakpoint.smAndUp">
+          {{ next.title }}
+        </v-list-item-title>
         <v-list-item-subtitle>
           {{ $tc('events.next', 1) }}
         </v-list-item-subtitle>
