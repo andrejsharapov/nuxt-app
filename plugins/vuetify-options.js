@@ -65,6 +65,7 @@ import dribbbleOutline from '@/components/icons/dribbble-outline'
 import behanceOutline from '@/components/icons/behance-outline'
 import mediumOutline from '@/components/icons/medium-outline'
 import mediumFilled from '@/components/icons/medium-filled'
+import hashnodeFilled from '@/components/icons/hashnode-filled'
 import codepenOutline from '@/components/icons/codepen-outline'
 import githubOutline from '@/components/icons/github-outline'
 import twitterOutline from '@/components/icons/twitter-outline'
@@ -153,6 +154,9 @@ export default function ({ app }) {
         },
         mediumFilled: {
           component: mediumFilled,
+        },
+        hashnodeFilled: {
+          component: hashnodeFilled,
         },
         vkOutline: {
           component: vkOutline,

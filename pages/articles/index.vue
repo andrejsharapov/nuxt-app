@@ -112,20 +112,25 @@ export default {
       mdiOpenInNew,
       mediaIcons: [
         {
-          icon: '$mediumFilled',
-          title: 'Medium',
-          to: 'https://medium.com/@andrejsharapov',
-        },
-        {
           icon: '$devToOutline',
           title: 'DEV community',
           to: 'https://dev.to/andrejsharapov',
         },
         {
-          icon: '$instagramOutline',
-          title: 'Instagram',
-          to: 'https://www.instagram.com/andrej.sharapov',
+          icon: '$mediumFilled',
+          title: 'Medium',
+          to: 'https://medium.com/@andrejsharapov',
         },
+        {
+          icon: '$hashnodeFilled',
+          title: 'Hashnode',
+          to: 'https://andrejsharapov.hashnode.dev',
+        },
+        // {
+        //   icon: '$instagramOutline',
+        //   title: 'Instagram',
+        //   to: 'https://www.instagram.com/andrej.sharapov',
+        // },
       ],
       media: [],
     }
