@@ -11,8 +11,7 @@ mixin sheet(saturation, size)
 
 .skill-set
   v-row.mx-auto(
-    :class='{ "flex-nowrap": $vuetify.breakpoint.xs }',
-    :style='{ overflowX: $vuetify.breakpoint.xs ? "auto" : "" }'
+    :class='{ "scroll-snap-x": $vuetify.breakpoint.xs }',
   )
     v-col.skill-set__block(v-for='(set, index) in set', :key='index')
       v-sheet.mb-3.pa-4.fill-height.rounded-lg(
@@ -123,7 +122,6 @@ export default {
 
 <style lang="sass">
 .skill-set
-
   &__block
     min-width: 22rem
 
