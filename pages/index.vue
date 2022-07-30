@@ -465,9 +465,11 @@ export default {
 }
 
 @media (max-width: 576px) {
-  .v-timeline::before {
-    left: 50% !important;
-    transform: translateX(0.125rem);
+  .v-timeline {
+    &::before {
+      left: 50% !important;
+      transform: translateX(0.125rem);
+    }
   }
 
   .v-timeline-item {
