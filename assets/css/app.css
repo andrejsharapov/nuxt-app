@@ -178,3 +178,18 @@ ol[class] {
     mix-blend-mode: multiply;
   }
 }
+
+.scroll-snap-x {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-snap-x > * {
+  width: min(45ch, 60vw);
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
