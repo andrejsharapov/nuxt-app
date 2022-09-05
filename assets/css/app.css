@@ -114,36 +114,6 @@ ol[class] {
   user-select: none;
 }
 
-.op {
-  &-1 {
-    opacity: 0.1;
-  }
-  &-2 {
-    opacity: 0.2;
-  }
-  &-3 {
-    opacity: 0.3;
-  }
-  &-4 {
-    opacity: 0.4;
-  }
-  &-5 {
-    opacity: 0.5;
-  }
-  &-6 {
-    opacity: 0.6;
-  }
-  &-7 {
-    opacity: 0.7;
-  }
-  &-8 {
-    opacity: 0.8;
-  }
-  &-9 {
-    opacity: 0.9;
-  }
-}
-
 .position {
   &-absolute {
     position: absolute;
@@ -182,7 +152,7 @@ ol[class] {
 .scroll-snap-x {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 1.5rem;
+  /* grid-gap: 1.5rem; */
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
