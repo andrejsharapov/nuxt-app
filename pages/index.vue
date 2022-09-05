@@ -94,7 +94,7 @@ mixin sheet(color, saturation, size)
         )
           .d-flex.align-center
             .ml-2
-              v-sheet.rounded-lg.hidden.op-8(
+              v-sheet.rounded-lg.hidden.opacity-80(
                 color='white',
                 width='62',
                 height='62'
@@ -103,7 +103,7 @@ mixin sheet(color, saturation, size)
                   v-icon(:color='counter.color_one', large) {{ counter.icon }}
             v-list-item-content
               v-card-title.text-h4.mb-1.pt-2.text-break-word {{ counter.val }}%
-              v-card-subtitle.white--text.text-no-wrap.op-8 {{ counter.title }}
+              v-card-subtitle.white--text.text-no-wrap.opacity-80 {{ counter.title }}
       //- /SECTION
 
       //- SECTION[epic=home] PROGRESS
@@ -159,11 +159,12 @@ mixin sheet(color, saturation, size)
                   span {{ $t("more.events") }}
 
           v-col.text-center(v-if='$vuetify.breakpoint.xs', cols='12')
-            v-btn.btn-shadow.mx-auto(
+            v-btn.mx-auto.transition.transform(
               :block='$vuetify.breakpoint.xs',
               :to='localePath("/timeline")',
               x-large,
-              color='primary'
+              color='primary',
+              :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
             ) {{ $t("more.events") }}
 
           //- ANCHOR sub 2/2 chart
@@ -202,7 +203,7 @@ mixin sheet(color, saturation, size)
               :to='localePath("/cases")',
               x-large,
               color='primary',
-              :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
+              :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
             ) {{ $t("all") }} {{ $t("pages.cases.title") }}
       //- /SECTION
 
@@ -237,7 +238,7 @@ mixin sheet(color, saturation, size)
               :to='localePath("/certificates")',
               x-large,
               color='primary',
-              :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
+              :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
             ) {{ $t("more.base") }} {{ $t("pages.index.sections.certificates.title") }}
       //- /SECTION
 
