@@ -1,5 +1,5 @@
 <template lang="pug">
-.chat(v-if='$vuetify.breakpoint.smAndUp')
+.chat(v-if='$vuetify.breakpoint.mdAndUp')
   v-tooltip(left)
     template(#activator='{ on: chat }')
       v-btn.chat-btn__open(
