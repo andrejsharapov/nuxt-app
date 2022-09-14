@@ -42,6 +42,7 @@ export default {
     { src: '~/plugins/vue-cookieconsent' },
     { src: '~/plugins/vue-clipboard' },
     { src: '~/plugins/vue-disqus' },
+    { src: '~/plugins/vue-box-shadows' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
