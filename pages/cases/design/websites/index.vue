@@ -46,7 +46,7 @@
 
         <!-- COMPONENT CHART-->
         <v-col cols="12" md="7">
-          <v-card class="mt-lg-n16 mb-4 pa-4 shadow-xl">
+          <v-card v-box-shadow="18" class="mt-lg-n16 mb-4 pa-4">
             <v-lazy
               :options="{
                 threshold: 0.5,

@@ -17,7 +17,8 @@ mixin sheet(color, saturation, size)
         :class='{ "d-none": $vuetify.breakpoint.smAndDown }'
       )
         v-hover(#default='{ hover }')
-          v-img.shadow-xl.rounded-lg(
+          v-img.rounded-lg(
+            v-box-shadow:ay-5,
             lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=AUTHOR',
             :src='hover ? "/src/author/unicorn.jpg" : "/src/author/author.jpg"',
             :alt='$t("author.name")'
@@ -88,7 +89,8 @@ mixin sheet(color, saturation, size)
 
     v-row
       v-col(v-for='counter in counters.data', :key='counter.title')
-        v-card.mb-4.px-4.white--text.rounded-lg.shadow-lg.not-pointer(
+        v-card.mb-4.px-4.white--text.rounded-lg.not-pointer(
+          v-box-shadow:el-12,
           :color='counter.color_one',
           :style='{ backgroundImage: "linear-gradient(45deg, " + counter.color_one + ", " + counter.color_two + ")" }'
         )
@@ -135,7 +137,7 @@ mixin sheet(color, saturation, size)
                       small,
                       color='accent'
                     )
-                      v-sheet.rounded.shadow-md
+                      v-sheet.rounded(v-box-shadow='9')
                         v-list-item.px-0(three-line)
                           v-list-item-content.py-0
                             .d-flex
@@ -226,8 +228,11 @@ mixin sheet(color, saturation, size)
         p {{ $t("pages.index.sections.certificates.message") }}
 
         v-row.mx-0
-          v-col(v-for="cert in certList" :key="cert.num")
-            v-card.cert.hidden.shadow-sm(transition='slide-y-reverse-transition')
+          v-col(v-for='cert in certList', :key='cert.num')
+            v-card.cert.hidden(
+              v-box-shadow:el-10,
+              transition='slide-y-reverse-transition'
+            )
               v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
                 icon,
                 large,

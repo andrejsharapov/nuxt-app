@@ -1,6 +1,6 @@
 <template lang="pug">
 .card-items.fill-height
-  v-card.fill-height.pa-2.d-flex.flex-column.rounded-lg.shadow-sm
+  v-card.fill-height.pa-2.d-flex.flex-column.rounded-lg(v-box-shadow='6')
     .flex-grow-1
       v-img.fill-height.rounded-lg(
         v-if='!cardView && item.original',

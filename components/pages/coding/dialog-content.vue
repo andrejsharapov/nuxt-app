@@ -34,7 +34,8 @@
         v-row(no-gutters)
           v-col(cols='12', md='7')
             v-card-text
-              v-card.shadow-xl(
+              v-card(
+                v-box-shadow='18',
                 style='overflow: auto; min-height: 400px; padding-bottom: 1em; resize: vertical; cursor: row-resize'
               )
                 .codepen(

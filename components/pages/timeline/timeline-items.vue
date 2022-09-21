@@ -13,7 +13,7 @@ v-timeline.timeline-items.my-4(
     dot
   )
     span(slot='opposite') {{ formatDate(l.date) }}
-    v-sheet.rounded.shadow-xl
+    v-sheet.rounded(v-box-shadow='18')
       v-list-item.px-0(three-line)
         v-list-item-content.py-0
           v-card-title.anchor-link.font-weight-bold(:id='l.slug') {{ l.title }}

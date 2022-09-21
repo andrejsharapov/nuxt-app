@@ -148,7 +148,7 @@
         v-col.text-center.d-flex.flex-column.justify-center.align-center.white--text(
           cols='12'
         )
-          .bg-blur.pa-8.rounded.shadow-lg
+          .bg-blur.pa-8.rounded(v-box-shadow='12')
             h3.mb-12.text-h5.text-sm-h4.font-weight-medium.text-uppercase {{ $t("pages.pricing.sections.cta.question") }}
             p.text-h6.text-uppercase
               v-hover(v-slot='{ hover }')

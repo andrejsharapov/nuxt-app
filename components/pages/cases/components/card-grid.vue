@@ -14,7 +14,10 @@
             {{ site.ux.works }}
           </v-list-item-subtitle>
 
-          <v-card class="rounded-lg shadow-lg transition-fast-in-fast-out">
+          <v-card
+            v-box-shadow="12"
+            class="rounded-lg transition-fast-in-fast-out"
+          >
             <v-img
               :alt="site.img.alt"
               :aspect-ratio="16 / 9"
