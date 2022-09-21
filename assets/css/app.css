@@ -163,3 +163,18 @@ ol[class] {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
+
+/* perfect-scrollbar */
+.ps {
+  &__thumb {
+    &-x,
+    &-y {
+      cursor: move;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+    }
+  }
+}
