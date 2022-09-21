@@ -225,11 +225,29 @@ mixin sheet(color, saturation, size)
         )
         p {{ $t("pages.index.sections.certificates.message") }}
 
-        lazy-s-pages-certificates-cert-items(
-          :items='certList',
-          limit-start='0',
-          limit-end='3'
-        )
+        v-row.mx-0
+          v-col(v-for="cert in certList" :key="cert.num")
+            v-card.cert.hidden.shadow-sm(transition='slide-y-reverse-transition')
+              v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
+                icon,
+                large,
+                exact,
+                :href='`https://gb.ru/certificates/${cert.num}.${$i18n.locale}`',
+                target='_blank',
+                rel='noopener noreferrer'
+              )
+                v-icon(color='white') {{ mdiArrowExpand }}
+
+              img(
+                lazy-src='https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG',
+                loading='lazy',
+                :src='`/src/certificates/${cert.num}.jpg`',
+                alt='',
+                contain
+              )
+
+            v-card-text.pb-0.text-center {{ certLocale(cert.caption) }}
+            v-card-subtitle.text-center {{ formatDate(cert.date) }}
 
         p.mt-8.mb-0.text-center
           v-hover(v-slot='{ hover }')
@@ -255,6 +273,7 @@ import {
   mdiCodeBracesBox,
   mdiChartAreaspline,
   mdiDotsHorizontal,
+  mdiArrowExpand,
 } from '@mdi/js'
 import { appMeta as done } from '~/config/app'
 
@@ -275,9 +294,7 @@ export default {
 
     const skills = await $content('skills/skillset').fetch()
 
-    const getCertificates = await $content('certificates', params.slug)
-      .where({ slug: 'web-design' })
-      .fetch()
+    const getCertificates = await $content('certificates', params.slug).fetch()
 
     const desSiteLocale = await $content(
       `${app.i18n.locale}/cases/design/websites`,
@@ -315,6 +332,7 @@ export default {
       mdiCodeBracesBox,
       mdiChartAreaspline,
       mdiDotsHorizontal,
+      mdiArrowExpand,
       doneProjects: done.author.projects,
       doneWorks: done.author.works,
       counters: {
@@ -363,7 +381,19 @@ export default {
       return this.getTimeline ? this.getTimeline : []
     },
     certList() {
-      return this.getCertificates ? this.getCertificates : []
+      if (this.getCertificates) {
+        const compareNumbers = (a, b) => {
+          return Date.parse(b.date) - Date.parse(a.date)
+        }
+
+        return this.getCertificates
+          .map((e) => e.figures)
+          .flat()
+          .sort(compareNumbers)
+          .slice(0, 3)
+      } else {
+        return []
+      }
     },
     localeCases() {
       return this.desSiteLocale || this.devSiteLocale
@@ -411,6 +441,17 @@ export default {
             : [2, 0, 1, 1, 1, 2][number % 10 < 5 ? Math.abs(number) % 10 : 5]
         ]
       )
+    },
+    certLocale(item) {
+      if (this.$i18n.locale === 'ru') {
+        return item.ru
+      } else if (this.$i18n.locale === 'en') {
+        return item.en
+      }
+    },
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
     },
   },
 }
