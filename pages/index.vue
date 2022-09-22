@@ -233,16 +233,6 @@ mixin sheet(color, saturation, size)
               v-box-shadow:el-10,
               transition='slide-y-reverse-transition'
             )
-              v-btn.position-absolute.light-blue.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
-                icon,
-                large,
-                exact,
-                :href='`https://gb.ru/certificates/${cert.num}.${$i18n.locale}`',
-                target='_blank',
-                rel='noopener noreferrer'
-              )
-                v-icon(color='white') {{ mdiArrowExpand }}
-
               img(
                 lazy-src='https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG',
                 loading='lazy',
