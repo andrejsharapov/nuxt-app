@@ -95,7 +95,7 @@
     "prism-themes": "^1.9.0",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
-    "stylelint": "14.9.1",
+    "stylelint": "^14.11.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-property-sort-order-smacss": "9.0.0",
     "stylelint-config-recommended-vue": "1.4.0",
@@ -104,6 +104,7 @@
     "stylus-loader": "4.3.1",
     "v-clipboard": "2.2.3",
     "vue-apexcharts": "1.6.2",
+    "vue-box-shadows": "^2.0.1",
     "vue-github-button": "1.0.3"
   },
   "main": "nuxt.config.js",

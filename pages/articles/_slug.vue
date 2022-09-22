@@ -36,8 +36,9 @@
               | {{ hidePanel ? $tc("events.show", 1) : $tc("events.hide", 1) }}
               | {{ $tc("table-of-contents", 2) }}
 
-        v-expansion-panels.rounded-md.shadow-sm(
+        v-expansion-panels.rounded-md(
           v-model='panel',
+          v-box-shadow='6',
           :multiple='!$vuetify.breakpoint.xs',
           flat,
           transition='scroll-x-reverse-transition',
@@ -67,7 +68,7 @@
             v-if='$vuetify.breakpoint.mdAndUp',
             :article='article'
           )
-          v-card.mb-4.pa-2.pa-md-4.shadow-md
+          v-card.mb-4.pa-2.pa-md-4(v-box-shadow='9')
             s-articles-header(:article='article')
             nuxt-content(:document='article')
             s-articles-author(:article='article')

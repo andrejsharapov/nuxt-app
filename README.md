@@ -10,8 +10,6 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 4. Vue CLI :feet:
 5. VuePress :feet:
 6. [nuxt2][nuxt2] :point_left:
-7. [nuxt3][nuxt3] ![in development]
-8. React.js ![distant]
 
 [![README.md][preview]](/README.md)
 
@@ -59,10 +57,7 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 [wp]: https://madeas.ru
 [gulp]: https://github.com/andrejsharapov/andrejsharapov.github.io
 [nuxt2]: https://github.com/andrejsharapov/nuxt-app
-[nuxt3]: https://github.com/andrejsharapov/nuxt3-app
 [active]: https://img.shields.io/badge/active-4a4848.svg
-[in development]: https://img.shields.io/badge/in_development-40ce87.svg
-[distant]: https://img.shields.io/badge/in_the_distant_future...-61dafb.svg
 [ideas]: ../../discussions/31
 [projects]: ../../projects/2
 [yarn]: https://yarnpkg.com/

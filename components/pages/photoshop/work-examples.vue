@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.work-examples.shadow-sm.fill-height
+v-card.work-examples.fill-height(v-box-shadow='6')
   v-card-title {{ titleLocale(item) }}
   v-card-subtitle {{ formatDate(item.date) }}
   .px-4

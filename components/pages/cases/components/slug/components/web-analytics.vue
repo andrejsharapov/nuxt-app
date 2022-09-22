@@ -17,7 +17,7 @@
       cols='12',
       :md='info.conversion.show || info.goals.show ? "7" : "12"'
     )
-      v-card.fill-height.pa-4.shadow-md
+      v-card.fill-height.pa-4(v-box-shadow='9')
         v-card-title.pt-0 {{ info.traffic.title }}
         //- COMPONENT bar - traffic
         lazy-s-chart-apex(:counters='chartTraffic')
@@ -32,8 +32,9 @@
       :class='{ "d-flex flex-column flex-md-row": info.conversion.show && info.goals.show }'
     )
       //- COMPONENT conversion
-      v-card.fill-height.pa-4.shadow-md(
+      v-card.fill-height.pa-4(
         v-if='info.conversion.show',
+        v-box-shadow='9',
         :class='{ "cols-12 col-md-5 ml-md-0 mr-md-auto": info.conversion.show && info.goals.show }'
       )
         v-card-title.pt-0 {{ info.conversion.title }}
@@ -41,8 +42,9 @@
       //- !COMPONENT
 
       //- COMPONENT goals
-      v-card.fill-height.pa-4.shadow-md(
+      v-card.fill-height.pa-4(
         v-if='info.goals.show',
+        v-box-shadow='9',
         :class='{ "cols-12 col-md-5 offset-md-1 mt-4 mt-md-0": info.conversion.show && info.goals.show }'
       )
         v-card-title.pt-0 {{ info.goals.title }}

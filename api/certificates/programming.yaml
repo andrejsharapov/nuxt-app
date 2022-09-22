@@ -1,6 +1,13 @@
 title: Программирование
 icon: $mdiDevices
 figures:
+  - date: 2022-09-18
+    num: 2014762
+    img:
+      src: '/2014762.jpg'
+    caption:
+      ru: Прошел тестирование по «PHP. Начальный уровень»
+      en: Successfully passed the test «PHP. Beginner»
   - date: 2019-06-03
     num: 600621
     img:

@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.fill-height.shadow-md
+v-card.fill-height(v-box-shadow='9')
   h3.pb-2.pt-4.pl-4.font-weight-bold {{ heading }}
   v-divider(inset)
   v-tabs(grow, vertical, center-active)

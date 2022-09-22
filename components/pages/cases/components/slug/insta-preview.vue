@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.case-insta-preview.shadow-lg
+v-card.case-insta-preview(v-box-shadow='12')
   v-card(
     flat,
     v-if='preview.done.img !== null',

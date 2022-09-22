@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.responsive-blocks.shadow-sm.pa-4
+v-card.responsive-blocks.pa-4(v-box-shadow='6')
   .d-md-flex.justify-space-between.align-end
     .text-h4.font-weight-bold {{ name }}%
     span.text-caption.text-capitalize {{ value }}

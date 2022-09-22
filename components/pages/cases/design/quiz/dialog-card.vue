@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.dialog-card.shadow-sm.rounded.overflow-hidden
+v-card.dialog-card.rounded.overflow-hidden(v-box-shadow='6')
   v-card-title {{ content.title }}
   v-card-subtitle {{ formatDate(content.created) }}
   v-dialog(
