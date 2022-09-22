@@ -233,7 +233,7 @@ mixin sheet(color, saturation, size)
               v-box-shadow:el-10,
               transition='slide-y-reverse-transition'
             )
-              v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
+              v-btn.position-absolute.light-blue.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
                 icon,
                 large,
                 exact,
