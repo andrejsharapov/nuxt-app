@@ -1,7 +1,7 @@
 <template lang="pug">
 - var size = 118
 .case-testimonials.my-4
-  v-card.pt-3.pb-4.px-md-4.shadow-md
+  v-card.pt-3.pb-4.px-md-4(v-box-shadow='9')
     v-list-item.flex-column.flex-sm-row
       v-list-item-content.flex-column.flex-sm-row
         .overline.mb-6

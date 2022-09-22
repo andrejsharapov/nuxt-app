@@ -76,7 +76,8 @@ v-app(v-resize='onResize', dark)
             .h2.text-h6.text-sm-h4.text-lg-h3 {{ $t("site.page.construction") }}
             .d-flex.flex-column.flex-sm-row.justify-center(style='width: 100%')
               .mt-4.mx-sm-4
-                v-btn.shadow-sm(
+                v-btn(
+                  v-box-shadow='6',
                   :to='localePath("/")',
                   :block='$vuetify.breakpoint.xs',
                   x-large,

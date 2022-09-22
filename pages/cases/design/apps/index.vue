@@ -28,7 +28,7 @@
 
       //- COMPONENT CHART
       v-col(cols="12", md="7")
-        v-card.mb-4.pa-4.shadow-xl
+        v-card.mb-4.pa-4(v-box-shadow='18')
           v-lazy(
             :options="{ threshold: 0.5}",
             transition="slide-y-reverse-transition"

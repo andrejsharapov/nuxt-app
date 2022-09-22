@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="mb-8 pa-4 rounded-lg shadow-md">
+    <v-card v-box-shadow="9" class="mb-8 pa-4 rounded-lg">
       <v-text-field
         v-model="searchQuery"
         clearable

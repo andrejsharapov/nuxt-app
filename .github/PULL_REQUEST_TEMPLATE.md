@@ -1,23 +1,26 @@
-# PR
+## What is the purpose of this pull request?
 
-<!--- Provide a general summary of your changes in the title above -->
+<!-- (put an "X" next to an item) -->
 
-## Types of changes
-
-<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
-
-- [x] New feature
-- [ ] Bugfix
+- [ ] New Feature
+- [ ] Bug fix
 - [ ] Breaking change
+- [ ] Documentation update
+- [ ] Other
 
 ## Description
 
-<!--- Describe your changes in detail -->
-<!--- Why is this change required? What problem does it solve? -->
-<!--- If it resolves an open issue, please link to the issue here. For example "Resolves: #1337" -->
+<!-- Please insert your description here and provide especially info about the "what" this PR is solving -->
 
-## Checklist
+### Additional context
 
-<!--- Put an `x` in all the boxes that apply. -->
+<!-- e.g. is there anything you'd like reviewers to focus on? -->
 
-- [ ]
+---
+
+### Before submitting the PR, please make sure you do the following
+
+- [ ] Read the [Contributing Guidelines](https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md).
+- [ ] Check that there isn't already a PR that solves the problem the same way to avoid creating a duplicate.
+- [ ] Provide a description in this PR that addresses **what** the PR is solving, or reference the issue that it solves (e.g. `fixes #yyy`).
+<!-- Thank you for contributing! -->

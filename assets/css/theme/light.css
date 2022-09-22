@@ -7,13 +7,9 @@
     &.v-toolbar {
       &.v-sheet {
         border-color: #f8f9fccc;
-        background-color: #f8f9fccc !important;
-        backdrop-filter: saturate(180%) blur(0.35rem);
-        box-shadow: var(--shadow-md);
-
-        &:hover {
-          --shadow-md: var(--shadow-lg);
-        }
+        background: radial-gradient(transparent 0.0625em, #f8f9fc 0.0625em);
+        background-size: 0.25em 0.25em;
+        backdrop-filter: saturate(50%) blur(0.25rem);
       }
     }
   }

@@ -14,7 +14,10 @@
         sm='6',
         :md='[4].includes(cert.figures.length) ? "3" : "4"'
       )
-        v-card.cert.hidden.shadow-sm(transition='slide-y-reverse-transition')
+        v-card.cert.hidden(
+          v-box-shadow='6',
+          transition='slide-y-reverse-transition'
+        )
           v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
             icon,
             large,

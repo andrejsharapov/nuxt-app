@@ -17,7 +17,8 @@ mixin sheet(color, saturation, size)
         :class='{ "d-none": $vuetify.breakpoint.smAndDown }'
       )
         v-hover(#default='{ hover }')
-          v-img.shadow-xl.rounded-lg(
+          v-img.rounded-lg(
+            v-box-shadow:ay-5,
             lazy-src='https://fakeimg.pl/300/e9ecf2/1e1e24?text=AUTHOR',
             :src='hover ? "/src/author/unicorn.jpg" : "/src/author/author.jpg"',
             :alt='$t("author.name")'
@@ -88,13 +89,14 @@ mixin sheet(color, saturation, size)
 
     v-row
       v-col(v-for='counter in counters.data', :key='counter.title')
-        v-card.mb-4.px-4.white--text.rounded-lg.shadow-lg.not-pointer(
+        v-card.mb-4.px-4.white--text.rounded-lg.not-pointer(
+          v-box-shadow:el-12,
           :color='counter.color_one',
           :style='{ backgroundImage: "linear-gradient(45deg, " + counter.color_one + ", " + counter.color_two + ")" }'
         )
           .d-flex.align-center
             .ml-2
-              v-sheet.rounded-lg.hidden.op-8(
+              v-sheet.rounded-lg.hidden.opacity-80(
                 color='white',
                 width='62',
                 height='62'
@@ -103,7 +105,7 @@ mixin sheet(color, saturation, size)
                   v-icon(:color='counter.color_one', large) {{ counter.icon }}
             v-list-item-content
               v-card-title.text-h4.mb-1.pt-2.text-break-word {{ counter.val }}%
-              v-card-subtitle.white--text.text-no-wrap.op-8 {{ counter.title }}
+              v-card-subtitle.white--text.text-no-wrap.opacity-80 {{ counter.title }}
       //- /SECTION
 
       //- SECTION[epic=home] PROGRESS
@@ -135,7 +137,7 @@ mixin sheet(color, saturation, size)
                       small,
                       color='accent'
                     )
-                      v-sheet.rounded.shadow-md
+                      v-sheet.rounded(v-box-shadow='9')
                         v-list-item.px-0(three-line)
                           v-list-item-content.py-0
                             .d-flex
@@ -159,11 +161,12 @@ mixin sheet(color, saturation, size)
                   span {{ $t("more.events") }}
 
           v-col.text-center(v-if='$vuetify.breakpoint.xs', cols='12')
-            v-btn.btn-shadow.mx-auto(
+            v-btn.mx-auto.transition.transform(
               :block='$vuetify.breakpoint.xs',
               :to='localePath("/timeline")',
               x-large,
-              color='primary'
+              color='primary',
+              :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
             ) {{ $t("more.events") }}
 
           //- ANCHOR sub 2/2 chart
@@ -202,7 +205,7 @@ mixin sheet(color, saturation, size)
               :to='localePath("/cases")',
               x-large,
               color='primary',
-              :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
+              :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
             ) {{ $t("all") }} {{ $t("pages.cases.title") }}
       //- /SECTION
 
@@ -224,11 +227,22 @@ mixin sheet(color, saturation, size)
         )
         p {{ $t("pages.index.sections.certificates.message") }}
 
-        lazy-s-pages-certificates-cert-items(
-          :items='certList',
-          limit-start='0',
-          limit-end='3'
-        )
+        v-row.mx-0
+          v-col(v-for='cert in certList', :key='cert.num')
+            v-card.cert.hidden(
+              v-box-shadow:el-10,
+              transition='slide-y-reverse-transition'
+            )
+              img(
+                lazy-src='https://fakeimg.pl/400x280/e9ecf2/1e1e24?text=IMG',
+                loading='lazy',
+                :src='`/src/certificates/${cert.num}.jpg`',
+                alt='',
+                contain
+              )
+
+            v-card-text.pb-0.text-center {{ certLocale(cert.caption) }}
+            v-card-subtitle.text-center {{ formatDate(cert.date) }}
 
         p.mt-8.mb-0.text-center
           v-hover(v-slot='{ hover }')
@@ -237,7 +251,7 @@ mixin sheet(color, saturation, size)
               :to='localePath("/certificates")',
               x-large,
               color='primary',
-              :class='hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
+              :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
             ) {{ $t("more.base") }} {{ $t("pages.index.sections.certificates.title") }}
       //- /SECTION
 
@@ -254,6 +268,7 @@ import {
   mdiCodeBracesBox,
   mdiChartAreaspline,
   mdiDotsHorizontal,
+  mdiArrowExpand,
 } from '@mdi/js'
 import { appMeta as done } from '~/config/app'
 
@@ -274,9 +289,7 @@ export default {
 
     const skills = await $content('skills/skillset').fetch()
 
-    const getCertificates = await $content('certificates', params.slug)
-      .where({ slug: 'web-design' })
-      .fetch()
+    const getCertificates = await $content('certificates', params.slug).fetch()
 
     const desSiteLocale = await $content(
       `${app.i18n.locale}/cases/design/websites`,
@@ -314,6 +327,7 @@ export default {
       mdiCodeBracesBox,
       mdiChartAreaspline,
       mdiDotsHorizontal,
+      mdiArrowExpand,
       doneProjects: done.author.projects,
       doneWorks: done.author.works,
       counters: {
@@ -362,7 +376,19 @@ export default {
       return this.getTimeline ? this.getTimeline : []
     },
     certList() {
-      return this.getCertificates ? this.getCertificates : []
+      if (this.getCertificates) {
+        const compareNumbers = (a, b) => {
+          return Date.parse(b.date) - Date.parse(a.date)
+        }
+
+        return this.getCertificates
+          .map((e) => e.figures)
+          .flat()
+          .sort(compareNumbers)
+          .slice(0, 3)
+      } else {
+        return []
+      }
     },
     localeCases() {
       return this.desSiteLocale || this.devSiteLocale
@@ -410,6 +436,17 @@ export default {
             : [2, 0, 1, 1, 1, 2][number % 10 < 5 ? Math.abs(number) % 10 : 5]
         ]
       )
+    },
+    certLocale(item) {
+      if (this.$i18n.locale === 'ru') {
+        return item.ru
+      } else if (this.$i18n.locale === 'en') {
+        return item.en
+      }
+    },
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
     },
   },
 }

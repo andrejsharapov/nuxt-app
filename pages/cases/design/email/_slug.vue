@@ -44,7 +44,7 @@ div
           flat,
           :multiple='$vuetify.breakpoint.mdAndUp'
         )
-          v-expansion-panel.shadow-sm.pa-0
+          v-expansion-panel.pa-0(v-box-shadow='6')
             v-expansion-panel-header(
               v-if='$vuetify.breakpoint.smAndDown || cardView === 1'
             ) {{ $tc("events.show", 1) }} | {{ $tc("events.hide", 1) }}
@@ -69,7 +69,8 @@ div
             :color='colors[i]'
           )
             span(slot='opposite')
-            v-sheet.rounded.shadow-sm(
+            v-sheet.rounded(
+              v-box-shadow='6',
               :class='{ "v-card": $vuetify.breakpoint.smAndUp }'
             )
               v-card-title.text-subtitle-1.text-no-wrap.text-lg-h5 {{ s.title }}

@@ -99,7 +99,7 @@
                   :title="$t('pages.cases.slug.colors')"
                 />
                 <!-- COMPONENT Palette -->
-                <v-card class="shadow-md px-4">
+                <v-card v-box-shadow="9" class="px-4">
                   <s-pages-cases-components-slug-palette
                     v-if="website.palette"
                     :palette="website.palette"

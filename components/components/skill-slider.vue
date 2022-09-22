@@ -2,7 +2,8 @@
 .skill-slider.hidden
   v-slide-group(:show-arrows='!$vuetify.breakpoint.xs')
     v-slide-item(v-for='item of items', :key='item.alt')
-      v-sheet.ma-4.pa-2.d-flex.align-center.justify-center.v-slide-group__content__image.hidden.shadow-md(
+      v-sheet.ma-4.pa-2.d-flex.align-center.justify-center.v-slide-group__content__image.hidden(
+        v-box-shadow:el-6,
         width='128',
         height='128',
         rounded

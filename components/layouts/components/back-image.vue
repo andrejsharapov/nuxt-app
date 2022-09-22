@@ -8,7 +8,7 @@ v-container(fluid)
           style='letter-spacing: 4px'
         ) {{ pageCrumbs }}
         h3.text-h5.text-md-h3.font-weight-bold.white--text {{ pageTitle }}
-        h2.font-weight-medium.white--text.op-8 {{ pageDesc }}
+        h2.font-weight-medium.white--text.opacity-80 {{ pageDesc }}
 
         .back-image__list-items
           slot(name='list-items')
