@@ -1,0 +1,79 @@
+hide: false
+type: des-site
+title: Дизайн лендинга «Just a cactus in a pot»
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/18557166/media/a428836cf53e9fe378041f27c8f9476a.png?compress=1&resize=1000x750
+  alt: Дизайн лендинга «Just a cactus in a pot»
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: "2022-07-23"
+period:
+  - "2022-07-22"
+  - "2022-07-23"
+deadline: На выполнение задачи ушло два дня.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - Adobe Photoshop
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/18557166-Just-a-cactus-in-a-pot
+    behance: https://www.behance.net/gallery/146324283/Just-a-cactus-in-a-pot
+client:
+  logoJPG:
+  logoWEBP:
+  head: Дизайн лендинга «Just a cactus in a pot»
+  description:
+  issues:
+  task:
+    - привлечение потенциальных клиентов и конвертирование их в ЦА.
+done:
+  img:
+    src:
+    alt: Дизайн лендинга «Just a cactus in a pot»
+    height:
+  alert:
+    message:
+  list:
+    - планирование продукта и разработка идейной составляющей;
+    - предварительный анализ рынка и целевой аудитории;
+    - "анализ, обзор аналогичных решений: функционал, количество пользователей, рейтинги, отзывы, монетизация;"
+    - разработка фирменного стиля;
+    - типографика, формирование палитры цветов и состояний элементов;
+    - разработка прототипов дизайн-макета;
+    - написание оригинальных текстов;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ""
+    hex:
+      - 3F3F2D
+      - 838278
+  - type: ""
+    hex:
+      - 7B4E32
+      - B06649
+  - type: ""
+    hex:
+      - CB7C5B
+      - FDD95A
+  - type: ""
+    hex:
+      - D7D1C9
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Eater&family=Raleway&display=swap' rel='stylesheet'>"
+  headline: Eater
+  text: Raleway
+grid:
+  cols: 12
+  width: 86
+  size: 1322
+  gap: 24
+responsive:
+  percent: "100"
