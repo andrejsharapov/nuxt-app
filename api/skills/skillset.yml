@@ -29,10 +29,6 @@ data:
       - GIT
     color: red
     icon: $mdiGit
-  # - alt: PHP
-  #   set:
-  #   color: deep-purple
-  #   icon: $mdiLanguagePhp
   - alt: JavaScript
     set:
       - ES6
@@ -94,3 +90,15 @@ data:
       - uCoz
     color: lime
     icon: $mdiWordpress
+  - alt: Backend Lang
+    set:
+      - PHP
+      - SQL
+    color: deep-purple
+    icon: $mdiLanguagePhp
+  - alt: DBMS (СУБД)
+    set:
+      - MySQL
+      - PostgreSQL
+    color: blue-grey
+    icon: $mdiDatabaseCheckOutline
