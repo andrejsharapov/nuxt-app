@@ -56,11 +56,9 @@
                   02. {{ $t('pages.cases.slug.headings.sections[1]') }}
                 </h2>
                 <v-row>
-                  <!-- COMPONENT INSTAGRAM -->
+                  <!-- COMPONENT PREVIEW -->
                   <v-col cols="12" md="5">
-                    <s-pages-cases-components-slug-insta-preview
-                      :preview="website"
-                    />
+                    <s-pages-cases-components-slug-preview :preview="website" />
                   </v-col>
                   <!-- /COMPONENT -->
 
@@ -295,6 +293,8 @@ export default {
 </script>
 
 <style lang="scss">
+$vec: '.v-expansion-panel-content';
+
 .case-image {
   min-height: 50vh;
   max-height: 50vh;
@@ -310,6 +310,16 @@ export default {
 
     &:hover {
       opacity: 1;
+    }
+  }
+}
+
+#{$vec} {
+  &.pa-0 {
+    #{$vec} {
+      &__wrap {
+        padding: 0;
+      }
     }
   }
 }
