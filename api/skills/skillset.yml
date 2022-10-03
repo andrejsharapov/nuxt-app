@@ -26,7 +26,10 @@ data:
     icon: $mdiNuxt
   - alt: VC
     set:
-      - GIT
+      - Git
+      - GitLab
+      - Bitbucket
+      - GitHub
     color: red
     icon: $mdiGit
   - alt: JavaScript
