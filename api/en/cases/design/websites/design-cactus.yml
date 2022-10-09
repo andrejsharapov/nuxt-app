@@ -1,0 +1,79 @@
+hide: false
+type: des-site
+title: Landing page design "Just a cactus in a pot"
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/18557166/media/a428836cf53e9fe378041f27c8f9476a.png?compress=1&resize=1000x750
+  alt: Landing page design "Just a cactus in a pot"
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Prototyping and design
+created: "2022-07-23"
+period:
+  - "2022-07-22"
+  - "2022-07-23"
+deadline: The task took about 2 days to complete.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+        - Adobe Photoshop
+  roles:
+    - title: My
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/18557166-Just-a-cactus-in-a-pot
+    behance: https://www.behance.net/gallery/146324283/Just-a-cactus-in-a-pot
+client:
+  logoJPG:
+  logoWEBP:
+  head: Landing page design "Just a cactus in a pot"
+  description:
+  issues:
+  task:
+    - attracting potential customers and converting them to target audience.
+done:
+  img:
+    src:
+    alt: Landing page design "Just a cactus in a pot"
+    height:
+  alert:
+    message:
+  list:
+    - product planning and development of the conceptual component;
+    - preliminary analysis of the market and target audience;
+    - "analysis, review of similar solutions: functionality, number of users, ratings, reviews, monetization;"
+    - corporate identity development;
+    - formation of a palette of colors, typography, and element states;
+    - development of prototypes of the design layout;
+    - writing original texts;
+    - design and user interface (UI) development.
+palette:
+  - type: ""
+    hex:
+      - 3F3F2D
+      - 838278
+  - type: ""
+    hex:
+      - 7B4E32
+      - B06649
+  - type: ""
+    hex:
+      - CB7C5B
+      - FDD95A
+  - type: ""
+    hex:
+      - D7D1C9
+      - FFFFFF
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Eater&family=Raleway&display=swap' rel='stylesheet'>"
+  headline: Eater
+  text: Raleway
+grid:
+  cols: 12
+  width: 86
+  size: 1322
+  gap: 24
+responsive:
+  percent: "100"

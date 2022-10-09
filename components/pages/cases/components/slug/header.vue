@@ -34,7 +34,7 @@
       //- SECTION date
       v-col(cols='12', sm='4')
         .mt-md-n14.mb-md-n16.rounded-lg.hidden(
-          :class='{ "shadow-xl": $vuetify.breakpoint.mdAndUp }',
+          v-box-shadow='$vuetify.breakpoint.mdAndUp ? "43" : "1"',
           @click='switchDate'
         )
           v-date-picker(

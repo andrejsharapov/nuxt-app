@@ -48,7 +48,6 @@ import {
   mdiPalette,
   mdiNuxt,
   mdiGit,
-  mdiLanguagePhp,
   mdiLanguageHtml5,
   mdiLanguageCss3,
   mdiVuejs,
@@ -58,6 +57,8 @@ import {
   mdiWordpress,
   mdiHandshakeOutline,
   mdiBriefcaseEyeOutline,
+  mdiLanguagePhp,
+  mdiDatabaseCheckOutline
 } from '@mdi/js'
 import vsCode from '@/components/icons/vs-code'
 import figmaOutline from '@/components/icons/figma-outline'
@@ -226,7 +227,6 @@ export default function ({ app }) {
         mdiPalette,
         mdiNuxt,
         mdiGit,
-        mdiLanguagePhp,
         mdiLanguageHtml5,
         mdiLanguageCss3,
         mdiVuejs,
@@ -236,6 +236,8 @@ export default function ({ app }) {
         mdiWordpress,
         mdiHandshakeOutline,
         mdiBriefcaseEyeOutline,
+        mdiLanguagePhp,
+        mdiDatabaseCheckOutline
       },
     },
   }
