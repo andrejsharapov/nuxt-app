@@ -9,6 +9,7 @@
   "ignoreDeps": [
     "@nuxt/content",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/html-validator",
     "css-loader",
     "postcss",
     "postcss-custom-media",
