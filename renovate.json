@@ -4,12 +4,15 @@
     "master"
   ],
   "extends": [
-    "config:base"
+    "config:base",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)"
   ],
   "ignoreDeps": [
     "@nuxt/content",
     "@nuxtjs/google-fonts",
     "@nuxtjs/html-validator",
+    "nuxt-purgecss",
     "css-loader",
     "postcss",
     "postcss-custom-media",
@@ -25,6 +28,12 @@
     "stylus-loader",
     "vue-github-button"
   ],
+  "ignorePaths": [
+    "**/tests/**"
+  ],
+  "labels": [
+    "Dependencies"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
@@ -33,5 +42,13 @@
   },
   "minor": {
     "stabilityDays": 7
-  }
+  },
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true
+    }
+  ]
 }
