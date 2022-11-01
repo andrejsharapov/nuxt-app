@@ -2,8 +2,6 @@
 
 Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer
 
-[![Coverage Status](https://coveralls.io/repos/github/andrejsharapov/nuxt-app/badge.svg?branch=master)](https://coveralls.io/github/andrejsharapov/nuxt-app?branch=master)
-
 ## :fish: This new stage in portfolio development
 
 1. :feet: Pure HTML
