@@ -1,5 +1,5 @@
 import { appMeta, appColors } from './config/app'
-import { allDynamicPages as routes } from './lib/routes'
+import { allDynamicPages } from './lib/routes'
 
 export default {
   server: {
@@ -314,6 +314,6 @@ export default {
   generate: {
     dir: 'dist',
     fallback: true,
-    routes: routes,
+    routes: allDynamicPages,
   },
 }
