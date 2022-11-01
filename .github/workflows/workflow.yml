@@ -1,11 +1,31 @@
-name: Nuxt-app
-on: [push]
+name: Codecov nuxt-app
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
 jobs:
-  run:
+  setup:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        node-version: [14.x]
     steps:
-    - name: Checkout
-    - uses: actions/checkout@master
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-    - name: Codecov
-      uses: codecov/codecov-action@v3.1.1
+      - name: Checkout
+        uses: actions/checkout@develop
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install deps & run lint
+        run: |
+          npm install
+          npm run lint
