@@ -14,7 +14,7 @@ jobs:
         node-version: [14.x]
     steps:
       - name: Checkout
-        uses: actions/checkout@develop
+        uses: actions/checkout@master
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
