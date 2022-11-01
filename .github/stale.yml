@@ -1,9 +1,9 @@
-daysUntilStale: 14
-daysUntilClose: 17
+daysUntilStale: 30
+daysUntilClose: 7
 staleLabel: stale
 exemptLabels:
-  - 'feature-request'
-  - 'pending'
+  - "feature-request"
+  - "pending"
 exemptAssignees: true
 only: issues
 mark Comment: >
