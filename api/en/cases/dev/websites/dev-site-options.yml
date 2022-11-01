@@ -10,23 +10,23 @@ chartOptions:
       enabled: true
     toolbar:
       show: true
-      autoSelected: 'pan'
+      autoSelected: pan
       tools:
         download: false
         zoomin: false
         zoomout: false
   title:
-    text: Website development 2010 - 2022
+    text: Website development 2010 - 2023
     align: left
   subtitle:
-    text: 'Experience with site content management systems'
+    text: Experience with site content management systems
   foreColor: var(--light)
   grid:
     show: true
     clipMarkers: false
-    borderColor: 'var(--light)'
+    borderColor: var(--light)
     strokeDashArray: 0
-    position: 'back'
+    position: back
     yaxis:
       lines:
         show: true
@@ -43,15 +43,15 @@ chartOptions:
     colors:
       - var(--light)
     strokeColor:
-      - 'var(--orange)'
-      - '#fbd83d'
-      - '#4e90f7'
-      - '#155de9'
-      - '#7ebc04'
-      - '#e01839'
-      - '#fa8669'
-      - '#207196'
-      - '#00c58e'
+      - var(--orange)
+      - "#fbd83d"
+      - "#4e90f7"
+      - "#155de9"
+      - "#7ebc04"
+      - "#e01839"
+      - "#fa8669"
+      - "#207196"
+      - "#00c58e"
     strokeWidth: 2
   dataLabels:
     enabled: false
@@ -88,15 +88,15 @@ chartOptions:
     title:
       text: Number of works by year
   colors:
-    - 'var(--orange)'
-    - '#fbd83d'
-    - '#4e90f7'
-    - '#155de9'
-    - '#7ebc04'
-    - '#e01839'
-    - '#fa8669'
-    - '#207196'
-    - '#00c58e'
+    - var(--orange)
+    - "#fbd83d"
+    - "#4e90f7"
+    - "#155de9"
+    - "#7ebc04"
+    - "#e01839"
+    - "#fa8669"
+    - "#207196"
+    - "#00c58e"
   labels:
     - 2010
     - 2011
@@ -111,6 +111,7 @@ chartOptions:
     - 2020
     - 2021
     - 2022
+    - 2023
     - ---
   annotations:
     xaxis:
@@ -118,13 +119,13 @@ chartOptions:
         x2: ---
         opacity: 0.3
         label:
-          borderColor: '#00c58e'
+          borderColor: "#00c58e"
           style:
             fontSize: 12px
             color: var(--light)
-            background: '#00c58e'
+            background: "#00c58e"
           offsetY: 0
-          text: 'Large project'
+          text: Large project
     yaxis:
       - y:
         y2:
@@ -137,7 +138,7 @@ chartOptions:
             fontSize: 10px
             color: var(--dark)
             background: var(--light)
-          text: ''
+          text:
 plotOptions:
   bar:
     horizontal: true
@@ -281,7 +282,7 @@ chartSeries:
       - null
       - null
       - null
-      - null
+      - 1
       - 1
       - 1
       - 1

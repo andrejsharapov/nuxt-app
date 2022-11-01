@@ -7,7 +7,7 @@ chartOptions:
     zoom:
       enabled: false
   title:
-    text: Website design 2016 - 2021
+    text: Website design 2016 - 2023
     align: left
   foreColor: var(--light)
   grid:
@@ -67,6 +67,7 @@ chartOptions:
     - 2020
     - 2021
     - 2022
+    - 2023
     - ---
   colors:
     - var(--info)
@@ -85,7 +86,7 @@ chartOptions:
             color: var(--light)
             background: var(--info)
           offsetY: 0
-          text: 'Large project'
+          text: Large project
     yaxis:
       - y:
         y2:
@@ -98,7 +99,7 @@ chartOptions:
             fontSize: 10px
             color: var(--dark)
             background: var(--light)
-          text: ''
+          text:
 chartSeries:
   - name: Projects
     data:
@@ -108,7 +109,8 @@ chartSeries:
       - 15
       - 3
       - 2
-      - 1
+      - 2
+      - null
       - null
   - name: Small orders
     data:
@@ -117,6 +119,7 @@ chartSeries:
       - 74
       - 62
       - 8
+      - null
       - null
       - null
       - null
