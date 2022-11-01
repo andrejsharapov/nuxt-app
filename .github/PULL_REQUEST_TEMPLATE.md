@@ -20,7 +20,7 @@
 
 ### Before submitting the PR, please make sure you do the following
 
-- [ ] Read the [Contributing Guidelines](https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md).
+- [ ] Read the [Contributing Guidelines](https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md) and follow the [Commit Convention](https://github.com/andrejsharapov/nuxt-app/wiki/Commits).
 - [ ] Check that there isn't already a PR that solves the problem the same way to avoid creating a duplicate.
 - [ ] Provide a description in this PR that addresses **what** the PR is solving, or reference the issue that it solves (e.g. `fixes #yyy`).
 <!-- Thank you for contributing! -->
