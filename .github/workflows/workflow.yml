@@ -2,7 +2,7 @@ name: Codecov nuxt-app
 on:
   push:
     branches:
-      - develop
+      - master
   pull_request:
     branches:
       - master
