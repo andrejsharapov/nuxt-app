@@ -1,4 +1,4 @@
-name: Codecov lint
+name: Code lint
 on:
   push:
     branches:
@@ -27,8 +27,10 @@ jobs:
       # step 3
       - name: Install deps & run lint
         run: |
-          npm install
-          npm run lint
+          yarn install
+          yarn format:prettier
+          yarn lint:js
+          yarn lint:style
 
       # step 4
       - name: Upload coverage to Codecov
