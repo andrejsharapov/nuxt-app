@@ -53,8 +53,8 @@
     "vuedraggable": "^2.24.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@nuxtjs/eslint-config": "11.0.0",
     "@nuxtjs/eslint-module": "3.1.0",
