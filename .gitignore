@@ -1,5 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Node template
 # Logs
 /logs
 *.log
@@ -93,14 +91,16 @@ sw.*
 *.swp
 
 # VS Code
-# .vscode
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
 
 # Tests
-test/
-test_*.*
+__tests__/
+test_*
 
 # SFTP
 sftp.*
 
-# Yarn
-yarn.lock
+# Lock files
+**lock*
