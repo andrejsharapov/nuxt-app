@@ -1,0 +1,8 @@
+- title: Vue Component Icon
+  type: vue-component
+  created: "2022-11-08"
+  desc: Create and use your own icons, or use only your favorites in your vue.js project.
+  url: https://github.com/andrejsharapov/vue-component-icon
+  img:
+    src: https://repository-images.githubusercontent.com/563081843/167a850e-012c-46ba-92f9-8e28df20cf56
+    alt: ""
