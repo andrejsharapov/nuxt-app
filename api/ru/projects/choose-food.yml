@@ -1,0 +1,8 @@
+- title: Choose food
+  type: Game
+  created: "2022-11-13"
+  desc: Маленькое приложение для супругов или друзей, которые не могут договориться откуда заказать еду. Приложение одним кликом выбирает ресторан, тем самым разрешая все споры.
+  url: https://sharapov.dev/ru/apps/choose-food/
+  img:
+    src: /src/apps/choose-food/app-bg__xs__dark.jpg
+    alt:
