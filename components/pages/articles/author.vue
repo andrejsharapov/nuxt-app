@@ -29,9 +29,22 @@
         </v-list-item-subtitle>
       </v-list-item-content>
 
-      <v-list-item-icon v-if="$vuetify.breakpoint.smAndUp" class="my-0">
-        <v-avatar width="68" height="68" class="rounded" color="success">
-          <v-icon dark large> {{ mdiAccountGroup }} </v-icon>
+      <v-list-item-icon
+        v-if="$vuetify.breakpoint.smAndUp"
+        class="my-0"
+      >
+        <v-avatar
+          width="68"
+          height="68"
+          class="rounded"
+          color="success"
+        >
+          <v-icon
+            dark
+            large
+          >
+            {{ mdiAccountGroup }}
+          </v-icon>
         </v-avatar>
       </v-list-item-icon>
     </v-list-item>

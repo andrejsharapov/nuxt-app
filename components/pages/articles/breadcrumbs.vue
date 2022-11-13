@@ -1,6 +1,12 @@
 <template>
-  <v-card v-box-shadow="6" class="mb-4 px-4 article-breadcrumbs">
-    <v-breadcrumbs :items="items" divider="·" />
+  <v-card
+    v-box-shadow="6"
+    class="mb-4 px-4 article-breadcrumbs"
+  >
+    <v-breadcrumbs
+      :items="items"
+      divider="·"
+    />
   </v-card>
 </template>
 

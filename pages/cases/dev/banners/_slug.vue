@@ -2,13 +2,23 @@
   <div>
     <s-history-back class="mb-4" />
     <div class="d-none d-md-block case-image hidden">
-      <v-img :src="banner.img.src" class="fill-height" />
+      <v-img
+        :src="banner.img.src"
+        class="fill-height"
+      />
     </div>
 
-    <v-container fluid class="mt-md-n16">
+    <v-container
+      fluid
+      class="mt-md-n16"
+    >
       <!-- COMPONENT HEADER -->
       <v-row>
-        <v-col cols="12" md="10" offset-md="1">
+        <v-col
+          cols="12"
+          md="10"
+          offset-md="1"
+        >
           <s-pages-cases-components-slug-header :info="banner" />
         </v-col>
       </v-row>
@@ -29,10 +39,20 @@
         <!-- /COMPONENT -->
 
         <!-- SECTION CASE -->
-        <v-col cols="12" md="10" class="order-0 order-md-0">
-          <v-row no-gutters class="flex-column">
+        <v-col
+          cols="12"
+          md="10"
+          class="order-0 order-md-0"
+        >
+          <v-row
+            no-gutters
+            class="flex-column"
+          >
             <v-col cols="12">
-              <v-card flat color="transparent">
+              <v-card
+                flat
+                color="transparent"
+              >
                 <!-- SECTION CLIENT: ABOUT + TASKS + ISSUES -->
                 <h2 class="mt-5 mb-5 text-md-h5 text-lg-h4 font-weight-bold">
                   01. {{ $t('pages.cases.slug.headings.sections[0]') }}
@@ -56,7 +76,11 @@
                 </h2>
                 <v-row>
                   <!-- COMPONENT STORYBOARD -->
-                  <v-col v-if="banner.done.list !== null" cols="12" md="7">
+                  <v-col
+                    v-if="banner.done.list !== null"
+                    cols="12"
+                    md="7"
+                  >
                     <s-pages-cases-components-slug-components-section-sub-title
                       :title="$t('pages.cases.slug.storyboard')"
                     />
@@ -71,7 +95,11 @@
                   <!-- /COMPONENT -->
 
                   <!-- COMPONENT DONE -->
-                  <v-col v-if="banner.done.list !== null" cols="12" md="5">
+                  <v-col
+                    v-if="banner.done.list !== null"
+                    cols="12"
+                    md="5"
+                  >
                     <s-pages-cases-components-slug-components-section-sub-title
                       :title="$t('pages.cases.slug.done')"
                     />
@@ -87,7 +115,10 @@
                 <s-pages-cases-components-slug-components-section-sub-title
                   :title="$t('pages.cases.slug.result.title')"
                 />
-                <div v-resize="onResize" class="not-pointer">
+                <div
+                  v-resize="onResize"
+                  class="not-pointer"
+                >
                   <div
                     v-if="
                       banner.animatic.width < windowSize.x &&
@@ -110,7 +141,10 @@
                     type="warning"
                     text
                   >
-                    <v-card flat color="transparent">
+                    <v-card
+                      flat
+                      color="transparent"
+                    >
                       <v-card-title class="text-break-word warning--text">
                         {{
                           $t('pages.cases.slug.responsive.not-responsive.title')

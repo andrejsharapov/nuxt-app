@@ -76,7 +76,14 @@
       d="M505.269 364.615C482.409 373.945 456.569 381.055 427.489 385.435C408.588 388.23 389.531 389.847 370.429 390.275C353.229 390.075 335.623 389.698 317.609 389.145V376.385C341.859 356.035 445.759 352.785 505.269 364.615Z"
       fill="#CACACA"
     />
-    <rect x="362.445" y="278" width="82" height="19" rx="9.5" fill="#399C72" />
+    <rect
+      x="362.445"
+      y="278"
+      width="82"
+      height="19"
+      rx="9.5"
+      fill="#399C72"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -108,7 +115,12 @@
       d="M978.039 282.248L967.941 297.147L970.391 383.464L981.307 397.338C981.307 397.338 1024.39 457.73 1035.53 449.654C1052.36 437.462 1021.68 383.498 1021.01 339.348C1020.3 292.332 1035.53 247.039 1035.53 222.655C1035.53 198.272 978.039 282.248 978.039 282.248Z"
       fill="url(#des-quiz1_linear_601_937)"
     />
-    <circle cx="791.106" cy="365.473" r="195.068" fill="#009DE9" />
+    <circle
+      cx="791.106"
+      cy="365.473"
+      r="195.068"
+      fill="#009DE9"
+    />
     <circle
       cx="791.106"
       cy="365.473"
@@ -145,8 +157,18 @@
       d="M899.6 511.343C899.6 511.343 895.326 509.432 892.419 509.378C883.903 509.219 876.739 516.287 876.997 524.8C877.084 527.686 879.038 531.906 879.038 531.906L887.201 560.327L928.327 519.201L899.6 511.343Z"
       fill="url(#des-quiz3_linear_601_937)"
     />
-    <circle cx="654.095" cy="309.613" r="76.6338" fill="white" />
-    <circle cx="654.095" cy="293.357" r="52.2503" fill="#3CADD0" />
+    <circle
+      cx="654.095"
+      cy="309.613"
+      r="76.6338"
+      fill="white"
+    />
+    <circle
+      cx="654.095"
+      cy="293.357"
+      r="52.2503"
+      fill="#3CADD0"
+    />
     <circle
       cx="654.095"
       cy="293.357"
@@ -160,10 +182,30 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="645.417" cy="285.907" r="40.6391" fill="#451408" />
-    <circle cx="677.317" cy="246.912" r="9.28894" fill="white" />
-    <circle cx="849.162" cy="308.452" r="76.6338" fill="white" />
-    <circle cx="848.001" cy="293.357" r="52.2503" fill="#3CADD0" />
+    <circle
+      cx="645.417"
+      cy="285.907"
+      r="40.6391"
+      fill="#451408"
+    />
+    <circle
+      cx="677.317"
+      cy="246.912"
+      r="9.28894"
+      fill="white"
+    />
+    <circle
+      cx="849.162"
+      cy="308.452"
+      r="76.6338"
+      fill="white"
+    />
+    <circle
+      cx="848.001"
+      cy="293.357"
+      r="52.2503"
+      fill="#3CADD0"
+    />
     <circle
       cx="848.001"
       cy="293.357"
@@ -177,8 +219,18 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="839.324" cy="285.907" r="40.6391" fill="#451408" />
-    <circle cx="872.385" cy="246.912" r="9.28894" fill="white" />
+    <circle
+      cx="839.324"
+      cy="285.907"
+      r="40.6391"
+      fill="#451408"
+    />
+    <circle
+      cx="872.385"
+      cy="246.912"
+      r="9.28894"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -247,8 +299,15 @@
         y2="542.023"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-quiz1_linear_601_937"
@@ -259,7 +318,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-quiz2_radial_601_937"
@@ -269,8 +332,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(719.697 273.618) rotate(63.0478) scale(307.414)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <linearGradient
         id="des-quiz3_linear_601_937"
@@ -280,8 +350,15 @@
         y2="547.579"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-quiz4_radial_601_937"
@@ -292,7 +369,11 @@
         gradientTransform="translate(654.095 293.357) rotate(90) scale(52.2503)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="des-quiz5_radial_601_937"
@@ -303,7 +384,11 @@
         gradientTransform="translate(848.001 293.357) rotate(90) scale(52.2503)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="des-quiz6_linear_601_937"
@@ -313,8 +398,15 @@
         y2="135.109"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-quiz7_linear_601_937"
@@ -325,7 +417,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#056A9A" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-quiz8_linear_601_937"
@@ -336,7 +432,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#E8F8FF" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="#C4C4C4"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-quiz9_linear_601_937"
@@ -347,7 +447,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-quiz10_linear_601_937"
@@ -358,7 +462,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#E8F8FF" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="#C4C4C4"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-quiz11_linear_601_937"
@@ -369,7 +477,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

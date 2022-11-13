@@ -18,12 +18,30 @@
         <!-- /COMPONENT -->
 
         <!-- SECTION CASE -->
-        <v-col cols="12" md="10" class="order-0 order-md-0">
-          <v-row no-gutters class="flex-column">
+        <v-col
+          cols="12"
+          md="10"
+          class="order-0 order-md-0"
+        >
+          <v-row
+            no-gutters
+            class="flex-column"
+          >
             <v-col cols="12">
-              <v-card flat color="transparent">
-                <v-toolbar dark flat color="primary" class="rounded">
-                  <v-card flat color="transparent">
+              <v-card
+                flat
+                color="transparent"
+              >
+                <v-toolbar
+                  dark
+                  flat
+                  color="primary"
+                  class="rounded"
+                >
+                  <v-card
+                    flat
+                    color="transparent"
+                  >
                     <v-card-title>{{ desQuiz.title }}</v-card-title>
                     <v-card-subtitle>
                       {{ formatDate(desQuiz.created) }}

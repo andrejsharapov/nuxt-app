@@ -1,7 +1,13 @@
 <template>
-  <div transition="slide-y-reverse-transition" class="mb-4 card-view">
+  <div
+    transition="slide-y-reverse-transition"
+    class="mb-4 card-view"
+  >
     <v-row no-gutters>
-      <v-col cols="12" md="4">
+      <v-col
+        cols="12"
+        md="4"
+      >
         <v-card
           :flat="$vuetify.breakpoint.smAndDown"
           class="rounded-lg mb-sm-4 hidden"
@@ -14,15 +20,28 @@
             aspect-ratio="1.7"
           >
             <template #placeholder>
-              <v-row class="fill-height ma-0" align="center" justify="center">
-                <v-progress-circular indeterminate color="grey lighten-5" />
+              <v-row
+                class="fill-height ma-0"
+                align="center"
+                justify="center"
+              >
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                />
               </v-row>
             </template>
           </v-img>
         </v-card>
       </v-col>
-      <v-col cols="12" md="8">
-        <v-card flat class="transparent mt-sm-4 ml-0 ml-lg-4">
+      <v-col
+        cols="12"
+        md="8"
+      >
+        <v-card
+          flat
+          class="transparent mt-sm-4 ml-0 ml-lg-4"
+        >
           <v-card-subtitle class="d-sm-flex pb-0">
             {{ $tc('category', 0) }} &mdash;&nbsp;<strong>
               {{ project.type }}

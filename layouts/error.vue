@@ -1,6 +1,9 @@
 <template>
   <v-app dark>
-    <v-container fluid class="error-page__content">
+    <v-container
+      fluid
+      class="error-page__content"
+    >
       <v-row>
         <v-col
           cols="12"
@@ -14,18 +17,31 @@
             <lazy-s-fish-layouts-other-errors v-else />
           </div>
         </v-col>
-        <v-col cols="12" md="7">
-          <v-card elevation="0" class="pa-4 pa-sm-8">
+        <v-col
+          cols="12"
+          md="7"
+        >
+          <v-card
+            elevation="0"
+            class="pa-4 pa-sm-8"
+          >
             <h2
               v-if="error.statusCode === 404"
               class="text-h5 text-sm-h4 font-weight-bold error--text"
             >
-              <v-icon left :large="$vuetify.breakpoint.smAndUp" color="error">
+              <v-icon
+                left
+                :large="$vuetify.breakpoint.smAndUp"
+                color="error"
+              >
                 {{ mdiAlert }}
               </v-icon>
               {{ $tc('app.errors.page-not-found.title') }}
             </h2>
-            <h2 v-else class="text-h5 text-sm-h4 font-weight-bold error--text">
+            <h2
+              v-else
+              class="text-h5 text-sm-h4 font-weight-bold error--text"
+            >
               {{ $tc('app.errors.other-errors.title') }}
             </h2>
             <template v-if="error.statusCode === 404">
@@ -52,7 +68,10 @@
                 </template>
               </v-radio-group>
               <template v-if="radioGroup">
-                <p v-if="radioGroup == !'success'" class="title">
+                <p
+                  v-if="radioGroup == !'success'"
+                  class="title"
+                >
                   {{ $t('app.errors.page-not-found.poll.result[0]') }}
                 </p>
                 <div v-if="radioGroup === 'success'">
@@ -107,7 +126,10 @@
                     {{ $t('btn.report-problem') }}
                   </v-btn>
                 </template>
-                <v-card tile class="rounded-l-lg py-4">
+                <v-card
+                  tile
+                  class="rounded-l-lg py-4"
+                >
                   <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSd-IySb-nNElwDaetsTGosKTMugrrDEYbiGAuduYivIqONvlg/viewform?embedded=true"
                     width="100%"
@@ -125,7 +147,10 @@
         </v-col>
       </v-row>
     </v-container>
-    <notifications group="answers" position="bottom right" />
+    <notifications
+      group="answers"
+      position="bottom right"
+    />
   </v-app>
 </template>
 

@@ -1,5 +1,8 @@
 <template>
-  <v-card flat class="article-header">
+  <v-card
+    flat
+    class="article-header"
+  >
     <v-img
       v-if="article.img.src"
       :src="article.img.src"

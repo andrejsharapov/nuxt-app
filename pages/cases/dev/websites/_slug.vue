@@ -3,13 +3,23 @@
     <s-history-back class="mb-4" />
 
     <div class="d-none d-md-block case-image hidden">
-      <v-img :src="website.img.src" class="fill-height" />
+      <v-img
+        :src="website.img.src"
+        class="fill-height"
+      />
     </div>
 
-    <v-container fluid class="mt-md-n16">
+    <v-container
+      fluid
+      class="mt-md-n16"
+    >
       <!-- COMPONENT HEADER -->
       <v-row>
-        <v-col cols="12" md="10" offset-md="1">
+        <v-col
+          cols="12"
+          md="10"
+          offset-md="1"
+        >
           <s-pages-cases-components-slug-header :info="website" />
         </v-col>
       </v-row>
@@ -30,10 +40,20 @@
         <!-- /COMPONENT -->
 
         <!-- SECTION CASE -->
-        <v-col cols="12" md="10" class="order-0 order-md-0">
-          <v-row no-gutters class="flex-column">
+        <v-col
+          cols="12"
+          md="10"
+          class="order-0 order-md-0"
+        >
+          <v-row
+            no-gutters
+            class="flex-column"
+          >
             <v-col cols="12">
-              <v-card flat color="transparent">
+              <v-card
+                flat
+                color="transparent"
+              >
                 <!-- SECTION CLIENT: ABOUT + TASKS + ISSUES -->
                 <h2 class="mt-5 mb-5 text-md-h5 text-lg-h4 font-weight-bold">
                   01. {{ $t('pages.cases.slug.headings.sections[0]') }}
@@ -57,13 +77,20 @@
                 </h2>
                 <v-row>
                   <!-- COMPONENT PREVIEW -->
-                  <v-col cols="12" md="5">
+                  <v-col
+                    cols="12"
+                    md="5"
+                  >
                     <s-pages-cases-components-slug-preview :preview="website" />
                   </v-col>
                   <!-- /COMPONENT -->
 
                   <!-- COMPONENT DONE -->
-                  <v-col v-if="website.done.list !== null" cols="12" md="7">
+                  <v-col
+                    v-if="website.done.list !== null"
+                    cols="12"
+                    md="7"
+                  >
                     <s-pages-cases-components-slug-components-section-sub-title
                       :title="$t('pages.cases.slug.done')"
                     />
@@ -97,7 +124,10 @@
                   :title="$t('pages.cases.slug.colors')"
                 />
                 <!-- COMPONENT Palette -->
-                <v-card v-box-shadow="9" class="px-4">
+                <v-card
+                  v-box-shadow="9"
+                  class="px-4"
+                >
                   <s-pages-cases-components-slug-palette
                     v-if="website.palette"
                     :palette="website.palette"
@@ -133,7 +163,11 @@
                   :title="$t('pages.cases.slug.responsive.title')"
                 />
                 <v-row v-if="website.responsive">
-                  <v-col cols="12" md="7" class="d-flex flex-column">
+                  <v-col
+                    cols="12"
+                    md="7"
+                    class="d-flex flex-column"
+                  >
                     <div class="mb-4">
                       <p class="text-center text-md-left">
                         {{ $t('pages.cases.slug.responsive.friendliness') }}:
@@ -146,7 +180,10 @@
                       </v-list-item>
                     </div>
                     <!-- COMPONENT RESPONSIVE BLOCKS -->
-                    <v-row v-if="website.responsive.dash" class="align-end">
+                    <v-row
+                      v-if="website.responsive.dash"
+                      class="align-end"
+                    >
                       <v-col
                         v-for="(name, value, index) in website.responsive.dash"
                         :key="index"
@@ -163,7 +200,11 @@
                   </v-col>
 
                   <!-- COMPONENT RESPONSIVE CHART -->
-                  <v-col cols="12" md="5" class="not-pointer">
+                  <v-col
+                    cols="12"
+                    md="5"
+                    class="not-pointer"
+                  >
                     <lazy-s-pages-cases-components-slug-responsive-chart
                       :res="website.responsive"
                     />

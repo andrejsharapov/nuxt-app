@@ -7,7 +7,13 @@
     xmlns="http://www.w3.org/2000/svg"
     class="fish-banners"
   >
-    <rect x="0.663086" width="724" height="469" rx="8" fill="#F0EAF3" />
+    <rect
+      x="0.663086"
+      width="724"
+      height="469"
+      rx="8"
+      fill="#F0EAF3"
+    />
     <rect
       x="1.16309"
       y="0.5"
@@ -78,8 +84,16 @@
       d="M362.966 519.738C362.966 519.738 366.647 518.093 369.151 518.046C376.485 517.909 382.655 523.996 382.433 531.328C382.357 533.813 380.675 537.447 380.675 537.447C380.675 537.447 380.867 555.088 373.644 561.925C359.437 575.372 324.66 540.6 338.225 526.506C345.171 519.289 362.966 519.738 362.966 519.738Z"
       fill="url(#banners3_linear)"
     />
-    <circle r="66" transform="matrix(-1 0 0 1 574.405 346)" fill="white" />
-    <circle r="45" transform="matrix(-1 0 0 1 591.326 345)" fill="#90D8FB" />
+    <circle
+      r="66"
+      transform="matrix(-1 0 0 1 574.405 346)"
+      fill="white"
+    />
+    <circle
+      r="45"
+      transform="matrix(-1 0 0 1 591.326 345)"
+      fill="#90D8FB"
+    />
     <circle
       r="45"
       transform="matrix(-1 0 0 1 591.326 345)"
@@ -96,7 +110,11 @@
       transform="matrix(-1 0 0 1 597.826 345.5)"
       fill="#465038"
     />
-    <circle r="8" transform="matrix(-1 0 0 1 580.326 319)" fill="white" />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 580.326 319)"
+      fill="white"
+    />
     <path
       opacity="0.4"
       d="M389.074 264.341C389.074 264.341 435.097 247.783 429.651 238.349C423.232 227.232 385.641 260.404 385.641 260.404C385.641 260.404 339.06 275.829 345.478 286.947C351.637 297.613 389.074 264.341 389.074 264.341Z"
@@ -130,7 +148,11 @@
       d="M508.405 346C508.405 382.451 537.954 412 574.405 412C610.856 412 640.405 382.451 640.405 346C640.405 309.549 610.856 280 574.405 280C537.954 280 508.405 309.549 508.405 346Z"
       fill="white"
     />
-    <circle r="45" transform="matrix(-1 0 0 1 574.405 346)" fill="#90D8FB" />
+    <circle
+      r="45"
+      transform="matrix(-1 0 0 1 574.405 346)"
+      fill="#90D8FB"
+    />
     <circle
       r="45"
       transform="matrix(-1 0 0 1 574.405 346)"
@@ -142,10 +164,26 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle r="23" transform="matrix(-1 0 0 1 574.405 346)" fill="#465038" />
-    <circle r="8" transform="matrix(-1 0 0 1 597.405 331)" fill="white" />
-    <circle r="66" transform="matrix(-1 0 0 1 406.405 346)" fill="white" />
-    <circle r="45" transform="matrix(-1 0 0 1 406.405 346)" fill="#90D8FB" />
+    <circle
+      r="23"
+      transform="matrix(-1 0 0 1 574.405 346)"
+      fill="#465038"
+    />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 597.405 331)"
+      fill="white"
+    />
+    <circle
+      r="66"
+      transform="matrix(-1 0 0 1 406.405 346)"
+      fill="white"
+    />
+    <circle
+      r="45"
+      transform="matrix(-1 0 0 1 406.405 346)"
+      fill="#90D8FB"
+    />
     <circle
       r="45"
       transform="matrix(-1 0 0 1 406.405 346)"
@@ -157,8 +195,16 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle r="23" transform="matrix(-1 0 0 1 406.405 346)" fill="#465038" />
-    <circle r="8" transform="matrix(-1 0 0 1 429.405 331)" fill="white" />
+    <circle
+      r="23"
+      transform="matrix(-1 0 0 1 406.405 346)"
+      fill="#465038"
+    />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 429.405 331)"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -198,8 +244,15 @@
         y2="546.161"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="banners1_linear"
@@ -210,7 +263,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="banners2_radial"
@@ -220,8 +277,14 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(-56.5 -78.8908) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="#43C1FF" />
+        <stop
+          offset="0.821385"
+          stop-color="#A3E1FF"
+        />
+        <stop
+          offset="1"
+          stop-color="#43C1FF"
+        />
       </radialGradient>
       <linearGradient
         id="banners3_linear"
@@ -231,8 +294,15 @@
         y2="550.946"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#3EBFFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="banners4_radial"
@@ -243,7 +313,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="banners5_linear"
@@ -254,7 +328,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F8BDC5" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="banners6_radial"
@@ -265,7 +343,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="banners7_radial"
@@ -276,7 +358,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="banners8_linear"
@@ -286,8 +372,15 @@
         y2="195.711"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

@@ -41,21 +41,33 @@
         <!-- /SECTION -->
 
         <!-- SECTION SKILLS -->
-        <v-col cols="12" md="6" class="mt-lg-n16">
+        <v-col
+          cols="12"
+          md="6"
+          class="mt-lg-n16"
+        >
           <lazy-s-skill-slider :items="skills.list" />
         </v-col>
         <!-- /SECTION -->
 
         <!-- SECTION CMS -->
         <v-col cols="12">
-          <s-section-heading-anchor title="CMS" anchor="cms" />
+          <s-section-heading-anchor
+            title="CMS"
+            anchor="cms"
+          />
           <p>
             {{ $t('pages.dev-site.cms') }}
           </p>
         </v-col>
 
         <v-col cols="12">
-          <v-chip-group v-for="(c, i) in cms" :key="i" column mandatory>
+          <v-chip-group
+            v-for="(c, i) in cms"
+            :key="i"
+            column
+            mandatory
+          >
             <v-chip
               v-for="chip in c.set"
               :key="chip"
@@ -70,8 +82,14 @@
         </v-col>
 
         <!-- COMPONENT CHART -->
-        <v-col cols="12" class="d-none d-sm-block">
-          <v-card v-box-shadow="18" class="mb-4 pa-4">
+        <v-col
+          cols="12"
+          class="d-none d-sm-block"
+        >
+          <v-card
+            v-box-shadow="18"
+            class="mb-4 pa-4"
+          >
             <v-lazy
               :options="{
                 threshold: 0.5,
@@ -97,7 +115,10 @@
           </p>
           <!-- /COMPONENT -->
 
-          <div v-if="localeItems.length" class="d-flex">
+          <div
+            v-if="localeItems.length"
+            class="d-flex"
+          >
             <v-spacer />
             <v-btn-toggle
               v-if="$vuetify.breakpoint.mdAndUp"
@@ -109,7 +130,10 @@
               <v-btn :ripple="false">
                 <v-icon>{{ mdiViewGrid }}</v-icon>
               </v-btn>
-              <v-btn v-if="$vuetify.breakpoint.mdAndUp" :ripple="false">
+              <v-btn
+                v-if="$vuetify.breakpoint.mdAndUp"
+                :ripple="false"
+              >
                 <v-icon>{{ mdiViewDay }}</v-icon>
               </v-btn>
             </v-btn-toggle>

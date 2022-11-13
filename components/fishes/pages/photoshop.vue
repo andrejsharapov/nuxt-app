@@ -70,7 +70,12 @@
       d="M55.7538 203.259L64.4508 216.09L62.3401 290.43L52.9395 302.379C52.9395 302.379 15.8338 354.391 6.23589 347.435C-8.25276 336.935 18.172 290.459 18.7472 252.435C19.3598 211.943 6.23589 172.935 6.23589 151.935C6.23589 130.935 55.7538 203.259 55.7538 203.259Z"
       fill="url(#fish-photoshop1_linear)"
     />
-    <circle cx="216.485" cy="274.454" r="168" fill="#A3E1FF" />
+    <circle
+      cx="216.485"
+      cy="274.454"
+      r="168"
+      fill="#A3E1FF"
+    />
     <circle
       cx="216.485"
       cy="274.454"
@@ -106,8 +111,18 @@
       transform="matrix(-0.866025 0.5 0.5 0.866025 137.998 99.7949)"
       fill="#FFAFAF"
     />
-    <circle cx="164.564" cy="226.345" r="66" fill="white" />
-    <circle cx="183.485" cy="225.345" r="45" fill="#90D8FB" />
+    <circle
+      cx="164.564"
+      cy="226.345"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="183.485"
+      cy="225.345"
+      r="45"
+      fill="#90D8FB"
+    />
     <circle
       cx="183.485"
       cy="225.345"
@@ -121,16 +136,36 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="191.277" cy="225.845" r="33.5" fill="#465038" />
-    <circle cx="174.485" cy="199.345" r="8" fill="white" />
+    <circle
+      cx="191.277"
+      cy="225.845"
+      r="33.5"
+      fill="#465038"
+    />
+    <circle
+      cx="174.485"
+      cy="199.345"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M393.855 172.345C394.735 173.144 396.069 174.163 396.855 175.002L381.41 178.378C371.358 167.653 356.976 161.15 342.356 159.633C327.735 158.117 312.704 161.845 300.855 169.345C300.855 169.345 301.492 166.845 302.855 165.345C304.219 163.845 306.856 160.133 313.856 158.133C325.132 154.911 331.949 153.948 343.664 154.485C362.839 155.365 381.913 162.78 393.355 171.845L382.855 174.345L383.355 175.002L393.855 172.345Z"
       fill="#0184C3"
     />
-    <circle cx="327.935" cy="225.345" r="66" fill="white" />
-    <circle cx="345.855" cy="225.345" r="45" fill="#90D8FB" />
+    <circle
+      cx="327.935"
+      cy="225.345"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="345.855"
+      cy="225.345"
+      r="45"
+      fill="#90D8FB"
+    />
     <circle
       cx="345.855"
       cy="225.345"
@@ -144,8 +179,18 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="353.647" cy="225.845" r="33.5" fill="#465038" />
-    <circle cx="337.855" cy="199.345" r="8" fill="white" />
+    <circle
+      cx="353.647"
+      cy="225.845"
+      r="33.5"
+      fill="#465038"
+    />
+    <circle
+      cx="337.855"
+      cy="199.345"
+      r="8"
+      fill="white"
+    />
     <path
       d="M106.152 176.214C117.016 164.621 137.102 156.718 159.343 155.697C171.058 155.16 177.875 156.123 189.151 159.345C196.151 161.345 201.288 165.845 202.651 167.345C204.015 168.845 203.374 170.845 203.374 170.845C191.525 163.345 175.272 159.329 160.651 160.845C146.031 162.361 131.649 168.865 121.597 179.59L106.152 176.214Z"
       fill="#0184C3"
@@ -259,7 +304,12 @@
       d="M836.993 196.433L828.296 209.264L830.407 283.604L839.808 295.553C839.808 295.553 876.913 347.565 886.511 340.609C901 330.109 874.575 283.633 874 245.609C873.387 205.117 886.511 166.109 886.511 145.109C886.511 124.109 836.993 196.433 836.993 196.433Z"
       fill="url(#fish-photoshop9_linear)"
     />
-    <circle cx="676" cy="268.109" r="168" fill="#009DE9" />
+    <circle
+      cx="676"
+      cy="268.109"
+      r="168"
+      fill="#009DE9"
+    />
     <circle
       cx="676"
       cy="268.109"
@@ -278,9 +328,24 @@
       d="M769.44 393.738C769.44 393.738 765.758 392.093 763.254 392.046C755.92 391.909 749.75 397.996 749.972 405.328C750.048 407.813 751.73 411.447 751.73 411.447L758.761 435.925L794.18 400.506L769.44 393.738Z"
       fill="url(#fish-photoshop11_linear)"
     />
-    <circle cx="558" cy="220" r="66" fill="white" />
-    <circle cx="549.079" cy="223" r="45" fill="#3CADD0" />
-    <circle cx="549.079" cy="223" r="45" fill="url(#fish-photoshop12_radial)" />
+    <circle
+      cx="558"
+      cy="220"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="549.079"
+      cy="223"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="549.079"
+      cy="223"
+      r="45"
+      fill="url(#fish-photoshop12_radial)"
+    />
     <circle
       cx="549.079"
       cy="223"
@@ -288,11 +353,38 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <ellipse cx="540" cy="229.208" rx="35" ry="35" fill="#451408" />
-    <ellipse cx="562.999" cy="196.208" rx="13" ry="13" fill="white" />
-    <circle cx="726" cy="219" r="66" fill="white" />
-    <circle cx="716.079" cy="223" r="45" fill="#3CADD0" />
-    <circle cx="716.079" cy="223" r="45" fill="url(#fish-photoshop13_radial)" />
+    <ellipse
+      cx="540"
+      cy="229.208"
+      rx="35"
+      ry="35"
+      fill="#451408"
+    />
+    <ellipse
+      cx="562.999"
+      cy="196.208"
+      rx="13"
+      ry="13"
+      fill="white"
+    />
+    <circle
+      cx="726"
+      cy="219"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="716.079"
+      cy="223"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="716.079"
+      cy="223"
+      r="45"
+      fill="url(#fish-photoshop13_radial)"
+    />
     <circle
       cx="716.079"
       cy="223"
@@ -300,8 +392,20 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <ellipse cx="707" cy="229.208" rx="35" ry="35" fill="#451408" />
-    <ellipse cx="729" cy="196.208" rx="13" ry="13" fill="white" />
+    <ellipse
+      cx="707"
+      cy="229.208"
+      rx="35"
+      ry="35"
+      fill="#451408"
+    />
+    <ellipse
+      cx="729"
+      cy="196.208"
+      rx="13"
+      ry="13"
+      fill="white"
+    />
     <path
       d="M706.774 334.724C706.774 334.724 705.489 329.665 704.175 327.722C702.702 325.544 699.716 325.259 699.716 325.259"
       stroke="#0184C3"
@@ -344,7 +448,14 @@
       stroke="#F2D05C"
       stroke-width="2"
     />
-    <rect x="623.4" y="428.234" width="16" height="13" rx="4" fill="#F4DA7E" />
+    <rect
+      x="623.4"
+      y="428.234"
+      width="16"
+      height="13"
+      rx="4"
+      fill="#F4DA7E"
+    />
     <path
       d="M914.357 619.141C913.946 618.468 904.238 602.236 900.873 568.53C897.786 537.608 899.771 485.485 926.764 412.778C977.903 275.039 914.979 163.904 914.336 162.797L917.441 160.993C917.603 161.274 933.84 189.609 943.432 234.728C956.106 294.547 951.491 356.744 930.128 414.03C879.077 551.534 917.031 616.627 917.42 617.269L914.357 619.141Z"
       fill="#3F3D56"
@@ -386,8 +497,15 @@
         y2="434.358"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-photoshop1_linear"
@@ -398,7 +516,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-photoshop2_radial"
@@ -408,8 +530,14 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(271.478 212.896) rotate(146.783) scale(261.237)"
       >
-        <stop offset="0.809098" stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="#43C1FF" />
+        <stop
+          offset="0.809098"
+          stop-color="#A3E1FF"
+        />
+        <stop
+          offset="1"
+          stop-color="#43C1FF"
+        />
       </radialGradient>
       <linearGradient
         id="fish-photoshop3_linear"
@@ -420,7 +548,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F8BDC5" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-photoshop4_radial"
@@ -431,7 +563,11 @@
         gradientTransform="translate(183.485 225.345) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="fish-photoshop5_radial"
@@ -442,7 +578,11 @@
         gradientTransform="translate(345.855 225.345) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="fish-photoshop6_linear"
@@ -452,8 +592,15 @@
         y2="76.0563"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-photoshop7_linear"
@@ -463,8 +610,15 @@
         y2="438.312"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#3EBFFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-photoshop8_linear"
@@ -474,8 +628,15 @@
         y2="420.161"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-photoshop9_linear"
@@ -486,7 +647,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-photoshop10_radial"
@@ -496,8 +661,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(614.5 189) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <linearGradient
         id="fish-photoshop11_linear"
@@ -507,8 +679,15 @@
         y2="424.946"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-photoshop12_radial"
@@ -519,7 +698,11 @@
         gradientTransform="translate(549.079 223) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="fish-photoshop13_radial"
@@ -530,7 +713,11 @@
         gradientTransform="translate(716.079 223) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="fish-photoshop14_linear"
@@ -540,8 +727,15 @@
         y2="69.7111"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-photoshop15_linear"
@@ -552,7 +746,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F2D05C" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <clipPath id="clip0">
         <rect

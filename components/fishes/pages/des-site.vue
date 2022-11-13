@@ -183,20 +183,92 @@
       d="M923.993 179.433L915.296 192.264L917.407 266.604L926.808 278.553C926.808 278.553 963.913 330.565 973.511 323.609C988 313.109 961.575 266.633 961 228.609C960.387 188.117 973.511 149.109 973.511 128.109C973.511 107.109 923.993 179.433 923.993 179.433Z"
       fill="url(#des-site1_linear)"
     />
-    <circle cx="763" cy="251.109" r="168" fill="#009DE9" />
-    <circle cx="763" cy="251.109" r="168" fill="url(#des-site2_radial)" />
-    <circle cx="645" cy="203" r="66" fill="white" />
-    <circle cx="633" cy="213" r="45" fill="#3CADD0" />
-    <circle cx="633" cy="213" r="45" fill="url(#des-site3_radial)" />
-    <circle cx="633" cy="213" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="626" cy="218" r="35" fill="#451408" />
-    <circle cx="644" cy="187" r="8" fill="white" />
-    <circle cx="813" cy="202" r="66" fill="white" />
-    <circle cx="800" cy="213" r="45" fill="#3CADD0" />
-    <circle cx="800" cy="213" r="45" fill="url(#des-site4_radial)" />
-    <circle cx="800" cy="213" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="793" cy="218" r="35" fill="#451408" />
-    <circle cx="812" cy="187" r="8" fill="white" />
+    <circle
+      cx="763"
+      cy="251.109"
+      r="168"
+      fill="#009DE9"
+    />
+    <circle
+      cx="763"
+      cy="251.109"
+      r="168"
+      fill="url(#des-site2_radial)"
+    />
+    <circle
+      cx="645"
+      cy="203"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="633"
+      cy="213"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="633"
+      cy="213"
+      r="45"
+      fill="url(#des-site3_radial)"
+    />
+    <circle
+      cx="633"
+      cy="213"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="626"
+      cy="218"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="644"
+      cy="187"
+      r="8"
+      fill="white"
+    />
+    <circle
+      cx="813"
+      cy="202"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="800"
+      cy="213"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="800"
+      cy="213"
+      r="45"
+      fill="url(#des-site4_radial)"
+    />
+    <circle
+      cx="800"
+      cy="213"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="793"
+      cy="218"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="812"
+      cy="187"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -283,8 +355,15 @@
         y2="417.174"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-site1_linear"
@@ -295,7 +374,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-site2_radial"
@@ -305,8 +388,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(701.5 172) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <radialGradient
         id="des-site3_radial"
@@ -317,7 +407,11 @@
         gradientTransform="translate(633 213) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="des-site4_radial"
@@ -328,7 +422,11 @@
         gradientTransform="translate(800 213) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="des-site5_linear"
@@ -338,8 +436,15 @@
         y2="52.711"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-site6_linear"
@@ -350,7 +455,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#056A9A" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-site7_linear"
@@ -360,8 +469,15 @@
         y2="418.372"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <clipPath id="clip0">
         <rect

@@ -175,8 +175,16 @@
       d="M138.988 424.96C138.988 424.96 136.167 422.079 135.254 419.747C132.579 412.917 136.144 405.017 143.097 402.68C145.454 401.887 149.446 402.203 149.446 402.203C149.446 402.203 165.923 395.897 174.842 400.297C192.386 408.95 171.854 453.638 153.927 445.811C144.747 441.803 138.988 424.96 138.988 424.96Z"
       fill="url(#des-email7_linear_540_1283)"
     />
-    <circle r="66" transform="matrix(-1 0 0 1 350.079 234)" fill="white" />
-    <circle r="45" transform="matrix(-1 0 0 1 367 233)" fill="#90D8FB" />
+    <circle
+      r="66"
+      transform="matrix(-1 0 0 1 350.079 234)"
+      fill="white"
+    />
+    <circle
+      r="45"
+      transform="matrix(-1 0 0 1 367 233)"
+      fill="#90D8FB"
+    />
     <circle
       r="45"
       transform="matrix(-1 0 0 1 367 233)"
@@ -188,8 +196,16 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle r="33.5" transform="matrix(-1 0 0 1 373.5 233.5)" fill="#465038" />
-    <circle r="8" transform="matrix(-1 0 0 1 356 207)" fill="white" />
+    <circle
+      r="33.5"
+      transform="matrix(-1 0 0 1 373.5 233.5)"
+      fill="#465038"
+    />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 356 207)"
+      fill="white"
+    />
     <path
       opacity="0.4"
       d="M164.88 155.681C164.88 155.681 210.904 139.123 205.458 129.69C199.039 118.572 161.448 151.744 161.448 151.744C161.448 151.744 114.866 167.169 121.285 178.287C127.443 188.953 164.88 155.681 164.88 155.681Z"
@@ -201,8 +217,16 @@
       d="M124 180C123.12 180.799 121.786 181.818 121 182.657L136.446 186.033C146.497 175.308 160.879 168.805 175.5 167.288C190.121 165.772 205.151 169.5 217 177C217 177 216.364 174.5 215 173C213.636 171.5 211 167.788 204 165.788C192.723 162.566 185.907 161.603 174.191 162.14C155.016 163.02 135.943 170.435 124.5 179.5L135 182L134.5 182.657L124 180Z"
       fill="#0184C3"
     />
-    <circle r="66" transform="matrix(-1 0 0 1 182.079 233)" fill="white" />
-    <circle r="45" transform="matrix(-1 0 0 1 200 233)" fill="#90D8FB" />
+    <circle
+      r="66"
+      transform="matrix(-1 0 0 1 182.079 233)"
+      fill="white"
+    />
+    <circle
+      r="45"
+      transform="matrix(-1 0 0 1 200 233)"
+      fill="#90D8FB"
+    />
     <circle
       r="45"
       transform="matrix(-1 0 0 1 200 233)"
@@ -214,8 +238,16 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle r="33.5" transform="matrix(-1 0 0 1 206.5 233.5)" fill="#465038" />
-    <circle r="8" transform="matrix(-1 0 0 1 188 207)" fill="white" />
+    <circle
+      r="33.5"
+      transform="matrix(-1 0 0 1 206.5 233.5)"
+      fill="#465038"
+    />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 188 207)"
+      fill="white"
+    />
     <path
       d="M411.722 183.869C400.857 172.276 380.771 164.373 358.53 163.352C346.815 162.815 339.998 163.778 328.722 167C321.722 169 316.585 173.5 315.222 175C313.858 176.5 314.499 178.5 314.499 178.5C326.348 171 342.601 166.984 357.222 168.5C371.842 170.016 386.225 176.52 396.276 187.245L411.722 183.869Z"
       fill="#0184C3"
@@ -580,7 +612,12 @@
       d="M1288.99 210.433L1280.3 223.264L1282.41 297.604L1291.81 309.553C1291.81 309.553 1328.91 361.565 1338.51 354.609C1353 344.109 1326.58 297.633 1326 259.609C1325.39 219.117 1338.51 180.109 1338.51 159.109C1338.51 138.109 1288.99 210.433 1288.99 210.433Z"
       fill="url(#des-email22_linear_540_1283)"
     />
-    <circle cx="1128" cy="282.109" r="168" fill="#009DE9" />
+    <circle
+      cx="1128"
+      cy="282.109"
+      r="168"
+      fill="#009DE9"
+    />
     <circle
       cx="1128"
       cy="282.109"
@@ -599,23 +636,80 @@
       d="M1221.44 407.738C1221.44 407.738 1217.76 406.093 1215.25 406.046C1207.92 405.909 1201.75 411.996 1201.97 419.328C1202.05 421.813 1203.73 425.447 1203.73 425.447L1210.76 449.925L1246.18 414.506L1221.44 407.738Z"
       fill="url(#des-email24_linear_540_1283)"
     />
-    <circle cx="1010" cy="234" r="66" fill="white" />
-    <circle cx="998" cy="244" r="45" fill="#3CADD0" />
-    <circle cx="998" cy="244" r="45" fill="url(#des-email25_radial_540_1283)" />
-    <circle cx="998" cy="244" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="990" cy="244" r="35" fill="#451408" />
-    <circle cx="1009" cy="218" r="8" fill="white" />
-    <circle cx="1178" cy="233" r="66" fill="white" />
-    <circle cx="1165" cy="244" r="45" fill="#3CADD0" />
+    <circle
+      cx="1010"
+      cy="234"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="998"
+      cy="244"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="998"
+      cy="244"
+      r="45"
+      fill="url(#des-email25_radial_540_1283)"
+    />
+    <circle
+      cx="998"
+      cy="244"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="990"
+      cy="244"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="1009"
+      cy="218"
+      r="8"
+      fill="white"
+    />
+    <circle
+      cx="1178"
+      cy="233"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="1165"
+      cy="244"
+      r="45"
+      fill="#3CADD0"
+    />
     <circle
       cx="1165"
       cy="244"
       r="45"
       fill="url(#des-email26_radial_540_1283)"
     />
-    <circle cx="1165" cy="244" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="1157" cy="244" r="35" fill="#451408" />
-    <circle cx="1177" cy="218" r="8" fill="white" />
+    <circle
+      cx="1165"
+      cy="244"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="1157"
+      cy="244"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="1177"
+      cy="218"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -671,8 +765,15 @@
         y2="11.4545"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          stop-color="#A3E1FF"
+          stop-opacity="0.71"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email1_linear_540_1283"
@@ -683,7 +784,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email2_linear_540_1283"
@@ -693,8 +798,15 @@
         y2="513.864"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          stop-color="#A3E1FF"
+          stop-opacity="0.71"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email3_linear_540_1283"
@@ -705,7 +817,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email4_linear_540_1283"
@@ -715,8 +831,15 @@
         y2="423.586"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email5_linear_540_1283"
@@ -727,7 +850,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-email6_radial_540_1283"
@@ -737,8 +864,14 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(106.5 88.8908) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="#43C1FF" />
+        <stop
+          offset="0.821385"
+          stop-color="#A3E1FF"
+        />
+        <stop
+          offset="1"
+          stop-color="#43C1FF"
+        />
       </radialGradient>
       <linearGradient
         id="des-email7_linear_540_1283"
@@ -748,8 +881,15 @@
         y2="433.226"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#3EBFFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-email8_radial_540_1283"
@@ -760,7 +900,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="des-email9_radial_540_1283"
@@ -771,7 +915,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="des-email10_linear_540_1283"
@@ -781,8 +929,15 @@
         y2="83.711"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email11_linear_540_1283"
@@ -793,7 +948,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#109CC8" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email12_linear_540_1283"
@@ -804,7 +963,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F8BDC5" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email13_linear_540_1283"
@@ -814,8 +977,15 @@
         y2="17.5909"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          stop-color="#A3E1FF"
+          stop-opacity="0.71"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email14_linear_540_1283"
@@ -826,7 +996,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email15_linear_540_1283"
@@ -836,8 +1010,15 @@
         y2="11.4545"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          stop-color="#A3E1FF"
+          stop-opacity="0.71"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email16_linear_540_1283"
@@ -848,7 +1029,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email17_linear_540_1283"
@@ -858,8 +1043,15 @@
         y2="29.8636"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          stop-color="#A3E1FF"
+          stop-opacity="0.71"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email18_linear_540_1283"
@@ -870,7 +1062,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email19_linear_540_1283"
@@ -880,8 +1076,15 @@
         y2="11.4545"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          stop-color="#A3E1FF"
+          stop-opacity="0.71"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email20_linear_540_1283"
@@ -892,7 +1095,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email21_linear_540_1283"
@@ -902,8 +1109,15 @@
         y2="434.161"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email22_linear_540_1283"
@@ -914,7 +1128,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-email23_radial_540_1283"
@@ -924,8 +1142,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(1066.5 203) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <linearGradient
         id="des-email24_linear_540_1283"
@@ -935,8 +1160,15 @@
         y2="438.946"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="des-email25_radial_540_1283"
@@ -947,7 +1179,11 @@
         gradientTransform="translate(998 244) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="des-email26_radial_540_1283"
@@ -958,7 +1194,11 @@
         gradientTransform="translate(1165 244) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="des-email27_linear_540_1283"
@@ -968,8 +1208,15 @@
         y2="83.711"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email28_linear_540_1283"
@@ -980,7 +1227,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F2D05C" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="des-email29_linear_540_1283"
@@ -991,7 +1242,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#056A9A" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>
