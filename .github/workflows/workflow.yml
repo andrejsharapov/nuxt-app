@@ -13,10 +13,10 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest]
-        node-version: [14.x]
+        node-version: [14.x, 16.x]
     steps:
       # step 1
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
 
       # step 2
       - name: Set up Node.js ${{ matrix.node-version }}
@@ -28,7 +28,7 @@ jobs:
       - name: Install deps & run lint
         run: |
           yarn install
-          yarn format:prettier
+          yarn prettier:format
           yarn lint:js
           yarn lint:style
 
