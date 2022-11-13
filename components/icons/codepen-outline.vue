@@ -11,9 +11,21 @@
     viewBox="0 0 24 24"
   >
     <defs>
-      <linearGradient id="gradientIcon" x1="0" x2="100%" y1="100%" y2="0">
-        <stop offset="5%" :stop-color="stopOne" />
-        <stop offset="95%" :stop-color="stopTwo" />
+      <linearGradient
+        id="gradientIcon"
+        x1="0"
+        x2="100%"
+        y1="100%"
+        y2="0"
+      >
+        <stop
+          offset="5%"
+          :stop-color="stopOne"
+        />
+        <stop
+          offset="95%"
+          :stop-color="stopTwo"
+        />
       </linearGradient>
     </defs>
     <path

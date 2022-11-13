@@ -74,8 +74,16 @@
         d="M122.64 363.738C122.64 363.738 126.321 362.093 128.825 362.046C136.159 361.909 142.329 367.996 142.107 375.328C142.032 377.813 140.349 381.447 140.349 381.447C140.349 381.447 140.541 399.088 133.318 405.925C119.112 419.372 84.3343 384.6 97.8993 370.506C104.846 363.289 122.64 363.738 122.64 363.738Z"
         fill="url(#loading3_linear)"
       />
-      <circle r="66" transform="matrix(-1 0 0 1 334.079 190)" fill="#FFFFFF" />
-      <circle r="45" transform="matrix(-1 0 0 1 351 189)" fill="#90D8FB" />
+      <circle
+        r="66"
+        transform="matrix(-1 0 0 1 334.079 190)"
+        fill="#FFFFFF"
+      />
+      <circle
+        r="45"
+        transform="matrix(-1 0 0 1 351 189)"
+        fill="#90D8FB"
+      />
       <circle
         r="45"
         transform="matrix(-1 0 0 1 351 189)"
@@ -92,7 +100,11 @@
         transform="matrix(-1 0 0 1 357.5 189.5)"
         fill="#465038"
       />
-      <circle r="8" transform="matrix(-1 0 0 1 340 163)" fill="#FFFFFF" />
+      <circle
+        r="8"
+        transform="matrix(-1 0 0 1 340 163)"
+        fill="#FFFFFF"
+      />
       <path
         opacity="0.4"
         d="M148.88 111.681C148.88 111.681 194.904 95.1232 189.458 85.6899C183.039 74.5723 145.448 107.744 145.448 107.744C145.448 107.744 98.8663 123.169 105.285 134.287C111.443 144.953 148.88 111.681 148.88 111.681Z"
@@ -105,8 +117,16 @@
         d="M108 136C107.12 136.799 105.786 137.818 105 138.657L120.446 142.033C130.497 131.308 144.879 124.805 159.5 123.288C174.121 121.772 189.151 125.5 201 133C201 133 200.364 130.5 199 129C197.636 127.5 195 123.788 188 121.788C176.723 118.566 169.907 117.603 158.191 118.14C139.016 119.02 119.943 126.435 108.5 135.5L119 138L118.5 138.657L108 136Z"
         fill="#0184C3"
       />
-      <circle r="66" transform="matrix(-1 0 0 1 166.079 189)" fill="#FFFFFF" />
-      <circle r="45" transform="matrix(-1 0 0 1 184 189)" fill="#90D8FB" />
+      <circle
+        r="66"
+        transform="matrix(-1 0 0 1 166.079 189)"
+        fill="#FFFFFF"
+      />
+      <circle
+        r="45"
+        transform="matrix(-1 0 0 1 184 189)"
+        fill="#90D8FB"
+      />
       <circle
         r="45"
         transform="matrix(-1 0 0 1 184 189)"
@@ -123,7 +143,11 @@
         transform="matrix(-1 0 0 1 190.5 189.5)"
         fill="#465038"
       />
-      <circle r="8" transform="matrix(-1 0 0 1 172 163)" fill="#FFFFFF" />
+      <circle
+        r="8"
+        transform="matrix(-1 0 0 1 172 163)"
+        fill="#FFFFFF"
+      />
       <path
         d="M395.722 139.868C384.858 128.276 364.772 120.373 342.531 119.352C330.815 118.815 323.999 119.778 312.722 123C305.722 125 300.586 129.5 299.222 131C297.859 132.5 298.5 134.5 298.5 134.5C310.349 127 326.602 122.984 341.222 124.5C355.843 126.016 370.225 132.52 380.277 143.245L395.722 139.868Z"
         fill="#0184C3"
@@ -256,8 +280,18 @@
         d="M1553.07 166.433L1544.38 179.264L1546.49 253.604L1555.89 265.553C1555.89 265.553 1592.99 317.565 1602.59 310.609C1617.08 300.109 1590.65 253.633 1590.08 215.609C1589.47 175.117 1602.59 136.109 1602.59 115.109C1602.59 94.1091 1553.07 166.433 1553.07 166.433Z"
         fill="url(#loading12_linear)"
       />
-      <circle cx="1392.08" cy="238.109" r="168" fill="#009DE9" />
-      <circle cx="1392.08" cy="238.109" r="168" fill="url(#loading13_radial)" />
+      <circle
+        cx="1392.08"
+        cy="238.109"
+        r="168"
+        fill="#009DE9"
+      />
+      <circle
+        cx="1392.08"
+        cy="238.109"
+        r="168"
+        fill="url(#loading13_radial)"
+      />
       <path
         d="M1352.17 408.527C1340.15 408.527 1332.12 414.408 1327.08 418.097C1326.29 418.679 1325.57 419.205 1324.92 419.646C1323.68 420.488 1322.85 420.908 1322.29 420.98C1322.05 421.01 1321.92 420.97 1321.82 420.91C1321.71 420.841 1321.53 420.679 1321.34 420.291C1320.94 419.482 1320.6 418.015 1320.39 415.565C1320.17 413.149 1320.08 409.895 1320.08 405.6C1320.08 400.538 1320.19 396.68 1320.43 393.795C1320.67 390.882 1321.04 389.065 1321.51 388.016C1321.73 387.502 1321.95 387.251 1322.11 387.132C1322.25 387.032 1322.39 386.986 1322.61 387.004C1322.86 387.024 1323.2 387.128 1323.67 387.372C1324.14 387.612 1324.67 387.959 1325.28 388.405C1326.05 388.968 1326.91 389.671 1327.87 390.454C1332.98 394.604 1340.87 401.027 1352.17 401.027C1358.91 401.027 1364.6 398.759 1369.32 396.06C1371.67 394.711 1373.79 393.249 1375.67 391.906C1376.13 391.578 1376.57 391.26 1376.99 390.952C1378.34 389.985 1379.53 389.126 1380.61 388.444C1382.05 387.528 1383.12 387.056 1383.9 387.005C1384.26 386.981 1384.53 387.047 1384.77 387.188C1385.02 387.335 1385.29 387.606 1385.58 388.104C1386.16 389.133 1386.64 390.925 1386.97 393.825C1387.3 396.696 1387.46 400.544 1387.46 405.6C1387.46 410.453 1387.31 414.121 1387.01 416.836C1386.71 419.584 1386.26 421.227 1385.73 422.13C1385.48 422.561 1385.24 422.767 1385.04 422.869C1384.84 422.966 1384.6 423.011 1384.26 422.96C1383.49 422.847 1382.45 422.309 1381.02 421.335C1380.15 420.736 1379.17 420.003 1378.09 419.195C1372.4 414.922 1363.88 408.527 1352.17 408.527Z"
         fill="#F2D05C"
@@ -293,9 +327,24 @@
         d="M1485.52 363.738C1485.52 363.738 1481.84 362.093 1479.33 362.046C1472 361.909 1465.83 367.996 1466.05 375.328C1466.13 377.813 1467.81 381.447 1467.81 381.447L1474.84 405.925L1510.26 370.506L1485.52 363.738Z"
         fill="url(#loading15_linear)"
       />
-      <circle cx="1274.08" cy="190" r="66" fill="#FFFFFF" />
-      <circle cx="1262.08" cy="200" r="45" fill="#3CADD0" />
-      <circle cx="1262.08" cy="200" r="45" fill="url(#loading16_radial)" />
+      <circle
+        cx="1274.08"
+        cy="190"
+        r="66"
+        fill="#FFFFFF"
+      />
+      <circle
+        cx="1262.08"
+        cy="200"
+        r="45"
+        fill="#3CADD0"
+      />
+      <circle
+        cx="1262.08"
+        cy="200"
+        r="45"
+        fill="url(#loading16_radial)"
+      />
       <circle
         cx="1262.08"
         cy="200"
@@ -303,11 +352,36 @@
         stroke="#451408"
         stroke-opacity="0.3"
       />
-      <circle cx="1255.08" cy="205" r="35" fill="#451408" />
-      <circle cx="1273.08" cy="174" r="8" fill="#FFFFFF" />
-      <circle cx="1442.08" cy="189" r="66" fill="#FFFFFF" />
-      <circle cx="1429.08" cy="200" r="45" fill="#3CADD0" />
-      <circle cx="1429.08" cy="200" r="45" fill="url(#loading17_radial)" />
+      <circle
+        cx="1255.08"
+        cy="205"
+        r="35"
+        fill="#451408"
+      />
+      <circle
+        cx="1273.08"
+        cy="174"
+        r="8"
+        fill="#FFFFFF"
+      />
+      <circle
+        cx="1442.08"
+        cy="189"
+        r="66"
+        fill="#FFFFFF"
+      />
+      <circle
+        cx="1429.08"
+        cy="200"
+        r="45"
+        fill="#3CADD0"
+      />
+      <circle
+        cx="1429.08"
+        cy="200"
+        r="45"
+        fill="url(#loading17_radial)"
+      />
       <circle
         cx="1429.08"
         cy="200"
@@ -315,8 +389,18 @@
         stroke="#451408"
         stroke-opacity="0.3"
       />
-      <circle cx="1422.08" cy="205" r="35" fill="#451408" />
-      <circle cx="1441.08" cy="174" r="8" fill="#FFFFFF" />
+      <circle
+        cx="1422.08"
+        cy="205"
+        r="35"
+        fill="#451408"
+      />
+      <circle
+        cx="1441.08"
+        cy="174"
+        r="8"
+        fill="#FFFFFF"
+      />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -343,7 +427,13 @@
         stroke-width="2"
       />
       <g opacity="0.4">
-        <ellipse cx="1408.08" cy="491.5" rx="200" ry="29.5" fill="#C4C4C4" />
+        <ellipse
+          cx="1408.08"
+          cy="491.5"
+          rx="200"
+          ry="29.5"
+          fill="#C4C4C4"
+        />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -364,8 +454,15 @@
           y2="390.161"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#34BCFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#34BCFF"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading1_linear"
@@ -376,7 +473,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#3EBFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="loading2_radial"
@@ -386,8 +487,14 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(-106.5 -88.8908) rotate(63.0478) scale(304.756)"
         >
-          <stop offset="0.821385" stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="#43C1FF" />
+          <stop
+            offset="0.821385"
+            stop-color="#A3E1FF"
+          />
+          <stop
+            offset="1"
+            stop-color="#43C1FF"
+          />
         </radialGradient>
         <linearGradient
           id="loading3_linear"
@@ -397,8 +504,15 @@
           y2="394.946"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#3EBFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#3EBFFF"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="loading4_radial"
@@ -409,7 +523,11 @@
           gradientTransform="translate(45 45) rotate(90) scale(45)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="loading5_radial"
@@ -420,7 +538,11 @@
           gradientTransform="translate(45 45) rotate(90) scale(45)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="loading6_linear"
@@ -430,8 +552,15 @@
           y2="39.7111"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#34BCFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#34BCFF"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading7_linear"
@@ -442,7 +571,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#109CC8" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading8_linear"
@@ -453,7 +586,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F8BDC5" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading9_linear"
@@ -463,8 +600,15 @@
           y2="54"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#A3E1FF"
+            stop-opacity="0.71"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading10_linear"
@@ -475,7 +619,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.8" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0.8"
+          />
         </linearGradient>
         <linearGradient
           id="loading11_linear"
@@ -485,8 +633,15 @@
           y2="390.161"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading12_linear"
@@ -497,7 +652,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="loading13_radial"
@@ -507,8 +666,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(1330.58 159) rotate(63.0478) scale(264.756)"
         >
-          <stop offset="0.821385" stop-color="#009DE9" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#009DE9"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <linearGradient
           id="loading14_linear"
@@ -519,7 +685,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F2D05C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading15_linear"
@@ -529,8 +699,15 @@
           y2="394.946"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="loading16_radial"
@@ -541,7 +718,11 @@
           gradientTransform="translate(1262.08 200) rotate(90) scale(45)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="loading17_radial"
@@ -552,7 +733,11 @@
           gradientTransform="translate(1429.08 200) rotate(90) scale(45)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="loading18_linear"
@@ -562,8 +747,15 @@
           y2="39.7111"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="loading19_linear"
@@ -574,7 +766,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#056A9A" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
       </defs>
     </svg>

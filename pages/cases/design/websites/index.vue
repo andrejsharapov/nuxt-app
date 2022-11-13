@@ -26,15 +26,25 @@
     <v-container>
       <v-row>
         <!-- SECTION IMG + MESSAGE -->
-        <v-col cols="12" md="5" class="pr-lg-6">
-          <v-row no-gutters class="flex-column">
+        <v-col
+          cols="12"
+          md="5"
+          class="pr-lg-6"
+        >
+          <v-row
+            no-gutters
+            class="flex-column"
+          >
             <v-col
               cols="12"
               class="d-none d-sm-block mt-sm-n15 text-center"
               style="z-index: 2"
             >
               <div class="mt-sm-n12">
-                <s-fish-pages-des-site :width="350" :height="null" />
+                <s-fish-pages-des-site
+                  :width="350"
+                  :height="null"
+                />
               </div>
             </v-col>
             <v-col cols="12">
@@ -45,8 +55,14 @@
         <!-- /SECTION -->
 
         <!-- COMPONENT CHART-->
-        <v-col cols="12" md="7">
-          <v-card v-box-shadow="18" class="mt-lg-n16 mb-4 pa-4">
+        <v-col
+          cols="12"
+          md="7"
+        >
+          <v-card
+            v-box-shadow="18"
+            class="mt-lg-n16 mb-4 pa-4"
+          >
             <v-lazy
               :options="{
                 threshold: 0.5,
@@ -70,7 +86,10 @@
           <h3 class="mb-4 font-weight-bold">
             {{ $tc('pages.des-site.experience', 1) }}
           </h3>
-          <v-card-text v-for="item in desExpList" :key="item.title">
+          <v-card-text
+            v-for="item in desExpList"
+            :key="item.title"
+          >
             <s-pages-cases-design-websites-experience :item="item" />
           </v-card-text>
         </v-col>
@@ -86,7 +105,10 @@
           <p>{{ $tc('pages.des-site.message', 2) }}</p>
           <!-- /COMPONENT -->
 
-          <div v-if="localeItems.length" class="d-flex">
+          <div
+            v-if="localeItems.length"
+            class="d-flex"
+          >
             <v-spacer />
             <v-btn-toggle
               v-if="$vuetify.breakpoint.mdAndUp"
@@ -98,7 +120,10 @@
               <v-btn :ripple="false">
                 <v-icon>{{ mdiViewGrid }}</v-icon>
               </v-btn>
-              <v-btn v-if="$vuetify.breakpoint.mdAndUp" :ripple="false">
+              <v-btn
+                v-if="$vuetify.breakpoint.mdAndUp"
+                :ripple="false"
+              >
                 <v-icon>{{ mdiViewDay }}</v-icon>
               </v-btn>
             </v-btn-toggle>

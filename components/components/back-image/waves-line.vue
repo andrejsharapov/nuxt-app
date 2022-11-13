@@ -87,8 +87,15 @@
           y2="299.153"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#9773FF" stop-opacity="0.1" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#9773FF"
+            stop-opacity="0.1"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line1_linear"
@@ -98,8 +105,15 @@
           y2="377773"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7673FF" stop-opacity="0.1" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7673FF"
+            stop-opacity="0.1"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line2_linear"
@@ -109,9 +123,20 @@
           y2="294.887"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.11" stop-color="white" stop-opacity="0" />
-          <stop offset="0.33" stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.11"
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.33"
+            stop-color="white"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line3_linear"
@@ -121,8 +146,15 @@
           y2="341566"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C173FF" stop-opacity="0.1" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#C173FF"
+            stop-opacity="0.1"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line4_linear"
@@ -132,8 +164,15 @@
           y2="196724"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7673FF" stop-opacity="0.1" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7673FF"
+            stop-opacity="0.1"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line5_linear"
@@ -143,8 +182,15 @@
           y2="143.093"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7E73FF" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7E73FF"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line6_linear"
@@ -154,8 +200,15 @@
           y2="755868"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C86EFF" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#C86EFF"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line7_linear"
@@ -165,8 +218,15 @@
           y2="377941"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7379FF" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7379FF"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line8_linear"
@@ -176,8 +236,15 @@
           y2="-1.39633e+09"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7673FF" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7673FF"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line9_linear"
@@ -187,8 +254,15 @@
           y2="-1.39626e+09"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7976F5" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7976F5"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line10_linear"
@@ -198,11 +272,31 @@
           y2="238.726"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.17" stop-color="white" stop-opacity="0" />
-          <stop offset="0.29" stop-color="white" stop-opacity="0.08" />
-          <stop offset="0.54" stop-color="white" stop-opacity="0.29" />
-          <stop offset="0.77" stop-color="white" stop-opacity="0.5" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.17"
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.29"
+            stop-color="white"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="0.54"
+            stop-color="white"
+            stop-opacity="0.29"
+          />
+          <stop
+            offset="0.77"
+            stop-color="white"
+            stop-opacity="0.5"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line11_linear"
@@ -212,12 +306,35 @@
           y2="280.057"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.12" stop-color="white" stop-opacity="0.08" />
-          <stop offset="0.36" stop-color="white" stop-opacity="0.29" />
-          <stop offset="0.7" stop-color="white" stop-opacity="0.62" />
-          <stop offset="0.77" stop-color="white" stop-opacity="0.7" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.12"
+            stop-color="white"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="0.36"
+            stop-color="white"
+            stop-opacity="0.29"
+          />
+          <stop
+            offset="0.7"
+            stop-color="white"
+            stop-opacity="0.62"
+          />
+          <stop
+            offset="0.77"
+            stop-color="white"
+            stop-opacity="0.7"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line12_linear"
@@ -227,9 +344,20 @@
           y2="335.426"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.15" stop-color="white" stop-opacity="0" />
-          <stop offset="0.45" stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.15"
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.45"
+            stop-color="white"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="waves-line13_linear"
@@ -239,11 +367,22 @@
           y2="62.0329"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7E73FF" stop-opacity="0.08" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#7E73FF"
+            stop-opacity="0.08"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <clipPath id="clip0">
-          <rect width="1200" height="402" fill="white" />
+          <rect
+            width="1200"
+            height="402"
+            fill="white"
+          />
         </clipPath>
       </defs>
     </svg>

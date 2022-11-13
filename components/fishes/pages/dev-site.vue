@@ -61,8 +61,18 @@
       d="M1250.34 195.464L1241.64 208.295L1243.75 282.635L1253.15 294.584C1253.15 294.584 1290.26 346.596 1299.85 339.64C1314.34 329.14 1287.92 282.664 1287.34 244.64C1286.73 204.148 1299.85 165.14 1299.85 144.14C1299.85 123.14 1250.34 195.464 1250.34 195.464Z"
       fill="url(#dev-site2_linear)"
     />
-    <circle cx="1089.34" cy="267.14" r="168" fill="#009DE9" />
-    <circle cx="1089.34" cy="267.14" r="168" fill="url(#dev-site3_radial)" />
+    <circle
+      cx="1089.34"
+      cy="267.14"
+      r="168"
+      fill="#009DE9"
+    />
+    <circle
+      cx="1089.34"
+      cy="267.14"
+      r="168"
+      fill="url(#dev-site3_radial)"
+    />
     <path
       d="M1119.27 327.226C1119.27 327.226 1117.98 322.168 1116.67 320.224C1115.19 318.047 1112.21 317.762 1112.21 317.762"
       stroke="#0184C3"
@@ -189,8 +199,18 @@
       d="M56.3466 215.712L65.0436 228.543L62.9329 302.883L53.5323 314.832C53.5323 314.832 16.4265 366.844 6.82866 359.888C-7.65999 349.388 18.7647 302.912 19.34 264.888C19.9526 224.396 6.82867 185.388 6.82867 164.388C6.82867 143.388 56.3466 215.712 56.3466 215.712Z"
       fill="url(#dev-site8_linear)"
     />
-    <circle cx="217.078" cy="286.907" r="168" fill="#A3E1FF" />
-    <circle cx="217.078" cy="286.907" r="168" fill="url(#dev-site9_radial)" />
+    <circle
+      cx="217.078"
+      cy="286.907"
+      r="168"
+      fill="#A3E1FF"
+    />
+    <circle
+      cx="217.078"
+      cy="286.907"
+      r="168"
+      fill="url(#dev-site9_radial)"
+    />
     <path
       opacity="0.4"
       d="M150.967 162.93C150.967 162.93 196.99 146.372 191.544 136.938C185.125 125.821 147.534 158.993 147.534 158.993C147.534 158.993 100.953 174.418 107.371 185.535C113.53 196.202 150.967 162.93 150.967 162.93Z"
@@ -220,9 +240,24 @@
       transform="matrix(-0.866025 0.5 0.5 0.866025 138.591 112.248)"
       fill="#FFAFAF"
     />
-    <circle cx="165.157" cy="238.798" r="66" fill="white" />
-    <circle cx="184.078" cy="237.798" r="45" fill="#90D8FB" />
-    <circle cx="184.078" cy="237.798" r="45" fill="url(#dev-site11_radial)" />
+    <circle
+      cx="165.157"
+      cy="238.798"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="184.078"
+      cy="237.798"
+      r="45"
+      fill="#90D8FB"
+    />
+    <circle
+      cx="184.078"
+      cy="237.798"
+      r="45"
+      fill="url(#dev-site11_radial)"
+    />
     <circle
       cx="184.078"
       cy="237.798"
@@ -230,17 +265,42 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="191.87" cy="238.298" r="33.5" fill="#465038" />
-    <circle cx="175.078" cy="211.798" r="8" fill="white" />
+    <circle
+      cx="191.87"
+      cy="238.298"
+      r="33.5"
+      fill="#465038"
+    />
+    <circle
+      cx="175.078"
+      cy="211.798"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
       d="M394.448 184.798C395.328 185.597 396.662 186.616 397.448 187.455L382.003 190.832C371.951 180.106 357.569 173.603 342.948 172.087C328.328 170.57 313.297 174.298 301.448 181.798C301.448 181.798 302.085 179.298 303.448 177.798C304.812 176.298 307.448 172.587 314.448 170.587C325.725 167.365 332.541 166.401 344.257 166.939C363.432 167.818 382.505 175.233 393.948 184.298L383.448 186.798L383.948 187.455L394.448 184.798Z"
       fill="#0184C3"
     />
-    <circle cx="328.527" cy="237.798" r="66" fill="white" />
-    <circle cx="346.448" cy="237.798" r="45" fill="#90D8FB" />
-    <circle cx="346.448" cy="237.798" r="45" fill="url(#dev-site12_radial)" />
+    <circle
+      cx="328.527"
+      cy="237.798"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="346.448"
+      cy="237.798"
+      r="45"
+      fill="#90D8FB"
+    />
+    <circle
+      cx="346.448"
+      cy="237.798"
+      r="45"
+      fill="url(#dev-site12_radial)"
+    />
     <circle
       cx="346.448"
       cy="237.798"
@@ -248,8 +308,18 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="354.24" cy="238.298" r="33.5" fill="#465038" />
-    <circle cx="338.448" cy="211.798" r="8" fill="white" />
+    <circle
+      cx="354.24"
+      cy="238.298"
+      r="33.5"
+      fill="#465038"
+    />
+    <circle
+      cx="338.448"
+      cy="211.798"
+      r="8"
+      fill="white"
+    />
     <path
       d="M106.745 188.667C117.609 177.074 137.695 169.171 159.936 168.151C171.652 167.613 178.468 168.577 189.745 171.798C196.745 173.798 201.881 178.298 203.245 179.798C204.608 181.298 203.967 183.298 203.967 183.298C192.118 175.798 175.865 171.782 161.245 173.298C146.624 174.815 132.242 181.318 122.19 192.044L106.745 188.667Z"
       fill="#0184C3"
@@ -300,7 +370,10 @@
         fill="#AEDDFF"
       />
     </g>
-    <path d="M596.67 487.151H713.513V604.16H596.67V487.151Z" fill="#50A383" />
+    <path
+      d="M596.67 487.151H713.513V604.16H596.67V487.151Z"
+      fill="#50A383"
+    />
     <path
       d="M554.453 446.631L596.675 487.094L596.675 604.16L554.453 562.649L554.453 446.631Z"
       fill="#57B793"
@@ -309,7 +382,10 @@
       d="M554.449 446.635L668.964 446.635L713.5 487.153L596.708 487.185L554.449 446.635Z"
       fill="#5ACAA0"
     />
-    <path d="M474.67 488.118H591.513V605.128H474.67V488.118Z" fill="#F07B0C" />
+    <path
+      d="M474.67 488.118H591.513V605.128H474.67V488.118Z"
+      fill="#F07B0C"
+    />
     <path
       d="M432.453 447.598L474.675 488.061L474.675 605.128L432.453 563.616L432.453 447.598Z"
       fill="#EA770A"
@@ -318,7 +394,10 @@
       d="M432.449 447.603L546.964 447.603L591.5 488.121L474.708 488.152L432.449 447.603Z"
       fill="#FF7C00"
     />
-    <path d="M718.67 488.118H835.513V605.128H718.67V488.118Z" fill="#F3D56D" />
+    <path
+      d="M718.67 488.118H835.513V605.128H718.67V488.118Z"
+      fill="#F3D56D"
+    />
     <path
       d="M676.453 447.598L718.675 488.061L718.675 605.128L676.453 563.616L676.453 447.598Z"
       fill="#EAC549"
@@ -473,8 +552,14 @@
         y2="464.487"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" stop-opacity="0" />
-        <stop offset="0.895833" stop-color="#52B18E" />
+        <stop
+          stop-color="white"
+          stop-opacity="0"
+        />
+        <stop
+          offset="0.895833"
+          stop-color="#52B18E"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site1_linear"
@@ -484,8 +569,15 @@
         y2="433.205"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site2_linear"
@@ -496,7 +588,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="dev-site3_radial"
@@ -506,8 +602,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(1027.84 188.031) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <linearGradient
         id="dev-site4_linear"
@@ -517,8 +620,15 @@
         y2="68.742"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site5_linear"
@@ -528,8 +638,15 @@
         y2="434.403"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site6_linear"
@@ -539,8 +656,15 @@
         y2="422.404"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site7_linear"
@@ -550,8 +674,15 @@
         y2="446.812"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site8_linear"
@@ -562,7 +693,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="dev-site9_radial"
@@ -572,8 +707,14 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(272.071 225.349) rotate(146.783) scale(261.237)"
       >
-        <stop offset="0.809098" stop-color="#A3E1FF" />
-        <stop offset="1" stop-color="#43C1FF" />
+        <stop
+          offset="0.809098"
+          stop-color="#A3E1FF"
+        />
+        <stop
+          offset="1"
+          stop-color="#43C1FF"
+        />
       </radialGradient>
       <linearGradient
         id="dev-site10_linear"
@@ -584,7 +725,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F8BDC5" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="dev-site11_radial"
@@ -595,7 +740,11 @@
         gradientTransform="translate(184.078 237.798) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="dev-site12_radial"
@@ -606,7 +755,11 @@
         gradientTransform="translate(346.448 237.798) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="dev-site13_linear"
@@ -616,8 +769,15 @@
         y2="88.5094"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#34BCFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#34BCFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="dev-site14_linear"
@@ -627,8 +787,15 @@
         y2="450.765"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#3EBFFF" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#3EBFFF"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <clipPath id="clip0">
         <rect

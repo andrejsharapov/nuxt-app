@@ -59,8 +59,18 @@
       d="M344.993 255.433L336.296 268.264L338.407 342.604L347.808 354.553C347.808 354.553 384.914 406.565 394.511 399.609C409 389.109 382.575 342.633 382 304.609C381.387 264.117 394.511 225.109 394.511 204.109C394.511 183.109 344.993 255.433 344.993 255.433Z"
       fill="url(#fish-projects1_linear)"
     />
-    <circle cx="184" cy="327.109" r="168" fill="#009DE9" />
-    <circle cx="184" cy="327.109" r="168" fill="url(#fish-projects2_radial)" />
+    <circle
+      cx="184"
+      cy="327.109"
+      r="168"
+      fill="#009DE9"
+    />
+    <circle
+      cx="184"
+      cy="327.109"
+      r="168"
+      fill="url(#fish-projects2_radial)"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -73,18 +83,80 @@
       d="M277.44 452.738C277.44 452.738 273.758 451.093 271.254 451.046C263.92 450.909 257.75 456.996 257.972 464.328C258.048 466.813 259.73 470.447 259.73 470.447L266.761 494.925L302.18 459.506L277.44 452.738Z"
       fill="url(#fish-projects3_linear)"
     />
-    <circle cx="66" cy="279" r="66" fill="white" />
-    <circle cx="82" cy="292" r="45" fill="#3CADD0" />
-    <circle cx="82" cy="292" r="45" fill="url(#fish-projects4_radial)" />
-    <circle cx="82" cy="292" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="91" cy="296" r="35" fill="#451408" />
-    <circle cx="106" cy="265" r="8" fill="white" />
-    <circle cx="234" cy="278" r="66" fill="white" />
-    <circle cx="218" cy="291" r="45" fill="#3CADD0" />
-    <circle cx="218" cy="291" r="45" fill="url(#fish-projects5_radial)" />
-    <circle cx="218" cy="291" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="209" cy="296" r="35" fill="#451408" />
-    <circle cx="224" cy="265" r="8" fill="white" />
+    <circle
+      cx="66"
+      cy="279"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="82"
+      cy="292"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="82"
+      cy="292"
+      r="45"
+      fill="url(#fish-projects4_radial)"
+    />
+    <circle
+      cx="82"
+      cy="292"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="91"
+      cy="296"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="106"
+      cy="265"
+      r="8"
+      fill="white"
+    />
+    <circle
+      cx="234"
+      cy="278"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="218"
+      cy="291"
+      r="45"
+      fill="#3CADD0"
+    />
+    <circle
+      cx="218"
+      cy="291"
+      r="45"
+      fill="url(#fish-projects5_radial)"
+    />
+    <circle
+      cx="218"
+      cy="291"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="209"
+      cy="296"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="224"
+      cy="265"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -110,7 +182,14 @@
       stroke="#F2D05C"
       stroke-width="2"
     />
-    <rect x="135.377" y="487" width="16" height="13" rx="4" fill="#F4DA7E" />
+    <rect
+      x="135.377"
+      y="487"
+      width="16"
+      height="13"
+      rx="4"
+      fill="#F4DA7E"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -162,7 +241,10 @@
       fill="white"
     />
     <!-- ANCHOR group -->
-    <g class="bulb" :class="{ 'bulb-show': addSun }">
+    <g
+      class="bulb"
+      :class="{ 'bulb-show': addSun }"
+    >
       <path
         d="M289.359 49.6278C288.946 49.6282 288.547 49.4786 288.237 49.2068L273.582 36.4142C273.413 36.2669 273.274 36.0877 273.175 35.8869C273.075 35.6861 273.016 35.4676 273 35.2439C272.985 35.0202 273.014 34.7957 273.086 34.5831C273.157 34.3706 273.27 34.1743 273.417 34.0054C273.565 33.8365 273.744 33.6983 273.945 33.5987C274.146 33.4991 274.364 33.4401 274.588 33.425C274.812 33.4099 275.036 33.4391 275.249 33.5108C275.461 33.5826 275.657 33.6955 275.826 33.8431L290.482 46.6357C290.743 46.8642 290.929 47.1671 291.014 47.504C291.099 47.8408 291.079 48.1956 290.957 48.5209C290.835 48.8461 290.616 49.1264 290.331 49.3242C290.045 49.522 289.706 49.6279 289.359 49.6278H289.359Z"
         fill="#F2D05C"
@@ -213,8 +295,15 @@
         y2="479.161"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-projects1_linear"
@@ -225,7 +314,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-projects2_radial"
@@ -235,8 +328,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(122.5 248) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <linearGradient
         id="fish-projects3_linear"
@@ -246,8 +346,15 @@
         y2="483.946"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-projects4_radial"
@@ -258,7 +365,11 @@
         gradientTransform="translate(82 292) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="fish-projects5_radial"
@@ -269,7 +380,11 @@
         gradientTransform="translate(218 291) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="fish-projects6_linear"
@@ -279,8 +394,15 @@
         y2="128.711"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-projects7_linear"
@@ -291,7 +413,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F2D05C" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-projects8_radial"
@@ -301,9 +427,19 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(332.5 91.5) rotate(-52.035) scale(83.7153 209.879)"
       >
-        <stop offset="0.00520833" stop-color="#FFC500" />
-        <stop offset="0.271977" stop-color="#F3C62C" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.00520833"
+          stop-color="#FFC500"
+        />
+        <stop
+          offset="0.271977"
+          stop-color="#F3C62C"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
     </defs>
   </svg>

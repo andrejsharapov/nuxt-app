@@ -81,35 +81,92 @@
       d="M795.993 185.433L787.296 198.264L789.407 272.604L798.808 284.553C798.808 284.553 835.913 336.565 845.511 329.609C860 319.109 833.575 272.633 833 234.609C832.387 194.117 845.511 155.109 845.511 134.109C845.511 113.109 795.993 185.433 795.993 185.433Z"
       fill="url(#fish-pricing2_linear_505_761)"
     />
-    <circle cx="635" cy="257.109" r="168" fill="#009DE9" />
+    <circle
+      cx="635"
+      cy="257.109"
+      r="168"
+      fill="#009DE9"
+    />
     <circle
       cx="635"
       cy="257.109"
       r="168"
       fill="url(#fish-pricing3_radial_505_761)"
     />
-    <circle cx="517" cy="209" r="66" fill="white" />
-    <circle cx="507" cy="226" r="45" fill="#3CADD0" />
+    <circle
+      cx="517"
+      cy="209"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="507"
+      cy="226"
+      r="45"
+      fill="#3CADD0"
+    />
     <circle
       cx="507"
       cy="226"
       r="45"
       fill="url(#fish-pricing4_radial_505_761)"
     />
-    <circle cx="507" cy="226" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="500" cy="231" r="35" fill="#451408" />
-    <circle cx="516" cy="193" r="8" fill="white" />
-    <circle cx="685" cy="208" r="66" fill="white" />
-    <circle cx="674" cy="225" r="45" fill="#3CADD0" />
+    <circle
+      cx="507"
+      cy="226"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="500"
+      cy="231"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="516"
+      cy="193"
+      r="8"
+      fill="white"
+    />
+    <circle
+      cx="685"
+      cy="208"
+      r="66"
+      fill="white"
+    />
+    <circle
+      cx="674"
+      cy="225"
+      r="45"
+      fill="#3CADD0"
+    />
     <circle
       cx="674"
       cy="225"
       r="45"
       fill="url(#fish-pricing5_radial_505_761)"
     />
-    <circle cx="674" cy="225" r="44.5" stroke="#451408" stroke-opacity="0.3" />
-    <circle cx="667" cy="230" r="35" fill="#451408" />
-    <circle cx="684" cy="193" r="8" fill="white" />
+    <circle
+      cx="674"
+      cy="225"
+      r="44.5"
+      stroke="#451408"
+      stroke-opacity="0.3"
+    />
+    <circle
+      cx="667"
+      cy="230"
+      r="35"
+      fill="#451408"
+    />
+    <circle
+      cx="684"
+      cy="193"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -403,8 +460,14 @@
         y2="641.366"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="white" stop-opacity="0" />
-        <stop offset="0.895833" stop-color="#52B18E" />
+        <stop
+          stop-color="white"
+          stop-opacity="0"
+        />
+        <stop
+          offset="0.895833"
+          stop-color="#52B18E"
+        />
       </linearGradient>
       <linearGradient
         id="fish-pricing1_linear_505_761"
@@ -414,8 +477,15 @@
         y2="423.174"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-pricing2_linear_505_761"
@@ -426,7 +496,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-pricing3_radial_505_761"
@@ -436,8 +510,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(573.5 178) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <radialGradient
         id="fish-pricing4_radial_505_761"
@@ -448,7 +529,11 @@
         gradientTransform="translate(507 226) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="fish-pricing5_radial_505_761"
@@ -459,7 +544,11 @@
         gradientTransform="translate(674 225) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="fish-pricing6_linear_505_761"
@@ -469,8 +558,15 @@
         y2="58.711"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-pricing7_linear_505_761"
@@ -480,8 +576,15 @@
         y2="424.372"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

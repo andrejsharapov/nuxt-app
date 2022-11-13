@@ -130,7 +130,12 @@
           d="M386.489 64.6619L384.73 67.2571L385.157 82.2927L387.058 84.7095C387.058 84.7095 394.563 95.2291 396.504 93.8223C399.434 91.6986 394.09 82.2986 393.973 74.608C393.849 66.4183 396.504 58.5288 396.504 54.2814C396.504 50.034 386.489 64.6619 386.489 64.6619Z"
           fill="url(#paint2_linear)"
         />
-        <circle cx="353.927" cy="79.1588" r="33.9789" fill="#0D80B8" />
+        <circle
+          cx="353.927"
+          cy="79.1588"
+          r="33.9789"
+          fill="#0D80B8"
+        />
         <circle
           cx="353.927"
           cy="79.1588"
@@ -147,7 +152,12 @@
           d="M342.5 69.4284C342.5 76.5542 337.433 82.7773 330.06 82.7773C322.688 82.7773 316.711 76.8008 316.711 69.4284C316.711 62.0561 322.688 56.0796 330.06 56.0796C337.433 56.0796 342.5 62.3027 342.5 69.4284Z"
           fill="white"
         />
-        <circle cx="329.101" cy="71.1015" r="9.10148" fill="#3787B5" />
+        <circle
+          cx="329.101"
+          cy="71.1015"
+          r="9.10148"
+          fill="#3787B5"
+        />
         <circle
           cx="329.101"
           cy="71.1015"
@@ -162,13 +172,28 @@
           stroke-opacity="0.3"
           stroke-width="0.202255"
         />
-        <circle cx="326.189" cy="73.482" r="5.05638" fill="#451408" />
-        <circle cx="329.5" cy="70.5" r="1.5" fill="white" />
+        <circle
+          cx="326.189"
+          cy="73.482"
+          r="5.05638"
+          fill="#451408"
+        />
+        <circle
+          cx="329.5"
+          cy="70.5"
+          r="1.5"
+          fill="white"
+        />
         <path
           d="M377.388 69.4284C377.388 76.8008 371.412 82.7773 364.039 82.7773C356.667 82.7773 350.69 75.6674 350.69 69.4284C350.691 60.4284 356.667 56.0796 364.039 56.0796C371.412 56.0796 377.388 62.0561 377.388 69.4284Z"
           fill="white"
         />
-        <circle cx="363.08" cy="71.1015" r="9.10148" fill="#3787B5" />
+        <circle
+          cx="363.08"
+          cy="71.1015"
+          r="9.10148"
+          fill="#3787B5"
+        />
         <circle
           cx="363.08"
           cy="71.1015"
@@ -183,8 +208,18 @@
           stroke-opacity="0.3"
           stroke-width="0.202255"
         />
-        <circle cx="360.189" cy="73.482" r="5.05638" fill="#451408" />
-        <circle cx="363.848" cy="70.5" r="1.5" fill="white" />
+        <circle
+          cx="360.189"
+          cy="73.482"
+          r="5.05638"
+          fill="#451408"
+        />
+        <circle
+          cx="363.848"
+          cy="70.5"
+          r="1.5"
+          fill="white"
+        />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -619,8 +654,14 @@
           d="M750.22 57.5753C750.22 55.6007 748.619 54 746.644 54H452.575C450.601 54 449 55.6007 449 57.5753V231.425C449 233.399 450.601 235 452.575 235H746.644C748.619 235 750.22 233.399 750.22 231.425V57.5753Z"
           fill="#252525"
         />
-        <path d="M750.22 54H449V69.1951H750.22V54Z" fill="#464545" />
-        <path d="M750.22 69.1951H449V79.921H750.22V69.1951Z" fill="#3C3A3A" />
+        <path
+          d="M750.22 54H449V69.1951H750.22V54Z"
+          fill="#464545"
+        />
+        <path
+          d="M750.22 69.1951H449V79.921H750.22V69.1951Z"
+          fill="#3C3A3A"
+        />
         <rect
           x="449"
           y="69.1951"
@@ -628,7 +669,13 @@
           height="165.805"
           fill="#373636"
         />
-        <rect x="449" y="54" width="21.0049" height="181" fill="#464545" />
+        <rect
+          x="449"
+          y="54"
+          width="21.0049"
+          height="181"
+          fill="#464545"
+        />
         <g clip-path="url(#clip2)">
           <path
             fill-rule="evenodd"
@@ -764,7 +811,10 @@
           fill="#464545"
         />
       </g>
-      <path d="M750.22 197.459H449V197.012H750.22V197.459Z" fill="#464545" />
+      <path
+        d="M750.22 197.459H449V197.012H750.22V197.459Z"
+        fill="#464545"
+      />
       <path
         d="M533.467 204.163H470.005V204.61H533.467V204.163Z"
         fill="#464545"
@@ -785,7 +835,10 @@
         d="M533.467 143.83H470.005V144.277H533.467V143.83Z"
         fill="#464545"
       />
-      <path d="M750.22 197.459H449V197.012H750.22V197.459Z" fill="#464545" />
+      <path
+        d="M750.22 197.459H449V197.012H750.22V197.459Z"
+        fill="#464545"
+      />
       <line
         x1="541.288"
         y1="103.607"
@@ -1725,7 +1778,12 @@
           d="M147.831 82.6358L146.198 85.0454L146.594 99.0062L148.36 101.25C148.36 101.25 155.328 111.018 157.131 109.712C159.851 107.74 154.889 99.0117 154.781 91.8709C154.666 84.2667 157.131 76.9411 157.131 72.9974C157.131 69.0536 147.831 82.6358 147.831 82.6358Z"
           fill="url(#paint42_linear)"
         />
-        <circle cx="104.722" cy="93.0471" r="42.2849" fill="#009DE9" />
+        <circle
+          cx="104.722"
+          cy="93.0471"
+          r="42.2849"
+          fill="#009DE9"
+        />
         <circle
           cx="104.722"
           cy="93.0471"
@@ -1744,26 +1802,66 @@
           d="M135.146 123.051C135.146 123.051 134.076 122.573 133.349 122.559C131.217 122.52 129.424 124.289 129.489 126.419C129.511 127.142 129.999 128.198 129.999 128.198L132.043 135.311L142.336 125.018L135.146 123.051Z"
           fill="url(#paint44_linear)"
         />
-        <circle cx="68.4825" cy="82.4471" r="23.4825" fill="white" />
-        <circle cx="68.5923" cy="83.3638" r="19.8145" fill="#3CADD0" />
+        <circle
+          cx="68.4825"
+          cy="82.4471"
+          r="23.4825"
+          fill="white"
+        />
+        <circle
+          cx="68.5923"
+          cy="83.3638"
+          r="19.8145"
+          fill="#3CADD0"
+        />
         <circle
           cx="68.5923"
           cy="83.3638"
           r="19.8145"
           fill="url(#paint45_radial)"
         />
-        <circle cx="72.3181" cy="83.3114" r="14.8215" fill="#451408" />
-        <circle cx="83.0109" cy="79.3699" r="2.84636" fill="white" />
-        <circle cx="118.935" cy="82.0914" r="23.4825" fill="white" />
-        <circle cx="119.256" cy="83.3638" r="19.8145" fill="#3CADD0" />
+        <circle
+          cx="72.3181"
+          cy="83.3114"
+          r="14.8215"
+          fill="#451408"
+        />
+        <circle
+          cx="83.0109"
+          cy="79.3699"
+          r="2.84636"
+          fill="white"
+        />
+        <circle
+          cx="118.935"
+          cy="82.0914"
+          r="23.4825"
+          fill="white"
+        />
+        <circle
+          cx="119.256"
+          cy="83.3638"
+          r="19.8145"
+          fill="#3CADD0"
+        />
         <circle
           cx="119.256"
           cy="83.3638"
           r="19.8145"
           fill="url(#paint46_radial)"
         />
-        <circle cx="115.329" cy="83.3114" r="14.8215" fill="#451408" />
-        <circle cx="103.936" cy="79.3699" r="2.84636" fill="white" />
+        <circle
+          cx="115.329"
+          cy="83.3114"
+          r="14.8215"
+          fill="#451408"
+        />
+        <circle
+          cx="103.936"
+          cy="79.3699"
+          r="2.84636"
+          fill="white"
+        />
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -2336,7 +2434,12 @@
         d="M358.887 280.97L356.172 284.976L356.831 308.19L359.766 311.921C359.766 311.921 371.353 328.162 374.35 325.99C378.874 322.711 370.623 308.199 370.443 296.325C370.252 283.682 374.35 271.501 374.35 264.944C374.35 258.386 358.887 280.97 358.887 280.97Z"
         fill="url(#paint68_linear)"
       />
-      <circle cx="308.616" cy="303.351" r="52.4592" fill="#009DE9" />
+      <circle
+        cx="308.616"
+        cy="303.351"
+        r="52.4592"
+        fill="#009DE9"
+      />
       <circle
         cx="308.616"
         cy="303.351"
@@ -2355,8 +2458,18 @@
         d="M337.794 342.58C337.794 342.58 336.644 342.066 335.862 342.051C333.572 342.009 331.645 343.909 331.715 346.199C331.738 346.975 332.264 348.11 332.264 348.11L334.459 355.753L345.519 344.693L337.794 342.58Z"
         fill="url(#paint70_linear)"
       />
-      <circle cx="271.77" cy="288.329" r="20.609" fill="white" />
-      <circle cx="268.023" cy="291.452" r="14.0516" fill="#3CADD0" />
+      <circle
+        cx="271.77"
+        cy="288.329"
+        r="20.609"
+        fill="white"
+      />
+      <circle
+        cx="268.023"
+        cy="291.452"
+        r="14.0516"
+        fill="#3CADD0"
+      />
       <circle
         cx="268.023"
         cy="291.452"
@@ -2371,10 +2484,30 @@
         stroke-opacity="0.3"
         stroke-width="0.312257"
       />
-      <circle cx="265.837" cy="293.013" r="10.929" fill="#451408" />
-      <circle cx="271.458" cy="283.333" r="2.49806" fill="white" />
-      <circle cx="324.23" cy="288.017" r="20.609" fill="white" />
-      <circle cx="320.17" cy="291.451" r="14.0516" fill="#3CADD0" />
+      <circle
+        cx="265.837"
+        cy="293.013"
+        r="10.929"
+        fill="#451408"
+      />
+      <circle
+        cx="271.458"
+        cy="283.333"
+        r="2.49806"
+        fill="white"
+      />
+      <circle
+        cx="324.23"
+        cy="288.017"
+        r="20.609"
+        fill="white"
+      />
+      <circle
+        cx="320.17"
+        cy="291.451"
+        r="14.0516"
+        fill="#3CADD0"
+      />
       <circle
         cx="320.17"
         cy="291.451"
@@ -2389,8 +2522,18 @@
         stroke-opacity="0.3"
         stroke-width="0.312257"
       />
-      <circle cx="317.984" cy="293.013" r="10.929" fill="#451408" />
-      <circle cx="323.917" cy="283.333" r="2.49806" fill="white" />
+      <circle
+        cx="317.984"
+        cy="293.013"
+        r="10.929"
+        fill="#451408"
+      />
+      <circle
+        cx="323.917"
+        cy="283.333"
+        r="2.49806"
+        fill="white"
+      />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -2526,8 +2669,18 @@
         d="M988.712 361.433L980.015 374.264L982.126 448.604L991.526 460.553C991.526 460.553 1028.63 512.565 1038.23 505.609C1052.72 495.109 1026.29 448.633 1025.72 410.609C1025.11 370.117 1038.23 331.109 1038.23 310.109C1038.23 289.109 988.712 361.433 988.712 361.433Z"
         fill="url(#paint79_linear)"
       />
-      <circle cx="827.719" cy="433.109" r="168" fill="#009DE9" />
-      <circle cx="827.719" cy="433.109" r="168" fill="url(#paint80_radial)" />
+      <circle
+        cx="827.719"
+        cy="433.109"
+        r="168"
+        fill="#009DE9"
+      />
+      <circle
+        cx="827.719"
+        cy="433.109"
+        r="168"
+        fill="url(#paint80_radial)"
+      />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -2540,9 +2693,24 @@
         d="M921.158 558.738C921.158 558.738 917.477 557.093 914.973 557.046C907.639 556.909 901.469 562.996 901.691 570.328C901.766 572.813 903.449 576.447 903.449 576.447L910.48 600.925L945.899 565.506L921.158 558.738Z"
         fill="url(#paint81_linear)"
       />
-      <circle cx="709.719" cy="385" r="66" fill="white" />
-      <circle cx="692" cy="376" r="45" fill="#3CADD0" />
-      <circle cx="692" cy="376" r="45" fill="url(#paint82_radial)" />
+      <circle
+        cx="709.719"
+        cy="385"
+        r="66"
+        fill="white"
+      />
+      <circle
+        cx="692"
+        cy="376"
+        r="45"
+        fill="#3CADD0"
+      />
+      <circle
+        cx="692"
+        cy="376"
+        r="45"
+        fill="url(#paint82_radial)"
+      />
       <circle
         cx="692"
         cy="376"
@@ -2550,11 +2718,36 @@
         stroke="#451408"
         stroke-opacity="0.3"
       />
-      <circle cx="685" cy="372" r="35" fill="#451408" />
-      <circle cx="663" cy="350" r="8" fill="white" />
-      <circle cx="877.719" cy="384" r="66" fill="white" />
-      <circle cx="859" cy="376" r="45" fill="#3CADD0" />
-      <circle cx="859" cy="376" r="45" fill="url(#paint83_radial)" />
+      <circle
+        cx="685"
+        cy="372"
+        r="35"
+        fill="#451408"
+      />
+      <circle
+        cx="663"
+        cy="350"
+        r="8"
+        fill="white"
+      />
+      <circle
+        cx="877.719"
+        cy="384"
+        r="66"
+        fill="white"
+      />
+      <circle
+        cx="859"
+        cy="376"
+        r="45"
+        fill="#3CADD0"
+      />
+      <circle
+        cx="859"
+        cy="376"
+        r="45"
+        fill="url(#paint83_radial)"
+      />
       <circle
         cx="859"
         cy="376"
@@ -2562,8 +2755,18 @@
         stroke="#451408"
         stroke-opacity="0.3"
       />
-      <circle cx="852" cy="372" r="35" fill="#451408" />
-      <circle cx="831" cy="350" r="8" fill="white" />
+      <circle
+        cx="852"
+        cy="372"
+        r="35"
+        fill="#451408"
+      />
+      <circle
+        cx="831"
+        cy="350"
+        r="8"
+        fill="white"
+      />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -2624,8 +2827,14 @@
           y2="128.749"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -2635,8 +2844,15 @@
           y2="109.912"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0533A9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0533A9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint2_linear"
@@ -2647,7 +2863,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint3_radial"
@@ -2657,8 +2877,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(341.488 63.1586) rotate(63.0478) scale(53.5484)"
         >
-          <stop offset="0.821385" stop-color="#0C9CE1" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#0C9CE1"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <radialGradient
           id="paint4_radial"
@@ -2669,7 +2896,11 @@
           gradientTransform="translate(329.101 71.1015) rotate(90) scale(9.10148)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint5_radial"
@@ -2680,7 +2911,11 @@
           gradientTransform="translate(363.08 71.1015) rotate(90) scale(9.10148)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint6_linear"
@@ -2690,8 +2925,15 @@
           y2="39.0318"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0533A9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0533A9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint7_linear"
@@ -2702,7 +2944,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F2D05C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint8_linear"
@@ -2712,8 +2958,15 @@
           y2="108.639"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint9_linear"
@@ -2723,8 +2976,15 @@
           y2="7.0595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#A3E1FF"
+            stop-opacity="0.71"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint10_linear"
@@ -2735,7 +2995,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint11_linear"
@@ -2745,8 +3009,14 @@
           y2="129.749"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint12_linear"
@@ -2756,8 +3026,15 @@
           y2="147.737"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint13_linear"
@@ -2768,7 +3045,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint14_radial"
@@ -2778,8 +3059,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(20.3898 17.0185) rotate(63.0478) scale(50.6886)"
         >
-          <stop offset="0.821385" stop-color="#009DE9" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#009DE9"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <linearGradient
           id="paint15_linear"
@@ -2789,8 +3077,15 @@
           y2="148.653"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint16_radial"
@@ -2801,7 +3096,11 @@
           gradientTransform="translate(8.61541 8.61541) rotate(90) scale(8.61541)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint17_radial"
@@ -2812,7 +3111,11 @@
           gradientTransform="translate(8.61541 8.61541) rotate(90) scale(8.61541)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint18_linear"
@@ -2822,8 +3125,15 @@
           y2="80.642"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint19_linear"
@@ -2834,7 +3144,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F2D05C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint20_radial"
@@ -2844,9 +3158,19 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(234.804 73.518) rotate(-127.965) scale(16.0276 40.182)"
         >
-          <stop offset="0.00520833" stop-color="#FFC500" />
-          <stop offset="0.271977" stop-color="#F3C62C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.00520833"
+            stop-color="#FFC500"
+          />
+          <stop
+            offset="0.271977"
+            stop-color="#F3C62C"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint21_linear"
@@ -2856,8 +3180,14 @@
           y2="286.302"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint22_linear"
@@ -2867,8 +3197,14 @@
           y2="292.315"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint23_linear"
@@ -2878,8 +3214,15 @@
           y2="258.729"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint24_linear"
@@ -2890,7 +3233,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint25_radial"
@@ -2900,8 +3247,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(35.6653 29.7683) rotate(63.0478) scale(88.6632)"
         >
-          <stop offset="0.821385" stop-color="#009DE9" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#009DE9"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <linearGradient
           id="paint26_linear"
@@ -2911,8 +3265,15 @@
           y2="259.535"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint27_radial"
@@ -2923,7 +3284,11 @@
           gradientTransform="translate(15.0699 15.0699) rotate(90) scale(15.0699)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint28_radial"
@@ -2934,7 +3299,11 @@
           gradientTransform="translate(15.0699 15.0699) rotate(90) scale(15.0699)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint29_linear"
@@ -2944,8 +3313,15 @@
           y2="137.299"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint30_linear"
@@ -2955,8 +3331,15 @@
           y2="258.47"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.387" stop-color="#D1D3D4" stop-opacity="0" />
-          <stop offset="1" stop-color="#D1D3D4" />
+          <stop
+            offset="0.387"
+            stop-color="#D1D3D4"
+            stop-opacity="0"
+          />
+          <stop
+            offset="1"
+            stop-color="#D1D3D4"
+          />
         </linearGradient>
         <linearGradient
           id="paint31_linear"
@@ -2966,8 +3349,15 @@
           y2="251.281"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.387" stop-color="#D1D3D4" stop-opacity="0" />
-          <stop offset="1" stop-color="#D1D3D4" />
+          <stop
+            offset="0.387"
+            stop-color="#D1D3D4"
+            stop-opacity="0"
+          />
+          <stop
+            offset="1"
+            stop-color="#D1D3D4"
+          />
         </linearGradient>
         <linearGradient
           id="paint32_linear"
@@ -2978,7 +3368,10 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#E8E7E5" />
-          <stop offset="1" stop-color="white" />
+          <stop
+            offset="1"
+            stop-color="white"
+          />
         </linearGradient>
         <linearGradient
           id="paint33_linear"
@@ -2989,7 +3382,10 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#E8E7E5" />
-          <stop offset="1" stop-color="white" />
+          <stop
+            offset="1"
+            stop-color="white"
+          />
         </linearGradient>
         <radialGradient
           id="paint34_radial"
@@ -3000,9 +3396,18 @@
           gradientTransform="translate(691.73 297.188) rotate(-17.4569) scale(18.6368 7.58028)"
         >
           <stop stop-color="#AEB2D5" />
-          <stop offset="0.3" stop-color="#AEB2D5" />
-          <stop offset="0.75" stop-color="#484C89" />
-          <stop offset="1" stop-color="#484C89" />
+          <stop
+            offset="0.3"
+            stop-color="#AEB2D5"
+          />
+          <stop
+            offset="0.75"
+            stop-color="#484C89"
+          />
+          <stop
+            offset="1"
+            stop-color="#484C89"
+          />
         </radialGradient>
         <linearGradient
           id="paint35_linear"
@@ -3013,7 +3418,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#E8F8FF" />
-          <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="#C4C4C4"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint36_linear"
@@ -3024,7 +3433,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint37_linear"
@@ -3035,7 +3448,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#E8F8FF" />
-          <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="#C4C4C4"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint38_linear"
@@ -3046,7 +3463,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint39_linear"
@@ -3056,8 +3477,14 @@
           y2="134.548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint40_linear"
@@ -3067,8 +3494,14 @@
           y2="116.548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint41_linear"
@@ -3078,8 +3511,15 @@
           y2="133.603"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint42_linear"
@@ -3090,7 +3530,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint43_radial"
@@ -3100,8 +3544,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(89.2426 73.1357) rotate(63.0478) scale(66.6381)"
         >
-          <stop offset="0.821385" stop-color="#009DE9" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#009DE9"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <linearGradient
           id="paint44_linear"
@@ -3111,8 +3562,15 @@
           y2="132.121"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint45_radial"
@@ -3123,7 +3581,11 @@
           gradientTransform="translate(68.5923 83.3638) rotate(90) scale(19.8145)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint46_radial"
@@ -3134,7 +3596,11 @@
           gradientTransform="translate(119.256 83.3638) rotate(90) scale(19.8145)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint47_linear"
@@ -3144,8 +3610,15 @@
           y2="42.5407"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint48_linear"
@@ -3156,7 +3629,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F2D05C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint49_linear"
@@ -3166,8 +3643,14 @@
           y2="335.548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint50_linear"
@@ -3177,8 +3660,14 @@
           y2="330.548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint51_linear"
@@ -3188,8 +3677,14 @@
           y2="341.548"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0" />
-          <stop offset="0.895833" stop-color="#52B18E" />
+          <stop
+            stop-color="white"
+            stop-opacity="0"
+          />
+          <stop
+            offset="0.895833"
+            stop-color="#52B18E"
+          />
         </linearGradient>
         <linearGradient
           id="paint52_linear"
@@ -3199,8 +3694,15 @@
           y2="351.831"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#34BCFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#34BCFF"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint53_linear"
@@ -3211,7 +3713,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#3EBFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint54_radial"
@@ -3221,8 +3727,14 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(33.2554 27.7568) rotate(63.0478) scale(82.672)"
         >
-          <stop offset="0.821385" stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="#43C1FF" />
+          <stop
+            offset="0.821385"
+            stop-color="#A3E1FF"
+          />
+          <stop
+            offset="1"
+            stop-color="#43C1FF"
+          />
         </radialGradient>
         <linearGradient
           id="paint55_linear"
@@ -3232,8 +3744,15 @@
           y2="353.325"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#3EBFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#3EBFFF"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint56_radial"
@@ -3244,7 +3763,11 @@
           gradientTransform="translate(14.0516 14.0516) rotate(90) scale(14.0516)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint57_radial"
@@ -3255,7 +3778,11 @@
           gradientTransform="translate(14.0516 14.0516) rotate(90) scale(14.0516)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint58_linear"
@@ -3265,8 +3792,15 @@
           y2="242.4"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#34BCFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#34BCFF"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint59_linear"
@@ -3277,7 +3811,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#109CC8" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint60_linear"
@@ -3288,7 +3826,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F8BDC5" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint61_linear"
@@ -3298,8 +3840,15 @@
           y2="16.8619"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#A3E1FF"
+            stop-opacity="0.71"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint62_linear"
@@ -3310,7 +3859,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint63_linear"
@@ -3320,8 +3873,15 @@
           y2="7.0595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#A3E1FF"
+            stop-opacity="0.71"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint64_linear"
@@ -3332,7 +3892,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint65_linear"
@@ -3342,8 +3906,15 @@
           y2="6.3232"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#A3E1FF"
+            stop-opacity="0.71"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint66_linear"
@@ -3354,7 +3925,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint67_linear"
@@ -3364,8 +3939,15 @@
           y2="350.831"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint68_linear"
@@ -3376,7 +3958,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint69_radial"
@@ -3386,8 +3972,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(289.413 278.649) rotate(63.0478) scale(82.672)"
         >
-          <stop offset="0.821385" stop-color="#009DE9" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#009DE9"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <linearGradient
           id="paint70_linear"
@@ -3397,8 +3990,15 @@
           y2="352.325"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint71_radial"
@@ -3409,7 +4009,11 @@
           gradientTransform="translate(268.023 291.452) rotate(90) scale(14.0516)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint72_radial"
@@ -3420,7 +4024,11 @@
           gradientTransform="translate(320.17 291.451) rotate(90) scale(14.0516)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint73_linear"
@@ -3430,8 +4038,15 @@
           y2="241.4"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint74_linear"
@@ -3442,7 +4057,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F2D05C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint75_linear"
@@ -3453,7 +4072,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#056A9A" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint76_linear"
@@ -3463,8 +4086,15 @@
           y2="7.0595"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#A3E1FF" stop-opacity="0.71" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            stop-color="#A3E1FF"
+            stop-opacity="0.71"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint77_linear"
@@ -3475,7 +4105,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#A3E1FF" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint78_linear"
@@ -3485,8 +4119,15 @@
           y2="585.161"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint79_linear"
@@ -3497,7 +4138,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint80_radial"
@@ -3507,8 +4152,15 @@
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(766.219 354) rotate(63.0478) scale(264.756)"
         >
-          <stop offset="0.821385" stop-color="#009DE9" />
-          <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+          <stop
+            offset="0.821385"
+            stop-color="#009DE9"
+          />
+          <stop
+            offset="1"
+            stop-color="#007EBB"
+            stop-opacity="0.65"
+          />
         </radialGradient>
         <linearGradient
           id="paint81_linear"
@@ -3518,8 +4170,15 @@
           y2="589.946"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <radialGradient
           id="paint82_radial"
@@ -3530,7 +4189,11 @@
           gradientTransform="translate(692 376) rotate(90) scale(45)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <radialGradient
           id="paint83_radial"
@@ -3541,7 +4204,11 @@
           gradientTransform="translate(859 376) rotate(90) scale(45)"
         >
           <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </radialGradient>
         <linearGradient
           id="paint84_linear"
@@ -3551,8 +4218,15 @@
           y2="234.711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.291647" stop-color="#0041E9" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="0.291647"
+            stop-color="#0041E9"
+          />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <linearGradient
           id="paint85_linear"
@@ -3563,7 +4237,11 @@
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#F2D05C" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop
+            offset="1"
+            stop-color="white"
+            stop-opacity="0"
+          />
         </linearGradient>
         <clipPath id="clip0">
           <rect
@@ -3680,7 +4358,11 @@
           />
         </clipPath>
         <clipPath id="clip14">
-          <rect width="192" height="192" fill="white" />
+          <rect
+            width="192"
+            height="192"
+            fill="white"
+          />
         </clipPath>
       </defs>
     </svg>

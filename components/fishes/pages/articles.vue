@@ -259,8 +259,16 @@
       transform="matrix(-1 0 0 1 623.828 205.028)"
       fill="#451408"
     />
-    <circle r="8" transform="matrix(-1 0 0 1 605.828 190.028)" fill="white" />
-    <circle r="66" transform="matrix(-1 0 0 1 455.828 205.028)" fill="white" />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 605.828 190.028)"
+      fill="white"
+    />
+    <circle
+      r="66"
+      transform="matrix(-1 0 0 1 455.828 205.028)"
+      fill="white"
+    />
     <circle
       r="45"
       transform="matrix(-1 0 0 1 455.828 205.028)"
@@ -282,7 +290,11 @@
       transform="matrix(-1 0 0 1 455.828 205.028)"
       fill="#451408"
     />
-    <circle r="8" transform="matrix(-1 0 0 1 437.828 190.028)" fill="white" />
+    <circle
+      r="8"
+      transform="matrix(-1 0 0 1 437.828 190.028)"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -584,8 +596,15 @@
         y2="417.342"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles1_linear"
@@ -596,7 +615,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-articles2_radial"
@@ -606,8 +629,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(-106.5 -88.8908) rotate(163.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#0285c4" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#0285c4"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <linearGradient
         id="fish-articles3_linear"
@@ -617,8 +647,15 @@
         y2="419.747"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="fish-articles4_radial"
@@ -629,7 +666,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="fish-articles5_radial"
@@ -640,7 +681,11 @@
         gradientTransform="translate(45 45) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="fish-articles6_linear"
@@ -650,8 +695,15 @@
         y2="54.7396"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles7_linear"
@@ -661,8 +713,15 @@
         y2="515.04"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.387" stop-color="#D1D3D4" stop-opacity="0" />
-        <stop offset="1" stop-color="#D1D3D4" />
+        <stop
+          offset="0.387"
+          stop-color="#D1D3D4"
+          stop-opacity="0"
+        />
+        <stop
+          offset="1"
+          stop-color="#D1D3D4"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles8_linear"
@@ -672,8 +731,15 @@
         y2="493.574"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.387" stop-color="#D1D3D4" stop-opacity="0" />
-        <stop offset="1" stop-color="#D1D3D4" />
+        <stop
+          offset="0.387"
+          stop-color="#D1D3D4"
+          stop-opacity="0"
+        />
+        <stop
+          offset="1"
+          stop-color="#D1D3D4"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles9_linear"
@@ -684,7 +750,10 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#E8E7E5" />
-        <stop offset="1" stop-color="white" />
+        <stop
+          offset="1"
+          stop-color="white"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles10_linear"
@@ -695,7 +764,10 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#E8E7E5" />
-        <stop offset="1" stop-color="white" />
+        <stop
+          offset="1"
+          stop-color="white"
+        />
       </linearGradient>
       <radialGradient
         id="fish-articles11_radial"
@@ -706,9 +778,18 @@
         gradientTransform="translate(713.697 630.657) rotate(-17.4569) scale(55.6513 22.6354)"
       >
         <stop stop-color="#AEB2D5" />
-        <stop offset="0.3" stop-color="#AEB2D5" />
-        <stop offset="0.75" stop-color="#484C89" />
-        <stop offset="1" stop-color="#484C89" />
+        <stop
+          offset="0.3"
+          stop-color="#AEB2D5"
+        />
+        <stop
+          offset="0.75"
+          stop-color="#484C89"
+        />
+        <stop
+          offset="1"
+          stop-color="#484C89"
+        />
       </radialGradient>
       <linearGradient
         id="fish-articles12_linear"
@@ -719,7 +800,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#E8F8FF" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="#C4C4C4"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles13_linear"
@@ -730,7 +815,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles14_linear"
@@ -741,7 +830,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#E8F8FF" />
-        <stop offset="1" stop-color="#C4C4C4" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="#C4C4C4"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="fish-articles15_linear"
@@ -752,7 +845,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <clipPath id="clip0">
         <rect

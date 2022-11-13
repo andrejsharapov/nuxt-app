@@ -72,7 +72,12 @@
       d="M369.087 166.908L360.39 179.739L362.501 254.079L371.901 266.028C371.901 266.028 409.007 318.04 418.605 311.084C433.094 300.584 406.669 254.108 406.094 216.084C405.481 175.592 418.605 136.584 418.605 115.584C418.605 94.5839 369.087 166.908 369.087 166.908Z"
       fill="url(#empty-content1_linear)"
     />
-    <circle cx="208.094" cy="238.584" r="168" fill="#009DE9" />
+    <circle
+      cx="208.094"
+      cy="238.584"
+      r="168"
+      fill="#009DE9"
+    />
     <circle
       cx="208.094"
       cy="238.584"
@@ -89,7 +94,12 @@
       d="M156.094 190.475C156.094 226.926 126.545 256.475 90.0938 256.475C53.643 256.475 24.0938 226.926 24.0938 190.475C24.0938 154.024 53.643 124.475 90.0938 124.475C126.545 124.475 156.094 154.024 156.094 190.475Z"
       fill="white"
     />
-    <circle cx="84.697" cy="211.475" r="45" fill="#3CADD0" />
+    <circle
+      cx="84.697"
+      cy="211.475"
+      r="45"
+      fill="#3CADD0"
+    />
     <circle
       cx="84.697"
       cy="211.475"
@@ -103,13 +113,28 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="74.7432" cy="226.299" r="25" fill="#451408" />
-    <circle cx="55.686" cy="208.475" r="8" fill="white" />
+    <circle
+      cx="74.7432"
+      cy="226.299"
+      r="25"
+      fill="#451408"
+    />
+    <circle
+      cx="55.686"
+      cy="208.475"
+      r="8"
+      fill="white"
+    />
     <path
       d="M324.094 190.475C324.094 226.926 294.545 256.475 258.094 256.475C221.643 256.475 192.094 226.926 192.094 190.475C192.094 154.024 221.643 124.475 258.094 124.475C294.545 124.475 324.094 154.024 324.094 190.475Z"
       fill="white"
     />
-    <circle cx="252.697" cy="211.475" r="45" fill="#3CADD0" />
+    <circle
+      cx="252.697"
+      cy="211.475"
+      r="45"
+      fill="#3CADD0"
+    />
     <circle
       cx="252.697"
       cy="211.475"
@@ -123,8 +148,18 @@
       stroke="#451408"
       stroke-opacity="0.3"
     />
-    <circle cx="242.391" cy="226.299" r="25" fill="#451408" />
-    <circle cx="225.51" cy="208.475" r="8" fill="white" />
+    <circle
+      cx="242.391"
+      cy="226.299"
+      r="25"
+      fill="#451408"
+    />
+    <circle
+      cx="225.51"
+      cy="208.475"
+      r="8"
+      fill="white"
+    />
     <path
       fill-rule="evenodd"
       clip-rule="evenodd"
@@ -195,8 +230,15 @@
         y2="390.636"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="empty-content1_linear"
@@ -207,7 +249,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <radialGradient
         id="empty-content2_radial"
@@ -217,8 +263,15 @@
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(146.594 159.475) rotate(63.0478) scale(264.756)"
       >
-        <stop offset="0.821385" stop-color="#009DE9" />
-        <stop offset="1" stop-color="#007EBB" stop-opacity="0.65" />
+        <stop
+          offset="0.821385"
+          stop-color="#009DE9"
+        />
+        <stop
+          offset="1"
+          stop-color="#007EBB"
+          stop-opacity="0.65"
+        />
       </radialGradient>
       <radialGradient
         id="empty-content3_radial"
@@ -229,7 +282,11 @@
         gradientTransform="translate(84.697 211.475) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <radialGradient
         id="empty-content4_radial"
@@ -240,7 +297,11 @@
         gradientTransform="translate(252.697 211.475) rotate(90) scale(45)"
       >
         <stop stop-color="white" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </radialGradient>
       <linearGradient
         id="empty-content5_linear"
@@ -250,8 +311,15 @@
         y2="40.1859"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="empty-content6_linear"
@@ -262,7 +330,11 @@
         gradientUnits="userSpaceOnUse"
       >
         <stop stop-color="#F2D05C" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
       <linearGradient
         id="empty-content7_linear"
@@ -272,8 +344,15 @@
         y2="384.344"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.291647" stop-color="#0041E9" />
-        <stop offset="1" stop-color="white" stop-opacity="0" />
+        <stop
+          offset="0.291647"
+          stop-color="#0041E9"
+        />
+        <stop
+          offset="1"
+          stop-color="white"
+          stop-opacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>
