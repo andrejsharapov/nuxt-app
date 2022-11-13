@@ -26,25 +26,15 @@ export default {
   computed: {
     appBackground() {
       const bg = () => {
-        if (this.$vuetify.theme.dark) {
-          if (this.$vuetify.breakpoint.smAndDown) {
-            return {
-              backgroundImage:
-                'url(/src/apps/choose-food/app-bg__xs__dark.jpg)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-            }
-          } else {
-            return {
-              backgroundImage:
-                'url(/src/apps/choose-food/app-bg__md__dark.jpg)',
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-            }
+        if (this.$vuetify.breakpoint.smAndDown) {
+          return {
+            backgroundImage: 'url(/src/apps/choose-food/app-bg__md__dark.jpg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
           }
         } else {
           return {
-            backgroundImage: 'url(/src/apps/choose-food/app-bg__md__light.jpg)',
+            backgroundImage: 'url(/src/apps/choose-food/app-bg__xs__dark.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
           }
