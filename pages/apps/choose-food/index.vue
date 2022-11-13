@@ -90,6 +90,6 @@ export default {
 
   .d-grid.place-items-center.fill-height.text-center
     div
-      .text-h4.text-md-h2.mb-6.text-uppercase.font-weight-bold {{ wordIndex >= 0 ? `&laquo;${wordsList[wordIndex]}&raquo;` : "Что закажем?" }}
+      .text-h4.text-md-h2.mb-6.text-uppercase.text-no-wrap.font-weight-bold.white--text {{ wordIndex >= 0 ? `&laquo;${wordsList[wordIndex]}&raquo;` : "Что закажем?" }}
       v-btn.font-bold(x-large, @click='randomize', color='info') {{ $t("events.select") }}
 </template>
