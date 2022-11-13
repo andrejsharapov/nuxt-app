@@ -142,6 +142,7 @@ export default {
     hide: 'Hide | hide',
     prev: 'Back | Prev | Previous',
     next: 'Forward | Next | Following',
+    select: 'Select',
   },
   host: {
     name: `${config.host.name}`,
