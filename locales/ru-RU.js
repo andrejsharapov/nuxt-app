@@ -143,6 +143,7 @@ export default {
     hide: 'Скрыть | скрыть',
     prev: 'Назад | Предыдущая | Предыдущий',
     next: 'Вперед | Следующая | Следующий',
+    select: 'Выбрать',
   },
   host: {
     name: `${config.host.name}`,
