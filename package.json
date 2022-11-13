@@ -14,8 +14,8 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{s?(a|c)ss,css,vue}\" --ignore-path .gitignore",
     "prettier": "prettier ./**/*.{js,vue} --ignore-path .gitignore",
-    "check:prettier": "yarn prettier --list-different",
-    "format:prettier": "yarn prettier --write --loglevel warn",
+    "prettier:check": "yarn prettier --list-different",
+    "prettier:format": "yarn prettier --write --loglevel warn",
     "lint": "yarn lint:js && yarn lint:style"
   },
   "lint-staged": {
