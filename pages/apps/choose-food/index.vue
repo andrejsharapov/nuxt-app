@@ -26,7 +26,7 @@ export default {
   computed: {
     appBackground() {
       const bg = () => {
-        if (this.$vuetify.breakpoint.smAndDown) {
+        if (this.$vuetify.breakpoint.smAndUp) {
           return {
             backgroundImage: 'url(/src/apps/choose-food/app-bg__md__dark.jpg)',
             backgroundRepeat: 'no-repeat',
