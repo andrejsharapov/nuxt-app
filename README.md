@@ -11,14 +11,14 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 [![README.md][preview]](/README.md)
 
-## :fish: This new stage in portfolio development
+## This new stage in portfolio development
 
-1. :feet: Pure HTML
-2. :feet: [WordPress][wp] ![active]
-3. :feet: [Gulp + Pug + Vue][gulp] ![archive]
-4. :feet: Vue CLI ![removed]
-5. :feet: VuePress
-6. :feet: [Nuxt v2][nuxt2] :point_right: Nuxt v3
+:feet: Pure HTML  
+:feet: [WordPress][wp] ![active]  
+:feet: [Gulp + Pug + Vue][gulp] ![archive]  
+:feet: Vue CLI ![removed]  
+:feet: VuePress  
+:feet: [Nuxt v2][nuxt2] :point_right: Nuxt v3  
 
 ## Coordination
 
@@ -27,18 +27,18 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ### Nuxt modules
 
-| Module      | Name                                                                     |
-| ----------- | ------------------------------------------------------------------------ |
-| Analytics   | @nuxtjs/gtm<br />@nuxtjs/google-analytics<br />@nuxtjs/yandex-metrika    |
-| CMS         | @nuxt/content                                                            |
-| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module<br />nuxt-purgecss |
-| Devtools    | @nuxtjs/eslint-module                                                    |
-| Extensions  | nuxt-i18n<br />@nuxtjs/svg<br />@nuxtjs/markdownit                       |
-| Fonts       | @nuxtjs/google-fonts                                                     |
-| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                                  |
-| Request     | @nuxtjs/axios                                                            |
-| SEO         | @nuxtjs/sitemap<br />@nuxtjs/robots                                      |
-| UI          | @nuxt/components<br />@nuxtjs/vuetify                                    |
+| Type        | Module                                                                |
+| ----------- | --------------------------------------------------------------------- |
+| Analytics   | @nuxtjs/gtm<br />@nuxtjs/google-analytics<br />@nuxtjs/yandex-metrika |
+| CMS         | @nuxt/content                                                         |
+| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module                 |
+| Devtools    | @nuxtjs/eslint-module                                                 |
+| Extensions  | nuxt-i18n<br />@nuxtjs/svg<br />@nuxtjs/markdownit                    |
+| Fonts       | @nuxtjs/google-fonts                                                  |
+| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                               |
+| Request     | @nuxtjs/axios                                                         |
+| SEO         | @nuxtjs/sitemap<br />@nuxtjs/robots                                   |
+| UI          | @nuxt/components<br />@nuxtjs/vuetify                                 |
 
 Look at [all nuxt modules][modules].
 
@@ -48,7 +48,7 @@ Look at [all nuxt modules][modules].
 
 Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wiki] before contributing. Read the detailed information about contributions in the [CONTRIBUTING.md][contributing] file.
 
-[Return to top](#nuxt-app)
+[:fish: Swim to up](#nuxt-app)
 
 <!--  -->
 
@@ -69,7 +69,7 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 <!--  -->
 
 [ideas]: ../../discussions/31
-[projects]: ../../projects/2
+[projects]: https://github.com/users/andrejsharapov/projects/6
 
 <!--  -->
 
