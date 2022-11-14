@@ -12,7 +12,7 @@ on:
       - develop
 
 jobs:
-  test:
+  ci:
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -34,17 +34,29 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       # step 3
-      - name: Install dependencies
-        run: yarn install
+      - name: Checkout master
+        uses: actions/checkout@master
 
       # step 4
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+
+      # step 5
+      - name: Install dependencies
+        if: steps.cache-primes.outputs.cache-hit != 'true'
+        run: yarn
+
+      # step 6
       - name: Run code formatting
         run: |
           yarn prettier:format
           yarn lint:js
           yarn lint:style
 
-      # step 5 https://github.com/marketplace/codecov
+      # step 7 https://github.com/marketplace/codecov
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.1.1
         # with:
