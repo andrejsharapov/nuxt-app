@@ -49,7 +49,7 @@
     "nuxt-i18n": "^6.28.1",
     "v-clipboard": "2.2.3",
     "vue-apexcharts": "1.6.2",
-    "vue-box-shadows": "2.0.1",
+    "vue-box-shadows": "2.0.2",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-disqus": "4.0.1",
     "vue-if-bot": "^1.2.0",
