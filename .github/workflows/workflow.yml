@@ -1,22 +1,30 @@
 name: Code lint
+
 on:
   push:
     branches:
       - master
       - develop
+
   pull_request:
     branches:
       - master
+      - develop
+
 jobs:
   lint:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ubuntu-latest, windows-latest]
         node-version: [14.x, 16.x]
+
     steps:
       # step 1
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       # step 2
       - name: Set up Node.js ${{ matrix.node-version }}
@@ -25,13 +33,18 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       # step 3
-      - name: Install deps & run lint
+      - name: Install dependencies
+        run: yarn install
+
+      # step 4
+      - name: Run code formatting
         run: |
-          yarn install
           yarn prettier:format
           yarn lint:js
           yarn lint:style
-
-      # step 4
+          
+      # step 5
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
