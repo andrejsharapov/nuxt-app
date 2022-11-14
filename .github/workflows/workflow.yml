@@ -23,9 +23,9 @@ jobs:
     steps:
       # step 1
       - uses: actions/checkout@v3
-        with:
-          submodules: recursive
-          token: ${{ secrets.ACCESS_TOKEN }}
+        # with:
+        #   submodules: recursive
+        #   token: ${{ secrets.ACCESS_TOKEN }}
 
       # step 2
       - name: Set up Node.js ${{ matrix.node-version }}
