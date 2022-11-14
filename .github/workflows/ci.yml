@@ -59,5 +59,6 @@ jobs:
       # step 7 https://github.com/marketplace/codecov
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3.1.1
-        # with:
+        with:
+          files: ./coverage.xml
         #   token: ${{ secrets.CODECOV_TOKEN }}
