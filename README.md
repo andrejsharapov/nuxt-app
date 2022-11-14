@@ -48,9 +48,7 @@ Look at [all nuxt modules][modules].
 
 Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wiki] before contributing. Read the detailed information about contributions in the [CONTRIBUTING.md][contributing] file.
 
-<p align="right">
-  <a href="#uses">To top</a>
-</p>
+[Return to top](#nuxt-app)
 
 <!--  -->
 
