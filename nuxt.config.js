@@ -277,31 +277,6 @@ export default {
         'postcss-sorting': {},
         'postcss-url': {},
         'postcss-utilities': {},
-        precss: {
-          // },
-          // '@fullhuman/postcss-purgecss': {
-          //   content: [
-          //     'components/**/*.vue',
-          //     'layouts/**/*.vue',
-          //     'pages/**/*.vue',
-          //     'plugins/**/*.js',
-          //     'node_modules/vuetify/src/**/*.ts',
-          //   ],
-          //   styleExtensions: ['.css'],
-          //   safelist: {
-          //     standard: ['body', 'html', 'nuxt-progress'],
-          //     deep: [
-          //       /page-enter/,
-          //       /page-leave/,
-          //       /dialog-transition/,
-          //       /tab-transition/,
-          //       /tab-reversetransition/,
-          //     ],
-          //   },
-          // },
-          // 'css-byebye': {
-          //   rulesToRemove: [/.*\.v-application--is-rtl.*/, /.*\.theme--.*/],
-        },
       },
       preset: {
         features: {
