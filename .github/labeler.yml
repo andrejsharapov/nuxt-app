@@ -1,0 +1,15 @@
+documentation:
+  - README.md
+  - CONTRIBUTING.md
+
+update:
+  - config/*
+  - .eslintrc.js
+  - .gitignore
+  - .markdownlint.json
+  - CHANGELOG.md
+  - stylelint.config.js
+
+testing:
+  - __tests__/**/*
+  - pages/tests/**/*
