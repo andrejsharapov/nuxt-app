@@ -13,7 +13,6 @@
     "@nuxt/content",
     "@nuxtjs/google-fonts",
     "@nuxtjs/html-validator",
-    "nuxt-purgecss",
     "css-loader",
     "postcss", // "^7.0.38"
     "postcss-custom-media", // "^7.0.8"
@@ -47,6 +46,10 @@
   },
   "packageRules": [
     {
+      "matchBaseBranches": [
+        "master"
+        // ,"develop"
+      ],
       "matchDepTypes": [
         "devDependencies"
       ],
