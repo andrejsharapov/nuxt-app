@@ -5,4 +5,5 @@
   url: https://madeas.github.io/box-shadows/device/
   img:
     src: /src/projects/device-builder.jpg
-    alt: ''
+    alt:
+  blank: true

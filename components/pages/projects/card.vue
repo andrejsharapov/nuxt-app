@@ -74,7 +74,7 @@
             :block="$vuetify.breakpoint.xs"
             color="primary"
             :href="project.url"
-            target="_blank"
+            :target="project.blank ? '_blank' : '_self'"
             rel="noopener noreferrer"
           >
             {{ $t('btn.go.to') }}

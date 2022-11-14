@@ -5,4 +5,5 @@
   url: https://madeas.ru/chatemplate/
   img:
     src: /src/projects/chatemplate.jpg
-    alt: ""
+    alt:
+  blank: true

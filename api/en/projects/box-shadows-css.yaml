@@ -5,4 +5,5 @@
   url: https://madeas.github.io/box-shadows/
   img:
     src: /src/projects/box-shadows-css.jpg
-    alt: ""
+    alt:
+  blank: true

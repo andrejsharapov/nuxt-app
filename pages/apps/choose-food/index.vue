@@ -1,22 +1,16 @@
 <script>
-import {
-  mdiMenu,
-  mdiWeatherPartlyCloudy,
-  mdiWeatherNightPartlyCloudy,
-} from '@mdi/js'
+import { mdiMenu } from '@mdi/js'
 
 export default {
   layout: 'apps',
   data: () => ({
     mdiMenu,
-    mdiWeatherPartlyCloudy,
-    mdiWeatherNightPartlyCloudy,
     wordIndex: -1,
     wordsList: [
       'Бургер и Ко',
       'КФС',
       'Блинчики',
-      'Крошка Карточка',
+      'Крошка Картошка',
       'Суши',
       'WOK и Ко',
       'Пицца',
@@ -63,17 +57,12 @@ export default {
     height='48'
   )
     .text-caption.white--text Нажмите кнопку, чтобы вывести случайный ресторан.
-    v-btn.mr-2.rounded(
-      icon,
-      @click='$vuetify.theme.dark = !$vuetify.theme.dark'
-    )
-      v-icon.mx-auto(color='white') {{ $vuetify.theme.dark ? mdiWeatherNightPartlyCloudy : mdiWeatherPartlyCloudy }}
 
   .d-flex.justify-end
     v-menu(absolute, top, right, allow-overflow)
       template(#activator='{ on: showRestaurants }')
         v-btn.rounded(
-          :dark='$vuetify.theme.dark',
+          dark,
           depressed,
           :icon='!$vuetify.breakpoint.mdAndUp',
           :outlined='!$vuetify.breakpoint.mdAndUp',
@@ -82,7 +71,7 @@ export default {
           v-icon(:left='$vuetify.breakpoint.mdAndUp') {{ mdiMenu }}
           span(v-if='$vuetify.breakpoint.mdAndUp') show menu
 
-      v-list(:dark='$vuetify.theme.dark', dense)
+      v-list(dark, dense)
         template(v-for='(item, index) in wordsList')
           v-list-item(:key='item')
             v-list-item-title.font-weight-light {{ item }}
@@ -90,6 +79,6 @@ export default {
 
   .d-grid.place-items-center.fill-height.text-center
     div
-      .text-h4.text-md-h2.mb-6.text-uppercase.text-no-wrap.font-weight-bold.white--text {{ wordIndex >= 0 ? `&laquo;${wordsList[wordIndex]}&raquo;` : "Что закажем?" }}
+      .text-h5.text-sm-h4.text-md-h2.mb-6.text-uppercase.text-no-wrap.font-weight-bold.white--text {{ wordIndex >= 0 ? `&laquo;${wordsList[wordIndex]}&raquo;` : "Что закажем?" }}
       v-btn.font-bold(x-large, @click='randomize', color='info') {{ $t("events.select") }}
 </template>

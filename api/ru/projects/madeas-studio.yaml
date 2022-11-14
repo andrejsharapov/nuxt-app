@@ -5,4 +5,5 @@
   url: https://madeas.usite.pro
   img:
     src: /src/projects/madeas-studio.jpg
-    alt: ""
+    alt:
+  blank: true

@@ -1,8 +1,9 @@
 - title: vue-box-shadows
   type: dev tools
-  created: '2022-07-18'
+  created: "2022-07-18"
   desc: Легкий пакет с директивой vue.js для добавления красивых и воздушных теней из коллекции теней box-shadow.css
   url: https://github.com/andrejsharapov/vue-box-shadows
   img:
     src: https://repository-images.githubusercontent.com/514680914/da9c20c4-61dc-40e1-8447-b4e2a7bd0bec
     alt: vue-box-shadows
+  blank: true
