@@ -27,18 +27,18 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ### Nuxt modules
 
-| Type        | Module                                                                   |
-| ----------- | ------------------------------------------------------------------------ |
-| Analytics   | @nuxtjs/gtm<br />@nuxtjs/google-analytics<br />@nuxtjs/yandex-metrika    |
-| CMS         | @nuxt/content                                                            |
-| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module<br />nuxt-purgecss |
-| Devtools    | @nuxtjs/eslint-module                                                    |
-| Extensions  | nuxt-i18n<br />@nuxtjs/svg<br />@nuxtjs/markdownit                       |
-| Fonts       | @nuxtjs/google-fonts                                                     |
-| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                                  |
-| Request     | @nuxtjs/axios                                                            |
-| SEO         | @nuxtjs/sitemap<br />@nuxtjs/robots                                      |
-| UI          | @nuxt/components<br />@nuxtjs/vuetify                                    |
+| Type        | Module                                                                |
+| ----------- | --------------------------------------------------------------------- |
+| Analytics   | @nuxtjs/gtm<br />@nuxtjs/google-analytics<br />@nuxtjs/yandex-metrika |
+| CMS         | @nuxt/content                                                         |
+| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module                 |
+| Devtools    | @nuxtjs/eslint-module                                                 |
+| Extensions  | nuxt-i18n<br />@nuxtjs/svg<br />@nuxtjs/markdownit                    |
+| Fonts       | @nuxtjs/google-fonts                                                  |
+| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                               |
+| Request     | @nuxtjs/axios                                                         |
+| SEO         | @nuxtjs/sitemap<br />@nuxtjs/robots                                   |
+| UI          | @nuxt/components<br />@nuxtjs/vuetify                                 |
 
 Look at [all nuxt modules][modules].
 

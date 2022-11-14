@@ -18,7 +18,6 @@ export default {
     '@nuxtjs/stylelint-module',
     '@nuxtjs/svg',
     '@nuxtjs/style-resources',
-    // 'nuxt-purgecss',
     '@nuxtjs/google-analytics',
   ],
   modules: [
@@ -190,35 +189,6 @@ export default {
     { src: '~/assets/sass/extends/card-image', lang: 'scss' },
     { src: '~/assets/sass/extends/vuetify-css-grid', lang: 'sass' },
   ],
-  purgeCSS: {
-    // paths: [
-    //   'components/**/*.vue',
-    //   'layouts/**/*.vue',
-    //   'pages/**/*.vue',
-    //   'plugins/**/*.js',
-    //   'node_modules/@nuxtjs/vuetify/**/*.ts',
-    //   'node_modules/@nuxt/vue-app/template/**/*.html',
-    //   'node_modules/@nuxt/vue-app/template/**/*.vue',
-    // ],
-    // extractors: [
-    //   {
-    //     extractor: (content) => content.match(/[A-z0-9-:\\/]+/g) || [],
-    //     extensions: ['html', 'vue', 'js'],
-    //   },
-    // ],
-    // styleExtensions: ['.css'],
-    // whitelist: ['v-application', 'v-application--wrap'],
-    // whitelistPatterns: [
-    //   /^v-((?!application).)*$/,
-    //   /^\.theme--*/,
-    //   /.*-transition/,
-    // ],
-    // whitelistPatternsChildren: [
-    //   /^v-((?!application).)*$/,
-    //   /^theme--.*/,
-    //   /.*-transition/,
-    // ],
-  },
   htmlValidator: {
     usePrettier: true,
     options: {
