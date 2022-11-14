@@ -44,8 +44,8 @@ jobs:
           yarn lint:js
           yarn lint:style
 
-      # step 5
+      # step 5 https://github.com/marketplace/codecov
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v3.1.1
         # with:
         #   token: ${{ secrets.CODECOV_TOKEN }}
