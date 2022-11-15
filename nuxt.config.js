@@ -237,6 +237,9 @@ export default {
     // analyze: true,
     devtools: true,
     extractCSS: true,
+    babel: {
+      compact: true,
+    },
     postcss: {
       plugins: {
         'postcss-custom-media': {},
