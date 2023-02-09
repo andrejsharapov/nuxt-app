@@ -13,3 +13,9 @@ update:
 testing:
   - __tests__/**/*
   - pages/tests/**/*
+  
+dependencies:
+  - package.json
+  
+# workflow:
+  # - .github/workflows/*
