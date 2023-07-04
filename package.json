@@ -110,5 +110,9 @@
     "stylus-loader": "4.3.1",
     "vue-github-button": "1.0.3"
   },
-  "main": "nuxt.config.js"
+  "main": "nuxt.config.js",
+  "volta": {
+    "node": "16.17.1",
+    "yarn": "1.22.19"
+  }
 }
