@@ -6,23 +6,28 @@ figures:
     caption:
       ru: Прошел тестирование по «Html/css. Интерактивный курс»
       en: Successfully passed the test «Html/css. Interactive course»
+    school: GB
   - date: 2019-03-26
     num: 578830
     caption:
       ru: Прошел тестирование по HTML & CSS «Тест HTML5/CSS3»
       en: Successfully passed the test «Test HTML5/CSS3»
+    school: GB
   - date: 2018-09-14
     num: 504197
     caption:
       ru: Прошел тестирование по «HTML & CSS. Сложный уровень»
       en: Successfully passed the test «HTML & CSS. Advanced»
+    school: GB
   - date: 2018-02-09
     num: 409910
     caption:
       ru: Прошел тестирование по «HTML & CSS. Средний уровень»
       en: Successfully passed the test «HTML & CSS. Intermediate»
+    school: GB
   - date: 2018-01-23
     num: 400769
     caption:
       ru: Прошел тестирование по «HTML & CSS. Начальный уровень»
       en: Successfully passed the test «HTML & CSS. Beginner»
+    school: GB

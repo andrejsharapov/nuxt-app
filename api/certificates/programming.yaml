@@ -1,53 +1,69 @@
 title: Программирование
 icon: $mdiDevices
 figures:
+  - date: 2023-05-13
+    num: 202305
+    img:
+      src: "/202305.jpg"
+    caption:
+      ru: Прошёл онлайн-курс «Профессия Веб-разработчик»
+      en: Has participated in an online course «Web Developer / Becoming a Web Developer»
+    school: SF
   - date: 2022-09-18
     num: 2014762
     img:
-      src: '/2014762.jpg'
+      src: "/2014762.jpg"
     caption:
       ru: Прошел тестирование по «PHP. Начальный уровень»
       en: Successfully passed the test «PHP. Beginner»
+    school: GB
   - date: 2019-06-03
     num: 600621
     img:
-      src: '/600621.jpg'
+      src: "/600621.jpg"
     caption:
       ru: Прошел тестирование по «Javascript. Начальный уровень»
       en: Successfully passed the test «JavaScript. Beginner»
+    school: GB
   - date: 2018-10-30
     num: 521264
     img:
-      src: '/521264.jpg'
+      src: "/521264.jpg"
     caption:
       ru: Окончил курс «Веб-разработка. Быстрый старт»
       en: Completed the course «Web development. Quick start. Free video course on php»
+    school: GB
   - date: 2018-10-20
     num: 520879
     img:
-      src: '/520879.jpg'
+      src: "/520879.jpg"
     caption:
       ru: Окончил курс «Основы программирования»
       en: Completed the course «Introduction to Programming. Course»
+    school: GB
   - date: 2018-10-25
     num: 519466
     img:
-      src: '/519466.jpg'
+      src: "/519466.jpg"
     caption:
       ru: Окончил курс «Git. Быстрый старт»
       en: Completed the course «Git. Easy Start. Version Control System»
+    school: GB
   - date: 2018-09-08
     num: 501562
     caption:
       ru: Окончил курс «Веб-разработка для начинающих»
       en: Completed the course «Web development intensive. Personal site creation»
+    school: GB
   - date: 2018-09-06
     num: 500768
     caption:
       ru: Прошел тестирование по «Основы программирования. Начальный уровень»
       en: Successfully passed the test «Introduction To Programming. Beginner»
+    school: GB
   - date: 2018-09-05
     num: 500523
     caption:
       ru: Окончил курс «Как начать свой путь в разработке?»
       en: Completed the course «intensive Introduction to Programming. Online course»
+    school: GB

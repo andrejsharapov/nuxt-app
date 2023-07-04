@@ -6,28 +6,34 @@ figures:
     caption:
       ru: Прошел тестирование по «Figma. Продвинутый уровень»
       en: Successfully passed the test «Figma. Advanced level»
+    school: GB
   - date: 2021-04-19
     num: 1222152
     caption:
       ru: Прошел тестирование по «Рисование аналоговыми инструментами»
       en: Successfully passed the test «Drawing with traditional media»
+    school: GB
   - date: 2021-04-15
     num: 1217464
     caption:
       ru: Прошел тестирование по «Figma. Начальный уровень»
       en: Successfully passed the test «Figma. Elementary level»
+    school: GB
   - date: 2020-04-23
     num: 797627
     caption:
       ru: Прошел тестирование по «Основы графического дизайна для дизайнера интерфейсов»
       en: Successfully passed the test «Graphic design for UX»
+    school: GB
   - date: 2018-09-18
     num: 505468
     caption:
       ru: Окончил курс «Интенсив “Основы веб-дизайна”»
       en: Completed the course «Intensive Web Design . Development of Landing page»
+    school: GB
   - date: 2018-01-23
     num: 400793
     caption:
       ru: Прошел тестирование по «Веб-дизайн. Начальный уровень»
       en: Successfully passed the test «Web Design. Beginner»
+    school: GB

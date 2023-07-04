@@ -1,7 +1,7 @@
 <template lang="pug">
 mixin sheet(color, saturation, size)
   v-sheet.d-flex.justify-center.align-center.rounded(
-    color=color + " " + saturation,
+    color=color + ' ' + saturation,
     width=size,
     height=size
   )
@@ -41,19 +41,19 @@ mixin sheet(color, saturation, size)
 
       //- ANCHOR 2/3 author info
       .col-span-md-2.col-span-xl-3
-        h1.mb-3.text-h2.text-center.text-md-left.font-weight-medium {{ $t("author.name") }}
+        h1.mb-3.text-h2.text-center.text-md-left.font-weight-medium {{ $t('author.name') }}
         h3.mb-8.text-h5.text-sm-h3.text-lg-h2.text-center.text-md-left.font-weight-bold.text-gradient(
           style='background-image: linear-gradient(180deg, var(--v-info-lighten2), var(--v-accent-darken1))'
         )
-          strong {{ this.$t("author.position[0]") }},
+          strong {{ this.$t('author.position[0]') }},
           br
-          strong {{ this.$t("author.position[1]") }}
+          strong {{ this.$t('author.position[1]') }}
 
-        p.mb-md-0 {{ $t("pages.index.sections.about.message", { author: $t("author.name"), years: declensions(years, localeWords) }) }}
+        p.mb-md-0 {{ $t('pages.index.sections.about.message', { author: $t('author.name'), years: declensions(years, localeWords) }) }}
 
       //- ANCHOR 3/3 activity
       .col-span-md-3.px-lg-0.col-span-lg-2.col-span-xl-3
-        p {{ $t("pages.index.sections.about.activity.prepend") }}:
+        p {{ $t('pages.index.sections.about.activity.prepend') }}:
         .d-md-grid.grid-cols-3.mb-3
           template(
             v-for='(card, index) in $t("pages.index.sections.about.activity.list")'
@@ -81,11 +81,11 @@ mixin sheet(color, saturation, size)
                       :style='{ color: $vuetify.theme.dark ? "" : "var(--secondary)" }'
                     ) {{ card.message }}
 
-        p {{ $tc("pages.index.sections.about.activity.append") }}
+        p {{ $tc('pages.index.sections.about.activity.append') }}
     //- /SECTION
 
     //- SECTION[epic=home] COUNTERS
-    p {{ $tc("pages.index.sections.counters.message") }}
+    p {{ $tc('pages.index.sections.counters.message') }}
 
     v-row
       v-col(v-for='counter in counters.data', :key='counter.title')
@@ -115,7 +115,7 @@ mixin sheet(color, saturation, size)
           :title='$t("pages.index.sections.progress.title")',
           anchor='progress'
         )
-        p {{ $t("pages.index.sections.progress.message", { projects: doneProjects, works: doneWorks }) }}
+        p {{ $t('pages.index.sections.progress.message', { projects: doneProjects, works: doneWorks }) }}
 
       //- ANCHOR 2/3
       v-col.text-center(cols='12', sm='4')
@@ -158,7 +158,7 @@ mixin sheet(color, saturation, size)
                       v-on='on'
                     )
                       v-icon {{ mdiDotsHorizontal }}
-                  span {{ $t("more.events") }}
+                  span {{ $t('more.events') }}
 
           v-col.text-center(v-if='$vuetify.breakpoint.xs', cols='12')
             v-btn.mx-auto.transition.transform(
@@ -167,7 +167,7 @@ mixin sheet(color, saturation, size)
               x-large,
               color='primary',
               :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
-            ) {{ $t("more.events") }}
+            ) {{ $t('more.events') }}
 
           //- ANCHOR sub 2/2 chart
           v-col.d-none.d-sm-block(
@@ -206,7 +206,7 @@ mixin sheet(color, saturation, size)
               x-large,
               color='primary',
               :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
-            ) {{ $t("all") }} {{ $t("pages.cases.title") }}
+            ) {{ $t('all') }} {{ $t('pages.cases.title') }}
       //- /SECTION
 
       //- SECTION[epic=home] SKILLSET
@@ -225,11 +225,11 @@ mixin sheet(color, saturation, size)
           :title='$t("pages.index.sections.certificates.title")',
           anchor='certificates'
         )
-        p {{ $t("pages.index.sections.certificates.message") }}
+        p {{ $t('pages.index.sections.certificates.message') }}
 
         v-row.mx-0
-          v-col(v-for='cert in certList', :key='cert.num')
-            v-card.cert.hidden(
+          v-col.d-flex.flex-column(v-for='cert in certList', :key='cert.num')
+            v-card.cert.hidden.grow.d-grid.place-items-center(
               v-box-shadow:el-10,
               transition='slide-y-reverse-transition'
             )
@@ -252,7 +252,7 @@ mixin sheet(color, saturation, size)
               x-large,
               color='primary',
               :class='$vuetify.breakpoint.mdAndUp && hover ? "shadow-xl scale-125 -translate-y-1" : "shadow-sm"'
-            ) {{ $t("more.base") }} {{ $t("pages.index.sections.certificates.title") }}
+            ) {{ $t('more.base') }} {{ $t('pages.index.sections.certificates.title') }}
       //- /SECTION
 
       v-img.confetti-horizontal.not-pointer.mx-auto(

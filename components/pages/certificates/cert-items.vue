@@ -7,18 +7,20 @@
       //- LINK
       nuxt-link.ml-2(:to='$nuxt.$route.path + "#" + cert.slug') #
     v-row.mx-0
-      v-col(
+      v-col.d-flex.flex-column(
         v-for='(f, index) in cert.figures.slice(limitStart, limitEnd)',
         :key='index',
         cols='12',
         sm='6',
         :md='[4].includes(cert.figures.length) ? "3" : "4"'
       )
-        v-card.cert.hidden(
+        v-card.cert.hidden.grow.d-grid.place-items-center(
           v-box-shadow='6',
           transition='slide-y-reverse-transition'
         )
+          pre {{ cert.school }}
           v-btn.cert-open.d-none.d-md-flex.justify-center.align-center.rounded-lg.transition-fast-in-fast-out(
+            v-if='f.school === "GB"',
             icon,
             large,
             exact,
