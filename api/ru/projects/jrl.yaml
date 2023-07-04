@@ -5,4 +5,5 @@
   url: https://github.com/madeas/JSFiddle-layouts
   img:
     src: /src/projects/jrl.jpg
-    alt: ""
+    alt:
+  blank: true

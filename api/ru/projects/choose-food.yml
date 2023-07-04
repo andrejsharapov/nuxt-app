@@ -6,3 +6,4 @@
   img:
     src: /src/apps/choose-food/app-bg__xs__dark.jpg
     alt:
+  blank: false

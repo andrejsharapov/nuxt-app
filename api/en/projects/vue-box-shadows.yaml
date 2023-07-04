@@ -1,8 +1,9 @@
 - title: vue-box-shadows
   type: dev tools
-  created: '2022-07-18'
+  created: "2022-07-18"
   desc: Lightweight package with vue.js directive for adding beautiful and airy shadows from the box-shadow.css collection of shadows.
   url: https://github.com/andrejsharapov/vue-box-shadows
   img:
     src: https://repository-images.githubusercontent.com/514680914/da9c20c4-61dc-40e1-8447-b4e2a7bd0bec
     alt: vue-box-shadows
+  blank: true

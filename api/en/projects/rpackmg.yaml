@@ -5,4 +5,5 @@
   url: http://rpack.madeas.ru/
   img:
     src: /src/projects/rpackmg.jpg
-    alt: ""
+    alt:
+  blank: true

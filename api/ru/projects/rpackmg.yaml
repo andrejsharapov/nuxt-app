@@ -1,8 +1,9 @@
 - title: Minecraft texture pack «RPackMG»
   type: resource pack
-  created: '2015-12-19'
+  created: "2015-12-19"
   desc: Один из самых популярных пакетов текстур для игры Minecraft в серии Realistic получил международное признание среди игроков в 2014 году. Отличное качество подобранных изображений и текстур делает этот пакет интересным и увлекательным.
   url: http://rpack.madeas.ru/
   img:
     src: /src/projects/rpackmg.jpg
-    alt: ''
+    alt:
+  blank: true
