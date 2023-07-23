@@ -17,19 +17,29 @@
       | {{ sketchMessage() }}
       v-switch.mx-4.my-0(
         v-model='cardView',
-        :disabled='!item.original',
+        :disabled='!item.original.src',
         hide-details
       )
       | {{ illMessage() }}
+      v-spacer
+      v-chip.ml-2(
+        v-for='chip of item.tools',
+        :key='chip',
+        label,
+        outlined,
+        :filter-icon='mdiNumeric1Box',
+        active-class='indigo white--text'
+      ) {{ chip }}
 
     v-card-actions.flex-shrink-0.justify-space-between
-      v-card-subtitle.py-0 {{ formatDate(item.date) }}
+      v-card-subtitle.pa-0 {{ formatDate(item.date) }}
       v-spacer
-      v-card-subtitle.py-0
+      v-card-subtitle.pa-0
         v-btn(
           v-for='(name, value) of item.links',
           :key='name',
           :href='name',
+          :disabled='!name',
           icon,
           target='_blank',
           rel='noopener noreferrer'
@@ -38,6 +48,8 @@
 </template>
 
 <script>
+import { mdiNumeric1Box } from '@mdi/js'
+
 export default {
   name: 'CardItems',
   props: {
@@ -53,6 +65,7 @@ export default {
   data() {
     return {
       cardView: this.preview,
+      mdiNumeric1Box,
     }
   },
   methods: {
