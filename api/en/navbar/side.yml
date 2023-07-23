@@ -1,79 +1,82 @@
 data:
-  - action: '$mdiHomeRoof'
+  - action: "$mdiHomeRoof"
     title: Home
-    to: '/en'
-  - action: '$mdiFolderOpen'
+    to: "/en"
+  - action: "$mdiFolderOpen"
     nested:
-      - action: '$mdiPaletteOutline'
-        group: 'design'
+      - action: "$mdiPaletteOutline"
+        group: "design"
         child:
-          - action: '$mdiCellphoneLink'
+          - action: "$mdiCellphoneLink"
             title: Websites
-            to: '/en/cases/design/websites'
-          - action: '$mdiCellphoneCog'
+            to: "/en/cases/design/websites"
+          - action: "$mdiCellphoneCog"
             title: App Design
-            to: '/en/cases/design/apps'
-          - action: '$mdiVectorRadius'
+            to: "/en/cases/design/apps"
+          - action: "$mdiVectorRadius"
             title: Logotypes
-            to: '/en/cases/design/logo'
-          - action: '$mdiVectorCurve'
+            to: "/en/cases/design/logo"
+          - action: "$mdiVectorCurve"
             title: Illustrations
-            to: '/en/cases/design/illustrations'
-          - action: '$mdiEmailFastOutline'
+            to: "/en/cases/design/illustrations"
+          - action: "$mdiEmailFastOutline"
             title: Newsletters
-            to: '/en/cases/design/email'
-          - action: '$mdiOrderBoolAscendingVariant'
+            to: "/en/cases/design/email"
+          - action: "$mdiOrderBoolAscendingVariant"
             title: Quiz
-            to: '/en/cases/design/quiz'
+            to: "/en/cases/design/quiz"
         title: Design
-        to: '/en/cases/design'
-      - action: '$mdiDevices'
-        group: 'dev'
+        to: "/en/cases/design"
+      - action: "$mdiDevices"
+        group: "dev"
         child:
-          - action: '$mdiResponsive'
+          - action: "$mdiResponsive"
             title: Websites
-            to: '/en/cases/dev/websites'
-          - action: '$mdiTabletCellphone'
+            to: "/en/cases/dev/websites"
+          - action: "$mdiTabletCellphone"
             disabled: true
             title: App Design
-            to: '/en/cases/dev/apps'
-          - action: '$mdiVectorBezier'
+            to: "/en/cases/dev/apps"
+          - action: "$mdiVectorBezier"
             title: HTML5 Banners
-            to: '/en/cases/dev/banners'
-          - action: '$mdiEmailSyncOutline'
+            to: "/en/cases/dev/banners"
+          - action: "$mdiEmailSyncOutline"
             disabled: true
             title: Email
-            to: '/en/cases/dev/email'
+            to: "/en/cases/dev/email"
         title: Development
-        to: '/en/cases/dev'
-      - action: '$mdiDotsHorizontal'
-        group: 'works'
+        to: "/en/cases/dev"
+      - action: "$mdiDotsHorizontal"
+        group: "works"
         child:
-          - action: '$mdiDraw'
+          - action: "$mdiDraw"
             title: Drawings
-            to: '/en/works/drawings'
-          - action: '$mdiVectorPolylineEdit'
+            to: "/en/works/drawings"
+          - action: "$mdiVectorPolylineEdit"
             title: Photoshop
-            to: '/en/works/photoshop'
-          - action: '$mdiCodeJson'
+            to: "/en/works/photoshop"
+          - action: "$mdiCodeJson"
             title: Pure Code
-            to: '/en/works/coding'
+            to: "/en/works/coding"
+          - action: "$mdiPrinter3d"
+            title: 3D Modeling
+            to: "/en/3d-modeling"
         title: More
     title: Cases
-    to: '/en/cases'
-  - action: '$mdiScriptText'
-    group: 'pricing'
+    to: "/en/cases"
+  - action: "$mdiScriptText"
+    group: "pricing"
     nested:
-      - action: '$mdiPaletteSwatchOutline'
+      - action: "$mdiPaletteSwatchOutline"
         disabled: true
         title: Web Design
-        to: '/en/pricing/design'
-      - action: '$vsCode'
+        to: "/en/pricing/design"
+      - action: "$vsCode"
         disabled: true
         title: Development
-        to: '/en/pricing/dev'
+        to: "/en/pricing/dev"
     title: Pricing
-    to: '/en/pricing'
+    to: "/en/pricing"
   # - action: '$mdiBrain'
   #   nested:
   #     - action: '$mdiBookOpenPageVariantOutline'
@@ -81,43 +84,43 @@ data:
   #       to: '/en/articles'
   #   title: Blog
   #   to: '#'
-  - action: '$mdiAccount'
+  - action: "$mdiAccount"
     nested:
-      - action: '$mdiFileCertificateOutline'
+      - action: "$mdiFileCertificateOutline"
         title: Certificates
-        to: '/en/certificates'
-      - action: '$mdiTimelineOutline'
+        to: "/en/certificates"
+      - action: "$mdiTimelineOutline"
         title: Timeline
-        to: '/en/timeline'
-      - action: '$mdiLightbulbOnOutline'
+        to: "/en/timeline"
+      - action: "$mdiLightbulbOnOutline"
         title: Projects
-        to: '/en/projects'
-      - action: '$mdiContactsOutline'
+        to: "/en/projects"
+      - action: "$mdiContactsOutline"
         title: Contact
-        to: '/en/contact'
-      - action: '$mdiBookOpenPageVariantOutline'
+        to: "/en/contact"
+      - action: "$mdiBookOpenPageVariantOutline"
         title: Articles
-        to: '/en/articles'
-      - action: '$mdiDotsHorizontal'
-        group: 'more'
+        to: "/en/articles"
+      - action: "$mdiDotsHorizontal"
+        group: "more"
         child:
-          - action: '$mdiVideoWirelessOutline'
+          - action: "$mdiVideoWirelessOutline"
             disabled: true
             title: Streams
-            to: '/en/guest-live-streams'
-          - action: '$mdiMicrophoneOutline'
+            to: "/en/guest-live-streams"
+          - action: "$mdiMicrophoneOutline"
             disabled: true
             title: Interviews
-            to: '/en/interviews'
-          - action: '$mdiPodcast'
+            to: "/en/interviews"
+          - action: "$mdiPodcast"
             disabled: true
             title: Podcasts
-            to: '/en/podcasts'
-          - action: '$mdiAccountGroupOutline'
+            to: "/en/podcasts"
+          - action: "$mdiAccountGroupOutline"
             disabled: true
             title: Conferences
-            to: '/en/conferences'
+            to: "/en/conferences"
         title: More
-        to: '#'
+        to: "#"
     title: Author
-    to: '#'
+    to: "#"

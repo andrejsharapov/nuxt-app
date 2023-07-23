@@ -59,6 +59,7 @@ import {
   mdiBriefcaseEyeOutline,
   mdiLanguagePhp,
   mdiDatabaseCheckOutline,
+  mdiPrinter3d,
 } from '@mdi/js'
 import vsCode from '@/components/icons/vs-code'
 import figmaOutline from '@/components/icons/figma-outline'
@@ -238,6 +239,7 @@ export default function ({ app }) {
         mdiBriefcaseEyeOutline,
         mdiLanguagePhp,
         mdiDatabaseCheckOutline,
+        mdiPrinter3d,
       },
     },
   }
