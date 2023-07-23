@@ -1,6 +1,9 @@
 - type: des-illustration
   grid: 6
   date: 2019-04-07
+  tools:
+    - Ai
+    - Ps
   original:
     src: /src/drawings/1.jpg
     alt:
