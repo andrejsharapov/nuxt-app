@@ -81,7 +81,28 @@
                     cols="12"
                     md="12"
                   >
-                    <s-pages-cases-components-slug-preview :preview="website" />
+                    <s-pages-cases-components-slug-preview
+                      v-if="!website.img.embed"
+                      :preview="website"
+                    />
+                    <div
+                      v-else
+                      class="position-relative"
+                    >
+                      <iframe
+                        :src="website.img.embed"
+                        width="100%"
+                        height="450"
+                        frameborder="0"
+                        allowfullscreen
+                      />
+                      <v-sheet
+                        class="position-absolute"
+                        height="48"
+                        width="100%"
+                        style="bottom: 0; background-color: var(--light)"
+                      />
+                    </div>
                   </v-col>
                   <!-- /COMPONENT -->
 
