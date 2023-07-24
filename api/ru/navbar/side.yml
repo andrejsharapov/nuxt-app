@@ -1,77 +1,80 @@
 data:
-  - action: '$mdiHomeRoof'
+  - action: "$mdiHomeRoof"
     title: Главная
-    to: '/ru'
-  - action: '$mdiFolderOpen'
+    to: "/ru"
+  - action: "$mdiFolderOpen"
     nested:
-      - action: '$mdiPaletteOutline'
-        group: 'design'
+      - action: "$mdiPaletteOutline"
+        group: "design"
         child:
-          - action: '$mdiCellphoneLink'
+          - action: "$mdiCellphoneLink"
             title: Сайты
-            to: '/ru/cases/design/websites'
-          - action: '$mdiCellphoneCog'
+            to: "/ru/cases/design/websites"
+          - action: "$mdiCellphoneCog"
             title: Приложения
-            to: '/ru/cases/design/apps'
-          - action: '$mdiVectorRadius'
+            to: "/ru/cases/design/apps"
+          - action: "$mdiVectorRadius"
             title: Логотипы
-            to: '/ru/cases/design/logo'
-          - action: '$mdiVectorCurve'
+            to: "/ru/cases/design/logo"
+          - action: "$mdiVectorCurve"
             title: Иллюстрации
-            to: '/ru/cases/design/illustrations'
-          - action: '$mdiEmailFastOutline'
+            to: "/ru/cases/design/illustrations"
+          - action: "$mdiEmailFastOutline"
             title: Email-рассылки
-            to: '/ru/cases/design/email'
-          - action: '$mdiProgressCheck'
+            to: "/ru/cases/design/email"
+          - action: "$mdiProgressCheck"
             title: Квиз-дизайн
-            to: '/ru/cases/design/quiz'
+            to: "/ru/cases/design/quiz"
         title: Веб-дизайн
-        to: '/ru/cases/design'
-      - action: '$mdiDevices'
-        group: 'dev'
+        to: "/ru/cases/design"
+      - action: "$mdiDevices"
+        group: "dev"
         child:
-          - action: '$mdiResponsive'
+          - action: "$mdiResponsive"
             title: Сайты
-            to: '/ru/cases/dev/websites'
-          - action: '$mdiTabletCellphone'
+            to: "/ru/cases/dev/websites"
+          - action: "$mdiTabletCellphone"
             title: Приложения
-            to: '/ru/cases/dev/apps'
+            to: "/ru/cases/dev/apps"
             disabled: true
-          - action: '$mdiVectorBezier'
+          - action: "$mdiVectorBezier"
             title: HTML5 Баннеры
-            to: '/ru/cases/dev/banners'
-          - action: '$mdiEmailSyncOutline'
+            to: "/ru/cases/dev/banners"
+          - action: "$mdiEmailSyncOutline"
             disabled: true
             title: Верстка писем
-            to: '/ru/cases/dev/email'
+            to: "/ru/cases/dev/email"
         title: Разработка
-        to: '/ru/cases/dev'
-      - action: '$mdiDotsHorizontal'
-        group: 'works'
+        to: "/ru/cases/dev"
+      - action: "$mdiDotsHorizontal"
+        group: "works"
         child:
-          - action: '$mdiDraw'
+          - action: "$mdiDraw"
             title: Рисунки
-            to: '/ru/works/drawings'
-          - action: '$mdiVectorPolylineEdit'
+            to: "/ru/works/drawings"
+          - action: "$mdiVectorPolylineEdit"
             title: Фотошоп
-            to: '/ru/works/photoshop'
-          - action: '$mdiCodeJson'
+            to: "/ru/works/photoshop"
+          - action: "$mdiCodeJson"
             title: Кодинг
-            to: '/ru/works/coding'
+            to: "/ru/works/coding"
+          - action: "$mdiPrinter3d"
+            title: 3D Модели
+            to: "/ru/modeling"
         title: Еще
     title: Кейсы
-    to: '/ru/cases'
-  - action: '$mdiScriptText'
-    group: 'pricing'
+    to: "/ru/cases"
+  - action: "$mdiScriptText"
+    group: "pricing"
     nested:
-      - action: '$mdiPaletteSwatchOutline'
+      - action: "$mdiPaletteSwatchOutline"
         title: Веб-дизайн
-        to: '/ru/pricing/design'
-      - action: '$vsCode'
+        to: "/ru/pricing/design"
+      - action: "$vsCode"
         title: Разработка
-        to: '/ru/pricing/dev'
+        to: "/ru/pricing/dev"
     title: Цены
-    to: '/ru/pricing'
+    to: "/ru/pricing"
   # - action: '$mdiBrain'
   #   nested:
   #     - action: '$mdiBookOpenPageVariantOutline'
@@ -79,43 +82,43 @@ data:
   #       to: '/ru/articles'
   #   title: Блог
   #   to: '#'
-  - action: '$mdiAccount'
+  - action: "$mdiAccount"
     nested:
-      - action: '$mdiFileCertificateOutline'
+      - action: "$mdiFileCertificateOutline"
         title: Сертификаты
-        to: '/ru/certificates'
-      - action: '$mdiTimelineOutline'
+        to: "/ru/certificates"
+      - action: "$mdiTimelineOutline"
         title: Timeline
-        to: '/ru/timeline'
-      - action: '$mdiLightbulbOnOutline'
+        to: "/ru/timeline"
+      - action: "$mdiLightbulbOnOutline"
         title: Проекты
-        to: '/ru/projects'
-      - action: '$mdiContactsOutline'
+        to: "/ru/projects"
+      - action: "$mdiContactsOutline"
         title: Контакты
-        to: '/ru/contact'
-      - action: '$mdiBookOpenPageVariantOutline'
+        to: "/ru/contact"
+      - action: "$mdiBookOpenPageVariantOutline"
         title: Статьи
-        to: '/ru/articles'
-      - action: '$mdiDotsHorizontal'
-        group: 'more'
+        to: "/ru/articles"
+      - action: "$mdiDotsHorizontal"
+        group: "more"
         child:
-          - action: '$mdiVideoWirelessOutline'
+          - action: "$mdiVideoWirelessOutline"
             disabled: true
             title: Стримы
-            to: '/ru/guest-live-streams'
-          - action: '$mdiMicrophoneOutline'
+            to: "/ru/guest-live-streams"
+          - action: "$mdiMicrophoneOutline"
             disabled: true
             title: Интервью
-            to: '/ru/interviews'
-          - action: '$mdiPodcast'
+            to: "/ru/interviews"
+          - action: "$mdiPodcast"
             disabled: true
             title: Подскасты
-            to: '/ru/podcasts'
-          - action: '$mdiAccountGroupOutline'
+            to: "/ru/podcasts"
+          - action: "$mdiAccountGroupOutline"
             disabled: true
             title: Конференции
-            to: '/ru/conferences'
+            to: "/ru/conferences"
         title: Еще
-        to: '#'
+        to: "#"
     title: Автор
-    to: '#'
+    to: "#"

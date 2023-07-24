@@ -1,0 +1,8 @@
+{
+  label: 'progress',
+  date: '2023-07-10',
+  title: '3D Моделирование',
+  caption: 'Начал заниматься 3d моделированием.',
+  button: 'CodePen',
+  to: '/3d-modeling',
+}

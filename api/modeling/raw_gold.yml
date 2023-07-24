@@ -1,0 +1,13 @@
+type: modeling
+title: raw_gold
+alt: raw_gold
+date: 2023-07-18
+descEn:
+descRu:
+files:
+  -
+tools:
+  - blockbench
+tags:
+  - minecraft
+  - item
