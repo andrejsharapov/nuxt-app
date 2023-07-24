@@ -60,7 +60,7 @@ data:
             to: "/en/works/coding"
           - action: "$mdiPrinter3d"
             title: 3D Modeling
-            to: "/en/3d-modeling"
+            to: "/en/modeling"
         title: More
     title: Cases
     to: "/en/cases"

@@ -59,8 +59,8 @@ data:
             title: Кодинг
             to: "/ru/works/coding"
           - action: "$mdiPrinter3d"
-            title: 3D Моделирование
-            to: "/ru/3d-modeling"
+            title: 3D Модели
+            to: "/ru/modeling"
         title: Еще
     title: Кейсы
     to: "/ru/cases"
