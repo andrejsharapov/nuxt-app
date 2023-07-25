@@ -85,24 +85,58 @@
                       v-if="!website.img.embed"
                       :preview="website"
                     />
-                    <div
+                    <v-sheet
                       v-else
-                      class="position-relative"
+                      v-resize="onResize"
+                      v-box-shadow="9"
+                      class="position-relative overflow-x-hidden iframe-container"
+                      style="
+                        height: 16rem;
+                        max-height: 100vh;
+                        overflow-y: scroll;
+                        resize: vertical;
+                      "
                     >
-                      <iframe
-                        :src="website.img.embed"
-                        width="100%"
-                        height="450"
-                        frameborder="0"
-                        allowfullscreen
-                      />
+                      <v-lazy
+                        height="inherit"
+                        max-height="inherit"
+                      >
+                        <iframe
+                          :src="website.img.embed"
+                          width="100%"
+                          frameborder="0"
+                          allowfullscreen
+                          style="height: calc(100% - 8px)"
+                        />
+                      </v-lazy>
                       <v-sheet
                         class="position-absolute"
-                        height="48"
                         width="calc(100% + 1px)"
+                        height="56"
                         style="bottom: 0; background-color: var(--light)"
-                      />
-                    </div>
+                      >
+                        <v-sheet
+                          v-if="blockSize.w === blockSize.c"
+                          width="100%"
+                          height="inherit"
+                          color="info"
+                          dark
+                          class="d-flex align-center px-4"
+                        >
+                          <v-icon left>{{ mdiAlertOutline }}</v-icon>
+                          {{ resize.max }}
+                        </v-sheet>
+                        <div
+                          v-else
+                          class="fill-height d-flex align-center px-4"
+                        >
+                          {{ resize.limit }}
+                          <v-icon size="16">
+                            {{ mdiResizeBottomRight }}
+                          </v-icon>
+                        </div>
+                      </v-sheet>
+                    </v-sheet>
                   </v-col>
                   <!-- /COMPONENT -->
 
@@ -287,6 +321,8 @@
 </template>
 
 <script>
+import { mdiAlertOutline, mdiResizeBottomRight } from '@mdi/js'
+
 export default {
   name: 'CasesDesignWebsitesSlug',
   async asyncData({ $content, app, params }) {
@@ -312,6 +348,18 @@ export default {
       next,
     }
   },
+  data: () => ({
+    mdiAlertOutline,
+    mdiResizeBottomRight,
+    blockSize: {
+      w: 0,
+      c: 0,
+    },
+    resize: {
+      max: 'Max height - 100vh.',
+      limit: 'Click and drag down.',
+    },
+  }),
   head() {
     return {
       title: this.website?.title ? this.website.title : '',
@@ -338,6 +386,17 @@ export default {
         return 'var(--success)'
       } else {
         return 'var(--secondary)'
+      }
+    },
+  },
+  mounted() {
+    this.onResize()
+  },
+  methods: {
+    onResize() {
+      this.blockSize = {
+        w: window.innerHeight,
+        c: document.querySelector('.iframe-container')?.clientHeight,
       }
     },
   },
