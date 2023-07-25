@@ -99,7 +99,7 @@
                       <v-sheet
                         class="position-absolute"
                         height="48"
-                        width="100%"
+                        width="calc(100% + 1px)"
                         style="bottom: 0; background-color: var(--light)"
                       />
                     </div>
