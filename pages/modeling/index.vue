@@ -21,10 +21,10 @@
       )
   v-container
     v-row
-      v-col(cols='12', sm='9')
+      v-col(cols='12', md='9')
         p(v-html="$t('pages.modeling.message', { pack: \"<a href='/projects' target='_blank' title=''>пакет текстур</a>\", blockbench: \"<a href='https://www.blockbench.net/' target='_blank' title=''>blockbench</a>\"})")
 
-      v-col.d-none.d-sm-block.mt-sm-n16.text-center(cols='12', sm='3')
+      v-col.d-none.d-md-block.mt-n16.text-center(cols='12', md='3')
         .position-absolute.mt-n10
           lazy-s-fish-pages-modeling(width='290', :height='null')
 
