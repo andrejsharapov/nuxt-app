@@ -28,7 +28,7 @@ mixin sheet(color, saturation, size)
                 v-progress-circular(indeterminate, color='grey lighten-5')
 
         v-hover(#default='{ hover }')
-          v-btn.d-none.d-lg-block.mx-auto.mt-auto.mb-0.uppercase(
+          v-btn.d-none.d-lg-flex.align-center.mx-auto.mt-auto.mb-0.uppercase(
             block,
             text,
             plain,
