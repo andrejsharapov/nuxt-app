@@ -4,5 +4,5 @@
   title: '3D Моделирование',
   caption: 'Начал заниматься 3d моделированием.',
   button: 'CodePen',
-  to: '/3d-modeling',
+  to: '/modeling',
 }
