@@ -1,31 +1,34 @@
 data:
-  - action: '$mdiHomeRoof'
+  - action: "$mdiHomeRoof"
     title: Главная
-    to: '/ru'
-  - action: '$mdiBriefcaseEyeOutline'
+    to: "/ru"
+  - action: "$mdiBriefcaseEyeOutline"
     title: Кейсы
-    to: '/ru/cases'
-  - action: '$mdiTimelineOutline'
+    to: "/ru/cases"
+  - action: "$mdiTimelineOutline"
     title: Timeline
-    to: '/ru/timeline'
-  - action: '$mdiContactsOutline'
+    to: "/ru/timeline"
+  - action: "$mdiContactsOutline"
     title: Контакты
-    to: '/ru/contact'
-  - action: '$mdiFileCertificateOutline'
+    to: "/ru/contact"
+  - action: "$mdiFileCertificateOutline"
     title: Сертификаты
-    to: '/ru/certificates'
-  - action: '$mdiCodeJson'
+    to: "/ru/certificates"
+  - action: "$mdiCodeJson"
     title: Кодинг
-    to: '/ru/works/coding'
-  - action: '$mdiVectorPolylineEdit'
+    to: "/ru/works/coding"
+  - action: "$mdiVectorPolylineEdit"
     title: Фотошоп
-    to: '/ru/works/photoshop'
-  - action: '$mdiDraw'
+    to: "/ru/works/photoshop"
+  - action: "$mdiDraw"
     title: Рисунки
-    to: '/ru/works/drawings'
+    to: "/ru/works/drawings"
+  - action: "$mdiPrinter3d"
+    title: 3D Модели
+    to: "/ru/modeling"
   # - action: '$mdiScriptText'
   #   title: Цены
   #   to: '/ru/pricing'
-  - action: '$mdiLightbulbOnOutline'
+  - action: "$mdiLightbulbOnOutline"
     title: Проекты
-    to: '/ru/projects'
+    to: "/ru/projects"

@@ -1,31 +1,34 @@
 data:
-  - action: '$mdiHomeRoof'
+  - action: "$mdiHomeRoof"
     title: Home
-    to: '/en'
-  - action: '$mdiBriefcaseEyeOutline'
+    to: "/en"
+  - action: "$mdiBriefcaseEyeOutline"
     title: Cases
-    to: '/en/cases'
-  - action: '$mdiTimelineOutline'
+    to: "/en/cases"
+  - action: "$mdiTimelineOutline"
     title: Timeline
-    to: '/en/timeline'
-  - action: '$mdiContactsOutline'
+    to: "/en/timeline"
+  - action: "$mdiContactsOutline"
     title: Contact
-    to: '/en/contact'
-  - action: '$mdiFileCertificateOutline'
+    to: "/en/contact"
+  - action: "$mdiFileCertificateOutline"
     title: Certificates
-    to: '/en/certificates'
-  - action: '$mdiCodeJson'
+    to: "/en/certificates"
+  - action: "$mdiCodeJson"
     title: Pure Code
-    to: '/en/works/coding'
-  - action: '$mdiVectorPolylineEdit'
+    to: "/en/works/coding"
+  - action: "$mdiVectorPolylineEdit"
     title: Photoshop
-    to: '/en/works/photoshop'
-  - action: '$mdiDraw'
+    to: "/en/works/photoshop"
+  - action: "$mdiDraw"
     title: Drawings
-    to: '/en/works/drawings'
+    to: "/en/works/drawings"
+  - action: "$mdiPrinter3d"
+    title: 3D Modeling
+    to: "/en/modeling"
   # - action: '$mdiScriptText'
   #   title: Pricing
   #   to: '/en/pricing'
-  - action: '$mdiLightbulbOnOutline'
+  - action: "$mdiLightbulbOnOutline"
     title: Projects
-    to: '/en/projects'
+    to: "/en/projects"
