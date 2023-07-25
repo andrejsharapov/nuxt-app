@@ -4,13 +4,14 @@ title: Дизайн лендинга «Forest-Fi»
 img:
   src: https://cdn.dribbble.com/users/2241643/screenshots/7971597/media/6f96fc0f8fac7cb3ed9f523339630722.png?compress=1&resize=1000x750
   alt: Дизайн лендинга «Forest-Fi»
+  embed: https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTWthxW0PwtuyYbCFGjBwRX%2FForest-Fi%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D11-181%26viewport%3D-666%252C124%252C0.3%26t%3DTLsghWkVtPOiSzqn-1%26scaling%3Dscale-down-width%26mode%3Ddesign
 ux:
   works: PET PROJECT / EXPERIENCE
   price: Прототипирование и дизайн
-created: '2019-11-04'
+created: "2019-11-04"
 period:
-  - '2019-11-04'
-  - '2019-11-05'
+  - "2019-11-04"
+  - "2019-11-05"
 deadline: На выполнение задачи ушло около 20 часов.
 preview:
   tools:
@@ -44,26 +45,26 @@ done:
   list:
     - планирование продукта и разработка идейной составляющей;
     - предварительный анализ рынка и целевой аудитории;
-    - 'анализ, обзор аналогичных решений: функционал, количество пользователей, рейтинги, отзывы, монетизация;'
+    - "анализ, обзор аналогичных решений: функционал, количество пользователей, рейтинги, отзывы, монетизация;"
     - разработка фирменного стиля;
     - формирование палитры цветов, типографики и состояний элементов;
     - разработка прототипов дизайн-макета;
     - написание оригинальных текстов;
     - разработка дизайна и пользовательского интерфейса (UI).
 palette:
-  - type: ''
+  - type: ""
     hex:
       - A88875
       - E3D1C0
-  - type: ''
+  - type: ""
     hex:
       - 31282F
       - 393939
-  - type: ''
+  - type: ""
     hex:
       - 999999
       - DFDEDE
-  - type: ''
+  - type: ""
     hex:
       - FFFFFF
 typography:
@@ -75,4 +76,4 @@ grid:
   width: 65
   size: 1140
 responsive:
-  percent: '100'
+  percent: "100"

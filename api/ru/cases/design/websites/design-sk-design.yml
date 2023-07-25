@@ -4,13 +4,14 @@ title: Дизайн сайта фабрики домашней мебели «SK
 img:
   src: https://cdn.dribbble.com/users/2241643/screenshots/8194467/media/432d5d07762b79b3f6b40dcc6d2beb99.png?compress=1&resize=1000x750
   alt: Дизайн сайта фабрики домашней мебели «SK DESIGN»
+  embed: https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F86IDbA3KqsxQh4ggd18LAj%2FSK-DESIGN%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D23-10%26viewport%3D157%252C33%252C0.24%26t%3DOPewd8JDc5rXNpIH-1%26scaling%3Dscale-down-width%26mode%3Ddesign
 ux:
   works: PET PROJECT / EXPERIENCE
   price: Прототипирование и дизайн
-created: '2019-11-13'
+created: "2019-11-13"
 period:
-  - '2019-11-12'
-  - '2019-11-13'
+  - "2019-11-12"
+  - "2019-11-13"
 deadline: На разработку дизайна страницы потребовалось около 13 часов.
 preview:
   tools:
@@ -47,15 +48,15 @@ done:
     - написание оригинальных текстов;
     - разработка дизайна и пользовательского интерфейса (UI).
 palette:
-  - type: ''
+  - type: ""
     hex:
       - FCAA3C
       - 665349
-  - type: ''
+  - type: ""
     hex:
       - 131129
       - 999999
-  - type: ''
+  - type: ""
     hex:
       - E5E5E5
       - F8F8FA
@@ -68,4 +69,4 @@ grid:
   width: 68
   size: 1140
 responsive:
-  percent: '100'
+  percent: "100"

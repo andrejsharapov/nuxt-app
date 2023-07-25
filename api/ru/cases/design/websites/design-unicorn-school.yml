@@ -4,13 +4,14 @@ title: Дизайн продающей страницы конного клуб�
 img:
   src: https://cdn.dribbble.com/users/2241643/screenshots/7786454/media/518ed3d7dd768170a24507d9a89f4e66.png
   alt: Конный клуб «Единорожка»
+  embed: https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fs8hrKBubaMjH88hUTQPNBq%2F%25D0%259A%25D0%25BE%25D0%25BD%25D0%25BD%25D1%258B%25D0%25B9-%25D0%25BA%25D0%25BB%25D1%2583%25D0%25B1%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D37-74%26viewport%3D356%252C26%252C0.07%26t%3DYlUua5cBRTdV2zeg-1%26scaling%3Dscale-down-width%26mode%3Ddesign
 ux:
   works: PET PROJECT / EXPERIENCE
   price: Прототипирование и дизайн
-created: '2019-10-22'
+created: "2019-10-22"
 period:
-  - '2019-10-22'
-  - '2019-10-23'
+  - "2019-10-22"
+  - "2019-10-23"
 deadline: На выполнение задачи ушло около 20 часов.
 preview:
   tools:
@@ -24,8 +25,8 @@ preview:
         - UI/UX Designer
     - title: Другие
       tags:
-        - 'Model: Надежда Добровольская-Баскакова'
-        - 'Model: Андрей Шарапов'
+        - "Model: Надежда Добровольская-Баскакова"
+        - "Model: Андрей Шарапов"
   to:
     dribbble: https://dribbble.com/shots/7786454-Landing-Horse-Club-Unicorn
     behance: https://www.behance.net/gallery/87207549/konnyj-klub-edinorozhka
@@ -51,18 +52,18 @@ done:
     - написание оригинальных текстов;
     - разработка дизайна и пользовательского интерфейса (UI).
 palette:
-  - type: ''
+  - type: ""
     hex:
       - F18122
       - AD7861
-  - type: ''
+  - type: ""
     hex:
       - 24292E
-  - type: ''
+  - type: ""
     hex:
       - 969696
       - E5E5E5
-  - type: ''
+  - type: ""
     hex:
       - FFFFFF
 typography:
@@ -74,4 +75,4 @@ grid:
   width: 68
   size: 1140
 responsive:
-  percent: '100'
+  percent: "100"

@@ -4,13 +4,14 @@ title: Landing Christmas agency «Ho-Ho-Ho»
 img:
   src: https://cdn.dribbble.com/users/2241643/screenshots/9025858/media/a879ebb4a866b3950c402d860d5e6048.png?compress=1
   alt: Landing Christmas agency «Ho-Ho-Ho»
+  embed: https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCbbUPxbCtyPZzUO9bZFSLf%2FHo-Ho-Ho%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D54-14%26viewport%3D430%252C25%252C0.05%26t%3DbFV2Pjl5vXlQQf9s-1%26scaling%3Dscale-down-width%26mode%3Ddesign
 ux:
   works: PET PROJECT / EXPERIENCE
   price: Prototyping and design
-created: '2019-12-13'
+created: "2019-12-13"
 period:
-  - '2019-12-13'
-  - '2019-12-14'
+  - "2019-12-13"
+  - "2019-12-14"
 deadline: The task took about 9 hours to complete.
 preview:
   tools:
@@ -23,7 +24,7 @@ preview:
         - Ux/Ui Designer / Visual Designer
     - title: Other
       tags:
-        - 'Model: Mari Gladkaya'
+        - "Model: Mari Gladkaya"
   to:
     dribbble: https://dribbble.com/shots/9025858-Christmas-agency-Ho-Ho-Ho
     behance: https://www.behance.net/gallery/89434415/Christmas-agency-Ho-Ho-Ho
@@ -48,15 +49,15 @@ done:
     - development of prototypes of the design layout;
     - design and user interface (UI) development.
 palette:
-  - type: ''
+  - type: ""
     hex:
       - DC4250
       - A62120
-  - type: ''
+  - type: ""
     hex:
       - F6F6F6
       - FFFFFF
-  - type: ''
+  - type: ""
     hex:
       - 444857
       - 8D8D8D
@@ -69,4 +70,4 @@ grid:
   width: 65
   size: 1140
 responsive:
-  percent: '100'
+  percent: "100"
