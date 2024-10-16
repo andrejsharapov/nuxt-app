@@ -450,6 +450,10 @@ export default {
       design: designEn,
       development: devEn,
     },
+    printing: {
+      message:
+        'Printing includes the printing of books, magazines, leaflets, stickers, decals, tags and many other information and promotional products. I do not specialize in this area, but several times I was approached with assignments on similar topics and I willingly accepted them. The results of the work are presented on this page.',
+    },
     projects: {
       message:
         'Often the ideas born in the head remain just an idea. Therefore, I try to bring my ideas to life, and some of them have turned into large-scale projects.',

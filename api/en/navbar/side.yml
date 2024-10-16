@@ -61,6 +61,9 @@ data:
           - action: "$mdiPrinter3d"
             title: 3D Modeling
             to: "/en/modeling"
+          - action: "$mdiPrinterOutline"
+            title: Printing
+            to: "/ru/works/printing"
         title: More
     title: Cases
     to: "/en/cases"

@@ -60,6 +60,7 @@ import {
   mdiLanguagePhp,
   mdiDatabaseCheckOutline,
   mdiPrinter3d,
+  mdiPrinterOutline,
 } from '@mdi/js'
 import vsCode from '@/components/icons/vs-code'
 import figmaOutline from '@/components/icons/figma-outline'
@@ -240,6 +241,7 @@ export default function ({ app }) {
         mdiLanguagePhp,
         mdiDatabaseCheckOutline,
         mdiPrinter3d,
+        mdiPrinterOutline,
       },
     },
   }

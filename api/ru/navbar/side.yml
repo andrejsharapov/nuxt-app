@@ -61,6 +61,9 @@ data:
           - action: "$mdiPrinter3d"
             title: 3D Модели
             to: "/ru/modeling"
+          - action: "$mdiPrinterOutline"
+            title: Полиграфия
+            to: "/ru/works/printing"
         title: Еще
     title: Кейсы
     to: "/ru/cases"
