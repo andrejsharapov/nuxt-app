@@ -1,0 +1,81 @@
+hide: false
+type: des-site
+title: Homepage design for a shelter for cats suffering from overweight - Fat Cat
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/19595483/media/103ecb20535cdf51cc1efa086cedd026.jpg?resize=1000x750&vertical=center
+  alt: Homepage design for a shelter for cats suffering from overweight - Fat Cat
+  embed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvK4snQwvpH2m8obA9wEXdr%2FLanding%253A-Fat-Cat%3Fpage-id%3D1%253A3%26type%3Ddesign%26node-id%3D36-317%26viewport%3D48%252C159%252C0.1%26t%3DpIPqgf9rRDcMLNli-1%26scaling%3Dscale-down-width%26mode%3Ddesign"
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Prototyping and design
+created: "2022-10-07"
+period:
+  - "2022-10-05"
+  - "2022-10-07"
+deadline: It took two days to complete the task.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+  roles:
+    - title: My
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/19595483-Landing-page-Fat-Cat
+    behance: https://www.behance.net/gallery/154367141/Landing-page-Fat-Cat
+client:
+  logoJPG:
+  logoWEBP:
+  head: Homepage design for a shelter for cats suffering from overweight - Fat Cat
+  description:
+  issues:
+  task:
+    - attract new visitors;
+    - make site visitors smile and feel positive emotions;
+    - tell owners that a fat cat has a number of advantages, so that they are less likely to abandon their pets;
+    - make them want to take a cute chubby friend home from the shelter;
+    - get a mailing address for contacting the visitor.
+done:
+  img:
+    src:
+    alt: Homepage design for a shelter for cats suffering from overweight - Fat Cat
+    height:
+  alert:
+    message:
+  list:
+    - product planning and conceptual component development;
+    - preliminary target audience analysis;
+    - corporate identity development;
+    - typography, color palette and element states formation;
+    - logo design and development;
+    - design layout prototype development;
+    - design and user interface (UI) development.
+palette:
+  - type: ""
+    hex:
+      - "1E2336"
+      - 60626E
+  - type: ""
+    hex:
+      - 908F8E
+  - type: ""
+    hex:
+      - F8F9FA
+      - FFFFFF
+  - type: ""
+    hex:
+      - EA4AAA
+      - F08553
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Raleway&family=Cherry+Bomb+One&display=swap' rel='stylesheet'>"
+  headline: Cherry bomb
+  text: Raleway
+grid:
+  cols: 12
+  width: 64
+  size: 1120
+  gap: 32
+responsive:
+  percent: "100"

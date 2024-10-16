@@ -1,0 +1,34 @@
+type: coding
+title: Scroll-driven Animations
+date: 2023-03-28
+src: NWezrQZ
+
+descEn:
+descRu:
+
+view:
+  title: "Pure CSS: Scroll-driven Animations"
+  tabs: css,pug
+
+alert:
+  type:
+  icon:
+  message:
+
+pen:
+  - title: Tags
+    list:
+      - animation-timeline
+      - animation-range
+      - scroll-behavior
+      - :has()
+      - translate
+      - scale
+      - writing-mode
+      - counter-reset
+      - counter-increment
+
+  - title: Code
+    list:
+      - Pug
+      - CSS

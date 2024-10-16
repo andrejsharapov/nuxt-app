@@ -1,0 +1,81 @@
+hide: false
+type: des-site
+title: Дизайн главной страницы приюта кошек страдающих лишним весом - Fat Cat
+img:
+  src: https://cdn.dribbble.com/users/2241643/screenshots/19595483/media/103ecb20535cdf51cc1efa086cedd026.jpg?resize=1000x750&vertical=center
+  alt: Дизайн главной страницы приюта кошек страдающих лишним весом - Fat Cat
+  embed: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FvK4snQwvpH2m8obA9wEXdr%2FLanding%253A-Fat-Cat%3Fpage-id%3D1%253A3%26type%3Ddesign%26node-id%3D36-317%26viewport%3D48%252C159%252C0.1%26t%3DpIPqgf9rRDcMLNli-1%26scaling%3Dscale-down-width%26mode%3Ddesign"
+ux:
+  works: PET PROJECT / EXPERIENCE
+  price: Прототипирование и дизайн
+created: "2022-10-07"
+period:
+  - "2022-10-05"
+  - "2022-10-07"
+deadline: На выполнение задачи ушло два дня.
+preview:
+  tools:
+    - title: Design
+      tags:
+        - Figma
+  roles:
+    - title: Мои
+      tags:
+        - Ux/Ui Designer / Visual Designer
+  to:
+    dribbble: https://dribbble.com/shots/19595483-Landing-page-Fat-Cat
+    behance: https://www.behance.net/gallery/154367141/Landing-page-Fat-Cat
+client:
+  logoJPG:
+  logoWEBP:
+  head: Дизайн главной страницы приюта кошек страдающих лишним весом - Fat Cat
+  description:
+  issues:
+  task:
+    - привлечение новых посетителей;
+    - вызвать у посетителей сайта улыбку и позитивные эмоции;
+    - рассказать владельцам, что толстый кот имеет ряд преимуществ, чтобы они меньше отказывались от своих питомцев;
+    - вызвать желание забрать из приюта домой милого пухлого друга;
+    - получить почтовый адрес для связи с посетителем.
+done:
+  img:
+    src:
+    alt: Дизайн главной страницы приюта кошек страдающих лишним весом - Fat Cat
+    height:
+  alert:
+    message:
+  list:
+    - планирование продукта и разработка идейной составляющей;
+    - предварительный анализ целевой аудитории;
+    - разработка фирменного стиля;
+    - типографика, формирование палитры цветов и состояний элементов;
+    - дизайн и разработка логотипа;
+    - разработка прототипов дизайн-макета;
+    - разработка дизайна и пользовательского интерфейса (UI).
+palette:
+  - type: ""
+    hex:
+      - "1E2336"
+      - 60626E
+  - type: ""
+    hex:
+      - 908F8E
+  - type: ""
+    hex:
+      - F8F9FA
+      - FFFFFF
+  - type: ""
+    hex:
+      - EA4AAA
+      - F08553
+typography:
+  fonts: "<link href='https://fonts.googleapis.com/css2?family=Raleway&family=Cherry+Bomb+One&display=swap' rel='stylesheet'>"
+  headline: Cherry bomb
+  text: Raleway
+grid:
+  cols: 12
+  width: 64
+  size: 1120
+  gap: 32
+responsive:
+  percent: "100"
