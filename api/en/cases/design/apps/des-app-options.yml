@@ -1,6 +1,6 @@
 chartOptions:
   chart:
-    id: des-site-options
+    id: des-app-options
     type: area
     height: 350
     fontFamily: var(--heading-font-family), Arial, sans-serif
