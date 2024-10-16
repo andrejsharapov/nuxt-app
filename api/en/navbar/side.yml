@@ -63,7 +63,7 @@ data:
             to: "/en/modeling"
           - action: "$mdiPrinterOutline"
             title: Printing
-            to: "/ru/works/printing"
+            to: "/en/works/printing"
         title: More
     title: Cases
     to: "/en/cases"
