@@ -29,79 +29,69 @@
     }
   ],
   "commentAnchors.tags.endTag": "/",
-  "commentAnchors.tags.list": [
-    {
+  "commentAnchors.tags.anchors": {
+    "ANCHOR": {
       "highlightColor": "#FFFF00",
       "iconColor": "#FFFF00",
       "scope": "file",
-      "styleComment": true,
-      "tag": "ANCHOR"
+      "styleComment": true
     },
-    {
+    "NOTE": {
       "highlightColor": "#3ECCCF",
       "iconColor": "#3ECCCF",
-      "scope": "workspace",
-      "tag": "NOTE"
+      "scope": "workspace"
     },
-    {
+    "TODO": {
       "highlightColor": "#00F51D",
       "iconColor": "#00F51D",
-      "scope": "workspace",
-      "tag": "TODO"
+      "scope": "workspace"
     },
-    {
+    "REVIEW": {
       "highlightColor": "#FFB300",
       "iconColor": "#FFB300",
       "scope": "workspace",
-      "styleComment": true,
-      "tag": "REVIEW"
+      "styleComment": true
     },
-    {
+    "TEST": {
       "highlightColor": "#F55E00",
       "iconColor": "#F55E00",
       "scope": "workspace",
-      "styleComment": true,
-      "tag": "TEST"
+      "styleComment": true
     },
-    {
+    "FIXME": {
       "highlightColor": "#E60000",
       "iconColor": "#E60000",
       "scope": "workspace",
-      "styleComment": true,
-      "tag": "FIXME"
+      "styleComment": true
     },
-    {
+    "SECTION": {
       "behavior": "region",
       "highlightColor": "#0097F5",
       "iconColor": "#0097F5",
-      "scope": "workspace",
-      "tag": "SECTION"
+      "scope": "workspace"
     },
-    {
+    "COMPONENT": {
       "behavior": "region",
       "highlightColor": "#2ECCB7",
       "iconColor": "#2ECCB7",
-      "scope": "workspace",
-      "tag": "COMPONENT"
+      "scope": "workspace"
     },
-    {
+    "LINK": {
       "behavior": "link",
       "highlightColor": "#2ecc71",
       "iconColor": "#2ecc71",
-      "scope": "workspace",
-      "tag": "LINK"
+      "scope": "workspace"
     },
-    {
+    "STUB": {
       "highlightColor": "#BA68C8",
       "iconColor": "#BA68C8",
-      "scope": "file",
-      "tag": "STUB"
+      "scope": "file"
     }
-  ],
+  },
   "commentAnchors.workspace.excludeFiles": "**/{node_modules,.git,.idea,target,out,build,vendor,.nuxt}/**/*",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
