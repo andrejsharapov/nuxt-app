@@ -26,6 +26,9 @@ data:
   - action: "$mdiPrinter3d"
     title: 3D Modeling
     to: "/en/modeling"
+  - action: "$mdiPrinterOutline"
+    title: Printing
+    to: "/en/works/printing"
   # - action: '$mdiScriptText'
   #   title: Pricing
   #   to: '/en/pricing'

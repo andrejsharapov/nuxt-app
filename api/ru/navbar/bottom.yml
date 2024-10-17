@@ -26,6 +26,9 @@ data:
   - action: "$mdiPrinter3d"
     title: 3D Модели
     to: "/ru/modeling"
+  - action: "$mdiPrinterOutline"
+    title: Полиграфия
+    to: "/ru/works/printing"
   # - action: '$mdiScriptText'
   #   title: Цены
   #   to: '/ru/pricing'
