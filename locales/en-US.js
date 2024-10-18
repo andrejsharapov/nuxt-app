@@ -166,6 +166,7 @@ export default {
     right: 'Right | right',
     left: 'Left | left',
   },
+  process: 'Process',
   price: {
     rub: 'RUB',
     usd: 'USD',
@@ -464,6 +465,7 @@ export default {
         'Here you can see a tape of my professional achievements and the most significant events for me. I hope this encourages you to follow your dreams and record your accomplishments along the way!',
     },
   },
+  result: 'Result | Result',
   search: {
     label: 'Search',
     placeholder: 'Start typing the text...',
