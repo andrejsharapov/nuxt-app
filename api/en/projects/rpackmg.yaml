@@ -2,7 +2,7 @@
   type: resource pack
   created: "2015-12-19"
   desc: One of the most popular texture packs for Minecraft in the Realistic series, it gained international recognition among players in 2014. The excellent quality of the selected images and textures makes this pack interesting and fun.
-  url: http://rpack.madeas.ru/
+  url: https://github.com/andrejsharapov/mctpms
   img:
     src: /src/projects/rpackmg.jpg
     alt:
