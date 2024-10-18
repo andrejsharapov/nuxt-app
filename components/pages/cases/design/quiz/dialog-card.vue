@@ -3,8 +3,8 @@ v-card.dialog-card.rounded.overflow-hidden(v-box-shadow='6')
   v-card-title {{ content.title }}
   v-card-subtitle {{ formatDate(content.created) }}
   v-dialog(
-    fullscreen,
     v-model='dialog',
+    fullscreen,
     hide-overlay,
     transition='dialog-bottom-transition'
   )
@@ -35,7 +35,7 @@ v-card.dialog-card.rounded.overflow-hidden(v-box-shadow='6')
             @click='step--',
             @keyup.left='step--',
             @keyup.right='step++'
-          ) {{ $tc("events.prev", 0) }}
+          ) {{ $tc('events.prev', 0) }}
           v-btn(
             :disabled='step === content.section.length',
             depressed,
@@ -43,7 +43,7 @@ v-card.dialog-card.rounded.overflow-hidden(v-box-shadow='6')
             @click='step++',
             @keyup.left='step--',
             @keyup.right='step++'
-          ) {{ $tc("events.next", 0) }}
+          ) {{ $tc('events.next', 0) }}
 
       v-window(v-model='step', vertical)
         v-window-item(
