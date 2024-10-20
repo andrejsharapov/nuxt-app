@@ -23,7 +23,7 @@
   v-container
     v-row
       v-col(cols='12', sm='9')
-        p {{ $t("pages.projects.message") }}
+        p {{ $t('pages.projects.message') }}
 
       v-col.d-none.d-sm-block.mt-sm-n16.text-center(cols='12', sm='3')
         .position-absolute.mt-n16
@@ -78,7 +78,9 @@ export default {
   },
   computed: {
     localeItems() {
-      return this.projectsLocale ? this.projectsLocale : []
+      return this.projectsLocale
+        ? this.projectsLocale.filter((e) => !e.hide)
+        : []
     },
   },
 }
