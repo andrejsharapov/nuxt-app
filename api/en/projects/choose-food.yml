@@ -1,0 +1,9 @@
+- title: Choose food
+  type: Game
+  created: "2022-11-13"
+  desc: A small app for friends who can't agree on where to order food from. The app will select a restaurant in one click, thereby resolving all discussions.
+  url: /apps/choose-food/
+  img:
+    src: /src/apps/choose-food/app-bg__xs__dark.jpg
+    alt:
+  blank: false
