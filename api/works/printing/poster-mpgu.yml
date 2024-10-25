@@ -1,0 +1,24 @@
+type: "printing"
+
+titleRu: "Постер для МПГУ"
+titleEn: "Poster for MSPU"
+
+descRu: "Постер для МПГУ к IV международной научно-практической конференции."
+descEn: "Poster for Moscow State Pedagogical University."
+
+date: 2022-04-12
+period:
+  - 2022-04-07
+  - 2022-04-12
+
+cover: cover.jpg
+folders:
+  process: ["work-process.jpg"]
+  result: ["result-1.jpg", "result-2.jpg"]
+
+embed:
+
+links:
+  -
+  -
+  -

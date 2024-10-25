@@ -1,0 +1,24 @@
+type: "printing"
+
+titleRu: "Подарочный сертификат от kant-sport"
+titleEn: "Gift certificate from kant-sport"
+
+descRu: ""
+descEn:
+
+date: 2023-11-07
+period:
+  - 2023-11-05
+  - 2023-11-07
+
+cover: cover.png
+folders:
+  process: ["concept-1.jpg", "concept-3.jpg"]
+  result: ["result-1.jpg", "result-2.jpg"]
+
+embed:
+
+links:
+  -
+  -
+  -
