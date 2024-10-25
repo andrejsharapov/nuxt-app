@@ -37,7 +37,7 @@
             cols='12',
             md='6'
           )
-            //- lazy-s-pages-printing-card(:item='item')
+            lazy-s-pages-printing-card(:item='item')
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
@@ -79,7 +79,7 @@ export default {
   },
   computed: {
     localeItems() {
-      return this.printLocale ?? []
+      return this.printLocale.filter((e) => !e.hide) ?? []
     },
   },
 }
