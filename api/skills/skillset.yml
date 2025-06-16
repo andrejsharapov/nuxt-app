@@ -61,9 +61,11 @@ data:
     icon: $mdiVuejs
   - alt: UI Frameworks
     set:
+      - Material Design
       - Bootstrap 4/5
       - Tailwind CSS
       - Vuetify
+      - Ant Design
     color: purple
     icon: $mdiVuetify
   - alt: Web analytics

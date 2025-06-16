@@ -7,7 +7,7 @@ chartOptions:
     zoom:
       enabled: false
   title:
-    text: Дизайн сайтов 2016 - 2023 г.
+    text: Дизайн сайтов 2016 - 2025 г.
     align: left
   foreColor: var(--light)
   grid:
@@ -69,6 +69,7 @@ chartOptions:
     - 2022
     - 2023
     - 2024
+    - 2025
     - ---
   colors:
     - var(--info)
@@ -112,15 +113,17 @@ chartSeries:
       - 2
       - 2
       - 1
-      - 1
+      - 2
+      - 2
       - null
-  - name: Небольшие заказы
+  - name: Небольшие проекты
     data:
       - 96
       - 65
       - 74
       - 62
       - 8
+      - null
       - null
       - null
       - null

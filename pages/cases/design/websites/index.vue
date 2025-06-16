@@ -204,7 +204,7 @@ export default {
         {
           img: { src: '/src/skills/figma.svg' },
           title: 'Figma',
-          percent: '3',
+          percent: '5',
         },
       ],
       cardView: 0,

@@ -7,7 +7,7 @@ chartOptions:
     zoom:
       enabled: false
   title:
-    text: Проектирование и дизайн приложений 2019 - 2023 г.
+    text: Проектирование и дизайн приложений 2019 - 2025
     align: left
   foreColor: var(--light)
   grid:
@@ -65,6 +65,8 @@ chartOptions:
     - 2021
     - 2022
     - 2023
+    - 2024
+    - 2025
     - ---
   colors:
     - var(--info)
@@ -105,6 +107,8 @@ chartSeries:
       - 1
       - 1
       - 1
+      - 1
+      - 0
       - null
   # - name:
   #   data:

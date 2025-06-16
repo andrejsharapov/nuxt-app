@@ -16,10 +16,10 @@ chartOptions:
         zoomin: false
         zoomout: false
   title:
-    text: Разработка сайтов 2010 - 2023 г.
+    text: Разработка сайтов 2010 - 2025
     align: left
   subtitle:
-    text: Опыт работы с системами управления контентом сайтов
+    text: Опыт работы с системами управления контентом сайтов (CMS)
   foreColor: var(--light)
   grid:
     show: true
@@ -96,7 +96,10 @@ chartOptions:
     - "#e01839"
     - "#fa8669"
     - "#207196"
+    - "#01d18f"
     - "#00c58e"
+    - "#d23227"
+    - "#60daf4"
   labels:
     - 2010
     - 2011
@@ -112,6 +115,8 @@ chartOptions:
     - 2021
     - 2022
     - 2023
+    - 2024
+    - 2025
     - ---
   annotations:
     xaxis:
@@ -159,12 +164,16 @@ chartSeries:
       - null
       - null
       - null
+      - null
+      - null
   - name: uCoz
     data:
       - 2
       - 3
       - 8
       - 4
+      - null
+      - null
       - null
       - null
       - null
@@ -191,6 +200,8 @@ chartSeries:
       - null
       - null
       - null
+      - null
+      - null
   - name: WIX
     data:
       - null
@@ -198,6 +209,8 @@ chartSeries:
       - 1
       - null
       - 4
+      - null
+      - null
       - null
       - null
       - null
@@ -223,6 +236,8 @@ chartSeries:
       - null
       - null
       - null
+      - null
+      - null
   - name: 1C Bitrix
     data:
       - null
@@ -239,6 +254,8 @@ chartSeries:
       - null
       - null
       - null
+      - null
+      - null
   - name: Tilda
     data:
       - null
@@ -249,6 +266,8 @@ chartSeries:
       - null
       - null
       - 1
+      - null
+      - null
       - null
       - null
       - null
@@ -271,6 +290,26 @@ chartSeries:
       - 1
       - null
       - null
+      - null
+      - null
+  - name: Vue
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
   - name: Nuxt
     data:
       - null
@@ -285,5 +324,43 @@ chartSeries:
       - 1
       - 1
       - 1
+      - 1
+      - null
+      - null
+      - null
+  - name: Laravel (Blade)
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - 1
+      - null
+      - null
+  - name: React
+    data:
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
+      - null
       - 1
       - null
