@@ -7,7 +7,7 @@ v-row.des-site-experience
     h3 {{ item.title }}
     h6.subtitle-2.font-weight-regular {{ $tc("pages.des-site.experience", 2) }} {{ item.title }}
   v-col.d-flex.align-center.justify-center(cols='12', md='7')
-    v-progress-linear.cursor-pointer(
+    v-progress-linear.not-pointer(
       v-model='item.percent',
       rounded,
       height='25',
