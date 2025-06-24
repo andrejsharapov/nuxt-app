@@ -1,0 +1,8 @@
+{
+  label: 'progress',
+  date: '2025-06-14',
+  title: 'Hello Blender',
+  caption: 'Started making 3D models in Blender.',
+  button: 'View',
+  to: '/modeling',
+}
