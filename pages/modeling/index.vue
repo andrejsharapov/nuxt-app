@@ -22,7 +22,8 @@
   v-container
     v-row
       v-col(cols='12', md='9')
-        p(v-html="$t('pages.modeling.message', { pack: \"<a href='/projects' target='_blank' title=''>texture pack</a>\", blockbench: \"<a href='https://www.blockbench.net/' target='_blank' title=''>blockbench</a>\"})")
+        p(v-html="$t('pages.modeling.minecraft', { pack: \"<a href='/projects' target='_blank' title=''>texture pack</a>\", blockbench: \"<a href='https://www.blockbench.net/' target='_blank' title=''>blockbench</a>\"})")
+        p(v-html="$t('pages.modeling.blender')")
 
       v-col.d-none.d-md-block.mt-n16.text-center(cols='12', md='3')
         .position-absolute.mt-n10

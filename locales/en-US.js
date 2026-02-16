@@ -374,8 +374,10 @@ export default {
       format: 'Format',
     },
     modeling: {
-      message:
+      minecraft:
         'Since 2014, I have been playing Minecraft from time to time and developing a texture pack, adding new item images from version to version. And so, in July 2023, I found out that there is a program that allows you to create 3D models for the game. And since even this seemingly primitive game does not stand still, I decided to update {pack} and fill it with my own 3d models. I started to work in an interesting program called {blockbench} and you know, the result makes me very happy. You can see some models below, and if you play Minecraft, then not only look, but also touch them.',
+      blender:
+        "I started modeling in Blender in June 2025. I don't model often, but it's interesting.",
     },
     photoshop: {
       message:

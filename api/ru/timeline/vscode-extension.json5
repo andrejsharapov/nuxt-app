@@ -1,0 +1,8 @@
+{
+  label: 'contribution',
+  date: '2026-02-06',
+  title: 'VS Code Extension',
+  caption: 'Написал своё первое расширение для IDE VS Code.',
+  button: 'marketplace',
+  to: 'https://marketplace.visualstudio.com/items?itemName=andrejsharapov.sum-num',
+}

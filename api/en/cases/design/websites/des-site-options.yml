@@ -7,7 +7,7 @@ chartOptions:
     zoom:
       enabled: false
   title:
-    text: Website design 2016 - 2025
+    text: Website design 2016 - 2026
     align: left
   foreColor: var(--light)
   grid:
@@ -70,6 +70,7 @@ chartOptions:
     - 2023
     - 2024
     - 2025
+    - 2026
     - ---
   colors:
     - var(--info)
@@ -79,7 +80,7 @@ chartOptions:
   annotations:
     xaxis:
       - x: 2019
-        x2: 2024
+        x2: 2025
         opacity: 0.3
         label:
           borderColor: var(--info)
@@ -116,6 +117,7 @@ chartSeries:
       - 2
       - 2
       - null
+      - null
   - name: Small works
     data:
       - 96
@@ -123,6 +125,7 @@ chartSeries:
       - 74
       - 62
       - 8
+      - null
       - null
       - null
       - null

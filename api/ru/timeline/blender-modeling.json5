@@ -2,7 +2,7 @@
   label: 'progress',
   date: '2025-06-14',
   title: 'Моделирование в Blender',
-  caption: 'Начал делать 3D модели в Блендере.',
+  caption: 'Начал делать 3D модели в Blender.',
   button: 'Модели',
   to: '/modeling',
 }
