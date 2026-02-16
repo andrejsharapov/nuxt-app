@@ -1,0 +1,8 @@
+{
+  label: 'design',
+  date: '2026-02-16',
+  title: 'Pixso',
+  caption: 'I started studying Pixso.',
+  button: 'pixso.net',
+  to: 'https://pixso.net/',
+}

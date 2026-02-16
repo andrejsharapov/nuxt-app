@@ -1,0 +1,14 @@
+grid: 12
+type: modeling
+title: Poluwagon FGK
+alt: _FGK_PW
+date: 2025-09-24
+descEn:
+descRu:
+files:
+  -
+tools:
+  - blender
+fov: 100
+tags:
+  - Railway

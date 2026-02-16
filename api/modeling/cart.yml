@@ -1,0 +1,14 @@
+grid: 12
+type: modeling
+title: Cart
+alt: Cart
+date: 2025-06-15
+descEn:
+descRu:
+files:
+  -
+tools:
+  - blender
+fov: 50
+tags:
+  - Cart

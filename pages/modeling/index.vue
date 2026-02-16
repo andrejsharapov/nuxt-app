@@ -22,7 +22,8 @@
   v-container
     v-row
       v-col(cols='12', md='9')
-        p(v-html="$t('pages.modeling.message', { pack: \"<a href='/projects' target='_blank' title=''>пакет текстур</a>\", blockbench: \"<a href='https://www.blockbench.net/' target='_blank' title=''>blockbench</a>\"})")
+        p(v-html="$t('pages.modeling.minecraft', { pack: \"<a href='/projects' target='_blank' title=''>texture pack</a>\", blockbench: \"<a href='https://www.blockbench.net/' target='_blank' title=''>blockbench</a>\"})")
+        p(v-html="$t('pages.modeling.blender')")
 
       v-col.d-none.d-md-block.mt-n16.text-center(cols='12', md='3')
         .position-absolute.mt-n10
@@ -30,10 +31,11 @@
 
       v-col(cols='12')
         s-section-heading-anchor(:title='$t("works.examples")', anchor='works')
-        lazy-s-pages-modeling-card-model(
-          v-if='localeItems.length',
-          :items='localeItems'
-        )
+        v-row(v-if='localeItems.length')
+          v-col(v-for='item of localeItems', :key='item.title' :md='item.grid ? item.grid : 6')
+            lazy-s-pages-modeling-card-model(
+              :item='item'
+            )
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>
 
