@@ -67,7 +67,7 @@
     "@nuxtjs/html-validator": "0.7.0",
     "@nuxtjs/markdownit": "2.0.0",
     "@nuxtjs/style-resources": "1.2.1",
-    "@nuxtjs/stylelint-module": "4.1.0",
+    "@nuxtjs/stylelint-module": "4.2.2",
     "@nuxtjs/svg": "0.4.0",
     "@nuxtjs/vuetify": "1.12.3",
     "animated-number-vue": "^1.0.0",
