@@ -244,7 +244,7 @@ v-app(v-resize='onResize', dark)
     )
       v-icon {{ mdiArrowUpBoldOutline }}
 
-  lazy-s-chat
+  //- lazy-s-chat
   lazy-s-cookie-box
 
   notifications(group='translation', position='bottom right')

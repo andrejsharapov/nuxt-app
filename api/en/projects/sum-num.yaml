@@ -1,0 +1,9 @@
+- title: VSCode extension
+  type: extension
+  created: '2026-02-06'
+  desc: 'Calculates the sum of selected numbers in rows or random columns and displays them in the status bar.'
+  url: https://marketplace.visualstudio.com/items?itemName=andrejsharapov.sum-num
+  img:
+    src: https://raw.githubusercontent.com/andrejsharapov/sum-num/refs/heads/main/icon.svg
+    alt: 'VSCode extension Sum-Num'
+  blank: true

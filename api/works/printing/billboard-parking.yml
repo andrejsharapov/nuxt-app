@@ -1,0 +1,24 @@
+type: 'printing'
+
+titleRu: 'Рекламный щит: продажа машиномест'
+titleEn: 'Billboard: sale of parking spaces'
+
+descRu: 'Дизайн рекламного билборда 6x3 по продаже машиномест в подземном паркинге.'
+descEn: 'Design of a 6x3 billboard for the sale of parking spaces in an underground parking lot.'
+
+date: 2025-10-08
+period:
+  - 2025-10-08
+  - 2025-10-13
+
+cover: cover.jpg
+folders:
+  process: ['process-1.jpg', 'process-2.jpg']
+  result: ['result.jpg', 'screen-1.jpg', 'screen-2.jpg']
+
+embed:
+
+links:
+  -
+  -
+  -

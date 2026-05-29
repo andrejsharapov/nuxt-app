@@ -1,17 +1,17 @@
 - type: des-illustration
-  grid: 6
-  date: 2023-07-06
+  grid: 8
+  date: 2026-05-21
   tools:
-    - Figma
+    - Pixso
   original:
     src:
     alt:
   img:
-    src: /src/illustrations/altai-trekking-car.jpg
+    src: /src/illustrations/tg-stickers-dofidream.jpg
     alt:
   links:
     instagram:
-    dribbble:
+    dribbble: https://dribbble.com/shots/27421249-illustrations-DofiDream-Stickers
   ux:
     works: PET PROJECT / EXPERIENCE
     price: Иллюстрации для сайта

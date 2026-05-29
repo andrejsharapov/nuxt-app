@@ -1,0 +1,9 @@
+- title: Расширение для VS Code
+  type: extension
+  created: '2026-02-06'
+  desc: 'Вычисляет сумму выбранных чисел в строках или случайных столбцах и отображает их в строке состояния.'
+  url: https://marketplace.visualstudio.com/items?itemName=andrejsharapov.sum-num
+  img:
+    src: https://raw.githubusercontent.com/andrejsharapov/sum-num/refs/heads/main/icon.svg
+    alt: 'VSCode extension Sum-Num'
+  blank: true

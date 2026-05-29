@@ -9,3 +9,4 @@
     src: /src/projects/chatemplate.jpg
     alt:
   blank: true
+  closed: true

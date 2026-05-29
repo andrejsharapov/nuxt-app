@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "naumovs.color-highlight",
+    "ExodiusStudios.comment-anchors",
+    "xiaoluoboding.vscode-folder-size",
+    "mrmlnc.vscode-json5",
+    "yzhang.markdown-all-in-one",
+    "kiui.mesh-viewer",
+    "esbenp.prettier-vscode",
+    "cipchk.cssrem",
+    "streetsidesoftware.code-spell-checker-russian",
+    "tomoki1207.selectline-statusbar",
+    "Natizyskunk.sftp",
+    "andrejsharapov.sum-num",
+    "jkjustjoshing.vscode-text-pastry",
+    "amih90.to",
+    "Vue.volar",
+    "redhat.vscode-yaml",
+    "fla9ua.yaml-preview-ui"
+  ]
+}

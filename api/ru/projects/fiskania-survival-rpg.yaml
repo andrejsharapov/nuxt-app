@@ -1,0 +1,10 @@
+- title: 'Fiskania: Survival RPG'
+  type: game
+  created: '2025-02-22'
+  desc: 'Разработка мобильной рпг игры на Unity.'
+  url: https://vk.com/fiskaniasurvival/
+  img:
+    src: /src/projects/fiskania-survival-rpg.jpg
+    alt:
+  blank: true
+  hide: false

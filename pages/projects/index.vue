@@ -35,6 +35,7 @@
             v-for='item in localeItems',
             :key='item.slug',
             :project='item'
+            :class="{'not-pointer opacity-50': item.closed}"
           )
         lazy-s-works-not-found(v-else, :message='$t("works.works-not-found")')
 </template>

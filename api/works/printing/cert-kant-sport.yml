@@ -1,10 +1,10 @@
-type: "printing"
+type: 'printing'
 
-titleRu: "Подарочный сертификат от kant-sport"
-titleEn: "Gift certificate from kant-sport"
+titleRu: 'Подарочный сертификат от kant-sport'
+titleEn: 'Gift certificate from kant-sport'
 
-descRu: ""
-descEn:
+descRu: 'Дизайн подарочного сертификата от спорткомплекса КАНТ.'
+descEn: 'The design of a gift certificate from the KANT sports complex.'
 
 date: 2023-11-07
 period:
@@ -13,8 +13,8 @@ period:
 
 cover: cover.png
 folders:
-  process: ["concept-1.jpg", "concept-3.jpg"]
-  result: ["result-1.jpg", "result-2.jpg"]
+  process: ['concept-1.jpg', 'concept-3.jpg']
+  result: ['result-1.jpg', 'result-2.jpg']
 
 embed:
 
