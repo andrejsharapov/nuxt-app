@@ -103,4 +103,4 @@ test_*
 sftp.*
 
 # Lock files
-**lock*
+# **lock*
