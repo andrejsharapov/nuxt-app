@@ -2,7 +2,6 @@
 
 Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer.
 
-[![codecov](https://codecov.io/gh/andrejsharapov/nuxt-app/branch/master/graph/badge.svg)](https://codecov.io/gh/andrejsharapov/nuxt-app)
 [![yarn][yarn-image]][yarn]
 [![vue2][vue-image]][vue]
 [![nuxt][nuxt-image]][nuxt]
@@ -13,19 +12,34 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ## This new stage in portfolio development
 
-:feet: Pure HTML  
-:feet: [WordPress][wp] ![active]  
-:feet: [Gulp + Pug + Vue][gulp] ![archive]  
-:feet: Vue CLI ![removed]  
-:feet: VuePress  
-:feet: [Nuxt v2][nuxt2] :point_right: Nuxt v3  
+├── Pure HTML  
+│  
+├── uCoz ![closed]  
+│  
+├── WordPress ![closed]
 
-## Coordination
+<details>
+<summary>├── Plugins</summary>
 
-:orange_book: [IDEAS][ideas]  
-:blue_book: [PROCESS][projects]
+- Akismet
+- Elementor
+- JetPack
+- Newsletter
+- Yoast SEO
+- WooCommerce
+- etc.
+</details>
 
-### Nuxt modules
+├── [Gulp:Pug/Vue][gulp] ![archive]  
+│  
+├── Vue CLI ![removed]  
+│  
+├── VuePress  
+│  
+├── [Nuxt v2][nuxt2] ![active]
+
+<details>
+<summary>├── Nuxt Modules</summary>
 
 | Type        | Module                                                                |
 | ----------- | --------------------------------------------------------------------- |
@@ -42,6 +56,15 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 Look at [all nuxt modules][modules].
 
+</details>
+
+└── ?
+
+## Coordination
+
+:orange_book: [IDEAS][ideas]  
+:blue_book: [PROCESS][projects]
+
 ---
 
 ## Contributing and Wiki
@@ -56,7 +79,6 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 
 <!--  -->
 
-[wp]: https://madeas.ru
 [gulp]: https://github.com/andrejsharapov/gulp-vue-app
 [nuxt2]: https://github.com/andrejsharapov/nuxt-app
 
@@ -64,6 +86,7 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 
 [active]: https://img.shields.io/badge/active-yellow.svg
 [archive]: https://img.shields.io/badge/archive-4a4848.svg
+[closed]: https://img.shields.io/badge/closed-de4c36.svg
 [removed]: https://img.shields.io/badge/removed-de4c36.svg
 
 <!--  -->

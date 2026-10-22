@@ -73,6 +73,7 @@
             :large="$vuetify.breakpoint.xs"
             :block="$vuetify.breakpoint.xs"
             color="primary"
+            :disabled="project.url == null"
             :href="project.url"
             :target="project.blank ? '_blank' : '_self'"
             rel="noopener noreferrer"
