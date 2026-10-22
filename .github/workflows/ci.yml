@@ -1,95 +1,33 @@
-# name: CI
+name: CI
 
-# on:
-#   push:
-#     branches:
-#       - master
-#       - develop
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [master, develop]
 
-#   pull_request:
-#     branches:
-#       - master
-#       - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-# jobs:
-#   lint:
-#     runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-#     strategy:
-#       matrix:
-#         os: [ubuntu-latest, windows-latest]
-#         node-version: [14.x, 16.x]
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 16.17.1
+          cache: yarn
 
-#     steps:
-#       # step 1
-#       - uses: actions/checkout@v3
-#         # with:
-#         #   submodules: recursive
-#         #   token: ${{ secrets.ACCESS_TOKEN }}
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
-#       # step 2
-#       - name: Set up Node.js ${{ matrix.node-version }}
-#         uses: actions/setup-node@v3
-#         with:
-#           node-version: ${{ matrix.node-version }}
+      - name: Lint
+        run: yarn lint
 
-#       # step 3
-#       - name: Checkout master
-#         uses: actions/checkout@master
+      # - name: Prettier check
+      #   run: yarn prettier:check
 
-#       # step 4
-#       - name: Cache node_modules
-#         uses: actions/cache@v3
-#         with:
-#           path: node_modules
-#           key: ${{ matrix.os }}-node-v${{ matrix.node }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
-
-#       # step 5
-#       - name: Install dependencies
-#         if: steps.cache-primes.outputs.cache-hit != 'true'
-#         run: yarn
-
-#       # step 6
-#       - name: Run code formatting
-#         run: |
-#           yarn prettier:format
-#           yarn lint:js
-#           yarn lint:style
-
-#   build:
-#     runs-on: ubuntu-latest
-
-#     strategy:
-#       matrix:
-#         os: [ubuntu-latest, windows-latest]
-#         node-version: [14.x, 16.x]
-
-#     steps:
-#       # step 1
-#       - uses: actions/checkout@v3
-
-#       # step 2
-#       - uses: actions/setup-node@v3
-#         with:
-#           node-version: ${{ matrix.node-version }}
-
-#       # step 3
-#       - run: node --version
-
-#       # step 4
-#       - name: Checkout master
-#         uses: actions/checkout@master
-
-#       # step 5
-#       - name: Install dependencies
-#         run: |
-#           yarn
-#           yarn build
-
-#       # step 6 https://github.com/marketplace/codecov
-#       - name: Upload coverage to Codecov
-#         uses: codecov/codecov-action@v3
-#         with:
-#           name: actions ${{ matrix.node-version }}
-#           fail_ci_if_error: false
-#         #   token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Build
+        run: yarn build

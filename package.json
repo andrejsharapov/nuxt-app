@@ -114,6 +114,6 @@
   "main": "nuxt.config.js",
   "//volta-old-config": {
     "node": "16.17.1",
-    "yarn": "1.22.19"
+    "yarn": "1.22.22"
   }
 }
