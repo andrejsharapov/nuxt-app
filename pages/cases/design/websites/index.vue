@@ -199,12 +199,14 @@ export default {
         {
           img: { src: '/src/skills/ps.svg' },
           title: 'Photoshop',
-          percent: '8',
+          percent: '80',
+          color: 'light-blue',
         },
         {
           img: { src: '/src/skills/figma.svg' },
           title: 'Figma',
-          percent: '5',
+          percent: '70',
+          color: 'pink',
         },
       ],
       cardView: 0,

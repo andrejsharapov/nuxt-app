@@ -62,7 +62,7 @@ export default {
           return '$mdiDevices'
         } else if (item === 'idea') {
           return '$mdiLightbulbOnOutline'
-        } else if (item === 'progress') {
+        } else if (item === 'progress' || item === 'achievement') {
           return '$mdiTrophyAward'
         } else if (item === 'contribution') {
           return '$mdiHandshakeOutline'

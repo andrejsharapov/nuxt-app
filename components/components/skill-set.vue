@@ -41,16 +41,17 @@ mixin sheet(saturation, size)
           @end='drag = false'
         )
           v-chip.ma-2.skill-set__chip(
-            v-for='(chip, i) in Array.isArray(set.set) ? set.set : [set.set]',
+            v-for='(chip, i) in set.set',
             :key='i',
             dark,
             outlined,
             :color='set.color',
+            :class="{ 'opacity-50': chip.low }",
             @click='chipClicked'
           )
             v-avatar(left)
               v-icon {{ mdiCheckboxMarkedCircleOutline }}
-            | {{ chip }}
+            | {{ chip.value }}
 </template>
 
 <script>

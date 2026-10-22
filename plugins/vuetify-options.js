@@ -61,6 +61,9 @@ import {
   mdiDatabaseCheckOutline,
   mdiPrinter3d,
   mdiPrinterOutline,
+  mdiServerNetwork,
+  mdiController,
+  mdiCube,
 } from '@mdi/js'
 import vsCode from '@/components/icons/vs-code'
 import figmaOutline from '@/components/icons/figma-outline'
@@ -242,6 +245,9 @@ export default function ({ app }) {
         mdiDatabaseCheckOutline,
         mdiPrinter3d,
         mdiPrinterOutline,
+        mdiServerNetwork,
+        mdiController,
+        mdiCube,
       },
     },
   }

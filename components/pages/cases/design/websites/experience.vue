@@ -11,9 +11,10 @@ v-row.des-site-experience
       v-model='item.percent',
       rounded,
       height='25',
-      color='pink'
+      :color='item.color'
+      max='200'
     )
-      strong {{ Math.ceil(item.percent) }}
+      strong {{ (n => n % 10 === 0 ? n / 10 : n)(Math.ceil(item.percent)) }}
 </template>
 
 <script>

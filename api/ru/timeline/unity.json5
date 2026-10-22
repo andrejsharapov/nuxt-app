@@ -1,0 +1,8 @@
+{
+  label: 'design',
+  date: '2025-02-22',
+  title: 'Разработка игры на Unity',
+  caption: 'Начал разрабатывать мобильную игру на Unity 6.',
+  button: 'Сообщество',
+  to: 'https://vk.ru/fiskaniasurvival',
+}

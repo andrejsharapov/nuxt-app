@@ -1,109 +1,163 @@
 data:
-  - alt: Methodology
+  - alt: Project Management
     set:
-      - TDD
-      - Agile
-      - Scrum
-      - Kanban
-    color: light-blue
+      - { value: Redmine, low: false }
+      - { value: GitHub Projects, low: false }
+      - { value: Scrum (Agile), low: false }
+      - { value: Kanban (Agile), low: false }
+    color: brown
     icon: $mdiAccountGroup
+
   - alt: Design
     set:
-      - Figma
-      - Google Web Designer
-      - Ai
-      - Ps
-      - CorelDRAW
+      - { value: Figma, low: false }
+      - { value: Pixso, low: false }
+      - { value: Krita, low: false }
+      - { value: CorelDRAW, low: true }
+      - { value: Ps, low: false }
+      - { value: Ai, low: true }
+      - { value: Google Web Designer, low: true }
     color: pink
     icon: $mdiPalette
-  - alt: Website Builder
+
+  - alt: Version Control
     set:
-      - Nuxt.js
-      - Vue CLI
-      - Gulp
-      - VuePress
-    color: teal
-    icon: $mdiNuxt
-  - alt: VC
-    set:
-      - Git
-      - GitLab
-      - Bitbucket
-      - GitHub
+      - { value: Git, low: false }
+      - { value: GitHub, low: false }
+      - { value: GitLab, low: false }
+      - { value: Bitbucket, low: true }
     color: red
     icon: $mdiGit
-  - alt: JavaScript
-    set:
-      - ES6
-      - Babel
-    color: amber
-    icon: $mdiCodeJson
+
   - alt: HTML
     set:
-      - HTML5
-      - Pug
-      - HAML
+      - { value: Pug, low: false }
+      - { value: HTML5, low: false }
+      - { value: HAML, low: true }
     color: orange
     icon: $mdiLanguageHtml5
+
   - alt: CSS
     set:
-      - CSS3
-      - Sass/SCSS
-      - Stylus
-      - PostCSS
+      - { value: CSS3+, low: false }
+      - { value: Flex/Grid, low: false }
+      - { value: Sass/SCSS, low: false }
+      - { value: Stylus, low: true }
+      - { value: PostCSS, low: true }
     color: blue
     icon: $mdiLanguageCss3
-  - alt: Frameworks & Libs
+
+  - alt: JavaScript
     set:
-      - Vue.js
-      - jQuery
-    color: green
-    icon: $mdiVuejs
-  - alt: UI Frameworks
-    set:
-      - Material Design
-      - Bootstrap 4/5
-      - Tailwind CSS
-      - Vuetify
-      - Ant Design
-    color: purple
-    icon: $mdiVuetify
-  - alt: Web analytics
-    set:
-      - Я.Метрика
-      - Я.Вебмастер
-      - GTM
-      - Google Analytics
-    color: deep-orange
-    icon: $mdiGoogleAnalytics
+      - { value: Vue 3, low: true }
+      - { value: Vue 2, low: false }
+      - { value: TypeScript, low: true }
+      - { value: Babel, low: true }
+      - { value: jQuery, low: true }
+    color: amber
+    icon: $mdiCodeJson
+
   - alt: IDE
     set:
-      - Notepad ++
-      - Sublime Text
-      - Visual Studio Code
-      - PhpStorm
+      - { value: VS Code, low: false }
+      - { value: Cursor, low: false }
+      - { value: PhpStorm, low: true }
+      - { value: Sublime Text, low: false }
+      - { value: Notepad++, low: true }
     color: cyan
     icon: $mdiMicrosoftVisualStudioCode
+
+  - alt: UI Frameworks
+    set:
+      - { value: Vuetify, low: false }
+      - { value: Tailwind CSS, low: false }
+      - { value: Material Design, low: false }
+      - { value: Element, low: true }
+      - { value: Ant Design, low: true }
+      - { value: Bootstrap 4/5, low: false }
+    color: purple
+    icon: $mdiVuetify
+
+  - alt: Build & Tools
+    set:
+      - { value: Nuxt 3, low: true }
+      - { value: Vite, low: false }
+      - { value: Nuxt 2, low: false }
+      - { value: VuePress, low: false }
+      - { value: Vue CLI, low: true }
+      - { value: Gulp, low: true }
+    color: teal
+    icon: $mdiNuxt
+
   - alt: CMS
     set:
-      - WordPress
-      - Tilda
-      - Joomla!
-      - 1C Bitrix
-      - WIX
-      - uKit
-      - uCoz
-    color: lime
+      - { value: WordPress, low: false }
+      - { value: Tilda, low: true }
+      - { value: Joomla!, low: true }
+      - { value: 1C Bitrix, low: true }
+      - { value: WIX, low: true }
+      - { value: uKit, low: true }
+      - { value: uCoz, low: true }
+    color: indigo
     icon: $mdiWordpress
-  - alt: Backend Lang
+
+  - alt: Backend & Logs
     set:
-      - PHP
-      - SQL
+      - { value: Laravel, low: true }
+      - { value: PHP, low: false }
+      - { value: Kibana, low: true }
+      - { value: Postman, low: false }
+      - { value: REST API, low: false }
     color: deep-purple
     icon: $mdiLanguagePhp
-  - alt: DBMS (СУБД)
+
+  - alt: Databases
     set:
-      - MySQL
-      - PostgreSQL
+      - { value: PostgreSQL, low: false }
+      - { value: MySQL, low: true }
+      - { value: DBeaver, low: false }
     color: blue-grey
     icon: $mdiDatabaseCheckOutline
+
+  - alt: Web analytics
+    set:
+      - { value: Я.Метрика, low: false }
+      - { value: Я.Вебмастер, low: false }
+      - { value: GTM, low: false }
+      - { value: Google Analytics, low: false }
+    color: light-green
+    icon: $mdiGoogleAnalytics
+
+  - alt: 3D Modelling
+    set:
+      - { value: Blender, low: false }
+      - { value: AI 3D, low: false }
+      - { value: Substance 3D, low: false }
+      - { value: AccuRIG, low: false }
+      - { value: Blockbench, low: false }
+    color: deep-orange
+    icon: $mdiCube
+
+  - alt: Game Dev
+    set:
+      - { value: Unity 6, low: false }
+      - { value: C#, low: false }
+      - { value: JSON Geometry, low: false }
+      - { value: Minecraft Resource Pack, low: false }
+    color: green
+    icon: $mdiController
+
+  - alt: AI Assistants
+    set:
+      - { value: DeepSeek, low: false }
+      - { value: Minimax, low: false }
+      - { value: Perplexity, low: false }
+    color: light-blue
+    icon: $mdiBrain
+
+  - alt: Local LLM
+    set:
+      - { value: Ollama, low: false }
+      - { value: Open WebUI, low: false }
+    color: grey
+    icon: $mdiServerNetwork

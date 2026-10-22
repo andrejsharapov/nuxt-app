@@ -20,7 +20,7 @@ chartOptions:
     colors:
       - var(--light)
     strokeColor:
-      - var(--info)
+      - var(--error)
       - var(--success)
     strokeWidth: 3
   dataLabels:
@@ -71,16 +71,17 @@ chartOptions:
     - 2024
     - 2025
     - 2026
+    - 2027
     - ---
   colors:
-    - var(--info)
+    - var(--error)
     - var(--success)
-    - var(--blue)
+    - var(--info)
     - var(--orange)
   annotations:
     xaxis:
       - x: 2019
-        x2: 2025
+        x2: 2026
         opacity: 0.3
         label:
           borderColor: var(--info)
@@ -89,7 +90,7 @@ chartOptions:
             color: var(--light)
             background: var(--info)
           offsetY: 0
-          text: Крупный проект
+          text: Проектная работа
     yaxis:
       - y:
         y2:
@@ -115,10 +116,10 @@ chartSeries:
       - 2
       - 1
       - 2
-      - 2
+      - 1
+      - 1
       - null
-      - null
-  - name: Небольшие проекты
+  - name: Небольшие задачи
     data:
       - 96
       - 65
@@ -129,6 +130,6 @@ chartSeries:
       - null
       - null
       - null
-      - null
-      - null
+      - 2
+      - 1
       - null

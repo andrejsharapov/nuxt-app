@@ -135,15 +135,15 @@ mixin sheet(color, saturation, size)
                       :key='index',
                       dense,
                       small,
-                      color='accent'
+                      :color='"label--" + item.label'
                     )
                       v-sheet.rounded(v-box-shadow='9')
                         v-list-item.px-0(three-line)
                           v-list-item-content.py-0
                             .d-flex
-                              v-card-title.text-wrap {{ item.title }}
+                              v-card-title.text-break-word.text-subtitle-1.font-weight-bold {{ item.title }}
                               v-spacer
-                              v-chip.mt-4.mr-4(label, outlined, disabled) {{ item.date }}
+                              v-chip.mt-4.mr-4(small, label, outlined, disabled) {{ item.date }}
                             v-card-text.pt-0 {{ item.caption }}
 
               v-card-actions.pb-0.text-center

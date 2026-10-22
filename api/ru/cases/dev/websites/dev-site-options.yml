@@ -118,11 +118,12 @@ chartOptions:
     - 2024
     - 2025
     - 2026
+    - 2027
     - ---
   annotations:
     xaxis:
       - x: 2019
-        x2: ---
+        x2: 2026
         opacity: 0.3
         label:
           borderColor: '#00c58e'
@@ -168,12 +169,14 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: uCoz
     data:
       - 2
       - 3
       - 8
       - 4
+      - null
       - null
       - null
       - null
@@ -206,13 +209,15 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: WIX
     data:
       - null
       - null
       - 1
-      - null
+      - 0
       - 4
+      - null
       - null
       - null
       - null
@@ -232,10 +237,11 @@ chartSeries:
       - null
       - null
       - 2
-      - null
+      - 0
+      - 1
+      - 0
       - 1
       - null
-      - 1
       - null
       - null
       - null
@@ -253,8 +259,9 @@ chartSeries:
       - null
       - null
       - 1
-      - null
+      - 0
       - 1
+      - null
       - null
       - null
       - null
@@ -282,6 +289,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: WordPress
     data:
       - null
@@ -289,17 +297,18 @@ chartSeries:
       - null
       - null
       - null
-      - null
       - 2
-      - null
+      - 2
       - 3
+      - 3
+      - 3
+      - 3
+      - 3
+      - 2
+      - 2
+      - 2
+      - 2
       - 1
-      - null
-      - 1
-      - null
-      - null
-      - null
-      - null
       - null
   - name: Vue
     data:
@@ -312,6 +321,7 @@ chartSeries:
       - null
       - null
       - null
+      - 1
       - null
       - null
       - null
@@ -331,6 +341,7 @@ chartSeries:
       - null
       - null
       - null
+      - 1
       - 1
       - 1
       - 1
@@ -358,6 +369,7 @@ chartSeries:
       - null
       - null
       - null
+      - null
   - name: React
     data:
       - null
@@ -375,5 +387,6 @@ chartSeries:
       - null
       - null
       - 1
+      - null
       - null
       - null

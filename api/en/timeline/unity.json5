@@ -1,0 +1,8 @@
+{
+  label: 'design',
+  date: '2025-02-22',
+  title: 'Game Development in Unity',
+  caption: 'Started developing a mobile game in Unity 6.',
+  button: 'Community',
+  to: 'https://vk.ru/fiskaniasurvival',
+}
