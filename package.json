@@ -16,7 +16,7 @@
     "go": "nuxt build && yarn dev",
     "clean": "rm -rf .nuxt/ dist/ node_modules/ yarn.lock",
     "refresh": "rm -rf node_modules/ .nuxt/ dist/ && yarn install && yarn go",
-    "analyze": "nuxt build --analyze",
+    "analyze": "node ./node_modules/nuxt/bin/nuxt.js nuxt build --analyze",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{s?(a|c)ss,css,vue}\" --ignore-path .gitignore",
     "prettier": "prettier ./**/*.{js,vue} --ignore-path .gitignore",
@@ -47,6 +47,7 @@
     "@nuxtjs/yandex-metrika": "^1.4.0",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.28.1",
+    "three": "0.146.0",
     "v-clipboard": "2.2.3",
     "vue-apexcharts": "1.6.2",
     "vue-box-shadows": "2.0.3",
@@ -111,7 +112,7 @@
     "vue-github-button": "1.0.3"
   },
   "main": "nuxt.config.js",
-  "volta": {
+  "//volta-old-config": {
     "node": "16.17.1",
     "yarn": "1.22.19"
   }
