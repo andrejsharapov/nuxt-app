@@ -2,6 +2,7 @@
 
 Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designer, Frontend Developer.
 
+[![CI](https://github.com/andrejsharapov/nuxt-app/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/andrejsharapov/nuxt-app/actions/workflows/ci.yml)
 [![yarn][yarn-image]][yarn]
 [![vue2][vue-image]][vue]
 [![nuxt][nuxt-image]][nuxt]
