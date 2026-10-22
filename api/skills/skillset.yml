@@ -24,6 +24,7 @@ data:
     set:
       - { value: Git, low: false }
       - { value: GitHub, low: false }
+      - { value: CI/CD (GitHub Actions), low: true }
       - { value: GitLab, low: false }
       - { value: Bitbucket, low: true }
     color: red
