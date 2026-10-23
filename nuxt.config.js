@@ -77,7 +77,12 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+        hid: 'icon-favicon',
+      },
       { rel: 'image_src', href: appMeta.host.url + appMeta.app.share },
       { rel: 'dns-prefetch', href: 'https://images.unsplash.com' },
     ],
@@ -108,7 +113,6 @@ export default {
   pwa: {
     meta: {
       author: appMeta.app.en.author.name,
-      lang: false,
       name: appMeta.app.en.author.name,
       nativeUI: true,
       ogHost: appMeta.host.name,
@@ -123,6 +127,8 @@ export default {
       twitterSite: appMeta.app.twitter,
     },
     icon: {
+      source: 'static/icon.png',
+      fileName: 'app-icon.png',
       sizes: [32, 64, 76, 120, 144, 152, 167, 180, 192, 384, 512],
     },
     manifest: {
@@ -135,7 +141,9 @@ export default {
       theme_color: appColors.default,
       useWebmanifestExtension: true,
     },
-    workbox: {},
+    workbox: {
+      cleanupOutdatedCaches: true,
+    },
   },
   yandexMetrika: {
     id: 70815118,
