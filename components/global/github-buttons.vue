@@ -3,17 +3,6 @@ v-col.github-buttons.pa-0.d-flex.align-center(
   cols='auto',
   :class='$vuetify.breakpoint.xs ? "text-center mb-2" : "text-left"'
 )
-  v-btn.mr-1(
-    icon,
-    dark,
-    plain,
-    href='https://github.com/andrejsharapov/nuxt-app',
-    target='blank',
-    rel='noopener noreferrer',
-    color='white'
-  )
-    v-icon(size='18') $githubOutline
-
   .ml-2.mb-n2
     github-button(
       href='https://github.com/andrejsharapov/nuxt-app',

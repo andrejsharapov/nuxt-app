@@ -239,6 +239,10 @@ export default {
     { path: '~/components/charts/', prefix: 's-chart' },
     '~/components/',
   ],
+  env: {
+    LAST_COMMIT_REF: process.env.LAST_COMMIT_REF,
+    LAST_COMMIT_DATE: process.env.LAST_COMMIT_DATE,
+  },
   build: {
     // extend(config, { isDev, isClient }) {
     //   if (isDev && isClient) { }

@@ -22,7 +22,7 @@
           template(#activator='{ on }')
             v-btn.text-lowercase(dark, outlined, rounded, text, v-on='on')
               v-icon(left, small) {{ mdiTagOutline }}
-              | v{{ doc.content.versions.tag }}
+              | {{ '#' + lastCommitRef }}
               v-icon(right) {{ mdiMenuDown }}
 
           v-list(dense, nav, subheader)
@@ -77,15 +77,15 @@
           v-list(dense, subheader)
             v-subheader {{ $t("events.updates") }}
             v-list-item(
-              :href='doc.content.versions.to',
+              :href='doc.content.versions.to + lastCommitRef',
               target='_blank',
               rel='noopener noreferrer'
             )
               v-list-item-avatar(:color='doc.content.versions.type')
                 v-icon(size='28', color='blue-grey darken-4') {{ mdiTagOutline }}
               v-list-item-content
-                v-list-item-title v{{ doc.content.versions.tag }}
-                v-list-item-subtitle {{ formatDate(doc.content.versions.date) }}
+                v-list-item-title {{ '#' + lastCommitRef }}
+                v-list-item-subtitle {{ formatDate(lastCommitDate) }}
       //- /SECTION
 
       //- SECTION BUTTONS
@@ -130,12 +130,23 @@ export default {
       .fetch()
   },
   computed: {
-    info() {
-      return this.docs ? this.docs : null
+    lastCommitRef() {
+      return (
+        process.env.LAST_COMMIT_REF ||
+        this.docs?.[0]?.content?.versions?.ref ||
+        this.docs?.[0]?.content?.versions?.tag
+      )
+    },
+    lastCommitDate() {
+      return (
+        process.env.LAST_COMMIT_DATE || this.docs?.[0]?.content?.versions?.date
+      )
     },
   },
   methods: {
     formatDate(date) {
+      if (!date) return ''
+
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
     },
