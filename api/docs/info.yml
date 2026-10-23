@@ -20,9 +20,9 @@ content:
     type: 'amber lighten-4'
   message: ''
   versions:
-    date: 'YYYY-MM-DD'
+    date: #'YYYY-MM-DD'
     tag: 1.0.0
-    ref: 'master'
+    ref: 'commit'
     to: 'https://github.com/andrejsharapov/nuxt-app/commit/'
     type: 'indigo lighten-4'
 title: footer-color-content

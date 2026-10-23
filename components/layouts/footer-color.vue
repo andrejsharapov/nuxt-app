@@ -21,7 +21,7 @@
         )
           template(#activator='{ on }')
             v-btn.text-lowercase(dark, outlined, rounded, text, v-on='on')
-              v-icon(left, small) {{ mdiTagOutline }}
+              v-icon(left, small) $githubOutline
               | {{ '#' + lastCommitRef }}
               v-icon(right) {{ mdiMenuDown }}
 
@@ -139,13 +139,18 @@ export default {
     },
     lastCommitDate() {
       return (
-        process.env.LAST_COMMIT_DATE || this.docs?.[0]?.content?.versions?.date
+        process.env.LAST_COMMIT_DATE ||
+        this.docs?.[0]?.content?.versions?.date ||
+        new Date().toISOString()
       )
     },
   },
   methods: {
     formatDate(date) {
       if (!date) return ''
+
+      const parsedDate = new Date(date)
+      if (isNaN(parsedDate.getTime())) return ''
 
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString(`${this.$i18n.locale}`, options)
