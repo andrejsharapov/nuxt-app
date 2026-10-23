@@ -7,21 +7,21 @@ v-list-item-group.row.row--dense.mx-0(
   v-row.ma-0(dense)
     v-col(cols='6')
       v-list-item.align-center.justify-space-between.rounded.hidden(
-        @click='lightTheme'
+        @click='setTheme("light")'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.light") }}
-        v-icon.ml-2
+        v-icon.ml-2 {{ mdiWeatherPartlyCloudy }}
 
     v-col(cols='6')
       v-list-item.align-center.justify-space-between.rounded.hidden(
-        @click='darkTheme'
+        @click='setTheme("dark")'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.dark") }}
-        v-icon.ml-2
+        v-icon.ml-2 {{ mdiWeatherNightPartlyCloudy }}
 
     v-col(cols='12')
       v-list-item.align-center.justify-space-between.rounded.hidden(
-        @click='systemTheme'
+        @click='setTheme("system")'
       )
         .text-body-2.font-weight-medium {{ $t("app.themes.system") }}
         v-icon.ml-2 {{ mdiDesktopClassic }}
@@ -29,13 +29,13 @@ v-list-item-group.row.row--dense.mx-0(
 
 <script>
 import {
-  // mdiWhiteBalanceSunny,
-  // mdiWeatherNight,
-  // mdiThemeLightDark,
   mdiWeatherPartlyCloudy,
   mdiWeatherNightPartlyCloudy,
   mdiDesktopClassic,
 } from '@mdi/js'
+
+const STORAGE_KEY = 'color-mode' // 'light' | 'dark' | 'system'
+const MODES = { light: 0, dark: 1, system: 2 }
 
 export default {
   name: 'ColorModePicker',
@@ -44,52 +44,41 @@ export default {
       mdiWeatherPartlyCloudy,
       mdiWeatherNightPartlyCloudy,
       mdiDesktopClassic,
-      themeActive: 2,
+      themeActive: MODES.system,
+      mediaQuery: null,
     }
   },
   mounted() {
-    const theme = localStorage.getItem('darkMode')
-
-    if (theme) {
-      if (theme === 'true') {
-        setTimeout(() => {
-          this.$vuetify.theme.dark = true
-          this.themeActive = 1
-        }, 0)
-      } else {
-        setTimeout(() => {
-          this.$vuetify.theme.dark = false
-          this.themeActive = 0
-        }, 0)
-      }
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTimeout(() => {
-        this.$vuetify.theme.dark = true
-        this.themeActive = 2
-      }, 0)
+    const saved = localStorage.getItem(STORAGE_KEY) || 'system'
+    this.themeActive = MODES[saved] ?? MODES.system
+    this.mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    this.mediaQuery.addEventListener('change', this.onSystemChange)
+    this.applyTheme(saved)
+  },
+  beforeDestroy() {
+    if (this.mediaQuery) {
+      this.mediaQuery.removeEventListener('change', this.onSystemChange)
     }
   },
   methods: {
-    lightTheme() {
-      this.$vuetify.theme.dark = false
-      localStorage.setItem('darkMode', this.$vuetify.theme.dark.toString())
+    setTheme(mode) {
+      // mode: 'light' | 'dark' | 'system'
+      localStorage.setItem(STORAGE_KEY, mode)
+      this.themeActive = MODES[mode]
+      this.applyTheme(mode)
     },
-    darkTheme() {
-      this.$vuetify.theme.dark = true
-      localStorage.setItem('darkMode', this.$vuetify.theme.dark.toString())
-    },
-    systemTheme() {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        setTimeout(() => {
-          this.$vuetify.theme.dark = true
-          localStorage.setItem('darkMode', this.$vuetify.theme.dark.toString())
-        }, 0)
-      } else {
-        this.$vuetify.theme.dark = false
-        localStorage.setItem('darkMode', this.$vuetify.theme.dark.toString())
-      }
+    applyTheme(mode) {
+      let isDark
+      if (mode === 'dark') isDark = true
+      else if (mode === 'light') isDark = false
+      else isDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 
-      this.themeActive = 2
+      this.$vuetify.theme.dark = isDark
+    },
+    onSystemChange(e) {
+      if (localStorage.getItem(STORAGE_KEY) === 'system') {
+        this.$vuetify.theme.dark = e.matches
+      }
     },
   },
 }

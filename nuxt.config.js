@@ -42,6 +42,7 @@ export default {
     { src: '~/plugins/vue-clipboard' },
     { src: '~/plugins/vue-disqus' },
     { src: '~/plugins/vue-box-shadows' },
+    { src: '~/plugins/theme.client.js', mode: 'client' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

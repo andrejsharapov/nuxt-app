@@ -1,5 +1,5 @@
 <template lang="pug">
-v-app(v-resize='onResize', dark)
+v-app(v-resize='onResize')
   //- v-system-bar(absolute, color='warning')
   //-   .text-caption.white--text
 
