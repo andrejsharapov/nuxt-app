@@ -2,32 +2,6 @@
   "cSpell.language": "en, ru",
   "color-highlight.markRuler": true,
   "color-highlight.markerType": "dot-before",
-  "colorInfo.languages": [
-    {
-      "colors": "css",
-      "selector": "postcss"
-    },
-    {
-      "colors": "css",
-      "selector": "stylus"
-    },
-    {
-      "colors": "css",
-      "selector": "css"
-    },
-    {
-      "colors": "css",
-      "selector": "sass"
-    },
-    {
-      "colors": "css",
-      "selector": "scss"
-    },
-    {
-      "colors": "css",
-      "selector": "less"
-    }
-  ],
   "commentAnchors.tags.endTag": "/",
   "commentAnchors.tags.anchors": {
     "ANCHOR": {
@@ -96,11 +70,5 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.tabSize": 2,
-  "eslint.alwaysShowStatus": true,
-  "eslint.packageManager": "yarn",
-  "stylusSupremacy.insertBraces": false,
-  "stylusSupremacy.insertColons": false,
-  "stylusSupremacy.insertNewLineBeforeElse": true,
-  "stylusSupremacy.insertNewLineBetweenSelectors": true,
-  "stylusSupremacy.insertSemicolons": false
+  "yaml.format.singleQuote": true
 }
