@@ -2,37 +2,37 @@ data:
   - title: Design
     alt: design
     list:
-      - action: '$mdiCellphoneLink'
+      - action: "$mdiCellphoneLink"
         title: Website
-        to: '/en/cases/design/websites'
-      - action: '$mdiCellphoneCog'
+        to: "/cases/design/websites"
+      - action: "$mdiCellphoneCog"
         title: Apps
-        to: '/en/cases/design/apps'
-      - action: '$mdiVectorRadius'
+        to: "/cases/design/apps"
+      - action: "$mdiVectorRadius"
         title: Logotypes
-        to: '/en/cases/design/logo'
-      - action: '$mdiVectorCurve'
+        to: "/cases/design/logo"
+      - action: "$mdiVectorCurve"
         title: Illustrations
-        to: '/en/cases/design/illustrations'
-      - action: '$mdiOrderBoolAscendingVariant'
+        to: "/cases/design/illustrations"
+      - action: "$mdiOrderBoolAscendingVariant"
         title: Quiz
-        to: '/en/cases/design/quiz'
-      - action: '$mdiEmailFastOutline'
+        to: "/cases/design/quiz"
+      - action: "$mdiEmailFastOutline"
         title: Newsletters
-        to: '/ru/cases/design/email'
-      - action: '$mdiCodeJson'
+        to: "/cases/design/email"
+      - action: "$mdiCodeJson"
         title: Pure Code
-        to: '/en/works/coding'
+        to: "/works/coding"
 
   - title: Development
     alt: development
     list:
-      - action: '$mdiResponsive'
+      - action: "$mdiResponsive"
         title: Website
-        to: '/en/cases/dev/websites'
-      - action: '$mdiTabletCellphone'
+        to: "/cases/dev/websites"
+      - action: "$mdiTabletCellphone"
         title: Apps
-        to: '/en/cases/dev/apps'
-      - action: '$mdiVectorBezier'
+        to: "/cases/dev/apps"
+      - action: "$mdiVectorBezier"
         title: HTML5 Banners
-        to: '/en/cases/dev/banners'
+        to: "/cases/dev/banners"

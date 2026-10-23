@@ -4,5 +4,5 @@
   title: 'Hello Blender',
   caption: 'Started making 3D models in Blender.',
   button: 'View',
-  to: '/modeling',
+  to: '/works/modeling',
 }

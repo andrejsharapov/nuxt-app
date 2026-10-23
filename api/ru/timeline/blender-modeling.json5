@@ -4,5 +4,5 @@
   title: 'Моделирование в Blender',
   caption: 'Начал делать 3D модели в Blender.',
   button: 'Модели',
-  to: '/modeling',
+  to: '/works/modeling',
 }

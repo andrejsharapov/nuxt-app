@@ -124,15 +124,14 @@ v-app(v-resize='onResize')
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("ru")',
-                  @click.prevent='refresh'
+                  @click='setLang("ru")'
                 )
                   .text-body-2.font-weight-medium {{ $t("app.lang.ru") }}
 
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
                   :to='switchLocalePath("en")',
-                  @click.prevent='refresh',
-                  @click='noTranslation'
+                  @click='setLang("en"); noTranslation()'
                 )
                   .text-body-2.font-weight-medium {{ $t("app.lang.en") }}
 
@@ -195,30 +194,31 @@ v-app(v-resize='onResize')
                   v-icon.ml-2 {{ mdiArrowCollapseHorizontal }}
 
         //- ANCHOR POSITION NAVBAR
-        v-divider.my-4(inset)
-        v-list-item-title.mb-2.font-weight-bold
-          v-icon(left) {{ mdiPageLayoutSidebarRight }}
-          | {{ $t("site.navbar.right") }}
+        .d-none
+          v-divider.my-4(inset)
+          v-list-item-title.mb-2.font-weight-bold
+            v-icon(left) {{ mdiPageLayoutSidebarRight }}
+            | {{ $t("site.navbar.right") }}
 
-        v-list-item-group.row.row--dense.mx-0(
-          v-model='rightPosition',
-          mandatory,
-          active-class='primary white--text'
-        )
-          v-row.ma-0(dense)
-            v-col(cols='6')
-              v-list-item.align-center.justify-space-between.rounded.hidden(
-                @click.native='right = false'
-              )
-                v-list-item-title {{ $tc("position.left", 1) }}
-                v-icon(right) {{ mdiTableColumnPlusAfter }}
+          v-list-item-group.row.row--dense.mx-0(
+            v-model='rightPosition',
+            mandatory,
+            active-class='primary white--text'
+          )
+            v-row.ma-0(dense)
+              v-col(cols='6')
+                v-list-item.align-center.justify-space-between.rounded.hidden(
+                  @click.native='right = false'
+                )
+                  v-list-item-title {{ $tc("position.left", 1) }}
+                  v-icon(right) {{ mdiTableColumnPlusAfter }}
 
-            v-col(cols='6')
-              v-list-item.align-center.justify-space-between.rounded.hidden(
-                @click.native='right = true'
-              )
-                v-list-item-title {{ $tc("position.right", 1) }}
-                v-icon(right) {{ mdiTableColumnPlusBefore }}
+              v-col(cols='6')
+                v-list-item.align-center.justify-space-between.rounded.hidden(
+                  @click.native='right = true'
+                )
+                  v-list-item-title {{ $tc("position.right", 1) }}
+                  v-icon(right) {{ mdiTableColumnPlusBefore }}
   //- /SECTION
 
   //- SECTION[epic=layout] FOOTER
@@ -354,6 +354,11 @@ export default {
       ],
     }
   },
+  watch: {
+    '$i18n.locale'() {
+      this.$fetch()
+    },
+  },
   mounted() {
     this.onResize()
     this.windowDrawer()
@@ -366,21 +371,25 @@ export default {
         this.drawer = false
       }
     },
-    refresh() {
-      setTimeout(() => {
-        this.$fetch()
-      }, 100)
-    },
     onResize() {
       this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     },
+    setLang(code) {
+      this.$cookies.set('i18n_redirected', code, {
+        path: '/',
+        maxAge: 60 * 60 * 24 * 365, // 1 год
+        sameSite: 'lax',
+      })
+    },
     noTranslation() {
+      if (process.client && localStorage.getItem('translation-warned')) return
+      if (process.client) localStorage.setItem('translation-warned', '1')
+
       this.$notify({
         group: 'translation',
         type: 'warn',
         title: 'Attention!',
         duration: 6000,
-        // eslint-disable-next-line
         text: 'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
       })
     },

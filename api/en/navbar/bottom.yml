@@ -4,34 +4,34 @@ data:
     to: "/en"
   - action: "$mdiBriefcaseEyeOutline"
     title: Cases
-    to: "/en/cases"
+    to: "/cases"
   - action: "$mdiTimelineOutline"
     title: Timeline
-    to: "/en/timeline"
+    to: "/timeline"
   - action: "$mdiContactsOutline"
     title: Contact
-    to: "/en/contact"
+    to: "/contact"
   - action: "$mdiFileCertificateOutline"
     title: Certificates
-    to: "/en/certificates"
+    to: "/certificates"
   - action: "$mdiCodeJson"
     title: Pure Code
-    to: "/en/works/coding"
+    to: "/works/coding"
   - action: "$mdiVectorPolylineEdit"
     title: Photoshop
-    to: "/en/works/photoshop"
+    to: "/works/photoshop"
   - action: "$mdiDraw"
     title: Drawings
-    to: "/en/works/drawings"
+    to: "/works/drawings"
   - action: "$mdiPrinter3d"
-    title: 3D Modeling
-    to: "/en/modeling"
+    title: 3D Models
+    to: "/works/modeling"
   - action: "$mdiPrinterOutline"
     title: Printing
-    to: "/en/works/printing"
+    to: "/works/printing"
   # - action: '$mdiScriptText'
   #   title: Pricing
-  #   to: '/en/pricing'
+  #   to: '/pricing'
   - action: "$mdiLightbulbOnOutline"
     title: Projects
-    to: "/en/projects"
+    to: "/projects"

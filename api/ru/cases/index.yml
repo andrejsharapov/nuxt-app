@@ -2,38 +2,38 @@ data:
   - title: Дизайн
     alt: design
     list:
-      - action: '$mdiCellphoneLink'
+      - action: "$mdiCellphoneLink"
         title: Сайты
-        to: '/ru/cases/design/websites'
-      - action: '$mdiCellphoneCog'
+        to: "/cases/design/websites"
+      - action: "$mdiCellphoneCog"
         title: Приложения
-        to: '/ru/cases/design/apps'
-      - action: '$mdiVectorRadius'
+        to: "/cases/design/apps"
+      - action: "$mdiVectorRadius"
         title: Логотипы
-        to: '/ru/cases/design/logo'
-      - action: '$mdiVectorCurve'
+        to: "/cases/design/logo"
+      - action: "$mdiVectorCurve"
         title: Иллюстрации
-        to: '/ru/cases/design/illustrations'
-      - action: '$mdiProgressCheck'
+        to: "/cases/design/illustrations"
+      - action: "$mdiProgressCheck"
         title: Квиз
-        to: '/ru/cases/design/quiz'
-      - action: '$mdiEmailFastOutline'
+        to: "/cases/design/quiz"
+      - action: "$mdiEmailFastOutline"
         title: Email-рассылки
-        to: '/ru/cases/design/email'
-      - action: '$mdiCodeJson'
+        to: "/cases/design/email"
+      - action: "$mdiCodeJson"
         title: Pure Code
-        to: '/en/works/coding'
+        to: "/en/works/coding"
 
   - title: Разработка
     alt: development
     list:
-      - action: '$mdiResponsive'
+      - action: "$mdiResponsive"
         title: Сайты
-        to: '/ru/cases/dev/websites'
-      - action: '$mdiTabletCellphone'
+        to: "/cases/dev/websites"
+      - action: "$mdiTabletCellphone"
         title: Приложения
-        to: '/ru/cases/dev/apps'
+        to: "/cases/dev/apps"
         disabled: true
-      - action: '$mdiVectorBezier'
+      - action: "$mdiVectorBezier"
         title: HTML5 Баннеры
-        to: '/ru/cases/dev/banners'
+        to: "/cases/dev/banners"

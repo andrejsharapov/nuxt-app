@@ -25,7 +25,7 @@ v-list.navbar__list.hidden-x
             template(v-for='(itemThree, index) of itemTwo.child')
               v-list-item.justify-start(
                 :key='index',
-                :to='itemThree.to',
+                :to='localePath(itemThree.to)',
                 :disabled='itemThree.disabled'
               )
                 v-list-item-action
@@ -41,7 +41,7 @@ v-list.navbar__list.hidden-x
         template(v-else)
           v-list-item.justify-start(
             :key='itemTwo.title',
-            :to='itemTwo.to',
+            :to='localePath(itemTwo.to)',
             :disabled='itemTwo.disabled'
           )
             v-list-item-action

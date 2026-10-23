@@ -21,6 +21,7 @@ export default {
     '@nuxtjs/google-analytics',
   ],
   modules: [
+    'cookie-universal-nuxt',
     '@nuxtjs/axios',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
@@ -87,14 +88,17 @@ export default {
       { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Ru' },
     ],
     defaultLocale: 'ru',
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     lazy: true,
     langDir: 'locales/',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      onlyOnRoot: true,
-    },
+    // detectBrowserLanguage: {
+    //   useCookie: true,
+    //   cookieKey: 'i18n_redirected',
+    //   onlyOnRoot: true,
+    //   fallbackLocale: 'en',
+    //   alwaysRedirect: false,
+    // },
+    detectBrowserLanguage: false,
     vueI18n: {
       fallbackLocale: 'ru',
     },
@@ -141,9 +145,13 @@ export default {
     trackLinks: true,
     webvisor: true,
   },
-  // router: {
-  //   trailingSlash: false,
-  // },
+  router: {
+    middleware: [
+      //
+      'strict-locale-detect',
+      'legacy-ru-redirect',
+    ],
+  },
   sitemap: {
     hostname: `${appMeta.host.url}`,
     gzip: true,

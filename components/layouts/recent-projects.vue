@@ -38,7 +38,7 @@
               v-for='work in recentProjects',
               :key='work.slug',
               exact,
-              :to='work.path',
+              :to='localePath(work.path)',
               :title='work.title'
             )
               v-card.fill-width(flat, tile, color='transparent')
