@@ -2,7 +2,7 @@ name: CD
 
 on:
   workflow_run:
-    workflows: ["CI"]
+    workflows: ['CI']
     types:
       - completed
     branches: [master]
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: 1. Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -22,20 +22,42 @@ jobs:
           node-version: 16.17.1
           cache: yarn
 
-      - name: Install dependencies
+      - name: 2. Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Generate static site
-        run: yarn generate
+      - name: 3. Fetch latest commit info
+        id: fetch_commit
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RESPONSE=$(curl -s -H "Authorization: token $TOKEN" \
+            "https://api.github.com/repos/${{ github.repository }}/commits/${{ github.sha }}")
 
-      - name: Deploy to SFTP
+          if ! echo "$RESPONSE" | jq -e '.sha' > /dev/null; then
+            echo "Error retrieving commit data. API response: $RESPONSE"
+            exit 1
+          fi
+
+          COMMIT_REF=$(echo $RESPONSE | jq -r '.sha[0:7]')
+          COMMIT_DATE=$(echo $RESPONSE | jq -r '.commit.committer.date' | cut -d'T' -f1)
+
+          echo "LAST_COMMIT_REF=$COMMIT_REF" >> $GITHUB_ENV
+          echo "LAST_COMMIT_DATE=$COMMIT_DATE" >> $GITHUB_ENV
+
+      - name: 4. Generate site
+        run: yarn generate
+        env:
+          LAST_COMMIT_REF: ${{ env.LAST_COMMIT_REF }}
+          LAST_COMMIT_DATE: ${{ env.LAST_COMMIT_DATE }}
+
+      - name: 5. Deploy to SFTP
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT }}
           username: ${{ secrets.SFTP_USERNAME }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          local_path: "./dist/*"
+          local_path: './dist/*'
           remote_path: ${{ secrets.SFTP_REMOTE_PATH }}
           sftp_only: true # true - удалит все файлы в папке на сервере перед заливкой
           delete_remote_files: false
