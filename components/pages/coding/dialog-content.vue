@@ -35,7 +35,7 @@
           v-col(cols='12', md='7')
             v-card-text
               v-card(
-                v-box-shadow='18',
+                v-box-shadow='$vuetify.theme.dark ? 3 : 18',
                 style='overflow: auto; min-height: 400px; padding-bottom: 1em; resize: vertical; cursor: row-resize'
               )
                 .codepen(

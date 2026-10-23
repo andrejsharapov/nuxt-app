@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.work-examples.fill-height(v-box-shadow='6')
+v-card.work-examples.fill-height(v-box-shadow='$vuetify.theme.dark ? 3 : 9')
   v-card-title {{ titleLocale(item) }}
   v-card-subtitle {{ formatDate(item.date) }}
   .px-4

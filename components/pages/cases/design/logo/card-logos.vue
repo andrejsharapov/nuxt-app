@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.card-logos.fill-height.d-flex.flex-column(v-box-shadow='9')
+v-card.card-logos.fill-height.d-flex.flex-column(v-box-shadow='$vuetify.theme.dark ? 3 : 9')
   //- ANCHOR 1/4 info
   v-card-title(:class='{ "text-no-wrap": $vuetify.breakpoint.smAndUp }')
     q {{ item.title }}

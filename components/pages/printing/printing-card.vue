@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.printing-card.fill-height.d-flex.flex-column(v-box-shadow='6')
+v-card.printing-card.fill-height.d-flex.flex-column(v-box-shadow='$vuetify.theme.dark ? 3 : 6')
   v-lazy
     v-img.rounded-t(
       :src='`/src/nuxt-app/printing/${item.slug}/${item.cover}`',

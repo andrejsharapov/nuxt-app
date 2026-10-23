@@ -76,7 +76,7 @@
               :filter-icon="mdiNumeric1Box"
               active-class="indigo white--text"
             >
-              {{ chip }}
+              {{ chip.value }}
             </v-chip>
           </v-chip-group>
         </v-col>
@@ -87,7 +87,7 @@
           class="d-none d-sm-block"
         >
           <v-card
-            v-box-shadow="18"
+            v-box-shadow="$vuetify.theme.dark ? 3 : 18"
             class="mb-4 pa-4"
           >
             <v-lazy

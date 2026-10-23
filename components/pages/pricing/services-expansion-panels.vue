@@ -1,5 +1,5 @@
 <template lang="pug">
-v-card.services-expansion-panels.mb-6(v-box-shadow='6')
+v-card.services-expansion-panels.mb-6(v-box-shadow='$vuetify.theme.dark ? 3 : 6')
   v-data-table(
     v-model='selected',
     :loading='!items',

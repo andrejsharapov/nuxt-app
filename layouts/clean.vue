@@ -77,7 +77,7 @@ v-app(v-resize='onResize', dark)
             .d-flex.flex-column.flex-sm-row.justify-center(style='width: 100%')
               .mt-4.mx-sm-4
                 v-btn(
-                  v-box-shadow='6',
+                  v-box-shadow='$vuetify.theme.dark ? 3 : 6',
                   :to='localePath("/")',
                   :block='$vuetify.breakpoint.xs',
                   x-large,
@@ -383,7 +383,6 @@ export default {
         type: 'warn',
         title: 'Attention!',
         duration: 6000,
-        // eslint-disable-next-line
         text: 'Some pages may not be translated into this language. We are working on this and will try to translate as soon as possible.',
       })
     },

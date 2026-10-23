@@ -1,6 +1,6 @@
 <template lang="pug">
 .card-model
-  v-card.pa-2.rounded-lg(v-box-shadow='9')
+  v-card.pa-2.rounded-lg(v-box-shadow='$vuetify.theme.dark ? 3 : 9')
     v-img.rounded-lg(
       v-if='item.tools.includes("blockbench")'
       :src='"/src/nuxt-app/modeling/" + item.alt + ".gif"',

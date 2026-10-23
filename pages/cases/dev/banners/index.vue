@@ -33,7 +33,7 @@
             :key='i',
             cols='12'
           )
-            v-card.fill-height(v-box-shadow:ay-4)
+            v-card.fill-height(v-box-shadow:4)
               v-list-item
                 v-list-item-icon
                   v-icon(large, color='success', v-html='lustNum[i]')
@@ -50,7 +50,7 @@
             md='12'
           )
             v-sheet.d-flex.justify-center.align-center.rounded-lg(
-              v-box-shadow:ax-4,
+              v-box-shadow:4,
               width='92',
               height='92'
             )

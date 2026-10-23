@@ -15,7 +15,7 @@
         :md='[4].includes(cert.figures.length) ? "3" : "4"'
       )
         v-card.cert.hidden.grow.d-grid.place-items-center(
-          v-box-shadow='6',
+          v-box-shadow='$vuetify.theme.dark ? 3 : 6',
           transition='slide-y-reverse-transition'
         )
           pre {{ cert.school }}

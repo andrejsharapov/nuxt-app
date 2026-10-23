@@ -90,7 +90,7 @@ mixin sheet(color, saturation, size)
     v-row
       v-col(v-for='counter in counters.data', :key='counter.title')
         v-card.mb-4.px-4.white--text.rounded-lg.not-pointer(
-          v-box-shadow:el-12,
+          v-box-shadow:el-5,
           :color='counter.color_one',
           :style='{ backgroundImage: "linear-gradient(45deg, " + counter.color_one + ", " + counter.color_two + ")" }'
         )
@@ -128,7 +128,7 @@ mixin sheet(color, saturation, size)
           v-col.section-timeline(v-if='timelineLocale', cols='12', md='5')
             v-card.pr-sm-2.pt-4.pb-2(flat, color='transparent')
               perfect-scrollbar(ref='scroll')
-                v-card.fill-height(outlined, tile, color='transparent')
+                v-card.fill-height.pr-4(tile, flat, color='transparent')
                   v-timeline(dense)
                     v-timeline-item(
                       v-for='(item, index) in timelineLocale',
@@ -137,7 +137,7 @@ mixin sheet(color, saturation, size)
                       small,
                       :color='"label--" + item.label'
                     )
-                      v-sheet.rounded(v-box-shadow='9')
+                      v-sheet.rounded(v-box-shadow='$vuetify.theme.dark ? 3 : 9')
                         v-list-item.px-0(three-line)
                           v-list-item-content.py-0
                             .d-flex
@@ -230,7 +230,7 @@ mixin sheet(color, saturation, size)
         v-row.mx-0
           v-col.d-flex.flex-column(v-for='cert in certList', :key='cert.num')
             v-card.cert.hidden.grow.d-grid.place-items-center(
-              v-box-shadow:el-10,
+              v-box-shadow:el-5,
               transition='slide-y-reverse-transition'
             )
               img(
@@ -355,7 +355,7 @@ export default {
           },
         ],
       },
-      years: 5,
+      years: 9,
     }
   },
   head() {

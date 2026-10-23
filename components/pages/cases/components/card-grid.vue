@@ -15,7 +15,7 @@
           </v-list-item-subtitle>
 
           <v-card
-            v-box-shadow="12"
+            v-box-shadow="$vuetify.theme.dark ? 3 : 12"
             class="rounded-lg transition-fast-in-fast-out"
           >
             <v-img

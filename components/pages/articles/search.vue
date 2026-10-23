@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card
-      v-box-shadow="9"
+      v-box-shadow="$vuetify.theme.dark ? 3 : 9"
       class="mb-8 pa-4 rounded-lg"
     >
       <v-text-field

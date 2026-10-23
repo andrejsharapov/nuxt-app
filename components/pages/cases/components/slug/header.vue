@@ -1,6 +1,6 @@
 <template lang="pug">
 .case-header
-  v-card.z-index-2.position-relative(v-box-shadow='9')
+  v-card.z-index-2.position-relative(v-box-shadow='$vuetify.theme.dark ? 3 : 9')
     v-row.px-4(justify='space-around')
       //- SECTION info
       v-col.pt-4(cols='12', sm='7')
@@ -34,7 +34,7 @@
       //- SECTION date
       v-col(cols='12', sm='4')
         .mt-md-n14.mb-md-n16.rounded-lg.hidden(
-          v-box-shadow='$vuetify.breakpoint.mdAndUp ? "43" : "1"',
+          v-box-shadow='$vuetify.breakpoint.mdAndUp ? $vuetify.theme.dark ? 3 : 43 : "1"',
           @click='switchDate'
         )
           v-date-picker(

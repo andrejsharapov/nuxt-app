@@ -88,7 +88,7 @@
                     <v-sheet
                       v-else
                       v-resize="onResize"
-                      v-box-shadow="9"
+                      v-box-shadow="$vuetify.theme.dark ? 3 : 9"
                       class="position-relative overflow-x-hidden iframe-container"
                       style="
                         height: 16rem;
@@ -180,7 +180,7 @@
                 />
                 <!-- COMPONENT Palette -->
                 <v-card
-                  v-box-shadow="9"
+                  v-box-shadow="$vuetify.theme.dark ? 3 : 9"
                   class="px-4"
                 >
                   <s-pages-cases-components-slug-palette

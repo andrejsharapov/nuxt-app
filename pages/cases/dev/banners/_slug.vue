@@ -85,7 +85,7 @@
                       :title="$t('pages.cases.slug.storyboard')"
                     />
                     <v-img
-                      v-box-shadow="9"
+                      v-box-shadow="$vuetify.theme.dark ? 3 : 9"
                       :src="banner.storyboard.src"
                       :alt="banner.storyboard.alt ? banner.storyboard.alt : ''"
                       contain

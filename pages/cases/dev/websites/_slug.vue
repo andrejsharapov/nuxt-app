@@ -125,7 +125,7 @@
                 />
                 <!-- COMPONENT Palette -->
                 <v-card
-                  v-box-shadow="9"
+                  v-box-shadow="$vuetify.theme.dark ? 3 : 9"
                   class="px-4"
                 >
                   <s-pages-cases-components-slug-palette

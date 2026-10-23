@@ -60,7 +60,7 @@
           md="7"
         >
           <v-card
-            v-box-shadow="18"
+            v-box-shadow="$vuetify.theme.dark ? 3 : 18"
             class="mt-lg-n16 mb-4 pa-4"
           >
             <v-lazy
