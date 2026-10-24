@@ -7,9 +7,9 @@ contacts:
     icon: $mdiPhone
     note: '10:00-18:00 (GMT+3) MSK'
     title: Phone
-  - content: '+7 (964) 788-27-38'
-    icon: $mdiWhatsapp
-    title: WhatsApp
+  # - content: '+7 (964) 788-27-38'
+  #   icon: $mdiWhatsapp
+  #   title: WhatsApp
   - content: '@andrejsharapov'
     icon: $telegramOutline
     title: Telegram
@@ -17,19 +17,19 @@ contacts:
     icon: $discordOutline
     note:
     title: Discord
-  - content: Andrej Sharapov
-    icon: $mdiSkypeBusiness
-    note: 'live:9c920983b0fe9b8e_1'
-    title: Skype
+  # - content: Andrej Sharapov
+  #   icon: $mdiSkypeBusiness
+  #   note: 'live:9c920983b0fe9b8e_1'
+  #   title: Skype
   - content: '@andrejsharapov'
     icon: '$twitterOutline'
-    title: 'Twitter'
+    title: 'X'
     to: 'https://twitter.com/andrejsharapov'
   - content: andrejsharapov
     icon: '$vkOutline'
-    title: 'VKontakte'
+    title: 'VK'
     to: 'https://vk.com/andrejsharapov'
-  - content: andrej.sharapov
-    icon: '$instagramOutline'
-    title: 'Instagram'
-    to: 'https://www.instagram.com/andrej.sharapov'
+  # - content: andrej.sharapov
+  #   icon: '$instagramOutline'
+  #   title: 'Instagram'
+  #   to: 'https://www.instagram.com/andrej.sharapov'

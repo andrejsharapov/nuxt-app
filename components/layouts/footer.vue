@@ -6,13 +6,8 @@ v-footer.layout__footer.pa-0(color='transparent')
         v-card-text.d-sm-flex.align-center.fill-height.py-2.justify-center.justify-md-start.text-center.text-md-left Copyright &copy; 2016 - {{ now }} · with&nbsp;
           v-icon.heart(color='pink', size='18') {{ mdiHeart }}
           | &nbsp;
-          a.d-inline-flex.align-center(
-            href='https://twitter.com/andrejsharapov',
-            target='_blank',
-            rel='noopener noreferrer',
-            title=''
-          ) @andrejsharapov
-            v-icon(right, color='primary', small) {{ mdiOpenInNew }}
+          .d-inline-flex.align-center andrejsharapov
+            //- v-icon(right, color='primary', small) {{ mdiOpenInNew }}
       v-col(cols='12', md='6', :class='rightPos')
         v-card-text.py-2.d-flex.justify-center.justify-md-end
           lazy-s-social-icons.d-flex.flex-wrap.justify-center.d-sm-block(plain)
