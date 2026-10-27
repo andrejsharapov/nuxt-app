@@ -48,7 +48,7 @@
     "cookie-universal-nuxt": "^2.2.2",
     "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.28.1",
-    "three": "0.146.0",
+    "three": "0.186.1",
     "v-clipboard": "2.2.3",
     "vue-apexcharts": "1.6.2",
     "vue-box-shadows": "2.0.3",
