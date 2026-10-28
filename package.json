@@ -50,7 +50,7 @@
     "nuxt-i18n": "^6.28.1",
     "three": "0.146.0",
     "v-clipboard": "2.2.3",
-    "vue-apexcharts": "1.6.2",
+    "vue-apexcharts": "1.7.1",
     "vue-box-shadows": "2.0.3",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-disqus": "4.0.1",
