@@ -12804,10 +12804,10 @@ vue-analytics@^5.22.1:
   resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.22.1.tgz#9d6b32da56daee1b9dfb23a267b50349a03f710f"
   integrity sha512-HPKQMN7gfcUqS5SxoO0VxqLRRSPkG1H1FqglsHccz6BatBatNtm/Vyy8brApktZxNCfnAkrSVDpxg3/FNDeOgQ==
 
-vue-apexcharts@1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/vue-apexcharts/-/vue-apexcharts-1.6.2.tgz#0547826067f97e8ea67ca9423e524eb6669746ad"
-  integrity sha512-9HS3scJwWgKjmkcWIf+ndNDR0WytUJD8Ju0V2ZYcjYtlTLwJAf2SKUlBZaQTkDmwje/zMgulvZRi+MXmi+WkKw==
+vue-apexcharts@1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/vue-apexcharts/-/vue-apexcharts-1.7.2.tgz#8aff4f9032d821d79122988b2a84003ebc260668"
+  integrity sha512-EG+qU74ZAN4/WSBCvDpJPsK7ebm78+V9B7VyXB99DXNRDuF6P1xpil3Nkpp+ixci2nTgf+Q0R12E3RHQMCbogw==
 
 vue-box-shadows@2.0.3:
   version "2.0.3"
