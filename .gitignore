@@ -91,7 +91,7 @@ sw.*
 *.swp
 
 # VS Code
-.vscode/
+.vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
 

@@ -11,7 +11,7 @@ content:
       title: Соглашение
       to: terms
       type: 'light-blue lighten-5'
-      update: '2021-02-17'
+      update: '2026-11-15'
   license:
     icon: '$mdiLicense'
     subtitle: MIT License
