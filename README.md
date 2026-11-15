@@ -59,7 +59,7 @@ Look at [all nuxt modules][modules].
 
 </details>
 
-└── ?
+└── [Vite + Three.js][mgi] ![progress]
 
 ## Coordination
 
@@ -87,9 +87,11 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 
 [gulp]: https://github.com/andrejsharapov/gulp-vue-app
 [nuxt2]: https://github.com/andrejsharapov/nuxt-app
+[mgi]: https://madeas.github.io/
 
 <!--  -->
 
+[progress]: https://img.shields.io/badge/progress-352491.svg
 [active]: https://img.shields.io/badge/active-yellow.svg
 [archive]: https://img.shields.io/badge/archive-4a4848.svg
 [closed]: https://img.shields.io/badge/closed-de4c36.svg
