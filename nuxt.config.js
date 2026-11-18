@@ -44,6 +44,7 @@ export default {
     { src: '~/plugins/vue-disqus' },
     { src: '~/plugins/vue-box-shadows' },
     { src: '~/plugins/theme.client.js', mode: 'client' },
+    { src: '~/plugins/yandex-in-image.client.js', mode: 'client' },
   ],
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -144,6 +145,22 @@ export default {
     workbox: {
       cleanupOutdatedCaches: true,
     },
+  },
+  script: [
+    {
+      hid: 'yandex-rtb-init',
+      innerHTML: 'window.yaContextCb = window.yaContextCb || [];',
+      type: 'text/javascript',
+      charset: 'utf-8',
+    },
+    {
+      hid: 'yandex-rtb-loader',
+      src: 'https://yandex.ru/ads/system/context.js',
+      async: true,
+    },
+  ],
+  __dangerouslyDisableSanitizersByTagID: {
+    'yandex-rtb-init': ['innerHTML'],
   },
   yandexMetrika: {
     id: 70815118,

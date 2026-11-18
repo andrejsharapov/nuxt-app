@@ -255,9 +255,18 @@ mixin sheet(color, saturation, size)
             ) {{ $t('more.base') }} {{ $t('pages.index.sections.certificates.title') }}
       //- /SECTION
 
+      //- Рекламный блок
+      yandex-banner.mb-4(
+        block-id="R-A-20450036-2"
+        @empty="showConfetti = true"
+        @rendered="showConfetti = false"
+      )
+
+      //- Заглушка с конфетти, если реклама не загрузилась
       v-img.confetti-horizontal.not-pointer.mx-auto(
-        src='/src/confetti-horizontal.svg',
-        alt=''
+        v-if="showConfetti"
+        src="/src/confetti-horizontal.svg"
+        alt=""
       )
 </template>
 
@@ -356,6 +365,7 @@ export default {
         ],
       },
       years: 9,
+      showConfetti: false,
     }
   },
   head() {
