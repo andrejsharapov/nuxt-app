@@ -13,58 +13,30 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 ## This new stage in portfolio development
 
-├── Pure HTML  
-│  
-├── uCoz ![closed]  
-│  
-├── WordPress ![closed]
+1. 📄 **Pure HTML**
+2. ⚙️ **uCoz** ![closed] ![removed] (`madeas.usite.pro`)
+3. 🗂️ **WordPress** ![closed] ![removed] (`madeas.ru`)
 
-<details>
-<summary>├── Plugins</summary>
+   - _Plugins:_ `Akismet`, `Elementor`, `JetPack`, `CF7`, `Newsletter`, `Yandex`, `Yoast SEO`, `WooCommerce`, etc.
 
-- Akismet
-- Elementor
-- JetPack
-- Newsletter
-- Yoast SEO
-- WooCommerce
-- etc.
-</details>
+4. 📦 **[Gulp + Pug + Vue][gulp]** ![archive] (`andrejsharapov.github.io`)
+5. 🎨 **Vue CLI** ![removed]
+6. 📖 **VuePress** ![unreleased]
+7. 🚀 **[Nuxt v2][nuxt2]** ![active] (`sharapov.dev`)
 
-├── [Gulp:Pug/Vue][gulp] ![archive]  
-│  
-├── Vue CLI ![removed]  
-│  
-├── VuePress  
-│  
-├── [Nuxt v2][nuxt2] ![active]
+   - _Analytics:_ `@nuxtjs/gtm`, `@nuxtjs/google-analytics`, `@nuxtjs/yandex-metrika`
+   - _CMS & Content:_ `@nuxt/content`, `@nuxtjs/markdownit`
+   - _UI & Styling:_ `@nuxt/components`, `@nuxtjs/vuetify`, `@nuxtjs/style-resources`, `@nuxtjs/stylelint-module`, `@nuxtjs/svg`, `@nuxtjs/google-fonts`
+   - _SEO & Performance:_ `@nuxtjs/sitemap`, `@nuxtjs/robots`, `@nuxtjs/pwa`, `@nuxtjs/html-validator`
+   - _Core & Devtools:_ `nuxt-i18n`, `@nuxtjs/axios`, `@nuxtjs/eslint-module`
+   - _Reference:_ Look at [all nuxt modules][modules].
 
-<details>
-<summary>├── Nuxt Modules</summary>
-
-| Type        | Module                                                                |
-| ----------- | --------------------------------------------------------------------- |
-| Analytics   | @nuxtjs/gtm<br />@nuxtjs/google-analytics<br />@nuxtjs/yandex-metrika |
-| CMS         | @nuxt/content                                                         |
-| CSS         | @nuxtjs/style-resources<br />@nuxtjs/stylelint-module                 |
-| Devtools    | @nuxtjs/eslint-module                                                 |
-| Extensions  | nuxt-i18n<br />@nuxtjs/svg<br />@nuxtjs/markdownit                    |
-| Fonts       | @nuxtjs/google-fonts                                                  |
-| Performance | @nuxtjs/pwa<br />@nuxtjs/html-validator                               |
-| Request     | @nuxtjs/axios                                                         |
-| SEO         | @nuxtjs/sitemap<br />@nuxtjs/robots                                   |
-| UI          | @nuxt/components<br />@nuxtjs/vuetify                                 |
-
-Look at [all nuxt modules][modules].
-
-</details>
-
-└── [Vite + Three.js][mgi] ![progress]
+8. 🧊 **[Vite + Three.js][mgi]** ![progress] (`madeas.github.io`)
 
 ## Coordination
 
-:orange_book: [IDEAS][ideas]  
-:blue_book: [PROCESS][projects]
+📙 [IDEAS][ideas]  
+📘 [PROCESS][projects]
 
 ---
 
@@ -87,15 +59,16 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 
 [gulp]: https://github.com/andrejsharapov/gulp-vue-app
 [nuxt2]: https://github.com/andrejsharapov/nuxt-app
-[mgi]: https://madeas.github.io/
+[mgi]: https://madeas.github.io/?utm_source=github&utm_medium=referral&utm_campaign=sharapov&utm_content=portfolio_development
 
 <!--  -->
 
 [progress]: https://img.shields.io/badge/progress-352491.svg
-[active]: https://img.shields.io/badge/active-yellow.svg
-[archive]: https://img.shields.io/badge/archive-4a4848.svg
-[closed]: https://img.shields.io/badge/closed-de4c36.svg
+[active]: https://img.shields.io/badge/active-36de5d.svg
+[archive]: https://img.shields.io/badge/archive-b09a1c.svg
+[closed]: https://img.shields.io/badge/closed-de7136.svg
 [removed]: https://img.shields.io/badge/removed-de4c36.svg
+[unreleased]: https://img.shields.io/badge/unreleased-3663de.svg
 
 <!--  -->
 
