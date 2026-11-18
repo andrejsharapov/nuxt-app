@@ -1,10 +1,21 @@
 <template>
-  <div
-    v-if="hasAd"
-    class="yandex-banner-wrapper"
-    :style="{ minHeight: minHeight }"
-  >
-    <div :id="containerId"></div>
+  <div class="yandex-banner-container">
+    <!-- Контейнер РСЯ всегда в DOM (используем v-show вместо v-if) -->
+    <div
+      v-show="isRendered"
+      class="yandex-banner-wrapper"
+      :style="{ minHeight: minHeight }"
+    >
+      <div :id="containerId"></div>
+    </div>
+
+    <!-- Заглушка (конфетти) видна сразу, пока реклама не подтвердит отрисовку -->
+    <div
+      v-if="!isRendered"
+      class="yandex-banner-fallback"
+    >
+      <slot></slot>
+    </div>
   </div>
 </template>
 
@@ -12,17 +23,14 @@
 export default {
   name: 'YandexBanner',
   props: {
-    // ID блока из кабинета РСЯ, например: 'R-A-20450036-2'
     blockId: {
       type: String,
       required: true,
     },
-    // Опциональный суффикс, если один и тот же blockId выводится на странице дважды
     uniqueKey: {
       type: [String, Number],
       default: '',
     },
-    // Резервируемая высота контейнера до загрузки рекламы (улучшает Core Web Vitals)
     minHeight: {
       type: String,
       default: 'auto',
@@ -30,9 +38,8 @@ export default {
   },
   data() {
     return {
-      // Случайный хэш гарантирует уникальность ID, даже если забыли передать uniqueKey
       instanceHash: Math.random().toString(36).substring(2, 8),
-      hasAd: true,
+      isRendered: false,
     }
   },
   computed: {
@@ -44,10 +51,8 @@ export default {
     },
   },
   watch: {
-    // Если пользователь перешел со статьи /news/1 на /news/2, Vue переиспользует компонент.
-    // Следим за сменой маршрута и принудительно обновляем баннер.
     '$route.fullPath'() {
-      this.hasAd = true
+      this.isRendered = false
       this.destroyAd()
       this.$nextTick(() => {
         this.renderAd()
@@ -64,41 +69,26 @@ export default {
     renderAd() {
       if (typeof window === 'undefined') return
 
-      // Таймер на случай, если AdBlock полностью заблокировал загрузку context.js
-      const fallbackTimer = setTimeout(() => {
-        if (!window.Ya?.Context?.AdvManager) {
-          this.handleAdEmpty()
-        }
-      }, 2500)
-
       window.yaContextCb = window.yaContextCb || []
       window.yaContextCb.push(() => {
-        clearTimeout(fallbackTimer)
+        const el = document.getElementById(this.containerId)
+        if (!el) return
 
-        if (document.getElementById(this.containerId)) {
-          window.Ya.Context.AdvManager.render({
-            blockId: this.blockId,
-            renderTo: this.containerId,
-            // Реклама успешно отрисовалась
-            onRender: () => {
-              this.hasAd = true
-              this.$emit('rendered')
-            },
-            // Аукцион не подобрал рекламу или произошла ошибка
-            onError: () => {
-              this.handleAdEmpty()
-            },
-            // Срабатывает, если в настройках блока задан альтернативный код/заглушка
-            altCallback: () => {
-              this.handleAdEmpty()
-            },
-          })
-        }
+        window.Ya.Context.AdvManager.render({
+          blockId: this.blockId,
+          renderTo: this.containerId,
+          // Единственный 100% надежный триггер: реклама реально появилась
+          onRender: () => {
+            this.isRendered = true
+            this.$emit('rendered')
+          },
+          onError: (data) => {
+            console.warn('РСЯ ошибка/пустой блок:', data)
+            this.isRendered = false
+            this.$emit('empty')
+          },
+        })
       })
-    },
-    handleAdEmpty() {
-      this.hasAd = false
-      this.$emit('empty')
     },
     destroyAd() {
       if (
@@ -113,3 +103,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.yandex-banner-container {
+  width: 100%;
+}
+
+.yandex-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+</style>
