@@ -33,11 +33,6 @@ Open Source Web developer Portfolio on GitHub | Andrej Sharapov · Ui/Ux Designe
 
 8. 🧊 **[Vite + Three.js][mgi]** ![progress] (`madeas.github.io`)
 
-## Coordination
-
-📙 [IDEAS][ideas]  
-📘 [PROCESS][projects]
-
 ---
 
 ## Contributing and Wiki
@@ -46,22 +41,21 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 
 [:fish: Swim to up](#nuxt-app)
 
-<!--  -->
+<!-- github repo -->
 
 [preview]: https://sharapov.dev/README.png
-
-<!--  -->
-
+[wiki]: https://github.com/andrejsharapov/nuxt-app/wiki
+[contributing]: https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md
 [ci-badge]: https://github.com/andrejsharapov/nuxt-app/actions/workflows/ci.yml/badge.svg?branch=master
 [ci]: https://github.com/andrejsharapov/nuxt-app/actions/workflows/ci.yml
 
-<!--  -->
+<!-- project links -->
 
 [gulp]: https://github.com/andrejsharapov/gulp-vue-app
 [nuxt2]: https://github.com/andrejsharapov/nuxt-app
 [mgi]: https://madeas.github.io/?utm_source=github&utm_medium=referral&utm_campaign=sharapov&utm_content=portfolio_development
 
-<!--  -->
+<!-- status badges -->
 
 [progress]: https://img.shields.io/badge/progress-352491.svg
 [active]: https://img.shields.io/badge/active-36de5d.svg
@@ -70,44 +64,22 @@ Feedback, bug reports, and pull requests are welcome. Please read the [Wiki][wik
 [removed]: https://img.shields.io/badge/removed-de4c36.svg
 [unreleased]: https://img.shields.io/badge/unreleased-3663de.svg
 
-<!--  -->
-
-[ideas]: ../../discussions/31
-[projects]: https://github.com/users/andrejsharapov/projects/6
-
-<!--  -->
+<!-- yarn -->
 
 [yarn]: https://yarnpkg.com/
 [yarn-image]: https://img.shields.io/badge/yarn-1.22.x-2c8ebb.svg
 
 <!--  -->
 
-[vue]: https://vuejs.org
-[vue-image]: https://img.shields.io/badge/vue-2.6.x-41b883.svg
-
-<!--  -->
-
-[nuxt]: https://nuxtjs.org/
-[nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-108775.svg
-
-<!--  -->
-
-[vuetify]: https://vuetifyjs.com/en/
-[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg
-
-<!--  -->
-
 [postcss]: https://postcss.org/
 [postcss-image]: https://img.shields.io/badge/postcss-7.0.x-dd3a0a.svg
 
-<!--  -->
+<!-- vue, nuxt, vuetify -->
 
-[modules]: https://modules.nuxtjs.org/
-
-<!--  -->
-
-[wiki]: ../../wiki
-
-<!--  -->
-
-[contributing]: https://github.com/andrejsharapov/nuxt-app/blob/master/CONTRIBUTING.md
+[vue]: https://vuejs.org
+[vue-image]: https://img.shields.io/badge/vue-2.6.x-41b883.svg
+[nuxt]: https://nuxt.com/
+[nuxt-image]: https://img.shields.io/badge/nuxt-2.15.x-108775.svg
+[modules]: https://nuxt.com/modules/
+[vuetify]: https://vuetifyjs.com/en/
+[vuetify-image]: https://img.shields.io/badge/vuetify-2.4.x-1697f6.svg
