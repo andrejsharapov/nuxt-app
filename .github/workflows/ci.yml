@@ -3,6 +3,13 @@ name: CI
 on:
   push:
     branches: [master, develop]
+
+    paths-ignore:
+      - '.gitignore'
+      - '.prettierignore'
+      - 'LICENSE'
+      - '**.md'
+
   pull_request:
     branches: [master, develop]
 
