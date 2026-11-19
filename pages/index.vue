@@ -257,10 +257,10 @@ mixin sheet(color, saturation, size)
 
       //- Рекламный блок
       //- yandex-banner(block-id="R-A-20450036-2")
-      //-   v-img.confetti-horizontal.not-pointer.mx-auto(
-      //-     src='/src/confetti-horizontal.svg',
-      //-     alt=''
-      //-   )
+      v-img.confetti-horizontal.not-pointer.mx-auto(
+        src='/src/confetti-horizontal.svg',
+        alt=''
+      )
 </template>
 
 <script>
