@@ -1,17 +1,19 @@
+import { defaultLocale, isLocale, LOCALE_COOKIE_KEY } from '~/locales/i18n'
+
 export default function ({ app, route, redirect, req }) {
   if (route.path !== '/') return
 
-  const cookie = app.$cookies.get('i18n_redirected')
+  const cookie = app.$cookies.get(LOCALE_COOKIE_KEY)
 
   // Пользователь выбрал en, ведём на /en, даже с /
-  if (cookie === 'en') {
-    redirect('/en')
+  if (cookie && isLocale(cookie) && cookie !== defaultLocale) {
+    redirect('/' + cookie)
     return
   }
-  // Выбрал ru или что-то ещё, не трогаем
+  // Выбрал default (ru) или что-то неизвестное → не трогаем
   if (cookie) return
 
-  // Первый заход → определяем по найденному языку
+  // Первый заход → определяем по Accept-Language
   let primary = ''
   if (process.server) {
     const accept = (req.headers['accept-language'] || '').split(',')[0]
@@ -22,7 +24,7 @@ export default function ({ app, route, redirect, req }) {
       .toLowerCase()
   }
 
-  // Пустой заголовок или ru → дефолт (ru)
-  if (!primary || primary === 'ru') return
-  redirect('/en')
+  // Пустой заголовок или default → остаёмся на /
+  if (!primary || primary === defaultLocale) return
+  if (isLocale(primary)) redirect('/' + primary)
 }

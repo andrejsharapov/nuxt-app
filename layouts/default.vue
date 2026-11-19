@@ -117,21 +117,22 @@ v-app(v-resize='onResize')
             | {{ $t("app.lang.name") }}
 
           v-list-item-group.row.row--dense.mx-0(
+            :value='$i18n.locale',
             mandatory,
             active-class='primary white--text'
           )
             v-row.ma-0(dense)
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
-                  :to='switchLocalePath("ru")',
-                  @click='setLang("ru")'
+                  value='ru',
+                  @click='switchLocale("ru")'
                 )
                   .text-body-2.font-weight-medium {{ $t("app.lang.ru") }}
 
               v-col(cols='6')
                 v-list-item.align-center.justify-space-between.rounded.hidden(
-                  :to='switchLocalePath("en")',
-                  @click='setLang("en"); noTranslation()'
+                  value='en',
+                  @click='switchLocale("en")'
                 )
                   .text-body-2.font-weight-medium {{ $t("app.lang.en") }}
 
@@ -374,12 +375,10 @@ export default {
     onResize() {
       this.windowSize = { x: window.innerWidth, y: window.innerHeight }
     },
-    setLang(code) {
-      this.$cookies.set('i18n_redirected', code, {
-        path: '/',
-        maxAge: 60 * 60 * 24 * 365, // 1 год
-        sameSite: 'lax',
-      })
+    switchLocale(code) {
+      if (this.$i18n.locale === code) return
+      this.$switchLocale(code)
+      if (code === 'en') this.noTranslation()
     },
     noTranslation() {
       if (process.client && localStorage.getItem('translation-warned')) return

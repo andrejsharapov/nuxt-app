@@ -1,5 +1,6 @@
 import { appMeta, appColors } from './config/app'
 import { allDynamicPages } from './lib/routes'
+import { locales, defaultLocale } from './locales/i18n'
 
 export default {
   server: {
@@ -53,13 +54,13 @@ export default {
     treeShake: true,
   },
   head: {
-    title: appMeta.app.ru.title,
+    title: appMeta.app[defaultLocale].title,
     meta: [
       {
         hid: 'title',
         name: 'title',
         property: 'title',
-        content: appMeta.app.ru.title,
+        content: appMeta.app[defaultLocale].title,
       },
       {
         hid: 'twitter:title',
@@ -89,24 +90,14 @@ export default {
     ],
   },
   i18n: {
-    locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'En' },
-      { code: 'ru', iso: 'ru-RU', file: 'ru-RU.js', name: 'Ru' },
-    ],
-    defaultLocale: 'ru',
+    locales,
+    defaultLocale,
     strategy: 'prefix_except_default',
     lazy: true,
     langDir: 'locales/',
-    // detectBrowserLanguage: {
-    //   useCookie: true,
-    //   cookieKey: 'i18n_redirected',
-    //   onlyOnRoot: true,
-    //   fallbackLocale: 'en',
-    //   alwaysRedirect: false,
-    // },
     detectBrowserLanguage: false,
     vueI18n: {
-      fallbackLocale: 'ru',
+      fallbackLocale: defaultLocale,
     },
     seo: true,
     baseUrl: `${appMeta.host.url}`,

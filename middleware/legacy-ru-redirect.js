@@ -1,7 +1,9 @@
+import { defaultLocale } from '~/locales/i18n'
+
 export default function ({ route, redirect }) {
-  // /ru, /ru/, /ru/anything → без префикса
-  if (route.path === '/ru' || route.path.startsWith('/ru/')) {
-    const stripped = route.path.replace(/^\/ru(\/|$)/, '/') || '/'
-    redirect(301, stripped)
-  }
+  const re = new RegExp(`^/${defaultLocale}(/|$)`)
+  if (!re.test(route.path)) return
+
+  const stripped = route.path.replace(re, '/') || '/'
+  redirect(301, stripped)
 }
