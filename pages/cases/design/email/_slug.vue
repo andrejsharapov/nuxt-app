@@ -99,11 +99,11 @@ import { mdiViewSplitHorizontal, mdiViewSplitVertical } from '@mdi/js'
 
 export default {
   name: 'CasesDesignEmailSlug',
-  middleware({ redirect, app }) {
-    if (app.i18n.locale === 'en') {
-      return redirect('301', `/${app.i18n.locale}/cases`)
-    }
-  },
+  // middleware({ redirect, app }) {
+  //   if (app.i18n.locale === 'en') {
+  //     return redirect('301', `/${app.i18n.locale}/cases`)
+  //   }
+  // },
   async asyncData({ $content, app, params }) {
     const email = await $content(
       `${app.i18n.locale}/cases/design/email`,
