@@ -51,7 +51,7 @@ jobs:
           LAST_COMMIT_DATE: ${{ env.LAST_COMMIT_DATE }}
 
       - name: 5. Deploy to SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.6
         with:
           server: ${{ secrets.SFTP_HOST }}
           port: ${{ secrets.SFTP_PORT }}
